@@ -39,6 +39,10 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 +
 <<Richten Sie ein Servicekonto für den Konnektor ein>>.
 
+* Wenn Sie Cloud Volumes ONTAP über mehrere Projekte hinweg bereitstellen, stellen Sie sicher, dass der Connector Zugriff auf diese Projekte hat.
++
+<<Einrichten von Berechtigungen für alle Projekte>>.
+
 * Wenn Sie eine gemeinsame VPC verwenden, legen Sie Berechtigungen im Service-Projekt und im Host-Projekt ein.
 +
 <<Gemeinsame VPC-Berechtigungen einrichten>>.
@@ -76,7 +80,12 @@ Für Folgendes sind Berechtigungen erforderlich:
 
 * Der Benutzer, der die Connector-VM bereitstellen wird
 * Ein Servicekonto, das Sie während der Bereitstellung mit der Connector-VM verbinden müssen
-* Gemeinsame VPC-Berechtigungen, wenn Sie eine gemeinsame VPC verwenden, um Ressourcen in einem Service-Projekt zu implementieren
+
+
+Je nach Konfiguration müssen Sie möglicherweise auch die folgenden Schritte ausführen:
+
+* Einrichten von Berechtigungen für alle Projekte
+* Einrichten von Berechtigungen für eine gemeinsame VPC
 
 
 
@@ -273,6 +282,27 @@ includedPermissions:
 
 .Ergebnis
 Das Servicekonto für die Connector-VM wird eingerichtet.
+
+
+
+=== Einrichten von Berechtigungen für alle Projekte
+
+Wenn Sie planen, Cloud Volumes ONTAP-Systeme in verschiedenen Projekten bereitzustellen als das Projekt, in dem sich der Connector befindet, müssen Sie dem Connector-Servicekonto Zugriff auf diese Projekte gewähren.
+
+Nehmen wir beispielsweise an, dass der Connector in Projekt 1 liegt und Sie Cloud Volumes ONTAP-Systeme in Projekt 2 erstellen möchten. Sie müssen in Projekt 2 Zugriff auf das Servicekonto gewähren.
+
+.Schritte
+. Wählen Sie in der Google Cloud-Konsole den IAM-Service aus und wählen Sie das Projekt aus, in dem Sie Cloud Volumes ONTAP-Systeme erstellen möchten.
+. Wählen Sie auf der *IAM*-Seite *Grant Access* und geben Sie die erforderlichen Details ein.
++
+** Geben Sie die E-Mail des Service-Kontos des Connectors ein.
+** Wählen Sie die benutzerdefinierte Rolle des Connectors aus.
+** Klicken Sie Auf *Speichern*.
+
+
+
+
+Weitere Informationen finden Sie unter https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud-Dokumentation"^]
 
 
 
