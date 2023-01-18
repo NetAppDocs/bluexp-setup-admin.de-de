@@ -18,9 +18,9 @@ Sie können die Anmeldeinformationen verwalten, die der Connector-VM-Instanz zug
 
 
 
-== Verknüpfen eines Marketplace-Abonnements mit GCP-Zugangsdaten
+== Verknüpfen eines Marketplace-Abonnements mit Google Cloud-Anmeldedaten
 
-Wenn Sie einen Connector in GCP bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Dies sind die Anmeldeinformationen, die BlueXP zur Bereitstellung von Cloud Volumes ONTAP verwendet.
+Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Dies sind die Anmeldeinformationen, die BlueXP zur Bereitstellung von Cloud Volumes ONTAP verwendet.
 
 Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmeldedaten verknüpft ist. Mithilfe des Abonnements können Sie ein nutzungsbasiertes Cloud Volumes ONTAP System erstellen und andere NetApp Cloud-Services nutzen.
 
@@ -63,11 +63,11 @@ image:screenshot_gcp_marketplace_register.png["Ein Screenshot eines Pop-up-Pop-u
 
 +
 
-NOTE: Mit diesem Schritt müssen Sie das GCP-Abonnement mit Ihrem NetApp Konto verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.
+NOTE: Sie müssen diesen Schritt abschließen, um das Google Cloud Abonnement mit Ihrem NetApp Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.
 
 . Nachdem Sie zu BlueXP umgeleitet wurden, melden Sie sich an oder registrieren Sie sich, und klicken Sie dann auf *Fertig*, um fortzufahren.
 +
-Das GCP-Abonnement ist mit allen NetApp Konten verknüpft, mit denen Ihre Benutzeranmeldung verknüpft ist.
+Das Google Cloud Abonnement wird mit allen NetApp Konten verknüpft, mit denen Ihre Benutzeranmeldung verknüpft ist. Wenn Sie den Zugriff auf das neue Abonnement einschränken möchten, können Sie die NetApp Konten, die mit dem Abonnement verbunden sind, über Digital Wallet managen. link:task-manage-subscriptions.html#manage-your-subscriptions["Hier erfahren Sie, wie Sie Ihre Abonnements verwalten"].
 
 +
 image:screenshot_gcp_sub_mapping.png["Ein Screenshot, wie ein GCP-Abonnement für ein NetApp Konto zugeordnet wird"]
