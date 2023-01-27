@@ -20,11 +20,11 @@ So können beispielsweise mehrere Benutzer Cloud Volumes ONTAP Systeme in isolie
 
 Wenn Sie zum ersten Mal auf BlueXP zugreifen, werden Sie aufgefordert, ein NetApp Konto auszuwählen oder zu erstellen:
 
-image:screenshot_account_selection.gif["Einen Screenshot des BlueXP Setup-Assistenten, in dem Sie zur Eingabe des NetApp Kontos aufgefordert werden, in dem Sie BlueXP erstellen möchten."]
+image:screenshot-account-selection.png["Einen Screenshot des BlueXP Setup-Assistenten, in dem Sie zur Eingabe des NetApp Kontos aufgefordert werden, in dem Sie BlueXP erstellen möchten."]
 
-BlueXP-Kontoadministratoren können dann die Einstellungen für dieses Konto ändern, indem sie Benutzer (Mitglieder), Arbeitsbereiche, Connectors und Abonnements verwalten:
+BlueXP-Kontoadministratoren können dann die Einstellungen für dieses Konto ändern, indem sie Benutzer (Mitglieder), Arbeitsbereiche und Connectors verwalten:
 
-image:screenshot_account_settings.gif["Ein Screenshot mit dem Widget „Konto verwalten“, über das Sie Benutzer, Arbeitsbereiche und Connectors verwalten können."]
+image:screenshot-account-settings.png["Ein Screenshot mit dem Widget „Konto verwalten“, über das Sie Benutzer, Arbeitsbereiche und Connectors verwalten können."]
 
 Schritt-für-Schritt-Anweisungen finden Sie unter link:task-setting-up-netapp-accounts.html["NetApp Konto einrichten"].
 
@@ -32,7 +32,7 @@ Schritt-für-Schritt-Anweisungen finden Sie unter link:task-setting-up-netapp-ac
 
 == Kontoeinstellungen
 
-Im Widget „Manage Account“ in BlueXP können Account-Administratoren ein NetApp Konto verwalten. Wenn Sie gerade Ihr Konto erstellt, dann beginnen Sie von Grund auf. Wenn Sie jedoch bereits ein Konto eingerichtet haben, sehen Sie _all_ die Benutzer, Arbeitsbereiche, Connectors und Abonnements, die mit dem Konto verknüpft sind.
+Im Widget „Manage Account“ in BlueXP können Account-Administratoren ein NetApp Konto verwalten. Wenn Sie gerade Ihr Konto erstellt, dann beginnen Sie von Grund auf. Wenn Sie jedoch bereits ein Konto eingerichtet haben, sehen Sie _all_ die Benutzer, Arbeitsbereiche und Connectors, die mit dem Konto verknüpft sind.
 
 
 
@@ -62,11 +62,11 @@ link:reference-user-roles.html["Hier erfahren Sie mehr über diese Rollen"].
 
 In BlueXP isoliert ein Arbeitsbereich beliebig viele _Arbeitsumgebungen_ aus anderen Arbeitsumgebungen. Workspace-Administratoren können nicht auf die Arbeitsumgebungen in einem Arbeitsbereich zugreifen, es sei denn, der Kontoadministrator ordnet den Administrator diesem Arbeitsbereich zu.
 
-Eine Arbeitsumgebung ist ein Speichersystem:
+Eine Arbeitsumgebung ist ein Storage-System. Beispiel:
 
-* Single Node Cloud Volumes ONTAP System oder ein HA-Paar
-* Ein On-Premises ONTAP Cluster in Ihrem Netzwerk
-* Ein ONTAP Cluster in einer NetApp Private Storage-Konfiguration
+* Ein Cloud Volumes ONTAP System
+* Einem lokalen ONTAP Cluster erhalten
+* Einen Kubernetes-Cluster erstellen
 
 
 link:task-setting-up-netapp-accounts.html["Erfahren Sie, wie Sie einen Arbeitsbereich hinzufügen"].
@@ -77,25 +77,9 @@ link:task-setting-up-netapp-accounts.html["Erfahren Sie, wie Sie einen Arbeitsbe
 
 Mit einem Connector kann BlueXP Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung verwalten. Der Connector wird auf einer Virtual-Machine-Instanz ausgeführt, die Sie bei Ihrem Cloud-Provider implementieren, oder auf einem von Ihnen konfigurierten On-Premises-Host.
 
-Sie können einen Connector mit mehr als einem NetApp Cloud-Datenservice verwenden. Wenn Sie beispielsweise bereits über einen Connector für BlueXP verfügen, können Sie ihn auswählen, wenn Sie den Cloud Tiering Service einrichten.
+Sie können einen Connector mit mehr als einem NetApp Cloud-Datenservice verwenden. Wenn Sie beispielsweise einen Connector für das Management von Cloud Volumes ONTAP verwenden, können Sie denselben Connector mit einem anderen Service wie Cloud Tiering verwenden.
 
 link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].
-
-
-
-== Abonnements
-
-Dies sind die NetApp Abonnements, die mit dem ausgewählten Konto verknüpft sind.
-
-Wenn Sie BlueXP über den Marktplatz eines Cloud-Providers abonnieren, werden Sie auf die BlueXP-Website weitergeleitet, auf der Sie Ihr Abonnement speichern und mit bestimmten Konten verknüpfen müssen.
-
-Nach dem Abonnement steht jedes Abonnement über das Widget „Konto verwalten“ zur Verfügung. Sie sehen nur die Abonnements, die mit dem Konto verknüpft sind, das Sie derzeit anzeigen.
-
-Sie haben die Möglichkeit, ein Abonnement umzubenennen und das Abonnement von einem oder mehreren Konten zu entfernen.
-
-Nehmen wir zum Beispiel an, dass Sie zwei Konten haben und jedes über separate Abonnements abgerechnet wird. Sie können ein Abonnement von einem der Konten ablösen, so dass die Benutzer in diesem Konto nicht versehentlich das falsche Abonnement wählen, wenn Sie eine Cloud Volume ONTAP Arbeitsumgebung erstellen.
-
-link:task-managing-netapp-accounts.html#managing-subscriptions["Erfahren Sie, wie Sie Abonnements verwalten"].
 
 
 

@@ -123,4 +123,4 @@ Workspace-Administratoren können diese Anschlüsse jetzt verwenden, um Cloud Vo
 
 == Was kommt als Nächstes?
 
-Nachdem Sie Ihr Konto eingerichtet haben, können Sie es jederzeit verwalten, indem Sie Benutzer entfernen, Arbeitsbereiche, Connectors und Abonnements verwalten. link:task-managing-netapp-accounts.html["Erfahren Sie, wie Sie Ihr Konto verwalten"].
+Nachdem Sie Ihr Konto eingerichtet haben, können Sie es jederzeit verwalten, indem Sie Benutzer entfernen, Arbeitsbereiche verwalten und Connectors verwalten. link:task-managing-netapp-accounts.html["Erfahren Sie, wie Sie Ihr Konto verwalten"].

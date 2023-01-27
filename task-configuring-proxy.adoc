@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-configuring-proxy.html 
 keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
-summary: Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die gesamte HTTP-Kommunikation mit dem Internet verwenden müssen, müssen Sie Ihre Connectors so konfigurieren, dass sie diesen HTTP-Proxyserver verwenden. Der Proxyserver kann sich in der Cloud oder im Netzwerk befinden. 
+summary: Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die gesamte Kommunikation mit dem Internet verwenden müssen, müssen Sie Ihre Connectors so konfigurieren, dass sie diesen Proxy-Server verwenden. Wenn Sie während der Installation keinen Connector so konfiguriert haben, dass er einen Proxyserver verwendet, können Sie den Connector so konfigurieren, dass er diesen Proxyserver verwendet. 
 ---
-= Konfigurieren eines Connectors für die Verwendung eines HTTP-Proxyservers
+= Konfigurieren Sie einen Konnektor für die Verwendung eines HTTP-Proxyservers
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,9 @@ summary: Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die ge
 
 
 [role="lead"]
-Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die gesamte HTTP-Kommunikation mit dem Internet verwenden müssen, müssen Sie Ihre Connectors so konfigurieren, dass sie einen HTTP-Proxyserver verwenden. Der Proxyserver kann sich in der Cloud oder im Netzwerk befinden.
+Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die gesamte Kommunikation mit dem Internet verwenden müssen, müssen Sie Ihre Connectors so konfigurieren, dass sie diesen Proxy-Server verwenden. Wenn Sie während der Installation keinen Connector so konfiguriert haben, dass er einen Proxyserver verwendet, können Sie den Connector so konfigurieren, dass er diesen Proxyserver verwendet.
 
-
-NOTE: BlueXP unterstützt die Verwendung eines HTTPS-Proxys mit dem Connector nicht.
+BlueXP unterstützt die Konfiguration eines HTTP-Proxyservers über die Benutzeroberfläche. Der Proxyserver kann sich in der Cloud oder im Netzwerk befinden.
 
 Die Konfiguration des Connectors zur Verwendung eines HTTP-Proxyservers bietet ausgehenden Internetzugriff, wenn keine öffentliche IP-Adresse oder ein NAT-Gateway verfügbar ist. Dieser Proxy-Server stellt nur den Connector mit einer ausgehenden Verbindung bereit. Es bietet keine Konnektivität für Cloud Volumes ONTAP Systeme.
 
