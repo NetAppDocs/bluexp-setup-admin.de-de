@@ -60,19 +60,6 @@ AWS-Services (amazonaws.com):
 
 
 | \https://widget.intercom.io | Für Ihren Produkt-Chat, der Ihnen das Gespräch mit NetApp Cloud-Experten ermöglicht. 
-
-
-| Die IP-Adresse des Connectors  a| 
-In den meisten Fällen sollten Sie mit BlueXP von der SaaS-UI arbeiten, aber link:concept-connectors.html#the-local-user-interface["Wenn Sie die lokale UI verwenden"], Dann müssen Sie die IP-Adresse des Hosts von einem Webbrowser eingeben.
-
-Verwenden Sie je nach Anbindung an Ihren Cloud-Provider die private IP oder eine dem Host zugewiesene öffentliche IP:
-
-* Eine private IP funktioniert, wenn Sie über ein VPN und direkten Zugriff auf Ihr virtuelles Netzwerk verfügen
-* Eine öffentliche IP funktioniert in jedem Netzwerkszenario
-
-
-In beiden Fällen ist ein sicherer Netzwerkzugriff möglich, da die Sicherheitsgruppenregeln den Zugriff nur von autorisierten IPs oder Subnetzen ermöglichen.
-
 |===
 --
 Ausgehende Netzwerke für einen Konnektor:: Nach der Anmeldung bei BlueXP muss ein BlueXP Account Admin einen _Connector_ bei einem Cloud-Provider oder in Ihrem On-Premises-Netzwerk bereitstellen. Mit dem Connector kann BlueXP Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung verwalten. Beachten Sie, dass für die meisten, aber nicht für alle Services und Funktionen in BlueXP ein Connector erforderlich ist. link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder und deren Funktionsweise"].
@@ -86,6 +73,24 @@ Für den Konnektor ist ein abgehender Internetzugang erforderlich, um die folgen
 [cols="2*"]
 |===
 | Endpunkte | Zweck 
+
+
+| \Https://<region>.amazonaws.com | Managen von Ressourcen in AWS. 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com | Für das Managen von Ressourcen in Azure Public Regionen. 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us | Managen von Ressourcen in Azure Government Regionen. 
+
+
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | Zum Managen von Ressourcen in der Region Azure-IL6. 
+
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | Für das Management von Ressourcen in Azure China Regionen. 
+
+
+| \https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Zum Managen von Ressourcen in Google Cloud. 
 
 
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 

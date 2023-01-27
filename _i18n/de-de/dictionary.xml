@@ -658,11 +658,6 @@
   <block id="36e6435fcbb8fc1cb1db7a6b55e336f8" category="cell">Ihr Webbrowser stellt eine Verbindung zu diesen Endpunkten her, um eine zentralisierte Benutzerauthentifizierung über BlueXP zu ermöglicht.</block>
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">Für Ihren Produkt-Chat, der Ihnen das Gespräch mit NetApp Cloud-Experten ermöglicht.</block>
-  <block id="0b83c97017787b7fdc5aaf31aaf0da59" category="inline-link-macro">Wenn Sie die lokale UI verwenden</block>
-  <block id="4c2345ba2614b91eb52d47835c18de63" category="paragraph">Verwenden Sie je nach Anbindung an Ihren Cloud-Provider die private IP oder eine dem Host zugewiesene öffentliche IP:</block>
-  <block id="a106b753f18f3561086de4e9f0a06365" category="list-text">Eine private IP funktioniert, wenn Sie über ein VPN und direkten Zugriff auf Ihr virtuelles Netzwerk verfügen</block>
-  <block id="460ad81025c5e747a488e7ca0874eca7" category="list-text">Eine öffentliche IP funktioniert in jedem Netzwerkszenario</block>
-  <block id="bdaeab98be7ea04f74f8e3ab24e46ace" category="paragraph">In beiden Fällen ist ein sicherer Netzwerkzugriff möglich, da die Sicherheitsgruppenregeln den Zugriff nur von autorisierten IPs oder Subnetzen ermöglichen.</block>
   <block id="69ff128f810d7736dba17f0dc54a437f" category="list-text">Ausgehende Netzwerke für einen Konnektor</block>
   <block id="aad0acfa5f3eeed54fc96b5bafd12ca7" category="inline-link-macro">Erfahren Sie mehr über Steckverbinder und deren Funktionsweise</block>
   <block id="ea7babb79350418e9437972e245c5e46" category="list-text">Nach der Anmeldung bei BlueXP muss ein BlueXP Account Admin einen _Connector_ bei einem Cloud-Provider oder in Ihrem On-Premises-Netzwerk bereitstellen. Mit dem Connector kann BlueXP Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung verwalten. Beachten Sie, dass für die meisten, aber nicht für alle Services und Funktionen in BlueXP ein Connector erforderlich ist. <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>.</block>
@@ -2796,8 +2791,6 @@
   <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">Anschluss 3.9.25</block>
   <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen und Fehlerbehebungen.</block>
   <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
-  <block id="c07581a9e3714e573075f510c11a8b05" category="cell">Die IP-Adresse des Connectors</block>
-  <block id="1c3a99b9cab6b55c9a46ccd58a1283c8" category="paragraph">In den meisten Fällen sollten Sie mit BlueXP von der SaaS-UI arbeiten, aber <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>, Dann müssen Sie die IP-Adresse des Hosts von einem Webbrowser eingeben.</block>
   <block id="c24732648af9b734203cc5a8a19f2537" category="paragraph">HTTP (80) und HTTPS (443) bieten Zugriff auf die lokale Benutzeroberfläche, die Sie in seltenen Fällen verwenden werden. SSH (22) ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen. In der Zwischenzeit sind eingehende Verbindungen über Port 3128 erforderlich, wenn Sie Cloud Volumes ONTAP-Systeme in einem Subnetz bereitstellen, in dem keine ausgehende Internetverbindung verfügbar ist.</block>
   <block id="31cd3194dbc40a48cdae969161abd4a5" category="list-text">Nach Abschluss der Einrichtung können Sie die Services von BlueXP nutzen. Beachten Sie, dass für jeden Service eigene Netzwerkanforderungen gelten. Weitere Informationen finden Sie auf den folgenden Seiten.</block>
   <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">Microsoft.Storage/storageAccounts/listeAccountActionSas/Action</block>
@@ -2835,4 +2828,31 @@
   <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Dies sind die Anmeldeinformationen, die BlueXP zur Bereitstellung von Cloud Volumes ONTAP verwendet.</block>
   <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">Sie müssen diesen Schritt abschließen, um das Google Cloud Abonnement mit Ihrem NetApp Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.</block>
   <block id="3ef651256a22c79667581299224bf5b3" category="paragraph">Das Google Cloud Abonnement wird mit allen NetApp Konten verknüpft, mit denen Ihre Benutzeranmeldung verknüpft ist. Wenn Sie den Zugriff auf das neue Abonnement einschränken möchten, können Sie die NetApp Konten, die mit dem Abonnement verbunden sind, über Digital Wallet managen. <block ref="b8248518be94d54d622f572d1d196b86" category="inline-link-macro-rx"></block>.</block>
+  <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">\https://management.azure.com \https://login.microsoftonline.com</block>
+  <block id="068395f3cd26ca40ad905de3790c9435" category="cell">Für das Managen von Ressourcen in Azure Public Regionen.</block>
+  <block id="6696e65cc873b2af9823ebafd2e332a8" category="cell">\https://management.usgovcloudapi.net \https://login.microsoftonline.us</block>
+  <block id="61b99e46ccbb3b872a32fbf2f064b87b" category="cell">Managen von Ressourcen in Azure Government Regionen.</block>
+  <block id="2ef9710cab4f48c3bcc58dac5ab20752" category="cell">\https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud</block>
+  <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">Zum Managen von Ressourcen in der Region Azure-IL6.</block>
+  <block id="c9499afcd46d4343e88fb1acd8c931d8" category="cell">\https://management.chinacloudapi.cn \https://login.chinacloudapi.cn</block>
+  <block id="232055d452a21264f8d549e50d695b18" category="cell">Für das Management von Ressourcen in Azure China Regionen.</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Unterstützung für Cloud-Provider-Lösungen</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">Technische Unterstützung für die folgenden Lösungen von Cloud-Providern, die Sie in BlueXP integriert haben, finden Sie in der BlueXP-Dokumentation zu diesem Produkt unter „Hilfe“.</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="701741ae6d160ecd5058c2eefa334a6c" category="cell">\Https://&lt;region&gt;.amazonaws.com</block>
+  <block id="2452d1aef80214dacfb33f192b762434" category="cell">Managen von Ressourcen in AWS.</block>
+  <block id="3933fdb8f34cb01278a72748377338a5" category="cell">\https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
+  <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">Zum Managen von Ressourcen in Google Cloud.</block>
+  <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">- Cloudkms.ckryptoKeys.get - cloudkms.ckryptoKeys.getIamPolicy - cloudkms.ckryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.Keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy</block>
+  <block id="9e4edb2eed22d4c91a667b29567ee08d" category="cell">Sie können im Cloud Backup-Aktivierungs-Assistenten Ihre eigenen, vom Kunden gemanagten Schlüssel auswählen und nicht die von Google gemanagten Standardschlüssel verwenden.</block>
+  <block id="8988a38ba3aaf6cb48e549dc3babd50e" category="section-title">27. Januar 2023</block>
+  <block id="6f3dd3aa6f04d6f98a881afe84a14828" category="paragraph">Die Richtlinie hat folgende Berechtigungen hinzugefügt:</block>
+  <block id="d5b52c55f0ffe2752d39b0d85f9ad0ef" category="list-text">Cloudkms.KryptoKeys.getIamPolicy</block>
+  <block id="631730c9e44e80f5f69e36901808bf98" category="list-text">cloudkms.cryptoKeys.setIamPolicy</block>
+  <block id="7d5beaedd0c93a11314ff6699a51454e" category="list-text">Cloudkms.Schlüsselanhänger.get</block>
+  <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">Cloudkms.Keyrings.getIamPolicy</block>
+  <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
+  <block id="3705a469472bf9882aff3f58dc3f4c5b" category="cell">\Shttps://Management.Azure.microsoft.sCloud \https://login.microsoftonline.microsoft.scloud</block>
 </blocks>

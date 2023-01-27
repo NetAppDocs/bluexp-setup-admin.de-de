@@ -124,6 +124,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 
 
@@ -228,4 +233,27 @@ includedPermissions:
 
 
 | - Monitoring.Timeeries.list - Storage.Buckets.getIamPolicy | Um Informationen zu Google Cloud Storage Buckets zu erhalten. 
+
+
+| - Cloudkms.ckryptoKeys.get - cloudkms.ckryptoKeys.getIamPolicy - cloudkms.ckryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.Keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | Sie können im Cloud Backup-Aktivierungs-Assistenten Ihre eigenen, vom Kunden gemanagten Schlüssel auswählen und nicht die von Google gemanagten Standardschlüssel verwenden. 
 |===
+
+
+== Änderungsprotokoll
+
+Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== 27. Januar 2023
+
+Die Richtlinie hat folgende Berechtigungen hinzugefügt:
+
+* Cloudkms.KryptoKeys.getIamPolicy
+* cloudkms.cryptoKeys.setIamPolicy
+* Cloudkms.Schlüsselanhänger.get
+* Cloudkms.Keyrings.getIamPolicy
+* cloudkms.keyRings.setIamPolicy
+
+
+Diese Berechtigungen sind für Cloud Backup erforderlich.

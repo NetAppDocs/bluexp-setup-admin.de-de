@@ -275,6 +275,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Erstellen Sie ein Google Cloud-Servicekonto, und wenden Sie die soeben erstellte benutzerdefinierte Rolle an"^].
 . Wenn Sie Cloud Volumes ONTAP in anderen Projekten implementieren möchten, https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["Gewähren Sie Zugriff, indem Sie dem Projekt das Servicekonto mit der Rolle BlueXP hinzufügen"^]. Sie müssen diesen Schritt für jedes Projekt wiederholen.
@@ -388,6 +393,9 @@ Für den Connector ist ein abgehender Internetzugang erforderlich, um Ressourcen
 [cols="2*"]
 |===
 | Endpunkte | Zweck 
+
+
+| \https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Zum Managen von Ressourcen in Google Cloud. 
 
 
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 

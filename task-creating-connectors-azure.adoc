@@ -73,6 +73,18 @@ Für den Connector ist ein abgehender Internetzugang erforderlich, um Ressourcen
 | Endpunkte | Zweck 
 
 
+| \https://management.azure.com \https://login.microsoftonline.com | Für das Managen von Ressourcen in Azure Public Regionen. 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us | Managen von Ressourcen in Azure Government Regionen. 
+
+
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | Zum Managen von Ressourcen in der Region Azure-IL6. 
+
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | Für das Management von Ressourcen in Azure China Regionen. 
+
+
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
 
 

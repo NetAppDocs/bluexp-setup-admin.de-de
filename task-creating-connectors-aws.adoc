@@ -219,6 +219,9 @@ Für den Connector ist ein abgehender Internetzugang erforderlich, um Ressourcen
 | Endpunkte | Zweck 
 
 
+| \Https://<region>.amazonaws.com | Managen von Ressourcen in AWS. 
+
+
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
 
 
