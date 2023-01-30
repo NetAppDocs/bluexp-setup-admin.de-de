@@ -282,6 +282,10 @@ Wir empfehlen nicht, die SaaS-Plattform zu deaktivieren, es sei denn, Sie müsse
 
 Die folgenden Dienste stehen bei BlueXP nicht zur Verfügung, wenn Sie die SaaS-Plattform deaktivieren:
 
+* Cloud-Backup
++
+Cloud Backup wird in Regierungsregionen unterstützt, wenn die SaaS-Plattform deaktiviert ist, nicht aber in kommerziellen Regionen, in denen die SaaS-Plattform deaktiviert ist
+
 * Cloud-Daten Sinnvoll
 * Kubernetes
 * Cloud Tiering

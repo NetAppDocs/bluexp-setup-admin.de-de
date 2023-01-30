@@ -2848,4 +2848,5 @@
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die gesamte Kommunikation mit dem Internet verwenden müssen, müssen Sie Ihre Connectors so konfigurieren, dass sie diesen Proxy-Server verwenden. Wenn Sie während der Installation keinen Connector so konfiguriert haben, dass er einen Proxyserver verwendet, können Sie den Connector so konfigurieren, dass er diesen Proxyserver verwendet.</block>
   <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">Konfigurieren Sie einen Konnektor für die Verwendung eines HTTP-Proxyservers</block>
   <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP unterstützt die Konfiguration eines HTTP-Proxyservers über die Benutzeroberfläche. Der Proxyserver kann sich in der Cloud oder im Netzwerk befinden.</block>
+  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">Cloud Backup wird in Regierungsregionen unterstützt, wenn die SaaS-Plattform deaktiviert ist, nicht aber in kommerziellen Regionen, in denen die SaaS-Plattform deaktiviert ist</block>
 </blocks>
