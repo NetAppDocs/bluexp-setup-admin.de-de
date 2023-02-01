@@ -88,7 +88,7 @@ Nachdem Sie sich vergewissern, dass Sie über einen unterstützten Linux-Host ve
 
 .Was Sie benötigen
 * Root-Berechtigungen zum Installieren des Connectors.
-* Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist.
+* Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist. HTTP und HTTPS werden unterstützt.
 +
 Sie haben die Möglichkeit, nach der Installation einen Proxyserver zu konfigurieren, aber dafür muss der Connector neu gestartet werden.
 
@@ -110,6 +110,16 @@ Wenn Sie eine Meldung erhalten, dass die Installation des awscli fehlgeschlagen 
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
+. Wenn die Systemvariablen _http_Proxy_ oder _https_Proxy_ auf dem Host festgelegt sind, entfernen Sie sie:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Wenn Sie diese Systemvariablen nicht entfernen, schlägt die Installation fehl.
+
 . Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"^], Und dann kopieren Sie es auf den Linux-Host.
 +
 Sie sollten das Connector-Installationsprogramm herunterladen, das für die Verwendung in Ihrem Netzwerk oder in der Cloud bestimmt ist.

@@ -37,7 +37,7 @@ Um den Connector in AWS zu starten, muss BlueXP sich mit AWS authentifizieren, i
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Netzwerk einrichten
 [role="quick-margin-para"]
-Sie benötigen eine VPC und ein Subnetz mit Outbound-Internetzugang zu bestimmten Endpunkten. Wenn ein HTTP-Proxy für das ausgehende Internet erforderlich ist, benötigen Sie die IP-Adresse, die Anmeldeinformationen und das HTTPS-Zertifikat.
+Sie benötigen eine VPC und ein Subnetz mit Outbound-Internetzugang zu bestimmten Endpunkten. Wenn ein Proxyserver für das ausgehende Internet benötigt wird, benötigen Sie die IP-Adresse, die Anmeldeinformationen und das HTTPS-Zertifikat.
 
 [role="quick-margin-para"]
 <<Netzwerk einrichten,Netzwerkanforderungen anzeigen>>.
@@ -247,7 +247,7 @@ NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er be
 
 === Proxy-Server
 
-Wenn Ihr Unternehmen einen HTTP-Proxy für den gesamten ausgehenden Internet-Datenverkehr benötigt, informieren Sie sich über Ihren HTTP-Proxy:
+Wenn Ihr Unternehmen einen Proxy-Server für den gesamten ausgehenden Internet-Datenverkehr benötigt, erhalten Sie die folgenden Informationen über Ihren HTTP- oder HTTPS-Proxy:
 
 * IP-Adresse
 * Anmeldedaten
@@ -300,7 +300,7 @@ TIP: Wenn Sie die Option *Rolle übernehmen* wählen, können Sie den ersten Sat
 *** Wählen Sie aus, ob Sie die EBS-Festplatten des Connectors verschlüsseln möchten. Sie haben die Möglichkeit, den Standardverschlüsselungsschlüssel zu verwenden oder einen benutzerdefinierten Schlüssel zu verwenden.
 
 
-** *Netzwerk*: Geben Sie ein VPC-, Subnetz- und Schlüsselpaar für die Instanz an, wählen Sie aus, ob eine öffentliche IP-Adresse aktiviert werden soll, und geben Sie optional eine Proxy-Konfiguration an.
+** *Netzwerk*: Geben Sie ein VPC-, Subnetz- und Schlüsselpaar für die Instanz an, wählen Sie aus, ob eine öffentliche IP-Adresse aktiviert werden soll, und geben Sie optional eine Proxy-Konfiguration an (HTTP und HTTPS werden unterstützt).
 +
 Stellen Sie sicher, dass Sie über das richtige Schlüsselpaar verfügen, das Sie mit dem Anschluss verwenden können. Ohne ein Schlüsselpaar können Sie nicht auf die virtuelle Connector-Maschine zugreifen.
 

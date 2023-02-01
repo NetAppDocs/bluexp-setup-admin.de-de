@@ -425,7 +425,7 @@ Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
 
 === Cloud Volumes ONTAP
 
-Der Connector stellt die folgenden API-Anforderungen für die Implementierung und das Management von Cloud Volumes ONTAP in AWS.
+Der Connector stellt folgende API-Anforderungen für die Implementierung und das Management von Cloud Volumes ONTAP in Azure.
 
 [cols="5*"]
 |===

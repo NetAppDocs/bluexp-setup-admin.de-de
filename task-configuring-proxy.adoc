@@ -4,7 +4,7 @@ permalink: task-configuring-proxy.html
 keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
 summary: Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die gesamte Kommunikation mit dem Internet verwenden müssen, müssen Sie Ihre Connectors so konfigurieren, dass sie diesen Proxy-Server verwenden. Wenn Sie während der Installation keinen Connector so konfiguriert haben, dass er einen Proxyserver verwendet, können Sie den Connector so konfigurieren, dass er diesen Proxyserver verwendet. 
 ---
-= Konfigurieren Sie einen Konnektor für die Verwendung eines HTTP-Proxyservers
+= Konfigurieren Sie einen Konnektor für die Verwendung eines Proxy-Servers
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,11 +16,11 @@ summary: Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die ge
 [role="lead"]
 Wenn Sie in Ihren Unternehmensrichtlinien einen Proxyserver für die gesamte Kommunikation mit dem Internet verwenden müssen, müssen Sie Ihre Connectors so konfigurieren, dass sie diesen Proxy-Server verwenden. Wenn Sie während der Installation keinen Connector so konfiguriert haben, dass er einen Proxyserver verwendet, können Sie den Connector so konfigurieren, dass er diesen Proxyserver verwendet.
 
-BlueXP unterstützt die Konfiguration eines HTTP-Proxyservers über die Benutzeroberfläche. Der Proxyserver kann sich in der Cloud oder im Netzwerk befinden.
+BlueXP unterstützt HTTP und HTTPS. Der Proxyserver kann sich in der Cloud oder im Netzwerk befinden.
 
-Die Konfiguration des Connectors zur Verwendung eines HTTP-Proxyservers bietet ausgehenden Internetzugriff, wenn keine öffentliche IP-Adresse oder ein NAT-Gateway verfügbar ist. Dieser Proxy-Server stellt nur den Connector mit einer ausgehenden Verbindung bereit. Es bietet keine Konnektivität für Cloud Volumes ONTAP Systeme.
+Wenn der Connector für die Verwendung eines Proxy-Servers konfiguriert wird, erhält der ausgehende Internetzugriff, wenn eine öffentliche IP-Adresse oder ein NAT-Gateway nicht verfügbar ist. Dieser Proxy-Server stellt nur den Connector mit einer ausgehenden Verbindung bereit. Es bietet keine Konnektivität für Cloud Volumes ONTAP Systeme.
 
-Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten haben, konfiguriert BlueXP diese Cloud Volumes ONTAP-Systeme automatisch so, dass sie einen Proxyserver verwenden, der im Connector enthalten ist. Die einzige Anforderung besteht darin, sicherzustellen, dass die Sicherheitsgruppe des Connectors eingehende Verbindungen über Port 3128 zulässt. Sie müssen diesen Port öffnen, nachdem Sie den Connector bereitgestellt haben.
+Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten haben, konfiguriert BlueXP diese Cloud Volumes ONTAP-Systeme automatisch so, dass sie einen Proxyserver verwenden, der im Connector enthalten ist. Die einzige Anforderung besteht darin, sicherzustellen, dass die Sicherheitsgruppe des Connectors eingehende Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.
 
 
 
@@ -50,7 +50,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 . Richten Sie den Proxy ein:
 +
 .. Klicken Sie Auf *Proxy Aktivieren*.
-.. Geben Sie den Server mithilfe der Syntax an http://_address:port_[]
+.. Geben Sie den Server mithilfe der Syntax an http://_address:port_[] Oder https://_address:port_[]
 .. Geben Sie einen Benutzernamen und ein Kennwort an, wenn eine grundlegende Authentifizierung für den Server erforderlich ist
 .. Klicken Sie Auf *Speichern*.
 +

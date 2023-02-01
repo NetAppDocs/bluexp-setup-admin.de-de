@@ -110,7 +110,7 @@ NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er be
 
 === Proxy-Server
 
-Wenn Ihr Unternehmen einen HTTP-Proxy für den gesamten ausgehenden Internet-Datenverkehr benötigt, informieren Sie sich über Ihren HTTP-Proxy:
+Wenn Ihr Unternehmen einen Proxy-Server für den gesamten ausgehenden Internet-Datenverkehr benötigt, erhalten Sie die folgenden Informationen über Ihren HTTP- oder HTTPS-Proxy:
 
 * IP-Adresse
 * Anmeldedaten
@@ -588,7 +588,7 @@ Mit BlueXP können Sie einen Connector in Azure direkt über die Benutzeroberfl�
 .Was Sie benötigen
 * Ein Azure Abonnement.
 * Eine vnet und Subnetz in Ihrer bevorzugten Azure-Region.
-* Details zu einem HTTP-Proxy, wenn Ihr Unternehmen einen Proxy für den gesamten ausgehenden Internet-Datenverkehr benötigt:
+* Details zu einem Proxy-Server, wenn Ihr Unternehmen einen Proxy für den gesamten ausgehenden Internet-Datenverkehr benötigt:
 +
 ** IP-Adresse
 ** Anmeldedaten
