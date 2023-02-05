@@ -441,8 +441,6 @@
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">Erfahren Sie mehr über den Proxy-Server des Connectors</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">Ermöglicht Cloud Volumes ONTAP den Zugang zum Internet, um AutoSupport-Nachrichten an den NetApp Support zu senden. Nach der Bereitstellung müssen Sie diesen Port manuell öffnen. <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>.</block>
-  <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
-  <block id="f0f5ff10d4c591333ded6e8023c5d365" category="cell">Ermöglicht die Aktivierung und Nutzung von Cloud Data Sense und Cloud Backup in öffentlicher Cloud-Implementierungen. Dieser Port ist auch für Cloud Backup erforderlich, wenn Sie die SaaS-Schnittstelle in Ihrem BlueXP-Konto deaktivieren.</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">Regeln für ausgehende Anrufe</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Die vordefinierte Sicherheitsgruppe für den Konnektor öffnet den gesamten ausgehenden Datenverkehr. Wenn dies akzeptabel ist, befolgen Sie die grundlegenden Regeln für ausgehende Anrufe. Wenn Sie strengere Regeln benötigen, verwenden Sie die erweiterten Outbound-Regeln.</block>
   <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">Grundlegende Regeln für ausgehende Anrufe</block>
@@ -2852,4 +2850,6 @@
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten haben, konfiguriert BlueXP diese Cloud Volumes ONTAP-Systeme automatisch so, dass sie einen Proxyserver verwenden, der im Connector enthalten ist. Die einzige Anforderung besteht darin, sicherzustellen, dass die Sicherheitsgruppe des Connectors eingehende Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">Geben Sie den Server mithilfe der Syntax an<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> Oder<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
   <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*Netzwerk*: Geben Sie ein VPC-, Subnetz- und Schlüsselpaar für die Instanz an, wählen Sie aus, ob eine öffentliche IP-Adresse aktiviert werden soll, und geben Sie optional eine Proxy-Konfiguration an (HTTP und HTTPS werden unterstützt).</block>
+  <block id="6bd6b829c865d2a64a85e79355655e12" category="cell">9060, 9061</block>
+  <block id="971da77efd7f98f0cb0eeb45103b5b77" category="cell">Ermöglicht die Aktivierung und Nutzung von Cloud Data Sense und Cloud Backup in öffentlicher Cloud-Implementierungen. Diese Ports sind auch für Cloud Backup erforderlich, wenn Sie die SaaS-Schnittstelle in Ihrem BlueXP-Konto deaktivieren.</block>
 </blocks>
