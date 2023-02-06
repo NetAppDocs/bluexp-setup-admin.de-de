@@ -40,7 +40,7 @@ image:screenshot_gcp_associate.gif["Ein Screenshot eines Google Cloud-Projekts u
 
 NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Sie sowohl Billing Admin-Berechtigungen in Ihrem Google Cloud-Konto als auch BlueXP-Login haben.
 
-. Führen Sie die Schritte des Abonnements durch und klicken Sie auf *Weiter*.
+. Überprüfen Sie die Abonnementschritte und klicken Sie auf *Weiter*.
 +
 image:screenshot_gcp_sub_popup.png["Ein Screenshot eines Popup-Abonnements"]
 
@@ -65,16 +65,25 @@ image:screenshot_gcp_marketplace_register.png["Ein Screenshot eines Pop-up-Pop-u
 
 NOTE: Sie müssen diesen Schritt abschließen, um das Google Cloud Abonnement mit Ihrem NetApp Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.
 
-. Nachdem Sie zu BlueXP umgeleitet wurden, melden Sie sich an oder registrieren Sie sich, und klicken Sie dann auf *Fertig*, um fortzufahren.
+. Auf der Seite *Subscription Assignment*:
 +
-Das Google Cloud Abonnement wird mit allen NetApp Konten verknüpft, mit denen Ihre Benutzeranmeldung verknüpft ist. Wenn Sie den Zugriff auf das neue Abonnement einschränken möchten, können Sie die NetApp Konten, die mit dem Abonnement verbunden sind, über Digital Wallet managen. link:task-manage-subscriptions.html#manage-your-subscriptions["Hier erfahren Sie, wie Sie Ihre Abonnements verwalten"].
+** Wählen Sie die NetApp Accounts aus, denen Sie dieses Abonnement zuordnen möchten.
+** Wählen Sie im Feld *vorhandenes Abonnement ersetzen* aus, ob Sie das vorhandene Abonnement für ein Konto automatisch durch dieses neue Abonnement ersetzen möchten.
++
+BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto durch dieses neue Abonnement. Wenn eine Gruppe von Anmeldeinformationen noch nicht mit einem Abonnement verknüpft wurde, wird dieses neue Abonnement nicht mit diesen Anmeldedaten verknüpft.
 
 +
-image:screenshot_gcp_sub_mapping.png["Ein Screenshot, wie ein GCP-Abonnement für ein NetApp Konto zugeordnet wird"]
+Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
+
+** Klicken Sie Auf *Speichern*.
++
+image:screenshot-google-cloud-subscription.png["Ein Screenshot der Seite „Subscription Assignment“, auf der Sie dieses Abonnement mit einem oder mehreren Konten verknüpfen können, und wählen Sie, das vorhandene Abonnement für eines dieser Konten zu ersetzen."]
 
 +
 
-NOTE: Wenn ein Mitarbeiter Ihres Unternehmens bereits über Ihr Rechnungskonto das NetApp BlueXP Abonnement abonniert hat, werden Sie weitergeleitet https://cloud.netapp.com/ontap-cloud?x-gcp-marketplace-token=["Die Cloud Volumes ONTAP-Seite auf der BlueXP-Website"^] Stattdessen. Sollte dies nicht unerwartet sein, wenden Sie sich an Ihr NetApp Vertriebsteam. Google ermöglicht nur ein Abonnement pro Google-Abrechnungskonto.
+NOTE: Wenn ein Mitarbeiter Ihres Unternehmens bereits über Ihr Rechnungskonto das NetApp BlueXP Abonnement abonniert hat, werden Sie weitergeleitet https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["Die Cloud Volumes ONTAP-Seite auf der BlueXP-Website"^] Stattdessen. Sollte dies nicht unerwartet sein, wenden Sie sich an Ihr NetApp Vertriebsteam. Google ermöglicht nur ein Abonnement pro Google-Abrechnungskonto.
+
+
 
 . Navigieren Sie nach Abschluss dieses Vorgangs zur Seite Anmeldeinformationen in BlueXP, und wählen Sie dieses neue Abonnement aus.
 +
@@ -94,11 +103,11 @@ Manchmal kann das Abonnieren von Cloud Volumes ONTAP über den Google Cloud Mark
 image:screenshot_gcp_manage_orders.png["Ein Screenshot der Marktplatz-Seite nach dem Abonnement."]
 
 +
-.. Wenn der Auftrag ein grünes Häkchen anzeigt und dies unerwartet ist, kann bereits ein anderer Mitarbeiter des Unternehmens, der dasselbe Rechnungskonto verwendet, abonniert werden. Wenn das unerwartete vorbereitet ist oder wenn Sie die Details zu diesem Abonnement benötigen, wenden Sie sich an Ihr NetApp Vertriebsteam.
+** Wenn der Auftrag ein grünes Häkchen anzeigt und dies unerwartet ist, kann bereits ein anderer Mitarbeiter des Unternehmens, der dasselbe Rechnungskonto verwendet, abonniert werden. Wenn das unerwartete vorbereitet ist oder wenn Sie die Details zu diesem Abonnement benötigen, wenden Sie sich an Ihr NetApp Vertriebsteam.
 +
 image:screenshot_gcp_green_marketplace.png["Ein Screenshot einer akzeptierten Berechtigung."]
 
-.. Wenn der Auftrag einen Clock- und *Ausstehend*-Status anzeigt, gehen Sie zurück zur Marktplatzseite und wählen Sie *auf Anbieter verwalten*, um den Prozess wie oben beschrieben abzuschließen.
+** Wenn der Auftrag einen Clock- und *Ausstehend*-Status anzeigt, gehen Sie zurück zur Marktplatzseite und wählen Sie *auf Anbieter verwalten*, um den Prozess wie oben beschrieben abzuschließen.
 +
 image:screenshot_gcp_pending_marketplace.png["Ein Screenshot einer ausstehenden Marktberechtigung."]
 

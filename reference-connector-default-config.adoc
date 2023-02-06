@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
 keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux 
-summary: Wenn Sie eine Fehlerbehebung für den Konnektor benötigen, können Sie die Konfiguration des Connectors unter Umständen besser verstehen. 
+summary: Möglicherweise möchten Sie mehr über den Connector erfahren, bevor Sie ihn bereitstellen, oder wenn Sie Probleme beheben müssen. 
 ---
 = Standardkonfiguration für den Konnektor
 :hardbreaks:

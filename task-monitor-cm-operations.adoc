@@ -98,7 +98,7 @@ Sie können bestimmte Arten von Benachrichtigungen per E-Mail versenden, damit S
 
 [NOTE]
 ====
-* Derzeit senden nur Cloud Sync, Cloud-Backup und Ransomware-Schutz Benachrichtigungen per E-Mail. Weitere Services werden in zukünftigen Versionen hinzugefügt.
+* Derzeit werden Benachrichtigungen per E-Mail zu den folgenden BlueXP Funktionen und Services gesendet: Connectors, Cloud Sync, Cloud Backup und Ransomware Protection. Weitere Services werden in zukünftigen Versionen hinzugefügt.
 * Das Senden von E-Mail-Benachrichtigungen wird nicht unterstützt, wenn der Connector auf einer Website ohne Internetzugang installiert ist.
 
 
@@ -143,7 +143,7 @@ image:screenshot-add-email-recipient.png["Ein Screenshot, in dem das Hinzufügen
 
 Sie können Benachrichtigungen von der Seite entfernen, wenn Sie sie nicht mehr sehen müssen. Sie können alle Benachrichtigungen auf einmal verwerfen oder einzelne Benachrichtigungen verwerfen.
 
-Um alle Benachrichtigungen auszublenden, klicken Sie im Benachrichtigungscenter auf image:button_3_vert_dots.png[""] Und wählen Sie *Alle verwerfen*.image:screenshot_notification_menu.png["Ein Screenshot, in dem das Menü Benachrichtigungen angezeigt wird, um Einstellungen auszuwählen und alle Optionen auszublenden."]
+Um alle Benachrichtigungen auszublenden, klicken Sie im Benachrichtigungscenter auf image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] Und wählen Sie *Alle verwerfen*.image:screenshot_notification_menu.png["Ein Screenshot, in dem das Menü Benachrichtigungen angezeigt wird, um Einstellungen auszuwählen und alle Optionen auszublenden."]
 
 Um einzelne Benachrichtigungen zu verwerfen, bewegen Sie den Cursor über die Benachrichtigung und klicken auf *abweisen*.image:screenshot_notification_dismiss1.png["Ein Screenshot, in dem das Abblenden einer einzelnen Benachrichtigung angezeigt wird."]
 

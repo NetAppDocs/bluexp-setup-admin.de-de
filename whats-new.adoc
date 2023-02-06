@@ -18,6 +18,54 @@ Neue Funktionen bei der Administration von BlueXP (ehemals Cloud Manager): NetAp
 
 
 
+== 5 Februar 2023
+
+
+
+=== Anschluss 3.9.26
+
+* Auf der Seite *Anmelden* werden Sie jetzt aufgefordert, die mit Ihrem Login verknüpfte E-Mail-Adresse einzugeben. Nach dem Klicken auf *Next* werden Sie von BlueXP aufgefordert, sich mit der Authentifizierungsmethode zu authentifizieren, die mit Ihrem Login verknüpft ist:
++
+** Das Passwort für Ihre NetApp Cloud-Anmeldedaten
+** Ihre föderierten Identitätsinformationen
+** Ihre Zugangsdaten für die NetApp Support Site
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["Ein Screenshot der BlueXP-Anmeldeseite, auf der Sie aufgefordert werden, Ihre E-Mail-Adresse einzugeben."]
+
+* Wenn Sie neu bei BlueXP sind und über bereits vorhandene Zugangsdaten für die NetApp Support Site (NSS) verfügen, können Sie die Anmeldeseite überspringen und Ihre E-Mail-Adresse direkt auf der Anmeldeseite eingeben. BlueXP meldet Sie im Rahmen dieser ersten Anmeldung an.
+* Wenn Sie BlueXP über den Markt Ihres Cloud-Providers abonnieren, haben Sie nun die Möglichkeit, das vorhandene Abonnement für ein Konto durch das neue Abonnement zu ersetzen.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["Ein Screenshot, der die Abonnementzuweisung für ein BlueXP-Konto anzeigt."]
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Verbinden Sie ein AWS Abonnement"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Lesen Sie, wie Sie ein Azure-Abonnement zuordnen"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["So verknüpfen Sie ein Google Cloud-Abonnement"]
+
+
+* BlueXP benachrichtigt Sie nun, wenn Ihr Connector 14 Tage oder länger ausgeschaltet wurde.
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Erfahren Sie mehr über BlueXP-Benachrichtigungen"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["Erfahren Sie, warum die Anschlüsse weiterhin ausgeführt werden sollten"]
+
+
+* Wir haben die Connector-Richtlinie für Google Cloud aktualisiert, um eine erforderliche Erlaubnis zum Erstellen und Managen von Storage-VMs auf Cloud Volumes ONTAP HA-Paaren zu enthalten:
++
+compute.instances.updateNetworkInterface
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Zeigen Sie Google Cloud-Berechtigungen für den Connector an"].
+
+* Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
+
+
+
+
+
 == Januar 2023
 
 

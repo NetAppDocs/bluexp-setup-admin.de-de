@@ -26,6 +26,8 @@ sidebar:
     - title: Checkliste für die ersten Schritte
       url: "/reference-checklist-cm.html"
     - title: Melden Sie sich bei BlueXP an
+      url: "/task-sign-up-saas.html"
+    - title: Melden Sie sich bei BlueXP an
       url: "/task-logging-in.html"
     - title: Richten Sie einen NetApp Account ein
       entries:

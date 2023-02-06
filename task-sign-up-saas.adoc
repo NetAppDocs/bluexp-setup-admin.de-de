@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: task-sign-up-saas.html 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
+summary: Wenn Sie mit BlueXP beginnen, müssen Sie sich zuerst anmelden. Sie erhalten die Möglichkeit, ein Konto zu erstellen, aber Sie können diesen Schritt überspringen, wenn Sie zu einem bestehenden Konto eingeladen werden. 
+---
+= Melden Sie sich bei BlueXP an
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie mit BlueXP beginnen, müssen Sie sich zuerst anmelden. Sie erhalten die Möglichkeit, ein Konto zu erstellen, aber Sie können diesen Schritt überspringen, wenn Sie zu einem bestehenden Konto eingeladen werden.
+
+.Ein Hinweis zu Regierungsregionen
+Wenn Sie auf BlueXP über eine Regierungsregion oder eine Website zugreifen möchten, die keinen ausgehenden Internetzugang hat, müssen Sie einen Konnektor erstellen und sich bei der BlueXP-Benutzeroberfläche anmelden, die lokal auf dem Connector ausgeführt wird. link:task-managing-connectors.html#access-the-local-ui["Erfahren Sie, wie Sie auf die lokale Benutzeroberfläche des Connectors zugreifen können"].
+
+.Anmelde-Optionen
+Über eine SaaS-basierte Benutzeroberfläche ist BlueXP über Ihren Webbrowser zugänglich.
+
+Sie können sich bei BlueXP mithilfe einer der folgenden Optionen anmelden:
+
+* Ihre vorhandenen Zugangsdaten für die NetApp Support Site (NSS
+* Geben Sie Ihre E-Mail-Adresse und ein Passwort an, um sich bei einem NetApp Cloud-Login anzumelden
+
+
+Beide Optionen unterstützen eine föderierte Verbindung, die Single Sign-On mit Anmeldeinformationen aus Ihrem Unternehmensverzeichnis (föderierte Identität) ermöglicht. Nachdem Sie sich registriert haben, können Sie eine Verbundverbindung über das einrichten https://cloud.netapp.com/help-center["Hilfe-Center für BlueXP"^] Durch Auswahl von *Cloud Central Anmelde-Optionen*.
+
+.Schritte
+. Öffnen Sie einen Webbrowser, und rufen Sie den auf https://console.bluexp.netapp.com["BlueXP-Konsole"^]
+. Wählen Sie auf der Seite *Anmelden* die Option *Registrieren*.
++
+
+TIP: Wenn Sie Ihre bestehenden NSS-Anmeldedaten verwenden möchten, können Sie die Anmeldeseite überspringen und Ihre E-Mail-Adresse direkt auf der Anmeldeseite eingeben. BlueXP meldet Sie im Rahmen dieser ersten Anmeldung an.
+
+. Wählen Sie auf der Seite *Registrieren* eine der Anmeldeoptionen:
++
+** Wenn Sie bereits über einen NSS Account (NetApp Support Site) verfügen, wählen Sie *Registrieren Sie sich mit Ihren NetApp Support Site Anmeldedaten* aus.
++
+Wenn Sie diese Option verwenden, werden Ihre NSS-Anmeldedaten (NetApp Support Site) BlueXP im Support Dashboard nicht hinzugefügt. link:task-adding-nss-accounts.html["Erfahren Sie, wie Sie Ihre NSS-Zugangsdaten zum Support Dashboard hinzufügen, um wichtige Workflows zu ermöglichen"].
+
+** Wenn Sie kein NSS-Konto haben und noch keine NetApp Cloud-Anmeldedaten erstellt haben, geben Sie die erforderlichen Informationen ein, um eine NetApp Cloud-Anmeldung zu erstellen.
++
+Beachten Sie, dass nur englische Zeichen im Anmeldeformular zulässig sind.
+
+
+
+. Überprüfen Sie, wenn Sie dazu aufgefordert werden, die Endbenutzer-Lizenzvereinbarung und akzeptieren Sie die Bedingungen.
+. Geben Sie auf der Seite *Willkommen* einen Namen für Ihr Konto ein.
++
+Wenn Ihr Unternehmen bereits über ein Konto verfügt und Sie ihm beitreten möchten, sollten Sie diesen Schritt überspringen und den Eigentümer bitten, Sie mit dem Konto zu verknüpfen. Nachdem der Besitzer Sie hinzugefügt hat, können Sie sich einloggen und haben Zugriff auf das Konto. link:task-managing-netapp-accounts.html#adding-users["Erfahren Sie, wie Sie einem bestehenden Konto Mitglieder hinzufügen"].
+
++
+Der Account ist das wichtigste Element der Identitätsplattform von NetApp. Sie können Benutzer, Rollen, Berechtigungen und Arbeitsumgebungen hinzufügen und verwalten.
+
++
+image:screenshot-account-selection.png["Ein Screenshot der Begrüßungsseite, die angezeigt wird, wenn Sie sich bei einem neuen Konto anmelden, das nicht zu einem Konto gehört."]
+
+. Wählen Sie *Konto Erstellen*.
+
+
+.Ergebnis
+Sie haben jetzt eine BlueXP-Anmeldung und ein Konto. In den meisten Fällen besteht der nächste Schritt darin, einen Connector zu erstellen, der die Services von BlueXP mit Ihrer Hybrid-Cloud-Umgebung verbindet.

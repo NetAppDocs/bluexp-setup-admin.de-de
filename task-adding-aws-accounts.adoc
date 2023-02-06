@@ -228,9 +228,32 @@ Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern k�
 +
 image:screenshot_associate_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Wählen Sie ein vorhandenes Abonnement aus der Down-Liste aus, oder klicken Sie auf *Abonnement hinzufügen* und befolgen Sie die Schritte, um ein neues Abonnement zu erstellen.
+. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie das Abonnement aus der unten angezeigten Liste aus und klicken Sie auf *Mitarbeiter*.
+. Um die Anmeldeinformationen mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.. Klicken Sie auf *Weiter zur Anmeldung*.
+.. Klicken Sie auf *Konto einrichten*.
++
+Sie werden auf die BlueXP-Website umgeleitet.
+
+.. Auf der Seite *Subscription Assignment*:
++
+*** Wählen Sie die NetApp Accounts aus, denen Sie dieses Abonnement zuordnen möchten.
+*** Wählen Sie im Feld *vorhandenes Abonnement ersetzen* aus, ob Sie das vorhandene Abonnement für ein Konto automatisch durch dieses neue Abonnement ersetzen möchten.
++
+BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto durch dieses neue Abonnement. Wenn eine Gruppe von Anmeldeinformationen noch nicht mit einem Abonnement verknüpft wurde, wird dieses neue Abonnement nicht mit diesen Anmeldedaten verknüpft.
+
++
+Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
+
+*** Klicken Sie Auf *Speichern*.
+
+
+
+
++
+image:screenshot-aws-subscription.png["Ein Screenshot der Seite „Subscription Assignment“, auf der Sie dieses Abonnement mit einem oder mehreren Konten verknüpfen können, und wählen Sie, das vorhandene Abonnement für eines dieser Konten zu ersetzen."]
+
 
 
 
