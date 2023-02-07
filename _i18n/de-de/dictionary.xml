@@ -1944,23 +1944,16 @@
   <block id="16f38628224f0a131edc6e33cc001598" category="doc">Verwalten von Google Cloud-Anmeldeinformationen und -Abonnements für BlueXP</block>
   <block id="fd5876417edb63f12f7c19c175309431" category="paragraph">Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmeldedaten verknüpft ist. Mithilfe des Abonnements können Sie ein nutzungsbasiertes Cloud Volumes ONTAP System erstellen und andere NetApp Cloud-Services nutzen.</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3607221d62467c2e5249f8716b69616f" category="list-text">Wählen Sie ein Google Cloud-Projekt und ein Abonnement aus der Down-Liste aus.</block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Ein Screenshot eines Google Cloud-Projekts und Abonnements, das für Google Cloud-Anmeldedaten ausgewählt wurde.</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c3692898f95f79b425ac8b50f45bb06" category="list-text">Wenn Sie noch kein Abonnement haben, klicken Sie auf *Abonnement hinzufügen* und führen Sie die folgenden Schritte aus, um ein neues Abonnement zu erstellen.</block>
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Sie sowohl Billing Admin-Berechtigungen in Ihrem Google Cloud-Konto als auch BlueXP-Login haben.</block>
-  <block id="e34e3eb07d03eff321019c85029cb441" category="inline-image-macro">Ein Screenshot eines Popup-Abonnements</block>
-  <block id="1c258a9e8501efe4f4ce95f3fd83a245" category="paragraph"><block ref="1c258a9e8501efe4f4ce95f3fd83a245" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cdcf076c3fd3e62a3c7e3691d02894db" category="inline-link">Seite zu NetApp BlueXP im Google Cloud Marketplace</block>
   <block id="b7e7a20500f8489bfa6b8a559c74a1d4" category="list-text">Nachdem Sie auf die umgeleitet wurden<block ref="d9d3d72c24d9b3446210d5b539c6bbf5" category="inline-link-rx"></block>, Stellen Sie sicher, dass das richtige Projekt im oberen Navigationsmenü ausgewählt ist.</block>
   <block id="8b5c3e503fd0da73cc8d1592a1ccbb6e" category="inline-image-macro">Screenshot der GCP CVO Marketplace-Seite</block>
   <block id="ea161d25d0a04de5fa898ead6a9bccaa" category="paragraph"><block ref="ea161d25d0a04de5fa898ead6a9bccaa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="85bb97cf1fc6a37ea1a5e97e0e2e1a8b" category="list-text">Klicken Sie Auf *Abonnieren*.</block>
   <block id="861c99531853674511342d75aef34187" category="list-text">Wählen Sie das entsprechende Rechnungskonto aus und stimmen Sie den allgemeinen Geschäftsbedingungen zu.</block>
-  <block id="49dc469db7329172e0cd98944810877d" category="inline-image-macro">Einen Screenshot der Teilnahmebedingungen für GCP</block>
-  <block id="293c9c122116ad2c263a6ddbe4831cb0" category="paragraph"><block ref="293c9c122116ad2c263a6ddbe4831cb0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca4f48bdc60c2a16dd59109486af30ee" category="paragraph">Dieser Schritt sendet Ihre Transferanfrage an NetApp.</block>
-  <block id="10e61096cba50402ef6cb31c1b17e8ae" category="list-text">Klicken Sie im Popup-Dialogfeld auf *mit NetApp registrieren, Inc.*, um zur NetApp BlueXP Website umgeleitet zu werden.</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">Ein Screenshot eines Pop-up-Pop-ups für die Registrierung.</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">Die Cloud Volumes ONTAP-Seite auf der BlueXP-Website</block>
@@ -2826,17 +2819,12 @@
   <block id="35189ab5714b42941b6c22320f395243" category="list-text">Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie das Abonnement aus der unten angezeigten Liste aus und klicken Sie auf *Mitarbeiter*.</block>
   <block id="7f024bcfe9b965209454c94e48004d5d" category="list-text">Um die Zugangsdaten mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen &gt; Weiter* und befolgen Sie die Schritte im Azure Marketplace:</block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Melden Sie sich bei Ihrem Azure-Konto an, wenn Sie dazu aufgefordert werden.</block>
-  <block id="229d7258c60456f36a718cd138813888" category="list-text">Füllen Sie das Formular aus und klicken Sie auf *Abonnieren*.</block>
-  <block id="a6f968ccb979a102bb5ce0538b9f2456" category="list-text">Klicken Sie auf *Benachrichtigungen* und klicken Sie auf den Link in der Benachrichtigung, um Ihr Konto zu konfigurieren.</block>
-  <block id="daa4df96e26fea6c1270d01a4426eab1" category="list-text">Klicken Sie Auf *Konto Konfigurieren*.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Sie werden auf die BlueXP-Website umgeleitet.</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">Auf der Seite *Subscription Assignment*:</block>
   <block id="761b37459e9daab0f25c3e9b5edfd370" category="list-text">Wählen Sie die NetApp Accounts aus, denen Sie dieses Abonnement zuordnen möchten.</block>
   <block id="e0c62276bada3b5536cceb070664c871" category="list-text">Wählen Sie im Feld *vorhandenes Abonnement ersetzen* aus, ob Sie das vorhandene Abonnement für ein Konto automatisch durch dieses neue Abonnement ersetzen möchten.</block>
   <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto durch dieses neue Abonnement. Wenn eine Gruppe von Anmeldeinformationen noch nicht mit einem Abonnement verknüpft wurde, wird dieses neue Abonnement nicht mit diesen Anmeldedaten verknüpft.</block>
   <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.</block>
-  <block id="ef545e4a852035275622b3ad9df636de" category="inline-image-macro">Ein Screenshot der Seite „Subscription Assignment“, auf der Sie dieses Abonnement mit einem oder mehreren Konten verknüpfen können, und wählen Sie, das vorhandene Abonnement für eines dieser Konten zu ersetzen.</block>
-  <block id="56884c9225391e21aea7cf42dd6f7bd5" category="paragraph"><block ref="56884c9225391e21aea7cf42dd6f7bd5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a4cfdd3c4b047c552e6626beca055d3" category="summary">Wenn Sie mit BlueXP beginnen, müssen Sie sich zuerst anmelden. Sie erhalten die Möglichkeit, ein Konto zu erstellen, aber Sie können diesen Schritt überspringen, wenn Sie zu einem bestehenden Konto eingeladen werden.</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">Melden Sie sich bei BlueXP an</block>
   <block id="a6da179f46168e9455ae7e15202c1a47" category="paragraph-title">Ein Hinweis zu Regierungsregionen</block>
@@ -2861,8 +2849,6 @@
   <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20653d224bca9fb40181f3916e4f643d" category="list-text">Wählen Sie *Konto Erstellen*.</block>
   <block id="2f0488f8a3ca91699637c323ed3b7ae7" category="paragraph">Sie haben jetzt eine BlueXP-Anmeldung und ein Konto. In den meisten Fällen besteht der nächste Schritt darin, einen Connector zu erstellen, der die Services von BlueXP mit Ihrer Hybrid-Cloud-Umgebung verbindet.</block>
-  <block id="c12be2d5c6d53ffeba2b81d18475c007" category="list-text">Überprüfen Sie die Abonnementschritte und klicken Sie auf *Weiter*.</block>
-  <block id="5f6337397041d9f655e961c010a87fdc" category="paragraph"><block ref="5f6337397041d9f655e961c010a87fdc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5d34a7be7e3c957d955b41f31cc1b6b" category="admonition">Wenn ein Mitarbeiter Ihres Unternehmens bereits über Ihr Rechnungskonto das NetApp BlueXP Abonnement abonniert hat, werden Sie weitergeleitet<block ref="35e104e3e4686d9ee172091b57b45bc0" category="inline-link-rx"></block> Stattdessen. Sollte dies nicht unerwartet sein, wenden Sie sich an Ihr NetApp Vertriebsteam. Google ermöglicht nur ein Abonnement pro Google-Abrechnungskonto.</block>
   <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">Erfahren Sie mehr über BlueXP-Benachrichtigungen</block>
   <block id="aea5351abe13a2ef43df184a5caed50e" category="paragraph">BlueXP informiert Sie darüber, ob Ihr Connector 14 Tage oder länger ausgeschaltet wurde.<block ref="e16712c557ed9121be1392c11d3884a1" category="inline-link-rx"></block>.</block>
@@ -2903,9 +2889,7 @@
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">Ein Symbol mit drei vertikalen Punkten</block>
   <block id="86687429f8938a809fc671fe296b1bcc" category="paragraph">Um alle Benachrichtigungen auszublenden, klicken Sie im Benachrichtigungscenter auf <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> Und wählen Sie *Alle verwerfen*.<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">Um die Anmeldeinformationen mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen &gt; Weiter* und befolgen Sie die Schritte im AWS Marketplace:</block>
-  <block id="6ce481dcdc8134b6b4c81db0911f0267" category="list-text">Klicken Sie auf *Weiter zur Anmeldung*.</block>
   <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">Klicken Sie auf *Konto einrichten*.</block>
-  <block id="1b71aaa72599faca0c9974618a3c749d" category="paragraph"><block ref="1b71aaa72599faca0c9974618a3c749d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über die SaaS-basierte Benutzeroberfläche von Ihrem Webbrowser aus anmelden.</block>
   <block id="f2209a6bc960d5dd3350ca4b5b662c18" category="inline-link-macro">Hier erfahren Sie, wie Sie sich bei BlueXP anmelden und eine Organisation erstellen können</block>
   <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>.</block>
@@ -2917,4 +2901,13 @@
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">NetApp Cloud-Anmeldedaten: Geben Sie Ihr Passwort ein</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">Föderierte Benutzer: Geben Sie Ihre föderierten Identitätsinformationen ein</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">NetApp Support Site Konto: Geben Sie Ihre Zugangsdaten für die NetApp Support Site ein</block>
+  <block id="078d62005d56b885b14c45dcfcd16082" category="list-text">Füllen Sie das Formular aus und klicken Sie auf *Abonnieren*.</block>
+  <block id="ac66d82c89aefbe9c31ed8fe6308233a" category="list-text">Klicken Sie nach Abschluss des Abonnementvorgangs auf *Konto jetzt konfigurieren*.</block>
+  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:</block>
+  <block id="978deed4db0f89cc0f25e6998d8c5ede" category="list-text">Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie in der Down-Liste ein Google Cloud-Projekt und ein Abonnement aus und klicken Sie dann auf *Mitarbeiter*.</block>
+  <block id="b46cc5bd37bd52a5b31b40b8ff054c3d" category="list-text">Wenn Sie noch kein Abonnement haben, klicken Sie auf *Abonnement hinzufügen &gt; Weiter* und befolgen Sie die Schritte im Google Cloud Marketplace.</block>
+  <block id="8e43471beda7327a078697a498a253ca" category="list-text">Klicken Sie im Popup-Dialogfeld auf *Registrieren Sie sich mit NetApp, Inc.*</block>
+  <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">Führen Sie die Schritte auf der Seite *Subscription Assignment* aus:</block>
+  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:</block>
+  <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">Klicken Sie auf *Kaufoptionen anzeigen*.</block>
 </blocks>

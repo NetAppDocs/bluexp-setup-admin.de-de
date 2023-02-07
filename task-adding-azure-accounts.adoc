@@ -327,10 +327,9 @@ image:screenshot_azure_add_subscription.png["Ein Screenshot des Aktionsmenüs f�
 . Um die Zugangsdaten mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im Azure Marketplace:
 +
 .. Melden Sie sich bei Ihrem Azure-Konto an, wenn Sie dazu aufgefordert werden.
-.. Klicken Sie Auf *Erstellen*.
+.. Klicken Sie Auf *Abonnieren*.
 .. Füllen Sie das Formular aus und klicken Sie auf *Abonnieren*.
-.. Klicken Sie auf *Benachrichtigungen* und klicken Sie auf den Link in der Benachrichtigung, um Ihr Konto zu konfigurieren.
-.. Klicken Sie Auf *Konto Konfigurieren*.
+.. Klicken Sie nach Abschluss des Abonnementvorgangs auf *Konto jetzt konfigurieren*.
 +
 Sie werden auf die BlueXP-Website umgeleitet.
 
@@ -345,12 +344,14 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
 *** Klicken Sie Auf *Speichern*.
-
-
-
++
+Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:
 
 +
-image:screenshot-azure-subscription.png["Ein Screenshot der Seite „Subscription Assignment“, auf der Sie dieses Abonnement mit einem oder mehreren Konten verknüpfen können, und wählen Sie, das vorhandene Abonnement für eines dieser Konten zu ersetzen."]
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
 
 
 
