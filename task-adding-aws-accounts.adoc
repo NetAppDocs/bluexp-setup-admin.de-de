@@ -73,6 +73,8 @@ NOTE: Wenn Sie einen Connector von BlueXP bereitgestellt haben, hat BlueXP autom
 
 Sie können eine Vertrauensbeziehung zwischen dem Quell-AWS-Konto einrichten, in dem Sie die Connector-Instanz und anderen AWS-Konten mithilfe von IAM-Rollen bereitgestellt haben. Dann würden Sie BlueXP über die vertrauenswürdigen Konten mit dem ARN der IAM-Rollen versorgen.
 
+Wenn der Connector vor Ort installiert ist, können Sie diese Authentifizierungsmethode nicht verwenden. AWS-Schlüssel müssen verwendet werden.
+
 .Schritte
 . Rufen Sie die IAM-Konsole im Zielkonto auf, in dem Sie dem Connector Berechtigungen erteilen möchten.
 . Klicken Sie unter Zugriffsverwaltung auf *Rollen > Rolle erstellen* und befolgen Sie die Schritte zum Erstellen der Rolle.
@@ -96,6 +98,8 @@ Das Konto verfügt nun über die erforderlichen Berechtigungen. <<add-the-creden
 ==== Erteilen Sie Berechtigungen durch die Bereitstellung von AWS Schlüsseln
 
 Wenn Sie BlueXP für einen IAM-Benutzer AWS-Schlüssel bereitstellen möchten, müssen Sie diesem Benutzer die erforderlichen Berechtigungen erteilen. Die BlueXP IAM-Richtlinie definiert die AWS Aktionen und Ressourcen, die BlueXP verwenden darf.
+
+Sie müssen diese Authentifizierungsmethode verwenden, wenn der Connector vor Ort installiert ist. Sie können keine IAM-Rolle verwenden.
 
 .Schritte
 . Erstellen Sie Richtlinien von der IAM-Konsole aus, indem Sie die Inhalte von kopieren und einfügen link:reference-permissions-aws.html["Die IAM-Richtlinien für den Connector"].

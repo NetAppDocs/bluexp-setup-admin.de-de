@@ -183,7 +183,7 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
                 "cloudformation:DescribeStacks",
                 "kms:List*",
                 "kms:Describe*",
-                "ec2:describeVpcEndpoints",
+                "ec2:DescribeVpcEndpoints",
                 "kms:ListAliases",
                 "athena:StartQueryExecution",
                 "athena:GetQueryResults",
@@ -745,7 +745,7 @@ Der Connector stellt folgende API-Anforderungen zum Management von Backups in Am
 * Km:Liste*
 * Km:Beschreiben*
 * s3:GetObject
-* ec2:descbeVpcEndpunkte
+* ec2:DescribeVpcEndpunkte
 * Km:ListAliase
 * s3:PutVerschlüsselungKonfiguration
 
@@ -883,7 +883,10 @@ Der Connector erstellt bei Verwendung von Cloud Tiering die folgenden API-Anford
 | s3:GetLifecycleKonfiguration | Ja. | Ja. 
 
 
-| ec2:DescribeRegionen | Ja. | Ja. 
+| ec2:DescribeRegionen | Ja. | Nein 
+
+
+| ec2:DescribeVpcEndpunkte | Ja. | Nein 
 |===
 
 
@@ -1191,7 +1194,7 @@ Der Konnektor stellt die folgenden API-Anforderungen zur Verwaltung von FSX für
 * ec2:DescribeTags
 * ec2:DescribeIamInstanceProfilVerbände
 * ec2:DescribeReserviertInstanceAngebote
-* ec2:descbeVpcEndpunkte
+* ec2:DescribeVpcEndpunkte
 * ec2:DescribeVpcs
 * ec2:DescribeVolumiesModified
 * ec2:DescribePlacementGroups
@@ -1222,3 +1225,17 @@ Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von
 Der Connector stellt folgende API-Anforderung vor, Amazon S3 Buckets zu erkennen:
 
 s3:GetVerschlüsselungKonfiguration
+
+
+
+== Änderungsprotokoll
+
+Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== 14 Februar 2023
+
+Für Cloud Tiering ist jetzt folgende Berechtigung erforderlich:
+
+ec2:DescribeVpcEndpunkte
