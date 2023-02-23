@@ -78,7 +78,10 @@ NOTE: Die Quell-IP-Adresse ist der Connector-Host.
 | API-Aufrufe und AutoSupport | HTTPS | 443 | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe an AWS und ONTAP, Cloud Data Sense, zum Ransomware-Service und dem Senden von AutoSupport-Nachrichten an NetApp 
 
 
-.2+| API-Aufrufe | TCP | 3000 | ONTAP HA Mediator | Kommunikation mit dem ONTAP HA Mediator 
+.3+| API-Aufrufe | TCP | 3000 | ONTAP HA Mediator | Kommunikation mit dem ONTAP HA Mediator 
+
+
+| TCP | 8080 | Sinn Für Daten | Während der Implementierung können Sie die Instanz von Data Sense nutzen 
 
 
 | TCP | 8088 | Backup auf S3 | API-Aufrufe zur Sicherung in S3 

@@ -75,5 +75,8 @@ NOTE: Die Quell-IP-Adresse ist der Connector-Host.
 | API-Aufrufe und AutoSupport | HTTPS | 443 | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe bei GCP und ONTAP, Cloud Data Sense, zum Ransomware-Service und dem Senden von AutoSupport Nachrichten an NetApp 
 
 
+| API-Aufrufe | TCP | 8080 | Sinn Für Daten | Während der Implementierung können Sie die Instanz von Data Sense nutzen 
+
+
 | DNS | UDP | 53 | DNS | Wird für DNS Resolve von BlueXP verwendet 
 |===
