@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 'Neue Funktionen bei der Administration von BlueXP (ehemals Cloud Manager): NetApp Accounts, Connectors, Anmeldedaten für Cloud-Provider und vieles mehr.' 
+summary: 'Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktionen: NetApp Accounts, Connectors, Zugangsdaten für Cloud-Provider und vieles mehr.' 
 ---
 = Was ist neu
 :hardbreaks:
@@ -14,7 +14,47 @@ summary: 'Neue Funktionen bei der Administration von BlueXP (ehemals Cloud Manag
 
 
 [role="lead"]
-Neue Funktionen bei der Administration von BlueXP (ehemals Cloud Manager): NetApp Accounts, Connectors, Anmeldedaten für Cloud-Provider und vieles mehr.
+Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktionen: NetApp Accounts, Connectors, Zugangsdaten für Cloud-Provider und vieles mehr.
+
+
+
+== 5 März 2023
+
+
+
+=== Anschluss 3.9.27
+
+* Die Suche ist jetzt auch in der BlueXP Konsole verfügbar. Derzeit können Sie über die Suche nach BlueXP Services und Funktionen suchen.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["Ein Screenshot der BlueXP Suche, die oben in der Konsole verfügbar ist"]
+
+* Sie können aktive und gelöste Support-Cases direkt über BlueXP anzeigen und managen. Sie können die mit Ihrem NSS-Konto und Ihrem Unternehmen verbundenen Fälle verwalten.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Erfahren Sie, wie Sie Ihre Support-Fälle managen"].
+
+* Der Connector wird jetzt auf einem Host unterstützt, auf dem Red hat Enterprise Linux 8.7 ausgeführt wird.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Lesen Sie die Systemanforderungen für den Konnektor"].
+
+* Der Connector wird jetzt in jeder Cloud-Umgebung unterstützt, die vollständig vom Internet isoliert ist. Anschließend können Sie die BlueXP Konsole, die auf dem Connector ausgeführt wird, verwenden, um Cloud Volumes ONTAP am selben Standort zu implementieren und lokale ONTAP-Cluster zu erkennen (wenn Sie eine Verbindung von Ihrer Cloud-Umgebung zu Ihrer On-Premises-Umgebung haben). Andere BlueXP Services werden in dieser Implementierung nicht unterstützt, außer Digital Wallet.
++
+Die Cloud-Region kann eine Region für sichere US-Behörden wie AWS C2S/SC2S, Azure IL6 oder jede kommerzielle Region sein.
+
++
+Um zu beginnen, installieren Sie die Connector-Software manuell, melden Sie sich bei der BlueXP Konsole an, die auf dem Connector ausgeführt wird, fügen Sie Ihre BYOL-Lizenz in Digital Wallet hinzu und implementieren Sie dann Cloud Volumes ONTAP.
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installieren Sie den Connector an einem Ort ohne Internetzugang"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Greifen Sie über den Connector auf die BlueXP Konsole zu"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Fügen Sie eine nicht zugewiesene Lizenz hinzu"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Legen Sie los – mit Cloud Volumes ONTAP"^]
+
+
+* Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
+
+
 
 
 

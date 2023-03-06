@@ -119,7 +119,7 @@ Ein BlueXP-Kontoadministrator kann auf verschiedene Arten einen Connector erstel
 * Durch manuelle Installation der Software auf Ihrem eigenen Linux-Host
 +
 ** link:task-installing-linux.html["Auf einem Host mit Internetzugang"]
-** link:task-install-connector-onprem-no-internet.html["Auf einem lokalen Host, der keinen Internetzugang hat"]
+** link:task-install-connector-onprem-no-internet.html["Auf einem Host, der keinen Internetzugang hat"]
 
 
 * Über den Markt Ihres Cloud-Providers

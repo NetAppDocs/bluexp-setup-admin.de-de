@@ -185,9 +185,9 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 
 
 
-== Upgrade des Connectors On-Prem ohne Internetzugang
+== Aktualisieren Sie den Connector an einem Ort ohne Internetzugang
 
-Wenn Sie link:task-install-connector-onprem-no-internet.html["Der Connector wurde auf einem lokalen Host installiert, der keinen Internetzugang hat"], Sie können den Connector aktualisieren, wenn eine neuere Version von der NetApp Support-Website verfügbar ist.
+Wenn Sie link:task-install-connector-onprem-no-internet.html["Der Connector wurde an einem Ort installiert, an dem kein Internetzugang verfügbar ist"], Sie können den Connector aktualisieren, wenn eine neuere Version von der NetApp Support-Website verfügbar ist.
 
 Der Connector muss während des Aktualisierungsvorgangs neu gestartet werden, damit die Benutzeroberfläche während des Upgrades nicht verfügbar ist.
 
@@ -198,14 +198,20 @@ Der Connector muss während des Aktualisierungsvorgangs neu gestartet werden, da
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.14
+chmod +x /path/cloud-manager-connector-offline-<version>
 ----
++
+Wobei <version> die Version des Connectors ist, den Sie heruntergeladen haben.
+
 . Führen Sie das Installationsskript aus:
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.14
+sudo /path/cloud-manager-connector-offline-<version>
 ----
++
+Wobei <version> die Version des Connectors ist, den Sie heruntergeladen haben.
+
 . Nachdem die Aktualisierung abgeschlossen ist, können Sie die Version des Connectors überprüfen, indem Sie *Hilfe > Support > Connector* aufrufen.
 
 
