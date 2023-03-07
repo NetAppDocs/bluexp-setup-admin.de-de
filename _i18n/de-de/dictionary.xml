@@ -342,10 +342,8 @@
   <block id="c31a8d2fed6934d9957a2df9cb48885e" category="paragraph">Der Connector stellt die folgenden API-Anforderungen für die Implementierung und das Management von Cloud Volumes ONTAP in AWS.</block>
   <block id="8619817b40d160813e1d9e3fbcd2855a" category="cell">Werden sie für die Implementierung verwendet?</block>
   <block id="9c9abc943aab3664ef495a82ad4bd11f" category="cell">Zum Löschen verwendet?</block>
-  <block id="3842dbaca77b11d0e50ab804ff806c4d" category="cell">Erstellen Sie VMs, stoppen, starten, löschen und erhalten Sie den Status des Systems</block>
   <block id="4d6646e62e7704a2019810651f83d886" category="cell">Implementierung über eine VHD ermöglichen</block>
   <block id="e8257e96577d74304108aac52739f494" category="cell">Netzwerkschnittstellen im Ziel-Subnetz erstellen und verwalten</block>
-  <block id="69e92fda2ae4363c883f5d9f62c3ee56" category="cell">Erstellen Sie vordefinierte Netzwerksicherheitsgruppen</block>
   <block id="7a29e42d7b44e6dd5272e36cbcf9490f" category="cell">Microsoft.Network/networkSecurityGroups/join/action</block>
   <block id="89974c87cccaf6e615e089269c5cafd3" category="cell">Abrufen der Netzwerkinformationen zu Regionen, Ziel-vnet und Subnetz, und Hinzufügen der VMs zu VNets</block>
   <block id="0bfcdd1da192a52455067c787c3beb96" category="cell">Erstellen und Verwalten von Ressourcengruppen</block>
@@ -377,7 +375,6 @@
   <block id="cc7e29f147aa045ddf8822304dc0e1f4" category="cell">Microsoft.Speicherung/Speicherkonten/PrivateEndpointConnectionsGenehmigung/Aktion</block>
   <block id="6ea85effe392556eeffa2a55685797ca" category="cell">Microsoft.Storage/StorageAccounts/private EndpointConnections/Lesevorgang</block>
   <block id="78c2f93b5769de1a564bb26013df62b4" category="cell">Microsoft.Network/privateDnsZones/write</block>
-  <block id="a4e92c2c648e0e630287027027ef39c8" category="cell">Erforderlich für einige VM-Implementierungen, abhängig von der zugrunde liegenden physischen Hardware</block>
   <block id="d2708b4bfe876dff0475a9deac154f4d" category="cell">Microsoft.Ressourcen/Implementierungen/OperationStatuses/read</block>
   <block id="0842d212d91b90d567d1e486c5416e29" category="cell">Entfernen von Ressourcen aus einer Ressourcengruppe bei Ausfall oder Löschen der Bereitstellung</block>
   <block id="dbd22581be4b124883e09a2e00810e57" category="cell">Microsoft.Network/privateEndpoints/delete</block>
@@ -598,7 +595,6 @@
   <block id="0538fa74f685054f07476ce4440d3ce4" category="cell">Ihr Webbrowser kontaktiert diese URL, wenn Sie die SaaS-Benutzeroberfläche verwenden.</block>
   <block id="b3f4a5004c2a10094d2af8bd28589cbf" category="paragraph">AWS-Services (amazonaws.com):</block>
   <block id="58e3bfbabf904de43a6a22aca509b0d8" category="list-text">CloudFormation</block>
-  <block id="df8a1f2103a58209a3008c02a93162b5" category="list-text">Cognito</block>
   <block id="9d4942b614d2d8583bdf09c75ba94f3d" category="list-text">Elastic Compute Cloud (EC2)</block>
   <block id="b7f432287355914a89f542bcac4bbdb0" category="list-text">Key Management Service (KMS)</block>
   <block id="5ea79461f4d299dc0735dc824ffeb854" category="list-text">Security Token Service (STS)</block>
@@ -2718,21 +2714,15 @@
   <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="section-title">Verknüpfen eines Marketplace-Abonnements mit Google Cloud-Anmeldedaten</block>
   <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Dies sind die Anmeldeinformationen, die BlueXP zur Bereitstellung von Cloud Volumes ONTAP verwendet.</block>
   <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">Sie müssen diesen Schritt abschließen, um das Google Cloud Abonnement mit Ihrem NetApp Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.</block>
-  <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">\https://management.azure.com \https://login.microsoftonline.com</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">Für das Managen von Ressourcen in Azure Public Regionen.</block>
-  <block id="6696e65cc873b2af9823ebafd2e332a8" category="cell">\https://management.usgovcloudapi.net \https://login.microsoftonline.us</block>
   <block id="61b99e46ccbb3b872a32fbf2f064b87b" category="cell">Managen von Ressourcen in Azure Government Regionen.</block>
-  <block id="2ef9710cab4f48c3bcc58dac5ab20752" category="cell">\https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">Zum Managen von Ressourcen in der Region Azure-IL6.</block>
-  <block id="c9499afcd46d4343e88fb1acd8c931d8" category="cell">\https://management.chinacloudapi.cn \https://login.chinacloudapi.cn</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">Für das Management von Ressourcen in Azure China Regionen.</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Unterstützung für Cloud-Provider-Lösungen</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">Technische Unterstützung für die folgenden Lösungen von Cloud-Providern, die Sie in BlueXP integriert haben, finden Sie in der BlueXP-Dokumentation zu diesem Produkt unter „Hilfe“.</block>
   <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
-  <block id="701741ae6d160ecd5058c2eefa334a6c" category="cell">\Https://&lt;region&gt;.amazonaws.com</block>
-  <block id="2452d1aef80214dacfb33f192b762434" category="cell">Managen von Ressourcen in AWS.</block>
   <block id="3933fdb8f34cb01278a72748377338a5" category="cell">\https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">Zum Managen von Ressourcen in Google Cloud.</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">- Cloudkms.ckryptoKeys.get - cloudkms.ckryptoKeys.getIamPolicy - cloudkms.ckryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.Keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy</block>
@@ -2744,7 +2734,6 @@
   <block id="7d5beaedd0c93a11314ff6699a51454e" category="list-text">Cloudkms.Schlüsselanhänger.get</block>
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">Cloudkms.Keyrings.getIamPolicy</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
-  <block id="3705a469472bf9882aff3f58dc3f4c5b" category="cell">\Shttps://Management.Azure.microsoft.sCloud \https://login.microsoftonline.microsoft.scloud</block>
   <block id="0a72a5335f5b852604ea0ad0c2fe10e1" category="paragraph">Nachdem Sie Ihr Konto eingerichtet haben, können Sie es jederzeit verwalten, indem Sie Benutzer entfernen, Arbeitsbereiche verwalten und Connectors verwalten. <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>.</block>
   <block id="86159ef2c579fd643503396dca6f3885" category="paragraph"><block ref="86159ef2c579fd643503396dca6f3885" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1403ef0f8512715bcf44602da2445c6a" category="paragraph">BlueXP-Kontoadministratoren können dann die Einstellungen für dieses Konto ändern, indem sie Benutzer (Mitglieder), Arbeitsbereiche und Connectors verwalten:</block>
@@ -2987,4 +2976,14 @@
   <block id="16ad465f333a3d9520fe4f57691eb5be" category="inline-link-macro">Auf einem Host, der keinen Internetzugang hat</block>
   <block id="273c438fb142c078d2637f09a68a894b" category="list-text"><block ref="273c438fb142c078d2637f09a68a894b" category="inline-link-macro-rx"></block></block>
   <block id="6b8dbc1426241e742cda28e32722d238" category="sidebar">Installieren Sie auf Ihrem eigenen Host ohne Internet</block>
+  <block id="aec651d37f6f533a4066a1ac8774d6b0" category="inline-link">Details finden Sie in der AWS-Dokumentation</block>
+  <block id="c908f2a3ba166fdf32de7eba53bd7156" category="cell">Managen von Ressourcen in AWS. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen.<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
+  <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net</block>
+  <block id="6e3cecb8c14fa9293d2b497e9f907cbd" category="cell">\https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net</block>
+  <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud</block>
+  <block id="6d03c18e4e6ecfac89f686c621314d96" category="cell">\https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn</block>
+  <block id="bfeeb7b05d1d40308b6f007fd5acc191" category="cell">\Shttps://Management.Azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud</block>
+  <block id="864338d2d7dc3c2738f45a0a8851b0cf" category="cell">Erstellen und Managen von VMs</block>
+  <block id="fe4ddc4ad605bbd0c66fc946f65fb17c" category="cell">Erstellen und Verwalten von Netzwerksicherheitsgruppen</block>
+  <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">Erforderlich für einige VM-Bereitstellungen, abhängig von der zugrunde liegenden physischen Hardware</block>
 </blocks>

@@ -432,7 +432,7 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Zweck | Aktion | Werden sie für die Implementierung verwendet? | Wird für den täglichen Betrieb verwendet? | Zum Löschen verwendet? 
 
 
-.12+| Erstellen Sie VMs, stoppen, starten, löschen und erhalten Sie den Status des Systems | Microsoft.Compute/locations/operations/read | Ja. | Ja. | Nein 
+.14+| Erstellen und Managen von VMs | Microsoft.Compute/locations/operations/read | Ja. | Ja. | Nein 
 
 
 | Microsoft.Compute/locations/vmSizes/read | Ja. | Ja. | Nein 
@@ -468,10 +468,16 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Microsoft.Compute/virtualMachines/write | Ja. | Ja. | Nein 
 
 
+| Microsoft.Compute/virtualMachines/delete | Ja. | Ja. | Ja. 
+
+
+| Microsoft.Ressourcen/Bereitstellungen/löschen | Ja. | Nein | Nein 
+
+
 | Implementierung über eine VHD ermöglichen | Microsoft.Compute/images/read | Ja. | Nein | Nein 
 
 
-.3+| Netzwerkschnittstellen im Ziel-Subnetz erstellen und verwalten | Microsoft.Network/networkInterfaces/read | Ja. | Ja. | Nein 
+.4+| Netzwerkschnittstellen im Ziel-Subnetz erstellen und verwalten | Microsoft.Network/networkInterfaces/read | Ja. | Ja. | Nein 
 
 
 | Microsoft.Network/networkInterfaces/write | Ja. | Ja. | Nein 
@@ -480,13 +486,19 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Microsoft.Network/networkInterfaces/join/action | Ja. | Ja. | Nein 
 
 
-.3+| Erstellen Sie vordefinierte Netzwerksicherheitsgruppen | Microsoft.Network/networkSecurityGroups/read | Ja. | Ja. | Nein 
+| Microsoft.Network/networkInterfaces/delete | Ja. | Ja. | Nein 
+
+
+.4+| Erstellen und Verwalten von Netzwerksicherheitsgruppen | Microsoft.Network/networkSecurityGroups/read | Ja. | Ja. | Nein 
 
 
 | Microsoft.Network/networkSecurityGroups/write | Ja. | Ja. | Nein 
 
 
 | Microsoft.Network/networkSecurityGroups/join/action | Ja. | Nein | Nein 
+
+
+| Microsoft.Network/networkSecurityGroups/delete | Nein | Ja. | Ja. 
 
 
 .8+| Abrufen der Netzwerkinformationen zu Regionen, Ziel-vnet und Subnetz, und Hinzufügen der VMs zu VNets | Microsoft.Network/locations/operationResults/read | Ja. | Ja. | Nein 
@@ -618,7 +630,7 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Microsoft.Network/loadBalancers/delete | Nein | Ja. | Ja. 
 
 
-| Microsoft.Network/loadBalancers/backendAddressPools/read | Ja. | Ja. | Nein 
+| Microsoft.Network/loadBalancers/backendAddressPools/read | Ja. | Nein | Nein 
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | Ja. | Nein | Nein 
@@ -666,7 +678,7 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | Ja. | Ja. | Nein 
 
 
-| Erforderlich für einige VM-Implementierungen, abhängig von der zugrunde liegenden physischen Hardware | Microsoft.Ressourcen/Implementierungen/OperationStatuses/read | Ja. | Ja. | Nein 
+| Erforderlich für einige VM-Bereitstellungen, abhängig von der zugrunde liegenden physischen Hardware | Microsoft.Ressourcen/Implementierungen/OperationStatuses/read | Ja. | Ja. | Nein 
 
 
 .2+| Entfernen von Ressourcen aus einer Ressourcengruppe bei Ausfall oder Löschen der Bereitstellung | Microsoft.Network/privateEndpoints/delete | Ja. | Ja. | Nein 
@@ -690,7 +702,7 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 .6+| Konfigurieren Sie eine Applikationssicherheitsgruppe für ein HA-Paar, um die HA Interconnect- und Cluster-Netzwerk-NICs zu isolieren | Microsoft.Network/applicationSecurityGroups/write | Nein | Ja. | Nein 
 
 
-| Microsoft.Network/applicationSecurityGroups/read | Nein | Ja. | Ja. 
+| Microsoft.Network/applicationSecurityGroups/read | Nein | Ja. | Nein 
 
 
 | Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action | Nein | Ja. | Nein 
@@ -699,7 +711,7 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Microsoft.Network/networkSecurityGroups/securityRules/write | Ja. | Ja. | Nein 
 
 
-| Microsoft.Network/applicationSecurityGroups/delete | Nein | Ja. | Nein 
+| Microsoft.Network/applicationSecurityGroups/delete | Nein | Ja. | Ja. 
 
 
 | Microsoft.Network/networkSecurityGroups/securityRules/delete | Nein | Ja. | Ja. 

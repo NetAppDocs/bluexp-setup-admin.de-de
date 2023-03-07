@@ -219,7 +219,16 @@ Für den Connector ist ein abgehender Internetzugang erforderlich, um Ressourcen
 | Endpunkte | Zweck 
 
 
-| \Https://<region>.amazonaws.com | Managen von Ressourcen in AWS. 
+ a| 
+AWS-Services (amazonaws.com):
+
+* CloudFormation
+* Elastic Compute Cloud (EC2)
+* Key Management Service (KMS)
+* Security Token Service (STS)
+* Simple Storage Service (S3)
+
+| Managen von Ressourcen in AWS. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen. https://docs.aws.amazon.com/general/latest/gr/rande.html["Details finden Sie in der AWS-Dokumentation"^] 
 
 
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
