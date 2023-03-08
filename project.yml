@@ -85,7 +85,7 @@ sidebar:
       url: "/task-manage-subscriptions.html"
     - title: Cloud Storage erkannt
       entries:
-      - title: Amazon S3 Buckets anzeigen
+      - title: Amazon S3 Buckets managen
         url: "/task-viewing-amazon-s3.html"
       - title: Zeigen Sie Ihre Azure Blob Konten an
         url: "/task-viewing-azure-blob.html"

@@ -324,7 +324,7 @@ Die Instanz sollte in ca. 7 Minuten fertig sein. Sie sollten auf der Seite bleib
 
 
 .Nachdem Sie fertig sind
-Wenn Sie Amazon S3 Buckets im gleichen AWS-Konto haben, in dem Sie den Connector erstellt haben, wird automatisch eine Amazon S3-Arbeitsumgebung auf dem Canvas angezeigt. link:task-viewing-amazon-s3.html["Erfahren Sie mehr darüber, was Sie mit dieser Arbeitsumgebung tun können"].
+Wenn Sie Amazon S3 Buckets im gleichen AWS-Konto haben, in dem Sie den Connector erstellt haben, wird automatisch eine Amazon S3-Arbeitsumgebung auf dem Canvas angezeigt. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Erfahren Sie mehr darüber, was Sie mit dieser Arbeitsumgebung tun können"].
 
 
 

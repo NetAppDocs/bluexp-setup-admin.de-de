@@ -1006,26 +1006,12 @@
   <block id="211c1a963db0ec4433679bba9d1a1973" category="paragraph">Workspace-Administratoren können diese Anschlüsse jetzt verwenden, um Cloud Volumes ONTAP-Systeme zu erstellen.</block>
   <block id="a85cd5dda897ee694c0a8a7ebe893293" category="inline-link-macro">Erfahren Sie, wie Sie Ihr Konto verwalten</block>
   <block id="efd9710de9c698fbbeb7b7b11597f70b" category="summary">Nach der Installation eines Connectors in AWS erkennt BlueXP automatisch Informationen zu den Amazon S3 Buckets, die sich im AWS Konto befinden, in dem der Connector installiert ist. Eine Amazon S3-Arbeitsumgebung wird dem Canvas hinzugefügt, damit Sie diese Informationen anzeigen können.</block>
-  <block id="f7099ec977551c0bfc4264472c0bf927" category="doc">Anzeigen Ihrer Amazon S3 Buckets</block>
-  <block id="bf9799ea7692475c7cf9755a148ec201" category="paragraph">Sie erhalten Details zu Ihren S3 Buckets, einschließlich Region, Zugriffsrichtlinien, Konto, Gesamt- und genutzter Kapazität, und mehr. Diese Buckets können als Ziele für Cloud-Backup, Cloud-Tiering oder Cloud Sync-Vorgänge verwendet werden. Zudem können Sie mit Cloud Data Sense diese Buckets scannen.</block>
   <block id="9c626900b015a97ee8e428d66dd7d5d1" category="inline-link-macro">Installieren Sie einen Anschluss</block>
-  <block id="0d6fec8d76a7754ac76ae4d48310ed99" category="list-text"><block ref="d950cee94b130c47fc349a9ce27609ba" category="inline-link-macro-rx"></block> In dem AWS Konto, wo Sie Ihre Amazon S3 Buckets anzeigen möchten.</block>
   <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">Wählen Sie im Navigationsmenü die Option *Storage &gt; Canvas* aus.</block>
-  <block id="52b8ffdf03daa97daa3970bb3a4247ff" category="paragraph">Sie sollten bald automatisch eine Amazon S3-Arbeitsumgebung sehen.</block>
   <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Ein Screenshot einer Amazon S3 Arbeitsumgebung</block>
-  <block id="7458becc274c80c36e850edbc1f6337e" category="paragraph"><block ref="7458becc274c80c36e850edbc1f6337e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f0e4d0f6a6a8bae74ed62ce4759c8e3a" category="list-text">Klicken Sie auf die Arbeitsumgebung, und wählen Sie eine Aktion im rechten Fensterbereich aus.</block>
-  <block id="3664079914496ab0ee90209b4ace936f" category="inline-image-macro">Ein Screenshot, der das Teilfenster „Aktionen“ zeigt, nachdem Sie eine Amazon S3-Arbeitsumgebung ausgewählt haben. Im Bereich werden Informationen über S3 angezeigt: Die Anzahl der Buckets und die verfügbaren Services.</block>
-  <block id="b9b2b40a667ab16249d63fc7e435d7f8" category="paragraph"><block ref="b9b2b40a667ab16249d63fc7e435d7f8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="02bc515db3673d54b5989cdf43534729" category="list-text">Klicken Sie auf *Daten synchronisieren*, um Daten mit oder von S3 Buckets zu synchronisieren.</block>
   <block id="2eb089b7bd4ffecd4fb1075d13738904" category="inline-link">Überblick über den Cloud Sync Service</block>
   <block id="7f4de8563758c51b51d61369c0182739" category="paragraph">Weitere Informationen finden Sie unter<block ref="9a75baacec67d9c9539ea0017722641e" category="inline-link-rx"></block>.</block>
-  <block id="a4fefa0676fbe2ed6dbd32159183f6d1" category="list-text">Klicken Sie auf *Aktivieren*, wenn Cloud Data Sense die S3 Buckets nach persönlichen und sensiblen Daten scannen soll.</block>
-  <block id="c1c42f8ba1dae80cacf28e68dae0ee46" category="inline-link">Erste Schritte mit Cloud Data Sense für Amazon S3</block>
-  <block id="dea958812841439df90399efabd7d9ca" category="paragraph">Weitere Informationen finden Sie unter<block ref="8bc61ddf61abb52b2869fa75574cd87f" category="inline-link-rx"></block>.</block>
-  <block id="51ae836da5531e750c5dcf0f62f2dd18" category="list-text">Klicken Sie auf *Arbeitsumgebung eingeben*, um Details zu den S3-Buckets in Ihrem AWS-Konto anzuzeigen.</block>
-  <block id="9e2485669a43b6702c2aedabfee812a6" category="inline-image-macro">Ein Screenshot, der die Details einer Amazon S3 Arbeitsumgebung zeigt, wie viele Buckets und Regionen insgesamt, und in einer Tabelle, in der Details zu den einzelnen S3-Buckets aufgeführt sind</block>
-  <block id="d6e5e99b5ad8371c45f8879b9381a020" category="paragraph"><block ref="d6e5e99b5ad8371c45f8879b9381a020" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Nach der Installation eines Connectors in Azure erkennt BlueXP automatisch Informationen zu den Azure Storage-Konten, die sich in den Azure-Abonnements befinden, in denen der Connector installiert ist. Eine Azure Blob Arbeitsumgebung wird dem Canvas hinzugefügt, damit Sie diese Informationen anzeigen können.</block>
   <block id="60c5f52d2a1d91eb3d9cc28c497c50d5" category="doc">Anzeigen Ihrer Azure Blob Konten</block>
   <block id="8038b7f4543340933f0702ca9be2c9c5" category="paragraph">Sie sehen Details zu Ihren Azure Storage-Konten, einschließlich Standort, Ressourcengruppe, Gesamt- und genutzter Kapazität und mehr. Diese Konten können als Ziele für Cloud-Backup, Cloud-Tiering oder Cloud Sync-Vorgänge verwendet werden.</block>
@@ -2495,7 +2481,6 @@
   <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">Konfigurieren Sie Proxy-Einstellungen</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">Standardkonfiguration</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Cloud Storage erkannt</block>
-  <block id="e11597621f115e17031710501eefedbc" category="sidebar">Amazon S3 Buckets anzeigen</block>
   <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Zeigen Sie Ihre Azure Blob Konten an</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Zeigen Sie Ihre Google Cloud Storage Buckets an</block>
   <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="sidebar">AWS Zugangsdaten</block>
@@ -2986,4 +2971,14 @@
   <block id="864338d2d7dc3c2738f45a0a8851b0cf" category="cell">Erstellen und Managen von VMs</block>
   <block id="fe4ddc4ad605bbd0c66fc946f65fb17c" category="cell">Erstellen und Verwalten von Netzwerksicherheitsgruppen</block>
   <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">Erforderlich für einige VM-Bereitstellungen, abhängig von der zugrunde liegenden physischen Hardware</block>
+  <block id="1c1b21ef0ec839f8c7f0c98a086d2319" category="doc">Management Ihrer Amazon S3 Buckets</block>
+  <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea59f5a18533f0723be7342656f4c831" category="paragraph">Sie können Details zu den S3-Buckets, einschließlich Region, Zugriffsrichtlinie, Konto, Gesamt- und genutzte Kapazität, anzeigen. Diese Buckets können als Ziele für Cloud-Backup, Cloud-Tiering oder Cloud Sync-Vorgänge verwendet werden. Zudem können Sie mit Cloud Data Sense diese Buckets scannen.</block>
+  <block id="55b5b30feffe912b6e65f29c34807a28" category="inline-link">Sehen Sie sich hier an, wie Sie Ihre S3-Buckets mithilfe von BlueXP anzeigen, erstellen und managen.</block>
+  <block id="bd94fd8efc4371afd7a3af9e7a08b50e" category="paragraph">Mit einer neu hinzugefügten Funktion können Sie jetzt S3-Buckets erstellen und bearbeiten.<block ref="c9e42eab5c6f6e6e35f844a7123dd423" category="inline-link-rx"></block></block>
+  <block id="10a7432528d1253e1f27cd183ae759a7" category="paragraph">Wenn Sie Amazon S3 Buckets im gleichen AWS-Konto haben, in dem Sie den Connector erstellt haben, wird automatisch eine Amazon S3-Arbeitsumgebung auf dem Canvas angezeigt.<block ref="eb59da80ee57b828e1255dafd1c2c796" category="inline-link-rx"></block>.</block>
+  <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">Mit dem Connector können Sie jetzt Amazon S3 Buckets aus BlueXP hinzufügen und managen.</block>
+  <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">So fügen Sie über BlueXP neue Amazon S3 Buckets in Ihrem AWS-Konto hinzu</block>
+  <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>.</block>
+  <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">Amazon S3 Buckets managen</block>
 </blocks>

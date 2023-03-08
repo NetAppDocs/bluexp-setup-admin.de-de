@@ -50,6 +50,10 @@ Um zu beginnen, installieren Sie die Connector-Software manuell, melden Sie sich
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Legen Sie los – mit Cloud Volumes ONTAP"^]
 
 
+* Mit dem Connector können Sie jetzt Amazon S3 Buckets aus BlueXP hinzufügen und managen.
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["So fügen Sie über BlueXP neue Amazon S3 Buckets in Ihrem AWS-Konto hinzu"^].
+
 * Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
