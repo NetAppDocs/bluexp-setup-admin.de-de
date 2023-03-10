@@ -273,31 +273,3 @@ Lassen Sie Drittanbieter-Services in Ihrem Konto zu, um Zugriff auf Dienste von 
 . Klicken Sie oben in BlueXP auf das Dropdown-Menü *Konto* und klicken Sie auf *Konto verwalten*.
 . Aktivieren Sie auf der Registerkarte *Übersicht* die Option *Drittanbieter-Services zulassen*.
 
-
-
-
-== Deaktivieren der SaaS-Plattform
-
-Wir empfehlen nicht, die SaaS-Plattform zu deaktivieren, es sei denn, Sie müssen, um die Sicherheitsrichtlinien Ihres Unternehmens zu erfüllen. Durch die Deaktivierung der SaaS-Plattform ist Ihre Fähigkeit zur Nutzung von integrierten NetApp Cloud-Services begrenzt.
-
-Die folgenden Dienste stehen bei BlueXP nicht zur Verfügung, wenn Sie die SaaS-Plattform deaktivieren:
-
-* Cloud-Backup
-+
-Cloud Backup wird in Regierungsregionen unterstützt, wenn die SaaS-Plattform deaktiviert ist, nicht aber in kommerziellen Regionen, in denen die SaaS-Plattform deaktiviert ist
-
-* Cloud-Daten Sinnvoll
-* Kubernetes
-* Cloud Tiering
-* Globaler Datei-Cache
-
-
-Wenn Sie die SaaS-Plattform deaktivieren, müssen Sie alle Aufgaben von ausführen link:task-managing-connectors.html#access-the-local-ui["Die lokale Benutzeroberfläche, die auf einem Connector verfügbar ist"].
-
-
-CAUTION: Dies ist eine irreversible Aktion, die Sie daran hindert, die BlueXP SaaS-Plattform zu verwenden. Sie müssen Aktionen über den lokalen Konnektor durchführen. Sie können nicht viele integrierte Cloud-Services von NetApp nutzen und die erneute Aktivierung der SaaS-Plattform erfordert die Unterstützung durch NetApp.
-
-.Schritte
-. Klicken Sie oben in BlueXP auf das Dropdown-Menü *Konto* und klicken Sie auf *Konto verwalten*.
-. Schalten Sie auf der Registerkarte Übersicht die Option ein, um die Nutzung der SaaS-Plattform zu deaktivieren.
-
