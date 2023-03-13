@@ -97,9 +97,24 @@ Wenn Sie sich zum ersten Mal bei BlueXP anmelden, werden Sie aufgefordert, ein _
 
 === Anschlüsse
 
-In den meisten Fällen muss ein BlueXP Account Admin einen _Connector_ in Ihrer Cloud oder Ihrem On-Premises-Netzwerk bereitstellen. Mit dem Connector kann BlueXP Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung verwalten.
+In den meisten Fällen muss ein BlueXP Account Admin einen _Connector_ in Ihrer Cloud oder Ihrem On-Premises-Netzwerk bereitstellen. Mit dem Connector kann BlueXP Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung verwalten. link:concept-connectors.html["Erfahren Sie mehr darüber, wann Anschlüsse erforderlich sind und wie sie funktionieren"].
 
-link:concept-connectors.html["Erfahren Sie mehr darüber, wann Anschlüsse erforderlich sind und wie sie funktionieren"].
+
+
+==== Die Anschlüsse müssen jederzeit betriebsbereit sein
+
+Anschlüsse sind ein grundlegender Bestandteil der NetApp BlueXP Servicearchitektur. Es liegt in Ihrer Verantwortung sicherzustellen, dass die entsprechenden Steckverbinder jederzeit betriebsbereit und zugänglich sind. Während der Service darauf ausgelegt ist, kurze Ausfälle der Connector-Verfügbarkeit zu überwinden, müssen Sie bei Bedarf sofort Maßnahmen ergreifen, um Infrastrukturausfälle zu beheben.
+
+Diese Dokumentation unterliegt der EULA. Wenn das Produkt nicht in Übereinstimmung mit der Dokumentation betrieben wird, können die Funktionalität und der Betrieb des Produkts sowie Ihre Rechte im Rahmen der EULA beeinträchtigt werden.
+
+
+
+==== Wie sich die Verfügbarkeit von Konnektor auf Cloud Volumes ONTAP auswirkt
+
+Ein Konnektor ist eine wichtige Komponente für den Zustand und Betrieb von Cloud Volumes ONTAP. Wenn ein Connector heruntergefahren wird, werden Cloud Volumes ONTAP PAYGO-Systeme und kapazitätsbasierte BYOL-Systeme heruntergefahren, nachdem die Kommunikation mit einem Connector über einen Zeitraum von mehr als 14 Tagen unterbrochen wurde. Dies geschieht, weil der Connector jeden Tag die Lizenzierung auf dem System aktualisiert.
+
+
+NOTE: Wenn Ihr Cloud Volumes ONTAP System über eine Node-basierte BYOL-Lizenz verfügt, wird das System nach 14 Tagen weiter ausgeführt, da die Lizenz auf dem Cloud Volumes ONTAP System installiert wird.
 
 
 
