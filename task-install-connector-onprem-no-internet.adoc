@@ -26,7 +26,7 @@ In einer On-Premises-Umgebung ohne Internet können Sie mit BlueXP On-Premises-O
 
 == Cloud-Übersicht
 
-In einer Cloud-Region ohne Internet können Sie mit BlueXP Cloud Volumes ONTAP Systeme implementieren und lokale ONTAP Cluster erkennen (wenn eine Verbindung von Ihrer Cloud-Umgebung zu Ihrer lokalen Umgebung besteht). Andere BlueXP Services werden in dieser Implementierung nicht unterstützt, außer Digital Wallet.
+In einer Cloud-Region ohne Internet können Sie mit BlueXP Cloud Volumes ONTAP Systeme implementieren und lokale ONTAP Cluster erkennen (wenn eine Verbindung von Ihrer Cloud-Umgebung zu Ihrer lokalen Umgebung besteht). Mit Cloud Backup können auch Cloud Volumes ONTAP Volumes in kommerziellen Regionen AWS und Azure gesichert werden. (Backups werden derzeit in den geheimen Regionen AWS und Azure nicht unterstützt.) Andere BlueXP Services werden in dieser Implementierung nicht unterstützt, außer Digital Wallet.
 
 Die Cloud-Region kann eine Region für sichere US-Behörden wie AWS C2S/SC2S, Azure IL6 oder jede kommerzielle Region sein.
 
