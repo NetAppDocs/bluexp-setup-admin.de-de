@@ -178,7 +178,6 @@
   <block id="bb036d72177ab633d83cf7c11f211546" category="section-title">Sicherheitsupdates anwenden</block>
   <block id="fce63be6a5df1b8f029ff105a6d48616" category="paragraph">Aktualisieren Sie das Betriebssystem auf dem Konnektor, um sicherzustellen, dass es mit den neuesten Sicherheitsupdates gepatcht wird.</block>
   <block id="1208149fe3ebe603e8d12495099b22e4" category="list-text">Greifen Sie auf die CLI-Shell auf dem Connector-Host zu.</block>
-  <block id="065ff36e9f63c035ca95dbe0bff46bfe" category="list-text">Führen Sie folgende Befehle mit erhöhten Berechtigungen aus:</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">Ändern Sie die IP-Adresse für einen Konnektor</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">Wenn es für Ihr Unternehmen erforderlich ist, können Sie die interne IP-Adresse und die öffentliche IP-Adresse der Connector-Instanz ändern, die automatisch von Ihrem Cloud-Provider zugewiesen wird.</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">Befolgen Sie die Anweisungen Ihres Cloud-Providers, um die lokale IP-Adresse oder die öffentliche IP-Adresse (oder beide) für die Connector-Instanz zu ändern.</block>
@@ -2976,4 +2975,10 @@
   <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">Wie sich die Verfügbarkeit von Konnektor auf Cloud Volumes ONTAP auswirkt</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">Ein Konnektor ist eine wichtige Komponente für den Zustand und Betrieb von Cloud Volumes ONTAP. Wenn ein Connector heruntergefahren wird, werden Cloud Volumes ONTAP PAYGO-Systeme und kapazitätsbasierte BYOL-Systeme heruntergefahren, nachdem die Kommunikation mit einem Connector über einen Zeitraum von mehr als 14 Tagen unterbrochen wurde. Dies geschieht, weil der Connector jeden Tag die Lizenzierung auf dem System aktualisiert.</block>
   <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">In den meisten Fällen muss ein BlueXP Account Admin einen _Connector_ in Ihrer Cloud oder Ihrem On-Premises-Netzwerk bereitstellen. Mit dem Connector kann BlueXP Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung verwalten. <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>.</block>
+  <block id="7889e734551361eda836c7c7bb098d0f" category="list-text">Ermitteln Sie, ob das folgende Verzeichnis auf dem Host vorhanden ist:</block>
+  <block id="8a5f2dc93753049d63d32fca4e868454" category="paragraph">/Opt/Application/netapp/Service-Manager-2</block>
+  <block id="1d356cb442bdf9a28522842dc7a5fc3f" category="paragraph">Konnektoren, die nach Ende 2022 erstellt wurden, sollten dieses Verzeichnis enthalten.</block>
+  <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">Je nachdem, ob dieses Verzeichnis existiert oder nicht, führen Sie Befehle zum Aktualisieren des Betriebssystems aus:</block>
+  <block id="d18a6912830b95dcae293a053dd50838" category="list-text">Wenn das Verzeichnis vorhanden ist, führen Sie die folgenden Befehle mit erweiterten Berechtigungen aus:</block>
+  <block id="7239793e251456f2e73133f34ccc957d" category="list-text">Wenn das Verzeichnis _does not_ existiert, führen Sie die folgenden Befehle mit erweiterten Berechtigungen aus:</block>
 </blocks>

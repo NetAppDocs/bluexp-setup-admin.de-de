@@ -113,15 +113,35 @@ Aktualisieren Sie das Betriebssystem auf dem Konnektor, um sicherzustellen, dass
 
 .Schritte
 . Greifen Sie auf die CLI-Shell auf dem Connector-Host zu.
-. Führen Sie folgende Befehle mit erhöhten Berechtigungen aus:
+. Ermitteln Sie, ob das folgende Verzeichnis auf dem Host vorhanden ist:
++
+/Opt/Application/netapp/Service-Manager-2
+
++
+Konnektoren, die nach Ende 2022 erstellt wurden, sollten dieses Verzeichnis enthalten.
+
+. Je nachdem, ob dieses Verzeichnis existiert oder nicht, führen Sie Befehle zum Aktualisieren des Betriebssystems aus:
++
+** Wenn das Verzeichnis vorhanden ist, führen Sie die folgenden Befehle mit erweiterten Berechtigungen aus:
 +
 [source, cli]
 ----
 sudo -s
 service netapp-service-manager stop
-yum -y update –-security
+yum -y update --security
 service netapp-service-manager start
 ----
+** Wenn das Verzeichnis _does not_ existiert, führen Sie die folgenden Befehle mit erweiterten Berechtigungen aus:
++
+[source, cli]
+----
+sudo -s
+service service-manager stop
+yum -y update --security
+service service-manager start
+----
+
+
 
 
 
