@@ -27,7 +27,7 @@ Sie können sich unter BlueXP mit einer der folgenden Optionen anmelden:
 * Nutzen Sie Ihre E-Mail-Adresse und ein Passwort, um sich bei einem NetApp Cloud-Login anzumelden
 * Eine Verbundverbindung
 +
-Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. Weitere Informationen erhalten Sie im https://cloud.netapp.com/help-center["Hilfe-Center für BlueXP"^] Und klicken Sie dann auf *Anmelde-Optionen*.
+Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. link:concept-federation.html["Erfahren Sie mehr über den Einsatz von Identitätsföderation mit BlueXP"].
 
 
 
