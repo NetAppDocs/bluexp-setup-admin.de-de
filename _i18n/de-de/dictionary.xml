@@ -2978,7 +2978,6 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">Je nachdem, ob dieses Verzeichnis existiert oder nicht, führen Sie Befehle zum Aktualisieren des Betriebssystems aus:</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">Wenn das Verzeichnis vorhanden ist, führen Sie die folgenden Befehle mit erweiterten Berechtigungen aus:</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">Wenn das Verzeichnis _does not_ existiert, führen Sie die folgenden Befehle mit erweiterten Berechtigungen aus:</block>
-  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">Identity Federation ermöglicht Single Sign-On mit BlueXP, sodass Benutzer sich mithilfe von Anmeldedaten Ihrer Unternehmensidentität anmelden können. Sie sollten darüber informieren, wie BlueXP Identitätsföderation unterstützt, bevor Sie eine Verbindung mit Ihrem Identitätsanbieter herstellen.</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">Nutzung von Identitätsföderation mit BlueXP</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">Funktionsweise der Identitätsföderation</block>
   <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">Durch die Einrichtung des Identity Federation wird eine Vertrauensverbindung zwischen dem BlueXP Authentifizierungsservice-Provider (auth0) und Ihrem eigenen Identitätsmanagement-Anbieter hergestellt.</block>
@@ -3058,7 +3057,6 @@
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">Die URL für den PingFederate-Server</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">Schließen Sie die Konfiguration auf dem PingFederate-Server mit den Parametern ab, die auf der Seite Federation Setup angezeigt werden, nachdem Sie Schritt 2 abgeschlossen haben.</block>
-  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">Aktualisieren Sie eine verbundene Verbindung</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">Nachdem der BlueXP Admin eine Verbindung ermöglicht hat, kann der Admin die Verbindung jederzeit über das aktualisieren<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">Sie müssen beispielsweise die Verbindung aktualisieren, indem Sie ein neues Zertifikat hochladen.</block>
   <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">Der BlueXP Administrator, der die Verbindung erstellt hat, ist der einzige autorisierte Benutzer, der die Verbindung aktualisieren kann. Wenn Sie weitere Administratoren hinzufügen möchten, können Sie uns über den Produktchat kontaktieren.</block>
@@ -3066,4 +3064,8 @@
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">Beide Optionen unterstützen eine föderierte Verbindung, die Single Sign-On mit Anmeldeinformationen aus Ihrem Unternehmensverzeichnis (föderierte Identität) ermöglicht. Sie können nach der Anmeldung eine Verbündungsverbindung einrichten. <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">Identitätsföderation</block>
+  <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">Identity Federation ermöglicht Single Sign-On mit BlueXP, sodass Benutzer sich mithilfe von Anmeldedaten Ihrer Unternehmensidentität anmelden können. Erste Schritte sind die Zusammenarbeit von Identity Federation mit BlueXP und ein Überblick über den Setup-Prozess möglich.</block>
+  <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_Identity Federation_ ermöglicht Single Sign On mit BlueXP, sodass Benutzer sich mithilfe von Anmeldedaten Ihrer Unternehmensidentität anmelden können. Erste Schritte sind die Zusammenarbeit von Identity Federation mit BlueXP und ein Überblick über den Setup-Prozess möglich.</block>
+  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Active Directory (AD) Admin</block>
+  <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">Aktualisieren einer föderierten Verbindung</block>
 </blocks>
