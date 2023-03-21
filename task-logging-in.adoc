@@ -16,7 +16,7 @@ summary: Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über di
 [role="lead"]
 Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über die SaaS-basierte Benutzeroberfläche von Ihrem Webbrowser aus anmelden.
 
-link:task-sign-up-saas.html["Hier erfahren Sie, wie Sie sich bei BlueXP anmelden und eine Organisation erstellen können"].
+link:task-sign-up-saas.html["Erfahren Sie, wie Sie sich bei BlueXP anmelden und ein Konto erstellen"].
 
 Wenn Sie über eine Regierungsregion oder eine Website ohne Outbound-Internetzugang auf BlueXP zugreifen, müssen Sie sich bei der BlueXP-Benutzeroberfläche anmelden, die lokal auf dem Connector ausgeführt wird. link:task-managing-connectors.html#access-the-local-ui["Erfahren Sie, wie Sie auf die lokale Benutzeroberfläche des Connectors zugreifen können"].
 
