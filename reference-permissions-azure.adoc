@@ -321,9 +321,6 @@ Der Connector stellt bei der Verwendung von Cloud Data Sense die folgenden API-A
 | Microsoft.Storage/StorageAccounts/write | Ja. | Nein 
 
 
-| Microsoft.Storage/StorageAccounts/delete | Nein | Ja. 
-
-
 | Microsoft.Storage/StorageAccounts/blobServices/Container/Lesevorgang | Ja. | Ja. 
 
 
@@ -764,6 +761,14 @@ Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== 23 März 2023
+
+Die Berechtigung „Microsoft.Storage/storageAccounts/delete“ wird für Cloud Data Sense nicht mehr benötigt.
+
+Diese Genehmigung ist für Cloud Volumes ONTAP weiterhin erforderlich.
 
 
 
