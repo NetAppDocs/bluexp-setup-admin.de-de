@@ -18,6 +18,54 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== Bis 3. April 2023
+
+
+
+=== Anschluss 3.9.28
+
+* E-Mail-Benachrichtigungen werden jetzt mit Digital Wallet unterstützt.
++
+Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten"].
+
+* Der Connector wird nun in der Region Google Cloud Turin unterstützt.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
+
+* Sie können jetzt VMware vCenter Server in BlueXP erkennen.
++
+Nachdem Sie einen VMware vCenter Server erkannt haben, der in AWS oder in Ihrem Unternehmen ausgeführt wird, können Sie die Arbeitsumgebung öffnen, um Details zu den Datastores und virtuellen Maschinen anzuzeigen, die mit dem Server verbunden sind.
+
++
+Die einzige Voraussetzung ist ein Connector, der eine Verbindung zu einem VMware vCenter Server hat, auf dem Version 7.0 oder höher ausgeführt wird.
+
++
+Wählen Sie zunächst *Arbeitsumgebung hinzufügen*, wählen Sie *Amazon Web Services* oder *On-Premises* aus und wählen Sie dann *VMware vCenter Server* aus. Geben Sie den Domänennamen oder die IP-Adresse für den Server ein, und geben Sie dann den Benutzernamen und das Kennwort für den Admin-Benutzer ein.
+
+* Sie können jetzt die Anmeldedaten für den Benutzer managen, die mit Ihrer BlueXP Anmeldung verknüpft sind: ONTAP Zugangsdaten und NSS Zugangsdaten (NetApp Support Site).
++
+Wenn Sie zu *Einstellungen > Anmeldeinformationen* wechseln, können Sie die Anmeldeinformationen anzeigen, die Anmeldeinformationen aktualisieren und löschen. Wenn Sie beispielsweise das Passwort für diese Anmeldedaten ändern, müssen Sie das Passwort in BlueXP aktualisieren.
+
++
+link:task-manage-user-credentials.html["Erfahren Sie, wie Sie Benutzerkennungen festlegen"].
+
+* Anhänge können nun hochgeladen werden, wenn ein Support-Case erstellt oder die Fallhinweise für einen bestehenden Support-Case aktualisiert werden.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Erfahren Sie, wie Sie Support-Fälle erstellen und managen"].
+
+* Diese Version des Connectors enthält außerdem Cloud Volumes ONTAP-Verbesserungen und On-Premises-ONTAP-Cluster-Verbesserungen.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["Die ONTAP-On-Premises-Cluster-Verbesserungen"^]
+
+
+
+
+
+
 == 5 März 2023
 
 

@@ -26,7 +26,7 @@ Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmelde
 
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
+. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Associate Subscription*.
 +
 image:screenshot_gcp_add_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 

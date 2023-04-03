@@ -132,7 +132,7 @@ Falls Sie diese Zugangsdaten gerade bei Ihrem Cloud-Provider erstellt haben, kan
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
+. Klicken Sie auf der Seite *Account Credentials* auf *Add Credentials* und folgen Sie den Schritten im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Amazon Web Services > Connector*.
 .. *Identifizierungsdaten definieren*: Geben Sie den ARN (Amazon Resource Name) einer vertrauenswürdigen IAM-Rolle an, oder geben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel ein.
@@ -199,7 +199,7 @@ Wenn Sie gerade die IAM-Rolle erstellt haben, kann es ein paar Minuten dauern, b
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
+. Klicken Sie auf der Seite *Account Credentials* auf *Add Credentials* und folgen Sie den Schritten im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Amazon Web Services > BlueXP*.
 .. *Anmeldedaten definieren*: Geben Sie den ARN (Amazon Resource Name) der IAM-Rolle an.
@@ -228,7 +228,7 @@ Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern k�
 
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
+. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Associate Subscription*.
 +
 image:screenshot_associate_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
@@ -274,7 +274,7 @@ TIP: Sie können die Anmeldeinformationen für ein Instanzprofil, das einer Conn
 
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Anmeldeinformationen bearbeiten*.
+. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Credentials bearbeiten*.
 . Nehmen Sie die gewünschten Änderungen vor und klicken Sie dann auf *Anwenden*.
 
 
@@ -289,6 +289,6 @@ TIP: Sie können die Anmeldeinformationen für ein Instanzprofil nicht löschen,
 
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Anmeldeinformationen löschen*.
+. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Credentials löschen*.
 . Klicken Sie zur Bestätigung auf *Löschen*.
 

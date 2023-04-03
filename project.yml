@@ -83,6 +83,30 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: Standardkonfiguration
         url: "/reference-connector-default-config.html"
+    - title: Anmeldedaten
+      entries:
+      - title: AWS Zugangsdaten managen
+        entries:
+        - title: Überblick
+          url: "/concept-accounts-aws.html"
+        - title: Anmeldeinformationen und Abonnements verwalten
+          url: "/task-adding-aws-accounts.html"
+      - title: Azure-Anmeldedaten managen
+        entries:
+        - title: Überblick
+          url: "/concept-accounts-azure.html"
+        - title: Anmeldeinformationen und Abonnements verwalten
+          url: "/task-adding-azure-accounts.html"
+      - title: Google Cloud-Anmeldedaten managen
+        entries:
+        - title: Überblick
+          url: "/concept-accounts-gcp.html"
+        - title: Anmeldeinformationen und Abonnements verwalten
+          url: "/task-adding-gcp-accounts.html"
+      - title: NSS-Anmeldedaten managen, die mit einem BlueXP Konto verknüpft sind
+        url: "/task-adding-nss-accounts.html"
+      - title: Managen Sie die mit Ihren BlueXP Anmeldedaten verbundenen Zugangsdaten
+        url: "/task-manage-user-credentials.html"
     - title: Abonnements
       url: "/task-manage-subscriptions.html"
     - title: Cloud Storage erkannt
@@ -93,26 +117,6 @@ sidebar:
         url: "/task-viewing-azure-blob.html"
       - title: Zeigen Sie Ihre Google Cloud Storage Buckets an
         url: "/task-viewing-gcp-storage.html"
-    - title: AWS Zugangsdaten
-      entries:
-      - title: Überblick
-        url: "/concept-accounts-aws.html"
-      - title: Anmeldeinformationen und Abonnements verwalten
-        url: "/task-adding-aws-accounts.html"
-    - title: Azure Zugangsdaten
-      entries:
-      - title: Überblick
-        url: "/concept-accounts-azure.html"
-      - title: Anmeldeinformationen und Abonnements verwalten
-        url: "/task-adding-azure-accounts.html"
-    - title: Google Cloud-Anmeldedaten
-      entries:
-      - title: Überblick
-        url: "/concept-accounts-gcp.html"
-      - title: Anmeldeinformationen und Abonnements verwalten
-        url: "/task-adding-gcp-accounts.html"
-    - title: Accounts der NetApp Support Website
-      url: "/task-adding-nss-accounts.html"
     - title: Ermittlung anhand von My Opportunities
       url: "/concept-my-opportunities.html"
   - title: Referenz
