@@ -70,7 +70,7 @@ Wählen Sie zunächst *Arbeitsumgebung hinzufügen*, wählen Sie *Amazon Web Ser
 Wenn Sie zu *Einstellungen > Anmeldeinformationen* wechseln, können Sie die Anmeldeinformationen anzeigen, die Anmeldeinformationen aktualisieren und löschen. Wenn Sie beispielsweise das Passwort für diese Anmeldedaten ändern, müssen Sie das Passwort in BlueXP aktualisieren.
 
 +
-link:task-manage-user-credentials.html["Erfahren Sie, wie Sie die Anmeldedaten von Benutzern verwalten"].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Erfahren Sie, wie Sie die Anmeldedaten von Benutzern verwalten"].
 
 * Anhänge können nun hochgeladen werden, wenn ein Support-Case erstellt oder die Fallhinweise für einen bestehenden Support-Case aktualisiert werden.
 +
