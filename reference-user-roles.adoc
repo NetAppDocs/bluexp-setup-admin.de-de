@@ -53,7 +53,7 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten Cloud Data Sense Zugri
 | Anschlüsse Erstellen | Ja. | Nein | Nein | Nein 
 
 
-| NetApp Accounts managen | Ja. | Nein | Nein | Nein 
+| BlueXP Konten managen | Ja. | Nein | Nein | Nein 
 
 
 | Anmeldeinformationen verwalten | Ja. | Nein | Nein | Nein 
@@ -69,11 +69,8 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten Cloud Data Sense Zugri
 
 
 | Installieren Sie ein HTTPS-Zertifikat | Ja. | Nein | Nein | Nein 
-
-
-| Verwenden Sie den SnapCenter-Dienst | Ja. | Ja. | Nein | Ja. 
 |===
 .Weiterführende Links
-* link:task-setting-up-netapp-accounts.html["Einrichtung von Workspaces und Benutzern im NetApp Konto"]
-* link:task-managing-netapp-accounts.html["Managen von Workspaces und Benutzern im NetApp Account"]
+* link:task-setting-up-netapp-accounts.html["Einrichten von Workspaces und Benutzern im BlueXP Konto"]
+* link:task-managing-netapp-accounts.html["Managen von Workspaces und Benutzern im BlueXP Konto"]
 

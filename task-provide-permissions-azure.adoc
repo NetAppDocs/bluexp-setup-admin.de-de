@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task-provide-permissions-azure.html 
+keywords: azure permissions, connector permissions, custom role, azure custom role, service principal, how to provide azure permissions, set up azure permissions, provide azure permissions, permissions 
+summary: Wenn Sie den Connector aus dem Azure Marketplace erstellt oder die Software manuell installiert haben, müssen Sie BlueXP mit den zuvor festgelegten Berechtigungen versehen. 
+---
+= Bereitstellen von Azure Berechtigungen für BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie den Connector aus dem Azure Marketplace erstellt oder die Software manuell installiert haben, müssen Sie BlueXP mit den zuvor festgelegten Berechtigungen versehen.
+
+link:task-set-up-permissions-azure.html["Erfahren Sie, wie Sie diese Berechtigungen einrichten"].
+
+Diese Schritte gelten nicht, wenn Sie den Connector direkt aus BlueXP bereitgestellt haben, da BlueXP während der Implementierung die erforderlichen Berechtigungen zuweist.
+
+[role="tabbed-block"]
+====
+.Benutzerdefinierte Rolle
+--
+Wechseln Sie zum Azure-Portal und weisen Sie der virtuellen Connector-Maschine für ein oder mehrere Abonnements die benutzerdefinierte Azure-Rolle zu.
+
+.Schritte
+. Öffnen Sie im Azure Portal den Service *Abonnements* und wählen Sie Ihr Abonnement aus.
+. Klicken Sie auf *Zugriffskontrolle (IAM)* > *Hinzufügen* > *Rollenzuweisung hinzufügen*.
+. Wählen Sie auf der Registerkarte * Role* die Rolle *BlueXP Operator* aus und klicken Sie auf *Next*.
++
+
+NOTE: BlueXP Operator ist der Standardname, der in der BlueXP-Richtlinie angegeben ist. Wenn Sie einen anderen Namen für die Rolle ausgewählt haben, wählen Sie stattdessen diesen Namen aus.
+
+. Führen Sie auf der Registerkarte *Mitglieder* die folgenden Schritte aus:
++
+.. Weisen Sie einer * verwalteten Identität* Zugriff zu.
+.. Klicken Sie auf *Mitglieder auswählen*, wählen Sie das Abonnement aus, in dem die virtuelle Connector-Maschine erstellt wurde, wählen Sie *Virtuelle Maschine* und wählen Sie dann die virtuelle Connector-Maschine aus.
+.. Klicken Sie Auf *Auswählen*.
+.. Klicken Sie Auf *Weiter*.
+.. Klicken Sie auf *Review + Assign*.
+.. Wenn Sie Cloud Volumes ONTAP von zusätzlichen Abonnements aus implementieren möchten, wechseln Sie zu diesem Abonnement, und wiederholen Sie diese Schritte.
+
+
+
+
+.Ergebnis
+BlueXP verfügt jetzt über die Berechtigungen, die es für Sie zum Ausführen von Aktionen in Azure benötigt.
+
+.Was kommt als Nächstes?
+Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+
+--
+.Service-Principal
+--
+.Schritte
+. Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Und melden Sie sich an.
+. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
++
+image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+
+. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
++
+.. *Anmeldeort*: Wählen Sie *Microsoft Azure > Connector*.
+.. *Anmeldedaten definieren*: Geben Sie Informationen über den Azure Active Directory Service Principal ein, der die erforderlichen Berechtigungen erteilt:
++
+*** Anwendungs-ID (Client)
+*** ID des Verzeichnisses (Mandant)
+*** Client-Schlüssel
+
+
+.. *Marketplace-Abonnement*: Verknüpfen Sie diese Anmeldedaten mit einem Marketplace-Abonnement, indem Sie jetzt abonnieren oder ein vorhandenes Abonnement auswählen.
+.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+
+
+
+
+.Ergebnis
+BlueXP verfügt jetzt über die Berechtigungen, die es für Sie zum Ausführen von Aktionen in Azure benötigt.
+
+--
+====

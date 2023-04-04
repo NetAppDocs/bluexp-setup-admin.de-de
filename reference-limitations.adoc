@@ -44,7 +44,7 @@ Um die Sicherheit zu erhöhen, haben Sie die Möglichkeit link:task-installing-h
 
 === Leere Seite beim Laden der lokalen Benutzeroberfläche
 
-Wenn Sie die lokale Benutzeroberfläche für einen Konnektor laden, wird die Benutzeroberfläche manchmal nicht angezeigt, und Sie erhalten nur eine leere Seite.
+Wenn Sie die webbasierte Konsole, die auf einem Connector ausgeführt wird, laden, wird die Schnittstelle manchmal nicht angezeigt, und Sie erhalten nur eine leere Seite.
 
 Dieses Problem bezieht sich auf ein Caching-Problem. Die Problemumgehung besteht darin, eine Inkognito- oder private Webbrowser-Sitzung zu verwenden.
 
@@ -59,19 +59,3 @@ Der Connector wird nicht von einer VM unterstützt, die gemeinsam mit anderen An
 === Agenten und Erweiterungen von Drittanbietern
 
 Agenten von Drittanbietern oder VM-Erweiterungen werden auf der Connector-VM nicht unterstützt.
-
-
-
-== SaaS-Einschränkungen
-
-
-
-=== Die SaaS-Plattform ist für Regierungsregionen deaktiviert
-
-Wenn Sie einen Connector in einer AWS GovCloud Region, einer Azure Gov-Region oder einer Azure DoD-Region bereitstellen, steht der Zugriff auf BlueXP nur über die Host-IP-Adresse eines Connectors zur Verfügung. Der Zugriff auf die SaaS-Plattform ist für das gesamte Konto deaktiviert.
-
-Das bedeutet, dass nur privilegierte Benutzer, die auf die interne VPC/vnet des Endbenutzers zugreifen können, die UI oder API von BlueXP verwenden können.
-
-Beachten Sie, dass nur Cloud Volumes ONTAP, Cloud-Backup, Cloud-Datensense und Replizierung unterstützt werden. Andere NetApp Services werden in Regionen der öffentlichen Hand nicht unterstützt.
-
-link:task-managing-connectors.html#access-the-local-ui["Erfahren Sie, wie Sie auf die lokale Benutzeroberfläche des Connectors zugreifen können"].

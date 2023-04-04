@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-on-prem.html 
+keywords: quick start, connector quick start, on prem quick start 
+summary: Erstellen Sie einen Connector vor Ort, indem Sie Netzwerke einrichten, einen Host vorbereiten, Cloud-Berechtigungen vorbereiten und vieles mehr. 
+---
+= Schneller Start für die Erstellung eines Connectors vor Ort
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Erstellen Sie einen Connector vor Ort, indem Sie Netzwerke einrichten, einen Host vorbereiten, Cloud-Berechtigungen vorbereiten und vieles mehr.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Netzwerk einrichten
+[role="quick-margin-para"]
+Bereiten Sie Folgendes für den Connector vor:
+
+[role="quick-margin-list"]
+* Ein Netzwerkspeicherort, an dem Sie den Connector installieren möchten
+* Eine Netzwerkverbindung zu den Netzwerken, in denen Sie Arbeitsumgebungen erstellen und verwalten möchten
+* Abgehender Internetzugang zu bestimmten Endpunkten für den täglichen Betrieb
+* Die IP-Adresse, die Anmeldeinformationen und das HTTPS-Zertifikat eines Proxy-Servers, wenn ein Proxy-Server für das ausgehende Internet erforderlich ist
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-on-prem.html["Erfahren Sie mehr über Netzwerkanforderungen"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Host-Anforderungen prüfen
+[role="quick-margin-para"]
+Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Anforderungen erfüllt. Die wichtigsten Anforderungen sind:
+
+[role="quick-margin-list"]
+* Ein dedizierter Host, auf dem CentOS oder Red hat Enterprise Linux ausgeführt wird
+* 4 CPUs
+* 14 GB RAM
+* Docker Engine
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-on-prem.html["Informieren Sie sich über diese Host-Anforderungen"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Cloud-Berechtigungen einrichten
+[role="quick-margin-para"]
+Richten Sie Berechtigungen für Ihren Cloud-Provider ein, damit Sie BlueXP für das Storage-Management in der Cloud verwenden können:
+
+[role="quick-margin-list"]
+* *AWS*: Erstellen Sie eine IAM-Richtlinie und hängen Sie die Richtlinie an einen IAM-Benutzer an. Nach der Installation müssen Sie BlueXP über Zugriffsschlüssel für diesen IAM-Benutzer verfügen.
+* *Azure*: Richten Sie ein Service-Principal in Azure Active Directory ein, das die erforderlichen Berechtigungen enthält. Nach der Installation müssen Sie für BlueXP die Zugangsdaten für den Service Principal angeben.
+
+
+[role="quick-margin-para"]
+Der Connector kann nach der lokalen Installation nicht mehr Storage oder Daten in Google Cloud managen. Der Connector muss in Google Cloud installiert sein, um dort beliebige Storage- oder Daten zu managen.
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-on-prem.html["Befolgen Sie die Schritt-für-Schritt-Anweisungen für jede dieser Optionen"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Installieren Sie die Connector-Software
+[role="quick-margin-para"]
+Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"] Und führen Sie das Installationsskript aus.
+
+[role="quick-margin-para"]
+link:task-install-connector-on-prem.html["Befolgen Sie die Schritt-für-Schritt-Anweisungen"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Fünf"] Bereitstellung von BlueXP mit Berechtigungen
+[role="quick-margin-para"]
+Nachdem Sie den Connector installiert und eingerichtet haben, müssen Sie Ihre Cloud-Anmeldedaten hinzufügen, damit BlueXP über die erforderlichen Berechtigungen zum Ausführen von Aktionen in AWS oder Azure verfügt.
+
+[role="quick-margin-para"]
+link:task-provide-permissions-on-prem.html["Befolgen Sie die Schritt-für-Schritt-Anweisungen"].

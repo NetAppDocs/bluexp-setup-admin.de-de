@@ -34,7 +34,7 @@ Die Google Cloud Firewall-Regeln für den Connector erfordern sowohl ein- als au
 | HTTPS | 443 | Bietet HTTPS-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche 
 
 
-| TCP | 3128 | Ermöglicht Cloud Volumes ONTAP den Zugang zum Internet, um AutoSupport-Nachrichten an den NetApp Support zu senden. Nach der Bereitstellung müssen Sie diesen Port manuell öffnen. <<Proxy server for AutoSupport messages,Erfahren Sie mehr über den Proxy-Server des Connectors>>. 
+| TCP | 3128 | Ermöglicht Cloud Volumes ONTAP den Zugang zum Internet, um AutoSupport-Nachrichten an den NetApp Support zu senden. Nach der Bereitstellung müssen Sie diesen Port manuell öffnen. 
 |===
 
 
@@ -72,7 +72,7 @@ NOTE: Die Quell-IP-Adresse ist der Connector-Host.
 | Service | Protokoll | Port | Ziel | Zweck 
 
 
-| API-Aufrufe und AutoSupport | HTTPS | 443 | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe bei GCP und ONTAP, Cloud Data Sense, zum Ransomware-Service und dem Senden von AutoSupport Nachrichten an NetApp 
+| API-Aufrufe und AutoSupport | HTTPS | 443 | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe in Google Cloud und ONTAP, in Cloud Data Sense, zum Ransomware-Service und Senden von AutoSupport Nachrichten an NetApp 
 
 
 | API-Aufrufe | TCP | 8080 | Sinn Für Daten | Während der Implementierung können Sie die Instanz von Data Sense nutzen 

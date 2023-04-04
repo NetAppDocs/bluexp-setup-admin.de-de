@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: reference-networking-saas-console.html 
+keywords: networking, urls, endpoints, web browser, console 
+summary: Bei der Nutzung der webbasierten Konsole von BlueXP, die über die SaaS-Schicht bereitgestellt wird, werden mehrere Endpunkte kontaktiert, um Datenmanagement-Aufgaben durchzuführen. Der Computer, auf dem der Webbrowser ausgeführt wird, muss über Verbindungen zu diesen Endpunkten verfügen. 
+---
+= Bereiten Sie Ihr Networking auf den Benutzerzugriff auf die BlueXP Konsole vor
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bei der Nutzung der webbasierten Konsole von BlueXP, die über die SaaS-Schicht bereitgestellt wird, werden mehrere Endpunkte kontaktiert, um Datenmanagement-Aufgaben durchzuführen. Der Computer, auf dem der Webbrowser ausgeführt wird, muss über Verbindungen zu diesen Endpunkten verfügen.
+
+[cols="2*"]
+|===
+| Endpunkte | Zweck 
+
+
+| \https://console.bluexp.netapp.com | Ihr Webbrowser kontaktiert diese URL, wenn Sie die webbasierte Konsole verwenden. 
+
+
+ a| 
+AWS-Services (amazonaws.com):
+
+* CloudFormation
+* Elastic Compute Cloud (EC2)
+* Key Management Service (KMS)
+* Security Token Service (STS)
+* Simple Storage Service (S3)
+
+| Für die Bereitstellung eines Connectors von BlueXP in AWS erforderlich. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen. https://docs.aws.amazon.com/general/latest/gr/rande.html["Weitere Informationen finden Sie in der AWS-Dokumentation."^] 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com | Für die Implementierung eines Connectors von BlueXP in den meisten Azure Regionen erforderlich. 
+
+
+| \https://management.microsoftazure.de \https://login.microsoftonline.de | Für die Implementierung eines Connectors von BlueXP in Azure-Regionen in Deutschland erforderlich. 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.com | Erforderlich für die Bereitstellung eines Connectors von BlueXP in Azure US Gov Regionen. 
+
+
+| \https://www.googleapis.com | Erforderlich, um einen Connector von BlueXP in Google Cloud bereitzustellen. 
+
+
+| \https://signin.b2c.netapp.com | Erforderlich, um die Zugangsdaten für die NetApp Support Site (NSS) zu aktualisieren oder neue NSS-Zugangsdaten für BlueXP hinzuzufügen 
+
+
+| \https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | Ihr Webbrowser stellt eine Verbindung zu diesen Endpunkten her, um eine zentralisierte Benutzerauthentifizierung über BlueXP zu ermöglicht. 
+
+
+| \https://widget.intercom.io | Für Ihren Produkt-Chat, der Ihnen das Gespräch mit NetApp Cloud-Experten ermöglicht. 
+|===
+.Weiterführende Links
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Endpunkte, die der Connector in AWS kontaktiert"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Endpunkte, die der Connector in Azure kontaktiert"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Endpunkte, die der Connector in Google Cloud kontaktiert"]
+* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["Endpunkte wurden während der manuellen Installation des Connectors kontaktiert"]
+

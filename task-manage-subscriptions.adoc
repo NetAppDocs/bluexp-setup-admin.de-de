@@ -34,7 +34,7 @@ Sie sehen nur die Abonnements, die mit dem Konto verknüpft sind, das Sie derzei
 +
 image:screenshot-subscriptions-expand.png["Ein Screenshot der Registerkarte Abonnements im Digital Wallet, in dem Sie den Pfeil am Ende einer Zeile auswählen können, um ihn zu erweitern."]
 
-** Klicken Sie Auf image:icon-column-selector.png["Das Plus-Symbol am Ende der Tabellenüberschrift"] So legen Sie fest, welche Spalten in der Tabelle angezeigt werden sollen.
+** Wählen Sie image:icon-column-selector.png["Das Plus-Symbol am Ende der Tabellenüberschrift"] So legen Sie fest, welche Spalten in der Tabelle angezeigt werden sollen.
 +
 Beachten Sie, dass die Spalten „Begriff“ und „Automatische Verlängerung“ standardmäßig nicht angezeigt werden. In der Spalte „Automatische Erneuerung“ werden nur Informationen zur Verlängerung von Azure-Verträgen angezeigt.
 
@@ -70,9 +70,9 @@ Nehmen wir zum Beispiel an, dass Sie zwei Konten haben und jedes über separate 
 .Schritte
 . Wählen Sie im Navigationsmenü BlueXP die Option *Governance > Digital Wallet* aus.
 . Wählen Sie *Abonnements*.
-. Klicken Sie in der Zeile auf das Aktionsmenü, das dem Abonnement entspricht, das Sie verwalten möchten.
+. Wählen Sie in der Zeile das Aktionsmenü aus, das dem Abonnement entspricht, das Sie verwalten möchten.
 +
 image:screenshot-subscription-menu.png["Ein Screenshot des Aktionsmenüs für ein Abonnement."]
 
-. Sie können das Abonnement umbenennen oder die NetApp Konten, die dem Abonnement zugeordnet sind, verwalten.
+. Benennen Sie das Abonnement um oder managen Sie die BlueXP Konten, die mit dem Abonnement verbunden sind.
 

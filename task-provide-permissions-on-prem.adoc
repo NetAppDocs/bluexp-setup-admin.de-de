@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-provide-permissions-on-prem.html 
+keywords: permissins, on prem permissions, aws permissions, azure permissions, credentials, aws credentials, azure credentials 
+summary: Nachdem Sie den Connector installiert und eingerichtet haben, müssen Sie Ihre Cloud-Anmeldedaten hinzufügen, damit BlueXP über die erforderlichen Berechtigungen zum Ausführen von Aktionen in AWS oder Azure verfügt. 
+---
+= Berechtigungen für BlueXP für lokale Installationen bereitstellen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Nachdem Sie den Connector installiert und eingerichtet haben, müssen Sie Ihre Cloud-Anmeldedaten hinzufügen, damit BlueXP über die erforderlichen Berechtigungen zum Ausführen von Aktionen in AWS oder Azure verfügt.
+
+
+TIP: Warum nicht Google Cloud? Der Connector kann vor Ort installiert werden und nicht Ihre Ressourcen in Google Cloud managen. Der Connector muss in Google Cloud installiert sein, um alle dort gespeicherten Ressourcen zu managen.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.Bevor Sie beginnen
+Wenn Sie diese Anmeldedaten gerade in AWS erstellt haben, kann es einige Minuten dauern, bis sie zur Verwendung verfügbar sind. Warten Sie einige Minuten, bevor Sie BlueXP die Anmeldeinformationen hinzufügen.
+
+.Schritte
+. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
++
+image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+
+. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
++
+.. *Anmeldeort*: Wählen Sie *Amazon Web Services > Connector*.
+.. *Zugangsdaten definieren*: Geben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel ein.
+.. *Marketplace-Abonnement*: Verknüpfen Sie diese Anmeldedaten mit einem Marketplace-Abonnement, indem Sie jetzt abonnieren oder ein vorhandenes Abonnement auswählen.
+.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+
+
+
+
+.Ergebnis
+BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt. Sie können jetzt die öffnen https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+
+--
+.Azure
+--
+.Bevor Sie beginnen
+Wenn Sie diese Anmeldedaten gerade in Azure erstellt haben, kann es ein paar Minuten dauern, bis sie zur Verwendung verfügbar sind. Warten Sie einige Minuten, bevor Sie BlueXP die Anmeldeinformationen hinzufügen.
+
+.Schritte
+. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
++
+image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+
+. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
++
+.. *Anmeldeort*: Wählen Sie *Microsoft Azure > Connector*.
+.. *Anmeldedaten definieren*: Geben Sie Informationen über den Azure Active Directory Service Principal ein, der die erforderlichen Berechtigungen erteilt:
++
+*** Anwendungs-ID (Client)
+*** ID des Verzeichnisses (Mandant)
+*** Client-Schlüssel
+
+
+.. *Marketplace-Abonnement*: Verknüpfen Sie diese Anmeldedaten mit einem Marketplace-Abonnement, indem Sie jetzt abonnieren oder ein vorhandenes Abonnement auswählen.
+.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+
+
+
+
+.Ergebnis
+BlueXP verfügt jetzt über die Berechtigungen, die es für Sie zum Ausführen von Aktionen in Azure benötigt. Sie können jetzt die öffnen https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+
+--
+====

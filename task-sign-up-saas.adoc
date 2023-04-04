@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-sign-up-saas.html 
-keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
-summary: Wenn Sie mit BlueXP beginnen, müssen Sie sich zuerst anmelden. Sie erhalten die Möglichkeit, ein Konto zu erstellen, aber Sie können diesen Schritt überspringen, wenn Sie zu einem bestehenden Konto eingeladen werden. 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
+summary: Wenn Sie mit BlueXP starten, müssen Sie sich zunächst mit Ihren vorhandenen Zugangsdaten auf der NetApp Support Website anmelden oder ein NetApp Cloud-Login erstellen. 
 ---
 = Melden Sie sich bei BlueXP an
 :hardbreaks:
@@ -14,14 +14,9 @@ summary: Wenn Sie mit BlueXP beginnen, müssen Sie sich zuerst anmelden. Sie erh
 
 
 [role="lead"]
-Wenn Sie mit BlueXP beginnen, müssen Sie sich zuerst anmelden. Sie erhalten die Möglichkeit, ein Konto zu erstellen, aber Sie können diesen Schritt überspringen, wenn Sie zu einem bestehenden Konto eingeladen werden.
-
-.Ein Hinweis zu Regierungsregionen
-Wenn Sie auf BlueXP über eine Regierungsregion oder eine Website zugreifen möchten, die keinen ausgehenden Internetzugang hat, müssen Sie einen Konnektor erstellen und sich bei der BlueXP-Benutzeroberfläche anmelden, die lokal auf dem Connector ausgeführt wird. link:task-managing-connectors.html#access-the-local-ui["Erfahren Sie, wie Sie auf die lokale Benutzeroberfläche des Connectors zugreifen können"].
+Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie mit BlueXP starten, müssen Sie sich zunächst mit Ihren vorhandenen Zugangsdaten auf der NetApp Support Website anmelden oder ein NetApp Cloud-Login erstellen.
 
 .Anmelde-Optionen
-Über eine SaaS-basierte Benutzeroberfläche ist BlueXP über Ihren Webbrowser zugänglich.
-
 Sie können sich bei BlueXP mithilfe einer der folgenden Optionen anmelden:
 
 * Ihre vorhandenen Zugangsdaten für die NetApp Support Site (NSS

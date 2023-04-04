@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-networking-google.html 
+keywords: networking, on prem networking, endpoints, urls, ports, ip address, proxy, proxy server, connections 
+summary: Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen kann. 
+---
+= Google Cloud-Netzwerke einrichten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen kann.
+
+
+
+== VPC und Subnetz
+
+Wenn Sie den Connector erstellen, müssen Sie die VPC und das Subnetz angeben, in dem sich der Connector befinden soll.
+
+
+
+== Verbindungen zu Zielnetzwerken
+
+Ein Connector erfordert eine Netzwerkverbindung zu dem Standort, an dem Sie Arbeitsumgebungen erstellen und verwalten möchten.
+
+
+
+== Outbound-Internetzugang
+
+Der Netzwerkspeicherort, an dem Sie den Connector bereitstellen, muss über eine ausgehende Internetverbindung verfügen.
+
+
+
+=== Endpunkte wurden während der manuellen Installation kontaktiert
+
+Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren möchten, benötigt das Installationsprogramm für den Connector während des Installationsprozesses Zugriff auf die folgenden URLs:
+
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+
+
+Der Host versucht möglicherweise, während der Installation Betriebssystempakete zu aktualisieren. Der Host kann verschiedene Spiegelungsstandorte für diese Betriebssystempakete kontaktieren.
+
+
+
+=== Endpunkte für den täglichen Betrieb kontaktiert
+
+Für den Konnektor ist ein abgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public-Cloud-Umgebung zu verwalten.
+
+[cols="2*"]
+|===
+| Endpunkte | Zweck 
+
+
+| \https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Zum Managen von Ressourcen in Google Cloud. 
+
+
+| \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+ a| 
+Um SaaS-Funktionen und -Services in BlueXP zur Verfügung zu stellen.
+
+
+NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er beginnt jedoch mit der Kontaktaufnahme mit „api.bluexp.netapp.com" in einer kommenden Version.
+
+
+
+| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
+|===
+.Verwandter Link
+link:reference-networking-saas-console.html["Bereiten Sie Ihr Networking auf den Benutzerzugriff auf die BlueXP Konsole vor"]
+
+
+
+== Proxy-Server
+
+Wenn Ihr Unternehmen einen Proxy-Server für den gesamten ausgehenden Internet-Datenverkehr benötigt, erhalten Sie die folgenden Informationen über Ihren HTTP- oder HTTPS-Proxy:
+
+* IP-Adresse
+* Anmeldedaten
+* HTTPS-Zertifikat
+
+
+
+
+== Ports
+
+Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiieren ihn oder wenn der Connector als Proxy für AutoSupport-Nachrichten verwendet wird.
+
+* HTTP (80) und HTTPS (443) bieten Zugriff auf die lokale Benutzeroberfläche, die Sie in seltenen Fällen verwenden werden.
+* SSH (22) ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen.
+* Eingehende Verbindungen über Port 3128 sind erforderlich, wenn Sie Cloud Volumes ONTAP-Systeme in einem Subnetz bereitstellen, in dem keine ausgehende Internetverbindung verfügbar ist.
+
+
+
+
+== Einschränkung der IP-Adresse
+
+Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Erfahren Sie mehr über diese Einschränkung"].

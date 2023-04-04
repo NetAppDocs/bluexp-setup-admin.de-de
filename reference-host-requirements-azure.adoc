@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: reference-host-requirements-azure.html 
+keywords: cpu requirements, ram requirements, azure requirements, azure host requirements, connector host requirements, azure vm size, vm size 
+summary: Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt. Wenn Sie den Connector manuell installieren möchten, sollten Sie sicherstellen, dass Ihr Host diese Anforderungen erfüllt. 
+---
+= Connector-Host-Anforderungen für Azure-Installationen prüfen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt. Wenn Sie den Connector manuell installieren möchten, sollten Sie sicherstellen, dass Ihr Host diese Anforderungen erfüllt.
+
+Wenn Sie den Connector von BlueXP oder aus dem Azure Marketplace implementieren, enthält das Image die erforderlichen Betriebssystem- und Softwarekomponenten.
+
+Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
+Unterstützte Betriebssysteme::
++
+--
+* CentOS 7.6, 7.7, 7.8 und 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 Und 8.7
++
+Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+
++
+Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unterstützt.
+
+
+
+--
+Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für CentOS oder Red hat Enterprise Linux zertifiziert ist, ist erforderlich. https://access.redhat.com/certified-hypervisors["Red hat Solution: Welche Hypervisoren sind für die Ausführung von Red hat Enterprise Linux zertifiziert?"^]
+CPU:: 4 Kerne oder 4 vCPUs
+RAM:: 14 GB
+Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen DS3 v2.
+Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
+Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
+Docker Engine:: Docker Engine Version 19.3.1 oder höher ist auf dem Host erforderlich, bevor Sie den Connector installieren. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
+

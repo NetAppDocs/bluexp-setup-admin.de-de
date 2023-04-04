@@ -26,6 +26,12 @@ Wenn Sie einen Connector direkt aus BlueXP erstellen, wendet BlueXP diese benutz
 
 Wenn Sie den Connector über den Azure Marketplace bereitstellen oder den Connector manuell auf einem Linux-Host installieren, müssen Sie die benutzerdefinierte Rolle selbst einrichten.
 
+* link:task-set-up-permissions-azure.html["Berechtigungen für Connector-Installation in Azure einrichten (Standardmodus)"]
+* link:task-set-up-permissions-on-prem.html["Berechtigungen für Connector-Installation vor Ort einrichten (Standardmodus)"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
+
+
 Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden.
 
 [source, json]
@@ -169,7 +175,7 @@ Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, 
 
 == Verwendung von Azure Berechtigungen
 
-In den folgenden Abschnitten wird die Nutzung der Berechtigungen für den jeweiligen NetApp Cloud-Service beschrieben. Diese Informationen können hilfreich sein, wenn Ihre Unternehmensrichtlinien vorschreiben, dass Berechtigungen nur bei Bedarf bereitgestellt werden.
+In den folgenden Abschnitten wird die Nutzung der Berechtigungen für jeden BlueXP Service beschrieben. Diese Informationen können hilfreich sein, wenn Ihre Unternehmensrichtlinien vorschreiben, dass Berechtigungen nur bei Bedarf bereitgestellt werden.
 
 
 

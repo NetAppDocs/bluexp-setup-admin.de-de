@@ -28,31 +28,20 @@ Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden 
 
 Wenn Sie einen Connector so konfigurieren, dass er einen Proxy-Server verwendet, verwenden dieser Connector und die von ihm verwalteten Cloud Volumes ONTAP-Systeme (einschließlich aller HA-Mediatoren) den Proxy-Server.
 
-Beachten Sie, dass mit diesem Vorgang der Anschluss neu gestartet wird. Stellen Sie sicher, dass der Connector keine Operationen durchführt, bevor Sie fortfahren.
+Beachten Sie, dass mit diesem Vorgang der Anschluss neu gestartet wird. Stellen Sie sicher, dass der Connector keine Vorgänge ausführt, bevor Sie fortfahren.
 
 .Schritte
-. link:task-logging-in.html["Melden Sie sich bei der BlueXP SaaS-Schnittstelle an"^] Von einem Computer mit einer Netzwerkverbindung zur Instanz des Connectors.
-+
-Wenn der Connector keine öffentliche IP-Adresse hat, benötigen Sie eine VPN-Verbindung oder Sie müssen eine Verbindung von einem Jump-Host herstellen, der sich im gleichen Netzwerk wie der Connector befindet.
-
-. Klicken Sie auf das Dropdown-Menü *Connector* und dann auf *zur lokalen Benutzeroberfläche* für einen bestimmten Konnektor.
-+
-image:screenshot_connector_local_ui.gif["Ein Screenshot, der das Symbol Connector in der Kopfzeile und die Aktion Gehe zu lokaler Benutzeroberfläche anzeigt."]
-
-+
-Die BlueXP-Schnittstelle, die auf dem Connector ausgeführt wird, wird in einem neuen Browser-Tab geladen.
-
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Verbindungseinstellungen*.
+. Wählen Sie oben rechts in der BlueXP-Konsole das Symbol Einstellungen und dann *Connector Settings* aus.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie unter *Allgemein* auf *HTTP Proxy Configuration*.
+. Wählen Sie unter *Allgemein* *HTTP Proxy Configuration* aus.
 . Richten Sie den Proxy ein:
 +
-.. Klicken Sie Auf *Proxy Aktivieren*.
+.. Wählen Sie *Proxy Aktivieren*.
 .. Geben Sie den Server mithilfe der Syntax an http://_address:port_[] Oder https://_address:port_[]
 .. Geben Sie einen Benutzernamen und ein Kennwort an, wenn eine grundlegende Authentifizierung für den Server erforderlich ist
-.. Klicken Sie Auf *Speichern*.
+.. Wählen Sie *Speichern*.
 +
 
 NOTE: BlueXP unterstützt keine Passwörter, die das Zeichen @ enthalten.
@@ -69,13 +58,13 @@ Wenn Sie einen Connector für die Verwendung eines Proxy-Servers konfiguriert ha
 
 Wenn Sie die Verwendung von privaten Azure-Links mit Cloud Volumes ONTAP deaktiviert und stattdessen Service-Endpunkte verwenden, müssen Sie direkten API-Datenverkehr aktivieren. Andernfalls wird der Datenverkehr nicht korrekt geleitet.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Weitere Informationen zur Verwendung eines Azure Private Links oder von Service-Endpunkten mit Cloud Volumes ONTAP"]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Weitere Informationen zur Verwendung eines Azure Private Links oder von Service-Endpunkten mit Cloud Volumes ONTAP"^]
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Verbindungseinstellungen*.
+. Wählen Sie oben rechts in der BlueXP-Konsole das Symbol Einstellungen und dann *Connector Settings* aus.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie unter *Allgemein* auf *direkte API-Traffic unterstützen*.
-. Klicken Sie auf das Kontrollkästchen, um die Option zu aktivieren, und klicken Sie dann auf *Speichern*.
+. Wählen Sie unter *Allgemein* *Support Direct API Traffic*.
+. Aktivieren Sie das Kontrollkästchen, um die Option zu aktivieren, und wählen Sie dann *Speichern*.
 

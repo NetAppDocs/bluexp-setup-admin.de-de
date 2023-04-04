@@ -1,0 +1,263 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-aws.html 
+keywords: aws permissions, set up permissions, set up aws permissions, permissions, iam role, iam policy, json, policy, role, credentials 
+summary: Richten Sie AWS Berechtigungen ein, damit Sie BlueXP für das Management Ihrer Daten- und Storage-Infrastruktur in AWS verwenden können. Wie Sie Berechtigungen einrichten, hängt von der Installationsoption ab, die Sie verwenden möchten. 
+---
+= AWS-Berechtigungen einrichten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Richten Sie AWS Berechtigungen ein, damit Sie BlueXP für das Management Ihrer Daten- und Storage-Infrastruktur in AWS verwenden können. Wie Sie Berechtigungen einrichten, hängt von der Installationsoption ab, die Sie verwenden möchten.
+
+Sie können aus den folgenden Installationsoptionen wählen:
+
+* *Installation aus BlueXP*: Einrichten von Berechtigungen, die es BlueXP ermöglichen, sich mit AWS zu authentifizieren und die Instanz bereitzustellen. BlueXP richtet während der Implementierung automatisch Berechtigungen für die Connector-Instanz ein.
++
+<<Richten Sie Berechtigungen zum Erstellen des Connectors aus BlueXP ein,Schritt-für-Schritt-Anleitungen anzeigen>>.
+
+* *Installation vom AWS Marketplace*: Richten Sie eine IAM-Rolle ein, die Sie der Connector-Instanz zuordnen können.
++
+<<Richten Sie bei der Implementierung über den AWS Marketplace Berechtigungen für den Connector ein,Schritt-für-Schritt-Anleitungen anzeigen>>.
+
+* *Manuelle Installation*: Erstellen Sie IAM-Richtlinien und hängen Sie sie an eine IAM-Rolle oder an einen IAM-Benutzer an.
++
+<<Richten Sie die Berechtigungen ein, die nach der manuellen Installation zugewiesen werden sollen,Schritt-für-Schritt-Anleitungen anzeigen>>.
+
+
+
+
+
+== Richten Sie Berechtigungen zum Erstellen des Connectors aus BlueXP ein
+
+BlueXP muss sich mit AWS authentifizieren, bevor es die Connector-Instanz in der VPC bereitstellen kann. Sie können eine der folgenden Authentifizierungsmethoden wählen:
+
+* Lassen Sie BlueXP eine IAM-Rolle übernehmen, die über die erforderlichen Berechtigungen verfügt
+* Geben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel für einen IAM-Benutzer an, der über die erforderlichen Berechtigungen verfügt
+
+
+Bei beiden Optionen besteht der erste Schritt darin, eine IAM-Richtlinie zu erstellen. Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS von BlueXP erforderlich sind.
+
+Bei Bedarf können Sie die IAM-Richtlinie mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
+
+
+TIP: Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtigungen auf die Connector-Instanz an, die den Connector zu AWS Ressourcen ermöglicht.
+
+.Schritte
+. Wechseln Sie zur AWS IAM-Konsole.
+. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
+. Klicken Sie auf *JSON*.
+. Kopieren Sie die folgende Richtlinie:
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeInstances",
+                "ec2:CreateTags",
+                "ec2:DescribeImages",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "iam:GetRole",
+                "iam:TagRole",
+                "iam:ListRoles",
+                "kms:ListAliases"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:TerminateInstances"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/OCCMInstance": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ]
+        }
+    ]
+}
+----
+. Klicken Sie auf *Weiter* und fügen Sie ggf. Tags hinzu.
+. Klicken Sie auf *Weiter* und geben Sie einen Namen und eine Beschreibung ein.
+. Klicken Sie auf *Create Policy*.
+. Hängen Sie die Richtlinie entweder einer IAM-Rolle an, die BlueXP übernehmen kann, oder einem IAM-Benutzer, damit Sie BlueXP Zugriffsschlüssel bereitstellen können:
++
+** (Option 1) Einrichten einer IAM-Rolle, von der BlueXP ausgehen kann:
++
+... Wechseln Sie im Zielkonto zur AWS IAM-Konsole.
+... Klicken Sie unter Zugriffsverwaltung auf *Rollen > Rolle erstellen* und befolgen Sie die Schritte zum Erstellen der Rolle.
+... Wählen Sie unter *Vertrauenswürdiger Entitätstyp* *AWS-Konto* aus.
+... Wählen Sie *ein weiteres AWS-Konto* aus und geben Sie die ID des BlueXP SaaS-Kontos ein: 952013314444
+... Wählen Sie die Richtlinie aus, die Sie im vorherigen Abschnitt erstellt haben.
+... Nachdem Sie die Rolle erstellt haben, kopieren Sie die Rolle ARN, sodass Sie sie bei der Erstellung des Connectors in BlueXP einfügen können.
+
+
+** (Option 2) Einrichten von Berechtigungen für einen IAM-Benutzer, damit Sie BlueXP Zugriffsschlüssel bereitstellen können:
++
+... Klicken Sie auf der AWS IAM-Konsole auf *Users* und wählen Sie dann den Benutzernamen aus.
+... Klicken Sie auf *Berechtigungen hinzufügen > vorhandene Richtlinien direkt anhängen*.
+... Wählen Sie die von Ihnen erstellte Richtlinie aus.
+... Klicken Sie auf *Weiter* und dann auf *Berechtigungen hinzufügen*.
+... Stellen Sie sicher, dass Sie über den Zugriffsschlüssel und den geheimen Schlüssel für den IAM-Benutzer verfügen.
+
+
+
+
+
+
+.Ergebnis
+Sie sollten nun über eine IAM-Rolle mit den erforderlichen Berechtigungen verfügen oder über einen IAM-Benutzer mit den erforderlichen Berechtigungen. Wenn Sie den Connector aus BlueXP erstellen, können Sie auch Informationen zur Rolle oder den Zugriffsschlüsseln bereitstellen.
+
+
+
+== Richten Sie bei der Implementierung über den AWS Marketplace Berechtigungen für den Connector ein
+
+IAM-Richtlinien in AWS erstellen und an eine IAM-Rolle anhängen Wenn Sie den Connector über AWS Marketplace erstellen, werden Sie aufgefordert, diese IAM-Rolle auszuwählen.
+
+.Schritte
+. Erstellen Sie über die IAM-Konsole eine Richtlinie:
++
+.. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
+.. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinien für den Connector"].
+.. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
++
+Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen.
+
++
+Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich.
+
+
+
+. Erstellen Sie in der IAM-Konsole eine IAM-Rolle:
++
+.. Klicken Sie auf *Rollen > Rolle erstellen*.
+.. Wählen Sie *AWS-Service > EC2* aus.
+.. Fügen Sie Berechtigungen hinzu, indem Sie die Richtlinien anhängen, die Sie im vorherigen Schritt erstellt haben.
+.. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.
+
+
+
+
+.Ergebnis
+Sie verfügen jetzt über eine IAM-Rolle, die Sie während der Implementierung über den AWS Marketplace mit der EC2-Instanz verknüpfen können.
+
+
+
+== Richten Sie die Berechtigungen ein, die nach der manuellen Installation zugewiesen werden sollen
+
+Wenn Sie die Connector-Software manuell auf Ihrem eigenen Linux-Host in AWS installieren, können Sie Berechtigungen wie folgt bereitstellen:
+
+* Option 1: Erstellen Sie IAM-Richtlinien und hängen Sie die Richtlinien einer IAM-Rolle an, die Sie der EC2-Instanz zuordnen können.
+* Option 2: Stellen Sie BlueXP AWS Zugriffsschlüssel für einen IAM-Benutzer bereit, der über die erforderlichen Berechtigungen verfügt.
+
+
+[role="tabbed-block"]
+====
+.IAM-Rolle
+--
+.Schritte
+. Erstellen Sie über die IAM-Konsole eine Richtlinie:
++
+.. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
+.. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].
+.. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
++
+Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen.
+
++
+Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich. link:reference-permissions-aws.html["Erfahren Sie mehr über IAM-Richtlinien für den Connector"].
+
+
+
+. Erstellen Sie in der IAM-Konsole eine IAM-Rolle:
++
+.. Klicken Sie auf *Rollen > Rolle erstellen*.
+.. Wählen Sie *AWS-Service > EC2* aus.
+.. Fügen Sie Berechtigungen hinzu, indem Sie die Richtlinien anhängen, die Sie im vorherigen Schritt erstellt haben.
+.. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.
+
+
+
+
+.Ergebnis
+Sie verfügen jetzt über eine IAM-Rolle, die Sie nach der Installation des Connectors mit der EC2-Instanz verknüpfen können. link:task-provide-permissions-aws.html["Erfahren Sie, wie Sie diese Berechtigungen für BlueXP bereitstellen"].
+
+--
+.AWS-Zugriffsschlüssel
+--
+.Schritte
+. Erstellen Sie über die IAM-Konsole eine Richtlinie:
++
+.. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
+.. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].
+.. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
++
+Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen.
+
++
+Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich. link:reference-permissions-aws.html["Erfahren Sie mehr über IAM-Richtlinien für den Connector"].
+
+
+
+. Fügen Sie die Richtlinien einem IAM-Benutzer hinzu.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS Documentation: Erstellung von IAM-Rollen"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
+
+
+. Stellen Sie sicher, dass der Benutzer über einen Zugriffsschlüssel verfügt, den Sie nach der Installation des Connectors zu BlueXP hinzufügen können.
+
+
+.Ergebnis
+Sie verfügen jetzt über einen IAM-Benutzer mit den erforderlichen Berechtigungen und einem Zugriffsschlüssel, den Sie BlueXP bereitstellen können. link:task-provide-permissions-aws.html["Erfahren Sie, wie Sie diese Berechtigungen für BlueXP bereitstellen"].
+
+--
+====

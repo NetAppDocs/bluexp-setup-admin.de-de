@@ -34,10 +34,10 @@ Für die AWS Sicherheitsgruppe für den Connector sind sowohl ein- als auch ausg
 | HTTPS | 443 | Bietet HTTPS-Zugriff von Client-Webbrowsern zur lokalen Benutzeroberfläche und Verbindungen aus der Cloud Data Sense Instanz 
 
 
-| TCP | 3128 | Ermöglicht Cloud Volumes ONTAP den Zugang zum Internet, um AutoSupport-Nachrichten an den NetApp Support zu senden. Nach der Bereitstellung müssen Sie diesen Port manuell öffnen. <<Proxy server for AutoSupport messages,Erfahren Sie mehr über den Proxy-Server des Connectors>>. 
+| TCP | 3128 | Ermöglicht Cloud Volumes ONTAP den Zugang zum Internet, um AutoSupport-Nachrichten an den NetApp Support zu senden. Nach der Bereitstellung müssen Sie diesen Port manuell öffnen. 
 
 
-| TCP | 9060, 9061 | Ermöglicht die Aktivierung und Nutzung von Cloud Data Sense und Cloud Backup in öffentlicher Cloud-Implementierungen. Diese Ports sind auch für Cloud Backup erforderlich, wenn Sie die SaaS-Schnittstelle in Ihrem BlueXP-Konto deaktivieren. 
+| TCP | 9060, 9061 | Ermöglicht die Aktivierung und Nutzung von Cloud Data Sense und Cloud Backup in Regierungsregionen. 
 |===
 
 
@@ -78,13 +78,10 @@ NOTE: Die Quell-IP-Adresse ist der Connector-Host.
 | API-Aufrufe und AutoSupport | HTTPS | 443 | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe an AWS und ONTAP, Cloud Data Sense, zum Ransomware-Service und dem Senden von AutoSupport-Nachrichten an NetApp 
 
 
-.3+| API-Aufrufe | TCP | 3000 | ONTAP HA Mediator | Kommunikation mit dem ONTAP HA Mediator 
+.2+| API-Aufrufe | TCP | 3000 | ONTAP HA Mediator | Kommunikation mit dem ONTAP HA Mediator 
 
 
 | TCP | 8080 | Sinn Für Daten | Während der Implementierung können Sie die Instanz von Data Sense nutzen 
-
-
-| TCP | 8088 | Backup auf S3 | API-Aufrufe zur Sicherung in S3 
 
 
 | DNS | UDP | 53 | DNS | Wird für DNS Resolve von BlueXP verwendet 

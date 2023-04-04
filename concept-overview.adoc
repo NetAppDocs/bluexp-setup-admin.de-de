@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-overview.html 
-keywords: overview, concepts, features, use case, cloud manager 
-summary: BlueXP ermöglicht IT-Experten und Cloud-Architekten das zentrale Management der hybriden Multi-Cloud-Infrastruktur mithilfe der Cloud-Lösungen von NetApp. 
+keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
+summary: Mit NetApp BlueXP steht Ihrem Unternehmen eine einzelne Managementplattform zur Verfügung, mit der Sie Ihre Daten über Ihre On-Premises- und Cloud-Umgebungen hinweg erstellen, schützen und regeln können. Die BlueXP SaaS-Plattform umfasst Storage- und Datenservices für Storage-Management, Datenmobilität, Datensicherung sowie Datenanalyse und -Kontrolle. Managementfunktionen werden über eine webbasierte Konsole und APIs bereitgestellt. 
 ---
 = Erfahren Sie mehr über BlueXP
 :hardbreaks:
@@ -14,15 +14,18 @@ summary: BlueXP ermöglicht IT-Experten und Cloud-Architekten das zentrale Manag
 
 
 [role="lead"]
-BlueXP (früher Cloud Manager) bietet IT-Experten und Cloud-Architekten die Möglichkeit, ihre Hybrid-Multi-Cloud-Infrastruktur mithilfe der Cloud-Lösungen von NetApp zentral zu managen.
+Mit NetApp BlueXP steht Ihrem Unternehmen eine einzelne Managementplattform zur Verfügung, mit der Sie Ihre Daten über Ihre On-Premises- und Cloud-Umgebungen hinweg erstellen, schützen und regeln können. Die BlueXP SaaS-Plattform umfasst Storage- und Datenservices für Storage-Management, Datenmobilität, Datensicherung sowie Datenanalyse und -Kontrolle. Managementfunktionen werden über eine webbasierte Konsole und APIs bereitgestellt.
 
 
 
 == Funktionen
 
-BlueXP ist eine SaaS-basierte Managementplattform der Enterprise-Klasse, die Ihnen unabhängig vom Speicherort die Kontrolle über Ihre Daten gibt.
+Die BlueXP Plattform umfasst vier Hauptsäulen des Datenmanagements: Storage, Mobilität, Sicherung sowie Analyse und Kontrolle.
 
-* Einrichtung und Verwendung https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] Für effizientes, Cloud-übergreifendes Multi-Protokoll-Datenmanagement
+Storage:: Erkennen, implementieren und managen Sie Storage in AWS, Azure, Google Cloud oder vor Ort.
++
+--
+* Einrichtung und Verwendung https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] Für effizientes, Cloud-übergreifendes Multi-Protokoll-Datenmanagement
 * Cloud-File-Storage-Services einrichten und verwenden:
 +
 ** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Dateien"^]
@@ -30,29 +33,46 @@ BlueXP ist eine SaaS-basierte Managementplattform der Enterprise-Klasse, die Ihn
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service für Google Cloud"^]
 
 
-* Erkennung und Management https://bluexp.netapp.com/netapp-on-premises["On-Premises-Storage"^]
+* Erkennung und Management https://bluexp.netapp.com/netapp-on-premises["On-Premises-Storage"^]:
 +
 ** E-Series Systeme
 ** ONTAP Cluster
 ** StorageGRID Systeme
 
 
-* Nutzen Sie die Services von BlueXP für Datenmobilität, Datensicherung sowie Datenanalyse und -Kontrolle:
+
+
+--
+Mobilität:: Daten werden durch Synchronisierung, Kopieren, Tiering und Caching von Daten dorthin verschoben, wo sie benötigt werden.
 +
-** https://bluexp.netapp.com/cloud-backup["Cloud-Backup"^]
-** https://bluexp.netapp.com/netapp-cloud-data-sense["Cloud-Daten Sinnvoll"^]
-** https://bluexp.netapp.com/cloud-sync-service["Cloud-Synchronisierung"^]
-** https://bluexp.netapp.com/cloud-tiering["Cloud Tiering"^]
-** https://bluexp.netapp.com/digital-advisor["Digital Advisor"^]
-** https://bluexp.netapp.com/global-file-cache["Globaler Datei-Cache"^]
-** https://bluexp.netapp.com/k8s["Kubernetes"^]
-** https://bluexp.netapp.com/ransomware-protection["Schutz Vor Ransomware"^]
-** https://bluexp.netapp.com/replication["Replizierung"^]
+--
+* https://bluexp.netapp.com/cloud-sync-service["Cloud-Synchronisierung"^]
+* https://bluexp.netapp.com/cloud-tiering["Cloud Tiering"^]
+* https://bluexp.netapp.com/global-file-cache["Globaler Datei-Cache"^]
 
 
+--
+Darstellt:: Automatisierte Sicherungsmechanismen schützen Daten vor Datenverlust, ungeplanten Ausfällen, Ransomware und anderen Cyberbedrohungen.
++
+--
+* https://bluexp.netapp.com/cloud-backup["Cloud-Backup"^]
+* https://bluexp.netapp.com/replication["Replizierung"^]
+* https://bluexp.netapp.com/ransomware-protection["Schutz Vor Ransomware"^]
+* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
-https://cloud.netapp.com/cloud-manager["Erfahren Sie mehr über BlueXP"^]
+--
+Analyse und Kontrolle:: Mit Tools können Sie Ihren Storage und Ihre Infrastruktur überwachen, zuordnen und optimieren.
++
+--
+* https://bluexp.netapp.com/netapp-cloud-data-sense["Cloud-Daten Sinnvoll"^]
+* https://bluexp.netapp.com/digital-advisor["Digital Advisor"^]
+
+
+--
+
+
+https://bluexp.netapp.com/["Erfahren Sie mehr darüber, wie Sie BlueXP für Ihr Unternehmen einsetzen können"^]
 
 
 
@@ -64,57 +84,43 @@ Mit BlueXP können Sie Cloud-Storage managen und Cloud-Services in Amazon Web Se
 
 == Kosten
 
-Die Preise für BlueXP hängen von den Leistungen ab, die Sie verwenden möchten. https://bluexp.netapp.com/pricing["Weitere Informationen zu den Preisen für BlueXP"^].
+Die Preise für BlueXP hängen von den Leistungen ab, die Sie verwenden möchten. https://bluexp.netapp.com/pricing["Weitere Informationen zu den Preisen für BlueXP"^]
 
 
 
 == Funktionsweise von BlueXP
 
-BlueXP verfügt über eine SaaS-basierte Schnittstelle, die in die BlueXP-Website integriert ist, und Connectors, die Cloud Volumes ONTAP und andere Cloud-Services verwalten.
+BlueXP umfasst eine webbasierte Konsole, die über die SaaS-Schicht bereitgestellt wird, Konten für Mandantenfähigkeit und Anschlüsse für das Management von Cloud Volumes ONTAP und anderen Cloud-Services.
 
 
 
 === Software-as-a-Service
 
-Auf BlueXP kann über eine zugegriffen werden https://console.bluexp.netapp.com["SaaS-basierte Benutzeroberfläche"^] Und APIs. Mit dieser SaaS-Erfahrung können Sie bei Veröffentlichung automatisch auf die neuesten Funktionen zugreifen und einfach zwischen Ihren NetApp Konten und Connectors wechseln.
-
-
-TIP: Wenn Sie in einer Umgebung arbeiten, in der kein abgehender Internetzugang verfügbar ist, können Sie die Connector-Software in dieser Umgebung installieren und auf die lokale Benutzeroberfläche zugreifen, die auf dem Connector verfügbar ist. link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].
+Auf BlueXP kann über eine zugegriffen werden https://console.bluexp.netapp.com["Webbasierte Konsole"^] Und APIs. Dank SaaS-Erfahrung können Sie automatisch auf die neuesten Funktionen zugreifen, sobald sie veröffentlicht wurden, und ganz einfach zwischen Ihren BlueXP Konten und Connectors wechseln.
 
 
 
-=== BlueXP-Website
+=== BlueXP-Konto
 
-https://cloud.netapp.com["Die BlueXP-Website"^] Bietet einen zentralen Standort für den Zugriff und das Management https://www.netapp.com/us/products/cloud-services/use-cases-for-netapp-cloud-services.aspx["NetApp Cloud-Services"^]. Dank der zentralen Benutzerauthentifizierung können Sie dieselben Anmeldedaten für den Zugriff auf BlueXP und andere Cloud-Services wie Cloud Insights verwenden.
+Wenn Sie sich zum ersten Mal bei BlueXP anmelden, werden Sie aufgefordert, ein _BlueXP Konto_ zu erstellen. Dieses Konto bietet Mandantenfähigkeit und ermöglicht es Ihnen, Benutzer und Ressourcen in isolierten Arbeitsbereichen zu organisieren_.
 
-
-
-=== NetApp Konto
-
-Wenn Sie sich zum ersten Mal bei BlueXP anmelden, werden Sie aufgefordert, ein _NetApp Konto_ zu erstellen. Dieses Konto bietet Mandantenfähigkeit und ermöglicht es Ihnen, Benutzer und Ressourcen in isolierten Arbeitsbereichen zu organisieren_.
+link:concept-netapp-accounts.html["Hier erfahren Sie mehr über Accounts"].
 
 
 
 === Anschlüsse
 
-In den meisten Fällen muss ein BlueXP Account Admin einen _Connector_ in Ihrer Cloud oder Ihrem On-Premises-Netzwerk bereitstellen. Mit dem Connector kann BlueXP Ressourcen und Prozesse innerhalb Ihrer Public Cloud-Umgebung verwalten. link:concept-connectors.html["Erfahren Sie mehr darüber, wann Anschlüsse erforderlich sind und wie sie funktionieren"].
+Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. Ein Connector ermöglicht Ihnen das Management von Ressourcen und Prozessen in Ihren On-Premises- und Cloud-Umgebungen. Die Nutzung von Cloud Volumes ONTAP und anderen Datenservices ist erforderlich.
+
+link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].
 
 
 
-==== Die Anschlüsse müssen jederzeit betriebsbereit sein
+=== Eingeschränkter Modus und privater Modus
 
-Anschlüsse sind ein grundlegender Bestandteil der NetApp BlueXP Servicearchitektur. Es liegt in Ihrer Verantwortung sicherzustellen, dass die entsprechenden Steckverbinder jederzeit betriebsbereit und zugänglich sind. Während der Service darauf ausgelegt ist, kurze Ausfälle der Connector-Verfügbarkeit zu überwinden, müssen Sie bei Bedarf sofort Maßnahmen ergreifen, um Infrastrukturausfälle zu beheben.
+BlueXP wird auch in Umgebungen mit Einschränkungen bei Sicherheit und Konnektivität unterstützt. Sie können den _Restricted Mode_ oder _Private Mode_ verwenden, um die Outbound-Konnektivität zur BlueXP SaaS-Ebene zu beschränken.
 
-Diese Dokumentation unterliegt der EULA. Wenn das Produkt nicht in Übereinstimmung mit der Dokumentation betrieben wird, können die Funktionalität und der Betrieb des Produkts sowie Ihre Rechte im Rahmen der EULA beeinträchtigt werden.
-
-
-
-==== Wie sich die Verfügbarkeit von Konnektor auf Cloud Volumes ONTAP auswirkt
-
-Ein Konnektor ist eine wichtige Komponente für den Zustand und Betrieb von Cloud Volumes ONTAP. Wenn ein Connector heruntergefahren wird, werden Cloud Volumes ONTAP PAYGO-Systeme und kapazitätsbasierte BYOL-Systeme heruntergefahren, nachdem die Kommunikation mit einem Connector über einen Zeitraum von mehr als 14 Tagen unterbrochen wurde. Dies geschieht, weil der Connector jeden Tag die Lizenzierung auf dem System aktualisiert.
-
-
-NOTE: Wenn Ihr Cloud Volumes ONTAP System über eine Node-basierte BYOL-Lizenz verfügt, wird das System nach 14 Tagen weiter ausgeführt, da die Lizenz auf dem Cloud Volumes ONTAP System installiert wird.
+link:concept-modes.html["Weitere Informationen zu den BlueXP Implementierungsmodi"].
 
 
 

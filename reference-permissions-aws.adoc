@@ -22,13 +22,21 @@ Beim Start der Connector-Instanz in AWS hängt BlueXP eine Richtlinie an die Ins
 
 Die unten verfügbaren IAM-Richtlinien bieten die Berechtigungen, die ein Connector zur Verwaltung von Ressourcen und Prozessen innerhalb Ihrer Public-Cloud-Umgebung basierend auf Ihrer AWS-Region benötigt.
 
-Bei Bedarf können Sie die IAM-Richtlinien mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
+Bei Bedarf können Sie die IAM-Richtlinien mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]Bei Bedarf können Sie die IAM-Richtlinien mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
 
-Beachten Sie Folgendes:
+Beachten Sie Folgendes: Beachten Sie Folgendes:
 
 * Wenn Sie einen Connector in einer standardmäßigen AWS-Region direkt aus BlueXP erstellen, wendet BlueXP automatisch Richtlinien auf den Connector an. Sie müssen in diesem Fall nichts tun.
 * Sie müssen die Richtlinien selbst einrichten, wenn Sie den Connector über AWS Marketplace implementieren, den Connector manuell auf einem Linux-Host installieren oder zusätzliche AWS-Anmeldedaten zu BlueXP hinzufügen möchten.
 * Außerdem müssen Sie sicherstellen, dass die Richtlinien immer auf dem neuesten Stand sind, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden.
+* Informationen zur schrittweisen Verwendung dieser Richtlinien finden Sie auf den folgenden Seiten:
++
+** link:task-set-up-permissions-aws.html["Einrichten von Berechtigungen für Connector-Installation in AWS (Standardmodus)"]
+** link:task-set-up-permissions-on-prem.html["Berechtigungen für Connector-Installation vor Ort einrichten (Standardmodus)"]
+** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+** https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
+
+
 
 
 Wählen Sie Ihre Region aus, um die erforderlichen Richtlinien anzuzeigen:
@@ -62,6 +70,7 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
 [source, json]
 ----
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Action": [
@@ -344,6 +353,7 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
 [source, json]
 ----
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Action": [
@@ -690,7 +700,7 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
 
 == Wie werden die AWS Berechtigungen verwendet
 
-In den folgenden Abschnitten wird die Nutzung der Berechtigungen für den jeweiligen NetApp Cloud-Service beschrieben. Diese Informationen können hilfreich sein, wenn Ihre Unternehmensrichtlinien vorschreiben, dass Berechtigungen nur bei Bedarf bereitgestellt werden.
+In den folgenden Abschnitten wird die Nutzung der Berechtigungen für jeden BlueXP Service beschrieben. Diese Informationen können hilfreich sein, wenn Ihre Unternehmensrichtlinien vorschreiben, dass Berechtigungen nur bei Bedarf bereitgestellt werden.
 
 
 

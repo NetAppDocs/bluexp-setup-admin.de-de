@@ -4,7 +4,7 @@ permalink: task-viewing-amazon-s3.html
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
 summary: Nach der Installation eines Connectors in AWS erkennt BlueXP automatisch Informationen zu den Amazon S3 Buckets, die sich im AWS Konto befinden, in dem der Connector installiert ist. Eine Amazon S3-Arbeitsumgebung wird dem Canvas hinzugefügt, damit Sie diese Informationen anzeigen können. 
 ---
-= Management Ihrer Amazon S3 Buckets
+= Amazon S3 Buckets managen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,4 +20,4 @@ image:screenshot-amazon-s3-we.png["Ein Screenshot einer Amazon S3 Arbeitsumgebun
 
 Sie können Details zu den S3-Buckets, einschließlich Region, Zugriffsrichtlinie, Konto, Gesamt- und genutzte Kapazität, anzeigen. Diese Buckets können als Ziele für Cloud-Backup, Cloud-Tiering oder Cloud Sync-Vorgänge verwendet werden. Zudem können Sie mit Cloud Data Sense diese Buckets scannen.
 
-Mit einer neu hinzugefügten Funktion können Sie jetzt S3-Buckets erstellen und bearbeiten. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Sehen Sie sich hier an, wie Sie Ihre S3-Buckets mithilfe von BlueXP anzeigen, erstellen und managen."]
+Mit einer neu hinzugefügten Funktion können Sie jetzt S3-Buckets erstellen und bearbeiten. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Sehen Sie sich hier an, wie Sie Ihre S3-Buckets mithilfe von BlueXP anzeigen, erstellen und managen"^]

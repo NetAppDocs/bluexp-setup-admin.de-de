@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: task-create-account.html 
+keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
+summary: Wenn Sie sich bei BlueXP anmelden, werden Sie aufgefordert, ein Konto für Ihr Unternehmen zu erstellen. Dieser Account könnte alles sein, was Sie benötigen. Wenn Ihr Unternehmen jedoch mehrere Accounts benötigt, müssen Sie mithilfe der Mandanten-API zusätzliche Konten erstellen. 
+---
+= Ein weiteres BlueXP Konto erstellen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie sich bei BlueXP anmelden, werden Sie aufgefordert, ein Konto für Ihr Unternehmen zu erstellen. Dieser Account könnte alles sein, was Sie benötigen. Wenn Ihr Unternehmen jedoch mehrere Accounts benötigt, müssen Sie mithilfe der Mandanten-API zusätzliche Konten erstellen.
+
+Erstellen Sie mithilfe des folgenden API-Anrufs ein zusätzliches BlueXP Konto:
+
+POST `/tenancy/account/{accountName}`
+
+Wenn Sie den eingeschränkten Modus aktivieren möchten, müssen Sie Folgendes in den Anforderungstext aufnehmen:
+
+[source, JSON]
+----
+{
+  "isSaasDisabled": true
+}
+----
+
+NOTE: Die Einstellung für den eingeschränkten Modus kann nicht geändert werden, nachdem BlueXP das Konto erstellt hat. Der eingeschränkte Modus kann später nicht aktiviert werden, und Sie können ihn später nicht mehr deaktivieren. Sie muss zum Zeitpunkt der Kontoerstellung festgelegt werden.
+
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["Erfahren Sie, wie Sie diesen API-Aufruf verwenden"^]
+
+.Weiterführende Links
+* link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
+* link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
+

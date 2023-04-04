@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: Sie können die Anmeldeinformationen verwalten, die der Connector-VM-Instanz zugeordnet sind. 
+summary: Sie können die Google Cloud-Anmeldedaten verwalten, die der VM-Instanz Connector zugeordnet sind. 
 ---
-= Verwalten von Google Cloud-Anmeldeinformationen und -Abonnements für BlueXP
+= Managen Sie Google Cloud-Anmeldedaten und -Abonnements für BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,27 +14,25 @@ summary: Sie können die Anmeldeinformationen verwalten, die der Connector-VM-In
 
 
 [role="lead"]
-Sie können die Anmeldeinformationen verwalten, die der Connector-VM-Instanz zugeordnet sind.
+Sie können die Google Cloud-Anmeldedaten verwalten, die der VM-Instanz Connector zugeordnet sind.
 
 
 
-== Verknüpfen eines Marketplace-Abonnements mit Google Cloud-Anmeldedaten
+== Verbinden Sie ein Marketplace-Abonnement mit Google Cloud-Anmeldedaten
 
-Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Dies sind die Anmeldeinformationen, die BlueXP zur Bereitstellung von Cloud Volumes ONTAP verwendet.
-
-Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmeldedaten verknüpft ist. Mithilfe des Abonnements können Sie ein nutzungsbasiertes Cloud Volumes ONTAP System erstellen und andere NetApp Cloud-Services nutzen.
+Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmeldedaten verknüpft ist. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Associate Subscription*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie auf der Seite *Account Credentials* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Associate Subscription*.
 +
 image:screenshot_gcp_add_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie in der Down-Liste ein Google Cloud-Projekt und ein Abonnement aus und klicken Sie dann auf *Mitarbeiter*.
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie ein Google Cloud-Projekt und ein Abonnement aus der Down-Liste aus, und wählen Sie dann *Associate* aus.
 +
 image:screenshot_gcp_associate.gif["Ein Screenshot eines Google Cloud-Projekts und Abonnements, das für Google Cloud-Anmeldedaten ausgewählt wurde."]
 
-. Wenn Sie noch kein Abonnement haben, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im Google Cloud Marketplace.
+. Wenn Sie noch kein Abonnement besitzen, wählen Sie *Abonnement hinzufügen > Weiter* und folgen Sie den Schritten im Google Cloud Marketplace.
 +
 
 NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Sie sowohl Billing Admin-Berechtigungen in Ihrem Google Cloud-Konto als auch BlueXP-Login haben.
@@ -42,17 +40,17 @@ NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Si
 +
 .. Nachdem Sie auf die umgeleitet wurden https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Seite zu NetApp BlueXP im Google Cloud Marketplace"^], Stellen Sie sicher, dass das richtige Projekt im oberen Navigationsmenü ausgewählt ist.
 +
-image:screenshot_gcp_cvo_marketplace.png["Screenshot der GCP CVO Marketplace-Seite"]
+image:screenshot_gcp_cvo_marketplace.png["Ein Screenshot der Cloud Volumes ONTAP Marketplace-Seite in Google Cloud"]
 
-.. Klicken Sie Auf *Abonnieren*.
+.. Wählen Sie *Abonnieren*.
 .. Wählen Sie das entsprechende Rechnungskonto aus und stimmen Sie den allgemeinen Geschäftsbedingungen zu.
-.. Klicken Sie Auf *Abonnieren*.
+.. Wählen Sie *Abonnieren*.
 +
 Dieser Schritt sendet Ihre Transferanfrage an NetApp.
 
-.. Klicken Sie im Popup-Dialogfeld auf *Registrieren Sie sich mit NetApp, Inc.*
+.. Wählen Sie im Popup-Dialogfeld *Registrierung bei NetApp, Inc.* aus
 +
-Sie müssen diesen Schritt abschließen, um das Google Cloud Abonnement mit Ihrem NetApp Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.
+Dieser Schritt muss abgeschlossen sein, um das Google Cloud Abonnement mit Ihrem BlueXP Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.
 
 +
 image:screenshot_gcp_marketplace_register.png["Ein Screenshot eines Pop-up-Pop-ups für die Registrierung."]
@@ -63,7 +61,7 @@ image:screenshot_gcp_marketplace_register.png["Ein Screenshot eines Pop-up-Pop-u
 NOTE: Wenn ein Mitarbeiter Ihres Unternehmens bereits über Ihr Rechnungskonto das NetApp BlueXP Abonnement abonniert hat, werden Sie weitergeleitet https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["Die Cloud Volumes ONTAP-Seite auf der BlueXP-Website"^] Stattdessen. Sollte dies nicht unerwartet sein, wenden Sie sich an Ihr NetApp Vertriebsteam. Google ermöglicht nur ein Abonnement pro Google-Abrechnungskonto.
 
 +
-*** Wählen Sie die NetApp Accounts aus, denen Sie dieses Abonnement zuordnen möchten.
+*** Wählen Sie die BlueXP Konten aus, mit denen Sie dieses Abonnement verknüpfen möchten.
 *** Wählen Sie im Feld *vorhandenes Abonnement ersetzen* aus, ob Sie das vorhandene Abonnement für ein Konto automatisch durch dieses neue Abonnement ersetzen möchten.
 +
 BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto durch dieses neue Abonnement. Wenn eine Gruppe von Anmeldeinformationen noch nicht mit einem Abonnement verknüpft wurde, wird dieses neue Abonnement nicht mit diesen Anmeldedaten verknüpft.
@@ -71,7 +69,7 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 +
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
-*** Klicken Sie Auf *Speichern*.
+*** Wählen Sie *Speichern*.
 +
 Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:
 
@@ -89,12 +87,12 @@ image:screenshot_gcp_associate.gif["Ein Screenshot der Abonnementzuordnungsseite
 
 
 
-== Fehlerbehebung beim Marketplace-Abonnementprozess
+== Fehlerbehebung bei der Marketplace-Subscription
 
-Manchmal kann das Abonnieren von Cloud Volumes ONTAP über den Google Cloud Marketplace fragmentiert werden aufgrund falscher Berechtigungen oder versehentlich nicht nach der Umleitung zur BlueXP-Website. Wenn dies geschieht, führen Sie die folgenden Schritte aus, um den Abonnementprozess abzuschließen.
+Wenn Sie BlueXP über den Google Cloud Marketplace abonnieren, kann es manchmal zu einer Fragmentierung kommen, weil Sie falsche Berechtigungen haben oder versehentlich die Umleitung zur BlueXP Website nicht folgen. Wenn dies geschieht, führen Sie die folgenden Schritte aus, um den Abonnementprozess abzuschließen.
 
 .Schritte
-. Navigieren Sie zum https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Seite zu NetApp BlueXP im Google Cloud Marketplace"^] Um den Status der Bestellung zu überprüfen. Wenn auf der Seite *auf Anbieter verwalten* steht, scrollen Sie nach unten und klicken Sie auf *Bestellungen verwalten*.
+. Navigieren Sie zum https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Seite zu NetApp BlueXP im Google Cloud Marketplace"^] Um den Status der Bestellung zu überprüfen. Wenn auf der Seite *auf Anbieter verwalten* steht, scrollen Sie nach unten und wählen Sie *Bestellungen verwalten*.
 +
 image:screenshot_gcp_manage_orders.png["Ein Screenshot der Marktplatz-Seite nach dem Abonnement."]
 

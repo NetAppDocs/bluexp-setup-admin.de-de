@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-standard-mode.html 
+keywords: quick start, standard mode quick start 
+summary: Einstieg in BlueXP im Standardmodus in wenigen Schritten 
+---
+= Schneller Einstieg für BlueXP im Standard-Modus
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Einstieg in BlueXP im Standardmodus in wenigen Schritten
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Registrieren Sie sich und erstellen Sie ein Konto
+[role="quick-margin-para"]
+Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Und melden Sie sich an. Sie erhalten die Möglichkeit, ein Konto zu erstellen, aber Sie können diesen Schritt überspringen, wenn Sie zu einem bestehenden Konto eingeladen werden.
+
+[role="quick-margin-para"]
+Jetzt sind Sie angemeldet und können mehrere BlueXP Services wie Digital Advisor, Amazon FSX for ONTAP, Azure NetApp Files und vieles mehr nutzen. link:concept-connectors.html["Erfahren Sie, was Sie ohne einen Connector tun können"].
+
+[role="quick-margin-para"]
+link:task-sign-up-saas.html["Erfahren Sie, wie Sie sich anmelden und ein Konto erstellen"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Einen Konnektor erstellen
+[role="quick-margin-para"]
+Für die ersten Schritte mit BlueXP benötigen Sie keinen Connector, aber Sie können einen Connector erstellen, mit dem Sie alle Funktionen und Services von BlueXP ausschöpfen können. Der Connector ist NetApp Software, die BlueXP ermöglicht, Ressourcen und Prozesse innerhalb Ihrer Hybrid-Cloud-Umgebung zu managen.
+
+[role="quick-margin-para"]
+Ein BlueXP Kontoadministrator kann einen Connector in Ihrem Cloud- oder On-Premises-Netzwerk erstellen.
+
+[role="quick-margin-list"]
+* link:concept-connectors.html["Erfahren Sie mehr darüber, wann Anschlüsse erforderlich sind und wie sie funktionieren"]
+* link:task-quick-start-connector-aws.html["Erfahren Sie, wie Sie in AWS einen Connector erstellen können"]
+* link:task-quick-start-connector-azure.html["Erfahren Sie, wie Sie in Azure einen Connector erstellen"]
+* link:task-quick-start-connector-google.html["Erfahren Sie, wie Sie einen Connector in Google Cloud erstellen"]
+* link:task-quick-start-connector-on-prem.html["Erfahren Sie, wie Sie einen Konnektor vor Ort erstellen"]
+
+
+[role="quick-margin-para"]
+Wenn Sie BlueXP Services für das Management von Storage und Daten in Google Cloud nutzen möchten, muss der Connector in Google Cloud ausgeführt werden.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Abonnieren Sie BlueXP
+[role="quick-margin-para"]
+Abonnieren Sie BlueXP über den Marketplace Ihres Cloud-Providers und zahlen Sie für BlueXP Services zu einem Stundensatz (PAYGO) oder über einen Jahresvertrag.
+
+[role="quick-margin-para"]
+link:task-subscribe-standard-mode.html["Abonnieren Sie BlueXP"].

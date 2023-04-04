@@ -226,6 +226,7 @@ AWS-Services (amazonaws.com):
 
 * CloudFormation
 * Elastic Compute Cloud (EC2)
+* Identitäts- und Zugriffsmanagement (Identity and Access Management, IAM)
 * Key Management Service (KMS)
 * Security Token Service (STS)
 * Simple Storage Service (S3)

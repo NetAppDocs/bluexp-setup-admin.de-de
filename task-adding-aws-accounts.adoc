@@ -14,7 +14,7 @@ summary: Fügen Sie AWS Anmeldedaten hinzu und managen Sie diese, damit BlueXP �
 
 
 [role="lead"]
-Fügen Sie AWS Anmeldedaten hinzu und managen Sie diese, damit BlueXP über die erforderlichen Berechtigungen verfügt, um Cloud-Ressourcen in Ihren AWS-Konten bereitzustellen und zu managen. Wenn Sie mehrere AWS-Abonnements verwalten, können Sie jedes davon auf der Seite „Anmeldeinformationen“ verschiedenen AWS Zugangsdaten zuweisen.
+Fügen Sie AWS Anmeldedaten hinzu und managen Sie diese, damit BlueXP über die erforderlichen Berechtigungen verfügt, um Cloud-Ressourcen in Ihren AWS-Konten bereitzustellen und zu managen. Wenn Sie mehrere AWS Marketplace-Abonnements managen, können Sie jede davon auf der Seite Anmeldedaten verschiedenen AWS-Anmeldedaten zuweisen.
 
 
 
@@ -24,7 +24,7 @@ AWS Zugangsdaten können zu einem vorhandenen Connector oder direkt zu BlueXP hi
 
 * Fügen Sie einem vorhandenen Connector zusätzliche AWS Zugangsdaten hinzu
 +
-Wenn Sie einem vorhandenen Connector AWS Zugangsdaten hinzufügen, erhalten Sie die erforderlichen Berechtigungen für das Management von Ressourcen und Prozessen in Ihrer Public-Cloud-Umgebung. <<Anmeldedaten zu einem Konnektor hinzufügen,Erfahren Sie, wie Sie AWS Zugangsdaten zu einem Connector hinzufügen>>.
+Wenn Sie einem vorhandenen Connector AWS Zugangsdaten hinzufügen, erhalten Sie die erforderlichen Berechtigungen für das Management von Ressourcen und Prozessen in Ihrer Public-Cloud-Umgebung. <<Add credentials to a Connector,Erfahren Sie, wie Sie AWS Zugangsdaten zu einem Connector hinzufügen>>.
 
 * Fügen Sie zur Erstellung eines Connectors AWS Credentials zu BlueXP hinzu
 +
@@ -48,9 +48,11 @@ Wenn Sie BlueXP mit AWS-Zugriffsschlüsseln zur Verfügung stellen, sollten Sie 
 
 
 
-== Anmeldedaten zu einem Konnektor hinzufügen
+== Fügen Sie zusätzliche Anmeldedaten zu einem Connector hinzu
 
-Fügen Sie AWS Zugangsdaten zu einem Connector hinzu, damit die IT auch über die erforderlichen Berechtigungen zum Management von Ressourcen und Prozessen in Ihrer Public Cloud-Umgebung verfügt. Sie können entweder den ARN einer IAM-Rolle in einem anderen Konto bereitstellen oder AWS-Zugriffsschlüssel bereitstellen.
+Fügen Sie einem Connector zusätzliche AWS-Anmeldedaten hinzu, damit dieser über die erforderlichen Berechtigungen zum Management von Ressourcen und Prozessen in der Public-Cloud-Umgebung verfügt. Sie können entweder den ARN einer IAM-Rolle in einem anderen Konto bereitstellen oder AWS-Zugriffsschlüssel bereitstellen.
+
+Wenn Sie gerade erst mit BlueXP starten, link:concept-accounts-aws.html["So nutzt BlueXP AWS Zugangsdaten und Berechtigungen"].
 
 
 
@@ -77,7 +79,7 @@ Wenn der Connector vor Ort installiert ist, können Sie diese Authentifizierungs
 
 .Schritte
 . Rufen Sie die IAM-Konsole im Zielkonto auf, in dem Sie dem Connector Berechtigungen erteilen möchten.
-. Klicken Sie unter Zugriffsverwaltung auf *Rollen > Rolle erstellen* und befolgen Sie die Schritte zum Erstellen der Rolle.
+. Wählen Sie unter Access Management die Option *Rollen > Rolle erstellen* aus, und befolgen Sie die Schritte zum Erstellen der Rolle.
 +
 Gehen Sie wie folgt vor:
 
@@ -128,11 +130,11 @@ Falls Sie diese Zugangsdaten gerade bei Ihrem Cloud-Provider erstellt haben, kan
 
 .Schritte
 . Stellen Sie sicher, dass derzeit in BlueXP der richtige Connector ausgewählt ist.
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie auf der Seite *Account Credentials* auf *Add Credentials* und folgen Sie den Schritten im Assistenten.
+. Wählen Sie auf der Seite *Account Credentials* die Option *Add Credentials* aus und befolgen Sie die Schritte im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Amazon Web Services > Connector*.
 .. *Identifizierungsdaten definieren*: Geben Sie den ARN (Amazon Resource Name) einer vertrauenswürdigen IAM-Rolle an, oder geben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel ein.
@@ -140,7 +142,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 +
 Damit Cloud Volumes ONTAP mit stündlichem Tarif (PAYGO) oder mit einem Jahresvertrag bezahlt werden kann, müssen AWS Zugangsdaten über den AWS Marketplace mit einem Abonnement für Cloud Volumes ONTAP verknüpft werden.
 
-.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+.. *Review*: Bestätigen Sie die Details zu den neuen Zugangsdaten und wählen Sie *Add*.
 
 
 
@@ -148,7 +150,7 @@ Damit Cloud Volumes ONTAP mit stündlichem Tarif (PAYGO) oder mit einem Jahresve
 .Ergebnis
 Sie können jetzt bei der Erstellung einer neuen Arbeitsumgebung auf eine andere Gruppe von Anmeldeinformationen von der Seite Details und Anmeldeinformationen wechseln:
 
-image:screenshot_accounts_switch_aws.png["Ein Screenshot, in dem die Auswahl zwischen Cloud-Provider-Konten angezeigt wird, nachdem Sie auf der Seite Details  Credentials auf Switch Account geklickt haben."]
+image:screenshot_accounts_switch_aws.png["Ein Screenshot, der die Auswahl zwischen den Cloud-Provider-Konten zeigt, nachdem Sie auf der Seite Details  Anmeldedaten Konto wechseln ausgewählt haben."]
 
 
 
@@ -160,11 +162,11 @@ Fügen Sie BlueXP die AWS Zugangsdaten hinzu, indem Sie das ARN einer IAM-Rolle 
 
 === Einrichten der IAM-Rolle
 
-Richten Sie eine IAM-Rolle ein, mit der BlueXP SaaS die Rolle übernehmen kann.
+Richten Sie eine IAM-Rolle ein, damit die BlueXP SaaS-Schicht die Rolle übernimmt.
 
 .Schritte
 . Wechseln Sie im Zielkonto zur IAM-Konsole.
-. Klicken Sie unter Zugriffsverwaltung auf *Rollen > Rolle erstellen* und befolgen Sie die Schritte zum Erstellen der Rolle.
+. Wählen Sie unter Access Management die Option *Rollen > Rolle erstellen* aus, und befolgen Sie die Schritte zum Erstellen der Rolle.
 +
 Gehen Sie wie folgt vor:
 
@@ -174,7 +176,7 @@ Gehen Sie wie folgt vor:
 ** Erstellen Sie eine Richtlinie, die die zum Erstellen eines Connectors erforderlichen Berechtigungen enthält.
 +
 *** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Zeigen Sie die für FSX für ONTAP erforderlichen Berechtigungen an"^]
-*** link:task-creating-connectors-aws.html#create-an-iam-policy["Sehen Sie sich die Richtlinie zur Bereitstellung von Konnektor an"]
+*** link:task-set-up-permissions-aws.html["Sehen Sie sich die Richtlinie zur Bereitstellung von Konnektor an"]
 
 
 
@@ -195,15 +197,15 @@ Nachdem Sie die IAM-Rolle mit den erforderlichen Berechtigungen angegeben haben,
 Wenn Sie gerade die IAM-Rolle erstellt haben, kann es ein paar Minuten dauern, bis sie zur Verwendung verfügbar sind. Warten Sie einige Minuten, bevor Sie BlueXP die Anmeldeinformationen hinzufügen.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie auf der Seite *Account Credentials* auf *Add Credentials* und folgen Sie den Schritten im Assistenten.
+. Wählen Sie auf der Seite *Account Credentials* die Option *Add Credentials* aus und befolgen Sie die Schritte im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Amazon Web Services > BlueXP*.
 .. *Anmeldedaten definieren*: Geben Sie den ARN (Amazon Resource Name) der IAM-Rolle an.
-.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+.. *Review*: Bestätigen Sie die Details zu den neuen Zugangsdaten und wählen Sie *Add*.
 
 
 
@@ -213,9 +215,15 @@ Sie können die Anmeldeinformationen jetzt beim Erstellen eines neuen Connectors
 
 
 
+== Zugangsdaten zu BlueXP für Amazon FSX for ONTAP hinzufügen
+
+Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["BlueXP Dokumentation für Amazon FSX for ONTAP"^]
+
+
+
 == AWS Abonnement zuordnen
 
-Nachdem Sie Ihre AWS Zugangsdaten zu BlueXP hinzugefügt haben, können Sie ein AWS Marketplace Abonnement mit diesen Anmeldedaten verknüpfen. Mit dem Abonnement können Sie Cloud Volumes ONTAP auf Stundenbasis (PAYGO) oder bei Nutzung eines Jahresvertrags bezahlen und andere NetApp Cloud-Services nutzen.
+Nachdem Sie Ihre AWS Zugangsdaten zu BlueXP hinzugefügt haben, können Sie ein AWS Marketplace Abonnement mit diesen Anmeldedaten verknüpfen. Dank des Abonnements können Sie für Cloud Volumes ONTAP zu einem Stundensatz (PAYGO) bezahlen oder einen Jahresvertrag nutzen und andere BlueXP Services nutzen.
 
 Es gibt zwei Szenarien, in denen Sie ein AWS Marketplace-Abonnement verknüpfen können, nachdem Sie BlueXP bereits die Zugangsdaten hinzugefügt haben:
 
@@ -227,23 +235,23 @@ Es gibt zwei Szenarien, in denen Sie ein AWS Marketplace-Abonnement verknüpfen 
 Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#how-to-create-a-connector["Erfahren Sie, wie Sie einen Konnektor erstellen"].
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Associate Subscription*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie auf der Seite *Account Credentials* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Associate Subscription*.
 +
 image:screenshot_associate_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie das Abonnement aus der unten angezeigten Liste aus und klicken Sie auf *Mitarbeiter*.
-. Um die Anmeldeinformationen mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie das Abonnement aus der Down-Liste aus und wählen *Associate* aus.
+. Um die Anmeldeinformationen einem neuen Abonnement zuzuordnen, wählen Sie *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
 +
-.. Klicken Sie auf *Kaufoptionen anzeigen*.
-.. Klicken Sie Auf *Abonnieren*.
-.. Klicken Sie auf *Konto einrichten*.
+.. Wählen Sie *Kaufoptionen anzeigen*.
+.. Wählen Sie *Abonnieren*.
+.. Wählen Sie *Konto einrichten*.
 +
 Sie werden auf die BlueXP-Website umgeleitet.
 
 .. Auf der Seite *Subscription Assignment*:
 +
-*** Wählen Sie die NetApp Accounts aus, denen Sie dieses Abonnement zuordnen möchten.
+*** Wählen Sie die BlueXP Konten aus, mit denen Sie dieses Abonnement verknüpfen möchten.
 *** Wählen Sie im Feld *vorhandenes Abonnement ersetzen* aus, ob Sie das vorhandene Abonnement für ein Konto automatisch durch dieses neue Abonnement ersetzen möchten.
 +
 BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto durch dieses neue Abonnement. Wenn eine Gruppe von Anmeldeinformationen noch nicht mit einem Abonnement verknüpft wurde, wird dieses neue Abonnement nicht mit diesen Anmeldedaten verknüpft.
@@ -251,7 +259,7 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 +
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
-*** Klicken Sie Auf *Speichern*.
+*** Wählen Sie *Speichern*.
 +
 Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:
 
@@ -273,14 +281,14 @@ Bearbeiten Sie Ihre AWS Zugangsdaten in BlueXP, indem Sie den Kontotyp (AWS Schl
 TIP: Sie können die Anmeldeinformationen für ein Instanzprofil, das einer Connector-Instanz zugeordnet ist, nicht bearbeiten.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Credentials bearbeiten*.
-. Nehmen Sie die gewünschten Änderungen vor und klicken Sie dann auf *Anwenden*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie auf der Seite *Account Credentials* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Credentials bearbeiten*.
+. Nehmen Sie die erforderlichen Änderungen vor und wählen Sie dann *Anwenden*.
 
 
 
 
-== Anmeldedaten werden gelöscht
+== Anmeldeinformationen löschen
 
 Wenn Sie keine Anmeldedaten mehr benötigen, können Sie diese aus BlueXP löschen. Sie können nur Anmeldeinformationen löschen, die nicht mit einer Arbeitsumgebung verknüpft sind.
 
@@ -288,7 +296,7 @@ Wenn Sie keine Anmeldedaten mehr benötigen, können Sie diese aus BlueXP lösch
 TIP: Sie können die Anmeldeinformationen für ein Instanzprofil nicht löschen, das einer Konnektor-Instanz zugeordnet ist.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf der Seite *Account Credentials* auf das Aktionsmenü für einen Satz von Anmeldeinformationen und wählen Sie dann *Credentials löschen*.
-. Klicken Sie zur Bestätigung auf *Löschen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie auf der Seite *Account Credentials* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Credentials löschen*.
+. Wählen Sie *Löschen*, um zu bestätigen.
 

@@ -1,0 +1,265 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-aws.html 
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
+summary: Installieren Sie den Connector in AWS direkt über die webbasierte BlueXP Konsole, über den AWS Marketplace oder durch Installation der Software auf Ihrem eigenen Linux Host. 
+---
+= Erstellen Sie den Connector in AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Erstellen Sie den Connector direkt über die webbasierte Konsole von BlueXP, über AWS Marketplace oder durch Installation der Software auf Ihrem eigenen Linux-Host.
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.Was Sie benötigen
+* Eine AWS-Authentifizierungsmethode: Entweder eine IAM-Rolle oder Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen.
++
+link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"]
+
+* Ein VPC und ein Subnetz, das die Netzwerkanforderungen erfüllt
++
+link:task-set-up-networking-aws.html["Hier erhalten Sie Informationen zu den Netzwerkanforderungen"]
+
+* Ein Schlüsselpaar für die EC2-Instanz.
+* Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist.
+
+
+.Schritte
+. Klicken Sie auf die Dropdown-Liste *Connector* und wählen Sie *Connector hinzufügen*.
++
+image:screenshot_connector_add.gif["Ein Screenshot, in dem das Symbol Connector in der Kopfzeile und die Aktion Connector hinzufügen angezeigt wird."]
+
+. Wählen Sie als Cloud-Provider * Amazon Web Services* und klicken Sie auf *Weiter*.
+. Lesen Sie auf der Seite *Bereitstellen eines Konnektors* die Details dazu, was Sie benötigen. Sie haben zwei Möglichkeiten:
++
+.. Klicken Sie auf *Weiter*, um die Bereitstellung mithilfe des Produktleitfadens vorzubereiten. Jeder Schritt im Produktleitfaden enthält die Informationen, die auf dieser Seite der Dokumentation enthalten sind.
+.. Klicken Sie auf *Skip to Deployment*, wenn Sie bereits mit den Schritten auf dieser Seite vorbereitet sind.
+
+
+. Befolgen Sie die Schritte im Assistenten, um den Konnektor zu erstellen:
++
+** *Get Ready*: Bewerten Sie, was Sie brauchen.
+** *AWS Credentials*: Geben Sie Ihre AWS Region an und wählen Sie dann eine Authentifizierungsmethode aus, die entweder eine IAM-Rolle ist, die BlueXP annehmen kann, oder einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel.
++
+
+TIP: Wenn Sie die Option *Rolle übernehmen* wählen, können Sie den ersten Satz von Anmeldeinformationen aus dem Assistenten für die Connector-Bereitstellung erstellen. Alle zusätzlichen Anmeldeinformationen müssen auf der Seite Anmeldeinformationen erstellt werden. Sie werden dann über den Assistenten in einer Dropdown-Liste verfügbar sein. link:task-adding-aws-accounts.html["Hier erfahren Sie, wie Sie zusätzliche Anmeldedaten hinzufügen"].
+
+** *Details*: Geben Sie Einzelheiten über den Connector an.
++
+*** Geben Sie einen Namen für die Instanz ein.
+*** Fügen Sie der Instanz benutzerdefinierte Tags (Metadaten) hinzu.
+*** Wählen Sie aus, ob BlueXP eine neue Rolle mit den erforderlichen Berechtigungen erstellen soll oder ob Sie eine vorhandene Rolle auswählen möchten, die Sie mit eingerichtet haben link:reference-permissions-aws.html["Die erforderlichen Berechtigungen"].
+*** Wählen Sie aus, ob Sie die EBS-Festplatten des Connectors verschlüsseln möchten. Sie haben die Möglichkeit, den Standardverschlüsselungsschlüssel zu verwenden oder einen benutzerdefinierten Schlüssel zu verwenden.
+
+
+** *Netzwerk*: Geben Sie ein VPC-, Subnetz- und Schlüsselpaar für die Instanz an, wählen Sie aus, ob eine öffentliche IP-Adresse aktiviert werden soll, und geben Sie optional eine Proxy-Konfiguration an.
++
+Stellen Sie sicher, dass Sie über das richtige Schlüsselpaar verfügen, das Sie mit dem Anschluss verwenden können. Ohne ein Schlüsselpaar können Sie nicht auf die virtuelle Connector-Maschine zugreifen.
+
+** *Sicherheitsgruppe*: Wählen Sie aus, ob eine neue Sicherheitsgruppe erstellt werden soll oder ob eine vorhandene Sicherheitsgruppe ausgewählt werden soll, die einen eingehenden HTTP-, HTTPS- und SSH-Zugriff erlaubt.
+** *Review*: Überprüfen Sie Ihre Auswahl, um zu überprüfen, ob Ihre Einrichtung korrekt ist.
+
+
+. Klicken Sie Auf *Hinzufügen*.
++
+Die Instanz sollte in ca. 7 Minuten fertig sein. Sie sollten auf der Seite bleiben, bis der Vorgang abgeschlossen ist.
+
+
+
+.Ergebnis
+Nach Abschluss des Prozesses ist der Connector für die Nutzung über BlueXP verfügbar.
+
+--
+.AWS Marketplace
+--
+.Was Sie benötigen
+* Ein VPC und ein Subnetz, das die Netzwerkanforderungen erfüllt
++
+link:task-set-up-networking-aws.html["Hier erhalten Sie Informationen zu den Netzwerkanforderungen"]
+
+* Eine IAM-Rolle mit angehängter Richtlinie, die die erforderlichen Berechtigungen für den Connector enthält.
++
+link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"]
+
+* Berechtigung zum Abonnieren und Abbestellen des AWS Marketplace für Ihren IAM-Benutzer.
+* Ein Schlüsselpaar für die EC2-Instanz.
+
+
+.Schritte
+. Wechseln Sie zum https://aws.amazon.com/marketplace/pp/B018REK8QG["Seite „BlueXP“ im AWS Marketplace"^]
+. Klicken Sie auf der Marketplace-Seite auf *Weiter zur Anmeldung* und dann auf *Weiter zur Konfiguration*.
++
+image:screenshot-subscribe-aws.png["Ein Screenshot, der die Schaltflächen „Weiter zu Abonnieren“ und „Weiter zu Konfiguration“ im AWS Marketplace zeigt."]
+
+. Ändern Sie eine der Standardoptionen, und klicken Sie auf *Weiter zum Starten*.
+. Wählen Sie unter *Aktion auswählen* *über EC2 starten* und klicken Sie dann auf *Start*.
++
+In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole aus starten, da Sie über die Konsole eine IAM-Rolle an die Connector-Instanz anhängen können. Dies ist mit der Aktion * von Website starten* nicht möglich.
+
+. Befolgen Sie die Anweisungen zur Konfiguration und Bereitstellung der Instanz:
++
+** *Name und Tags*: Geben Sie einen Namen und Tags für die Instanz ein.
+** *Anwendung und Betriebssystembild*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.
+** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen der unterstützten Instanztypen (t3.xlarge wird empfohlen).
++
+link:reference-host-requirements-aws.html["Prüfen Sie die Anforderungen an die Instanz"].
+
+** *Schlüsselpaar (Login)*: Wählen Sie das Schlüsselpaar aus, mit dem Sie eine sichere Verbindung zur Instanz herstellen möchten.
+** *Netzwerkeinstellungen*: Bearbeiten Sie die Netzwerkeinstellungen nach Bedarf:
++
+*** Wählen Sie die gewünschte VPC und das Subnetz.
+*** Geben Sie an, ob die Instanz eine öffentliche IP-Adresse haben soll.
+*** Legen Sie Firewall-Einstellungen fest, die die erforderlichen Verbindungsmethoden für die Connector-Instanz SSH, HTTP und HTTPS aktivieren.
+
+
+** *Storage konfigurieren*: Behalten Sie die standardmäßigen Speicheroptionen bei.
+** *Erweiterte Details*: Unter *IAM Instance profile* wählen Sie die IAM-Rolle, die die erforderlichen Berechtigungen für den Connector enthält.
++
+link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"].
+
+** *Zusammenfassung*: Lesen Sie die Zusammenfassung durch und klicken Sie auf *Instanz starten*.
+
+
++
+AWS startet die Software mit den angegebenen Einstellungen. Die Connector-Instanz und -Software sollten in etwa fünf Minuten ausgeführt werden.
+
+. Öffnen Sie einen Webbrowser von einem Host, der eine Verbindung mit der virtuellen Verbindungsmaschine hat, und geben Sie die folgende URL ein:
++
+https://_ipaddress_[]
+
+. Richten Sie nach der Anmeldung den Konnektor ein:
++
+.. Geben Sie das BlueXP Konto an, das dem Connector zugeordnet werden soll.
+.. Geben Sie einen Namen für das System ein.
+.. Unter *laufen Sie in einer gesicherten Umgebung?* Sperrmodus deaktiviert halten.
++
+Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. Der eingeschränkte Modus sollte nur aktiviert werden, wenn Sie über eine sichere Umgebung verfügen und dieses Konto von den BlueXP Backend-Services trennen möchten. Wenn das der Fall ist, link:task-quick-start-restricted-mode.html["Befolgen Sie die Schritte für den Einstieg in BlueXP im eingeschränkten Modus"].
+
+.. Klicken Sie auf *Let's Start*.
+
+
+
+
+.Ergebnis
+Der Connector ist jetzt mit Ihrem BlueXP Konto installiert und eingerichtet.
+
+Öffnen Sie einen Webbrowser, und rufen Sie den auf https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+
+--
+.Manuelle Installation
+--
+.Was Sie benötigen
+* Root-Berechtigungen zum Installieren des Connectors.
+* Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist.
++
+Sie haben die Möglichkeit, nach der Installation einen Proxyserver zu konfigurieren, aber dafür muss der Connector neu gestartet werden.
+
+* Ein CA-signiertes Zertifikat, wenn der Proxy-Server HTTPS verwendet oder wenn der Proxy ein abfangenden Proxy ist.
+
+
+.Über diese Aufgabe
+* Die Installation installiert die AWS Befehlszeilen-Tools (awscli), um Recovery-Verfahren durch den NetApp Support zu ermöglichen.
++
+Wenn Sie eine Meldung erhalten, dass die Installation des awscli fehlgeschlagen ist, können Sie die Meldung ignorieren. Der Steckverbinder kann ohne Werkzeuge erfolgreich betrieben werden.
+
+* Das Installationsprogramm, das auf der NetApp Support-Website verfügbar ist, kann möglicherweise eine frühere Version sein. Nach der Installation aktualisiert sich der Connector automatisch, wenn eine neue Version verfügbar ist.
+
+
+.Schritte
+. Vergewissern Sie sich, dass der Docker aktiviert ist und ausgeführt wird.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. Wenn die Systemvariablen _http_Proxy_ oder _https_Proxy_ auf dem Host festgelegt sind, entfernen Sie sie:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Wenn Sie diese Systemvariablen nicht entfernen, schlägt die Installation fehl.
+
+. Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"^], Und dann kopieren Sie es auf den Linux-Host.
++
+Sie sollten das Installationsprogramm für den „Online“-Connector herunterladen, das für den Einsatz in Ihrem Netzwerk oder in der Cloud gedacht ist. Für den Connector ist ein separater „Offline“-Installer verfügbar, der jedoch nur für Bereitstellungen im privaten Modus unterstützt wird.
+
+. Weisen Sie Berechtigungen zum Ausführen des Skripts zu.
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+Wobei <version> die Version des Connectors ist, den Sie heruntergeladen haben.
+
+. Führen Sie das Installationsskript aus.
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+Die Parameter --Proxy und --cacert sind optional. Wenn Sie über einen Proxyserver verfügen, müssen Sie die Parameter wie dargestellt eingeben. Das Installationsprogramm fordert Sie nicht auf, Informationen über einen Proxy einzugeben.
+
++
+Hier sehen Sie ein Beispiel für den Befehl mit beiden optionalen Parametern:
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--Proxy konfiguriert den Connector so, dass er einen HTTP- oder HTTPS-Proxy-Server in einem der folgenden Formate verwendet:
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
+
+
++
+--cacert gibt ein CA-signiertes Zertifikat für den HTTPS-Zugriff zwischen dem Connector und dem Proxy-Server an. Dieser Parameter ist nur erforderlich, wenn Sie einen HTTPS-Proxyserver angeben oder wenn der Proxy ein abfangenden Proxy ist.
+
+. Warten Sie, bis die Installation abgeschlossen ist.
++
+Am Ende der Installation wird der Connector-Dienst (occm) zweimal neu gestartet, wenn Sie einen Proxy-Server angegeben haben.
+
+. Öffnen Sie einen Webbrowser von einem Host, der eine Verbindung mit der virtuellen Verbindungsmaschine hat, und geben Sie die folgende URL ein:
++
+https://_ipaddress_[]
+
+. Richten Sie nach der Anmeldung den Konnektor ein:
++
+.. Geben Sie das BlueXP Konto an, das dem Connector zugeordnet werden soll.
+.. Geben Sie einen Namen für das System ein.
+.. Unter *laufen Sie in einer gesicherten Umgebung?* Sperrmodus deaktiviert halten.
++
+Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. Der eingeschränkte Modus sollte nur aktiviert werden, wenn Sie über eine sichere Umgebung verfügen und dieses Konto von den BlueXP Backend-Services trennen möchten. Wenn das der Fall ist, link:task-quick-start-restricted-mode.html["Befolgen Sie die Schritte für den Einstieg in BlueXP im eingeschränkten Modus"].
+
+.. Klicken Sie auf *Let's Start*.
+
+
+
+
+.Ergebnis
+Der Connector ist jetzt installiert und mit Ihrem BlueXP Konto eingerichtet.
+
+.Was kommt als Nächstes?
+link:task-provide-permissions-aws.html["Stellen Sie BlueXP mit den Berechtigungen bereit, die Sie zuvor eingerichtet haben"].
+
+--
+====
