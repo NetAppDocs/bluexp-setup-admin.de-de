@@ -22,9 +22,9 @@ Beim Start der Connector-Instanz in AWS hängt BlueXP eine Richtlinie an die Ins
 
 Die unten verfügbaren IAM-Richtlinien bieten die Berechtigungen, die ein Connector zur Verwaltung von Ressourcen und Prozessen innerhalb Ihrer Public-Cloud-Umgebung basierend auf Ihrer AWS-Region benötigt.
 
-Bei Bedarf können Sie die IAM-Richtlinien mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]Bei Bedarf können Sie die IAM-Richtlinien mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
+Bei Bedarf können Sie die IAM-Richtlinien mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
 
-Beachten Sie Folgendes: Beachten Sie Folgendes:
+Beachten Sie Folgendes:
 
 * Wenn Sie einen Connector in einer standardmäßigen AWS-Region direkt aus BlueXP erstellen, wendet BlueXP automatisch Richtlinien auf den Connector an. Sie müssen in diesem Fall nichts tun.
 * Sie müssen die Richtlinien selbst einrichten, wenn Sie den Connector über AWS Marketplace implementieren, den Connector manuell auf einem Linux-Host installieren oder zusätzliche AWS-Anmeldedaten zu BlueXP hinzufügen möchten.
