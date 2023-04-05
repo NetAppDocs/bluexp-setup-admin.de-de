@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-aws.html 
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
-summary: Installieren Sie den Connector in AWS direkt über die webbasierte BlueXP Konsole, über den AWS Marketplace oder durch Installation der Software auf Ihrem eigenen Linux Host. 
+summary: Erstellen Sie einen Connector direkt über die webbasierte Konsole von BlueXP, über AWS Marketplace oder durch Installation der Software auf Ihrem eigenen Linux-Host. 
 ---
-= Erstellen Sie den Connector in AWS
+= Connector in AWS erstellen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Installieren Sie den Connector in AWS direkt über die webbasierte Blue
 
 
 [role="lead"]
-Erstellen Sie den Connector direkt über die webbasierte Konsole von BlueXP, über AWS Marketplace oder durch Installation der Software auf Ihrem eigenen Linux-Host.
+Erstellen Sie einen Connector direkt über die webbasierte Konsole von BlueXP, über AWS Marketplace oder durch Installation der Software auf Ihrem eigenen Linux-Host.
 
 [role="tabbed-block"]
 ====

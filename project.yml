@@ -241,27 +241,39 @@ homepage:
       url: "/task-quick-start-restricted-mode.html"
     - title: Starten Sie mit dem privaten Modus
       url: "/task-quick-start-private-mode.html"
-  - title: Anschlüsse
-    links:
-    - title: Erfahren Sie mehr über Steckverbinder
-      url: concept-connectors.html
-    - title: Anschlüsse Verwalten
-      url: task-managing-connectors.html
-    - title: AWS Berechtigungen
-      url: reference-permissions-aws.html
-    - title: Azure-Berechtigungen
-      url: reference-permissions-azure.html
-    - title: Google Cloud-Berechtigungen
-      url: reference-permissions-gcp.html
   - title: BlueXP Accounts
     links:
     - title: Mehr zu BlueXP Accounts
       url: concept-netapp-accounts.html
-    - title: Einrichten von Arbeitsbereichen und Benutzern
-      url: task-setting-up-netapp-accounts.html
     - title: Managen Sie Ihr BlueXP Konto
       url: task-managing-netapp-accounts.html
-  - title: Accounts von Cloud-Providern
+    - title: Überwachen Sie den Betrieb Ihres Kontos
+      url: task-monitor-cm-operations.html
+  - title: Anschlüsse
+    links:
+    - title: Erfahren Sie mehr über Steckverbinder
+      url: concept-connectors.html
+    - title: Einen Connector in AWS erstellen (Standardmodus)
+      url: task-quick-start-connector-aws.html
+    - title: Connector in Azure erstellen (Standardmodus)
+      url: task-quick-start-connector-azure.html
+    - title: Connector in Google Cloud erstellen (Standardmodus)
+      url: task-quick-start-connector-google.html
+    - title: Erstellen eines Connectors On-Premises (Standardmodus)
+      url: task-quick-start-connector-on-prem.html
+    - title: Anschlüsse Verwalten
+      url: task-managing-connectors.html
+  - title: Berechtigungen
+    links:
+    - title: Zusammenfassung der Berechtigungen
+      url: reference-permissions.html
+    - title: AWS-Berechtigungen für den Connector
+      url: reference-permissions-aws.html
+    - title: Azure-Berechtigungen für den Connector
+      url: reference-permissions-azure.html
+    - title: Google Cloud-Berechtigungen für den Connector
+      url: reference-permissions-gcp.html
+  - title: Anmeldedaten
     links:
     - title: AWS Zugangsdaten managen
       url: task-adding-aws-accounts.html
@@ -269,6 +281,8 @@ homepage:
       url: task-adding-azure-accounts.html
     - title: Google Cloud-Anmeldedaten managen
       url: task-adding-gcp-accounts.html
+    - title: Verwalten Sie die NSS-Anmeldedaten für Ihr Konto
+      url: task-adding-nss-accounts.html
   - title: Blogs Community
     links:
     - title: NetApp Community
