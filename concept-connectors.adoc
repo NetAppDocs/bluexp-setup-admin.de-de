@@ -65,12 +65,16 @@ Wenn Sie BlueXP im Standardmodus verwenden, ist für die folgenden Funktionen un
 * Cloud Tiering
 * Cloud Volumes ONTAP
 * E-Series Systeme
+* Wirtschaftliche Effizienz ^1^
 * Globaler Datei-Cache
 * Erkennung von Google Cloud Storage
 * Kubernetes-Cluster
 * On-Premises-ONTAP-Cluster-Integration in BlueXP-Datenservices
+* Ausfallsicherheit der Betriebsabläufe ^1^
 * StorageGRID
 
+
+^1^ während Sie ohne Connector auf diese Dienste zugreifen können, ist ein Connector erforderlich, um Aktionen von den Diensten zu initiieren.
 
 
 
