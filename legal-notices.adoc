@@ -47,5 +47,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.
 
-* link:media/notice.pdf["Hinweis für BlueXP"^]
-
+link:media/notice.pdf["Hinweis für BlueXP"^]
