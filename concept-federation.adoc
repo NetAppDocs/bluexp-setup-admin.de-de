@@ -18,6 +18,18 @@ _Identity Federation_ ermöglicht Single Sign On mit BlueXP, sodass Benutzer sic
 
 
 
+== Identitätsföderation mit NSS-Anmeldedaten
+
+Wenn Sie sich mit Ihren NSS-Zugangsdaten (NetApp Support Site) bei BlueXP anmelden, sollten Sie die Anweisungen auf dieser Seite nicht befolgen, um die Identity Federation einzurichten. Sie sollten stattdessen Folgendes tun:
+
+* Laden Sie die herunter, und füllen Sie die aus https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["Antragsformular für die NetApp Föderation"^]
+* Senden Sie das Formular an die im Formular angegebene E-Mail-Adresse
+
+
+Das Identitäts- und Zugriffsmanagement durch NetApp wird Ihren Antrag prüfen.
+
+
+
 == Funktionsweise der Identitätsföderation
 
 Durch die Einrichtung des Identity Federation wird eine Vertrauensverbindung zwischen dem BlueXP Authentifizierungsservice-Provider (auth0) und Ihrem eigenen Identitätsmanagement-Anbieter hergestellt.
@@ -56,6 +68,8 @@ BlueXP unterstützt nur von Service-Providern initiiertes (von SP-initiiertes) S
 == Überblick über den Setup-Prozess
 
 Bevor Sie eine Verbindung zwischen BlueXP und Ihrem Identitätsmanagement-Anbieter herstellen, sollten Sie die erforderlichen Schritte kennen, damit Sie sich entsprechend vorbereiten können.
+
+Diese Schritte sind speziell für Benutzer bestimmt, die sich über ein NetApp Cloud-Login bei BlueXP anmelden. Wenn Sie Ihre NSS-Anmeldedaten für die Anmeldung bei BlueXP verwenden, <<Identitätsföderation mit NSS-Anmeldedaten,Erfahren Sie, wie Sie Identitätsföderation mit NSS-Anmeldeinformationen einrichten>>.
 
 
 
