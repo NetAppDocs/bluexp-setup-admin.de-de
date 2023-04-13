@@ -3583,4 +3583,9 @@
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">Erfahren Sie, wie Sie Identitätsföderation mit NSS-Anmeldeinformationen einrichten</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">Diese Schritte sind speziell für Benutzer bestimmt, die sich über ein NetApp Cloud-Login bei BlueXP anmelden. Wenn Sie Ihre NSS-Anmeldedaten für die Anmeldung bei BlueXP verwenden, <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>.</block>
   <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">\https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
+  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">Die standardmäßigen EC2-Instanzeinstellungen sollten nicht geändert werden</block>
+  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">Wenn Sie den Connector in AWS implementieren, sind die folgenden EC2-Instanzeinstellungen standardmäßig konfiguriert:</block>
+  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 ist auf optional eingestellt</block>
+  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens ist auf optional gesetzt</block>
+  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">Diese Einstellungen sollten nicht in erforderlich geändert werden. Wenn Sie diese Einstellungen auf „erforderlich“ ändern, wird die Verfügbarkeit von Connector und Cloud Volumes ONTAP beeinträchtigt.</block>
 </blocks>

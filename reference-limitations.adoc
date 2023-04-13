@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens 
 summary: Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit dem Produkt zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
 ---
 = Bekannte Einschränkungen
@@ -21,6 +21,18 @@ Diese Einschränkungen gelten insbesondere für die Einrichtung und Administrati
 
 
 == Einschränkungen an den Anschlüssen
+
+
+
+=== Die standardmäßigen EC2-Instanzeinstellungen sollten nicht geändert werden
+
+Wenn Sie den Connector in AWS implementieren, sind die folgenden EC2-Instanzeinstellungen standardmäßig konfiguriert:
+
+* IMDSv2 ist auf optional eingestellt
+* HttpTokens ist auf optional gesetzt
+
+
+Diese Einstellungen sollten nicht in erforderlich geändert werden. Wenn Sie diese Einstellungen auf „erforderlich“ ändern, wird die Verfügbarkeit von Connector und Cloud Volumes ONTAP beeinträchtigt.
 
 
 
