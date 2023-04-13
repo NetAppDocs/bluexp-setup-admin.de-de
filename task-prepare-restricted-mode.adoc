@@ -140,7 +140,7 @@ AWS-Services (amazonaws.com):
 | \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | Für das Management von Ressourcen in Azure China Regionen. 
 
 
-| \https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Zum Managen von Ressourcen in Google Cloud. 
+| \https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Zum Managen von Ressourcen in Google Cloud. 
 
 
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
