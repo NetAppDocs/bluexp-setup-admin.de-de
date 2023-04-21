@@ -179,20 +179,6 @@ In den folgenden Abschnitten wird die Nutzung der Berechtigungen für jeden Blue
 
 
 
-=== AppTemplate-Tags
-
-Der Connector stellt bei Verwendung des AppTemplate Tagging-Dienstes folgende API-Anforderungen zur Verwaltung von Tags auf Azure-Ressourcen bereit:
-
-* Microsoft.Ressourcen/Ressourcen/Lesen
-* Microsoft.Ressourcen/Abonnements/Operationsergebnisse/Lesen
-* Microsoft.Resources/Subskriptionen/resourceGroups/read
-* Microsoft.Ressourcen/Abonnements/Ressourcengruppen/Ressourcen/Lesen
-* Microsoft.Ressourcen/Tags/lesen
-* Microsoft.Ressourcen/Tags/schreiben
-
-
-
-
 === Azure NetApp Dateien
 
 Der Connector stellt folgende API-Anforderungen zur Verwaltung von Azure NetApp Files-Arbeitsumgebungen vor:
@@ -206,9 +192,9 @@ Der Connector stellt folgende API-Anforderungen zur Verwaltung von Azure NetApp 
 
 
 
-=== Cloud-Backup
+=== Backup und Recovery
 
-Der Connector stellt die folgenden API-Anforderungen für Backup- und Wiederherstellungsvorgänge:
+Der Connector macht die folgenden API-Anfragen für das Backup und Recovery von BlueXP:
 
 * Microsoft.Compute/virtualMachines/read
 * Microsoft.Compute/virtualMachines/start/action
@@ -261,9 +247,9 @@ Der Konnektor stellt folgende API-Anforderungen zur Verfügung, wenn Sie die Fun
 
 
 
-=== Cloud-Daten Sinnvoll
+=== Klassifizierung
 
-Der Connector stellt bei der Verwendung von Cloud Data Sense die folgenden API-Anforderungen vor.
+Bei der Verwendung der BlueXP Klassifizierung macht der Connector die folgenden API-Anfragen.
 
 [cols="3*"]
 |===
@@ -404,26 +390,6 @@ Der Connector stellt bei der Verwendung von Cloud Data Sense die folgenden API-A
 
 | Microsoft.Resources/Subskriptionen/resourceGroups/write | Ja. | Nein 
 |===
-
-
-=== Cloud Tiering
-
-Der Connector stellt bei der Einrichtung von Cloud Tiering die folgenden API-Anforderungen vor.
-
-* Microsoft.Storage/StorageAccounts/Listkeys/Action
-* Microsoft.Resources/Subskriptionen/resourceGroups/read
-* Microsoft.Ressourcen/Abonnements/Standorte/gelesen
-
-
-Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
-
-* Microsoft.Storage/StorageAccounts/blobServices/Container/Lesevorgang
-* Microsoft.Storage/StorageAccounts/blobServices/Container/write
-* Microsoft.Storage/StorageAccounts/Management Policies/read
-* Microsoft.Storage/StorageAccounts/Management Richtlinien/schreiben
-* Microsoft.Storage/StorageAccounts/Lesevorgang
-
-
 
 
 === Cloud Volumes ONTAP
@@ -733,9 +699,9 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 |===
 
 
-=== Globaler Datei-Cache
+=== Edge-Caching
 
-Der Connector stellt bei Verwendung des globalen Datei-Caches folgende API-Anforderungen vor:
+Der Connector macht die folgenden API-Anfragen, wenn Sie BlueXP Edge Caching verwenden:
 
 * Microsoft.Insights/Metriken/Lesevorgang
 * Microsoft.Compute/virtualMachines/extensions/write
@@ -764,6 +730,40 @@ Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von
 
 
 
+=== Korrekturmaßnahmen
+
+Der Connector macht die folgenden API-Anfragen zum Management von Tags auf Azure-Ressourcen, wenn Sie BlueXP zur Problembehebung verwenden:
+
+* Microsoft.Ressourcen/Ressourcen/Lesen
+* Microsoft.Ressourcen/Abonnements/Operationsergebnisse/Lesen
+* Microsoft.Resources/Subskriptionen/resourceGroups/read
+* Microsoft.Ressourcen/Abonnements/Ressourcengruppen/Ressourcen/Lesen
+* Microsoft.Ressourcen/Tags/lesen
+* Microsoft.Ressourcen/Tags/schreiben
+
+
+
+
+=== Tiering
+
+Der Connector macht die folgenden API-Anfragen, wenn Sie BlueXP Tiering einrichten.
+
+* Microsoft.Storage/StorageAccounts/Listkeys/Action
+* Microsoft.Resources/Subskriptionen/resourceGroups/read
+* Microsoft.Ressourcen/Abonnements/Standorte/gelesen
+
+
+Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
+
+* Microsoft.Storage/StorageAccounts/blobServices/Container/Lesevorgang
+* Microsoft.Storage/StorageAccounts/blobServices/Container/write
+* Microsoft.Storage/StorageAccounts/Management Policies/read
+* Microsoft.Storage/StorageAccounts/Management Richtlinien/schreiben
+* Microsoft.Storage/StorageAccounts/Lesevorgang
+
+
+
+
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
@@ -772,7 +772,7 @@ Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den fo
 
 === 23 März 2023
 
-Die Berechtigung „Microsoft.Storage/storageAccounts/delete“ wird für Cloud Data Sense nicht mehr benötigt.
+Die Berechtigung „Microsoft.Storage/storageAccounts/delete“ wird für die BlueXP Klassifizierung nicht mehr benötigt.
 
 Diese Genehmigung ist für Cloud Volumes ONTAP weiterhin erforderlich.
 
@@ -785,7 +785,7 @@ Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt:
 * Microsoft.Storage/storageAccounts/listeAccountActionSas/Action
 * Microsoft.Synapse/Workspaces/private EndpointConnectionsGenehmigung/Aktion
 +
-Diese Berechtigungen sind für Cloud Backup erforderlich.
+Diese Berechtigungen sind für das Backup und Recovery von BlueXP erforderlich.
 
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +
@@ -801,11 +801,11 @@ Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt:
 
 * Microsoft.Storage/StorageAccounts/blobServices/Container/write
 +
-Diese Berechtigung ist für Cloud Backup und Cloud Tiering erforderlich.
+Diese Berechtigung ist für das Backup und Recovery von BlueXP sowie für BlueXP Tiering erforderlich.
 
 * Microsoft.Network/publicIPAddresses/delete
 +
-Diese Berechtigungen sind für Cloud Backup erforderlich.
+Diese Berechtigung ist für das Backup und Recovery von BlueXP erforderlich.
 
 
 

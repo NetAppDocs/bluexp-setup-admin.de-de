@@ -231,7 +231,7 @@ includedPermissions:
 | - compute.networks.updatePolicy | So wenden Sie Firewall-Regeln auf die VPCs und Subnetze für ein HA-Paar an. 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Und Cloud-Daten sinnvoll nutzen. 
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Um die BlueXP Klassifizierung zu aktivieren. 
 
 
 | - Container.Clusters.get - Container.Clusters.list | Um Kubernetes Cluster zu erkennen, die in der Google Kubernetes Engine ausgeführt werden. 
@@ -243,7 +243,7 @@ includedPermissions:
 | - Monitoring.Timeeries.list - Storage.Buckets.getIamPolicy | Um Informationen zu Google Cloud Storage Buckets zu erhalten. 
 
 
-| - Cloudkms.ckryptoKeys.get - cloudkms.ckryptoKeys.getIamPolicy - cloudkms.ckryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.Keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | Sie können im Cloud Backup-Aktivierungs-Assistenten Ihre eigenen, vom Kunden gemanagten Schlüssel auswählen und nicht die von Google gemanagten Standardschlüssel verwenden. 
+| - Cloudkms.ckryptoKeys.get - cloudkms.ckryptoKeys.getIamPolicy - cloudkms.ckryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.Keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | So wählen Sie im BlueXP Aktivierungsassistenten für Backup und Recovery eigene vom Kunden gemanagte Schlüssel aus, statt die standardmäßigen, von Google gemanagten Schlüssel zu verwenden. 
 |===
 
 
@@ -275,4 +275,4 @@ Die Richtlinie hat folgende Berechtigungen hinzugefügt:
 * cloudkms.keyRings.setIamPolicy
 
 
-Diese Berechtigungen sind für Cloud Backup erforderlich.
+Diese Berechtigungen sind für das Backup und Recovery von BlueXP erforderlich.

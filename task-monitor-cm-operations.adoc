@@ -98,7 +98,7 @@ Sie können bestimmte Arten von Benachrichtigungen per E-Mail versenden, damit S
 
 [NOTE]
 ====
-* Derzeit werden Benachrichtigungen zu den folgenden BlueXP Funktionen und Services per E-Mail gesendet: Connectors, Cloud Sync, Cloud-Backup, Digital Wallet und Ransomware-Schutz. Weitere Services werden in zukünftigen Versionen hinzugefügt.
+* Derzeit werden Benachrichtigungen zu folgenden BlueXP Funktionen und Services per E-Mail gesendet: Connectors, BlueXP Kopier- und Synchronisierungsfunktionen, BlueXP Backup und Recovery, BlueXP Digital Wallet und BlueXP Ransomware-Schutz. Weitere Services werden in zukünftigen Versionen hinzugefügt.
 * Das Senden von E-Mail-Benachrichtigungen wird nicht unterstützt, wenn der Connector auf einer Website ohne Internetzugang installiert ist.
 
 

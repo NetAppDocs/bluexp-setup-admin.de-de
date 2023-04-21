@@ -16,7 +16,7 @@ summary: Nach der Installation eines Connectors in Google Cloud kann BlueXP auto
 [role="lead"]
 Nach der Installation eines Connectors in Google Cloud kann BlueXP automatisch Informationen über die Google Cloud Storage Buckets finden, die sich im Google-Konto befinden, in dem der Connector installiert ist. Eine Google Cloud Storage Arbeitsumgebung wird dem Canvas hinzugefügt, damit Sie diese Informationen anzeigen können.
 
-Sie erhalten Details zu Ihren Google Cloud Storage Buckets, einschließlich Standort, Zugriffsstatus, Storage-Klasse, Gesamt- und genutzter Kapazität und mehr. Diese Buckets können als Ziele für Cloud-Backup, Cloud-Tiering oder Cloud Sync-Vorgänge verwendet werden.
+Sie erhalten Details zu Ihren Google Cloud Storage Buckets, einschließlich Standort, Zugriffsstatus, Storage-Klasse, Gesamt- und genutzter Kapazität und mehr. Diese Buckets können als Ziele für BlueXP Backup und Recovery, BlueXP Tiering oder BlueXP Kopier- und Synchronisierungsvorgänge verwendet werden.
 
 .Schritte
 . Installieren Sie einen Connector im Google-Konto, in dem Sie Ihre Google Cloud Storage Buckets anzeigen möchten.
@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["Ein Screenshot, der das Aktionsf
 
 . Wählen Sie *Daten synchronisieren*, um Daten mit oder aus Google Cloud Storage Buckets zu synchronisieren.
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Überblick über den Cloud Sync Service"^]
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Übersicht über die BlueXP Kopier- und Synchronisierungsfunktion"^]
 
 . Wählen Sie *Arbeitsumgebung eingeben*, um Details zu den Buckets in Ihrem Google-Konto anzuzeigen.
 +

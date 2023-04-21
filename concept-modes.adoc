@@ -154,10 +154,10 @@ Unterstützte BlueXP Services:: BlueXP unterstützt folgende Storage- und Datens
 | Azure NetApp Dateien | Volle Unterstützung 
 
 
-| Cloud-Backup | Unterstützt in Regierungsregionen und Geschäftsregionen mit eingeschränkter Betriebsart. Nicht unterstützt in souveränen Regionen mit eingeschränktem Modus. Die folgenden Funktionen werden nicht unterstützt: Applikationen, Virtual Machines und Kubernetes. 
+| Backup und Recovery | Unterstützt in Regierungsregionen und Geschäftsregionen mit eingeschränkter Betriebsart. Nicht unterstützt in souveränen Regionen mit eingeschränktem Modus. Die folgenden Funktionen werden nicht unterstützt: Applikationen, Virtual Machines und Kubernetes. 
 
 
-| Cloud-Daten Sinnvoll  a| 
+| Klassifizierung  a| 
 Unterstützt in Regierungsregionen mit eingeschränktem Modus. Nicht unterstützt in kommerziellen Regionen oder in souveränen Regionen mit eingeschränktem Modus.
 
 Es gelten die folgenden Einschränkungen:
@@ -171,7 +171,7 @@ Es gelten die folgenden Einschränkungen:
 | Cloud Volumes ONTAP | Volle Unterstützung 
 
 
-| Digital Wallet | Sie können die Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den eingeschränkten Modus verwenden. 
+| Digitale Brieftasche | Sie können das Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den eingeschränkten Modus verwenden. 
 
 
 | On-Premises ONTAP Cluster | Erkennung mit einem Connector und Ermittlung ohne einen Connector (direkte Erkennung) werden unterstützt. Wenn Sie ein On-Premises-Cluster mit einem Connector ermitteln, wird die erweiterte Ansicht (System Manager) nicht unterstützt. 
@@ -246,13 +246,13 @@ Unterstützte BlueXP Services in Cloud-Implementierungen:: BlueXP unterstützt b
 | Unterstützte Services | Hinweise 
 
 
-| Cloud-Backup | Unterstützt in kommerziellen Regionen AWS und Azure. Nicht in Google Cloud oder in unterstützt https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] Oder https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| Backup und Recovery | Unterstützt in kommerziellen Regionen AWS und Azure. Nicht in Google Cloud oder in unterstützt https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] Oder https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | Da es keinen Internetzugang gibt, sind die folgenden Funktionen nicht verfügbar: Automatisierte Software-Upgrades, AutoSupport und AWS-Kosteninformationen. 
 
 
-| Digital Wallet | Sie können die Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den privaten Modus verwenden. 
+| Digitale Brieftasche | Sie können das Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den privaten Modus verwenden. 
 
 
 | On-Premises ONTAP Cluster | Erfordert Konnektivität aus der Cloud (wo der Connector installiert ist) zur On-Premises-Umgebung. Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt. 
@@ -266,10 +266,10 @@ Unterstützte BlueXP Services in On-Premises-Implementierungen:: BlueXP unterst�
 | Unterstützte Services | Hinweise 
 
 
-| Cloud-Backup | Es wird nur Backup und Restore von lokalen ONTAP Volumes in StorageGRID Systemen unterstützt.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Erfahren Sie, wie Sie On-Premises-ONTAP-Daten in StorageGRID sichern"^] 
+| Backup und Recovery | Es wird nur Backup und Restore von lokalen ONTAP Volumes in StorageGRID Systemen unterstützt.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Erfahren Sie, wie Sie On-Premises-ONTAP-Daten in StorageGRID sichern"^] 
 
 
-| Cloud-Daten Sinnvoll  a| 
+| Klassifizierung  a| 
 * Die einzigen unterstützten Datenquellen sind die, die Sie lokal ermitteln können.
 +
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["Zeigen Sie die Quellen an, die Sie lokal ermitteln können"^]
@@ -282,7 +282,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 
 
 
-| Digital Wallet | Sie können die Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den privaten Modus verwenden. 
+| Digitale Brieftasche | Sie können das Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den privaten Modus verwenden. 
 
 
 | On-Premises ONTAP Cluster | Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt. 
@@ -294,9 +294,9 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 Unterstützte Lizenzierungsoptionen:: Nur BYOL wird im privaten Modus unterstützt.
 +
 --
-Bei Cloud Volumes ONTAP BYOL wird nur Node-basierte Lizenzierung unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Da keine ausgehende Internetverbindung verfügbar ist, müssen Sie Ihre Cloud Volumes ONTAP-Lizenzdatei manuell in das Digital Wallet hochladen.
+Bei Cloud Volumes ONTAP BYOL wird nur Node-basierte Lizenzierung unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Da keine ausgehende Internetverbindung verfügbar ist, müssen Sie Ihre Cloud Volumes ONTAP Lizenzdatei manuell in das Digital Wallet von BlueXP hochladen.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Hier erfahren Sie, wie Sie dem Digital Wallet Lizenzen hinzufügen"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Erweitern Sie Ihr Digital Wallet von BlueXP um Lizenzen"^]
 
 --
 Erste Schritte mit dem privaten Modus:: Der private Modus ist durch Herunterladen des „offline“ Installers von der NetApp Support Site verfügbar.
@@ -315,18 +315,15 @@ Die folgende Tabelle hilft Ihnen dabei, schnell zu ermitteln, welche BlueXP Serv
 
 Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt werden. Weitere Informationen darüber, wie diese Dienste im eingeschränkten Modus und im privaten Modus unterstützt werden, finden Sie in den obigen Abschnitten.
 
-[cols="33h,33,33"]
+[cols="19,27,27,27"]
 |===
-| BlueXP Service oder Feature | Eingeschränkter Modus | Privater Modus 
+| Produktbereich | BlueXP Service oder Feature | Eingeschränkter Modus | Privater Modus 
 
 
-| Amazon FSX für ONTAP | Ja. | Nein 
+.11+| *Arbeitsumgebungen* | Amazon FSX für ONTAP | Ja. | Nein 
 
 
 | Amazon S3 | Nein | Nein 
-
-
-| AppTemplate | Nein | Nein 
 
 
 | Azure Blob | Nein | Nein 
@@ -335,40 +332,10 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | Azure NetApp Dateien | Ja. | Nein 
 
 
-| Cloud-Backup | Ja. | Ja. 
-
-
-| Cloud-Daten Sinnvoll | Ja. | Ja. 
-
-
-| Cloud-Synchronisierung | Nein | Nein 
-
-
-| Cloud Tiering | Nein | Nein 
-
-
 | Cloud Volumes ONTAP | Ja. | Ja. 
 
 
 | Cloud Volumes Service für Google Cloud | Nein | Nein 
-
-
-| Computing | Nein | Nein 
-
-
-| Digital Advisor | Nein | Nein 
-
-
-| Digital Wallet | Ja. | Ja. 
-
-
-| E-Series | Nein | Nein 
-
-
-| Wirtschaftliche Effizienz | Nein | Nein 
-
-
-| Globaler Datei-Cache | Nein | Nein 
 
 
 | Google Cloud Storage | Nein | Nein 
@@ -380,19 +347,52 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | ONTAP-Cluster vor Ort | Ja. | Ja. 
 
 
-| Operative Ausfallsicherheit | Nein | Nein 
-
-
-| Schutz Vor Ransomware | Nein | Nein 
-
-
-| Replizierung | Ja. | Ja. 
+| E-Series | Nein | Nein 
 
 
 | StorageGRID | Nein | Nein 
 
 
-| Anmeldedaten | Ja. | Ja. 
+.13+| *Services* | Backup und Recovery | Ja. | Ja. 
+
+
+| Klassifizierung | Ja. | Ja. 
+
+
+| Cloud-Betrieb | Nein | Nein 
+
+
+| Kopieren und Synchronisieren | Nein | Nein 
+
+
+| Digitaler Berater | Nein | Nein 
+
+
+| Digitale Brieftasche | Ja. | Ja. 
+
+
+| Wirtschaftliche Effizienz | Nein | Nein 
+
+
+| Edge-Caching | Nein | Nein 
+
+
+| Operative Ausfallsicherheit | Nein | Nein 
+
+
+| Schutz durch Ransomware | Nein | Nein 
+
+
+| Korrekturmaßnahmen | Nein | Nein 
+
+
+| Replizierung | Ja. | Ja. 
+
+
+| Tiering | Nein | Nein 
+
+
+.4+| *Eigenschaften* | Anmeldedaten | Ja. | Ja. 
 
 
 | NSS-Konten | Ja. | Nein 

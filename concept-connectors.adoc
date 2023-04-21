@@ -26,21 +26,21 @@ Ohne Connector können Sie die folgenden BlueXP Funktionen und Services nutzen:
 
 * Erstellung der Arbeitsumgebung von Amazon FSX for NetApp ONTAP
 +
-Obwohl ein Connector nicht zum Erstellen einer Arbeitsumgebung erforderlich ist, ist er für die Erstellung und das Management von Volumes, die Replizierung von Daten und die Integration von FSX for ONTAP mit BlueXP Services wie Data Sense und Cloud Sync erforderlich.
+Obwohl der Connector nicht zum Erstellen einer Arbeitsumgebung erforderlich ist, ist er für die Erstellung und das Management von Volumes, die Replizierung von Daten und die Integration von FSX für ONTAP mit Services wie der BlueXP Klassifizierung und der BlueXP Kopier- und Synchronisierungsfunktion erforderlich.
 
 * Azure NetApp Dateien
 +
-Während kein Connector für die Einrichtung und Verwaltung von Azure NetApp Files erforderlich ist, ist für die Überprüfung von Azure NetApp Files-Daten ein Connector erforderlich.
+Für die Einrichtung und das Management von Azure NetApp Files ist kein Connector erforderlich, aber für die Suche nach Azure NetApp Files Daten ist ein Connector erforderlich.
 
-* Cloud-Synchronisierung
 * Cloud Volumes Service für Google Cloud
-* Digital Advisor
-* Digital Wallet
+* Kopieren und Synchronisieren
+* Digitaler Berater
+* Digitale Brieftasche
 +
-In fast allen Fällen können Sie eine Lizenz für das Digital Wallet ohne Connector hinzufügen.
+In fast allen Fällen können Sie der Digital Wallet ohne Connector eine Lizenz hinzufügen.
 
 +
-Der einzige Zeitpunkt, zu dem ein Konnektor erforderlich ist, um eine Lizenz zum digitalen Wallet hinzuzufügen, sind Cloud Volumes ONTAP_Node-basierte_-Lizenzen. In diesem Fall ist ein Connector erforderlich, da die Daten aus den auf Cloud Volumes ONTAP-Systemen installierten Lizenzen stammen.
+Zum Hinzufügen einer Lizenz zur digitalen Brieftasche ist nur ein Connector erforderlich, wenn Cloud Volumes ONTAP _Node-based_ Lizenzen verwendet werden. In diesem Fall ist ein Connector erforderlich, da die Daten aus den auf Cloud Volumes ONTAP-Systemen installierten Lizenzen stammen.
 
 * Direkte Erkennung von ONTAP Clustern vor Ort
 +
@@ -60,18 +60,18 @@ Wenn Sie BlueXP im Standardmodus verwenden, ist für die folgenden Funktionen un
 * Managementfunktionen von Amazon FSX für ONTAP
 * Ermittlung von Amazon S3
 * Azure Blob-Erkennung
-* Cloud-Backup
-* Cloud-Daten Sinnvoll
-* Cloud Tiering
+* Backup und Recovery
+* Klassifizierung
 * Cloud Volumes ONTAP
 * E-Series Systeme
 * Wirtschaftliche Effizienz ^1^
-* Globaler Datei-Cache
+* Edge-Caching
 * Erkennung von Google Cloud Storage
 * Kubernetes-Cluster
 * On-Premises-ONTAP-Cluster-Integration in BlueXP-Datenservices
 * Ausfallsicherheit der Betriebsabläufe ^1^
-* StorageGRID
+* StorageGRID Systeme
+* Tiering
 
 
 ^1^ während Sie ohne Connector auf diese Dienste zugreifen können, ist ein Connector erforderlich, um Aktionen von den Diensten zu initiieren.
@@ -195,7 +195,7 @@ In einigen Fällen benötigen Sie möglicherweise nur einen Connector, aber Sie 
 
 Hier nur ein paar Beispiele:
 
-* Sie verfügen über eine Multi-Cloud-Umgebung (AWS und Azure) und bevorzugen einen Connector in AWS und einen weiteren in Azure. Jedes managt die Cloud Volumes ONTAP Systeme, die in diesen Umgebungen ausgeführt werden.
+* Sie verfügen über eine Multi-Cloud-Umgebung (z. B. AWS und Azure) und bevorzugen einen Connector in AWS und einen weiteren in Azure. Jedes managt die Cloud Volumes ONTAP Systeme, die in diesen Umgebungen ausgeführt werden.
 * Ein Service-Provider nutzt möglicherweise ein BlueXP Konto für die Bereitstellung von Services für seine Kunden und ein weiteres Konto für die Disaster Recovery für einen seiner Geschäftsbereiche. Jedes Konto hätte separate Anschlüsse.
 
 

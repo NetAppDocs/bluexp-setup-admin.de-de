@@ -47,19 +47,19 @@ Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Z
 
 Die erste Richtlinie bietet Berechtigungen für folgende Dienste:
 
-* Cloud-Backup
-* Cloud-Daten Sinnvoll
-* Cloud Tiering
+* Amazon S3 Bucket-Erkennung
+* Backup und Recovery
+* Klassifizierung
 * Cloud Volumes ONTAP
 * FSX für ONTAP
-* S3-Bucket-Erkennung
+* Tiering
 
 
 Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
 
-* AppTemplate-Tagging
-* Globaler Datei-Cache
+* Edge-Caching
 * Kubernetes
+* Korrekturmaßnahmen
 
 
 [role="tabbed-block"]
@@ -703,25 +703,53 @@ In den folgenden Abschnitten wird die Nutzung der Berechtigungen für jeden Blue
 
 
 
-=== AppTemplate-Tags
+=== Amazon FSX für ONTAP
 
-Der Connector stellt die folgenden API-Anforderungen zur Verwaltung von Tags auf AWS-Ressourcen bereit, wenn Sie den AppTemplate Tagging-Service verwenden:
+Der Connector stellt die folgenden API-Anforderungen für das Management von Amazon FSX für ONTAP bereit:
 
+* ec2:DescribeInstances
+* ec2:DescribeInstanceStatus
+* ec2:DescribeInstanceAttribut
+* ec2:DescribeRouteTables
+* ec2:DescribeBilder
 * ec2:CreateTags
-* ec2:DeleteTags
+* ec2:DescribeVolumes
+* ec2:DescribeSecurityGroups
+* ec2:DescribeNetworkInterfaces
+* ec2:DescribeSubnets
+* ec2:DescribeVpcs
+* ec2:DescribeDhcpOptions
+* ec2:DescribeSnapshots
+* ec2:DescribeKeypairs
+* ec2:DescribeRegionen
 * ec2:DescribeTags
-* Tag:getResources
-* Tag:getTagKeys
-* Tag:getTagValues
-* Tag:TagResources
-* Tag:UntagRessourcen
+* ec2:DescribeIamInstanceProfilVerbände
+* ec2:DescribeReserviertInstanceAngebote
+* ec2:DescribeVpcEndpunkte
+* ec2:DescribeVpcs
+* ec2:DescribeVolumiesModified
+* ec2:DescribePlacementGroups
+* Km:Liste*
+* Km:Beschreiben*
+* Km:CreateGrant
+* Km:ListAliase
+* fsx:Beschreiben*
+* fsx:Liste*
 
 
 
 
-=== Cloud-Backup
+=== Amazon S3 Bucket-Erkennung
 
-Der Connector stellt die folgenden API-Anfragen zur Bereitstellung der Wiederherstellungsinstanz für Cloud-Backup bereit:
+Der Connector stellt folgende API-Anforderung vor, Amazon S3 Buckets zu erkennen:
+
+s3:GetVerschlüsselungKonfiguration
+
+
+
+=== Backup und Recovery
+
+Der Connector macht die folgenden API-Anfragen zur Implementierung der Wiederherstellungsinstanz für das Backup und Recovery von BlueXP:
 
 * ec2:StartInstances
 * ec2:StopInstances
@@ -825,9 +853,9 @@ Der Connector macht die folgenden API-Anforderungen, wenn Sie ein anderes AWS-Ko
 
 
 
-=== Cloud-Daten Sinnvoll
+=== Klassifizierung
 
-Der Connector stellt die folgenden API-Anforderungen zur Bereitstellung der Cloud Data Sense Instanz:
+Der Connector macht die folgenden API-Anfragen zur Implementierung der BlueXP Klassifizierungsinstanz:
 
 * ec2:DescribeInstances
 * ec2:DescribeInstanceStatus
@@ -855,7 +883,7 @@ Der Connector stellt die folgenden API-Anforderungen zur Bereitstellung der Clou
 * ec2:DescribeIamInstanceProfilVerbände
 
 
-Der Connector erstellt bei Verwendung von Cloud Data Sense die folgenden API-Anforderungen zum Scannen von S3-Buckets:
+Der Connector macht die folgenden API-Anfragen zum Scannen von S3-Buckets, wenn Sie die BlueXP-Klassifizierung verwenden:
 
 * iam:AddRoleToInstanceProfile
 * ec2:AssociateIamInstanceProfil
@@ -875,31 +903,6 @@ Der Connector erstellt bei Verwendung von Cloud Data Sense die folgenden API-Anf
 * STS:AssumeRole
 
 
-
-
-=== Cloud Tiering
-
-Der Connector erstellt bei Verwendung von Cloud Tiering die folgenden API-Anforderungen an das Tiering von Daten in Amazon S3.
-
-[cols="3*"]
-|===
-| Aktion | Wird zur Einrichtung verwendet? | Wird für den täglichen Betrieb verwendet? 
-
-
-| s3:CreateBucket | Ja. | Nein 
-
-
-| s3:PutLifecycleKonfiguration | Ja. | Nein 
-
-
-| s3:GetLifecycleKonfiguration | Ja. | Ja. 
-
-
-| ec2:DescribeRegionen | Ja. | Nein 
-
-
-| ec2:DescribeVpcEndpunkte | Ja. | Nein 
-|===
 
 
 === Cloud Volumes ONTAP
@@ -1173,49 +1176,13 @@ Der Connector stellt die folgenden API-Anforderungen für die Implementierung un
 |===
 
 
-=== Globaler Datei-Cache
+=== Edge-Caching
 
-Der Connector stellt folgende API-Anforderungen zur Bereitstellung von Global File Cache-Instanzen während der Bereitstellung bereit:
+Der Connector macht die folgenden API-Anfragen zur Implementierung von BlueXP Edge-Caching-Instanzen während der Implementierung:
 
 * Wolkenbildung:DescribeStacks
 * cloudwatch:GetMetricStatistics
 * CloudFormation:ListenStacks
-
-
-
-
-=== FSX für ONTAP
-
-Der Konnektor stellt die folgenden API-Anforderungen zur Verwaltung von FSX für ONTAP vor:
-
-* ec2:DescribeInstances
-* ec2:DescribeInstanceStatus
-* ec2:DescribeInstanceAttribut
-* ec2:DescribeRouteTables
-* ec2:DescribeBilder
-* ec2:CreateTags
-* ec2:DescribeVolumes
-* ec2:DescribeSecurityGroups
-* ec2:DescribeNetworkInterfaces
-* ec2:DescribeSubnets
-* ec2:DescribeVpcs
-* ec2:DescribeDhcpOptions
-* ec2:DescribeSnapshots
-* ec2:DescribeKeypairs
-* ec2:DescribeRegionen
-* ec2:DescribeTags
-* ec2:DescribeIamInstanceProfilVerbände
-* ec2:DescribeReserviertInstanceAngebote
-* ec2:DescribeVpcEndpunkte
-* ec2:DescribeVpcs
-* ec2:DescribeVolumiesModified
-* ec2:DescribePlacementGroups
-* Km:Liste*
-* Km:Beschreiben*
-* Km:CreateGrant
-* Km:ListAliase
-* fsx:Beschreiben*
-* fsx:Liste*
 
 
 
@@ -1232,11 +1199,19 @@ Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von
 
 
 
-=== S3-Bucket-Erkennung
+=== Korrekturmaßnahmen
 
-Der Connector stellt folgende API-Anforderung vor, Amazon S3 Buckets zu erkennen:
+Der Connector stellt die folgenden API-Anfragen für das Management von Tags auf AWS Ressourcen bereit, wenn Sie BlueXP zur Problembehebung verwenden:
 
-s3:GetVerschlüsselungKonfiguration
+* ec2:CreateTags
+* ec2:DeleteTags
+* ec2:DescribeTags
+* Tag:getResources
+* Tag:getTagKeys
+* Tag:getTagValues
+* Tag:TagResources
+* Tag:UntagRessourcen
+
 
 
 
@@ -1248,6 +1223,6 @@ Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den fo
 
 === 14 Februar 2023
 
-Für Cloud Tiering ist jetzt folgende Berechtigung erforderlich:
+Für BlueXP Tiering ist jetzt die folgende Berechtigung erforderlich:
 
 ec2:DescribeVpcEndpunkte

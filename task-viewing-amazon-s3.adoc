@@ -18,6 +18,6 @@ Nach der Installation eines Connectors in AWS erkennt BlueXP automatisch Informa
 
 image:screenshot-amazon-s3-we.png["Ein Screenshot einer Amazon S3 Arbeitsumgebung"]
 
-Sie können Details zu den S3-Buckets, einschließlich Region, Zugriffsrichtlinie, Konto, Gesamt- und genutzte Kapazität, anzeigen. Diese Buckets können als Ziele für Cloud-Backup, Cloud-Tiering oder Cloud Sync-Vorgänge verwendet werden. Zudem können Sie mit Cloud Data Sense diese Buckets scannen.
+Sie können Details zu den S3-Buckets, einschließlich Region, Zugriffsrichtlinie, Konto, Gesamt- und genutzte Kapazität, anzeigen. Diese Buckets können als Ziele für BlueXP Backup und Recovery, BlueXP Tiering oder BlueXP Kopier- und Synchronisierungsvorgänge verwendet werden. Darüber hinaus können Sie diese Buckets mithilfe der BlueXP Klassifizierung scannen.
 
 Mit einer neu hinzugefügten Funktion können Sie jetzt S3-Buckets erstellen und bearbeiten. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Sehen Sie sich hier an, wie Sie Ihre S3-Buckets mithilfe von BlueXP anzeigen, erstellen und managen"^]

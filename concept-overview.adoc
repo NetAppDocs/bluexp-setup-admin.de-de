@@ -40,33 +40,33 @@ Storage:: Erkennen, implementieren und managen Sie Storage in AWS, Azure, Google
 ** StorageGRID Systeme
 
 
+* Orchestrieren und sichern https://bluexp.netapp.com/solutions/kubernetes["Persistente Kubernetes-Daten"^]
 
 
 --
 Mobilität:: Daten werden durch Synchronisierung, Kopieren, Tiering und Caching von Daten dorthin verschoben, wo sie benötigt werden.
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Cloud-Synchronisierung"^]
-* https://bluexp.netapp.com/cloud-tiering["Cloud Tiering"^]
-* https://bluexp.netapp.com/global-file-cache["Globaler Datei-Cache"^]
+* https://bluexp.netapp.com/cloud-sync-service["Kopieren und Synchronisieren"^]
+* https://bluexp.netapp.com/global-file-cache["Edge-Caching"^]
+* https://bluexp.netapp.com/cloud-tiering["Tiering"^]
 
 
 --
 Darstellt:: Automatisierte Sicherungsmechanismen schützen Daten vor Datenverlust, ungeplanten Ausfällen, Ransomware und anderen Cyberbedrohungen.
 +
 --
-* https://bluexp.netapp.com/cloud-backup["Cloud-Backup"^]
+* https://bluexp.netapp.com/cloud-backup["Backup und Recovery"^]
 * https://bluexp.netapp.com/replication["Replizierung"^]
-* https://bluexp.netapp.com/ransomware-protection["Schutz Vor Ransomware"^]
-* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
 --
 Analyse und Kontrolle:: Mit Tools können Sie Ihren Storage und Ihre Infrastruktur überwachen, zuordnen und optimieren.
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["Cloud-Daten Sinnvoll"^]
-* https://bluexp.netapp.com/digital-advisor["Digital Advisor"^]
+* https://bluexp.netapp.com/netapp-cloud-data-sense["Klassifizierung"^]
+* https://bluexp.netapp.com/digital-advisor["Digitaler Berater"^]
+* https://bluexp.netapp.com/ransomware-protection["Schutz durch Ransomware"^]
 
 
 --
@@ -126,6 +126,6 @@ link:concept-modes.html["Weitere Informationen zu den BlueXP Implementierungsmod
 
 == SOC 2 Typ 2-Zertifizierung
 
-Ein unabhängiger, zertifizierter Wirtschaftsprüfer hat BlueXP, Cloud Sync, Cloud Tiering, Cloud Data Sense und Cloud Backup (BlueXP Plattform) geprüft und bestätigt, dass sie SOC 2 Type 2 Berichte basierend auf den entsprechenden Kriterien für die Trust Services erstellt haben.
+Ein unabhängiger zertifizierter Wirtschaftsprüfer und Wirtschaftsprüfer prüfte BlueXP und bestätigte, dass es SOC 2 Typ 2-Berichte basierend auf den geltenden Trust Services-Kriterien erreichte.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["SOC 2-Berichte von NetApp anzeigen"^]

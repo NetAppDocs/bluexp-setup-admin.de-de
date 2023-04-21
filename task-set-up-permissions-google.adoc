@@ -222,7 +222,7 @@ link:reference-permissions-gcp.html["Kontorichtlinie für Connector-Service"]
 * Storage.Administration
 * mitglied: BlueXP Dienstkonto als serviceAccount.user
 
-| K. A. | (Optional) für Daten-Tiering und Cloud Backup 
+| K. A. | (Optional) für Daten-Tiering sowie Backup und Recovery von BlueXP 
 
 
 | Google APIs-Serviceagent | Google Cloud | Service-Projekt  a| 

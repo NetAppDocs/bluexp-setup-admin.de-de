@@ -20,8 +20,8 @@ Hilfe finden Sie in der Dokumentation zu diesen Services:
 
 * https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["Amazon FSX für ONTAP Dokumentation"^]
 * https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["Azure NetApp Files Dokumentation"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["Cloud Backup Dokumentation"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["Cloud Data Sense Dokumentation"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["Dokumentation zu Backup und Recovery"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["Dokumente zur Klassifizierung"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP Dokumentation"^]
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["ONTAP-Cluster-Dokumentation vor Ort"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/index.html["Replizierungsdokumente"^]

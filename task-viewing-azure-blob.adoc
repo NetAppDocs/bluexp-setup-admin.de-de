@@ -16,7 +16,7 @@ summary: Nach der Installation eines Connectors in Azure erkennt BlueXP automati
 [role="lead"]
 Nach der Installation eines Connectors in Azure erkennt BlueXP automatisch Informationen zu den Azure Storage-Konten, die sich in den Azure-Abonnements befinden, in denen der Connector installiert ist. Eine Azure Blob Arbeitsumgebung wird dem Canvas hinzugefügt, damit Sie diese Informationen anzeigen können.
 
-Sie sehen Details zu Ihren Azure Storage-Konten, einschließlich Standort, Ressourcengruppe, Gesamt- und genutzter Kapazität und mehr. Diese Konten können als Ziele für Cloud-Backup, Cloud-Tiering oder Cloud Sync-Vorgänge verwendet werden.
+Sie sehen Details zu Ihren Azure Storage-Konten, einschließlich Standort, Ressourcengruppe, Gesamt- und genutzter Kapazität und mehr. Diese Konten können als Ziele für BlueXP Backup und Recovery, BlueXP Tiering oder BlueXP Kopier- und Synchronisierungsvorgänge verwendet werden.
 
 .Schritte
 . Installieren Sie einen Connector im Azure-Konto, in dem Sie Ihre Azure-Storage-Konten anzeigen möchten.
@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["Ein Screenshot, der das Teilfenster „Aktio
 
 . Wählen Sie *Sync Data* aus, um Daten mit oder aus Azure Blob Storage zu synchronisieren.
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Überblick über den Cloud Sync Service"^]
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Übersicht über die BlueXP Kopier- und Synchronisierungsfunktion"^]
 
 . Wählen Sie *Arbeitsumgebung eingeben*, um Details über die Azure-Speicherkonten in Ihren Azure-Blobs anzuzeigen.
 +

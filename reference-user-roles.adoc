@@ -16,7 +16,7 @@ summary: Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewe
 [role="lead"]
 Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewer und SnapCenter-Admin bieten Benutzern spezifische Berechtigungen.
 
-Die Compliance Viewer-Rolle dient dem schreibgeschützten Cloud Data Sense Zugriff.
+Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierungszugriff.
 
 [cols="24,19,19,19,19"]
 |===
@@ -38,7 +38,7 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten Cloud Data Sense Zugri
 | Wechseln Sie zwischen Arbeitsbereichen | Ja. | Ja. | Ja. | Nein 
 
 
-| Zeigen Sie die Ergebnisse des Data Sense-Scans an | Ja. | Ja. | Ja. | Nein 
+| Sehen Sie sich die Ergebnisse des BlueXP Klassifizierungs-Scans an | Ja. | Ja. | Ja. | Nein 
 
 
 | Arbeitsumgebungen löschen | Ja. | Nein | Nein | Nein 

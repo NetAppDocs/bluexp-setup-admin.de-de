@@ -53,7 +53,7 @@ image:screenshot-manage-account-settings.png["Ein Screenshot, in dem die Option 
 +
 ** *Account Admin*: Kann jede Aktion in BlueXP ausführen.
 ** *Workspace Admin*: Kann Ressourcen in zugewiesenen Workspaces erstellen und verwalten.
-** *Compliance Viewer*: Kann nur Informationen zur Compliance von Cloud Data Sense anzeigen und Berichte für Arbeitsbereiche erstellen, auf die sie zugreifen können.
+** *Compliance Viewer*: Kann nur Compliance-Informationen für die BlueXP-Klassifizierung anzeigen und Berichte für Arbeitsbereiche generieren, auf die sie zugreifen dürfen.
 
 
 . Wenn Sie Workspace Admin oder Compliance Viewer ausgewählt haben, wählen Sie eine oder mehrere Arbeitsbereiche aus, die diesem Benutzer zugeordnet werden sollen.
