@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-networking-aws.html 
 keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, vpc, subnet 
-summary: Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen kann. 
+summary: Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen kann. Sie müssen beispielsweise sicherstellen, dass Verbindungen für Zielnetzwerke verfügbar sind und dass ein ausgehender Internetzugang verfügbar ist. 
 ---
 = AWS-Netzwerk einrichten
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozes
 
 
 [role="lead"]
-Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen kann.
+Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen kann. Sie müssen beispielsweise sicherstellen, dass Verbindungen für Zielnetzwerke verfügbar sind und dass ein ausgehender Internetzugang verfügbar ist.
 
 
 

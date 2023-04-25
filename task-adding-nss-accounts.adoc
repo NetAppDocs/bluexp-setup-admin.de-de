@@ -14,7 +14,7 @@ summary: 'Bereitstellen von Zugangsdaten für Ihre NetApp Support Site (NSS) Acc
 
 
 [role="lead"]
-Bereitstellen von Zugangsdaten für Ihre NetApp Support Site (NSS) Accounts zur Registrierung für Support, zum Aktivieren wichtiger Workflows für Cloud Volumes ONTAP usw. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet.
+Stellen Sie BlueXP unter anderen über die Zugangsdaten für Ihre NetApp Support Site (NSS) Accounts zur Support-Registrierung bereit, ermöglichen Sie wichtige Workflows für Cloud Volumes ONTAP und vieles mehr. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet.
 
 
 NOTE: BlueXP unterstützt zudem die Zuordnung eines NSS-Kontos pro BlueXP Benutzer. link:task-manage-user-credentials.html["Erfahren Sie, wie Sie Anmeldedaten auf Benutzerebene verwalten"].

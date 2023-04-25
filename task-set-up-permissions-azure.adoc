@@ -14,7 +14,7 @@ summary: Richten Sie Azure-Berechtigungen ein, damit Sie BlueXP für das Managem
 
 
 [role="lead"]
-Richten Sie Azure-Berechtigungen ein, damit Sie BlueXP für das Management Ihrer Daten- und Storage-Infrastruktur in Azure verwenden können. Wie Sie Berechtigungen einrichten, hängt von der Installationsoption ab, die Sie verwenden möchten.
+Richten Sie Berechtigungen in Azure ein, damit Sie den Connector mit den Berechtigungen implementieren können, die er für das Management Ihrer Daten- und Storage-Infrastruktur benötigt. Wie Sie Berechtigungen einrichten, hängt von der Installationsoption ab, die Sie verwenden möchten.
 
 Sie können aus den folgenden Installationsoptionen wählen:
 

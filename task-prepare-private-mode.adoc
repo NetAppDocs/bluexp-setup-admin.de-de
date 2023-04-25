@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-prepare-private-mode.html 
 keywords: private mode requirements, requirements, install options, private mode networking, dark site, private mode permissions, permissions for private mode, networking for private mode 
-summary: Sie sollten wissen, was Sie zur Vorbereitung Ihrer Umgebung mit BlueXP im privaten Modus benötigen. 
+summary: Bereiten Sie Ihre Umgebung vor der Implementierung von BlueXP im privaten Modus vor. Sie müssen beispielsweise die Hostanforderungen prüfen, das Netzwerk vorbereiten, Berechtigungen einrichten und vieles mehr. 
 ---
 = Bereiten Sie die Bereitstellung im privaten Modus vor
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Sie sollten wissen, was Sie zur Vorbereitung Ihrer Umgebung mit BlueXP 
 
 
 [role="lead"]
-Sie sollten wissen, was Sie für den Einstieg von BlueXP im privaten Modus benötigen, um Ihre Umgebung vorzubereiten.
+Bereiten Sie Ihre Umgebung vor der Implementierung von BlueXP im privaten Modus vor. Sie müssen beispielsweise die Hostanforderungen prüfen, das Netzwerk vorbereiten, Berechtigungen einrichten und vieles mehr.
 
 
 NOTE: Wenn Sie BlueXP in der verwenden möchten https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services (C2S) Umgebung"^] Folgen Sie dann den separaten Anweisungen, die beschreiben, wie Sie den Konnektor vorbereiten, installieren und Cloud Volumes ONTAP starten. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Erste Schritte mit Cloud Volumes ONTAP in der AWS C2S Umgebung"^]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-on-prem.html 
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
-summary: Der Connector verwendet die folgenden eingehenden Ports, wenn er manuell auf einem lokalen Linux-Host installiert wird. 
+summary: Der Connector verwendet eingehende Ports, wenn er manuell auf einem lokalen Linux-Host installiert wird. Möglicherweise müssen Sie diese Ports zu Planungszwecken verwenden. 
 ---
 = Anschlüsse für den On-Prem Connector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Der Connector verwendet die folgenden eingehenden Ports, wenn er manuel
 
 
 [role="lead"]
-Der Connector verwendet die folgenden _Inbound_-Ports, wenn er manuell auf einem lokalen Linux-Host installiert wird.
+Der Connector verwendet _Inbound_-Ports, wenn er manuell auf einem lokalen Linux-Host installiert wird. Möglicherweise müssen Sie diese Ports zu Planungszwecken verwenden.
 
 Diese Inbound Regeln gelten für alle BlueXP Implementierungsmodelle.
 

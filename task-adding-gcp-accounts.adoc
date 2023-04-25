@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: Sie können die Google Cloud-Anmeldedaten verwalten, die der VM-Instanz Connector zugeordnet sind. 
+summary: Sie können die Google Cloud-Anmeldedaten verwalten, die mit der VM-Instanz Connector verknüpft sind, indem Sie ein Marketplace-Abonnement zuordnen und den Abonnementprozess beheben. Mit beiden Aufgaben stellen Sie sicher, dass Sie Ihr Marketplace-Abonnement verwenden können, um BlueXP Services zu bezahlen. 
 ---
 = Managen Sie Google Cloud-Anmeldedaten und -Abonnements für BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Sie können die Google Cloud-Anmeldedaten verwalten, die der VM-Instanz
 
 
 [role="lead"]
-Sie können die Google Cloud-Anmeldedaten verwalten, die der VM-Instanz Connector zugeordnet sind.
+Sie können die Google Cloud-Anmeldedaten verwalten, die mit der VM-Instanz Connector verknüpft sind, indem Sie ein Marketplace-Abonnement zuordnen und den Abonnementprozess beheben. Mit beiden Aufgaben stellen Sie sicher, dass Sie Ihr Marketplace-Abonnement verwenden können, um BlueXP Services zu bezahlen.
 
 
 

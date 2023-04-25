@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: Sie sollten verstehen, wie BlueXP Google Cloud-Anmeldedaten und -Berechtigungen verwendet, damit Sie Anmeldedaten für ein oder mehrere Google Cloud-Projekte managen können. 
+summary: BlueXP nutzt Google Cloud-Anmeldedaten und -Berechtigungen, um Anmeldedaten für ein oder mehrere Google Cloud-Projekte zu managen. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist. 
 ---
 = Google Cloud Projekte, Berechtigungen und Konten
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Sie sollten verstehen, wie BlueXP Google Cloud-Anmeldedaten und -Berech
 
 
 [role="lead"]
-Sie sollten verstehen, wie BlueXP Google Cloud-Anmeldedaten und -Berechtigungen verwendet, damit Sie Anmeldedaten für ein oder mehrere Google Cloud-Projekte managen können.
+BlueXP nutzt Google Cloud-Anmeldedaten und -Berechtigungen, um Anmeldedaten für ein oder mehrere Google Cloud-Projekte zu managen. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist.
 
 
 
@@ -25,7 +25,7 @@ Bevor Sie BlueXP zum Managen von Ressourcen in Ihrem Google Cloud-Projekt verwen
 Zwei Berechtigungsgruppen müssen vorhanden sein, bevor Sie einen Connector direkt von BlueXP bereitstellen:
 
 . Sie müssen einen Connector mit einem Google-Konto bereitstellen, das über Berechtigungen zum Starten der Connector VM-Instanz von BlueXP verfügt.
-. Bei der Bereitstellung des Connectors werden Sie aufgefordert, ein auszuwählen https://cloud.google.com/iam/docs/service-accounts["Servicekonto"^] Für die VM-Instanz. BlueXP erhält über das Servicekonto Berechtigungen zum Erstellen und Verwalten von Cloud Volumes ONTAP-Systemen in Ihrem Auftrag. Berechtigungen werden durch Hinzufügen einer benutzerdefinierten Rolle an das Servicekonto bereitgestellt.
+. Bei der Bereitstellung des Connectors werden Sie aufgefordert, ein auszuwählen https://cloud.google.com/iam/docs/service-accounts["Servicekonto"^] Für die VM-Instanz. BlueXP erhält Berechtigungen über das Servicekonto, um Cloud Volumes ONTAP Systeme für Sie zu erstellen und zu managen – u. v. m. Berechtigungen werden durch Hinzufügen einer benutzerdefinierten Rolle an das Servicekonto bereitgestellt.
 
 
 Das folgende Bild zeigt die in den Nummern 1 und 2 oben beschriebenen Berechtigungsanforderungen:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-user-roles.html 
 keywords: user, users, roles, role, task, permission, permissions, tasks, admin, Account Admin, Workspace Admin, Cloud Compliance Viewer, Cloud Data Sense, SnapCenter Admin 
-summary: Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewer und SnapCenter-Admin bieten Benutzern spezifische Berechtigungen. 
+summary: Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewer und SnapCenter-Admin bieten Benutzern spezifische Berechtigungen. Sie können eine dieser Rollen zuweisen, wenn Sie einen neuen Benutzer mit Ihrem BlueXP Konto verknüpfen. 
 ---
 = Rollen
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewe
 
 
 [role="lead"]
-Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewer und SnapCenter-Admin bieten Benutzern spezifische Berechtigungen.
+Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewer und SnapCenter-Admin bieten Benutzern spezifische Berechtigungen. Sie können eine dieser Rollen zuweisen, wenn Sie einen neuen Benutzer mit Ihrem BlueXP Konto verknüpfen.
 
 Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierungszugriff.
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-restricted-mode.html 
 keywords: government region, gov, govcloud, connector, sovereign cloud 
-summary: Um BlueXP im eingeschränkten Modus zu nutzen, müssen Sie einen Connector implementieren und BlueXP dann über die Benutzeroberfläche einrichten, die auf dem Connector ausgeführt wird. 
+summary: Implementieren Sie den Connector im eingeschränkten Modus, sodass Sie BlueXP mit eingeschränkter Outbound-Konnektivität zur BlueXP SaaS-Ebene nutzen können. Installieren Sie den Connector, richten Sie BlueXP über die Benutzeroberfläche ein, die auf dem Connector ausgeführt wird, und stellen Sie dann die zuvor festgelegten Cloud-Berechtigungen bereit. 
 ---
 = Stellen Sie den Connector im eingeschränkten Modus bereit
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Um BlueXP im eingeschränkten Modus zu nutzen, müssen Sie einen Connec
 
 
 [role="lead"]
-Um BlueXP im eingeschränkten Modus zu nutzen, müssen Sie den Connector installieren, BlueXP über die Benutzeroberfläche des Connector einrichten und dann Cloud-Berechtigungen bereitstellen.
+Implementieren Sie den Connector im eingeschränkten Modus, sodass Sie BlueXP mit eingeschränkter Outbound-Konnektivität zur BlueXP SaaS-Ebene nutzen können. Installieren Sie den Connector, richten Sie BlueXP über die Benutzeroberfläche ein, die auf dem Connector ausgeführt wird, und stellen Sie dann die zuvor festgelegten Cloud-Berechtigungen bereit.
 
 
 

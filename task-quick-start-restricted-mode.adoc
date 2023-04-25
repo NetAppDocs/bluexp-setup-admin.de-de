@@ -14,7 +14,7 @@ summary: Einstieg in BlueXP im eingeschränkten Modus in nur wenigen Schritten
 
 
 [role="lead"]
-Einstieg in BlueXP im eingeschränkten Modus in nur wenigen Schritten
+Der Einstieg in BlueXP ist eingeschränkt, indem Sie Ihre Umgebung vorbereiten, Connector implementieren und BlueXP abonnieren.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Vorbereitungen für die Implementierung
 [role="quick-margin-list"]

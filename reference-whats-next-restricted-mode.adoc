@@ -26,3 +26,6 @@ Hilfe finden Sie in der Dokumentation zu diesen Services:
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["ONTAP-Cluster-Dokumentation vor Ort"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/index.html["Replizierungsdokumente"^]
 
+
+.Verwandter Link
+link:concept-modes.html["BlueXP Implementierungsmodi"]

@@ -53,7 +53,10 @@ Das Formular ist Eigentum und wird von Google gehostet. Ihre Zugangsdaten werden
 ** *Details*: Geben Sie einen Namen für die virtuelle Maschineninstanz ein, geben Sie Tags an, wählen Sie ein Projekt aus, und wählen Sie dann das Servicekonto aus, das über die erforderlichen Berechtigungen verfügt (Details finden Sie im Abschnitt oben).
 ** *Ort*: Geben Sie eine Region, Zone, VPC und Subnetz für die Instanz an.
 ** *Netzwerk*: Wählen Sie, ob eine öffentliche IP-Adresse aktiviert werden soll und geben Sie optional eine Proxy-Konfiguration an.
-** *Firewall-Richtlinie*: Wählen Sie, ob Sie eine neue Firewall-Richtlinie erstellen oder eine vorhandene Firewall-Richtlinie auswählen möchten, die einen eingehenden HTTP-, HTTPS- und SSH-Zugriff erlaubt.
+** *Firewallrichtlinie*: Wählen Sie aus, ob eine neue Firewallrichtlinie erstellt werden soll oder ob eine vorhandene Firewallrichtlinie ausgewählt werden soll, die die erforderlichen ein- und ausgehenden Regeln zulässt.
++
+link:reference-ports-gcp.html["Firewall-Regeln in Google Cloud"]
+
 ** *Review*: Überprüfen Sie Ihre Auswahl, um zu überprüfen, ob Ihre Einrichtung korrekt ist.
 
 

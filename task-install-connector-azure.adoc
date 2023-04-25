@@ -76,7 +76,10 @@ link:task-set-up-permissions-azure.html["Erfahren Sie, wie Sie diese Werte für 
 Beachten Sie, dass Sie die Abonnements für diese Rolle auswählen können. Jedes von Ihnen gewählte Abonnement bietet dem Konnektor Berechtigungen zum Bereitstellen von Cloud Volumes ONTAP in diesen Abonnements.
 
 ** *Netzwerk*: Wählen Sie ein vnet und Subnetz, ob eine öffentliche IP-Adresse aktiviert werden soll, und geben Sie optional eine Proxy-Konfiguration an.
-** *Sicherheitsgruppe*: Wählen Sie aus, ob eine neue Sicherheitsgruppe erstellt werden soll oder ob eine vorhandene Sicherheitsgruppe ausgewählt werden soll, die einen eingehenden HTTP-, HTTPS- und SSH-Zugriff erlaubt.
+** *Sicherheitsgruppe*: Wählen Sie, ob Sie eine neue Sicherheitsgruppe erstellen möchten oder ob Sie eine vorhandene Sicherheitsgruppe auswählen möchten, die die erforderlichen ein- und ausgehenden Regeln zulässt.
++
+link:reference-ports-azure.html["Zeigen Sie die Regeln für Sicherheitsgruppen für Azure an"].
+
 ** *Review*: Überprüfen Sie Ihre Auswahl, um zu überprüfen, ob Ihre Einrichtung korrekt ist.
 
 
@@ -108,9 +111,9 @@ Beachten Sie beim Konfigurieren der VM Folgendes:
 +
 link:reference-host-requirements-azure["VM-Anforderungen prüfen"].
 
-** Für die Netzwerksicherheitsgruppe benötigt der Connector eingehende Verbindungen unter Verwendung von SSH, HTTP und HTTPS.
+** Für die Netzwerksicherheitsgruppe benötigt der Connector eingehende Verbindungen unter Verwendung von SSH, HTTP und HTTPS. Für spezifische Konfigurationen sind noch einige Regeln erforderlich.
 +
-link:reference-ports-azure.html["Erfahren Sie mehr über die Regeln für Sicherheitsgruppen für den Connector"].
+link:reference-ports-azure.html["Zeigen Sie die Regeln für Sicherheitsgruppen für Azure an"].
 
 ** Aktivieren Sie unter *Management* *System Assigned Managed Identity* für die Connector VM, indem Sie *ein* auswählen.
 +

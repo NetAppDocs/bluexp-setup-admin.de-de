@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über Ihren Webbrowser über die webbasierte Konsole einloggen. 
+summary: Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über die webbasierte Konsole anmelden, um mit dem Management Ihrer Daten und Storage-Infrastruktur zu beginnen. 
 ---
 = Bei BlueXP anmelden (Standardmodus)
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über Ih
 
 
 [role="lead"]
-Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über die webbasierte Konsole anmelden.
+Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über die webbasierte Konsole anmelden, um mit dem Management Ihrer Daten und Storage-Infrastruktur zu beginnen.
 
 .Anmelde-Optionen
 Sie können sich über eine der folgenden Optionen bei der webbasierten Konsole von BlueXP anmelden:

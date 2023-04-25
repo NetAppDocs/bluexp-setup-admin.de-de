@@ -14,7 +14,7 @@ summary: Es gibt verschiedene Möglichkeiten, einen Connector in Azure zu erstel
 
 
 [role="lead"]
-Es gibt verschiedene Möglichkeiten, einen Connector in Azure zu erstellen. Dies ist die gängigste Methode – direkt von BlueXP.
+Es gibt verschiedene Möglichkeiten, einen Connector in Azure zu erstellen. Dies ist die gängigste Methode – direkt von BlueXP. Die von Ihnen ausgewählte Installationsoption legt fest, wie Sie die Bereitstellung vorbereiten.
 
 Folgende Installationsoptionen sind verfügbar:
 

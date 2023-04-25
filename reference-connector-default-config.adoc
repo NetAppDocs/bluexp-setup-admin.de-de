@@ -14,7 +14,7 @@ summary: Möglicherweise möchten Sie mehr über den Connector erfahren, bevor S
 
 
 [role="lead"]
-Möglicherweise möchten Sie mehr über den Connector erfahren, bevor Sie ihn bereitstellen, oder wenn Sie Probleme beheben müssen.
+Möglicherweise möchten Sie mehr über die Konfiguration des Connectors erfahren, bevor Sie ihn bereitstellen, oder wenn Sie Probleme beheben müssen.
 
 
 

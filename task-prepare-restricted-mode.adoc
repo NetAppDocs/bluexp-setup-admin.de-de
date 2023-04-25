@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-prepare-restricted-mode.html 
 keywords: restricted mode requirements, requirements, install options, restricted mode networking, dark site, restricted mode permissions, permissions for restricted mode, networking for restricted mode 
-summary: Sie sollten wissen, was Sie für den Einstieg in BlueXP im eingeschränkten Modus benötigen, um Ihre Umgebung vorzubereiten. 
+summary: Bereiten Sie Ihre Umgebung vor der Implementierung von BlueXP im eingeschränkten Modus vor. Sie müssen beispielsweise die Hostanforderungen prüfen, das Netzwerk vorbereiten, Berechtigungen einrichten und vieles mehr. 
 ---
 = Bereiten Sie die Bereitstellung im eingeschränkten Modus vor
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Sie sollten wissen, was Sie für den Einstieg in BlueXP im eingeschrän
 
 
 [role="lead"]
-Sie sollten wissen, was Sie für den Einstieg in BlueXP im eingeschränkten Modus benötigen, um Ihre Umgebung vorzubereiten.
+Bereiten Sie Ihre Umgebung vor der Implementierung von BlueXP im eingeschränkten Modus vor. Sie müssen beispielsweise die Hostanforderungen prüfen, das Netzwerk vorbereiten, Berechtigungen einrichten und vieles mehr.
 
 
 

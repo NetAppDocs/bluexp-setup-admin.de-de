@@ -14,7 +14,7 @@ summary: Richten Sie Google Cloud-Berechtigungen ein, damit Sie BlueXP für das 
 
 
 [role="lead"]
-Richten Sie Google Cloud-Berechtigungen ein, damit Sie BlueXP für das Management Ihrer Daten- und Storage-Infrastruktur in Google Cloud verwenden können.
+Richten Sie Berechtigungen in Google Cloud ein, sodass Sie den Connector mit den Berechtigungen implementieren können, die er für das Management Ihrer Daten- und Storage-Infrastruktur benötigt.
 
 Sie müssen Google Cloud-Berechtigungen wie folgt einrichten:
 

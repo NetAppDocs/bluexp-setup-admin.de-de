@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-host-requirements-google.html 
 keywords: cpu requirements, ram requirements, google cloud requirements, google cloud host requirements, connector host requirements, gcp machine type, machine type 
-summary: Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt. Wenn Sie den Connector manuell installieren möchten, sollten Sie sicherstellen, dass Ihr Host diese Anforderungen erfüllt. 
+summary: Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt. Wenn Sie den Connector manuell installieren möchten, sollten Sie sicherstellen, dass Ihr Host diese Anforderungen erfüllt. Stellen Sie sicher, dass Ihr Host diese Anforderungen erfüllt, bevor Sie den Connector installieren. 
 ---
 = Prüfen Sie die Connector-Host-Anforderungen für Google Cloud-Installationen
 :hardbreaks:

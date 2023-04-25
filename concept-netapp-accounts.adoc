@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: Ein BlueXP Konto bietet Mandantenfähigkeit und ermöglicht die Organisation von Benutzern und Ressourcen in isolierten Workspaces aus BlueXP. 
+summary: Ein BlueXP Konto bietet in Ihrem Unternehmen Mandantenfähigkeit, damit Sie Benutzer und Ressourcen in isolierten Workspaces organisieren können. Eine Gruppe von Benutzern kann beispielsweise Cloud Volumes ONTAP-Systeme in einem Arbeitsbereich bereitstellen und verwalten, der für andere Benutzer nicht sichtbar ist. 
 ---
 = Mehr zu BlueXP Accounts
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Ein BlueXP Konto bietet Mandantenfähigkeit und ermöglicht die Organis
 
 
 [role="lead"]
-Ein _BlueXP Konto_ bietet Mandantenfähigkeit und ermöglicht die Organisation von Benutzern und Ressourcen in isolierten Workspaces aus BlueXP. So können beispielsweise mehrere Benutzer Cloud Volumes ONTAP Systeme in isolierten Umgebungen, sogenannte _Workspaces_, implementieren und managen. Diese Arbeitsbereiche sind für andere Benutzer unsichtbar, es sei denn, sie werden gemeinsam genutzt.
+Ein _BlueXP Konto_ bietet Mandantenfähigkeit für Ihr Unternehmen, damit Sie Benutzer und Ressourcen in isolierten _Workspaces_ organisieren können. Eine Gruppe von Benutzern kann beispielsweise Cloud Volumes ONTAP-Systeme in einem Arbeitsbereich bereitstellen und verwalten, der für andere Benutzer nicht sichtbar ist.
 
 Wenn Sie zum ersten Mal auf BlueXP zugreifen, werden Sie aufgefordert, ein Konto auszuwählen oder zu erstellen. Wenn Sie noch kein Konto haben, wird beispielsweise der folgende Bildschirm angezeigt:
 

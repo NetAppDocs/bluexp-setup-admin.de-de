@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-permissions-aws.html 
 keywords: aws permissions, set up permissions, set up aws permissions, permissions, iam role, iam policy, json, policy, role, credentials 
-summary: Richten Sie AWS Berechtigungen ein, damit Sie BlueXP für das Management Ihrer Daten- und Storage-Infrastruktur in AWS verwenden können. Wie Sie Berechtigungen einrichten, hängt von der Installationsoption ab, die Sie verwenden möchten. 
+summary: Richten Sie Berechtigungen in AWS ein, damit Sie den Connector mit den Berechtigungen implementieren können, die er für das Management Ihrer Daten und Storage-Infrastruktur benötigt. Wie Sie die Berechtigungen einrichten und bereitstellen, hängt von der Installationsoption ab, die Sie verwenden möchten. 
 ---
 = AWS-Berechtigungen einrichten
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Richten Sie AWS Berechtigungen ein, damit Sie BlueXP für das Managemen
 
 
 [role="lead"]
-Richten Sie AWS Berechtigungen ein, damit Sie BlueXP für das Management Ihrer Daten- und Storage-Infrastruktur in AWS verwenden können. Wie Sie Berechtigungen einrichten, hängt von der Installationsoption ab, die Sie verwenden möchten.
+Richten Sie Berechtigungen in AWS ein, damit Sie den Connector mit den Berechtigungen implementieren können, die er für das Management Ihrer Daten und Storage-Infrastruktur benötigt. Wie Sie die Berechtigungen einrichten und bereitstellen, hängt von der Installationsoption ab, die Sie verwenden möchten.
 
 Sie können aus den folgenden Installationsoptionen wählen:
 

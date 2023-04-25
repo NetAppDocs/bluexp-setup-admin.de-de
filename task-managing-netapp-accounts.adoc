@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
-summary: Nach der ersten Einrichtung können Sie Ihre Kontoeinstellungen später verwalten, indem Sie Benutzer, Servicekonten, Arbeitsbereiche und Connectors verwalten. 
+summary: Wenn Sie ein BlueXP Konto erstellen, wird nur ein einziger Admin-Benutzer und eine Arbeitsumgebung eingeschlossen. Sie können das Konto so verwalten, dass es den Anforderungen Ihres Unternehmens entspricht, indem Sie Benutzer hinzufügen, Servicekonten für Automatisierungszwecke erstellen, Arbeitsbereiche hinzufügen und vieles mehr. 
 ---
 = Managen Sie Ihr BlueXP Konto
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Nach der ersten Einrichtung können Sie Ihre Kontoeinstellungen später
 
 
 [role="lead"]
-Sie können Ihr Konto verwalten, indem Sie Benutzer, Servicekonten, Arbeitsbereiche und Connectors verwalten.
+Wenn Sie ein BlueXP Konto erstellen, wird nur ein einziger Admin-Benutzer und eine Arbeitsumgebung eingeschlossen. Sie können das Konto so verwalten, dass es den Anforderungen Ihres Unternehmens entspricht, indem Sie Benutzer hinzufügen, Servicekonten für Automatisierungszwecke erstellen, Arbeitsbereiche hinzufügen und vieles mehr.
 
-link:concept-netapp-accounts.html["Erfahren Sie mehr über die Funktionsweise von BlueXP Accounts"].
+link:concept-netapp-accounts.html["Mehr zur Funktionsweise von BlueXP Accounts"].
 
 
 

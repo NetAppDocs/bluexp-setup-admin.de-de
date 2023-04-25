@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-quick-start-standard-mode.html 
 keywords: quick start, standard mode quick start 
-summary: Einstieg in BlueXP im Standardmodus in wenigen Schritten 
+summary: 'Einstieg in BlueXP im Standardmodus: Melden Sie sich über die BlueXP Konsole an, erstellen Sie optional einen Connector und abonnieren Sie BlueXP.' 
 ---
 = Schneller Einstieg für BlueXP im Standard-Modus
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Einstieg in BlueXP im Standardmodus in wenigen Schritten
 
 
 [role="lead"]
-Einstieg in BlueXP im Standardmodus in wenigen Schritten
+Einstieg in BlueXP im Standardmodus: Melden Sie sich über die BlueXP Konsole an, erstellen Sie optional einen Connector und abonnieren Sie BlueXP.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Registrieren Sie sich und erstellen Sie ein Konto
 [role="quick-margin-para"]

@@ -65,7 +65,10 @@ TIP: Wenn Sie die Option *Rolle übernehmen* wählen, können Sie den ersten Sat
 +
 Stellen Sie sicher, dass Sie über das richtige Schlüsselpaar verfügen, das Sie mit dem Anschluss verwenden können. Ohne ein Schlüsselpaar können Sie nicht auf die virtuelle Connector-Maschine zugreifen.
 
-** *Sicherheitsgruppe*: Wählen Sie aus, ob eine neue Sicherheitsgruppe erstellt werden soll oder ob eine vorhandene Sicherheitsgruppe ausgewählt werden soll, die einen eingehenden HTTP-, HTTPS- und SSH-Zugriff erlaubt.
+** *Sicherheitsgruppe*: Wählen Sie, ob Sie eine neue Sicherheitsgruppe erstellen möchten oder ob Sie eine vorhandene Sicherheitsgruppe auswählen möchten, die die erforderlichen ein- und ausgehenden Regeln zulässt.
++
+link:reference-ports-aws.html["Sicherheitsgruppen-Regeln für AWS ansehen"].
+
 ** *Review*: Überprüfen Sie Ihre Auswahl, um zu überprüfen, ob Ihre Einrichtung korrekt ist.
 
 
@@ -84,11 +87,11 @@ Nach Abschluss des Prozesses ist der Connector für die Nutzung über BlueXP ver
 .Was Sie benötigen
 * Ein VPC und ein Subnetz, das die Netzwerkanforderungen erfüllt
 +
-link:task-set-up-networking-aws.html["Hier erhalten Sie Informationen zu den Netzwerkanforderungen"]
+link:task-set-up-networking-aws.html["Hier erhalten Sie Informationen zu den Netzwerkanforderungen"].
 
 * Eine IAM-Rolle mit angehängter Richtlinie, die die erforderlichen Berechtigungen für den Connector enthält.
 +
-link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"]
+link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"].
 
 * Berechtigung zum Abonnieren und Abbestellen des AWS Marketplace für Ihren IAM-Benutzer.
 * Ein Schlüsselpaar für die EC2-Instanz.
@@ -119,6 +122,12 @@ link:reference-host-requirements-aws.html["Prüfen Sie die Anforderungen an die 
 *** Wählen Sie die gewünschte VPC und das Subnetz.
 *** Geben Sie an, ob die Instanz eine öffentliche IP-Adresse haben soll.
 *** Legen Sie Firewall-Einstellungen fest, die die erforderlichen Verbindungsmethoden für die Connector-Instanz SSH, HTTP und HTTPS aktivieren.
++
+Für spezifische Konfigurationen sind noch einige Regeln erforderlich.
+
++
+link:reference-ports-aws.html["Sicherheitsgruppen-Regeln für AWS ansehen"].
+
 
 
 ** *Storage konfigurieren*: Behalten Sie die standardmäßigen Speicheroptionen bei.
