@@ -30,6 +30,10 @@ Erstellen Sie einen Connector direkt über die webbasierte Konsole von BlueXP, �
 ** HTTPS-Zertifikat
 
 
+* Ein öffentlicher SSH-Schlüssel, wenn Sie diese Authentifizierungsmethode für die virtuelle Connector-Maschine verwenden möchten. Die andere Option für die Authentifizierungsmethode ist die Verwendung eines Passworts.
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Erfahren Sie mehr über die Verbindung mit einer Linux VM in Azure"^]
+
 * Wenn Sie nicht möchten, dass BlueXP automatisch eine Azure-Rolle für den Connector erstellt, müssen Sie Ihre eigene erstellen link:reference-permissions-azure.html["Verwenden der Richtlinie auf dieser Seite"].
 +
 Diese Berechtigungen gelten für die Connector-Instanz selbst. Es handelt sich um eine andere Gruppe von Berechtigungen als das, was Sie zuvor für die einfache Bereitstellung des Connectors eingerichtet haben.
@@ -70,7 +74,13 @@ link:task-set-up-permissions-azure.html["Erfahren Sie, wie Sie diese Werte für 
 
 . Befolgen Sie die Schritte im Assistenten, um den Konnektor zu erstellen:
 +
-** *VM Authentication*: Wählen Sie ein Azure-Abonnement, einen Speicherort, eine neue Ressourcengruppe oder eine vorhandene Ressourcengruppe aus und wählen Sie dann eine Authentifizierungsmethode aus.
+** *VM-Authentifizierung*: Wählen Sie ein Azure-Abonnement, einen Speicherort, eine neue Ressourcengruppe oder eine vorhandene Ressourcengruppe und wählen Sie dann eine Authentifizierungsmethode für die von Ihnen erstellte virtuelle Connector-Maschine aus.
++
+Die Authentifizierungsmethode für die virtuelle Maschine kann ein Passwort oder ein öffentlicher SSH-Schlüssel sein.
+
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Erfahren Sie mehr über die Verbindung mit einer Linux VM in Azure"^]
+
 ** *Details*: Geben Sie einen Namen für die Instanz ein, geben Sie Tags an und wählen Sie aus, ob BlueXP eine neue Rolle mit den erforderlichen Berechtigungen erstellen soll oder ob Sie eine vorhandene Rolle auswählen möchten, die Sie mit eingerichtet haben link:reference-permissions-azure.html["Die erforderlichen Berechtigungen"].
 +
 Beachten Sie, dass Sie die Abonnements für diese Rolle auswählen können. Jedes von Ihnen gewählte Abonnement bietet dem Konnektor Berechtigungen zum Bereitstellen von Cloud Volumes ONTAP in diesen Abonnements.
