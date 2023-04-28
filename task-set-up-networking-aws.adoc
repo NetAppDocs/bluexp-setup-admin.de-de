@@ -32,7 +32,15 @@ Ein Connector erfordert eine Netzwerkverbindung zu dem Standort, an dem Sie Arbe
 
 == Outbound-Internetzugang
 
-Der Netzwerkspeicherort, an dem Sie den Connector bereitstellen, muss über eine ausgehende Internetverbindung verfügen.
+Der Netzwerkspeicherort, an dem Sie den Connector bereitstellen, muss über eine ausgehende Internetverbindung verfügen. Wenn Sie den Connector über die BlueXP Konsole implementieren, ist auch ein ausgehender Internetzugang über Ihren Webbrowser erforderlich.
+
+
+
+=== Endpunkte wurden über die BlueXP Konsole kontaktiert
+
+Bei der Nutzung der webbasierten Konsole von BlueXP, die über die SaaS-Schicht bereitgestellt wird, werden mehrere Endpunkte kontaktiert, um Datenmanagement-Aufgaben durchzuführen. Dazu gehören Endpunkte, die kontaktiert werden, um den Connector über die BlueXP Konsole zu implementieren.
+
+link:reference-networking-saas-console.html["Eine Liste der Endpunkte, die über die BlueXP Konsole kontaktiert wurden, wird angezeigt"].
 
 
 
@@ -53,9 +61,9 @@ Der Host versucht möglicherweise, während der Installation Betriebssystempaket
 
 
 
-=== Endpunkte für den täglichen Betrieb kontaktiert
+=== Vom Connector kontaktierte Endpunkte
 
-Für den Konnektor ist ein abgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public-Cloud-Umgebung zu verwalten.
+Für den Connector ist ein ausgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public Cloud-Umgebung für den täglichen Betrieb zu managen.
 
 [cols="2*"]
 |===
@@ -96,9 +104,6 @@ NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er be
 
 | \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
 |===
-.Verwandter Link
-link:reference-networking-saas-console.html["Bereiten Sie Ihr Networking auf den Benutzerzugriff auf die BlueXP Konsole vor"]
-
 
 
 == Proxy-Server

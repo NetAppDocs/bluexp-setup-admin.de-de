@@ -49,9 +49,9 @@ Der Host versucht möglicherweise, während der Installation Betriebssystempaket
 
 
 
-=== Endpunkte für den täglichen Betrieb kontaktiert
+=== Vom Connector kontaktierte Endpunkte
 
-Für den Konnektor ist ein abgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public-Cloud-Umgebung zu verwalten.
+Für den Connector ist ein ausgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public Cloud-Umgebung für den täglichen Betrieb zu managen.
 
 [cols="2*"]
 |===

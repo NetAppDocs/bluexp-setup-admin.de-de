@@ -58,8 +58,8 @@ AWS-Services (amazonaws.com):
 |===
 .Weiterführende Links
 * link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["Networking für Benutzerzugriff auf die BlueXP Konsole vorbereiten (eingeschränkter Modus)"]
-* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Endpunkte, die der Connector in AWS kontaktiert (Standard-Modus)"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Endpunkte, die der Connector in Azure kontaktiert (Standardmodus)"]
-* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Endpunkte, die der Connector in Google Cloud kontaktiert (Standardmodus)"]
+* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Endpunkte, die der Connector in AWS kontaktiert (Standard-Modus)"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Endpunkte, die der Connector in Azure kontaktiert (Standardmodus)"]
+* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Endpunkte, die der Connector in Google Cloud kontaktiert (Standardmodus)"]
 * link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["Endpunkte wurden während der manuellen Installation des Connectors kontaktiert (Standardmodus)"]
 
