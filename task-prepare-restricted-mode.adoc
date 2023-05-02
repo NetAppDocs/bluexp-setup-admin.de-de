@@ -496,6 +496,10 @@ Für die Implementierung von Cloud Volumes ONTAP in Google Cloud sind mehrere AP
 ** Cloud Resource Manager API
 ** Compute Engine-API
 ** IAM-API (Identitäts- und Zugriffsmanagement
+** KMS-API (Cloud Key Management Service)
++
+(Nur erforderlich, wenn Sie BlueXP Backup und Recovery mit vom Kunden gemanagten Verschlüsselungsschlüsseln (CMEK) verwenden möchten).
+
 
 
 
