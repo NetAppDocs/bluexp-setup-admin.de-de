@@ -35,10 +35,10 @@ link:task-set-up-networking-on-prem.html["Erfahren Sie mehr über Netzwerkanford
 Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Anforderungen erfüllt. Die wichtigsten Anforderungen sind:
 
 [role="quick-margin-list"]
-* Ein dedizierter Host, auf dem CentOS oder Red hat Enterprise Linux ausgeführt wird
+* Ein dedizierter Host, auf dem Ubuntu 22.04, CentOS 7.6 bis 7.9 oder RHEL 7.6 bis 7.9 ausgeführt werden
 * 4 CPUs
 * 14 GB RAM
-* Docker Engine
+* Docker Engine 19.3.1 oder höher
 
 
 [role="quick-margin-para"]

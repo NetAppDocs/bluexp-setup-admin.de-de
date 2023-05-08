@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
-keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu 
 summary: Möglicherweise möchten Sie mehr über den Connector erfahren, bevor Sie ihn bereitstellen, oder wenn Sie Probleme beheben müssen. 
 ---
 = Standardkonfiguration für den Konnektor
@@ -29,7 +29,7 @@ Die folgenden Konfigurationsdetails gelten, wenn Sie den Connector von BlueXP, v
 Wenn Sie den Connector von BlueXP oder vom Marktplatz des Cloud-Providers implementiert haben, beachten Sie Folgendes:
 
 * Der EC2-Instanztyp ist t3.xlarge.
-* Das Betriebssystem für das Image ist Red hat Enterprise Linux 7.6 (HVM).
+* Das Betriebssystem für das Image ist Ubuntu 22.04.
 +
 Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.
 
@@ -44,7 +44,7 @@ Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um au
 Wenn Sie den Connector von BlueXP oder vom Marktplatz des Cloud-Providers implementiert haben, beachten Sie Folgendes:
 
 * Der VM-Typ ist DS3 v2.
-* Das Betriebssystem für das Image ist CentOS 7.6.
+* Das Betriebssystem für das Image ist Ubuntu 22.04.
 +
 Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.
 
@@ -55,10 +55,10 @@ Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um au
 
 === Google Cloud-Details
 
-Wenn Sie den Connector von BlueXP oder vom Marktplatz des Cloud-Providers implementiert haben, beachten Sie Folgendes:
+Wenn Sie den Connector von BlueXP implementiert haben, beachten Sie Folgendes:
 
 * Die VM-Instanz ist n2-Standard-4.
-* Das Betriebssystem für das Image ist Red hat Enterprise Linux 8.6.
+* Das Betriebssystem für das Image ist Ubuntu 22.04.
 +
 Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.
 

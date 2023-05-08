@@ -47,7 +47,7 @@ Bei beiden Optionen besteht der erste Schritt darin, eine IAM-Richtlinie zu erst
 Bei Bedarf können Sie die IAM-Richtlinie mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
 
 
-TIP: Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtigungen auf die Connector-Instanz an, die den Connector zu AWS Ressourcen ermöglicht.
+TIP: Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtigungen auf die Connector-Instanz an, sodass der Connector AWS Ressourcen managen kann.
 
 .Schritte
 . Wechseln Sie zur AWS IAM-Konsole.

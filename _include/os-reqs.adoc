@@ -1,22 +1,12 @@
----
-sidebar: sidebar 
-permalink: reference-host-requirements-google.html 
-keywords: cpu requirements, ram requirements, google cloud requirements, google cloud host requirements, connector host requirements, gcp machine type, machine type 
-summary: Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt. Wenn Sie den Connector manuell installieren möchten, sollten Sie sicherstellen, dass Ihr Host diese Anforderungen erfüllt. Stellen Sie sicher, dass Ihr Host diese Anforderungen erfüllt, bevor Sie den Connector installieren. 
----
-= Prüfen Sie die Connector-Host-Anforderungen für Google Cloud-Installationen
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt. Wenn Sie den Connector manuell installieren möchten, sollten Sie sicherstellen, dass Ihr Host diese Anforderungen erfüllt.
+* Ein dedizierter Host, auf dem Ubuntu 22.04, CentOS 7.6 bis 7.9 oder RHEL 7.6 bis 7.9 ausgeführt werden
+* 4 CPUs
+* 14 GB RAM
+* Docker Engine 19.3.1 oder höher
 
-Wenn Sie den Connector von BlueXP oder von glcoud implementieren, enthält das Image die erforderlichen Betriebssystem- und Softwarekomponenten.
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
 Unterstützte Betriebssysteme::
@@ -42,12 +32,25 @@ https://access.redhat.com/certified-hypervisors["Red hat Solution: Welche Hyperv
 --
 CPU:: 4 Kerne oder 4 vCPUs
 RAM:: 14 GB
+
+
+Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.xlarge.
+
+
+Schlüsselpaar:: Wenn Sie den Connector aus BlueXP oder aus AWS Marketplace erstellen, müssen Sie ein EC2-Schlüsselpaar zur Verwendung mit der Instanz auswählen.
+
+
+Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen DS3 v2.
+
+
 Google Cloud-Maschinentyp:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen n2-Standard-4.
 +
 --
 Der Connector wird in Google Cloud auf einer VM-Instanz mit einem unterstützten Betriebssystem unterstützt https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Geschirmte VM-Funktionen"^]
 
 --
+
+
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
 Docker Engine:: Docker Engine Version 19.3.1 oder höher ist auf dem Host erforderlich, bevor Sie den Connector installieren. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
