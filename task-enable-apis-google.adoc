@@ -32,4 +32,4 @@ Bevor Sie den Connector und die Cloud Volumes ONTAP in Google Cloud bereitstelle
 
 
 
-https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud-Dokumentation: Aktivieren von APIs"^]
+https://["Google Cloud-Dokumentation: Aktivieren von APIs"^]

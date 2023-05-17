@@ -22,7 +22,7 @@ _Identity Federation_ ermöglicht Single Sign On mit BlueXP, sodass Benutzer sic
 
 Wenn Sie sich mit Ihren NSS-Zugangsdaten (NetApp Support Site) bei BlueXP anmelden, sollten Sie die Anweisungen auf dieser Seite nicht befolgen, um die Identity Federation einzurichten. Sie sollten stattdessen Folgendes tun:
 
-* Laden Sie die herunter, und füllen Sie die aus https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["Antragsformular für die NetApp Föderation"^]
+* Laden Sie die herunter, und füllen Sie die aus https://["Antragsformular für die NetApp Föderation"^]
 * Senden Sie das Formular an die im Formular angegebene E-Mail-Adresse
 
 
@@ -87,16 +87,16 @@ Konfigurieren Sie Ihren SAML-Identitätsanbieter zur Aktivierung der Identitäts
 
 Anweisungen für Ihren SAML-Identitätsanbieter anzeigen:
 
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["Okta"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircle"^]
+* https://["ADFS"^]
+* https://["Okta"^]
+* https://["OneLogin"^]
+* https://["PingFederate"^]
+* https://["Salesforce"^]
+* https://["SiteMinder"^]
+* https://["SSOCircle"^]
 
 
-Wenn Ihr Identitätsanbieter nicht in der Liste oben angezeigt wird, https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["Befolgen Sie diese allgemeinen Anweisungen"^]
+Wenn Ihr Identitätsanbieter nicht in der Liste oben angezeigt wird, https://["Befolgen Sie diese allgemeinen Anweisungen"^]
 
 
 TIP: Führen Sie _Not_ die Schritte aus, die beschreiben, wie eine Verbindung in auth0 erstellt wird. Im nächsten Schritt erstellen Sie diese Verbindung.
@@ -104,7 +104,7 @@ TIP: Führen Sie _Not_ die Schritte aus, die beschreiben, wie eine Verbindung in
 
 
 | 2 | BlueXP Admin  a| 
-Wechseln Sie zum https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
+Wechseln Sie zum https://["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
 
 Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrator über den Identitätsanbieter beziehen:
 
@@ -120,7 +120,7 @@ Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden 
 | 3 | AD Admin | Führen Sie die Konfiguration auf dem Identitätsanbieter mit den Parametern aus, die nach Abschluss von Schritt 2 auf der Seite „Einrichtung der Föderation“ angezeigt werden. 
 
 
-| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
+| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
 |===
 
 
@@ -136,7 +136,7 @@ Das Einrichten einer verbundenen Verbindung zwischen BlueXP und Azure AD umfasst
 | 1 | AD Admin  a| 
 Konfigurieren Sie Azure Active Directory zur Aktivierung der Identitätsföderation mit BlueXP.
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Anweisungen zur Registrierung der Applikation bei Azure AD anzeigen"^]
+https://["Anweisungen zur Registrierung der Applikation bei Azure AD anzeigen"^]
 
 
 TIP: Führen Sie _Not_ die Schritte aus, die beschreiben, wie eine Verbindung in auth0 erstellt wird. Im nächsten Schritt erstellen Sie diese Verbindung.
@@ -144,7 +144,7 @@ TIP: Führen Sie _Not_ die Schritte aus, die beschreiben, wie eine Verbindung in
 
 
 | 2 | BlueXP Admin  a| 
-Wechseln Sie zum https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
+Wechseln Sie zum https://["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
 
 Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrator erhalten:
 
@@ -160,7 +160,7 @@ Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden 
 | 3 | AD Admin | Schließen Sie die Konfiguration in Azure AD mit den Parametern ab, die auf der Seite Föderationseinrichtung angezeigt werden, nachdem Sie Schritt 2 abgeschlossen haben. 
 
 
-| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
+| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
 |===
 
 
@@ -176,12 +176,12 @@ Das Einrichten einer verbundenen Verbindung zwischen BlueXP und ADFS umfasst im 
 | 1 | AD Admin  a| 
 Konfigurieren Sie den ADFS-Server so, dass die Identity Federation mit BlueXP aktiviert wird.
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["Anweisungen zur Konfiguration des ADFS-Servers mit auth0 anzeigen"^]
+https://["Anweisungen zur Konfiguration des ADFS-Servers mit auth0 anzeigen"^]
 
 
 
 | 2 | BlueXP Admin  a| 
-Wechseln Sie zum https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
+Wechseln Sie zum https://["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
 
 Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrator erhalten: Die URL für den ADFS-Server oder die Verbundmetadaten-Datei.
 
@@ -192,7 +192,7 @@ Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden 
 | 3 | AD Admin | Schließen Sie die Konfiguration auf dem ADFS-Server mit den Parametern ab, die auf der Seite Federation Setup angezeigt werden, nachdem Sie Schritt 2 abgeschlossen haben. 
 
 
-| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
+| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
 |===
 
 
@@ -208,7 +208,7 @@ Das Einrichten einer föderierten Verbindung zwischen BlueXP und einem PingFeder
 | 1 | AD Admin  a| 
 Konfigurieren Sie den PingFederate Server zur Aktivierung der Identity Federation mit BlueXP.
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["Anweisungen zum Erstellen einer Verbindung anzeigen"^]
+https://["Anweisungen zum Erstellen einer Verbindung anzeigen"^]
 
 
 TIP: Führen Sie _Not_ die Schritte aus, die beschreiben, wie eine Verbindung in auth0 erstellt wird. Im nächsten Schritt erstellen Sie diese Verbindung.
@@ -216,7 +216,7 @@ TIP: Führen Sie _Not_ die Schritte aus, die beschreiben, wie eine Verbindung in
 
 
 | 2 | BlueXP Admin  a| 
-Wechseln Sie zum https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
+Wechseln Sie zum https://["NetApp Federation Setup-Seite"^] Stellen Sie die Verbindung zu BlueXP her.
 
 Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrator erhalten:
 
@@ -231,13 +231,13 @@ Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden 
 | 3 | AD Admin | Schließen Sie die Konfiguration auf dem PingFederate-Server mit den Parametern ab, die auf der Seite Federation Setup angezeigt werden, nachdem Sie Schritt 2 abgeschlossen haben. 
 
 
-| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
+| 4 | BlueXP Admin | Testen und aktivieren Sie die Verbindung vom https://["NetApp Federation Setup-Seite"^]Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivieren der Verbindung aktualisiert wird. 
 |===
 
 
 == Aktualisieren einer föderierten Verbindung
 
-Nachdem der BlueXP Admin eine Verbindung ermöglicht hat, kann der Admin die Verbindung jederzeit über das aktualisieren https://services.cloud.netapp.com/federation-setup["NetApp Federation Setup-Seite"^]
+Nachdem der BlueXP Admin eine Verbindung ermöglicht hat, kann der Admin die Verbindung jederzeit über das aktualisieren https://["NetApp Federation Setup-Seite"^]
 
 Sie müssen beispielsweise die Verbindung aktualisieren, indem Sie ein neues Zertifikat hochladen.
 

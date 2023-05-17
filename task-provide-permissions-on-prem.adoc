@@ -42,7 +42,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 
 
 .Ergebnis
-BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt. Sie können jetzt die öffnen https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt. Sie können jetzt die öffnen https://["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
 
 --
 .Azure
@@ -72,7 +72,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 
 
 .Ergebnis
-BlueXP verfügt jetzt über die Berechtigungen, die es für Sie zum Ausführen von Aktionen in Azure benötigt. Sie können jetzt die öffnen https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+BlueXP verfügt jetzt über die Berechtigungen, die es für Sie zum Ausführen von Aktionen in Azure benötigt. Sie können jetzt die öffnen https://["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
 
 --
 ====

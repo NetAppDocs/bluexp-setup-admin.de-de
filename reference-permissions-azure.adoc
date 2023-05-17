@@ -86,7 +86,6 @@ Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, 
                     "Microsoft.Storage/storageAccounts/delete",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
@@ -161,9 +160,10 @@ Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, 
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
-                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
-                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
+                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -226,8 +226,6 @@ Der Connector macht die folgenden API-Anfragen für das Backup und Recovery von 
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * Microsoft.Ressourcen/Bereitstellungen/löschen
-* Microsoft.Network/publicIPAddresses/delete
-* Microsoft.Storage/StorageAccounts/blobServices/Container/write
 * Microsoft.ManagedIdentity/userAssignetIdentities/assign/Action
 
 
@@ -443,7 +441,10 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Microsoft.Ressourcen/Bereitstellungen/löschen | Ja. | Nein | Nein 
 
 
-| Implementierung über eine VHD ermöglichen | Microsoft.Compute/images/read | Ja. | Nein | Nein 
+.2+| Implementierung über eine VHD ermöglichen | Microsoft.Compute/images/read | Ja. | Nein | Nein 
+
+
+| Microsoft.Compute/images/write | Ja. | Nein | Nein 
 
 
 .4+| Netzwerkschnittstellen im Ziel-Subnetz erstellen und verwalten | Microsoft.Network/networkInterfaces/read | Ja. | Ja. | Nein 
@@ -590,7 +591,7 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 | Microsoft.MarketplaceOrdering/offertypes/Publisher/Offers/Plans/Agreements/write | Ja. | Ja. | Nein 
 
 
-.8+| Managen Sie einen Load Balancer für HA-Paare | Microsoft.Network/loadBalancers/read | Ja. | Ja. | Nein 
+.9+| Managen Sie einen Load Balancer für HA-Paare | Microsoft.Network/loadBalancers/read | Ja. | Ja. | Nein 
 
 
 | Microsoft.Network/loadBalancers/write | Ja. | Nein | Nein 
@@ -603,6 +604,9 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | Ja. | Nein | Nein 
+
+
+| Microsoft.Network/loadBalancers/frontendIPConfigurations/read | Ja. | Ja. | Nein 
 
 
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | Ja. | Nein | Nein 
@@ -756,7 +760,6 @@ Der Connector macht die folgenden API-Anfragen, wenn Sie BlueXP Tiering einricht
 Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
 
 * Microsoft.Storage/StorageAccounts/blobServices/Container/Lesevorgang
-* Microsoft.Storage/StorageAccounts/blobServices/Container/write
 * Microsoft.Storage/StorageAccounts/Management Policies/read
 * Microsoft.Storage/StorageAccounts/Management Richtlinien/schreiben
 * Microsoft.Storage/StorageAccounts/Lesevorgang
@@ -767,6 +770,22 @@ Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== 12 Mai 2023
+
+Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt, da sie für das Cloud Volumes ONTAP-Management erforderlich sind:
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+
+
+Die folgenden Berechtigungen wurden aus der JSON-Richtlinie entfernt, da sie nicht mehr erforderlich sind:
+
+* Microsoft.Storage/StorageAccounts/blobServices/Container/write
+* Microsoft.Network/publicIPAddresses/delete
+
 
 
 
@@ -791,27 +810,4 @@ Diese Berechtigungen sind für das Backup und Recovery von BlueXP erforderlich.
 +
 Diese Berechtigung ist für die Cloud Volumes ONTAP-Bereitstellung erforderlich.
 
-
-
-
-
-=== Dezember 2022
-
-Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt:
-
-* Microsoft.Storage/StorageAccounts/blobServices/Container/write
-+
-Diese Berechtigung ist für das Backup und Recovery von BlueXP sowie für BlueXP Tiering erforderlich.
-
-* Microsoft.Network/publicIPAddresses/delete
-+
-Diese Berechtigung ist für das Backup und Recovery von BlueXP erforderlich.
-
-
-
-Die folgenden Berechtigungen wurden aus der JSON-Richtlinie entfernt, da sie nicht mehr erforderlich sind:
-
-* Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
-* Microsoft.Storage/StorageAccounts/Generationkey/Aktion
 

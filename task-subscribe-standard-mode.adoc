@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-subscribe-standard-mode.html 
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
-summary: Wenn Sie BlueXP über den Marketplace Ihres Cloud-Providers abonnieren, können Sie für BlueXP Services zu einem Stundensatz oder über einen Jahresvertrag bezahlen. Wenn Sie eine Lizenz von NetApp erworben haben, müssen Sie auch das PAYGO-Angebot abonnieren. Ihre Lizenz wird immer zuerst berechnet, aber Sie werden mit dem Stundensatz belastet, wenn Sie Ihre lizenzierte Kapazität überschreiten oder wenn die Laufzeit der Lizenz abläuft. 
+summary: Wenn Sie BlueXP über den Marketplace Ihres Cloud-Providers abonnieren, können Sie für BlueXP Services zu einem Stundensatz oder über einen Jahresvertrag bezahlen. Wenn Sie eine Lizenz von NetApp erworben haben, müssen Sie auch das Marketplace-Angebot abonnieren. Ihre Lizenz wird immer zuerst berechnet, aber Sie werden mit dem Stundensatz belastet, wenn Sie Ihre lizenzierte Kapazität überschreiten oder wenn die Laufzeit der Lizenz abläuft. 
 ---
 = BlueXP abonnieren (Standardmodus)
 :hardbreaks:
@@ -14,7 +14,18 @@ summary: Wenn Sie BlueXP über den Marketplace Ihres Cloud-Providers abonnieren,
 
 
 [role="lead"]
-Abonnieren Sie BlueXP über den Marketplace Ihres Cloud-Providers und zahlen Sie für BlueXP Services zu einem Stundensatz (PAYGO) oder über einen Jahresvertrag. Wenn Sie eine Lizenz von NetApp (BYOL) erworben haben, müssen Sie auch das PAYGO-Angebot abonnieren. Ihre Lizenz wird immer zuerst berechnet, aber Sie werden mit dem Stundensatz belastet, wenn Sie Ihre lizenzierte Kapazität überschreiten oder wenn die Laufzeit der Lizenz abläuft.
+Abonnieren Sie BlueXP über den Marketplace Ihres Cloud-Providers und zahlen Sie für BlueXP Services zu einem Stundensatz (PAYGO) oder über einen Jahresvertrag. Wenn Sie eine Lizenz von NetApp (BYOL) erworben haben, müssen Sie auch das Marketplace-Angebot abonnieren. Ihre Lizenz wird immer zuerst berechnet, aber Sie werden mit dem Stundensatz belastet, wenn Sie Ihre lizenzierte Kapazität überschreiten oder wenn die Laufzeit der Lizenz abläuft.
+
+Über ein Marketplace Abonnement können die folgenden BlueXP Services berechnet werden:
+
+* Backup und Recovery
+* Klassifizierung
+* Cloud Volumes ONTAP
+* Tiering
+
+
+.Bevor Sie beginnen
+Für das Abonnement von BlueXP wird ein Marketplace-Abonnement mit den Cloud-Zugangsdaten verknüpft, die einem Connector zugeordnet sind. Wenn Sie den Workflow „erste Schritte mit Standardmodus“ befolgt haben, sollten Sie bereits über einen Connector verfügen. Weitere Informationen finden Sie im link:task-quick-start-standard-mode.html["Schneller Einstieg für BlueXP im Standard-Modus"].
 
 [role="tabbed-block"]
 ====
@@ -23,6 +34,9 @@ Abonnieren Sie BlueXP über den Marketplace Ihres Cloud-Providers und zahlen Sie
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
 . Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
++
+Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind. Sie können kein Marketplace-Abonnement mit Anmeldedaten verknüpfen, die mit BlueXP verknüpft sind.
+
 +
 image:screenshot_associate_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
@@ -63,6 +77,9 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 .Schritte
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
 . Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
++
+Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind. Sie können kein Marketplace-Abonnement mit Anmeldedaten verknüpfen, die mit BlueXP verknüpft sind.
+
 +
 image:screenshot_azure_add_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
@@ -117,7 +134,7 @@ image:screenshot_gcp_associate.gif["Ein Screenshot eines Google Cloud-Projekts u
 NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Sie sowohl Billing Admin-Berechtigungen in Ihrem Google Cloud-Konto als auch BlueXP-Login haben.
 
 +
-.. Nachdem Sie auf die umgeleitet wurden https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Seite zu NetApp BlueXP im Google Cloud Marketplace"^], Stellen Sie sicher, dass das richtige Projekt im oberen Navigationsmenü ausgewählt ist.
+.. Nachdem Sie auf die umgeleitet wurden https://["Seite zu NetApp BlueXP im Google Cloud Marketplace"^], Stellen Sie sicher, dass das richtige Projekt im oberen Navigationsmenü ausgewählt ist.
 +
 image:screenshot_gcp_cvo_marketplace.png["Ein Screenshot der Cloud Volumes ONTAP Marketplace-Seite in Google Cloud"]
 
@@ -137,7 +154,7 @@ image:screenshot_gcp_marketplace_register.png["Ein Screenshot eines Pop-up-Pop-u
 .. Führen Sie die Schritte auf der Seite *Subscription Assignment* aus:
 +
 
-NOTE: Wenn ein Mitarbeiter Ihres Unternehmens bereits über Ihr Rechnungskonto das NetApp BlueXP Abonnement abonniert hat, werden Sie weitergeleitet https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["Die Cloud Volumes ONTAP-Seite auf der BlueXP-Website"^] Stattdessen. Sollte dies nicht unerwartet sein, wenden Sie sich an Ihr NetApp Vertriebsteam. Google ermöglicht nur ein Abonnement pro Google-Abrechnungskonto.
+NOTE: Wenn ein Mitarbeiter Ihres Unternehmens bereits über Ihr Rechnungskonto das NetApp BlueXP Abonnement abonniert hat, werden Sie weitergeleitet https://["Die Cloud Volumes ONTAP-Seite auf der BlueXP-Website"^] Stattdessen. Sollte dies nicht unerwartet sein, wenden Sie sich an Ihr NetApp Vertriebsteam. Google ermöglicht nur ein Abonnement pro Google-Abrechnungskonto.
 
 +
 *** Wählen Sie die BlueXP Konten aus, mit denen Sie dieses Abonnement verknüpfen möchten.
@@ -166,3 +183,10 @@ image:screenshot_gcp_associate.gif["Ein Screenshot der Abonnementzuordnungsseite
 
 --
 ====
+.Weiterführende Links
+* https://["Managen Sie kapazitätsbasierte BYOL-Lizenzen für Cloud Volumes ONTAP"^]
+* https://["Managen von BYOL-Lizenzen für BlueXP Datenservices"^]
+* https://["Managen Sie AWS Anmeldeinformationen und Abonnements für BlueXP"]
+* https://["Managen Sie Azure Anmeldedaten und Abonnements für BlueXP"]
+* https://["Managen Sie Google Cloud-Anmeldedaten und -Abonnements für BlueXP"]
+

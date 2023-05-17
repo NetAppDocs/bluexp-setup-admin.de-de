@@ -22,7 +22,7 @@ Implementieren Sie den Connector im privaten Modus, sodass Sie BlueXP ohne Outbo
 
 Laden Sie das Produkt-Installationsprogramm von der NetApp Support Site herunter und installieren Sie den Connector dann manuell auf Ihrem eigenen Linux Host.
 
-Wenn Sie BlueXP in der verwenden möchten https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services (C2S) Umgebung"^] Folgen Sie dann den einzelnen Anweisungen, um in dieser Umgebung zu beginnen. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Erste Schritte mit Cloud Volumes ONTAP in der AWS C2S Umgebung"^]
+Wenn Sie BlueXP in der verwenden möchten https://["AWS Commercial Cloud Services (C2S) Umgebung"^] Folgen Sie dann den einzelnen Anweisungen, um in dieser Umgebung zu beginnen. https://["Erste Schritte mit Cloud Volumes ONTAP in der AWS C2S Umgebung"^]
 
 .Erforderliche Berechtigungen
 Zur Installation des Connectors sind Root-Berechtigungen erforderlich.
@@ -34,7 +34,7 @@ Zur Installation des Connectors sind Root-Berechtigungen erforderlich.
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"^]
+. Laden Sie die Connector-Software von der herunter https://["NetApp Support Website"^]
 +
 Stellen Sie sicher, dass Sie das Installationsprogramm für eingeschränkte Netzwerke ohne Internetzugang herunterladen.
 
@@ -69,7 +69,7 @@ Die Connector-Software ist installiert. Sie können jetzt BlueXP einrichten.
 Wenn Sie zum ersten Mal die BlueXP Konsole aufrufen, werden Sie aufgefordert, BlueXP einzurichten.
 
 .Schritte
-. Öffnen Sie einen Webbrowser, und geben Sie ein https://_ipaddress_[] Wobei _ipaddress_ die IP-Adresse des Linux-Hosts ist, auf dem Sie den Connector installiert haben.
+. Öffnen Sie einen Webbrowser, und geben Sie ein https://[] Wobei _ipaddress_ die IP-Adresse des Linux-Hosts ist, auf dem Sie den Connector installiert haben.
 +
 Der folgende Bildschirm sollte angezeigt werden.
 
@@ -213,7 +213,7 @@ Verknüpfen Sie das Servicekonto mit der Konnektor-VM.
 .Schritte
 . Wechseln Sie zum Google Cloud Portal und weisen Sie das Servicekonto der VM-Instanz des Connectors zu.
 +
-https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud-Dokumentation: Ändern des Dienstkontos und des Zugriffsumfangs für eine Instanz"^]
+https://["Google Cloud-Dokumentation: Ändern des Dienstkontos und des Zugriffsumfangs für eine Instanz"^]
 
 . Wenn Sie Cloud Volumes ONTAP in anderen Projekten implementieren möchten, gewähren Sie Zugriff, indem Sie das Servicekonto mit der BlueXP Rolle zu diesem Projekt hinzufügen. Sie müssen diesen Schritt für jedes Projekt wiederholen.
 

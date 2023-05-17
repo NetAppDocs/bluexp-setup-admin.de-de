@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["Ein Screenshot, der das Aktionsf
 
 . Wählen Sie *Daten synchronisieren*, um Daten mit oder aus Google Cloud Storage Buckets zu synchronisieren.
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Übersicht über die BlueXP Kopier- und Synchronisierungsfunktion"^]
+Weitere Informationen finden Sie unter https://["Übersicht über die BlueXP Kopier- und Synchronisierungsfunktion"^]
 
 . Wählen Sie *Arbeitsumgebung eingeben*, um Details zu den Buckets in Ihrem Google-Konto anzuzeigen.
 +

@@ -28,7 +28,7 @@ Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensver
 
 
 .Schritte
-. Öffnen Sie einen Webbrowser, und rufen Sie den auf https://console.bluexp.netapp.com["BlueXP-Konsole"^]
+. Öffnen Sie einen Webbrowser, und rufen Sie den auf https://["BlueXP-Konsole"^]
 . Geben Sie auf der Seite *Anmelden* die E-Mail-Adresse ein, die mit Ihrem Login verknüpft ist.
 . Abhängig von der Authentifizierungsmethode, die mit Ihrer Anmeldung verknüpft ist, werden Sie aufgefordert, Ihre Anmeldedaten einzugeben:
 +

@@ -39,7 +39,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 . Richten Sie den Proxy ein:
 +
 .. Wählen Sie *Proxy Aktivieren*.
-.. Geben Sie den Server mithilfe der Syntax an http://_address:port_[] Oder https://_address:port_[]
+.. Geben Sie den Server mithilfe der Syntax an http://[] Oder https://[]
 .. Geben Sie einen Benutzernamen und ein Kennwort an, wenn eine grundlegende Authentifizierung für den Server erforderlich ist
 .. Wählen Sie *Speichern*.
 +
@@ -58,7 +58,7 @@ Wenn Sie einen Connector für die Verwendung eines Proxy-Servers konfiguriert ha
 
 Wenn Sie die Verwendung von privaten Azure-Links mit Cloud Volumes ONTAP deaktiviert und stattdessen Service-Endpunkte verwenden, müssen Sie direkten API-Datenverkehr aktivieren. Andernfalls wird der Datenverkehr nicht korrekt geleitet.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Weitere Informationen zur Verwendung eines Azure Private Links oder von Service-Endpunkten mit Cloud Volumes ONTAP"^]
+https://["Weitere Informationen zur Verwendung eines Azure Private Links oder von Service-Endpunkten mit Cloud Volumes ONTAP"^]
 
 .Schritte
 . Wählen Sie oben rechts in der BlueXP-Konsole das Symbol Einstellungen und dann *Connector Settings* aus.

@@ -43,8 +43,8 @@ Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Z
 
 . Fügen Sie die Richtlinien einem IAM-Benutzer hinzu.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS Documentation: Erstellung von IAM-Rollen"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
+** https://["AWS Documentation: Erstellung von IAM-Rollen"^]
+** https://["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
 
 
 . Stellen Sie sicher, dass der Benutzer über Zugriffsschlüssel verfügt, die Sie nach der Installation des Connectors zu BlueXP hinzufügen können.
@@ -63,7 +63,7 @@ Wenn der Connector vor Ort installiert ist, müssen Sie BlueXP mit Azure Berecht
 .Erstellen einer Azure Active Directory Applikation zur rollenbasierten Zugriffssteuerung
 . Stellen Sie sicher, dass Sie in Azure über die Berechtigungen zum Erstellen einer Active Directory-Anwendung und zum Zuweisen der Anwendung zu einer Rolle verfügen.
 +
-Weitere Informationen finden Sie unter https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure-Dokumentation: Erforderliche Berechtigungen"^].
+Weitere Informationen finden Sie unter https://["Microsoft Azure-Dokumentation: Erforderliche Berechtigungen"^].
 
 . Öffnen Sie über das Azure-Portal den *Azure Active Directory*-Service.
 +
@@ -108,7 +108,7 @@ Sie sollten die ID für jedes Azure Abonnement hinzufügen, aus dem Benutzer Clo
 In den folgenden Schritten wird beschrieben, wie die Rolle mithilfe von Bash in Azure Cloud Shell erstellt wird.
 
 +
-*** Starten https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] Und wählen Sie die Bash-Umgebung.
+*** Starten https://["Azure Cloud Shell"^] Und wählen Sie die Bash-Umgebung.
 *** Laden Sie die JSON-Datei hoch.
 +
 image:screenshot_azure_shell_upload.png["Einen Screenshot der Azure Cloud Shell, in dem Sie die Option zum Hochladen einer Datei auswählen können."]

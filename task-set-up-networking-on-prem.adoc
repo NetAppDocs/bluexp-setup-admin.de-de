@@ -68,7 +68,7 @@ AWS-Services (amazonaws.com):
 * Security Token Service (STS)
 * Simple Storage Service (S3)
 
-| Managen von Ressourcen in AWS. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen. https://docs.aws.amazon.com/general/latest/gr/rande.html["Details finden Sie in der AWS-Dokumentation"^] 
+| Managen von Ressourcen in AWS. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen. https://["Details finden Sie in der AWS-Dokumentation"^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com | Für das Managen von Ressourcen in Azure Public Regionen. 
@@ -130,4 +130,4 @@ Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiier
 
 == Einschränkung der IP-Adresse
 
-Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Erfahren Sie mehr über diese Einschränkung"].
+Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://["Erfahren Sie mehr über diese Einschränkung"].

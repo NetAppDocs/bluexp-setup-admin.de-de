@@ -16,7 +16,7 @@ summary: Nachdem Sie sich jetzt angemeldet und BlueXP im Standardmodus eingerich
 [role="lead"]
 Nachdem Sie sich jetzt angemeldet und BlueXP im Standardmodus eingerichtet haben, können Benutzer Arbeitsumgebungen erstellen und erkennen und BlueXP Datenservices nutzen.
 
-Hilfe erhalten Sie im https://docs.netapp.com/us-en/cloud-manager-family/["Startseite für die BlueXP Dokumentation"^] Um die Dokumente zu allen BlueXP Services einzusehen.
+Hilfe erhalten Sie im https://["Startseite für die BlueXP Dokumentation"^] Um die Dokumente zu allen BlueXP Services einzusehen.
 
 .Verwandter Link
 link:concept-modes.html["BlueXP Implementierungsmodi"]

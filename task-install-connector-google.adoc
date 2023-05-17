@@ -153,7 +153,7 @@ Wenn der Befehl ausgeführt wird, wird der Connector mit dem Golden Image von Ne
 
 . Öffnen Sie einen Webbrowser von einem Host, der eine Verbindung zur Verbindungsinstanz hat, und geben Sie die folgende URL ein:
 +
-https://_ipaddress_[]
+https://[]
 
 . Richten Sie nach der Anmeldung den Konnektor ein:
 +
@@ -169,7 +169,7 @@ link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"].
 .Ergebnis
 Der Connector ist jetzt mit Ihrem BlueXP Konto installiert und eingerichtet.
 
-Öffnen Sie einen Webbrowser, und rufen Sie den auf https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+Öffnen Sie einen Webbrowser, und rufen Sie den auf https://["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
 
 --
 .Manuelle Installation
@@ -208,7 +208,7 @@ unset https_proxy
 +
 Wenn Sie diese Systemvariablen nicht entfernen, schlägt die Installation fehl.
 
-. Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"^], Und dann kopieren Sie es auf den Linux-Host.
+. Laden Sie die Connector-Software von der herunter https://["NetApp Support Website"^], Und dann kopieren Sie es auf den Linux-Host.
 +
 Sie sollten das Installationsprogramm für den „Online“-Connector herunterladen, das für den Einsatz in Ihrem Netzwerk oder in der Cloud gedacht ist. Für den Connector ist ein separater „Offline“-Installer verfügbar, der jedoch nur für Bereitstellungen im privaten Modus unterstützt wird.
 
@@ -257,7 +257,7 @@ Am Ende der Installation wird der Connector-Dienst (occm) zweimal neu gestartet,
 
 . Öffnen Sie einen Webbrowser von einem Host, der eine Verbindung mit der virtuellen Verbindungsmaschine hat, und geben Sie die folgende URL ein:
 +
-https://_ipaddress_[]
+https://[]
 
 . Richten Sie nach der Anmeldung den Konnektor ein:
 +

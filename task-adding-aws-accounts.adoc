@@ -32,7 +32,7 @@ Wenn Sie BlueXP neue AWS-Anmeldeinformationen hinzufügen, erhalten Sie mit Blue
 
 * Fügen Sie AWS Credentials zu BlueXP für FSX für ONTAP hinzu
 +
-Wenn Sie BlueXP neue AWS Zugangsdaten hinzufügen, erhalten Sie unter BlueXP die erforderlichen Berechtigungen zum Erstellen und Managen von FSX für ONTAP. https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Erfahren Sie, wie Sie Berechtigungen für FSX für ONTAP einrichten"^]
+Wenn Sie BlueXP neue AWS Zugangsdaten hinzufügen, erhalten Sie unter BlueXP die erforderlichen Berechtigungen zum Erstellen und Managen von FSX für ONTAP. https://["Erfahren Sie, wie Sie Berechtigungen für FSX für ONTAP einrichten"^]
 
 
 
@@ -106,12 +106,12 @@ Sie müssen diese Authentifizierungsmethode verwenden, wenn der Connector vor Or
 .Schritte
 . Erstellen Sie Richtlinien von der IAM-Konsole aus, indem Sie die Inhalte von kopieren und einfügen link:reference-permissions-aws.html["Die IAM-Richtlinien für den Connector"].
 +
-https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS Dokumentation: Erstellung von IAM-Richtlinien"^]
+https://["AWS Dokumentation: Erstellung von IAM-Richtlinien"^]
 
 . Hängen Sie die Richtlinien an eine IAM-Rolle oder einen IAM-Benutzer an.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS Documentation: Erstellung von IAM-Rollen"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
+** https://["AWS Documentation: Erstellung von IAM-Rollen"^]
+** https://["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
 
 
 
@@ -175,7 +175,7 @@ Gehen Sie wie folgt vor:
 ** Wählen Sie *ein weiteres AWS-Konto* und geben Sie die ID des BlueXP SaaS: 952013314444 ein
 ** Erstellen Sie eine Richtlinie, die die zum Erstellen eines Connectors erforderlichen Berechtigungen enthält.
 +
-*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Zeigen Sie die für FSX für ONTAP erforderlichen Berechtigungen an"^]
+*** https://["Zeigen Sie die für FSX für ONTAP erforderlichen Berechtigungen an"^]
 *** link:task-set-up-permissions-aws.html["Sehen Sie sich die Richtlinie zur Bereitstellung von Konnektor an"]
 
 
@@ -217,7 +217,7 @@ Sie können die Anmeldeinformationen jetzt beim Erstellen eines neuen Connectors
 
 == Zugangsdaten zu BlueXP für Amazon FSX for ONTAP hinzufügen
 
-Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["BlueXP Dokumentation für Amazon FSX for ONTAP"^]
+Weitere Informationen finden Sie im https://["BlueXP Dokumentation für Amazon FSX for ONTAP"^]
 
 
 

@@ -44,7 +44,7 @@ BlueXP muss sich mit AWS authentifizieren, bevor es die Connector-Instanz in der
 
 Bei beiden Optionen besteht der erste Schritt darin, eine IAM-Richtlinie zu erstellen. Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS von BlueXP erforderlich sind.
 
-Bei Bedarf können Sie die IAM-Richtlinie mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
+Bei Bedarf können Sie die IAM-Richtlinie mit Hilfe des IAM einschränken `Condition` Element: https://["AWS-Dokumentation: Condition Element"^]
 
 
 TIP: Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtigungen auf die Connector-Instanz an, sodass der Connector AWS Ressourcen managen kann.
@@ -54,6 +54,9 @@ TIP: Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtig
 . Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
 . Klicken Sie auf *JSON*.
 . Kopieren Sie die folgende Richtlinie:
++
+Zur Erinnerung: Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS aus BlueXP erforderlich sind. link:reference-permissions-aws.html["Berechtigungen anzeigen, die für die Connector-Instanz erforderlich sind"].
+
 +
 [source, json]
 ----
@@ -249,8 +252,8 @@ Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Z
 
 . Fügen Sie die Richtlinien einem IAM-Benutzer hinzu.
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS Documentation: Erstellung von IAM-Rollen"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
+** https://["AWS Documentation: Erstellung von IAM-Rollen"^]
+** https://["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
 
 
 . Stellen Sie sicher, dass der Benutzer über einen Zugriffsschlüssel verfügt, den Sie nach der Installation des Connectors zu BlueXP hinzufügen können.

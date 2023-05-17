@@ -61,7 +61,7 @@ link:task-set-up-permissions-on-prem.html["Befolgen Sie die Schritt-für-Schritt
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Installieren Sie die Connector-Software
 [role="quick-margin-para"]
-Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"] Und führen Sie das Installationsskript aus.
+Laden Sie die Connector-Software von der herunter https://["NetApp Support Website"] Und führen Sie das Installationsskript aus.
 
 [role="quick-margin-para"]
 link:task-install-connector-on-prem.html["Befolgen Sie die Schritt-für-Schritt-Anweisungen"].

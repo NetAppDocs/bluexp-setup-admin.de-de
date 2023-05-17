@@ -33,7 +33,7 @@ AWS-Services (amazonaws.com):
 * Security Token Service (STS)
 * Simple Storage Service (S3)
 
-| Für die Bereitstellung eines Connectors von BlueXP in AWS erforderlich. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen. https://docs.aws.amazon.com/general/latest/gr/rande.html["Weitere Informationen finden Sie in der AWS-Dokumentation."^] 
+| Für die Bereitstellung eines Connectors von BlueXP in AWS erforderlich. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen. https://["Weitere Informationen finden Sie in der AWS-Dokumentation."^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com | Für die Implementierung eines Connectors von BlueXP in den meisten Azure Regionen erforderlich. 
