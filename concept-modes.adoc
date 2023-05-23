@@ -41,7 +41,7 @@ Dieser Modus wird in der Regel von staatlichen und lokalen Behörden und regulie
 Privater Modus:: Ein BlueXP Connector wird lokal oder in der Cloud (in einer sicheren Region, einer souveränen Cloud-Region oder einer kommerziellen Region) installiert und verfügt über _no_ Konnektivität zur BlueXP SaaS-Schicht. Benutzer greifen lokal über die webbasierte Konsole auf BlueXP zu, die über den Connector verfügbar ist und nicht über die SaaS-Schicht.
 +
 --
-Eine sichere Region umfasst https://["AWS C2S UND SC2S"^] Und https://["Azure IL6"^]
+Eine sichere Region umfasst https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S UND SC2S"^] Und https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
 --
 
@@ -108,7 +108,7 @@ API-Endpunkt:: API-Aufrufe werden an den folgenden Endpunkt vorgenommen: \https:
 Authentifizierung:: Die Authentifizierung erfolgt über den Cloud-Service von BlueXP mit auth0 oder über die NetApp Support Site (NSS) Anmeldedaten. Identitätsföderation ist verfügbar.
 Unterstützte BlueXP Services:: Alle BlueXP Services sind für Anwender verfügbar.
 Unterstützte Lizenzierungsoptionen:: Marketplace-Abonnements und BYOL werden im Standard-Modus unterstützt. Die unterstützten Lizenzierungsoptionen hängen jedoch von dem ab, welchen BlueXP Service Sie verwenden. In der Dokumentation zu den einzelnen Services finden Sie weitere Informationen zu den verfügbaren Lizenzierungsoptionen.
-Erste Schritte mit dem Standardmodus:: Wechseln Sie zum https://["BlueXP webbasierte Konsole"^] Und melden Sie sich an.
+Erste Schritte mit dem Standardmodus:: Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP webbasierte Konsole"^] Und melden Sie sich an.
 +
 --
 link:task-quick-start-standard-mode.html["Erste Schritte mit dem Standardmodus"].
@@ -246,7 +246,7 @@ Unterstützte BlueXP Services in Cloud-Implementierungen:: BlueXP unterstützt b
 | Unterstützte Services | Hinweise 
 
 
-| Backup und Recovery | Unterstützt in kommerziellen Regionen AWS und Azure. Nicht in Google Cloud oder in unterstützt https://["AWS C2S/SC2S"^] Oder https://["Azure IL6"^] 
+| Backup und Recovery | Unterstützt in kommerziellen Regionen AWS und Azure. Nicht in Google Cloud oder in unterstützt https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] Oder https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | Da es keinen Internetzugang gibt, sind die folgenden Funktionen nicht verfügbar: Automatisierte Software-Upgrades, AutoSupport und AWS-Kosteninformationen. 
@@ -266,17 +266,17 @@ Unterstützte BlueXP Services in On-Premises-Implementierungen:: BlueXP unterst�
 | Unterstützte Services | Hinweise 
 
 
-| Backup und Recovery | Es wird nur Backup und Restore von lokalen ONTAP Volumes in StorageGRID Systemen unterstützt.https://["Erfahren Sie, wie Sie On-Premises-ONTAP-Daten in StorageGRID sichern"^] 
+| Backup und Recovery | Es wird nur Backup und Restore von lokalen ONTAP Volumes in StorageGRID Systemen unterstützt.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Erfahren Sie, wie Sie On-Premises-ONTAP-Daten in StorageGRID sichern"^] 
 
 
 | Klassifizierung  a| 
 * Die einzigen unterstützten Datenquellen sind die, die Sie lokal ermitteln können.
 +
-https://["Zeigen Sie die Quellen an, die Sie lokal ermitteln können"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["Zeigen Sie die Quellen an, die Sie lokal ermitteln können"^]
 
 * Funktionen, für die ein abgehender Internetzugang erforderlich ist, werden nicht unterstützt.
 +
-https://["Zeigen Sie die Funktionseinschränkungen an"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["Zeigen Sie die Funktionseinschränkungen an"^]
 
 
 
@@ -296,7 +296,7 @@ Unterstützte Lizenzierungsoptionen:: Nur BYOL wird im privaten Modus unterstüt
 --
 Bei Cloud Volumes ONTAP BYOL wird nur Node-basierte Lizenzierung unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Da keine ausgehende Internetverbindung verfügbar ist, müssen Sie Ihre Cloud Volumes ONTAP Lizenzdatei manuell in das Digital Wallet von BlueXP hochladen.
 
-https://["Erweitern Sie Ihr Digital Wallet von BlueXP um Lizenzen"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Erweitern Sie Ihr Digital Wallet von BlueXP um Lizenzen"^]
 
 --
 Erste Schritte mit dem privaten Modus:: Der private Modus ist durch Herunterladen des „offline“ Installers von der NetApp Support Site verfügbar.

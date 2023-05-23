@@ -18,11 +18,11 @@ NetApp bietet Unterstützung für BlueXP und seine Cloud-Services auf unterschie
 
 Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:
 
-* https://["Wissensdatenbank"^]
+* https://kb.netapp.com/Cloud/BlueXP["Wissensdatenbank"^]
 +
 Suchen Sie in der BlueXP Knowledge Base nach hilfreichen Artikeln zur Fehlerbehebung.
 
-* http://["Communitys"^]
+* http://community.netapp.com/["Communitys"^]
 +
 Treten Sie der BlueXP Community bei, um laufende Diskussionen zu verfolgen oder neue zu erstellen.
 
@@ -92,7 +92,7 @@ Es ist möglich, dass beim Versuch, einen Fall zu erstellen, möglicherweise die
 Dieser Fehler könnte bedeuten, dass das NSS-Konto und das Unternehmen des Datensatzes, mit dem es verbunden ist, nicht das gleiche Unternehmen des Eintrags für die BlueXP Account Seriennummer (dh 960xxxx) oder Seriennummer der Arbeitsumgebung. Sie können Ihre Liste der NSS-Konten oben im *Case erstellen*-Formular überprüfen, um die richtige Übereinstimmung zu finden, oder Sie können Hilfe mit einer der folgenden Optionen suchen:
 
 * Verwenden Sie den Chat im Produkt
-* Übermitteln eines nicht-technischen Cases unter https://[]
+* Übermitteln eines nicht-technischen Cases unter https://mysupport.netapp.com/site/help[]
 
 
 

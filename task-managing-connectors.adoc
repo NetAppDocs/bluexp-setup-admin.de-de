@@ -80,19 +80,19 @@ Wenn Sie eine Verbindung zur Linux-VM herstellen möchten, auf der der Connector
 AWS:: Als Sie die Connector-Instanz in AWS erstellt haben, haben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel angegeben. Sie können dieses Schlüsselpaar für SSH zur Instanz verwenden.
 +
 --
-https://["AWS Docs: Stellen Sie eine Verbindung zu Ihrer Linux-Instanz her"^]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs: Stellen Sie eine Verbindung zu Ihrer Linux-Instanz her"^]
 
 --
 Azure:: Bei der Erstellung der Connector-VM in Azure wählen Sie die Authentifizierung mit einem Passwort oder einem öffentlichen SSH-Schlüssel aus. Verwenden Sie die Authentifizierungsmethode, die Sie für die Verbindung zur VM ausgewählt haben.
 +
 --
-https://["Azure Docs: SSH in Ihre VM"^]
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs: SSH in Ihre VM"^]
 
 --
 Google Cloud:: Sie können keine Authentifizierungsmethode angeben, wenn Sie einen Connector in Google Cloud erstellen. Sie können eine Verbindung zur Linux VM-Instanz jedoch über die Google Cloud Console oder Google Cloud CLI (gcloudd) herstellen.
 +
 --
-https://["Google Cloud Docs: Verbindung zu Linux-VMs herstellen"^]
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs: Verbindung zu Linux-VMs herstellen"^]
 
 --
 
@@ -109,7 +109,7 @@ Der Connector muss während des Upgrade-Vorgangs neu gestartet werden, damit die
 NOTE: Auf Hosts mit Internetzugang aktualisiert der Connector seine Software automatisch auf die neueste Version, sofern er über einen ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten.
 
 .Schritte
-. Laden Sie die Connector-Software von der herunter https://["NetApp Support Website"^].
+. Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"^].
 . Kopieren Sie das Installationsprogramm auf den Linux-Host.
 . Weisen Sie Berechtigungen zum Ausführen des Skripts zu.
 +
@@ -192,7 +192,7 @@ Beachten Sie, dass 32 ein Beispielwert ist. Der Wert, den Sie verwenden sollten,
 
 
 
-https://["Erfahren Sie mehr über den Aufruf der /occm/config API"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["Erfahren Sie mehr über den Aufruf der /occm/config API"^]
 
 
 

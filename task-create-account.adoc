@@ -31,7 +31,7 @@ Wenn Sie den eingeschränkten Modus aktivieren möchten, müssen Sie Folgendes i
 
 NOTE: Die Einstellung für den eingeschränkten Modus kann nicht geändert werden, nachdem BlueXP das Konto erstellt hat. Der eingeschränkte Modus kann später nicht aktiviert werden, und Sie können ihn später nicht mehr deaktivieren. Sie muss zum Zeitpunkt der Kontoerstellung festgelegt werden.
 
-https://["Erfahren Sie, wie Sie diesen API-Aufruf verwenden"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["Erfahren Sie, wie Sie diesen API-Aufruf verwenden"^]
 
 .Weiterführende Links
 * link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]

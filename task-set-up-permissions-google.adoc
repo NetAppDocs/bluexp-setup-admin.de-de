@@ -115,13 +115,13 @@ Im folgenden Beispiel wird auf Projektebene eine Rolle namens „connectorDeploy
 Gcloud iam-Rollen erstellen connectorDeployment --project=myproject --file=Connector-Deployment.yaml
 
 +
-https://["Google Cloud docs: Erstellen und Verwalten benutzerdefinierter Rollen"^]
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud docs: Erstellen und Verwalten benutzerdefinierter Rollen"^]
 
 
 
 . Weisen Sie diese benutzerdefinierte Rolle dem Benutzer zu, der den Connector von BlueXP oder über gcloude implementieren wird.
 +
-https://["Google Cloud docs: Gewähren Sie eine einzige Rolle"^]
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud docs: Gewähren Sie eine einzige Rolle"^]
 
 
 
@@ -148,7 +148,7 @@ Im folgenden Beispiel wird auf Projektebene eine Rolle namens „Connector“ er
 Gcloud iam-Rollen erstellen Connector --project=myproject --file=Connector.yaml
 
 +
-https://["Google Cloud docs: Erstellen und Verwalten benutzerdefinierter Rollen"^]
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud docs: Erstellen und Verwalten benutzerdefinierter Rollen"^]
 
 
 
@@ -159,7 +159,7 @@ https://["Google Cloud docs: Erstellen und Verwalten benutzerdefinierter Rollen"
 .. Wählen Sie die gerade erstellte Rolle aus.
 .. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.
 +
-https://["Google Cloud docs: Erstellen eines Dienstkontos"^]
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud docs: Erstellen eines Dienstkontos"^]
 
 
 
@@ -187,7 +187,7 @@ Nehmen wir beispielsweise an, dass der Connector in Projekt 1 liegt und Sie Clou
 
 
 
-Weitere Informationen finden Sie unter https://["Google Cloud-Dokumentation"^]
+Weitere Informationen finden Sie unter https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud-Dokumentation"^]
 
 
 

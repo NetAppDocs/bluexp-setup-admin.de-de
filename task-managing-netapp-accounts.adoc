@@ -24,7 +24,7 @@ link:concept-netapp-accounts.html["Mehr zur Funktionsweise von BlueXP Accounts"]
 
 Wenn Sie Ihre Kontoeinstellungen durch Senden von API-Anfragen verwalten möchten, müssen Sie die API _Tenancy_ verwenden. Diese API unterscheidet sich von der BlueXP API, die Sie zum Erstellen und Verwalten von Cloud Volumes ONTAP-Arbeitsumgebungen verwenden.
 
-https://["Anzeige von Endpunkten für die Mandanten-API"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["Anzeige von Endpunkten für die Mandanten-API"^]
 
 
 
@@ -39,7 +39,7 @@ Der Benutzer in Ihrem Konto kann auf die Ressourcen in bestimmten Arbeitsbereich
 Ordnen Sie Benutzer Ihrem BlueXP Konto zu, damit diese Benutzer Arbeitsumgebungen in BlueXP erstellen und managen können.
 
 .Schritte
-. Wenn der Benutzer dies noch nicht getan hat, bitten Sie den Benutzer, zu wechseln https://["NetApp BlueXP Website"^] Und melden Sie sich an.
+. Wenn der Benutzer dies noch nicht getan hat, bitten Sie den Benutzer, zu wechseln https://bluexp.netapp.com/["NetApp BlueXP Website"^] Und melden Sie sich an.
 . Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus.
 +
 image:screenshot-account-settings-menu.png["Ein Screenshot, in dem die Option Kontoeinstellungen im oberen Banner von BlueXP angezeigt wird."]
@@ -148,9 +148,9 @@ Das Clientgeheimnis ist nur einmal sichtbar und wird von BlueXP nirgendwo gespei
 
 === Holen Sie sich ein Token für den Inhaber eines Dienstkontos ein
 
-Um API-Aufrufe an das zu tätigen https://["Mandanten-API"^], Sie müssen ein Inhaberzeichen für ein Service-Konto zu erhalten.
+Um API-Aufrufe an das zu tätigen https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["Mandanten-API"^], Sie müssen ein Inhaberzeichen für ein Service-Konto zu erhalten.
 
-https://["Erfahren Sie, wie Sie ein Service-Konto-Token erstellen"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["Erfahren Sie, wie Sie ein Service-Konto-Token erstellen"^]
 
 
 

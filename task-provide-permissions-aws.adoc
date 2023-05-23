@@ -35,7 +35,7 @@ Fügen Sie die zuvor erstellte IAM-Rolle der Connector EC2-Instanz hinzu.
 
 
 .Ergebnis
-BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt. Wechseln Sie zum https://["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt. Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
 
 --
 .AWS-Zugriffsschlüssel
@@ -59,7 +59,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 
 
 .Ergebnis
-BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt. Wechseln Sie zum https://["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
+BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt. Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
 
 --
 ====

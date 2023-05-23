@@ -29,7 +29,7 @@ Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensver
 .Schritte
 . Öffnen Sie einen Webbrowser, und geben Sie die folgende URL ein:
 +
-https://[]
+https://_ipaddress_[]
 
 +
 _Ipaddress_ kann localhost, eine private IP-Adresse oder eine öffentliche IP-Adresse sein, abhängig von der Konfiguration des Hosts, auf dem Sie den Connector installiert haben. Sie müssen beispielsweise eine private IP-Adresse von einem Host eingeben, der eine Verbindung zum Connector-Host hat.

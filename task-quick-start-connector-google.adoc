@@ -89,7 +89,7 @@ Erstellen Sie den Connector mithilfe einer der verfügbaren Installationsoptione
 [role="quick-margin-list"]
 * *Aus BlueXP*: Klicken Sie auf das Drop-Down-Menü Connector, wählen Sie *Connector hinzufügen* und folgen Sie den Anweisungen.
 * *Mit Glud*: Verwenden Sie die `gcloud compute instances create` Befehl.
-* *Manuelle Installation*: Laden Sie die Connector-Software vom herunter https://["NetApp Support Website"] Und führen Sie das Installationsskript aus.
+* *Manuelle Installation*: Laden Sie die Connector-Software vom herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"] Und führen Sie das Installationsskript aus.
 
 
 [role="quick-margin-para"]
