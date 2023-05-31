@@ -28,7 +28,7 @@ Wenn Sie den Connector erstellen, müssen Sie das vnet und das Subnetz angeben, 
 
 Der Connector sollte in derselben Azure-Region wie die Cloud Volumes ONTAP-Systeme, die er verwaltet, oder in der implementiert werden https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure Region Paar"^] Für die Cloud Volumes ONTAP Systeme. Diese Anforderung stellt sicher, dass eine Azure Private Link-Verbindung zwischen Cloud Volumes ONTAP und den zugehörigen Storage-Konten verwendet wird.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Erfahren Sie, wie Cloud Volumes ONTAP einen privaten Azure Link nutzt"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Erfahren Sie, wie Cloud Volumes ONTAP einen privaten Azure Link nutzt"^]
 
 
 
@@ -131,4 +131,4 @@ Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiier
 
 == Einschränkung der IP-Adresse
 
-Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Erfahren Sie mehr über diese Einschränkung"].
+Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Erfahren Sie mehr über diese Einschränkung"].

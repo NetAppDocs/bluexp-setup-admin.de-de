@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["Ein Screenshot, der das Teilfenster „Aktio
 
 . Wählen Sie *Sync Data* aus, um Daten mit oder aus Azure Blob Storage zu synchronisieren.
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Übersicht über die BlueXP Kopier- und Synchronisierungsfunktion"^]
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["Übersicht über die BlueXP Kopier- und Synchronisierungsfunktion"^]
 
 . Wählen Sie *Arbeitsumgebung eingeben*, um Details über die Azure-Speicherkonten in Ihren Azure-Blobs anzuzeigen.
 +

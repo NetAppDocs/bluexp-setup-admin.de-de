@@ -22,7 +22,7 @@ Implementieren Sie den Connector im privaten Modus, sodass Sie BlueXP ohne Outbo
 
 Laden Sie das Produkt-Installationsprogramm von der NetApp Support Site herunter und installieren Sie den Connector dann manuell auf Ihrem eigenen Linux Host.
 
-Wenn Sie BlueXP in der verwenden möchten https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services (C2S) Umgebung"^] Folgen Sie dann den einzelnen Anweisungen, um in dieser Umgebung zu beginnen. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Erste Schritte mit Cloud Volumes ONTAP in der AWS C2S Umgebung"^]
+Wenn Sie BlueXP in der verwenden möchten https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services (C2S) Umgebung"^] Folgen Sie dann den einzelnen Anweisungen, um in dieser Umgebung zu beginnen. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Erste Schritte mit Cloud Volumes ONTAP in der AWS C2S Umgebung"^]
 
 .Erforderliche Berechtigungen
 Zur Installation des Connectors sind Root-Berechtigungen erforderlich.

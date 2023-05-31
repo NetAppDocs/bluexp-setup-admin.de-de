@@ -32,7 +32,7 @@ Wenn Sie BlueXP neue AWS-Anmeldeinformationen hinzufügen, erhalten Sie mit Blue
 
 * Fügen Sie AWS Credentials zu BlueXP für FSX für ONTAP hinzu
 +
-Wenn Sie BlueXP neue AWS Zugangsdaten hinzufügen, erhalten Sie unter BlueXP die erforderlichen Berechtigungen zum Erstellen und Managen von FSX für ONTAP. https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Erfahren Sie, wie Sie Berechtigungen für FSX für ONTAP einrichten"^]
+Wenn Sie BlueXP neue AWS Zugangsdaten hinzufügen, erhalten Sie unter BlueXP die erforderlichen Berechtigungen zum Erstellen und Managen von FSX für ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Erfahren Sie, wie Sie Berechtigungen für FSX für ONTAP einrichten"^]
 
 
 
@@ -175,7 +175,7 @@ Gehen Sie wie folgt vor:
 ** Wählen Sie *ein weiteres AWS-Konto* und geben Sie die ID des BlueXP SaaS: 952013314444 ein
 ** Erstellen Sie eine Richtlinie, die die zum Erstellen eines Connectors erforderlichen Berechtigungen enthält.
 +
-*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Zeigen Sie die für FSX für ONTAP erforderlichen Berechtigungen an"^]
+*** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Zeigen Sie die für FSX für ONTAP erforderlichen Berechtigungen an"^]
 *** link:task-set-up-permissions-aws.html["Sehen Sie sich die Richtlinie zur Bereitstellung von Konnektor an"]
 
 
@@ -217,7 +217,7 @@ Sie können die Anmeldeinformationen jetzt beim Erstellen eines neuen Connectors
 
 == Zugangsdaten zu BlueXP für Amazon FSX for ONTAP hinzufügen
 
-Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["BlueXP Dokumentation für Amazon FSX for ONTAP"^]
+Weitere Informationen finden Sie im https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["BlueXP Dokumentation für Amazon FSX for ONTAP"^]
 
 
 

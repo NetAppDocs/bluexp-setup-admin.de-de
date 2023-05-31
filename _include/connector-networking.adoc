@@ -86,10 +86,10 @@ Wenn Ihr Unternehmen einen Proxy-Server für den gesamten ausgehenden Internet-D
 
 === Sicherheitsgruppe
 
-Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiieren ihn oder wenn der Connector als Proxy für AutoSupport-Nachrichten verwendet wird. HTTP und HTTPS bieten den Zugriff auf https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["Lokale Benutzeroberfläche"], Die Sie in seltenen Fällen verwenden. SSH ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen.
+Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiieren ihn oder wenn der Connector als Proxy für AutoSupport-Nachrichten verwendet wird. HTTP und HTTPS bieten den Zugriff auf https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#the-local-user-interface["Lokale Benutzeroberfläche"], Die Sie in seltenen Fällen verwenden. SSH ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen.
 
 
 
 === Einschränkung der IP-Adresse
 
-Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Erfahren Sie mehr über diese Einschränkung"].
+Es besteht ein möglicher Konflikt mit IP-Adressen im Bereich 172. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Erfahren Sie mehr über diese Einschränkung"].
