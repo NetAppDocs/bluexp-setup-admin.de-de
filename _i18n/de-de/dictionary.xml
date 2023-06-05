@@ -568,10 +568,7 @@
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">Erfahren Sie mehr über Steckverbinder</block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">Wenn ein Stecker erforderlich ist</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Managementfunktionen von Amazon FSX für ONTAP</block>
-  <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Ermittlung von Amazon S3</block>
-  <block id="bde43e83db72512f1aea47540264c8f0" category="list-text">Azure Blob-Erkennung</block>
   <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">E-Series Systeme</block>
-  <block id="6060e8f925263dfdc63a751c294072e0" category="list-text">Erkennung von Google Cloud Storage</block>
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Kubernetes-Cluster</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">On-Premises ONTAP Cluster</block>
   <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
@@ -3671,4 +3668,9 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
   <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">Kms:GenerateDataKeyWithoutPlaintext</block>
   <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">6 Juni 2023</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Für Cloud Volumes ONTAP ist nun die folgende Berechtigung erforderlich:</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Amazon S3 Storage</block>
+  <block id="2b3e8f910d66604cd77f93b333670468" category="list-text">Azure Blob Storage</block>
+  <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage Buckets</block>
+  <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Migrationsberichte</block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume-Caching</block>
 </blocks>

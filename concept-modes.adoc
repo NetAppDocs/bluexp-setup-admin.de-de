@@ -379,6 +379,9 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | Edge-Caching | Nein | Nein 
 
 
+| Migrationsberichte | Nein | Nein 
+
+
 | Operative Ausfallsicherheit | Nein | Nein 
 
 
@@ -391,17 +394,20 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | Replizierung | Ja. | Ja. 
 
 
-| Tiering | Nein | Nein 
+| Tiering | Nein | Nein | Volume-Caching 
 
 
-.4+| *Eigenschaften* | Anmeldedaten | Ja. | Ja. 
+| Nein | Nein .4+| *Eigenschaften* | Anmeldedaten 
 
 
-| NSS-Konten | Ja. | Nein 
+| Ja. | Ja. | NSS-Konten 
 
 
-| Benachrichtigungen | Ja. | Nein 
+| Ja. | Nein | Benachrichtigungen 
 
 
-| Suche | Ja. | Nein 
+| Ja. | Nein | Suche 
+
+
+| Ja. | Nein | Zeitachse | Ja. 
 |===
