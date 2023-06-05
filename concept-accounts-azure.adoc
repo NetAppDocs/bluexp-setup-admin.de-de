@@ -36,7 +36,7 @@ Alle Cloud Volumes ONTAP Systeme können über die ersten Azure Zugangsdaten imp
 
 == Zusätzliche Azure-Abonnements für eine gemanagte Identität
 
-Die der Konnektor-VM zugewiesene, vom System zugewiesene verwaltete Identität ist mit dem Abonnement verknüpft, in dem Sie den Connector gestartet haben. Wenn Sie ein anderes Azure Abonnement auswählen möchten, müssen Sie es ausführen link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["Verknüpfen Sie die verwaltete Identität mit diesen Abonnements"].
+Die der Konnektor-VM zugewiesene, vom System zugewiesene verwaltete Identität ist mit dem Abonnement verknüpft, in dem Sie den Connector gestartet haben. Wenn Sie ein anderes Azure Abonnement auswählen möchten, müssen Sie es ausführen link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["Verknüpfen Sie die verwaltete Identität mit diesen Abonnements"].
 
 
 
@@ -46,7 +46,7 @@ Wenn Sie unterschiedliche Azure-Anmeldedaten für BlueXP verwenden möchten, mü
 
 image:diagram_permissions_multiple_azure.png["Ein konzeptionelles Image, das den ersten Azure Account zeigt und über eine benutzerdefinierte Rolle und gemanagte Identität Berechtigungen erhält, und zwei zusätzliche Konten, die über eine benutzerdefinierte Rolle und einen Serviceprincipal Berechtigungen erhalten."]
 
-Das würden Sie dann tun link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["Fügen Sie die Kontoanmeldeinformationen zu BlueXP hinzu"] Durch Angabe von Details zum AD-Dienstprinzipal.
+Das würden Sie dann tun link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Fügen Sie die Kontoanmeldeinformationen zu BlueXP hinzu"] Durch Angabe von Details zum AD-Dienstprinzipal.
 
 Sie können beispielsweise beim Erstellen einer neuen Cloud Volumes ONTAP-Arbeitsumgebung zwischen den Anmeldedaten wechseln:
 

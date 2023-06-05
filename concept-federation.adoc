@@ -116,6 +116,9 @@ Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrat
 Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden auf der Seite Verbindungseinrichtung die Parameter aufgeführt, die Sie an Ihren AD-Administrator senden können, um die Konfiguration im nächsten Schritt abzuschließen.
 
 
+NOTE: Beachten Sie das Ablaufdatum des Zertifikats. Sie müssen zur Seite „Föderationseinrichtung“ zurückkehren und das Zertifikat _vor_ aktualisieren. Das liegt in Ihrer Verantwortung. Das Ablaufdatum wird von BlueXP nicht aufgezeichnet. Am besten arbeiten Sie mit Ihrem AD-Team zusammen, um rechtzeitig benachrichtigt zu werden.
+
+
 
 | 3 | AD Admin | Führen Sie die Konfiguration auf dem Identitätsanbieter mit den Parametern aus, die nach Abschluss von Schritt 2 auf der Seite „Einrichtung der Föderation“ angezeigt werden. 
 
@@ -156,6 +159,9 @@ Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrat
 Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden auf der Seite Verbindungseinrichtung die Parameter aufgeführt, die Sie an Ihren AD-Administrator senden können, um die Konfiguration im nächsten Schritt abzuschließen.
 
 
+NOTE: Beachten Sie das Ablaufdatum des geheimen Schlüssels. Sie müssen zur Seite „Föderationseinrichtung“ zurückkehren und das Zertifikat _vor_ aktualisieren. Das liegt in Ihrer Verantwortung. Das Ablaufdatum wird von BlueXP nicht aufgezeichnet. Am besten arbeiten Sie mit Ihrem AD-Team zusammen, um rechtzeitig benachrichtigt zu werden.
+
+
 
 | 3 | AD Admin | Schließen Sie die Konfiguration in Azure AD mit den Parametern ab, die auf der Seite Föderationseinrichtung angezeigt werden, nachdem Sie Schritt 2 abgeschlossen haben. 
 
@@ -186,6 +192,9 @@ Wechseln Sie zum https://services.cloud.netapp.com/federation-setup["NetApp Fede
 Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrator erhalten: Die URL für den ADFS-Server oder die Verbundmetadaten-Datei.
 
 Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden auf der Seite Verbindungseinrichtung die Parameter aufgeführt, die Sie an Ihren AD-Administrator senden können, um die Konfiguration im nächsten Schritt abzuschließen.
+
+
+NOTE: Beachten Sie das Ablaufdatum des Zertifikats. Sie müssen zur Seite „Föderationseinrichtung“ zurückkehren und das Zertifikat _vor_ aktualisieren. Das liegt in Ihrer Verantwortung. Das Ablaufdatum wird von BlueXP nicht aufgezeichnet. Am besten arbeiten Sie mit Ihrem AD-Team zusammen, um rechtzeitig benachrichtigt zu werden.
 
 
 
@@ -225,6 +234,9 @@ Um diesen Schritt abzuschließen, müssen Sie Folgendes von Ihrem AD-Administrat
 
 
 Nachdem Sie die Verbindung mithilfe dieser Informationen erstellt haben, werden auf der Seite Verbindungseinrichtung die Parameter aufgeführt, die Sie an Ihren AD-Administrator senden können, um die Konfiguration im nächsten Schritt abzuschließen.
+
+
+NOTE: Beachten Sie das Ablaufdatum des Zertifikats. Sie müssen zur Seite „Föderationseinrichtung“ zurückkehren und das Zertifikat _vor_ aktualisieren. Das liegt in Ihrer Verantwortung. Das Ablaufdatum wird von BlueXP nicht aufgezeichnet. Am besten arbeiten Sie mit Ihrem AD-Team zusammen, um rechtzeitig benachrichtigt zu werden.
 
 
 

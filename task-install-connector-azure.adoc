@@ -119,7 +119,7 @@ Beachten Sie beim Konfigurieren der VM Folgendes:
 ** Der Connector kann mit Festplatten der Festplatte oder der SSD optimal arbeiten.
 ** Wählen Sie eine VM-Größe aus, die den CPU- und RAM-Anforderungen entspricht. Wir empfehlen DS3 v2.
 +
-link:reference-host-requirements-azure["VM-Anforderungen prüfen"].
+link:reference-host-requirements-azure.html["VM-Anforderungen prüfen"].
 
 ** Für die Netzwerksicherheitsgruppe benötigt der Connector eingehende Verbindungen unter Verwendung von SSH, HTTP und HTTPS. Für spezifische Konfigurationen sind noch einige Regeln erforderlich.
 +

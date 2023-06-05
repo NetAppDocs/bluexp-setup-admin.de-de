@@ -24,6 +24,12 @@ Diese Einschränkungen gelten insbesondere für die Einrichtung und Administrati
 
 
 
+=== Proxy-Konfiguration mit Domänenbenutzern
+
+BlueXP unterstützt keine Domänenbenutzer, wenn ein Proxyserver für den Connector konfiguriert wird. Wenn Sie einen Benutzernamen für den Proxyserver eingeben, muss es sich um einen lokalen Benutzer handeln.
+
+
+
 === Die standardmäßigen EC2-Instanzeinstellungen sollten nicht geändert werden
 
 Wenn Sie den Connector in AWS implementieren, sind die folgenden EC2-Instanzeinstellungen standardmäßig konfiguriert:

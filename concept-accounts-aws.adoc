@@ -58,7 +58,7 @@ Nachdem Sie einen weiteren Satz von Anmeldeinformationen hinzugefügt haben, kö
 
 image:screenshot_accounts_switch_aws.png["Ein Screenshot, in dem die Auswahl zwischen Cloud-Provider-Konten angezeigt wird, nachdem Sie auf der Seite Details  Credentials auf Switch Account geklickt haben."]
 
-link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Informieren Sie sich, wie Sie einem vorhandenen Connector AWS-Anmeldedaten hinzufügen."]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Informieren Sie sich, wie Sie einem vorhandenen Connector AWS-Anmeldedaten hinzufügen."]
 
 
 
@@ -67,7 +67,7 @@ link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Informieren S
 Beim Hinzufügen neuer AWS Zugangsdaten zu BlueXP stehen die erforderlichen Berechtigungen zum Erstellen und Managen einer FSX für ONTAP Arbeitsumgebung oder zum Erstellen eines Connectors zur Verfügung.
 
 * link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["Informieren Sie sich, wie Sie BlueXP für Amazon FSX for ONTAP mit AWS Zugangsdaten ergänzen"^]
-* link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Erfahren Sie, wie Sie zur Erstellung eines Connectors AWS Zugangsdaten zu BlueXP hinzufügen"]
+* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Erfahren Sie, wie Sie zur Erstellung eines Connectors AWS Zugangsdaten zu BlueXP hinzufügen"]
 
 
 
