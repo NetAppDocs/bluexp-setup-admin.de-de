@@ -403,5 +403,5 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | Benachrichtigungen | Ja. | Nein 
 
 
-| Zeitachse | Ja. | Ja. 
+| Suche | Ja. | Nein 
 |===

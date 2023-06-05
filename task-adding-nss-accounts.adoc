@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 'Bereitstellen von Zugangsdaten für Ihre NetApp Support Site (NSS) Accounts zur Registrierung für Support, zum Aktivieren wichtiger Workflows für Cloud Volumes ONTAP usw. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet.' 
+summary: Ordnen Sie Ihrem BlueXP Konto ein NetApp Support Site Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu ermöglichen. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet. 
 ---
 = NSS-Anmeldedaten managen, die mit einem BlueXP Konto verknüpft sind
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Bereitstellen von Zugangsdaten für Ihre NetApp Support Site (NSS) Acc
 
 
 [role="lead"]
-Stellen Sie BlueXP unter anderen über die Zugangsdaten für Ihre NetApp Support Site (NSS) Accounts zur Support-Registrierung bereit, ermöglichen Sie wichtige Workflows für Cloud Volumes ONTAP und vieles mehr. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet.
+Ordnen Sie Ihrem BlueXP Konto ein NetApp Support Site Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu ermöglichen. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet.
 
 
 NOTE: BlueXP unterstützt zudem die Zuordnung eines NSS-Kontos pro BlueXP Benutzer. link:task-manage-user-credentials.html["Erfahren Sie, wie Sie Anmeldedaten auf Benutzerebene verwalten"].
@@ -25,8 +25,6 @@ NOTE: BlueXP unterstützt zudem die Zuordnung eines NSS-Kontos pro BlueXP Benutz
 
 Um die folgenden Aufgaben in BlueXP zu ermöglichen, ist es erforderlich, die NetApp Support Site Anmeldedaten mit Ihrer spezifischen BlueXP Account-ID zu verknüpfen:
 
-* Registrierung für Support
-* Erstellen von Support-Fällen
 * Implementierung von Cloud Volumes ONTAP unter Verwendung von BYOL (Bring-Your-Own-License)
 +
 Die Bereitstellung Ihres NSS-Kontos ist erforderlich, damit BlueXP Ihren Lizenzschlüssel hochladen und das Abonnement für den von Ihnen erworbenen Zeitraum aktivieren kann. Dies schließt automatische Updates für Vertragsverlängerungen ein.
@@ -89,7 +87,7 @@ Wenn Sie diese Option verwenden, werden Sie aufgefordert, sich erneut anzumelden
 
 
 .Was kommt als Nächstes?
-Sie können das Konto jetzt beim Erstellen neuer Cloud Volumes ONTAP Systeme auswählen, wenn Sie bestehende Cloud Volumes ONTAP Systeme registrieren und sich für Support registrieren.
+Benutzer können jetzt das Konto beim Erstellen neuer Cloud Volumes ONTAP-Systeme und bei der Registrierung vorhandener Cloud Volumes ONTAP-Systeme auswählen.
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["Starten von Cloud Volumes ONTAP in AWS"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["Starten von Cloud Volumes ONTAP in Azure"^]
