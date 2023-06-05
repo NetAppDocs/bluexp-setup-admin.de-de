@@ -238,6 +238,9 @@ Hier sehen Sie ein Beispiel für den Befehl mit beiden optionalen Parametern:
 ** \http://username:password@address:port
 ** \https://address:port
 ** \https://username:password@address:port
++
+Der Benutzer muss ein lokaler Benutzer sein. Domänenbenutzer werden nicht unterstützt.
+
 
 
 +

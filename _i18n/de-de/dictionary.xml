@@ -3667,4 +3667,8 @@
 Sie müssen die Richtlinie selbst einrichten, wenn Sie einen Connector vom Marktplatz starten, den Connector manuell installieren oder wenn Sie dies tun <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>.
 
 Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden.</block>
+  <block id="b9a11b90960ff803269429887ab4cff3" category="paragraph">Der Benutzer muss ein lokaler Benutzer sein. Domänenbenutzer werden nicht unterstützt.</block>
+  <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">Kms:GenerateDataKeyWithoutPlaintext</block>
+  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">6 Juni 2023</block>
+  <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Für Cloud Volumes ONTAP ist nun die folgende Berechtigung erforderlich:</block>
 </blocks>

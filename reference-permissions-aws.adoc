@@ -167,7 +167,8 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1133,7 +1134,7 @@ Der Connector stellt die folgenden API-Anforderungen für die Implementierung un
 | s3:ListBucket | Nein | Ja. | Nein 
 
 
-.4+| Datenverschlüsselung von Cloud Volumes ONTAP mithilfe des AWS KMS (Key Management Service) | Km:Liste* | Ja. | Ja. | Nein 
+.5+| Datenverschlüsselung von Cloud Volumes ONTAP mithilfe des AWS KMS (Key Management Service) | Km:Liste* | Ja. | Ja. | Nein 
 
 
 | Km:ReVerschlüsseln* | Ja. | Nein | Nein 
@@ -1143,6 +1144,9 @@ Der Connector stellt die folgenden API-Anforderungen für die Implementierung un
 
 
 | Km:CreateGrant | Ja. | Ja. | Nein 
+
+
+| Kms:GenerateDataKeyWithoutPlaintext | Ja. | Ja. | Nein 
 
 
 .4+| AWS Kostendaten für Cloud Volumes ONTAP beziehen | ce:GetReservoir Utilisation | Nein | Ja. | Nein 
@@ -1218,6 +1222,14 @@ Der Connector stellt die folgenden API-Anfragen für das Management von Tags auf
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== 6 Juni 2023
+
+Für Cloud Volumes ONTAP ist nun die folgende Berechtigung erforderlich:
+
+Kms:GenerateDataKeyWithoutPlaintext
 
 
 

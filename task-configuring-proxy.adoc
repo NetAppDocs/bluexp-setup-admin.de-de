@@ -41,6 +41,9 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 .. Wählen Sie *Proxy Aktivieren*.
 .. Geben Sie den Server mithilfe der Syntax an http://_address:port_[] Oder https://_address:port_[]
 .. Geben Sie einen Benutzernamen und ein Kennwort an, wenn eine grundlegende Authentifizierung für den Server erforderlich ist
++
+Der Benutzer muss ein lokaler Benutzer sein. Domänenbenutzer werden nicht unterstützt.
+
 .. Wählen Sie *Speichern*.
 +
 
