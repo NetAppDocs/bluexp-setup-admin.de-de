@@ -707,13 +707,8 @@
   <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">Wählen Sie im Navigationsmenü die Option *Storage &gt; Canvas* aus.</block>
   <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Ein Screenshot einer Amazon S3 Arbeitsumgebung</block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Nach der Installation eines Connectors in Azure erkennt BlueXP automatisch Informationen zu den Azure Storage-Konten, die sich in den Azure-Abonnements befinden, in denen der Connector installiert ist. Eine Azure Blob Arbeitsumgebung wird dem Canvas hinzugefügt, damit Sie diese Informationen anzeigen können.</block>
-  <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">Kurz danach wird eine Azure Blob Arbeitsumgebung bereitgestellt.</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Ein Screenshot einer Azure Blob Arbeitsumgebung</block>
   <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ddf1211c4efc09073771de2cfb4c8add" category="inline-image-macro">Ein Screenshot, der das Teilfenster „Aktionen“ zeigt, nachdem Sie eine Azure Blob Arbeitsumgebung ausgewählt haben Im Bereich werden die Gesamtzahl der Speicherkonten und eine Aktion für die Verwendung des Sync-Service angezeigt.</block>
-  <block id="ff6037c85b586250d2e3426572b132dc" category="paragraph"><block ref="ff6037c85b586250d2e3426572b132dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="60c144c7df7b8788c579926f83c506f9" category="inline-image-macro">Ein Screenshot, der die Details einer Azure Blob Arbeitsumgebung zeigt, wie viele Storage-Konten insgesamt, Standorte, Ressourcengruppen, die gesamte und genutzte Kapazität usw.</block>
-  <block id="b8fb2daac759c86243cf205eec39b222" category="paragraph"><block ref="b8fb2daac759c86243cf205eec39b222" category="inline-image-macro-rx" type="image"></block></block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">Schnellstart</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2-API</block>
   <block id="1439ef482dee1b1e4b2daac93de36c44" category="list-text">Cloud-ProtokollierungsAPI</block>
@@ -1698,7 +1693,6 @@
   <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">Konfigurieren Sie Proxy-Einstellungen</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">Standardkonfiguration</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Cloud Storage erkannt</block>
-  <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Zeigen Sie Ihre Azure Blob Konten an</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Zeigen Sie Ihre Google Cloud Storage Buckets an</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Anmeldeinformationen und Abonnements verwalten</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Referenz</block>
@@ -2345,10 +2339,7 @@
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">Der Connector ist jetzt installiert und mit Ihrem BlueXP Konto eingerichtet.</block>
   <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">Stellen Sie BlueXP mit den Berechtigungen bereit, die Sie zuvor eingerichtet haben</block>
   <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>.</block>
-  <block id="dee8aad8e11608028ff3bcbb674cdcde" category="list-text">Installieren Sie einen Connector im Azure-Konto, in dem Sie Ihre Azure-Storage-Konten anzeigen möchten.</block>
   <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">Wählen Sie die Arbeitsumgebung aus, und wählen Sie im rechten Fensterbereich eine Aktion aus.</block>
-  <block id="1b4dd0d5e9a98e510340de3c3938e7c5" category="list-text">Wählen Sie *Sync Data* aus, um Daten mit oder aus Azure Blob Storage zu synchronisieren.</block>
-  <block id="9e6c19e48717319b0b71ece6d5735a24" category="list-text">Wählen Sie *Arbeitsumgebung eingeben*, um Details über die Azure-Speicherkonten in Ihren Azure-Blobs anzuzeigen.</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">On-Premises-Netzwerke einrichten</block>
   <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">Wenn Sie beispielsweise Cloud Volumes ONTAP in der Cloud starten möchten, müssen Sie eine VPN-Verbindung von Ihrem Unternehmensnetzwerk zum virtuellen Netzwerk einrichten, in dem Sie Cloud Volumes ONTAP starten möchten.</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren, benötigt das Installationsprogramm für den Connector während des Installationsprozesses Zugriff auf die folgenden URLs:</block>
@@ -3671,4 +3662,10 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
   <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">Beachten Sie Folgendes zu dem NSS-Konto bei Ihrer BlueXP Anmeldung:</block>
   <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">Wenn Sie ein NetApp Support Site Konto mit einer Cloud Volumes ONTAP Arbeitsumgebung verknüpfen möchten, können Sie nur aus den NSS-Konten wählen, die dem BlueXP Konto hinzugefügt wurden, dem Sie angehören.</block>
   <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">Die Zugangsdaten für NSS Konten unterscheiden sich von dem NSS-Konto, das mit Ihrer BlueXP Anmeldung verknüpft ist. Mit den Zugangsdaten für NSS Konten können Sie Cloud Volumes ONTAP implementieren, wenn Sie Ihre eigene Lizenz (BYOL) verwenden, PAYGO-Systeme registrieren und die Cloud Volumes ONTAP Software aktualisieren.</block>
+  <block id="70c85793f0a33ef534a67f193287a992" category="doc">Azure Blob-Konten managen</block>
+  <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">Informieren Sie sich hier, wie Sie Ihre Azure Storage-Konten mit BlueXP anzeigen, erstellen und managen können</block>
+  <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">Mit einer neu hinzugefügten Funktion können Sie jetzt Azure-Speicherkonten erstellen und bearbeiten.<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>.</block>
+  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">Mit Connector können Sie jetzt Azure Storage-Konten von BlueXP hinzufügen und managen.</block>
+  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Erfahren Sie, wie Sie neue Azure-Storage-Konten in Ihren Azure-Abonnements von BlueXP hinzufügen</block>
+  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
 </blocks>

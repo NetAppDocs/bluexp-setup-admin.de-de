@@ -38,6 +38,10 @@ Im Rahmen dieser Änderung erfolgt die Support-Registrierung für ein BlueXP Kon
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Ein Screenshot der BlueXP Suche, die oben in der Konsole verfügbar ist"]
 
+* Mit Connector können Sie jetzt Azure Storage-Konten von BlueXP hinzufügen und managen.
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Erfahren Sie, wie Sie neue Azure-Storage-Konten in Ihren Azure-Abonnements von BlueXP hinzufügen"^].
+
 * Der Connector wird nun in den folgenden AWS Regionen unterstützt:
 +
 ** Hyderabad (AP-Süd-2)
