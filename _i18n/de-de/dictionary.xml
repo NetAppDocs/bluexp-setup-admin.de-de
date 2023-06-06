@@ -1244,8 +1244,6 @@
   <block id="7c521ef00b3568ffec78f7d18b3f23a1" category="section-title">Den Stecker einbauen</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">Zur Installation des Connectors sind Root-Berechtigungen erforderlich.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">Über diese Aufgabe</block>
-  <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">Die Installation installiert die AWS Befehlszeilen-Tools (awscli), um Recovery-Verfahren durch den NetApp Support zu ermöglichen.</block>
-  <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">Wenn Sie eine Meldung erhalten, dass die Installation des awscli fehlgeschlagen ist, können Sie die Meldung ignorieren. Der Steckverbinder kann ohne Werkzeuge erfolgreich betrieben werden.</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="list-text">Das Installationsprogramm, das auf der NetApp Support-Website verfügbar ist, kann möglicherweise eine frühere Version sein. Nach der Installation aktualisiert sich der Connector automatisch, wenn eine neue Version verfügbar ist.</block>
   <block id="7e64bcd49d202a618920fe22d66f21ac" category="list-text">Laden Sie die Connector-Software von der herunter<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>, Und dann kopieren Sie es auf den Linux-Host.</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">Führen Sie das Installationsskript aus.</block>
@@ -1942,8 +1940,6 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">Registrieren von Pay-as-you-go Cloud Volumes ONTAP Systemen</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Aktualisieren der Cloud Volumes ONTAP Software auf die neueste Version</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">Diese Zugangsdaten sind mit Ihrer spezifischen BlueXP Konto-ID verknüpft. Benutzer, die zum BlueXP Konto gehören, können über *Support &gt; NSS Management* auf diese Anmeldedaten zugreifen.</block>
-  <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">Das Konto kann nicht mit anderen BlueXP Funktionen genutzt werden – nicht bei der Erstellung, Lizenzierung oder der Support-Case-Erstellung durch Cloud Volumes ONTAP.</block>
-  <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">Digital Advisor und Case Management kann nur ein NSS-Konto pro Benutzer zugeordnet sein.</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">Mit dem Support Dashboard können Sie Ihre NetApp Support Site Konten zur Verwendung mit BlueXP auf BlueXP Kontoebene hinzufügen und managen.</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">Das NSS-Konto muss ein Konto auf Kundenebene sein (kein Gast- oder Temporärkonto). Sie können mehrere NSS-Konten auf Kundenebene haben.</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Es kann nur ein NSS-Konto vorhanden sein, wenn es sich bei diesem Konto um ein Partner-Level-Konto handelt. Wenn Sie versuchen, NSS-Konten auf Kundenebene hinzuzufügen und ein Konto auf Partnerebene vorhanden ist, erhalten Sie die folgende Fehlermeldung:</block>
@@ -3598,7 +3594,6 @@
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">Durch diese Aktion wird das BlueXP Konto für den Support registriert und die Support-Berechtigung aktiviert. Nur ein Benutzer in Ihrem BlueXP Konto muss ein NetApp Support Site Konto mit seinen BlueXP Anmeldedaten verknüpfen, um sich für den Support zu registrieren und die Support-Berechtigung zu aktivieren. Nachdem dies abgeschlossen ist, zeigt die Seite *Ressourcen* an, dass Ihr Konto für Support registriert ist.</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
   <block id="1f41c927d23b7f472c07e8cefaaa4155" category="list-text">Wenn Sie auf *Support &gt; Case Management* zugreifen, werden Sie aufgefordert, Ihre NSS-Anmeldedaten einzugeben, sofern Sie dies noch nicht getan haben. Auf dieser Seite können Sie die Support-Fälle erstellen und verwalten, die mit Ihrem NSS-Konto und Ihrem Unternehmen verknüpft sind.</block>
-  <block id="455362b49d80ddf5f9cd87d0f39e81ab" category="paragraph">Die Zugangsdaten für die NetApp Support Site sind auch mit dem BlueXP Konto verknüpft, dem Sie angehören. Mit den Zugangsdaten für NSS Konten können Sie Cloud Volumes ONTAP unter Verwendung von BYOL (Bring Your Own License) implementieren.</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Managen Sie Zugangsdaten für Ihre BlueXP Anmeldung</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Um die Funktion *Fall erstellen* nutzen zu können, müssen Sie zunächst Ihre Anmeldedaten für die NetApp Support-Website mit Ihren BlueXP Anmeldedaten verknüpfen.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Wenn Sie einen Fall für ein ONTAP System mit einer Seriennummer eröffnen, muss Ihr NSS-Konto mit der Seriennummer des Systems verknüpft sein.</block>
@@ -3673,4 +3668,7 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage Buckets</block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Migrationsberichte</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume-Caching</block>
+  <block id="816a41c8cb7108ca970b7fdff9e2b798" category="list-text">Das Konto kann nicht mit Cloud Volumes ONTAP-Lizenzen verwendet werden.</block>
+  <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">Digital Advisor und Support-Case-Management können nur ein NSS-Konto pro Benutzer zugeordnet werden.</block>
+  <block id="2c0e4e5466a7db131a747ad4e195dc2c" category="paragraph">Sie können auch die Anmeldedaten der NetApp Support-Website mit dem BlueXP Konto verknüpfen, dem Sie Mitglied sind. Mit den Zugangsdaten für NSS Konten können Sie Cloud Volumes ONTAP implementieren, wenn Sie Ihre eigene Lizenz (BYOL) verwenden, PAYGO-Systeme registrieren und die Cloud Volumes ONTAP Software aktualisieren.</block>
 </blocks>
