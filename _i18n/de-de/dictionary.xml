@@ -3668,7 +3668,7 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Google Cloud Storage Buckets</block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Migrationsberichte</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Volume-Caching</block>
-  <block id="816a41c8cb7108ca970b7fdff9e2b798" category="list-text">Das Konto kann nicht mit Cloud Volumes ONTAP-Lizenzen verwendet werden.</block>
   <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">Digital Advisor und Support-Case-Management können nur ein NSS-Konto pro Benutzer zugeordnet werden.</block>
-  <block id="2c0e4e5466a7db131a747ad4e195dc2c" category="paragraph">Sie können auch die Anmeldedaten der NetApp Support-Website mit dem BlueXP Konto verknüpfen, dem Sie Mitglied sind. Mit den Zugangsdaten für NSS Konten können Sie Cloud Volumes ONTAP implementieren, wenn Sie Ihre eigene Lizenz (BYOL) verwenden, PAYGO-Systeme registrieren und die Cloud Volumes ONTAP Software aktualisieren.</block>
+  <block id="a90e2fd00c8dae4d2fb187ce1b69fa09" category="list-text">Das Konto kann nicht mit der Cloud Volumes ONTAP-Lizenzierung verwendet werden.</block>
+  <block id="49dd7d8a4c2b90d52580a51718450534" category="paragraph">Wenn Sie mit Cloud Volumes ONTAP arbeiten, können Sie die Zugangsdaten für die NetApp Support Website mit dem BlueXP Konto verknüpfen, dem Sie angehören. Mit den Zugangsdaten für NSS Konten können Sie Cloud Volumes ONTAP implementieren, wenn Sie Ihre eigene Lizenz (BYOL) verwenden, PAYGO-Systeme registrieren und die Cloud Volumes ONTAP Software aktualisieren.</block>
 </blocks>
