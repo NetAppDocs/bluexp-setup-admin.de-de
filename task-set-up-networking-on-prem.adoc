@@ -71,13 +71,23 @@ AWS-Services (amazonaws.com):
 | Managen von Ressourcen in AWS. Der genaue Endpunkt hängt von der Region ab, in der Sie den Connector bereitstellen. https://docs.aws.amazon.com/general/latest/gr/rande.html["Details finden Sie in der AWS-Dokumentation"^] 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com | Für das Managen von Ressourcen in Azure Public Regionen. 
+| \https://management.azure.com
+\https://login.microsoftonline.com | Für das Managen von Ressourcen in Azure Public Regionen. 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | Für das Management von Ressourcen in Azure China Regionen. 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn | Für das Management von Ressourcen in Azure China Regionen. 
 
 
-| \https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | Zum Managen von Ressourcen in Google Cloud. 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | Zum Managen von Ressourcen in Google Cloud. 
 
 
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
@@ -99,7 +109,9 @@ NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er be
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
 |===
 .Verwandter Link
 link:reference-networking-saas-console.html["Bereiten Sie Ihr Networking auf den Benutzerzugriff auf die BlueXP Konsole vor"]

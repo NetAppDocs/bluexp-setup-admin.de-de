@@ -78,10 +78,16 @@ Für den Connector ist ein ausgehender Internetzugang erforderlich, um die folge
 | Endpunkte | Zweck 
 
 
-| \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Für das Managen von Ressourcen in Azure Public Regionen. 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | Für das Managen von Ressourcen in Azure Public Regionen. 
 
 
-| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | Für das Management von Ressourcen in Azure China Regionen. 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | Für das Management von Ressourcen in Azure China Regionen. 
 
 
 | \https://support.netapp.com | Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden. 
@@ -103,7 +109,9 @@ NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er be
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
 |===
 
 

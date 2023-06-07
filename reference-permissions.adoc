@@ -71,5 +71,7 @@ link:reference-permissions-azure.html["Azure-Berechtigungen für den Connector"]
 | Connector-Bereitstellung | Der Google Cloud-Benutzer, der einen Connector von BlueXP bereitstellt, benötigt spezielle Berechtigungen, um den Connector in Google Cloud bereitzustellen. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Richten Sie Berechtigungen für die Bereitstellung des Connectors ein"] 
 
 
-| Verbindungsbetrieb | Das Servicekonto für die Connector-VM-Instanz muss über spezielle Berechtigungen für den täglichen Betrieb verfügen. Sie müssen das Servicekonto mit dem Connector verknüpfen, wenn Sie es über BlueXP bereitstellen. Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden. | link:reference-permissions-gcp.html["Google Cloud-Berechtigungen für den Connector"] 
+| Verbindungsbetrieb | Das Servicekonto für die Connector-VM-Instanz muss über spezielle Berechtigungen für den täglichen Betrieb verfügen. Sie müssen das Servicekonto mit dem Connector verknüpfen, wenn Sie es über BlueXP bereitstellen.
+
+Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden. | link:reference-permissions-gcp.html["Google Cloud-Berechtigungen für den Connector"] 
 |===

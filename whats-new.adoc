@@ -449,7 +449,7 @@ Wir haben den Connector aktualisiert, um Bug Fixes einzuführen. Die bemerkenswe
 
 
 
-== Mai 2022
+== 2 Mai 2022
 
 
 
@@ -601,7 +601,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 
 
-== Oktober 31 2021
+== 31 Oktober 2021
 
 
 

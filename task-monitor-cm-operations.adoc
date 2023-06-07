@@ -143,9 +143,11 @@ image:screenshot-add-email-recipient.png["Ein Screenshot, in dem das Hinzufügen
 
 Sie können Benachrichtigungen von der Seite entfernen, wenn Sie sie nicht mehr sehen müssen. Sie können alle Benachrichtigungen auf einmal verwerfen oder einzelne Benachrichtigungen verwerfen.
 
-Um alle Benachrichtigungen zu schließen, wählen Sie im Benachrichtigungscenter aus image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] Und wählen Sie *Alle verwerfen*.image:screenshot_notification_menu.png["Ein Screenshot, in dem das Menü Benachrichtigungen angezeigt wird, um Einstellungen auszuwählen und alle Optionen auszublenden."]
+Um alle Benachrichtigungen zu schließen, wählen Sie im Benachrichtigungscenter aus image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] Und wählen Sie *Alle verwerfen*.
+image:screenshot_notification_menu.png["Ein Screenshot, in dem das Menü Benachrichtigungen angezeigt wird, um Einstellungen auszuwählen und alle Optionen auszublenden."]
 
-Um einzelne Benachrichtigungen zu schließen, bewegen Sie den Mauszeiger über die Benachrichtigung und wählen *Abweisen*.image:screenshot_notification_dismiss1.png["Ein Screenshot, in dem das Abblenden einer einzelnen Benachrichtigung angezeigt wird."]
+Um einzelne Benachrichtigungen zu schließen, bewegen Sie den Mauszeiger über die Benachrichtigung und wählen *Abweisen*.
+image:screenshot_notification_dismiss1.png["Ein Screenshot, in dem das Abblenden einer einzelnen Benachrichtigung angezeigt wird."]
 
 
 

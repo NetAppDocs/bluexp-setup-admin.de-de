@@ -104,7 +104,8 @@ Unterstützter Speicherort für den Connector:: Im Standardmodus wird der Connec
 Steckverbinderinstallation:: Die Connector-Installation ist über einen Setup-Assistenten in BlueXP, über AWS oder Azure Marketplace oder über ein Installationsprogramm möglich, um den Connector manuell auf Ihrem eigenen Linux-Host in Ihrem Datacenter oder in der Cloud zu installieren.
 Connector-Upgrades:: Automatisierte Upgrades der Connector-Software sind bei BlueXP mit monatlichen Updates erhältlich.
 Zugriff auf die Benutzeroberfläche:: Der Zugriff auf die Benutzeroberfläche erfolgt über die webbasierte Konsole, die über die SaaS-Schicht bereitgestellt wird.
-API-Endpunkt:: API-Aufrufe werden an den folgenden Endpunkt vorgenommen: \https://cloudmanager.cloud.netapp.com
+API-Endpunkt:: API-Aufrufe werden an den folgenden Endpunkt vorgenommen:
+\https://cloudmanager.cloud.netapp.com
 Authentifizierung:: Die Authentifizierung erfolgt über den Cloud-Service von BlueXP mit auth0 oder über die NetApp Support Site (NSS) Anmeldedaten. Identitätsföderation ist verfügbar.
 Unterstützte BlueXP Services:: Alle BlueXP Services sind für Anwender verfügbar.
 Unterstützte Lizenzierungsoptionen:: Marketplace-Abonnements und BYOL werden im Standard-Modus unterstützt. Die unterstützten Lizenzierungsoptionen hängen jedoch von dem ab, welchen BlueXP Service Sie verwenden. In der Dokumentation zu den einzelnen Services finden Sie weitere Informationen zu den verfügbaren Lizenzierungsoptionen.
@@ -138,7 +139,8 @@ Unterstützter Speicherort für den Connector:: Im eingeschränkten Modus wird d
 Steckverbinderinstallation:: Connector-Installation ist über den AWS oder Azure Marketplace möglich oder eine manuelle Installation auf Ihrem eigenen Linux-Host.
 Connector-Upgrades:: Automatisierte Upgrades der Connector-Software sind bei BlueXP mit monatlichen Updates erhältlich.
 Zugriff auf die Benutzeroberfläche:: Auf die Benutzeroberfläche kann über den Connector zugegriffen werden, der in Ihrer Cloud-Region bereitgestellt wird.
-API-Endpunkt:: API-Aufrufe werden an den folgenden Endpunkt vorgenommen: \https://cloudmanager.cloud.netapp.com
+API-Endpunkt:: API-Aufrufe werden an den folgenden Endpunkt vorgenommen:
+\https://cloudmanager.cloud.netapp.com
 Authentifizierung:: Die Authentifizierung erfolgt über den Cloud-Service von BlueXP unter Verwendung von auth0. Identitätsföderation ist ebenfalls verfügbar.
 Unterstützte BlueXP Services:: BlueXP unterstützt folgende Storage- und Datenservices mit eingeschränktem Modus:
 +
@@ -154,7 +156,9 @@ Unterstützte BlueXP Services:: BlueXP unterstützt folgende Storage- und Datens
 | Azure NetApp Dateien | Volle Unterstützung 
 
 
-| Backup und Recovery | Unterstützt in Regierungsregionen und Geschäftsregionen mit eingeschränkter Betriebsart. Nicht unterstützt in souveränen Regionen mit eingeschränktem Modus. Die folgenden Funktionen werden nicht unterstützt: Applikationen, Virtual Machines und Kubernetes. 
+| Backup und Recovery | Unterstützt in Regierungsregionen und Geschäftsregionen mit eingeschränkter Betriebsart. Nicht unterstützt in souveränen Regionen mit eingeschränktem Modus.
+
+Die folgenden Funktionen werden nicht unterstützt: Applikationen, Virtual Machines und Kubernetes. 
 
 
 | Klassifizierung  a| 
@@ -174,7 +178,9 @@ Es gelten die folgenden Einschränkungen:
 | Digitale Brieftasche | Sie können das Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den eingeschränkten Modus verwenden. 
 
 
-| On-Premises ONTAP Cluster | Erkennung mit einem Connector und Ermittlung ohne einen Connector (direkte Erkennung) werden unterstützt. Wenn Sie ein On-Premises-Cluster mit einem Connector ermitteln, wird die erweiterte Ansicht (System Manager) nicht unterstützt. 
+| On-Premises ONTAP Cluster | Erkennung mit einem Connector und Ermittlung ohne einen Connector (direkte Erkennung) werden unterstützt.
+
+Wenn Sie ein On-Premises-Cluster mit einem Connector ermitteln, wird die erweiterte Ansicht (System Manager) nicht unterstützt. 
 
 
 | Replizierung | Unterstützt in Regierungsregionen mit eingeschränktem Modus. Nicht unterstützt in kommerziellen Regionen oder in souveränen Regionen mit eingeschränktem Modus. 
@@ -246,7 +252,9 @@ Unterstützte BlueXP Services in Cloud-Implementierungen:: BlueXP unterstützt b
 | Unterstützte Services | Hinweise 
 
 
-| Backup und Recovery | Unterstützt in kommerziellen Regionen AWS und Azure. Nicht in Google Cloud oder in unterstützt https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] Oder https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| Backup und Recovery | Unterstützt in kommerziellen Regionen AWS und Azure.
+
+Nicht in Google Cloud oder in unterstützt https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] Oder https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | Da es keinen Internetzugang gibt, sind die folgenden Funktionen nicht verfügbar: Automatisierte Software-Upgrades, AutoSupport und AWS-Kosteninformationen. 
@@ -255,7 +263,9 @@ Unterstützte BlueXP Services in Cloud-Implementierungen:: BlueXP unterstützt b
 | Digitale Brieftasche | Sie können das Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den privaten Modus verwenden. 
 
 
-| On-Premises ONTAP Cluster | Erfordert Konnektivität aus der Cloud (wo der Connector installiert ist) zur On-Premises-Umgebung. Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt. 
+| On-Premises ONTAP Cluster | Erfordert Konnektivität aus der Cloud (wo der Connector installiert ist) zur On-Premises-Umgebung.
+
+Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt. 
 |===
 --
 Unterstützte BlueXP Services in On-Premises-Implementierungen:: BlueXP unterstützt bei der On-Premises-Installation des Connector folgende Storage- und Datenservices mit Private Mode:

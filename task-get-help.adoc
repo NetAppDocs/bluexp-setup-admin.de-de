@@ -14,7 +14,7 @@ NetApp bietet Unterstützung für BlueXP und seine Cloud-Services auf unterschie
 
 
 
-== Self-Support-Optionen
+== Nutzen Sie Self-Support-Optionen
 
 Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:
 
@@ -38,7 +38,7 @@ Wir wissen Ihre Vorschläge zu schätzen. Senden Sie uns Ihr Feedback, um BlueXP
 
 
 
-== Erstellen eines Cases mit NetApp Support
+== Erstellen Sie einen Fall mit dem NetApp Support
 
 Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.
 
@@ -52,7 +52,7 @@ Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mi
 . Wählen Sie auf der Seite *Ressourcen* eine der verfügbaren Optionen unter Technischer Support:
 +
 .. Klicken Sie auf *Rufen Sie uns an*, wenn Sie mit jemandem am Telefon sprechen möchten. Sie werden zu einer Seite auf netapp.com weitergeleitet, auf der die Telefonnummern aufgeführt sind, die Sie anrufen können.
-.. Klicken Sie auf *Case erstellen*, um ein Ticket mit einem NetApp Support-Experten zu öffnen:
+.. Klicken Sie auf *Fall erstellen*, um ein Ticket bei einem NetApp Support Spezialisten zu öffnen:
 +
 *** *Service*: Wählen Sie den Dienst aus, mit dem das Problem verknüpft ist. Beispiel: BlueXP, wenn es sich um ein Problem des technischen Supports mit Workflows oder Funktionen im Service handelt.
 *** *Arbeitsumgebung*: Wählen Sie *Cloud Volumes ONTAP* oder *On-Prem* und anschließend die zugehörige Arbeitsumgebung aus.

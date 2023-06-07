@@ -79,7 +79,8 @@ Der Installationsordner des Connectors befindet sich an folgender Stelle:
 
 Protokolldateien sind in den folgenden Ordnern enthalten:
 
-* /Opt/Applikation/netapp/Cloud Manager/log oder
+* /opt/application/netapp/cloudmanager/log
+Oder
 * /Opt/Application/netapp/Service-Manager-2/logs (beginnend mit den neuen 3.9.23 Installationen)
 +
 Die Protokolle in diesen Ordnern enthalten Details zu den Konnektor- und Docker-Images.

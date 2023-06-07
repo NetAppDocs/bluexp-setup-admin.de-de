@@ -147,22 +147,36 @@ includedPermissions:
 | Aktionen | Zweck 
 
 
-| - Compute.Disks.create - Compute.Disks.createSnapshot - compute.disks.delete - Compute.Disks.get - Compute.Disks.list - compute.disks.setLabels - compute.disks.use | Zum Erstellen und Verwalten von Festplatten für Cloud Volumes ONTAP. 
+| - Compute.Disks.create
+- Compute.Disks.createSnapshot
+- compute.disks.delete
+- Compute.Disks.get
+- Compute.Disks.list
+- compute.disks.setLabels
+- compute.disks.use | Zum Erstellen und Verwalten von Festplatten für Cloud Volumes ONTAP. 
 
 
-| - Compute.Firewalls.create - compute.firewalls.delete - Compute.Firewalls.get - Compute.Firewalls.list | Um Firewall-Regeln für Cloud Volumes ONTAP zu erstellen. 
+| - Compute.Firewalls.create
+- compute.firewalls.delete
+- Compute.Firewalls.get
+- Compute.Firewalls.list | Um Firewall-Regeln für Cloud Volumes ONTAP zu erstellen. 
 
 
 | - Compute.globalOperations.get | Um den Status von Vorgängen anzuzeigen. 
 
 
-| - Compute.images.get - Compute.images.getFromFamily - Compute.images.list - compute.images.useReadOnly | Um Images für VM-Instanzen zu erhalten. 
+| - Compute.images.get
+- Compute.images.getFromFamily
+- Compute.images.list
+- compute.images.useReadOnly | Um Images für VM-Instanzen zu erhalten. 
 
 
-| - compute.instances.attachDisk - compute.instances.detachDisk | Zum Verbinden und Trennen von Festplatten mit Cloud Volumes ONTAP. 
+| - compute.instances.attachDisk
+- compute.instances.detachDisk | Zum Verbinden und Trennen von Festplatten mit Cloud Volumes ONTAP. 
 
 
-| - compute.instances.create - compute.instances.delete | Um Cloud Volumes ONTAP VM-Instanzen zu erstellen und zu löschen. 
+| - compute.instances.create
+- compute.instances.delete | Um Cloud Volumes ONTAP VM-Instanzen zu erstellen und zu löschen. 
 
 
 | - compute.instances.get | Um VM-Instanzen aufzulisten. 
@@ -180,7 +194,8 @@ includedPermissions:
 | - compute.instances.setLabels | So fügen Sie Etiketten hinzu: 
 
 
-| - compute.instances.setMachineType - compute.instances.setMinCpuPlatform | So ändern Sie den Maschinentyp für Cloud Volumes ONTAP. 
+| - compute.instances.setMachineType
+- compute.instances.setMinCpuPlatform | So ändern Sie den Maschinentyp für Cloud Volumes ONTAP. 
 
 
 | - compute.instances.setMetadata | Um Metadaten hinzuzufügen. 
@@ -189,7 +204,9 @@ includedPermissions:
 | - compute.instances.setTags | Um Tags für Firewall-Regeln hinzuzufügen. 
 
 
-| - compute.instances.start - compute.instances.stop - compute.instances.updateDisplayDevice | Um Cloud Volumes ONTAP zu starten und anzuhalten. 
+| - compute.instances.start
+- compute.instances.stop
+- compute.instances.updateDisplayDevice | Um Cloud Volumes ONTAP zu starten und anzuhalten. 
 
 
 | - Compute.machineTypes.get | Um die Anzahl der Kerne zu erhalten, um qouten zu überprüfen. 
@@ -198,52 +215,108 @@ includedPermissions:
 | - compute.projects.get | Zur Unterstützung mehrerer Projekte. 
 
 
-| - Compute.Snapshots.create - compute.snapshots.delete - Compute.Snapshots.get - Compute.Snapshots.list - compute.snapshots.setLabels | Um persistente Festplatten-Snapshots zu erstellen und zu managen. 
+| - Compute.Snapshots.create
+- compute.snapshots.delete
+- Compute.Snapshots.get
+- Compute.Snapshots.list
+- compute.snapshots.setLabels | Um persistente Festplatten-Snapshots zu erstellen und zu managen. 
 
 
-| - compute.networks.get - compute.networks.list - Compute.Regions.get - Compute.Regions.list - Compute.subNetworks.get - Compute.subNetworks.list - Compute.zoneOperations.get - Compute.Zones.get - Compute.Zones.list | Um die Netzwerkinformationen zu erhalten, die für die Erstellung einer neuen Instanz einer Cloud Volumes ONTAP Virtual Machine erforderlich sind. 
+| - compute.networks.get
+- compute.networks.list
+- Compute.Regions.get
+- Compute.Regions.list
+- Compute.subnetworks.get
+- Compute.subnetworks.list
+- Compute.zoneOperations.get
+- Compute.Zones.get
+- Compute.Zones.list | Um die Netzwerkinformationen zu erhalten, die für die Erstellung einer neuen Instanz einer Cloud Volumes ONTAP Virtual Machine erforderlich sind. 
 
 
-| - deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list - istmentmanager.Manifeste.get - istmentmanager.manifeste.list - istmentmanager.Operations.get - istmentmanager.Operations.list - bereitsmanager.Resources.get - bereitsmanager.Resources.list - Bereitstellungmanager.typeProviders.get - istmentmanager.tyArten.list | Um die Cloud Volumes ONTAP VM-Instanz mithilfe von Google Cloud Deployment Manager bereitzustellen. 
+| - deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- Deploymentmanager.Manifeste.get
+- Deplomentmanager.Manifeste.list
+- Deploymentmanager.Operations.get
+- Deplomentmanager.Operations.list
+- Deploymentmanager.Resources.get
+- Deploymentmanager.Resources.list
+- Deploymentmanager.typProviders.get
+- Deplomentmanager.typProviders.list
+- Deplomentmanager.types.get
+- Deplomentmanager.types.list | Um die Cloud Volumes ONTAP VM-Instanz mithilfe von Google Cloud Deployment Manager bereitzustellen. 
 
 
-| - Logging.logEntries.list - Logging.privateLogEntries.list | Zum Abrufen von Stack-Protokolllaufwerken. 
+| - Logging.logEinträge.list
+- Logging.privateLogEinträge.list | Zum Abrufen von Stack-Protokolllaufwerken. 
 
 
 | - resourcemanager.projects.get | Zur Unterstützung mehrerer Projekte. 
 
 
-| - Storage.Buckets.create - storage.buckets.delete - Storage.Buckets.get - Storage.Buckets.list - Storage.Buckets.Update | Zur Erstellung und Verwaltung eines Google Cloud Storage Buckets für Daten-Tiering 
+| - Storage.Buckets.create
+- storage.buckets.delete
+- Storage.Buckets.get
+- Storage.Buckets.list
+- Storage.Buckets.Update | Zur Erstellung und Verwaltung eines Google Cloud Storage Buckets für Daten-Tiering 
 
 
-| - cloudkms.cryptoKeyVersions.useToEncrypt - cloudkms.kryptoKeys.get - cloudkms.kryptoKeys.list - cloudkms.Keyrings.list | Verwenden von vom Kunden gemanagten Verschlüsselungen aus dem Cloud-Verschlüsselungsmanagement-Service mit Cloud Volumes ONTAP. 
+| - cloudkms.cryptoKeyVersions.useToEncrypt
+- Cloudkms.cryptkeys.get
+- Cloudkms.cryptkeys.list
+- Cloudkms.Keyrings.list | Verwenden von vom Kunden gemanagten Verschlüsselungen aus dem Cloud-Verschlüsselungsmanagement-Service mit Cloud Volumes ONTAP. 
 
 
-| - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - Storage.objects.get - Storage.objects.list | So legen Sie ein Servicekonto für die Cloud Volumes ONTAP-Instanz fest: Dieses Servicekonto bietet Berechtigungen für Daten-Tiering zu einem Google Cloud Storage Bucket. 
+| - compute.instances.setServiceAccount
+- iam.serviceAccounts.actAs
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.list
+- Storage.objects.get
+- Storage.objects.list | So legen Sie ein Servicekonto für die Cloud Volumes ONTAP-Instanz fest: Dieses Servicekonto bietet Berechtigungen für Daten-Tiering zu einem Google Cloud Storage Bucket. 
 
 
 | - Compute.Addresses.list | So rufen Sie die Adressen in einer Region ab, wenn Sie ein HA-Paar bereitstellen. 
 
 
-| - Compute.backendServices.create - Compute.regionBackendServices.create - Compute.regionBackendServices.get - Compute.regionBackendServices.list | Um einen Backend-Service für die Verteilung von Datenverkehr in einem HA-Paar zu konfigurieren 
+| - Compute.backendServices.create
+- Compute.regionBackendServices.create
+- Compute.regionBackendServices.get
+- Compute.regionBackendServices.list | Um einen Backend-Service für die Verteilung von Datenverkehr in einem HA-Paar zu konfigurieren 
 
 
 | - compute.networks.updatePolicy | So wenden Sie Firewall-Regeln auf die VPCs und Subnetze für ein HA-Paar an. 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Um die BlueXP Klassifizierung zu aktivieren. 
+| - compute.subnetworks.use
+- compute.subnetworks.useExternalIp
+- compute.instances.addAccessConfig | Um die BlueXP Klassifizierung zu aktivieren. 
 
 
-| - Container.Clusters.get - Container.Clusters.list | Um Kubernetes Cluster zu erkennen, die in der Google Kubernetes Engine ausgeführt werden. 
+| - Container.Clusters.get
+- Container.Clusters.list | Um Kubernetes Cluster zu erkennen, die in der Google Kubernetes Engine ausgeführt werden. 
 
 
-| - compute.instanceGroups.get - Compute.Addresses.get - compute.instances.updateNetworkInterface | Um Storage VMs auf Cloud Volumes ONTAP HA-Paaren zu erstellen und zu managen. 
+| - compute.instanceGroups.get
+- Compute.addresses.get
+- compute.instances.updateNetworkInterface | Um Storage VMs auf Cloud Volumes ONTAP HA-Paaren zu erstellen und zu managen. 
 
 
-| - Monitoring.Timeeries.list - Storage.Buckets.getIamPolicy | Um Informationen zu Google Cloud Storage Buckets zu erhalten. 
+| - Monitoring.timeseries.list
+- Storage.Buckets.getIamPolicy | Um Informationen zu Google Cloud Storage Buckets zu erhalten. 
 
 
-| - Cloudkms.ckryptoKeys.get - cloudkms.ckryptoKeys.getIamPolicy - cloudkms.ckryptoKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.Keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | So wählen Sie im BlueXP Aktivierungsassistenten für Backup und Recovery eigene vom Kunden gemanagte Schlüssel aus, statt die standardmäßigen, von Google gemanagten Schlüssel zu verwenden. 
+| - Cloudkms.cryptkeys.get
+- Cloudkms.cryptkeys.getIamPolicy
+- Cloudkms.cryptkeys.list
+- cloudkms.cryptoKeys.setIamPolicy
+- Cloudkms.Schlüsselanhänger.get
+- Cloudkms.Keyrings.getIamPolicy
+- Cloudkms.Keyrings.list
+- cloudkms.keyRings.setIamPolicy | So wählen Sie im BlueXP Aktivierungsassistenten für Backup und Recovery eigene vom Kunden gemanagte Schlüssel aus, statt die standardmäßigen, von Google gemanagten Schlüssel zu verwenden. 
 |===
 
 
@@ -264,7 +337,7 @@ Diese Erlaubnis ist für Cloud Volumes ONTAP erforderlich.
 
 
 
-=== 27. Januar 2023
+=== 27 Januar 2023
 
 Die Richtlinie hat folgende Berechtigungen hinzugefügt:
 
