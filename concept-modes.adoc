@@ -355,7 +355,7 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | StorageGRID | Nein | Nein 
 
 
-.13+| *Services* | Backup und Recovery | Ja. | Ja. 
+.15+| *Services* | Backup und Recovery | Ja. | Ja. 
 
 
 | Klassifizierung | Ja. | Ja. 
@@ -394,20 +394,23 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | Replizierung | Ja. | Ja. 
 
 
-| Tiering | Nein | Nein | Volume-Caching 
+| Tiering | Nein | Nein 
 
 
-| Nein | Nein .4+| *Eigenschaften* | Anmeldedaten 
+| Volume-Caching | Nein | Nein 
 
 
-| Ja. | Ja. | NSS-Konten 
+.5+| *Eigenschaften* | Anmeldedaten | Ja. | Ja. 
 
 
-| Ja. | Nein | Benachrichtigungen 
+| NSS-Konten | Ja. | Nein 
 
 
-| Ja. | Nein | Suche 
+| Benachrichtigungen | Ja. | Nein 
 
 
-| Ja. | Nein | Zeitachse | Ja. 
+| Suche | Ja. | Nein 
+
+
+| Zeitachse | Ja. | Ja. 
 |===
