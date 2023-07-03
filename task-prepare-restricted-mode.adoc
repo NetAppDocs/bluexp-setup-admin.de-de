@@ -106,9 +106,16 @@ Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren möchte
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+Dieser Endpunkt ist in Regionen der Azure-Regierung nicht erforderlich.
+
+* \https://occmclientinfragov.azurecr.us
++
+Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.
+
 
 
 Der Host versucht möglicherweise, während der Installation Betriebssystempakete zu aktualisieren. Der Host kann verschiedene Spiegelungsstandorte für diese Betriebssystempakete kontaktieren.
@@ -185,9 +192,13 @@ NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er be
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+| \https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | Aktualisierung des Connectors und seiner Docker Komponenten. 
+\https://cloudmanagerinfraprod.azurecr.io
+Dieser Endpunkt ist in Regionen der Azure-Regierung nicht erforderlich.
+
+\https://occmclientinfragov.azurecr.us
+Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich. | Aktualisierung des Connectors und seiner Docker Komponenten. 
 |===
 
 

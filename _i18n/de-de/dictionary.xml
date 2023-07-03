@@ -3792,4 +3792,23 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Alle BlueXP-Dokumentationen</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">Nachhaltigkeit</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 Juli 2023</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Anschluss 3.9.31</block>
+  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Sie können jetzt On-Premises-ONTAP-Cluster über die Registerkarte *My estate* (vorher *Meine Möglichkeiten*) entdecken.</block>
+  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Erfahren Sie auf der Seite My Estate, wie Sie Cluster erkennen</block>
+  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
+  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Wenn Sie den Connector in einer Azure Government-Region verwenden, sollten Sie sicherstellen, dass der Connector den folgenden Endpunkt erreichen kann:</block>
+  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
+  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Dieser Endpunkt ist erforderlich, um den Connector manuell zu installieren und den Connector und seine Docker-Komponenten zu aktualisieren.</block>
+  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Aufgrund dieser Änderung kontaktiert ein Connector in einer Azure-Regierungsregion nicht mehr den folgenden Endpunkt:</block>
+  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Beachten Sie, dass dieser Endpunkt weiterhin für alle anderen Konfigurationen mit eingeschränktem Modus und für den Standardmodus erforderlich ist.</block>
+  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Dieser Endpunkt ist in Regionen der Azure-Regierung nicht erforderlich.</block>
+  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.</block>
+  <block id="2ecb939d80f14a8df5cdeee557b8a6a2" category="cell">\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+Dieser Endpunkt ist in Regionen der Azure-Regierung nicht erforderlich.
+
+\https://occmclientinfragov.azurecr.us
+Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.</block>
 </blocks>

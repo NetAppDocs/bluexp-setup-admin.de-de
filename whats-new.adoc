@@ -18,6 +18,36 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== 2 Juli 2023
+
+
+
+=== Anschluss 3.9.31
+
+* Sie können jetzt On-Premises-ONTAP-Cluster über die Registerkarte *My estate* (vorher *Meine Möglichkeiten*) entdecken.
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Erfahren Sie auf der Seite My Estate, wie Sie Cluster erkennen"].
+
+* Wenn Sie den Connector in einer Azure Government-Region verwenden, sollten Sie sicherstellen, dass der Connector den folgenden Endpunkt erreichen kann:
++
+\https://occmclientinfragov.azurecr.us
+
++
+Dieser Endpunkt ist erforderlich, um den Connector manuell zu installieren und den Connector und seine Docker-Komponenten zu aktualisieren.
+
++
+Aufgrund dieser Änderung kontaktiert ein Connector in einer Azure-Regierungsregion nicht mehr den folgenden Endpunkt:
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+Beachten Sie, dass dieser Endpunkt weiterhin für alle anderen Konfigurationen mit eingeschränktem Modus und für den Standardmodus erforderlich ist.
+
+
+
+
+
 == 4 Juni 2023
 
 
