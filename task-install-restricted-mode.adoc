@@ -397,7 +397,7 @@ NOTE: BlueXP Operator ist der Standardname, der in der BlueXP-Richtlinie angegeb
 .. Klicken Sie Auf *Auswählen*.
 .. Klicken Sie Auf *Weiter*.
 .. Klicken Sie auf *Review + Assign*.
-.. Wenn Sie Cloud Volumes ONTAP von zusätzlichen Abonnements aus implementieren möchten, wechseln Sie zu diesem Abonnement, und wiederholen Sie diese Schritte.
+.. Wenn Sie Ressourcen in zusätzlichen Abonnements verwalten möchten, wechseln Sie zu diesem Abonnement, und wiederholen Sie die folgenden Schritte.
 
 
 
@@ -445,7 +445,7 @@ Verknüpfen Sie das Servicekonto mit der Konnektor-VM.
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud-Dokumentation: Ändern des Dienstkontos und des Zugriffsumfangs für eine Instanz"^]
 
-. Wenn Sie Cloud Volumes ONTAP in anderen Projekten implementieren möchten, gewähren Sie Zugriff, indem Sie das Servicekonto mit der BlueXP Rolle zu diesem Projekt hinzufügen. Sie müssen diesen Schritt für jedes Projekt wiederholen.
+. Wenn Sie Ressourcen in anderen Projekten managen möchten, gewähren Sie Zugriff, indem Sie das Servicekonto mit der BlueXP Rolle zu diesem Projekt hinzufügen. Sie müssen diesen Schritt für jedes Projekt wiederholen.
 
 
 .Ergebnis

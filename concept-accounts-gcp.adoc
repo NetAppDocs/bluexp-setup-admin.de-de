@@ -25,7 +25,7 @@ Bevor Sie BlueXP zum Managen von Ressourcen in Ihrem Google Cloud-Projekt verwen
 Zwei Berechtigungsgruppen müssen vorhanden sein, bevor Sie einen Connector direkt von BlueXP bereitstellen:
 
 . Sie müssen einen Connector mit einem Google-Konto bereitstellen, das über Berechtigungen zum Starten der Connector VM-Instanz von BlueXP verfügt.
-. Bei der Bereitstellung des Connectors werden Sie aufgefordert, ein auszuwählen https://cloud.google.com/iam/docs/service-accounts["Servicekonto"^] Für die VM-Instanz. BlueXP erhält Berechtigungen über das Servicekonto, um Cloud Volumes ONTAP Systeme für Sie zu erstellen und zu managen – u. v. m. Berechtigungen werden durch Hinzufügen einer benutzerdefinierten Rolle an das Servicekonto bereitgestellt.
+. Bei der Bereitstellung des Connectors werden Sie aufgefordert, ein auszuwählen https://cloud.google.com/iam/docs/service-accounts["Servicekonto"^] Für die VM-Instanz. BlueXP erhält Berechtigungen über das Servicekonto, um Cloud Volumes ONTAP Systeme zu erstellen und zu managen, Backups mit BlueXP Backup und Recovery zu managen usw. Berechtigungen werden durch Hinzufügen einer benutzerdefinierten Rolle an das Servicekonto bereitgestellt.
 
 
 Das folgende Bild zeigt die in den Nummern 1 und 2 oben beschriebenen Berechtigungsanforderungen:

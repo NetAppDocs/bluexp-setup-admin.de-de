@@ -41,7 +41,7 @@ NOTE: BlueXP Operator ist der Standardname, der in der BlueXP-Richtlinie angegeb
 .. Klicken Sie Auf *Auswählen*.
 .. Klicken Sie Auf *Weiter*.
 .. Klicken Sie auf *Review + Assign*.
-.. Wenn Sie Cloud Volumes ONTAP von zusätzlichen Abonnements aus implementieren möchten, wechseln Sie zu diesem Abonnement, und wiederholen Sie diese Schritte.
+.. Wenn Sie Ressourcen in weiteren Azure-Abonnements managen möchten, wechseln Sie zu diesem Abonnement und wiederholen Sie die folgenden Schritte.
 
 
 

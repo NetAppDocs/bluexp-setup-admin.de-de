@@ -26,7 +26,7 @@ Wenn BlueXP die Connector Virtual Machine in Azure implementiert, wird damit ein
 
 image:diagram_permissions_initial_azure.png["Ein konzeptionelles Image, das BlueXP die Bereitstellung eines Connectors in einem Azure-Konto und -Abonnement zeigt. Eine vom System zugewiesene verwaltete Identität ist aktiviert und der virtuellen Maschine Connector wird eine benutzerdefinierte Rolle zugewiesen."]
 
-Bei der Erstellung einer neuen Arbeitsumgebung für Cloud Volumes ONTAP wählt BlueXP die folgenden Azure-Anmeldedaten standardmäßig aus:
+Wenn Sie eine neue Arbeitsumgebung für Cloud Volumes ONTAP erstellen, wählt BlueXP standardmäßig diese Azure Zugangsdaten aus:
 
 image:screenshot_accounts_select_azure.gif["Ein Screenshot, in dem die Option „Konto wechseln“ auf der Seite „Details  Anmeldeinformationen“ angezeigt wird."]
 

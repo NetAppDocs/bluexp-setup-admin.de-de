@@ -98,7 +98,7 @@ Der Connector muss über eine Netzwerkverbindung zu dem Speicherort verfügen, a
 
 === Endpunkte für den täglichen Betrieb
 
-Der Connector kontaktiert die folgenden Endpunkte, um Cloud Volumes ONTAP in Ihrer Public-Cloud-Umgebung bereitzustellen und zu managen.
+Der Connector kontaktiert die folgenden Endpunkte, um Ressourcen und Prozesse in der Public Cloud-Umgebung zu managen.
 
 [cols="2*"]
 |===
@@ -178,8 +178,6 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiieren ihn.
 
 HTTP (80) und HTTPS (443) bieten den Zugriff auf die BlueXP Konsole. SSH (22) ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen.
-
-Eingehende Verbindungen über Port 3128 sind erforderlich, wenn Sie Cloud Volumes ONTAP-Systeme in einem Subnetz bereitstellen, in dem keine ausgehende Internetverbindung verfügbar ist. Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten haben, konfiguriert BlueXP diese Cloud Volumes ONTAP-Systeme automatisch so, dass sie einen Proxyserver verwenden, der im Connector enthalten ist. Die einzige Anforderung besteht darin, sicherzustellen, dass die Sicherheitsgruppe des Connectors eingehende Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.
 
 
 

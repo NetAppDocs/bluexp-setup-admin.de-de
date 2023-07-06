@@ -26,7 +26,7 @@ Wenn BlueXP die Connector-Instanz in AWS startet, erstellt sie eine IAM-Rolle un
 
 image:diagram_permissions_initial_aws.png["Ein Konzept-Image, das zeigt, dass BlueXP den Connector in einem AWS-Konto implementiert. Eine IAM-Richtlinie wird einer IAM-Rolle zugewiesen, die an die BlueXP-Instanz angehängt ist."]
 
-BlueXP wählt die AWS Zugangsdaten standardmäßig aus, wenn Sie eine neue Arbeitsumgebung für Cloud Volumes ONTAP erstellen:
+Wenn Sie eine neue Arbeitsumgebung für Cloud Volumes ONTAP erstellen, wählt BlueXP standardmäßig diese AWS Zugangsdaten aus:
 
 image:screenshot_accounts_select_aws.gif["Ein Screenshot, in dem die Option „Konto wechseln“ auf der Seite „Details  Anmeldeinformationen“ angezeigt wird."]
 
