@@ -44,13 +44,13 @@ Die folgende Tabelle enthält einen Vergleich zwischen dem Benachrichtigungscent
 
 == Überwachen Sie Aktivitäten mit dem Benachrichtigungscenter
 
-Benachrichtigungen verfolgen den Fortschritt der Vorgänge, die Sie in BlueXP initiiert haben, damit Sie überprüfen können, ob der Vorgang erfolgreich war oder nicht. Mit diesen können Sie den Status vieler BlueXP-Aktionen anzeigen, die Sie während Ihrer aktuellen Anmeldesitzung initiiert haben. Nicht alle Dienste berichten zu diesem Zeitpunkt Informationen in das Benachrichtigungszentrum.
+Benachrichtigungen verfolgen den Fortschritt der Vorgänge, die Sie in BlueXP initiiert haben, damit Sie überprüfen können, ob der Vorgang erfolgreich war oder nicht. Mit diesen können Sie den Status vieler BlueXP-Aktionen anzeigen, die Sie während Ihrer aktuellen Anmeldesitzung initiiert haben. Derzeit werden nicht alle BlueXP Services dem Benachrichtigungs-Center gemeldet.
 
 Sie können die Benachrichtigungen anzeigen, indem Sie auf die Benachrichtigungs-Bell ( klickenimage:icon_bell.png["Benachrichtigungsglocke"]) In der Menüleiste. Die Farbe der kleinen Blase in der Glocke zeigt die Meldung mit dem höchsten Schweregrad an, die aktiv ist. Wenn Sie also eine rote Blase sehen, bedeutet dies, dass eine wichtige Benachrichtigung angezeigt wird, die Sie sich ansehen sollten.
 
 image:screenshot_notification_full.png["Ein Screenshot mit einer Liste aktueller Benachrichtigungen im Benachrichtigungszentrum."]
 
-Außerdem können Sie BlueXP so konfigurieren, dass Benachrichtigungen per E-Mail versendet werden, damit Sie auch dann über wichtige Systemaktivitäten informiert werden können, wenn Sie nicht am System angemeldet sind. Außerdem können E-Mails an alle Benutzer Ihres BlueXP Kontos oder an alle Empfänger gesendet werden, die bestimmte Arten von Systemaktivitäten kennen müssen. Siehe <<Einstellen der Einstellungen für E-Mail-Benachrichtigungen,Einstellen der Einstellungen für E-Mail-Benachrichtigungen>> Unten.
+Sie können BlueXP auch so konfigurieren, dass bestimmte Arten von Benachrichtigungen per E-Mail gesendet werden, sodass Sie über wichtige Systemaktivitäten informiert werden können, selbst wenn Sie nicht beim System angemeldet sind. Außerdem können E-Mails an alle Benutzer Ihres BlueXP Kontos oder an alle Empfänger gesendet werden, die bestimmte Arten von Systemaktivitäten kennen müssen. Informieren Sie sich darüber <<Einstellungen für E-Mail-Benachrichtigungen festlegen,Einstellungen für E-Mail-Benachrichtigungen festlegen>>.
 
 
 
@@ -58,7 +58,7 @@ Außerdem können Sie BlueXP so konfigurieren, dass Benachrichtigungen per E-Mai
 
 Benachrichtigungen werden in die folgenden Kategorien eingeteilt:
 
-[cols="22,58"]
+[cols="20,60"]
 |===
 | Benachrichtigungstyp | Beschreibung 
 
@@ -84,11 +84,23 @@ Benachrichtigungen werden in die folgenden Kategorien eingeteilt:
 
 === Benachrichtigungen filtern
 
-Standardmäßig werden alle Benachrichtigungen angezeigt. Sie können die Benachrichtigungen filtern, die im Benachrichtigungscenter angezeigt werden, um nur die Benachrichtigungen anzuzeigen, die für Sie wichtig sind. Sie können nach BlueXP „Service“ und nach Benachrichtigung „Typ“ filtern.
+Standardmäßig werden alle aktiven Benachrichtigungen im Benachrichtigungscenter angezeigt. Sie können die Benachrichtigungen filtern, die Sie sehen, um nur die Benachrichtigungen anzuzeigen, die für Sie wichtig sind. Sie können nach BlueXP „Service“ und nach Benachrichtigung „Typ“ filtern.
 
 image:screenshot_notification_filters.png["Ein Screenshot mit den beiden Filtertypen, die im Benachrichtigungszentrum verfügbar sind."]
 
 Wenn Sie beispielsweise nur „Fehler“ und „Warnung“ für BlueXP-Vorgänge sehen möchten, wählen Sie diese Einträge aus, und Sie werden nur die Arten von Benachrichtigungen sehen.
+
+
+
+=== Benachrichtigungen schließen
+
+Sie können Benachrichtigungen von der Seite entfernen, wenn Sie sie nicht mehr sehen müssen. Sie können alle Benachrichtigungen auf einmal verwerfen oder einzelne Benachrichtigungen verwerfen.
+
+Um alle Benachrichtigungen zu schließen, wählen Sie im Benachrichtigungscenter aus image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] Und wählen Sie *Alle verwerfen*.
+image:screenshot_notification_menu.png["Ein Screenshot, in dem das Menü Benachrichtigungen angezeigt wird, um Einstellungen auszuwählen und alle Optionen auszublenden."]
+
+Um einzelne Benachrichtigungen zu schließen, bewegen Sie den Mauszeiger über die Benachrichtigung und wählen *Abweisen*.
+image:screenshot_notification_dismiss1.png["Ein Screenshot, in dem das Abblenden einer einzelnen Benachrichtigung angezeigt wird."]
 
 
 
@@ -98,12 +110,14 @@ Sie können bestimmte Arten von Benachrichtigungen per E-Mail versenden, damit S
 
 [NOTE]
 ====
-* Derzeit werden Benachrichtigungen zu folgenden BlueXP Funktionen und Services per E-Mail gesendet: Connectors, BlueXP Kopier- und Synchronisierungsfunktionen, BlueXP Backup und Recovery, BlueXP Digital Wallet und BlueXP Ransomware-Schutz. Weitere Services werden in zukünftigen Versionen hinzugefügt.
+* Derzeit werden Benachrichtigungen zu folgenden BlueXP Funktionen und Services per E-Mail gesendet: Connector, BlueXP Kopier- und Synchronisierungsfunktion, BlueXP Backup und Recovery, BlueXP Digital Wallet und BlueXP Ransomware-Schutz. Weitere Services werden in zukünftigen Versionen hinzugefügt.
 * Das Senden von E-Mail-Benachrichtigungen wird nicht unterstützt, wenn der Connector auf einer Website ohne Internetzugang installiert ist.
 
 
 ====
-Standardmäßig erhalten BlueXP-Kontoadministratoren E-Mails für alle „kritischen“ und „Empfehlungsbenachrichtigungen“. Alle anderen Benutzer und Empfänger sind standardmäßig so konfiguriert, dass sie keine Benachrichtigungs-E-Mails erhalten.
+Die Filter, die Sie im Benachrichtigungscenter festlegen, bestimmen nicht, welche Arten von Benachrichtigungen Sie per E-Mail erhalten. Standardmäßig erhalten BlueXP-Kontoadministratoren E-Mails für alle „kritischen“ und „Empfehlungsbenachrichtigungen“. Diese Benachrichtigungen gelten für alle Services. Sie können keine Benachrichtigungen nur für bestimmte Services erhalten, z. B. Connectors oder BlueXP Backup und Recovery.
+
+Alle anderen Benutzer und Empfänger sind so konfiguriert, dass sie keine Benachrichtigungs-E-Mails erhalten. Sie müssen daher die Benachrichtigungseinstellungen für weitere Benutzer konfigurieren.
 
 Sie müssen ein Kontoadministrator sein, um die Benachrichtigungseinstellungen anzupassen.
 
@@ -136,18 +150,6 @@ image:screenshot-add-email-recipient.png["Ein Screenshot, in dem das Hinzufügen
 
 . Geben Sie den Namen und die E-Mail-Adresse ein, und wählen Sie die Benachrichtigungstypen aus, die der Empfänger erhalten soll, und wählen Sie *Neuen Empfänger hinzufügen*.
 
-
-
-
-=== Benachrichtigungen schließen
-
-Sie können Benachrichtigungen von der Seite entfernen, wenn Sie sie nicht mehr sehen müssen. Sie können alle Benachrichtigungen auf einmal verwerfen oder einzelne Benachrichtigungen verwerfen.
-
-Um alle Benachrichtigungen zu schließen, wählen Sie im Benachrichtigungscenter aus image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] Und wählen Sie *Alle verwerfen*.
-image:screenshot_notification_menu.png["Ein Screenshot, in dem das Menü Benachrichtigungen angezeigt wird, um Einstellungen auszuwählen und alle Optionen auszublenden."]
-
-Um einzelne Benachrichtigungen zu schließen, bewegen Sie den Mauszeiger über die Benachrichtigung und wählen *Abweisen*.
-image:screenshot_notification_dismiss1.png["Ein Screenshot, in dem das Abblenden einer einzelnen Benachrichtigung angezeigt wird."]
 
 
 
