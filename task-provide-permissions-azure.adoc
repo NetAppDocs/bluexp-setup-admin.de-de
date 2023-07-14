@@ -56,7 +56,6 @@ Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Con
 .Service-Principal
 --
 .Schritte
-. Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Und melden Sie sich an.
 . Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]

@@ -28,6 +28,7 @@ Ohne Connector können Sie die folgenden BlueXP Funktionen und Services nutzen:
 +
 Obwohl der Connector nicht zum Erstellen einer Arbeitsumgebung erforderlich ist, ist er für die Erstellung und das Management von Volumes, die Replizierung von Daten und die Integration von FSX für ONTAP mit Services wie der BlueXP Klassifizierung und der BlueXP Kopier- und Synchronisierungsfunktion erforderlich.
 
+* Automatisierungsskatalog
 * Azure NetApp Dateien
 +
 Für die Einrichtung und das Management von Azure NetApp Files ist kein Connector erforderlich, aber für die Suche nach Azure NetApp Files Daten ist ein Connector erforderlich.
@@ -49,6 +50,7 @@ Ein Connector ist zwar nicht für die direkte Erkennung eines lokalen ONTAP-Clus
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Weitere Informationen zu den Wiederauffindungs- und Managementoptionen für lokale ONTAP Cluster"^]
 
+* Nachhaltigkeit
 
 
 

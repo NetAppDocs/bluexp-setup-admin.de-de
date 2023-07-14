@@ -145,7 +145,7 @@ Um dem Connector die erforderlichen Berechtigungen für das Ressourcenmanagement
 Im folgenden Beispiel wird auf Projektebene eine Rolle namens „Connector“ erstellt:
 
 +
-Gcloud iam-Rollen erstellen Connector --project=myproject --file=Connector.yaml
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud docs: Erstellen und Verwalten benutzerdefinierter Rollen"^]

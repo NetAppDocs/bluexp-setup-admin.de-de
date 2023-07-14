@@ -20,7 +20,9 @@ Erstellen Sie einen Connector direkt über die webbasierte Konsole von BlueXP, �
 ====
 .BlueXP
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Eine AWS-Authentifizierungsmethode: Entweder eine IAM-Rolle oder Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen.
 +
 link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"]
@@ -84,7 +86,9 @@ Nach Abschluss des Prozesses ist der Connector für die Nutzung über BlueXP ver
 --
 .AWS Marketplace
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Ein VPC und ein Subnetz, das die Netzwerkanforderungen erfüllt
 +
 link:task-set-up-networking-aws.html["Hier erhalten Sie Informationen zu den Netzwerkanforderungen"].
@@ -94,6 +98,10 @@ link:task-set-up-networking-aws.html["Hier erhalten Sie Informationen zu den Net
 link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"].
 
 * Berechtigung zum Abonnieren und Abbestellen des AWS Marketplace für Ihren IAM-Benutzer.
+* Verständnis der CPU- und RAM-Anforderungen für die Instanz.
++
+link:reference-host-requirements-aws.html["Prüfen Sie die Instanzanforderungen"].
+
 * Ein Schlüsselpaar für die EC2-Instanz.
 
 
@@ -112,10 +120,7 @@ In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole au
 +
 ** *Name und Tags*: Geben Sie einen Namen und Tags für die Instanz ein.
 ** *Anwendung und Betriebssystembild*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.
-** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen der unterstützten Instanztypen (t3.xlarge wird empfohlen).
-+
-link:reference-host-requirements-aws.html["Prüfen Sie die Anforderungen an die Instanz"].
-
+** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.xlarge wird empfohlen).
 ** *Schlüsselpaar (Login)*: Wählen Sie das Schlüsselpaar aus, mit dem Sie eine sichere Verbindung zur Instanz herstellen möchten.
 ** *Netzwerkeinstellungen*: Bearbeiten Sie die Netzwerkeinstellungen nach Bedarf:
 +
@@ -132,9 +137,6 @@ link:reference-ports-aws.html["Sicherheitsgruppen-Regeln für AWS ansehen"].
 
 ** *Storage konfigurieren*: Behalten Sie die standardmäßigen Speicheroptionen bei.
 ** *Erweiterte Details*: Unter *IAM Instance profile* wählen Sie die IAM-Rolle, die die erforderlichen Berechtigungen für den Connector enthält.
-+
-link:task-set-up-permissions-aws.html["Erfahren Sie, wie Sie AWS-Berechtigungen einrichten"].
-
 ** *Zusammenfassung*: Lesen Sie die Zusammenfassung durch und klicken Sie auf *Instanz starten*.
 
 
@@ -166,7 +168,9 @@ Der Connector ist jetzt mit Ihrem BlueXP Konto installiert und eingerichtet.
 --
 .Manuelle Installation
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Root-Berechtigungen zum Installieren des Connectors.
 * Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist.
 +

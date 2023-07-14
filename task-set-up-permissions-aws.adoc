@@ -55,7 +55,7 @@ TIP: Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtig
 . Klicken Sie auf *JSON*.
 . Kopieren Sie die folgende Richtlinie:
 +
-Zur Erinnerung: Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS aus BlueXP erforderlich sind. link:reference-permissions-aws.html["Berechtigungen anzeigen, die für die Connector-Instanz erforderlich sind"].
+Zur Erinnerung: Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS aus BlueXP erforderlich sind. link:reference-permissions-aws.html["Berechtigungen anzeigen, die für die Connector-Instanz selbst erforderlich sind"].
 
 +
 [source, json]
@@ -163,27 +163,25 @@ Sie sollten nun über eine IAM-Rolle mit den erforderlichen Berechtigungen verf�
 
 == Richten Sie bei der Implementierung über den AWS Marketplace Berechtigungen für den Connector ein
 
-IAM-Richtlinien in AWS erstellen und an eine IAM-Rolle anhängen Wenn Sie den Connector über AWS Marketplace erstellen, werden Sie aufgefordert, diese IAM-Rolle auszuwählen.
+Zur Vorbereitung auf eine Marktbereitstellung erstellen Sie IAM-Richtlinien in AWS und hängen sie einer IAM-Rolle an. Wenn Sie den Connector über AWS Marketplace erstellen, werden Sie aufgefordert, diese IAM-Rolle auszuwählen.
 
 .Schritte
-. Erstellen Sie über die IAM-Konsole eine Richtlinie:
+. Melden Sie sich bei der AWS-Konsole an, und navigieren Sie zum IAM-Service.
+. Erstellen einer Richtlinie:
 +
 .. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
-.. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinien für den Connector"].
+.. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].
 .. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
 +
-Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen.
-
-+
-Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich.
+Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen. Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich. link:reference-permissions-aws.html["Erfahren Sie mehr über IAM-Richtlinien für den Connector"].
 
 
 
-. Erstellen Sie in der IAM-Konsole eine IAM-Rolle:
+. Erstellen einer IAM-Rolle:
 +
 .. Klicken Sie auf *Rollen > Rolle erstellen*.
 .. Wählen Sie *AWS-Service > EC2* aus.
-.. Fügen Sie Berechtigungen hinzu, indem Sie die Richtlinien anhängen, die Sie im vorherigen Schritt erstellt haben.
+.. Fügen Sie Berechtigungen hinzu, indem Sie die soeben erstellte Richtlinie anhängen.
 .. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.
 
 
@@ -196,7 +194,7 @@ Sie verfügen jetzt über eine IAM-Rolle, die Sie während der Implementierung �
 
 == Richten Sie die Berechtigungen ein, die nach der manuellen Installation zugewiesen werden sollen
 
-Wenn Sie die Connector-Software manuell auf Ihrem eigenen Linux-Host in AWS installieren, können Sie Berechtigungen wie folgt bereitstellen:
+Wenn Sie planen, die Connector-Software manuell auf Ihrem eigenen Linux-Host in AWS zu installieren, können Sie Berechtigungen wie folgt bereitstellen:
 
 * Option 1: Erstellen Sie IAM-Richtlinien und hängen Sie die Richtlinien einer IAM-Rolle an, die Sie der EC2-Instanz zuordnen können.
 * Option 2: Stellen Sie BlueXP AWS Zugriffsschlüssel für einen IAM-Benutzer bereit, der über die erforderlichen Berechtigungen verfügt.
@@ -207,24 +205,22 @@ Wenn Sie die Connector-Software manuell auf Ihrem eigenen Linux-Host in AWS inst
 .IAM-Rolle
 --
 .Schritte
-. Erstellen Sie über die IAM-Konsole eine Richtlinie:
+. Melden Sie sich bei der AWS-Konsole an, und navigieren Sie zum IAM-Service.
+. Erstellen einer Richtlinie:
 +
 .. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
 .. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].
 .. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
 +
-Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen.
-
-+
-Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich. link:reference-permissions-aws.html["Erfahren Sie mehr über IAM-Richtlinien für den Connector"].
+Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen. Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich. link:reference-permissions-aws.html["Erfahren Sie mehr über IAM-Richtlinien für den Connector"].
 
 
 
-. Erstellen Sie in der IAM-Konsole eine IAM-Rolle:
+. Erstellen einer IAM-Rolle:
 +
 .. Klicken Sie auf *Rollen > Rolle erstellen*.
 .. Wählen Sie *AWS-Service > EC2* aus.
-.. Fügen Sie Berechtigungen hinzu, indem Sie die Richtlinien anhängen, die Sie im vorherigen Schritt erstellt haben.
+.. Fügen Sie Berechtigungen hinzu, indem Sie die soeben erstellte Richtlinie anhängen.
 .. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.
 
 
@@ -237,7 +233,8 @@ Sie verfügen jetzt über eine IAM-Rolle, die Sie nach der Installation des Conn
 .AWS-Zugriffsschlüssel
 --
 .Schritte
-. Erstellen Sie über die IAM-Konsole eine Richtlinie:
+. Melden Sie sich bei der AWS-Konsole an, und navigieren Sie zum IAM-Service.
+. Erstellen einer Richtlinie:
 +
 .. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
 .. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].

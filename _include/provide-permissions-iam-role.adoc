@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+.Schritte
+. Wechseln Sie zur Amazon EC2-Konsole.
+. Wählen Sie *Instanzen*.
+. Wählen Sie die Connector-Instanz aus.
+. Wählen Sie *Actions > Security > Modify IAM Role* aus.
+. Wählen Sie die IAM-Rolle aus und klicken Sie auf *IAM-Rolle aktualisieren*.
+
+
+.Ergebnis
+BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS benötigt.

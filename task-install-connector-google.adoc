@@ -20,7 +20,9 @@ Erstellen Sie einen Connector direkt über die webbasierte BlueXP Konsole, entwe
 ====
 .BlueXP
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Die erforderlichen Google Cloud Berechtigungen, um den Connector und ein Servicekonto für die Connector VM zu erstellen.
 +
 link:task-set-up-permissions-google.html["Erfahren Sie, wie Sie Google Cloud-Berechtigungen einrichten"]
@@ -72,7 +74,9 @@ Nach Abschluss des Prozesses ist der Connector für die Nutzung über BlueXP ver
 --
 .GCloud
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Die erforderlichen Google Cloud Berechtigungen, um den Connector und ein Servicekonto für die Connector VM zu erstellen.
 +
 link:task-set-up-permissions-google.html["Erfahren Sie, wie Sie Google Cloud-Berechtigungen einrichten"]
@@ -174,7 +178,9 @@ Der Connector ist jetzt mit Ihrem BlueXP Konto installiert und eingerichtet.
 --
 .Manuelle Installation
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Root-Berechtigungen zum Installieren des Connectors.
 * Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist.
 +

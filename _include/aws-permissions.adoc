@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+. Melden Sie sich bei der AWS-Konsole an, und navigieren Sie zum IAM-Service.
+. Erstellen einer Richtlinie:
++
+.. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
+.. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].
+.. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
+
+
+
+
+. Erstellen einer IAM-Rolle:
++
+.. Klicken Sie auf *Rollen > Rolle erstellen*.
+.. Wählen Sie *AWS-Service > EC2* aus.
+.. Fügen Sie Berechtigungen hinzu, indem Sie die soeben erstellte Richtlinie anhängen.
+.. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.
+
+
+
+
+. Fügen Sie die Richtlinien einem IAM-Benutzer hinzu.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS Documentation: Erstellung von IAM-Rollen"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
+
+
+. Stellen Sie sicher, dass der Benutzer über einen Zugriffsschlüssel verfügt, den Sie nach der Installation des Connectors zu BlueXP hinzufügen können.
+

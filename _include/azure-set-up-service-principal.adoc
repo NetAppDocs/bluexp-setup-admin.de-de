@@ -1,67 +1,7 @@
----
-sidebar: sidebar 
-permalink: task-set-up-permissions-on-prem.html 
-keywords: set up permissions, cloud permissions, aws permissions, azure permissions, on prem permissions, connector permissions 
-summary: Wenn Sie BlueXP Services in AWS oder Azure mit einem On-Premises Connector nutzen möchten, müssen Sie Berechtigungen bei Ihrem Cloud-Provider einrichten, damit Sie nach der Installation die Zugangsdaten zum Connector hinzufügen können. 
----
-= Cloud-Berechtigungen für On-Premises-Implementierungen einrichten
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-Wenn Sie BlueXP Services in AWS oder Azure mit einem On-Premises Connector nutzen möchten, müssen Sie Berechtigungen bei Ihrem Cloud-Provider einrichten, damit Sie nach der Installation die Zugangsdaten zum Connector hinzufügen können.
-
-
-TIP: Warum nicht Google Cloud? Der Connector kann vor Ort installiert werden und nicht Ihre Ressourcen in Google Cloud managen. Der Connector muss in Google Cloud installiert sein, um alle dort gespeicherten Ressourcen zu managen.
-
-[role="tabbed-block"]
-====
-.AWS
---
-Wenn der Connector vor Ort installiert ist, müssen Sie BlueXP mit AWS Berechtigungen versehen, indem Sie Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen hinzufügen.
-
-Sie müssen diese Authentifizierungsmethode verwenden, wenn der Connector vor Ort installiert ist. Sie können keine IAM-Rolle verwenden.
-
-.Schritte
-. Melden Sie sich bei der AWS-Konsole an, und navigieren Sie zum IAM-Service.
-. Erstellen einer Richtlinie:
-+
-.. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
-.. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].
-.. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
-+
-Abhängig von den BlueXP Services, die Sie planen zu verwenden, müssen Sie möglicherweise eine zweite Richtlinie erstellen.
-
-+
-Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich. link:reference-permissions-aws.html["Erfahren Sie mehr über IAM-Richtlinien für den Connector"].
-
-
-
-. Fügen Sie die Richtlinien einem IAM-Benutzer hinzu.
-+
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS Documentation: Erstellung von IAM-Rollen"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS Dokumentation: Hinzufügen und Entfernen von IAM-Richtlinien"^]
-
-
-. Stellen Sie sicher, dass der Benutzer über einen Zugriffsschlüssel verfügt, den Sie nach der Installation des Connectors zu BlueXP hinzufügen können.
-
-
-.Ergebnis
-Sie sollten nun über Zugriffsschlüssel für einen IAM-Benutzer verfügen, der über die erforderlichen Berechtigungen verfügt. Nach der Installation des Connectors müssen Sie diese Anmeldeinformationen mit dem Connector von BlueXP verknüpfen.
-
-link:task-provide-permissions-on-prem.html["Erfahren Sie, wie Sie diese Berechtigungen für BlueXP bereitstellen"].
-
---
-.Azure
---
-Wenn der Connector vor Ort installiert ist, müssen Sie BlueXP mit Azure Berechtigungen versehen, indem Sie einen Service-Principal in Azure Active Directory einrichten und die für BlueXP erforderlichen Azure Zugangsdaten erhalten.
-
-.Erstellen einer Azure Active Directory Applikation zur rollenbasierten Zugriffssteuerung
 . Stellen Sie sicher, dass Sie in Azure über die Berechtigungen zum Erstellen einer Active Directory-Anwendung und zum Zuweisen der Anwendung zu einer Rolle verfügen.
 +
 Weitere Informationen finden Sie unter https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure-Dokumentation: Erforderliche Berechtigungen"^]
@@ -85,7 +25,6 @@ Sie haben die AD-Anwendung und den Service-Principal erstellt.
 
 
 
-.Anwendung einer Rolle zuweisen
 . Erstellen einer benutzerdefinierten Rolle:
 +
 .. Kopieren Sie den Inhalt des link:reference-permissions-azure.html["Benutzerdefinierte Rollenberechtigungen für den Konnektor"] Und speichern Sie sie in einer JSON-Datei.
@@ -162,7 +101,6 @@ Wenn Sie Cloud Volumes ONTAP aus mehreren Azure Subscriptions bereitstellen möc
 
 
 
-.Fügen Sie Windows Azure Service Management-API-Berechtigungen hinzu
 . Klicken Sie im *Azure Active Directory*-Dienst auf *App-Registrierungen* und wählen Sie die Anwendung aus.
 . Klicken Sie auf *API-Berechtigungen > Berechtigung hinzufügen*.
 . Wählen Sie unter *Microsoft APIs* *Azure Service Management* aus.
@@ -175,7 +113,6 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Ein Screenshot des Azure Porta
 
 
 
-.Die Anwendungs-ID und die Verzeichnis-ID für die Anwendung abrufen
 . Klicken Sie im *Azure Active Directory*-Dienst auf *App-Registrierungen* und wählen Sie die Anwendung aus.
 . Kopieren Sie die *Application (Client) ID* und die *Directory (Tenant) ID*.
 +
@@ -186,7 +123,6 @@ Wenn Sie das Azure-Konto zu BlueXP hinzufügen, müssen Sie die Anwendungs-ID (C
 
 
 
-.Erstellen Sie einen Clientschlüssel
 . Öffnen Sie den Dienst *Azure Active Directory*.
 . Klicken Sie auf *App-Registrierungen* und wählen Sie Ihre Anwendung aus.
 . Klicken Sie auf *Zertifikate & Geheimnisse > Neuer Client Secret*.
@@ -200,11 +136,3 @@ image:screenshot_azure_client_secret.gif["Ein Screenshot des Azure-Portals, in d
 Jetzt gibt es einen Client-Schlüssel, den BlueXP zur Authentifizierung mit Azure AD verwenden kann.
 
 
-
-.Ergebnis
-Ihr Service-Principal ist jetzt eingerichtet und Sie sollten die Anwendungs- (Client-)ID, die Verzeichnis- (Mandanten-)ID und den Wert des Clientgeheimnisses kopiert haben. Nach der Installation des Connectors müssen Sie diese Anmeldeinformationen mit dem Connector von BlueXP verknüpfen.
-
-link:task-provide-permissions-on-prem.html["Erfahren Sie, wie Sie diese Berechtigungen für BlueXP bereitstellen"].
-
---
-====

@@ -20,7 +20,9 @@ Erstellen Sie einen Connector direkt über die webbasierte Konsole von BlueXP, �
 ====
 .BlueXP
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Ein Azure Abonnement.
 * Eine vnet und Subnetz in Ihrer bevorzugten Azure-Region.
 * Details zu einem Proxy-Server, wenn Ihr Unternehmen einen Proxy für den gesamten ausgehenden Internet-Datenverkehr benötigt:
@@ -116,18 +118,15 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Beachten Sie beim Konfigurieren der VM Folgendes:
 
 +
-** Der Connector kann mit Festplatten der Festplatte oder der SSD optimal arbeiten.
-** Wählen Sie eine VM-Größe aus, die den CPU- und RAM-Anforderungen entspricht. Wir empfehlen DS3 v2.
-+
-link:reference-host-requirements-azure.html["VM-Anforderungen prüfen"].
-
-** Für die Netzwerksicherheitsgruppe benötigt der Connector eingehende Verbindungen unter Verwendung von SSH, HTTP und HTTPS. Für spezifische Konfigurationen sind noch einige Regeln erforderlich.
+** *VM-Größe*: Wählen Sie eine VM-Größe, die den CPU- und RAM-Anforderungen entspricht. Wir empfehlen DS3 v2.
+** *Disks*: Der Connector kann mit HDD- oder SSD-Festplatten optimal funktionieren.
+** *Netzwerksicherheitsgruppe*: Der Connector benötigt eingehende Verbindungen über SSH, HTTP und HTTPS.
 +
 link:reference-ports-azure.html["Zeigen Sie die Regeln für Sicherheitsgruppen für Azure an"].
 
-** Aktivieren Sie unter *Management* *System Assigned Managed Identity* für die Connector VM, indem Sie *ein* auswählen.
+** *Identität*: Unter *Verwaltung* wählen Sie *System zugewiesene verwaltete Identität aktivieren*.
 +
-Diese Einstellung ist wichtig, da sich die Virtual Machine Connector mit Azure Active Directory identifizieren kann, ohne dass Anmeldedaten vorhanden sind. Anschließend müssen Sie die benutzerdefinierte Rolle zuweisen, der Sie erstellt haben https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Erfahren Sie mehr über Managed Identitäten für Azure Ressourcen"^].
+Diese Einstellung ist wichtig, da sich die Virtual Machine Connector mit Azure Active Directory identifizieren kann, ohne dass Anmeldedaten vorhanden sind. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Erfahren Sie mehr über Managed Identitäten für Azure Ressourcen"^].
 
 
 
@@ -160,7 +159,9 @@ link:task-provide-permissions-azure.html["Stellen Sie BlueXP mit den Berechtigun
 --
 .Manuelle Installation
 --
-.Was Sie benötigen
+.Bevor Sie beginnen
+Sie sollten Folgendes haben:
+
 * Root-Berechtigungen zum Installieren des Connectors.
 * Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist.
 +

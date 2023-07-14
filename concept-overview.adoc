@@ -66,6 +66,8 @@ Analyse und Kontrolle:: Mit Tools können Sie Ihren Storage und Ihre Infrastrukt
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["Klassifizierung"^]
 * https://bluexp.netapp.com/digital-advisor["Digitaler Berater"^]
+* https://bluexp.netapp.com/digital-advisor["Wirtschaftliche Effizienz"^]
+* https://bluexp.netapp.com/digital-advisor["Operative Ausfallsicherheit"^]
 * https://bluexp.netapp.com/ransomware-protection["Schutz durch Ransomware"^]
 
 
@@ -90,7 +92,7 @@ Die Preise für BlueXP hängen von den Leistungen ab, die Sie verwenden möchten
 
 == Funktionsweise von BlueXP
 
-BlueXP umfasst eine webbasierte Konsole, die über die SaaS-Schicht bereitgestellt wird, Konten für Mandantenfähigkeit und Anschlüsse für das Management von Cloud Volumes ONTAP und anderen Cloud-Services.
+BlueXP umfasst eine webbasierte Konsole, die über die SaaS-Schicht bereitgestellt wird, Konten für Mandantenfähigkeit und Connectors, die Arbeitsumgebungen managen und BlueXP Cloud-Services aktivieren.
 
 
 
@@ -110,7 +112,7 @@ link:concept-netapp-accounts.html["Hier erfahren Sie mehr über Accounts"].
 
 === Anschlüsse
 
-Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. Ein Connector ermöglicht Ihnen das Management von Ressourcen und Prozessen in Ihren On-Premises- und Cloud-Umgebungen. Die Nutzung von Cloud Volumes ONTAP und anderen Datenservices ist erforderlich.
+Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. Ein Connector ermöglicht Ihnen das Management von Ressourcen und Prozessen in Ihren On-Premises- und Cloud-Umgebungen. Sie ist erforderlich, um Arbeitsumgebungen (z. B. Cloud Volumes ONTAP und lokale ONTAP-Cluster) zu managen und viele BlueXP Datenservices zu nutzen.
 
 link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].
 
