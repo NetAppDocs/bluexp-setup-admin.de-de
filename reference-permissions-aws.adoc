@@ -785,7 +785,7 @@ Der Connector stellt folgende API-Anforderungen vor, wenn Sie die Methode Suchen
 * s3:PutBucketPublicAccessBlock
 * s3:AbortMehrteilaUpload
 * s3:ListeMultipartUploadParts
-* athena:StartQueryExecutionc
+* athena:StartQueryExecution
 * athena:GetQueryResults
 * athena:GetQueryExecution
 * athena:StoppQueryExecution

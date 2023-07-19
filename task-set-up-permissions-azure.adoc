@@ -50,6 +50,8 @@ Bei beiden Optionen ist der erste Schritt das Erstellen einer benutzerdefinierte
 
 Erstellen Sie eine benutzerdefinierte Rolle, die Sie Ihrem Azure-Konto oder einem Service-Prinzipal zuweisen können.
 
+Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
+
 .Schritte
 . Kopieren Sie die erforderlichen Berechtigungen für eine neue benutzerdefinierte Rolle in Azure und speichern Sie sie in einer JSON-Datei.
 +
@@ -314,6 +316,8 @@ Wenn Sie den Connector über den Azure Marketplace bereitstellen oder die Connec
 ====
 .Benutzerdefinierte Rolle
 --
+Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
+
 .Schritte
 . Wenn Sie planen, die Software manuell auf Ihrem eigenen Host zu installieren, aktivieren Sie eine vom System zugewiesene verwaltete Identität auf der VM, sodass Sie die erforderlichen Azure-Berechtigungen über eine benutzerdefinierte Rolle bereitstellen können.
 +
@@ -391,6 +395,9 @@ Sie haben die AD-Anwendung und den Service-Principal erstellt.
 
 .Anwendung einer Rolle zuweisen
 . Erstellen einer benutzerdefinierten Rolle:
++
+Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
+
 +
 .. Kopieren Sie den Inhalt des link:reference-permissions-azure.html["Benutzerdefinierte Rollenberechtigungen für den Konnektor"] Und speichern Sie sie in einer JSON-Datei.
 .. Ändern Sie die JSON-Datei, indem Sie dem zuweisbaren Bereich Azure-Abonnement-IDs hinzufügen.

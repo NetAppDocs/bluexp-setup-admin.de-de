@@ -36,6 +36,18 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
 
 
 | Cloud Volumes ONTAP Betrieb | Eine IAM-Rolle muss mit jedem Cloud Volumes ONTAP-Node in AWS verbunden sein. Das gleiche gilt für den HA Mediator. Standardmäßig können BlueXP die IAM-Rollen für Sie erstellen lassen, Sie können jedoch Ihre eigenen Funktionen verwenden. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["Erfahren Sie, wie Sie die IAM-Rollen selbst einrichten"^] 
+
+
+| Sichern Sie On-Premises-ONTAP-Cluster in Amazon S3 | Bei der Aktivierung von Backups auf Ihren ONTAP Volumes werden Sie von BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Richten Sie S3-Berechtigungen für Backups ein"^] 
+
+
+| Sichern Sie On-Premises-ONTAP-Cluster in StorageGRID | Wenn Sie StorageGRID als Backup-Ziel für ONTAP Cluster vorbereiten, werden Sie beim BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRID als Backup-Ziel vorbereiten"^] 
+
+
+| Tiering von lokalen ONTAP Clustern zu AWS | Wenn Sie BlueXP Tiering zu AWS aktivieren, werden Sie vom Assistenten aufgefordert, einen Zugriffsschlüssel und einen geheimen Schlüssel einzugeben. Diese Anmeldedaten werden an den ONTAP Cluster weitergeleitet, sodass ONTAP Daten-Tiering in den S3-Bucket durchführen kann. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["S3-Berechtigungen für Tiering einrichten"^] 
+
+
+| Tiering von lokalen ONTAP Clustern zu StorageGRID | Wenn Sie BlueXP Tiering auf StorageGRID einrichten, müssen Sie für BlueXP Tiering einen S3 Zugriffsschlüssel und einen geheimen Schlüssel bereitstellen. BlueXP Tiering verwendet die Schlüssel für den Zugriff auf Ihre Buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Tiering in StorageGRID vorbereiten"^] 
 |===
 
 
@@ -74,4 +86,20 @@ link:reference-permissions-azure.html["Azure-Berechtigungen für den Connector"]
 | Verbindungsbetrieb | Das Servicekonto für die Connector-VM-Instanz muss über spezielle Berechtigungen für den täglichen Betrieb verfügen. Sie müssen das Servicekonto mit dem Connector verknüpfen, wenn Sie es über BlueXP bereitstellen.
 
 Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden. | link:reference-permissions-gcp.html["Google Cloud-Berechtigungen für den Connector"] 
+
+
+| Backup von Cloud Volumes ONTAP in der Google Cloud  a| 
+Wenn Sie BlueXP Backup und Recovery für ein Backup von Cloud Volumes ONTAP verwenden, müssen Sie in den folgenden Szenarien Berechtigungen zum Connector hinzufügen:
+
+* Sie möchten die Funktion „Suchen & Wiederherstellen“ verwenden
+* Sie möchten vom Kunden gemanagte Verschlüsselungsschlüssel (CMEK) verwenden.
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["Berechtigungen für die Funktion Suchen  Wiederherstellen"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["Berechtigungen für CMEKs"^]
+
+
+
+
+| Backup von lokalen ONTAP Clustern in Google Cloud | Wenn Sie Backup und Recovery von lokalen ONTAP-Clustern mit BlueXP nutzen, müssen Sie Berechtigungen zum Connector hinzufügen, um die Funktion „Suchen und Wiederherstellen“ nutzen zu können. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Berechtigungen für die Funktion Suchen  Wiederherstellen"^] 
 |===

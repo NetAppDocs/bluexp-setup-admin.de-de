@@ -274,6 +274,8 @@ Das Konto verfügt nun über die erforderlichen Berechtigungen.
 --
 Erstellen einer benutzerdefinierten Azure-Rolle mit den erforderlichen Berechtigungen. Sie werden diese Rolle der Connector-VM zuweisen.
 
+Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
+
 .Schritte
 . Aktivieren Sie eine vom System zugewiesene gemanagte Identität auf der VM, bei der Sie den Connector installieren möchten, damit Sie die erforderlichen Azure-Berechtigungen über eine benutzerdefinierte Rolle bereitstellen können.
 +
@@ -349,6 +351,9 @@ Sie haben die AD-Anwendung und den Service-Principal erstellt.
 
 .Anwendung einer Rolle zuweisen
 . Erstellen einer benutzerdefinierten Rolle:
++
+Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
+
 +
 .. Kopieren Sie den Inhalt des link:reference-permissions-azure.html["Benutzerdefinierte Rollenberechtigungen für den Konnektor"] Und speichern Sie sie in einer JSON-Datei.
 .. Ändern Sie die JSON-Datei, indem Sie dem zuweisbaren Bereich Azure-Abonnement-IDs hinzufügen.

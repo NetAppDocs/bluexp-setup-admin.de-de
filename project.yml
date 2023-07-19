@@ -35,7 +35,7 @@ sidebar:
       entries:
       - title: Schnellstart
         url: "/task-quick-start-standard-mode.html"
-      - title: Netzwerk für Konsolenzugriff
+      - title: Netzwerkvorbereitung
         url: "/reference-networking-saas-console.html"
       - title: Melden Sie sich bei BlueXP an
         url: "/task-sign-up-saas.html"

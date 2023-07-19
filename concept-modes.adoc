@@ -237,7 +237,7 @@ image:diagram-private-mode-onprem.png["Ein konzeptuelles Bild zeigt ein lokales 
 
 BlueXP arbeitet im privaten Modus wie folgt:
 
-Ausgehende Kommunikation:: Es ist keine ausgehende Verbindung erforderlich. Alle Pakete, Abhängigkeiten und wesentlichen Komponenten werden mit dem Connector verpackt und von der lokalen Maschine bedient. Eine Verbindung zu den öffentlich verfügbaren Ressourcen Ihres Cloud-Providers ist nur erforderlich, wenn Sie Cloud Volumes ONTAP implementieren.
+Ausgehende Kommunikation:: Auf der BlueXP SaaS-Ebene ist keine ausgehende Konnektivität erforderlich. Alle Pakete, Abhängigkeiten und wesentlichen Komponenten werden mit dem Connector verpackt und von der lokalen Maschine bedient. Eine Verbindung zu den öffentlich verfügbaren Ressourcen Ihres Cloud-Providers ist nur erforderlich, wenn Sie Cloud Volumes ONTAP implementieren.
 Unterstützter Speicherort für den Connector:: Im privaten Modus wird der Connector in der Cloud oder On-Premises unterstützt.
 Steckverbinderinstallation:: Manuelle Installationen des Connectors werden auf Ihrem eigenen Linux-Host in der Cloud oder vor Ort unterstützt.
 Connector-Upgrades:: Sie müssen die Connector-Software manuell aktualisieren. Die Connector Software wird in undefinierten Intervallen auf der NetApp Support Website veröffentlicht.

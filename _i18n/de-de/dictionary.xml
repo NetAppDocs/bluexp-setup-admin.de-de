@@ -612,16 +612,6 @@
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">Für Ihren Produkt-Chat, der Ihnen das Gespräch mit NetApp Cloud-Experten ermöglicht.</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Weiterführende Links</block>
-  <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">Networking für Benutzerzugriff auf die BlueXP Konsole vorbereiten (eingeschränkter Modus)</block>
-  <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
-  <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">Endpunkte, die der Connector in AWS kontaktiert (Standard-Modus)</block>
-  <block id="4904eb58ec6f09d17bea1bcb4209ac4b" category="list-text"><block ref="4904eb58ec6f09d17bea1bcb4209ac4b" category="inline-link-macro-rx"></block></block>
-  <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">Endpunkte, die der Connector in Azure kontaktiert (Standardmodus)</block>
-  <block id="1a989b3502c194d5e9de1168533c7d28" category="list-text"><block ref="1a989b3502c194d5e9de1168533c7d28" category="inline-link-macro-rx"></block></block>
-  <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">Endpunkte, die der Connector in Google Cloud kontaktiert (Standardmodus)</block>
-  <block id="ef12cf012477b5ad02d81be8ada8b95c" category="list-text"><block ref="ef12cf012477b5ad02d81be8ada8b95c" category="inline-link-macro-rx"></block></block>
-  <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">Endpunkte wurden während der manuellen Installation des Connectors kontaktiert (Standardmodus)</block>
-  <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
   <block id="96b84799107df797728622ab026d748b" category="summary">Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt. Wenn Sie den Connector manuell installieren möchten, sollten Sie sicherstellen, dass Ihr Host diese Anforderungen erfüllt.</block>
   <block id="d5512feab068baeeddb3ea0cf10f8cca" category="doc">Connector-Host-Anforderungen für AWS-Installationen prüfen</block>
   <block id="512bfa3bd93d6398b4e5010a77b6b397" category="paragraph">Wenn Sie den Connector von BlueXP oder aus dem AWS Marketplace implementieren, enthält das Image die erforderlichen Betriebssystem- und Softwarekomponenten.</block>
@@ -1582,7 +1572,6 @@
   <block id="b9ddada4de32510796065dc8e8165711" category="list-text">s3:PutBucketAcl</block>
   <block id="e24d90c482d00361a495cd937be3bb7b" category="list-text">s3:AbortMehrteilaUpload</block>
   <block id="9c6f56f3012c2178f15d4346495a0a67" category="list-text">s3:ListeMultipartUploadParts</block>
-  <block id="7cd7eca4bb03196079ee9a9bde3115be" category="list-text">athena:StartQueryExecutionc</block>
   <block id="95c87da99fc1ee2016d0e9c8cb02409d" category="list-text">athena:GetQueryResults</block>
   <block id="f0fba07e47b7e372e7ac0e365ea7027a" category="list-text">athena:GetQueryExecution</block>
   <block id="0c6b0369ea554dd3ec72e592055d373a" category="list-text">athena:StoppQueryExecution</block>
@@ -3491,7 +3480,6 @@ Wenn Sie ein On-Premises-Cluster mit einem Connector ermitteln, wird die erweite
   <block id="abe210b497cdf1c7a95420fde5e0a084" category="inline-image-macro">Ein konzeptuelles Bild zeigt ein lokales Datacenter, in dem ein Connector ausgeführt wird und Zugriff auf die webbasierte Konsole BlueXP Datenservices bietet. Es managt auch ein AFF Cluster in einem lokalen Datacenter.</block>
   <block id="f93e5962b5e90d7eb1d0880c090f849c" category="paragraph"><block ref="f93e5962b5e90d7eb1d0880c090f849c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="310027a7e917a90953e50ed1339f3406" category="paragraph">BlueXP arbeitet im privaten Modus wie folgt:</block>
-  <block id="a5bf6d8e8d31bd0e05715d6710d5cf96" category="list-text">Es ist keine ausgehende Verbindung erforderlich. Alle Pakete, Abhängigkeiten und wesentlichen Komponenten werden mit dem Connector verpackt und von der lokalen Maschine bedient. Eine Verbindung zu den öffentlich verfügbaren Ressourcen Ihres Cloud-Providers ist nur erforderlich, wenn Sie Cloud Volumes ONTAP implementieren.</block>
   <block id="f3c1a94d2912b274af9305a55f3a5898" category="list-text">Im privaten Modus wird der Connector in der Cloud oder On-Premises unterstützt.</block>
   <block id="353a8aa5f642372473dec3b281845de2" category="list-text">Manuelle Installationen des Connectors werden auf Ihrem eigenen Linux-Host in der Cloud oder vor Ort unterstützt.</block>
   <block id="7de085033718a90f09298783df66d7f7" category="list-text">Sie müssen die Connector-Software manuell aktualisieren. Die Connector Software wird in undefinierten Intervallen auf der NetApp Support Website veröffentlicht.</block>
@@ -3639,7 +3627,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="9b945efebb006547a94415eadaa12921" category="sidebar">Konten</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">Beginnen Sie mit dem Standardmodus</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Schnellstart</block>
-  <block id="b6eaf46c3af8004a4733f11af5b7b7a4" category="sidebar">Netzwerk für Konsolenzugriff</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">Melden Sie sich bei BlueXP an</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">Einen Konnektor erstellen</block>
   <block id="ea206a7167c7e693d778525a7c87c869" category="sidebar">Installationsoptionen an</block>
@@ -3783,4 +3770,49 @@ Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.</block>
   <block id="06b41e54acce796724e94edceaa8bd8c" category="paragraph"><block ref="172f848c0eaf289ec1091e3eb6e7272a" category="inline-link-macro-rx"></block>.</block>
   <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">Sie können jetzt die öffnen<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> Um den Connector mit BlueXP zu verwenden.</block>
+  <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Azure-Dokumentation</block>
+  <block id="5c5eae78661bfbe6d566f6e00a0b5a67" category="paragraph">Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter<block ref="9dee1d16cb9c40964c81f1bda0fd9839" category="inline-link-rx"></block></block>
+  <block id="5377c5407df56ba84e782b4e83f6c6ba" category="cell">Sichern Sie On-Premises-ONTAP-Cluster in Amazon S3</block>
+  <block id="adfa465566f5539105be4291db1cc510" category="cell">Bei der Aktivierung von Backups auf Ihren ONTAP Volumes werden Sie von BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben.</block>
+  <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">Richten Sie S3-Berechtigungen für Backups ein</block>
+  <block id="3a723efda81312f328c7de4a7741cb2c" category="cell"><block ref="3a723efda81312f328c7de4a7741cb2c" category="inline-link-rx"></block></block>
+  <block id="9f60318dba873b8aa280da655451eafb" category="cell">Sichern Sie On-Premises-ONTAP-Cluster in StorageGRID</block>
+  <block id="649c5239d0163afb3411e36c5e857809" category="cell">Wenn Sie StorageGRID als Backup-Ziel für ONTAP Cluster vorbereiten, werden Sie beim BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben.</block>
+  <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">StorageGRID als Backup-Ziel vorbereiten</block>
+  <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
+  <block id="746562efc5b1b0667c7d322c1bda9554" category="cell">Tiering von lokalen ONTAP Clustern zu AWS</block>
+  <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">Wenn Sie BlueXP Tiering zu AWS aktivieren, werden Sie vom Assistenten aufgefordert, einen Zugriffsschlüssel und einen geheimen Schlüssel einzugeben. Diese Anmeldedaten werden an den ONTAP Cluster weitergeleitet, sodass ONTAP Daten-Tiering in den S3-Bucket durchführen kann.</block>
+  <block id="827bb82562627531a1105788bd9826e6" category="inline-link">S3-Berechtigungen für Tiering einrichten</block>
+  <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
+  <block id="15160ee45cf43a64b4673fc1b3aa1643" category="cell">Tiering von lokalen ONTAP Clustern zu StorageGRID</block>
+  <block id="723b7068534c515d953009f9999562b7" category="cell">Wenn Sie BlueXP Tiering auf StorageGRID einrichten, müssen Sie für BlueXP Tiering einen S3 Zugriffsschlüssel und einen geheimen Schlüssel bereitstellen. BlueXP Tiering verwendet die Schlüssel für den Zugriff auf Ihre Buckets.</block>
+  <block id="7642cdcc7094ebeb3d2e2a2bb2bfa636" category="inline-link">Tiering in StorageGRID vorbereiten</block>
+  <block id="d3e3e33f096d4100a0477da8e5e0fa16" category="cell"><block ref="d3e3e33f096d4100a0477da8e5e0fa16" category="inline-link-rx"></block></block>
+  <block id="b5b529e8dc821910caacb50b880d2487" category="cell">Backup von Cloud Volumes ONTAP in der Google Cloud</block>
+  <block id="498541290e9165e5844d20ce7c56fdce" category="paragraph">Wenn Sie BlueXP Backup und Recovery für ein Backup von Cloud Volumes ONTAP verwenden, müssen Sie in den folgenden Szenarien Berechtigungen zum Connector hinzufügen:</block>
+  <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">Sie möchten die Funktion „Suchen &amp; Wiederherstellen“ verwenden</block>
+  <block id="0ce14c433ae57608c1aced4d631bc039" category="list-text">Sie möchten vom Kunden gemanagte Verschlüsselungsschlüssel (CMEK) verwenden.</block>
+  <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">Berechtigungen für die Funktion Suchen &amp;amp; Wiederherstellen</block>
+  <block id="aae920cbe0beab1a7b76937b223c2d92" category="list-text"><block ref="4b3b7e478cad27964ed24a4ab3fe4c45" category="inline-link-rx"></block></block>
+  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">Berechtigungen für CMEKs</block>
+  <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
+  <block id="6e9436752850e460930666efdaf1e025" category="cell">Backup von lokalen ONTAP Clustern in Google Cloud</block>
+  <block id="c37ee52df9a55f654f757f6a622c2ab8" category="cell">Wenn Sie Backup und Recovery von lokalen ONTAP-Clustern mit BlueXP nutzen, müssen Sie Berechtigungen zum Connector hinzufügen, um die Funktion „Suchen und Wiederherstellen“ nutzen zu können.</block>
+  <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
+  <block id="7ffe8e26fad260dce8ed03b3e7fc57c8" category="summary">Stellen Sie bei den ersten Schritten mit BlueXP sicher, dass Ihr Netzwerk über die BlueXP Konsole Zugriff auf bestimmte Endpunkte ermöglicht. Je nachdem, wie Sie BlueXP planten, müssen Sie möglicherweise auch Networking für einen Connector und für bestimmte BlueXP Services einrichten.</block>
+  <block id="26ea1904ce9dbe48d4e4700d1357e591" category="doc">Bereiten Sie Ihr Netzwerk vor</block>
+  <block id="045416b62d2dbcb0a3156290bfb14bc5" category="paragraph">Über diese Endpunkte hinaus müssen Sie auch sicherstellen, dass der Connector über einen ausgehenden Internetzugang zu kontaktspezifischen Endpunkten für den täglichen Betrieb verfügt. Die Liste dieser Endpunkte finden Sie unter den Links im nächsten Abschnitt unten.</block>
+  <block id="1227c418a40b8840e4c8a82551fe4b79" category="section-title">Bereiten Sie die Vernetzung für einen Connector vor</block>
+  <block id="3f946e1b2eb47723c4cdafa491ff55a8" category="paragraph">Wie Sie Ihr Netzwerk auf einen Connector vorbereiten, hängt davon ab, wo Sie den Connector installieren möchten, der sich in der Cloud oder vor Ort befinden kann. Weitere Informationen zu den Netzwerkanforderungen des Connectors finden Sie auf den folgenden Seiten:</block>
+  <block id="8ba51ecb80ef097f62d41ff21811facd" category="list-text"><block ref="8ba51ecb80ef097f62d41ff21811facd" category="inline-link-macro-rx"></block></block>
+  <block id="caa5e6c77b861f1924e25b728934c86c" category="list-text"><block ref="caa5e6c77b861f1924e25b728934c86c" category="inline-link-macro-rx"></block></block>
+  <block id="e10d8dd0770b58818461a0254486dc85" category="list-text"><block ref="e10d8dd0770b58818461a0254486dc85" category="inline-link-macro-rx"></block></block>
+  <block id="b0922574fc254af5af9ea76293d3103a" category="list-text"><block ref="b0922574fc254af5af9ea76293d3103a" category="inline-link-macro-rx"></block></block>
+  <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">Networking für BlueXP Services vorbereiten</block>
+  <block id="e9b3a40645009b297636fbacdb5f7e76" category="paragraph">Bei den ersten Schritten mit BlueXP sollten Sie sicherstellen, dass die Netzwerkanforderungen für die von Ihnen geplanten BlueXP Services erfüllt sind. Weitere Informationen finden Sie in der Dokumentation zu den einzelnen Services.</block>
+  <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP-Dokumentation</block>
+  <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
+  <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">athena:StartQueryExecution</block>
+  <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">Auf der BlueXP SaaS-Ebene ist keine ausgehende Konnektivität erforderlich. Alle Pakete, Abhängigkeiten und wesentlichen Komponenten werden mit dem Connector verpackt und von der lokalen Maschine bedient. Eine Verbindung zu den öffentlich verfügbaren Ressourcen Ihres Cloud-Providers ist nur erforderlich, wenn Sie Cloud Volumes ONTAP implementieren.</block>
+  <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">Netzwerkvorbereitung</block>
 </blocks>
