@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions.html 
 keywords: permissions, actions 
-summary: Um die Funktionen und Services in BlueXP nutzen zu können, müssen Sie Berechtigungen bereitstellen, damit BlueXP die Abläufe in Ihrer Cloud-Umgebung ausführen kann. Über die Links auf dieser Seite können Sie schnell auf die in BlueXP erforderlichen Berechtigungen zugreifen. 
+summary: Um Funktionen und Services von BlueXP nutzen zu können, müssen Sie Berechtigungen bereitstellen, damit BlueXP Vorgänge in Ihrer Cloud-Umgebung ausführen kann. Über die Links auf dieser Seite können Sie schnell auf die Berechtigungen zugreifen, die Sie basierend auf Ihrem Ziel benötigen. 
 ---
 = Zusammenfassung der Berechtigungen für BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Um die Funktionen und Services in BlueXP nutzen zu können, müssen Sie
 
 
 [role="lead"]
-Um die Funktionen und Services in BlueXP nutzen zu können, müssen Sie Berechtigungen bereitstellen, damit BlueXP die Abläufe in Ihrer Cloud-Umgebung ausführen kann. Über die Links auf dieser Seite können Sie schnell auf die Berechtigungen zugreifen, die Sie basierend auf Ihrem Ziel benötigen.
+Um Funktionen und Services von BlueXP nutzen zu können, müssen Sie Berechtigungen bereitstellen, damit BlueXP Vorgänge in Ihrer Cloud-Umgebung ausführen kann. Über die Links auf dieser Seite können Sie schnell auf die Berechtigungen zugreifen, die Sie basierend auf Ihrem Ziel benötigen.
 
 
 
@@ -41,13 +41,7 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
 | Sichern Sie On-Premises-ONTAP-Cluster in Amazon S3 | Bei der Aktivierung von Backups auf Ihren ONTAP Volumes werden Sie von BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Richten Sie S3-Berechtigungen für Backups ein"^] 
 
 
-| Sichern Sie On-Premises-ONTAP-Cluster in StorageGRID | Wenn Sie StorageGRID als Backup-Ziel für ONTAP Cluster vorbereiten, werden Sie beim BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRID als Backup-Ziel vorbereiten"^] 
-
-
-| Tiering von lokalen ONTAP Clustern zu AWS | Wenn Sie BlueXP Tiering zu AWS aktivieren, werden Sie vom Assistenten aufgefordert, einen Zugriffsschlüssel und einen geheimen Schlüssel einzugeben. Diese Anmeldedaten werden an den ONTAP Cluster weitergeleitet, sodass ONTAP Daten-Tiering in den S3-Bucket durchführen kann. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["S3-Berechtigungen für Tiering einrichten"^] 
-
-
-| Tiering von lokalen ONTAP Clustern zu StorageGRID | Wenn Sie BlueXP Tiering auf StorageGRID einrichten, müssen Sie für BlueXP Tiering einen S3 Zugriffsschlüssel und einen geheimen Schlüssel bereitstellen. BlueXP Tiering verwendet die Schlüssel für den Zugriff auf Ihre Buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Tiering in StorageGRID vorbereiten"^] 
+| Das Tiering lokaler ONTAP Cluster zu Amazon S3 | Wenn Sie BlueXP Tiering zu AWS aktivieren, werden Sie vom Assistenten aufgefordert, einen Zugriffsschlüssel und einen geheimen Schlüssel einzugeben. Diese Anmeldedaten werden an den ONTAP Cluster weitergeleitet, sodass ONTAP Daten-Tiering in den S3-Bucket durchführen kann. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["S3-Berechtigungen für Tiering einrichten"^] 
 |===
 
 
@@ -102,4 +96,18 @@ Wenn Sie BlueXP Backup und Recovery für ein Backup von Cloud Volumes ONTAP verw
 
 
 | Backup von lokalen ONTAP Clustern in Google Cloud | Wenn Sie Backup und Recovery von lokalen ONTAP-Clustern mit BlueXP nutzen, müssen Sie Berechtigungen zum Connector hinzufügen, um die Funktion „Suchen und Wiederherstellen“ nutzen zu können. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Berechtigungen für die Funktion Suchen  Wiederherstellen"^] 
+|===
+
+
+== StorageGRID-Berechtigungen
+
+[cols="25,60,40"]
+|===
+| Zweck | Beschreibung | Verlinken 
+
+
+| Sichern Sie On-Premises-ONTAP-Cluster in StorageGRID | Wenn Sie StorageGRID als Backup-Ziel für ONTAP Cluster vorbereiten, werden Sie beim BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["StorageGRID als Backup-Ziel vorbereiten"^] 
+
+
+| Tiering von lokalen ONTAP Clustern zu StorageGRID | Wenn Sie BlueXP Tiering auf StorageGRID einrichten, müssen Sie für BlueXP Tiering einen S3 Zugriffsschlüssel und einen geheimen Schlüssel bereitstellen. BlueXP Tiering verwendet die Schlüssel für den Zugriff auf Ihre Buckets. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Tiering in StorageGRID vorbereiten"^] 
 |===
