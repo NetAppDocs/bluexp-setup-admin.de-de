@@ -181,7 +181,7 @@ In den folgenden Abschnitten wird die Nutzung der Berechtigungen für jeden Blue
 
 === Azure NetApp Dateien
 
-Der Connector stellt folgende API-Anforderungen zur Verwaltung von Azure NetApp Files-Arbeitsumgebungen vor:
+Wenn Sie die BlueXP Klassifizierung zum Scannen von Azure NetApp Files-Daten verwenden, stellt der Connector die folgenden API-Anforderungen:
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

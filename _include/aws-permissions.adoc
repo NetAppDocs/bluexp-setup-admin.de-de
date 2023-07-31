@@ -5,7 +5,7 @@
 . Melden Sie sich bei der AWS-Konsole an, und navigieren Sie zum IAM-Service.
 . Erstellen einer Richtlinie:
 +
-.. Klicken Sie auf *Richtlinien > Richtlinien erstellen*.
+.. Wählen Sie *Policies > Create Policy* aus.
 .. Wählen Sie *JSON* aus, kopieren Sie den Inhalt des link:reference-permissions-aws.html["IAM-Richtlinie für den Connector"].
 .. Beenden Sie die verbleibenden Schritte, um die Richtlinie zu erstellen.
 
@@ -14,7 +14,7 @@
 
 . Erstellen einer IAM-Rolle:
 +
-.. Klicken Sie auf *Rollen > Rolle erstellen*.
+.. Wählen Sie *Rollen > Rolle erstellen*.
 .. Wählen Sie *AWS-Service > EC2* aus.
 .. Fügen Sie Berechtigungen hinzu, indem Sie die soeben erstellte Richtlinie anhängen.
 .. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.

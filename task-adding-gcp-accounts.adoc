@@ -23,16 +23,16 @@ Sie können die Google Cloud-Anmeldedaten verwalten, die mit der VM-Instanz Conn
 Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmeldedaten verknüpft ist. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Associate Subscription*.
 +
 image:screenshot_gcp_add_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie in der Down-Liste ein Google Cloud-Projekt und ein Abonnement aus und klicken Sie dann auf *Mitarbeiter*.
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie ein Google Cloud-Projekt und ein Abonnement aus der Down-Liste aus, und wählen Sie dann *Associate* aus.
 +
 image:screenshot_gcp_associate.gif["Ein Screenshot eines Google Cloud-Projekts und Abonnements, das für Google Cloud-Anmeldedaten ausgewählt wurde."]
 
-. Wenn Sie noch kein Abonnement haben, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im Google Cloud Marketplace.
+. Wenn Sie noch kein Abonnement besitzen, wählen Sie *Abonnement hinzufügen > Weiter* und folgen Sie den Schritten im Google Cloud Marketplace.
 +
 
 NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Sie sowohl Billing Admin-Berechtigungen in Ihrem Google Cloud-Konto als auch BlueXP-Login haben.
@@ -42,13 +42,13 @@ NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Si
 +
 image:screenshot_gcp_cvo_marketplace.png["Ein Screenshot der Cloud Volumes ONTAP Marketplace-Seite in Google Cloud"]
 
-.. Klicken Sie Auf *Abonnieren*.
+.. Wählen Sie *Abonnieren*.
 .. Wählen Sie das entsprechende Rechnungskonto aus und stimmen Sie den allgemeinen Geschäftsbedingungen zu.
-.. Klicken Sie Auf *Abonnieren*.
+.. Wählen Sie *Abonnieren*.
 +
 Dieser Schritt sendet Ihre Transferanfrage an NetApp.
 
-.. Klicken Sie im Popup-Dialogfeld auf *Registrieren Sie sich mit NetApp, Inc.*
+.. Wählen Sie im Popup-Dialogfeld *Registrierung bei NetApp, Inc.* aus
 +
 Dieser Schritt muss abgeschlossen sein, um das Google Cloud Abonnement mit Ihrem BlueXP Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.
 
@@ -69,7 +69,7 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 +
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
-*** Klicken Sie Auf *Speichern*.
+*** Wählen Sie *Speichern*.
 +
 Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:
 

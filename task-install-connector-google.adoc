@@ -35,15 +35,15 @@ link:task-set-up-networking-google.html["Hier erhalten Sie Informationen zu den 
 
 
 .Schritte
-. Klicken Sie auf die Dropdown-Liste *Connector* und wählen Sie *Connector hinzufügen*.
+. Wählen Sie die Dropdown-Liste *Connector* aus und wählen Sie *Connector hinzufügen* aus.
 +
 image:screenshot_connector_add.gif["Ein Screenshot, in dem das Symbol Connector in der Kopfzeile und die Aktion Connector hinzufügen angezeigt wird."]
 
 . Wählen Sie *Google Cloud Platform* als Cloud-Provider.
 . Lesen Sie auf der Seite *Bereitstellen eines Konnektors* die Details dazu, was Sie benötigen. Sie haben zwei Möglichkeiten:
 +
-.. Klicken Sie auf *Weiter*, um die Bereitstellung mithilfe des Produktleitfadens vorzubereiten. Jeder Schritt im Produktleitfaden enthält die Informationen, die auf dieser Seite der Dokumentation enthalten sind.
-.. Klicken Sie auf *Skip to Deployment*, wenn Sie bereits mit den Schritten auf dieser Seite vorbereitet sind.
+.. Wählen Sie *Weiter*, um die Bereitstellung mithilfe des Produktleitfadens vorzubereiten. Jeder Schritt im Produktleitfaden enthält die Informationen, die auf dieser Seite der Dokumentation enthalten sind.
+.. Wählen Sie *Skip to Deployment*, wenn Sie bereits vorbereitet haben, indem Sie die Schritte auf dieser Seite befolgen.
 
 
 . Befolgen Sie die Schritte im Assistenten, um den Konnektor zu erstellen:
@@ -62,7 +62,7 @@ link:reference-ports-gcp.html["Firewall-Regeln in Google Cloud"]
 ** *Review*: Überprüfen Sie Ihre Auswahl, um zu überprüfen, ob Ihre Einrichtung korrekt ist.
 
 
-. Klicken Sie Auf *Hinzufügen*.
+. Wählen Sie *Hinzufügen*.
 +
 Die Instanz sollte in ca. 7 Minuten fertig sein. Sie sollten auf der Seite bleiben, bis der Vorgang abgeschlossen ist.
 
@@ -271,7 +271,7 @@ https://_ipaddress_[]
 +
 Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. Der eingeschränkte Modus sollte nur aktiviert werden, wenn Sie über eine sichere Umgebung verfügen und dieses Konto von den BlueXP Backend-Services trennen möchten. Wenn das der Fall ist, link:task-quick-start-restricted-mode.html["Befolgen Sie die Schritte für den Einstieg in BlueXP im eingeschränkten Modus"].
 
-.. Klicken Sie auf *Let's Start*.
+.. Wählen Sie *Start*.
 
 
 

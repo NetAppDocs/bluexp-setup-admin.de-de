@@ -93,6 +93,9 @@ Der Benutzer kann nicht mehr auf die Ressourcen in diesem BlueXP Konto zugreifen
 
 Sie können Workspace-Administratoren jederzeit mit Arbeitsbereichen verknüpfen und sie ablösen. Durch die Verknüpfung des Benutzers können die Arbeitsumgebungen in diesem Arbeitsbereich erstellt und angezeigt werden.
 
+
+NOTE: Sie müssen den Connector auch mit Workspaces verknüpfen, damit Workspace-Administratoren auf die Workspaces von BlueXP zugreifen können. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["Erfahren Sie, wie Sie die Arbeitsbereiche eines Connectors verwalten"].
+
 .Schritte
 . Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
 +
@@ -171,7 +174,7 @@ image:screenshot_service_account_actions.gif["Ein Screenshot, der das Aktionsmen
 
 === Schlüssel neu erstellen
 
-Durch Neuerstellen des Schlüssels wird der vorhandene Schlüssel für dieses Servicekonto gelöscht und anschließend ein neuer Schlüssel erstellt. Sie können den vorherigen Schlüssel nicht verwenden.
+Durch Neuerstellen des Schlüssels wird der vorhandene Schlüssel für dieses Servicekonto gelöscht und anschließend ein neuer Schlüssel erstellt. Sie können die vorherige Taste nicht verwenden.
 
 .Schritte
 . Wählen Sie auf der Registerkarte Mitglieder das Aktionsmenü in der Zeile aus, die dem Servicekonto entspricht.
@@ -217,6 +220,9 @@ Verwalten Sie Ihre Arbeitsbereiche, indem Sie sie erstellen, umbenennen und lös
 ** Wählen Sie *Umbenennen*, um den Arbeitsbereich umzubenennen.
 ** Wählen Sie *Löschen*, um den Arbeitsbereich zu löschen.
 
+
++
+Wenn Sie einen neuen Arbeitsbereich erstellt haben, müssen Sie den Connector auch zu diesem Arbeitsbereich hinzufügen. Wenn Sie den Connector nicht hinzufügen, können Workspace-Administratoren auf keine der Ressourcen im Arbeitsbereich zugreifen. Weitere Informationen finden Sie im folgenden Abschnitt.
 
 
 

@@ -46,7 +46,7 @@ Die folgende Tabelle enthält einen Vergleich zwischen dem Benachrichtigungscent
 
 Benachrichtigungen verfolgen den Fortschritt der Vorgänge, die Sie in BlueXP initiiert haben, damit Sie überprüfen können, ob der Vorgang erfolgreich war oder nicht. Mit diesen können Sie den Status vieler BlueXP-Aktionen anzeigen, die Sie während Ihrer aktuellen Anmeldesitzung initiiert haben. Derzeit werden nicht alle BlueXP Services dem Benachrichtigungs-Center gemeldet.
 
-Sie können die Benachrichtigungen anzeigen, indem Sie auf die Benachrichtigungs-Bell ( klickenimage:icon_bell.png["Benachrichtigungsglocke"]) In der Menüleiste. Die Farbe der kleinen Blase in der Glocke zeigt die Meldung mit dem höchsten Schweregrad an, die aktiv ist. Wenn Sie also eine rote Blase sehen, bedeutet dies, dass eine wichtige Benachrichtigung angezeigt wird, die Sie sich ansehen sollten.
+Sie können die Benachrichtigungen anzeigen, indem Sie die Benachrichtigungsanzeige (image:icon_bell.png["Benachrichtigungsglocke"]) In der Menüleiste. Die Farbe der kleinen Blase in der Glocke zeigt die Meldung mit dem höchsten Schweregrad an, die aktiv ist. Wenn Sie also eine rote Blase sehen, bedeutet dies, dass eine wichtige Benachrichtigung angezeigt wird, die Sie sich ansehen sollten.
 
 image:screenshot_notification_full.png["Ein Screenshot mit einer Liste aktueller Benachrichtigungen im Benachrichtigungszentrum."]
 

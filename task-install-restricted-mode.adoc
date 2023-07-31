@@ -47,12 +47,12 @@ link:task-prepare-restricted-mode.html#review-host-requirements["Prüfen Sie die
 
 .Schritte
 . Wechseln Sie zum https://aws.amazon.com/marketplace/pp/B018REK8QG["Seite „BlueXP“ im AWS Marketplace"^]
-. Klicken Sie auf der Marketplace-Seite auf *Weiter zur Anmeldung* und dann auf *Weiter zur Konfiguration*.
+. Wählen Sie auf der Marketplace-Seite *Weiter zu Abonnieren* und wählen Sie dann *Weiter zu Konfiguration*.
 +
 image:screenshot-subscribe-aws.png["Ein Screenshot, der die Schaltflächen „Weiter zu Abonnieren“ und „Weiter zu Konfiguration“ im AWS Marketplace zeigt."]
 
-. Ändern Sie eine der Standardoptionen, und klicken Sie auf *Weiter zum Starten*.
-. Wählen Sie unter *Aktion auswählen* *über EC2 starten* und klicken Sie dann auf *Start*.
+. Ändern Sie eine der Standardoptionen, und wählen Sie *Weiter zum Starten*.
+. Wählen Sie unter *Aktion auswählen* die Option *über EC2 starten* aus und wählen Sie dann *Start* aus.
 +
 In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole aus starten, da Sie über die Konsole eine IAM-Rolle an die Connector-Instanz anhängen können. Dies ist mit der Aktion * von Website starten* nicht möglich.
 
@@ -77,7 +77,7 @@ link:reference-ports-aws.html["Sicherheitsgruppen-Regeln für AWS ansehen"].
 
 ** *Storage konfigurieren*: Behalten Sie die standardmäßigen Speicheroptionen bei.
 ** *Erweiterte Details*: Unter *IAM Instance profile* wählen Sie die IAM-Rolle, die die erforderlichen Berechtigungen für den Connector enthält.
-** *Zusammenfassung*: Lesen Sie die Zusammenfassung durch und klicken Sie auf *Instanz starten*.
+** *Zusammenfassung*: Überprüfen Sie die Zusammenfassung und wählen Sie *Launch Instance*.
 
 
 
@@ -115,7 +115,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Erfahren Sie, 
 +
 image:screenshot-gov-cloud-mktp.png["Einen Screenshot, der das BlueXP Angebot nach der Suche im AWS Marketplace zeigt"]
 
-.. Klicken Sie Auf *Weiter*.
+.. Wählen Sie *Weiter*.
 
 
 . Befolgen Sie die Anweisungen zur Konfiguration und Bereitstellung der Instanz:
@@ -131,7 +131,7 @@ image:screenshot_aws_iam_role.gif["Ein Screenshot, der Felder auf der Seite Conf
 ** *Speicher hinzufügen*: Behalten Sie die Standard-Speicheroptionen.
 ** *Tags hinzufügen*: Geben Sie bei Bedarf Tags für die Instanz ein.
 ** *Sicherheitsgruppe konfigurieren*: Geben Sie die erforderlichen Verbindungsmethoden für die Connector-Instanz an: SSH, HTTP und HTTPS.
-** *Review*: Überprüfen Sie Ihre Auswahl und klicken Sie auf *Start*.
+** *Review*: Überprüfen Sie Ihre Auswahl und wählen Sie *Launch*.
 
 
 
@@ -165,8 +165,8 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Erfahren Sie, 
 ** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Azure Marketplace-Seite für Azure Government Regions"^]
 
 
-. Klicken Sie auf *Jetzt holen* und klicken Sie dann auf *Weiter*.
-. Klicken Sie im Azure-Portal auf *Erstellen* und befolgen Sie die Schritte zur Konfiguration der virtuellen Maschine.
+. Wählen Sie *Jetzt holen* und wählen Sie dann *Weiter*.
+. Wählen Sie im Azure-Portal *Create* aus und befolgen Sie die Schritte zur Konfiguration der virtuellen Maschine.
 +
 Beachten Sie beim Konfigurieren der VM Folgendes:
 
@@ -193,7 +193,7 @@ Diese Einstellung ist wichtig, da sich die Virtual Machine Connector mit Azure A
 
 
 
-. Überprüfen Sie auf der Seite *Überprüfen + erstellen* Ihre Auswahl und klicken Sie auf *Erstellen*, um die Bereitstellung zu starten.
+. Überprüfen Sie auf der Seite *Überprüfen + Erstellen* Ihre Auswahl und wählen Sie *Erstellen*, um die Bereitstellung zu starten.
 
 
 .Ergebnis
@@ -325,7 +325,7 @@ Wenn Sie den Connector in einer Regierungsregion bereitgestellt haben, ist das K
 +
 image:screenshot-restricted-mode.png["Ein Screenshot, der die Begrüßungsseite anzeigt, auf der Sie einen Connector-Namen und Kontonamen eingeben müssen und den eingeschränkten Modus für dieses Konto aktivieren können."]
 
-.. Klicken Sie auf *Let's Start*.
+.. Wählen Sie *Start*.
 
 
 
@@ -359,7 +359,7 @@ Diese Schritte gelten nur, wenn Sie den Connector manuell in AWS installiert hab
 . Wählen Sie *Instanzen*.
 . Wählen Sie die Connector-Instanz aus.
 . Wählen Sie *Actions > Security > Modify IAM Role* aus.
-. Wählen Sie die IAM-Rolle aus und klicken Sie auf *IAM-Rolle aktualisieren*.
+. Wählen Sie die IAM-Rolle aus und wählen Sie *IAM-Rolle aktualisieren*.
 
 
 .Ergebnis
@@ -371,16 +371,16 @@ BlueXP verfügt jetzt über die Berechtigungen, die es für Aktionen in AWS ben�
 Bereitstellen von BlueXP mit dem AWS-Zugriffsschlüssel für einen IAM-Benutzer, der über die erforderlichen Berechtigungen verfügt
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
+. Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Amazon Web Services > Connector*.
 .. *Zugangsdaten definieren*: Geben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel ein.
 .. *Marketplace-Abonnement*: Verknüpfen Sie diese Anmeldedaten mit einem Marketplace-Abonnement, indem Sie jetzt abonnieren oder ein vorhandenes Abonnement auswählen.
-.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+.. *Review*: Bestätigen Sie die Details zu den neuen Zugangsdaten und wählen Sie *Add*.
 
 
 
@@ -395,8 +395,8 @@ Wechseln Sie zum Azure-Portal und weisen Sie der virtuellen Connector-Maschine f
 
 .Schritte
 . Öffnen Sie im Azure Portal den Service *Abonnements* und wählen Sie Ihr Abonnement aus.
-. Klicken Sie auf *Zugriffskontrolle (IAM)* > *Hinzufügen* > *Rollenzuweisung hinzufügen*.
-. Wählen Sie auf der Registerkarte * Role* die Rolle *BlueXP Operator* aus und klicken Sie auf *Next*.
+. Wählen Sie *Zugriffskontrolle (IAM)* > *Hinzufügen* > *Rollenzuweisung hinzufügen*.
+. Wählen Sie auf der Registerkarte *role* die Rolle *BlueXP Operator* aus und wählen Sie *Next* aus.
 +
 
 NOTE: BlueXP Operator ist der Standardname, der in der BlueXP-Richtlinie angegeben ist. Wenn Sie einen anderen Namen für die Rolle ausgewählt haben, wählen Sie stattdessen diesen Namen aus.
@@ -404,10 +404,10 @@ NOTE: BlueXP Operator ist der Standardname, der in der BlueXP-Richtlinie angegeb
 . Führen Sie auf der Registerkarte *Mitglieder* die folgenden Schritte aus:
 +
 .. Weisen Sie einer * verwalteten Identität* Zugriff zu.
-.. Klicken Sie auf *Mitglieder auswählen*, wählen Sie das Abonnement aus, in dem die virtuelle Connector-Maschine erstellt wurde, wählen Sie *Virtuelle Maschine* und wählen Sie dann die virtuelle Connector-Maschine aus.
-.. Klicken Sie Auf *Auswählen*.
-.. Klicken Sie Auf *Weiter*.
-.. Klicken Sie auf *Review + Assign*.
+.. Wählen Sie *Mitglieder auswählen*, wählen Sie das Abonnement, in dem die virtuelle Connector-Maschine erstellt wurde, wählen Sie *Virtuelle Maschine* und wählen Sie dann die virtuelle Connector-Maschine aus.
+.. Wählen Sie *Auswählen*.
+.. Wählen Sie *Weiter*.
+.. Wählen Sie *Überprüfen + Zuweisen*.
 .. Wenn Sie Ressourcen in weiteren Azure-Abonnements managen möchten, wechseln Sie zu diesem Abonnement und wiederholen Sie die folgenden Schritte.
 
 
@@ -422,11 +422,11 @@ BlueXP verfügt jetzt über die Berechtigungen, die es für Sie zum Ausführen v
 Stellen Sie BlueXP die Zugangsdaten für das zuvor von Ihnen Setup für den Azure Service Principal zur Verfügung.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
+. Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Microsoft Azure > Connector*.
 .. *Anmeldedaten definieren*: Geben Sie Informationen über den Azure Active Directory Service Principal ein, der die erforderlichen Berechtigungen erteilt:
@@ -437,7 +437,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 
 
 .. *Marketplace-Abonnement*: Verknüpfen Sie diese Anmeldedaten mit einem Marketplace-Abonnement, indem Sie jetzt abonnieren oder ein vorhandenes Abonnement auswählen.
-.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+.. *Review*: Bestätigen Sie die Details zu den neuen Zugangsdaten und wählen Sie *Add*.
 
 
 

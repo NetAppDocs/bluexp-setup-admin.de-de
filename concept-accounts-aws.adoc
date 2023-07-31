@@ -56,7 +56,7 @@ Sie würden dann die Account-Anmeldedaten zu BlueXP hinzufügen, indem Sie den A
 
 Nachdem Sie einen weiteren Satz von Anmeldeinformationen hinzugefügt haben, können Sie zu ihnen wechseln, wenn Sie eine neue Arbeitsumgebung erstellen:
 
-image:screenshot_accounts_switch_aws.png["Ein Screenshot, der die Auswahl zwischen Cloud-Provider-Konten zeigt, nachdem Sie auf der Seite Details  Anmeldedaten auf Konto wechseln geklickt haben."]
+image:screenshot_accounts_switch_aws.png["Ein Screenshot, der die Auswahl zwischen den Cloud-Provider-Konten zeigt, nachdem Sie auf der Seite Details  Anmeldedaten Konto wechseln ausgewählt haben."]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Informieren Sie sich, wie Sie einem vorhandenen Connector AWS-Anmeldedaten hinzufügen."]
 

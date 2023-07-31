@@ -235,20 +235,20 @@ Es gibt zwei Szenarien, in denen Sie ein AWS Marketplace-Abonnement verknüpfen 
 Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#how-to-create-a-connector["Erfahren Sie, wie Sie einen Konnektor erstellen"].
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Associate Subscription*.
 +
 Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind. Sie können kein Marketplace-Abonnement mit Anmeldedaten verknüpfen, die mit BlueXP verknüpft sind.
 
 +
 image:screenshot_associate_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie das Abonnement aus der unten angezeigten Liste aus und klicken Sie auf *Mitarbeiter*.
-. Um die Anmeldeinformationen mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie das Abonnement aus der Down-Liste aus und wählen *Associate* aus.
+. Um die Anmeldeinformationen einem neuen Abonnement zuzuordnen, wählen Sie *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
 +
-.. Klicken Sie auf *Kaufoptionen anzeigen*.
-.. Klicken Sie Auf *Abonnieren*.
-.. Klicken Sie auf *Konto einrichten*.
+.. Wählen Sie *Kaufoptionen anzeigen*.
+.. Wählen Sie *Abonnieren*.
+.. Wählen Sie *Konto einrichten*.
 +
 Sie werden auf die BlueXP-Website umgeleitet.
 
@@ -262,7 +262,7 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 +
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
-*** Klicken Sie Auf *Speichern*.
+*** Wählen Sie *Speichern*.
 +
 Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:
 

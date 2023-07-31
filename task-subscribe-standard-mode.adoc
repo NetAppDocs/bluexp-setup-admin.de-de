@@ -32,20 +32,20 @@ Für das Abonnement von BlueXP wird ein Marketplace-Abonnement mit den Cloud-Zug
 .AWS
 --
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Associate Subscription*.
 +
 Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind. Sie können kein Marketplace-Abonnement mit Anmeldedaten verknüpfen, die mit BlueXP verknüpft sind.
 
 +
 image:screenshot_associate_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie das Abonnement aus der unten angezeigten Liste aus und klicken Sie auf *Mitarbeiter*.
-. Um die Anmeldeinformationen mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie das Abonnement aus der Down-Liste aus und wählen *Associate* aus.
+. Um die Anmeldeinformationen einem neuen Abonnement zuzuordnen, wählen Sie *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
 +
-.. Klicken Sie auf *Kaufoptionen anzeigen*.
-.. Klicken Sie Auf *Abonnieren*.
-.. Klicken Sie auf *Konto einrichten*.
+.. Wählen Sie *Kaufoptionen anzeigen*.
+.. Wählen Sie *Abonnieren*.
+.. Wählen Sie *Konto einrichten*.
 +
 Sie werden auf die BlueXP-Website umgeleitet.
 
@@ -59,7 +59,7 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 +
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
-*** Klicken Sie Auf *Speichern*.
+*** Wählen Sie *Speichern*.
 +
 Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:
 
@@ -75,21 +75,21 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 .Azure
 --
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Associate Subscription*.
 +
 Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind. Sie können kein Marketplace-Abonnement mit Anmeldedaten verknüpfen, die mit BlueXP verknüpft sind.
 
 +
 image:screenshot_azure_add_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie das Abonnement aus der unten angezeigten Liste aus und klicken Sie auf *Mitarbeiter*.
-. Um die Zugangsdaten mit einem neuen Abonnement zu verknüpfen, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im Azure Marketplace:
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie das Abonnement aus der Down-Liste aus und wählen *Associate* aus.
+. Um die Anmeldeinformationen einem neuen Abonnement zuzuordnen, wählen Sie *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im Azure Marketplace:
 +
 .. Melden Sie sich bei Ihrem Azure-Konto an, wenn Sie dazu aufgefordert werden.
-.. Klicken Sie Auf *Abonnieren*.
-.. Füllen Sie das Formular aus und klicken Sie auf *Abonnieren*.
-.. Klicken Sie nach Abschluss des Abonnementvorgangs auf *Konto jetzt konfigurieren*.
+.. Wählen Sie *Abonnieren*.
+.. Füllen Sie das Formular aus und wählen Sie *Abonnieren*.
+.. Wählen Sie nach Abschluss des Abonnements *Konto jetzt konfigurieren* aus.
 +
 Sie werden auf die BlueXP-Website umgeleitet.
 
@@ -103,7 +103,7 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 +
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
-*** Klicken Sie Auf *Speichern*.
+*** Wählen Sie *Speichern*.
 +
 Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:
 
@@ -119,16 +119,16 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 .Google Cloud
 --
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
-. Klicken Sie auf das Aktionsmenü für eine Reihe von Anmeldeinformationen und wählen Sie dann *Abonnement verknüpfen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Associate Subscription*.
 +
 image:screenshot_gcp_add_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen mit einem bestehenden Abonnement zu verknüpfen, wählen Sie in der Down-Liste ein Google Cloud-Projekt und ein Abonnement aus und klicken Sie dann auf *Mitarbeiter*.
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie ein Google Cloud-Projekt und ein Abonnement aus der Down-Liste aus, und wählen Sie dann *Associate* aus.
 +
 image:screenshot_gcp_associate.gif["Ein Screenshot eines Google Cloud-Projekts und Abonnements, das für Google Cloud-Anmeldedaten ausgewählt wurde."]
 
-. Wenn Sie noch kein Abonnement haben, klicken Sie auf *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im Google Cloud Marketplace.
+. Wenn Sie noch kein Abonnement besitzen, wählen Sie *Abonnement hinzufügen > Weiter* und folgen Sie den Schritten im Google Cloud Marketplace.
 +
 
 NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Sie sowohl Billing Admin-Berechtigungen in Ihrem Google Cloud-Konto als auch BlueXP-Login haben.
@@ -138,13 +138,13 @@ NOTE: Bevor Sie die folgenden Schritte durchführen, stellen Sie sicher, dass Si
 +
 image:screenshot_gcp_cvo_marketplace.png["Ein Screenshot der Cloud Volumes ONTAP Marketplace-Seite in Google Cloud"]
 
-.. Klicken Sie Auf *Abonnieren*.
+.. Wählen Sie *Abonnieren*.
 .. Wählen Sie das entsprechende Rechnungskonto aus und stimmen Sie den allgemeinen Geschäftsbedingungen zu.
-.. Klicken Sie Auf *Abonnieren*.
+.. Wählen Sie *Abonnieren*.
 +
 Dieser Schritt sendet Ihre Transferanfrage an NetApp.
 
-.. Klicken Sie im Popup-Dialogfeld auf *Registrieren Sie sich mit NetApp, Inc.*
+.. Wählen Sie im Popup-Dialogfeld *Registrierung bei NetApp, Inc.* aus
 +
 Dieser Schritt muss abgeschlossen sein, um das Google Cloud Abonnement mit Ihrem BlueXP Konto zu verknüpfen. Der Vorgang der Verknüpfung eines Abonnements ist erst abgeschlossen, wenn Sie von dieser Seite umgeleitet und dann bei BlueXP angemeldet sind.
 
@@ -165,7 +165,7 @@ BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto
 +
 Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
 
-*** Klicken Sie Auf *Speichern*.
+*** Wählen Sie *Speichern*.
 +
 Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:
 

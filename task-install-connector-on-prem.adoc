@@ -127,7 +127,7 @@ _Ipaddress_ kann abhängig von der Konfiguration des Hosts localhost, eine priva
 +
 Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. (Außerdem wird der eingeschränkte Modus nicht unterstützt, wenn der Connector vor Ort installiert ist.)
 
-.. Klicken Sie auf *Let's Start*.
+.. Wählen Sie *Start*.
 
 
 

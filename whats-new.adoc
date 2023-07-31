@@ -18,6 +18,32 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== Juli 30
+
+
+
+=== Anschluss 3.9.32
+
+* Sie können jetzt die BlueXP Audit-Service-API für den Export von Audit-Protokollen verwenden.
++
+Der Audit-Service zeichnet Informationen zu den durch BlueXP Services ausgeführten Vorgängen auf. Dies umfasst die ursprünglichen IP-Adressen, Arbeitsbereiche, verwendete Connectors und andere Telemetriedaten. Anhand dieser Daten können Sie bestimmen, welche Aktionen durchgeführt wurden, wer sie ausgeführt hat und wann sie aufgetreten sind.
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["Erfahren Sie mehr über die Verwendung der Audit-Service-API"^]
+
++
+Beachten Sie, dass auf diesen Link auch über die BlueXP Benutzeroberfläche auf der Seite „Zeitleiste“ zugegriffen werden kann.
+
+* Diese Version des Connectors enthält außerdem Cloud Volumes ONTAP-Verbesserungen und On-Premises-ONTAP-Cluster-Verbesserungen.
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Die ONTAP-On-Premises-Cluster-Verbesserungen"^]
+
+
+
+
+
+
 == 2 Juli 2023
 
 
@@ -238,7 +264,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 === Anschluss 3.9.26
 
-* Auf der Seite *Anmelden* werden Sie jetzt aufgefordert, die mit Ihrem Login verknüpfte E-Mail-Adresse einzugeben. Nach dem Klicken auf *Next* werden Sie von BlueXP aufgefordert, sich mit der Authentifizierungsmethode zu authentifizieren, die mit Ihrem Login verknüpft ist:
+* Auf der Seite *Anmelden* werden Sie jetzt aufgefordert, die mit Ihrem Login verknüpfte E-Mail-Adresse einzugeben. Nachdem Sie *Next* ausgewählt haben, fordert BlueXP Sie auf, sich mit der Authentifizierungsmethode zu authentifizieren, die mit Ihrer Anmeldung verknüpft ist:
 +
 ** Das Passwort für Ihre NetApp Cloud-Anmeldedaten
 ** Ihre föderierten Identitätsinformationen

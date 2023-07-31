@@ -4,12 +4,12 @@
 
 .Schritte
 . Wechseln Sie zum https://aws.amazon.com/marketplace/pp/B018REK8QG["Seite „BlueXP“ im AWS Marketplace"^]
-. Klicken Sie auf der Marketplace-Seite auf *Weiter zur Anmeldung* und dann auf *Weiter zur Konfiguration*.
+. Wählen Sie auf der Marketplace-Seite *Weiter zu Abonnieren* und wählen Sie dann *Weiter zu Konfiguration*.
 +
 image:screenshot-subscribe-aws.png["Ein Screenshot, der die Schaltflächen „Weiter zu Abonnieren“ und „Weiter zu Konfiguration“ im AWS Marketplace zeigt."]
 
-. Ändern Sie eine der Standardoptionen, und klicken Sie auf *Weiter zum Starten*.
-. Wählen Sie unter *Aktion auswählen* *über EC2 starten* und klicken Sie dann auf *Start*.
+. Ändern Sie eine der Standardoptionen, und wählen Sie *Weiter zum Starten*.
+. Wählen Sie unter *Aktion auswählen* die Option *über EC2 starten* aus und wählen Sie dann *Start* aus.
 +
 In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole aus starten, da Sie über die Konsole eine IAM-Rolle an die Connector-Instanz anhängen können. Dies ist mit der Aktion * von Website starten* nicht möglich.
 
@@ -34,7 +34,7 @@ link:reference-ports-aws.html["Sicherheitsgruppen-Regeln für AWS ansehen"].
 
 ** *Storage konfigurieren*: Behalten Sie die standardmäßigen Speicheroptionen bei.
 ** *Erweiterte Details*: Unter *IAM Instance profile* wählen Sie die IAM-Rolle, die die erforderlichen Berechtigungen für den Connector enthält.
-** *Zusammenfassung*: Lesen Sie die Zusammenfassung durch und klicken Sie auf *Instanz starten*.
+** *Zusammenfassung*: Überprüfen Sie die Zusammenfassung und wählen Sie *Launch Instance*.
 
 
 

@@ -176,18 +176,18 @@ Weisen Sie die benutzerdefinierte Rolle dem Benutzer zu, der den Connector aus B
 
 .Schritte
 . Öffnen Sie im Azure-Portal den Dienst *Abonnements* und wählen Sie das Abonnement des Benutzers aus.
-. Klicken Sie auf *Access Control (IAM)*.
-. Klicken Sie auf *Hinzufügen* > *Rollenzuordnung hinzufügen* und fügen Sie dann die Berechtigungen hinzu:
+. Wählen Sie *Access Control (IAM)*.
+. Wählen Sie *Hinzufügen* > *Rollenzuweisung hinzufügen* und fügen Sie dann die Berechtigungen hinzu:
 +
-.. Wählen Sie die Rolle *Azure SetupAsService* aus und klicken Sie auf *Weiter*.
+.. Wählen Sie die Rolle *Azure SetupAsService* aus und wählen Sie *Next* aus.
 +
 
 NOTE: Azure SetupAsService ist der Standardname, der in der Connector Deployment Policy für Azure angegeben ist. Wenn Sie einen anderen Namen für die Rolle ausgewählt haben, wählen Sie stattdessen diesen Namen aus.
 
 .. *Benutzer, Gruppe oder Serviceprincipal* ausgewählt lassen.
-.. Klicken Sie auf *Mitglieder auswählen*, wählen Sie Ihr Benutzerkonto aus und klicken Sie auf *Auswählen*.
-.. Klicken Sie Auf *Weiter*.
-.. Klicken Sie auf *Review + Assign*.
+.. Wählen Sie *Mitglieder auswählen*, wählen Sie Ihr Benutzerkonto aus und wählen Sie *Select* aus.
+.. Wählen Sie *Weiter*.
+.. Wählen Sie *Überprüfen + Zuweisen*.
 
 
 
@@ -211,8 +211,8 @@ Weitere Informationen finden Sie unter https://docs.microsoft.com/en-us/azure/ac
 +
 image:screenshot_azure_ad.gif["Zeigt den Active Directory-Dienst in Microsoft Azure an."]
 
-. Klicken Sie im Menü auf *App-Registrierungen*.
-. Klicken Sie auf *Neue Registrierung*.
+. Wählen Sie im Menü *App-Registrierungen*.
+. Wählen Sie *Neue Registrierung*.
 . Geben Sie Details zur Anwendung an:
 +
 ** *Name*: Geben Sie einen Namen für die Anwendung ein.
@@ -220,7 +220,7 @@ image:screenshot_azure_ad.gif["Zeigt den Active Directory-Dienst in Microsoft Az
 ** *Redirect URI*: Sie können dieses Feld leer lassen.
 
 
-. Klicken Sie Auf *Registrieren*.
+. Wählen Sie *Registrieren*.
 +
 Sie haben die AD-Anwendung und den Service-Principal erstellt.
 
@@ -229,12 +229,12 @@ Sie haben die AD-Anwendung und den Service-Principal erstellt.
 .Weisen Sie der Anwendung die benutzerdefinierte Rolle zu
 . Öffnen Sie im Azure-Portal den Service *Abonnements*.
 . Wählen Sie das Abonnement aus.
-. Klicken Sie auf *Zugriffskontrolle (IAM) > Hinzufügen > Rollenzuweisung hinzufügen*.
-. Wählen Sie auf der Registerkarte * Role* die Rolle *BlueXP Operator* aus und klicken Sie auf *Next*.
+. Wählen Sie *Zugriffskontrolle (IAM) > Hinzufügen > Rollenzuweisung hinzufügen*.
+. Wählen Sie auf der Registerkarte *role* die Rolle *BlueXP Operator* aus und wählen Sie *Next* aus.
 . Führen Sie auf der Registerkarte *Mitglieder* die folgenden Schritte aus:
 +
 .. *Benutzer, Gruppe oder Serviceprincipal* ausgewählt lassen.
-.. Klicken Sie auf *Mitglieder auswählen*.
+.. Wählen Sie *Mitglieder auswählen*.
 +
 image:screenshot-azure-service-principal-role.png["Ein Screenshot des Azure-Portals, auf dem die Registerkarte Mitglieder angezeigt wird, wenn einer Anwendung eine Rolle hinzugefügt wird."]
 
@@ -245,11 +245,11 @@ Hier ein Beispiel:
 +
 image:screenshot_azure_service_principal_role.png["Ein Screenshot des Azure-Portals, in dem das Formular Rollenzuordnung hinzufügen im Azure-Portal angezeigt wird."]
 
-.. Wählen Sie die Anwendung aus und klicken Sie auf *Auswählen*.
-.. Klicken Sie Auf *Weiter*.
+.. Wählen Sie die Anwendung aus und wählen Sie *Select*.
+.. Wählen Sie *Weiter*.
 
 
-. Klicken Sie auf *Review + Assign*.
+. Wählen Sie *Überprüfen + Zuweisen*.
 +
 Der Service-Principal verfügt jetzt über die erforderlichen Azure-Berechtigungen zur Bereitstellung des Connectors.
 
@@ -259,20 +259,20 @@ Wenn Sie Ressourcen in mehreren Azure-Abonnements managen möchten, müssen Sie 
 
 
 .Fügen Sie Windows Azure Service Management-API-Berechtigungen hinzu
-. Klicken Sie im *Azure Active Directory*-Dienst auf *App-Registrierungen* und wählen Sie die Anwendung aus.
-. Klicken Sie auf *API-Berechtigungen > Berechtigung hinzufügen*.
+. Wählen Sie im Dienst *Azure Active Directory* *App Registrations* aus und wählen Sie die Anwendung aus.
+. Wählen Sie *API-Berechtigungen > Berechtigung hinzufügen*.
 . Wählen Sie unter *Microsoft APIs* *Azure Service Management* aus.
 +
 image:screenshot_azure_service_mgmt_apis.gif["Ein Screenshot des Azure Portals, in dem die Berechtigungen der Azure Service Management API angezeigt werden."]
 
-. Klicken Sie auf *Zugriff auf Azure Service Management als Benutzer der Organisation* und dann auf *Berechtigungen hinzufügen*.
+. Wählen Sie *Zugriff auf Azure Service Management als Benutzer der Organisation* und dann *Berechtigungen hinzufügen*.
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Ein Screenshot des Azure Portals, in dem das Hinzufügen der Azure Service Management APIs angezeigt wird"]
 
 
 
 .Die Anwendungs-ID und die Verzeichnis-ID für die Anwendung abrufen
-. Klicken Sie im *Azure Active Directory*-Dienst auf *App-Registrierungen* und wählen Sie die Anwendung aus.
+. Wählen Sie im Dienst *Azure Active Directory* *App Registrations* aus und wählen Sie die Anwendung aus.
 . Kopieren Sie die *Application (Client) ID* und die *Directory (Tenant) ID*.
 +
 image:screenshot_azure_app_ids.gif["Ein Screenshot, der die Anwendungs-ID (Client) und die Verzeichnis-ID (Mandant) für eine Anwendung in Azure Active Directory anzeigt"]
@@ -284,10 +284,10 @@ Wenn Sie das Azure-Konto zu BlueXP hinzufügen, müssen Sie die Anwendungs-ID (C
 
 .Erstellen Sie einen Clientschlüssel
 . Öffnen Sie den Dienst *Azure Active Directory*.
-. Klicken Sie auf *App-Registrierungen* und wählen Sie Ihre Anwendung aus.
-. Klicken Sie auf *Zertifikate & Geheimnisse > Neuer Client Secret*.
+. Wählen Sie *App-Registrierungen* und wählen Sie Ihre Anwendung aus.
+. Wählen Sie *Zertifikate & Geheimnisse > Neues Kundengeheimnis*.
 . Geben Sie eine Beschreibung des Geheimnisses und eine Dauer an.
-. Klicken Sie Auf *Hinzufügen*.
+. Wählen Sie *Hinzufügen*.
 . Kopieren Sie den Wert des Clientgeheimnisses.
 +
 image:screenshot_azure_client_secret.gif["Ein Screenshot des Azure-Portals, in dem ein Client-Geheimnis für den Azure AD-Service-Principal angezeigt wird"]
@@ -378,8 +378,8 @@ Weitere Informationen finden Sie unter https://docs.microsoft.com/en-us/azure/ac
 +
 image:screenshot_azure_ad.gif["Zeigt den Active Directory-Dienst in Microsoft Azure an."]
 
-. Klicken Sie im Menü auf *App-Registrierungen*.
-. Klicken Sie auf *Neue Registrierung*.
+. Wählen Sie im Menü *App-Registrierungen*.
+. Wählen Sie *Neue Registrierung*.
 . Geben Sie Details zur Anwendung an:
 +
 ** *Name*: Geben Sie einen Namen für die Anwendung ein.
@@ -387,7 +387,7 @@ image:screenshot_azure_ad.gif["Zeigt den Active Directory-Dienst in Microsoft Az
 ** *Redirect URI*: Sie können dieses Feld leer lassen.
 
 
-. Klicken Sie Auf *Registrieren*.
+. Wählen Sie *Registrieren*.
 +
 Sie haben die AD-Anwendung und den Service-Principal erstellt.
 
@@ -442,12 +442,12 @@ Sie sollten nun eine benutzerdefinierte Rolle namens BlueXP Operator haben, die 
 +
 .. Öffnen Sie im Azure-Portal den Service *Abonnements*.
 .. Wählen Sie das Abonnement aus.
-.. Klicken Sie auf *Zugriffskontrolle (IAM) > Hinzufügen > Rollenzuweisung hinzufügen*.
-.. Wählen Sie auf der Registerkarte * Role* die Rolle *BlueXP Operator* aus und klicken Sie auf *Next*.
+.. Wählen Sie *Zugriffskontrolle (IAM) > Hinzufügen > Rollenzuweisung hinzufügen*.
+.. Wählen Sie auf der Registerkarte *role* die Rolle *BlueXP Operator* aus und wählen Sie *Next* aus.
 .. Führen Sie auf der Registerkarte *Mitglieder* die folgenden Schritte aus:
 +
 *** *Benutzer, Gruppe oder Serviceprincipal* ausgewählt lassen.
-*** Klicken Sie auf *Mitglieder auswählen*.
+*** Wählen Sie *Mitglieder auswählen*.
 +
 image:screenshot-azure-service-principal-role.png["Ein Screenshot des Azure-Portals, auf dem die Registerkarte Mitglieder angezeigt wird, wenn einer Anwendung eine Rolle hinzugefügt wird."]
 
@@ -458,11 +458,11 @@ Hier ein Beispiel:
 +
 image:screenshot_azure_service_principal_role.png["Ein Screenshot des Azure-Portals, in dem das Formular Rollenzuordnung hinzufügen im Azure-Portal angezeigt wird."]
 
-*** Wählen Sie die Anwendung aus und klicken Sie auf *Auswählen*.
-*** Klicken Sie Auf *Weiter*.
+*** Wählen Sie die Anwendung aus und wählen Sie *Select*.
+*** Wählen Sie *Weiter*.
 
 
-.. Klicken Sie auf *Review + Assign*.
+.. Wählen Sie *Überprüfen + Zuweisen*.
 +
 Der Service-Principal verfügt jetzt über die erforderlichen Azure-Berechtigungen zur Bereitstellung des Connectors.
 
@@ -474,20 +474,20 @@ Wenn Sie Cloud Volumes ONTAP aus mehreren Azure Subscriptions bereitstellen möc
 
 
 .Fügen Sie Windows Azure Service Management-API-Berechtigungen hinzu
-. Klicken Sie im *Azure Active Directory*-Dienst auf *App-Registrierungen* und wählen Sie die Anwendung aus.
-. Klicken Sie auf *API-Berechtigungen > Berechtigung hinzufügen*.
+. Wählen Sie im Dienst *Azure Active Directory* *App Registrations* aus und wählen Sie die Anwendung aus.
+. Wählen Sie *API-Berechtigungen > Berechtigung hinzufügen*.
 . Wählen Sie unter *Microsoft APIs* *Azure Service Management* aus.
 +
 image:screenshot_azure_service_mgmt_apis.gif["Ein Screenshot des Azure Portals, in dem die Berechtigungen der Azure Service Management API angezeigt werden."]
 
-. Klicken Sie auf *Zugriff auf Azure Service Management als Benutzer der Organisation* und dann auf *Berechtigungen hinzufügen*.
+. Wählen Sie *Zugriff auf Azure Service Management als Benutzer der Organisation* und dann *Berechtigungen hinzufügen*.
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Ein Screenshot des Azure Portals, in dem das Hinzufügen der Azure Service Management APIs angezeigt wird"]
 
 
 
 .Die Anwendungs-ID und die Verzeichnis-ID für die Anwendung abrufen
-. Klicken Sie im *Azure Active Directory*-Dienst auf *App-Registrierungen* und wählen Sie die Anwendung aus.
+. Wählen Sie im Dienst *Azure Active Directory* *App Registrations* aus und wählen Sie die Anwendung aus.
 . Kopieren Sie die *Application (Client) ID* und die *Directory (Tenant) ID*.
 +
 image:screenshot_azure_app_ids.gif["Ein Screenshot, der die Anwendungs-ID (Client) und die Verzeichnis-ID (Mandant) für eine Anwendung in Azure Active Directory anzeigt"]
@@ -499,10 +499,10 @@ Wenn Sie das Azure-Konto zu BlueXP hinzufügen, müssen Sie die Anwendungs-ID (C
 
 .Erstellen Sie einen Clientschlüssel
 . Öffnen Sie den Dienst *Azure Active Directory*.
-. Klicken Sie auf *App-Registrierungen* und wählen Sie Ihre Anwendung aus.
-. Klicken Sie auf *Zertifikate & Geheimnisse > Neuer Client Secret*.
+. Wählen Sie *App-Registrierungen* und wählen Sie Ihre Anwendung aus.
+. Wählen Sie *Zertifikate & Geheimnisse > Neues Kundengeheimnis*.
 . Geben Sie eine Beschreibung des Geheimnisses und eine Dauer an.
-. Klicken Sie Auf *Hinzufügen*.
+. Wählen Sie *Hinzufügen*.
 . Kopieren Sie den Wert des Clientgeheimnisses.
 +
 image:screenshot_azure_client_secret.gif["Ein Screenshot des Azure-Portals, in dem ein Client-Geheimnis für den Azure AD-Service-Principal angezeigt wird"]

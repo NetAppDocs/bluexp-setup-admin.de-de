@@ -50,7 +50,7 @@ Das würden Sie dann tun link:task-adding-azure-accounts.html#add-additional-azu
 
 Sie können beispielsweise beim Erstellen einer neuen Cloud Volumes ONTAP-Arbeitsumgebung zwischen den Anmeldedaten wechseln:
 
-image:screenshot_accounts_switch_azure.gif["Ein Screenshot, der die Auswahl zwischen Cloud-Provider-Konten zeigt, nachdem Sie auf der Seite Details  Anmeldedaten auf Konto wechseln geklickt haben."]
+image:screenshot_accounts_switch_azure.gif["Ein Screenshot, der die Auswahl zwischen den Cloud-Provider-Konten zeigt, nachdem Sie auf der Seite Details  Anmeldedaten Konto wechseln ausgewählt haben."]
 
 
 

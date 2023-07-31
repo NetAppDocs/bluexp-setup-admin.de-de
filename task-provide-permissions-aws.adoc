@@ -31,7 +31,7 @@ Fügen Sie die zuvor erstellte IAM-Rolle der Connector EC2-Instanz hinzu.
 . Wählen Sie *Instanzen*.
 . Wählen Sie die Connector-Instanz aus.
 . Wählen Sie *Actions > Security > Modify IAM Role* aus.
-. Wählen Sie die IAM-Rolle aus und klicken Sie auf *IAM-Rolle aktualisieren*.
+. Wählen Sie die IAM-Rolle aus und wählen Sie *IAM-Rolle aktualisieren*.
 
 
 .Ergebnis
@@ -46,16 +46,16 @@ Bereitstellen von BlueXP mit dem AWS-Zugriffsschlüssel für einen IAM-Benutzer,
 
 .Schritte
 . Stellen Sie sicher, dass derzeit in BlueXP der richtige Connector ausgewählt ist.
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
 image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
-. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
+. Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Amazon Web Services > Connector*.
 .. *Zugangsdaten definieren*: Geben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel ein.
 .. *Marketplace-Abonnement*: Verknüpfen Sie diese Anmeldedaten mit einem Marketplace-Abonnement, indem Sie jetzt abonnieren oder ein vorhandenes Abonnement auswählen.
-.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+.. *Review*: Bestätigen Sie die Details zu den neuen Zugangsdaten und wählen Sie *Add*.
 
 
 

@@ -43,7 +43,7 @@ Diese Berechtigungen gelten für die Connector-Instanz selbst. Es handelt sich u
 
 
 .Schritte
-. Wenn Sie Ihre erste Arbeitsumgebung erstellen, klicken Sie auf *Arbeitsumgebung hinzufügen* und befolgen Sie die Anweisungen. Klicken Sie andernfalls auf das Dropdown-Menü *Connector* und wählen Sie *Connector hinzufügen* aus.
+. Wenn Sie Ihre erste Arbeitsumgebung erstellen, wählen Sie *Arbeitsumgebung hinzufügen* und folgen Sie den Anweisungen. Andernfalls wählen Sie die Dropdown-Liste *Connector* aus und wählen *Connector hinzufügen* aus.
 +
 image:screenshot_connector_add.gif["Ein Screenshot, in dem das Symbol Connector in der Kopfzeile und die Aktion Connector hinzufügen angezeigt wird."]
 
@@ -95,7 +95,7 @@ link:reference-ports-azure.html["Zeigen Sie die Regeln für Sicherheitsgruppen f
 ** *Review*: Überprüfen Sie Ihre Auswahl, um zu überprüfen, ob Ihre Einrichtung korrekt ist.
 
 
-. Klicken Sie Auf *Hinzufügen*.
+. Wählen Sie *Hinzufügen*.
 +
 Die Virtual Machine sollte in ca. 7 Minuten einsatzbereit sein. Sie sollten auf der Seite bleiben, bis der Vorgang abgeschlossen ist.
 
@@ -112,8 +112,8 @@ Nach Abschluss des Prozesses ist der Connector für die Nutzung über BlueXP ver
 +
 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplace-Seite für kommerzielle Regionen"^]
 
-. Klicken Sie auf *Jetzt holen* und klicken Sie dann auf *Weiter*.
-. Klicken Sie im Azure-Portal auf *Erstellen* und befolgen Sie die Schritte zur Konfiguration der virtuellen Maschine.
+. Wählen Sie *Jetzt holen* und wählen Sie dann *Weiter*.
+. Wählen Sie im Azure-Portal *Create* aus und befolgen Sie die Schritte zur Konfiguration der virtuellen Maschine.
 +
 Beachten Sie beim Konfigurieren der VM Folgendes:
 
@@ -130,7 +130,7 @@ Diese Einstellung ist wichtig, da sich die Virtual Machine Connector mit Azure A
 
 
 
-. Überprüfen Sie auf der Seite *Überprüfen + erstellen* Ihre Auswahl und klicken Sie auf *Erstellen*, um die Bereitstellung zu starten.
+. Überprüfen Sie auf der Seite *Überprüfen + Erstellen* Ihre Auswahl und wählen Sie *Erstellen*, um die Bereitstellung zu starten.
 +
 Azure stellt die virtuelle Maschine mit den angegebenen Einstellungen bereit. Die virtuelle Maschine und die Connector-Software sollten in etwa fünf Minuten ausgeführt werden.
 
@@ -146,7 +146,7 @@ https://_ipaddress_[]
 +
 Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. Der eingeschränkte Modus sollte nur aktiviert werden, wenn Sie über eine sichere Umgebung verfügen und dieses Konto von den BlueXP Backend-Services trennen möchten. Wenn das der Fall ist, link:task-quick-start-restricted-mode.html["Befolgen Sie die Schritte für den Einstieg in BlueXP im eingeschränkten Modus"].
 
-.. Klicken Sie auf *Let's Start*.
+.. Wählen Sie *Start*.
 
 
 
@@ -256,7 +256,7 @@ https://_ipaddress_[]
 +
 Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. Der eingeschränkte Modus sollte nur aktiviert werden, wenn Sie über eine sichere Umgebung verfügen und dieses Konto von den BlueXP Backend-Services trennen möchten. Wenn das der Fall ist, link:task-quick-start-restricted-mode.html["Befolgen Sie die Schritte für den Einstieg in BlueXP im eingeschränkten Modus"].
 
-.. Klicken Sie auf *Let's Start*.
+.. Wählen Sie *Start*.
 
 
 
