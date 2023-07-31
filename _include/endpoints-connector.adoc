@@ -67,8 +67,7 @@ Um Ressourcen in Google Cloud zu verwalten.
 
 Um SaaS-Funktionen und -Services in BlueXP anzubieten.
 
-
-NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er beginnt jedoch mit der Kontaktaufnahme mit „api.bluexp.netapp.com" in einer kommenden Version.
+Beachten Sie, dass der Connector sich derzeit mit „cloudmanager.cloud.netapp.com" in Verbindung setzt, jedoch in einer kommenden Version mit „api.bluexp.netapp.com"“ in Verbindung steht.
 
 \https://*.blob.core.windows.net
 

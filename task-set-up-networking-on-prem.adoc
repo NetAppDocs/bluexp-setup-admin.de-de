@@ -126,8 +126,7 @@ Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Suppo
  a| 
 Um SaaS-Funktionen und -Services in BlueXP zur Verfügung zu stellen.
 
-
-NOTE: Der Connector kontaktiert derzeit „cloudmanager.cloud.netapp.com", er beginnt jedoch mit der Kontaktaufnahme mit „api.bluexp.netapp.com" in einer kommenden Version.
+Beachten Sie, dass der Connector sich derzeit mit „cloudmanager.cloud.netapp.com" in Verbindung setzt, jedoch in einer kommenden Version mit „api.bluexp.netapp.com"“ in Verbindung steht.
 
 
 
@@ -146,14 +145,12 @@ link:reference-networking-saas-console.html["Bereiten Sie Ihr Networking auf den
 
 == Proxy-Server
 
-Wenn Ihr Unternehmen einen Proxy-Server für den gesamten ausgehenden Internet-Datenverkehr benötigt, erhalten Sie die folgenden Informationen über Ihren HTTP- oder HTTPS-Proxy:
+Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für den gesamten ausgehenden Internet-Datenverkehr erfordert, erhalten Sie die folgenden Informationen zu Ihrem HTTP- oder HTTPS-Proxy. Diese Informationen müssen Sie bei der Installation angeben.
 
 * IP-Adresse
 * Anmeldedaten
 * HTTPS-Zertifikat
 
-
-Diese Informationen müssen Sie bei der Installation angeben.
 
 
 
@@ -165,7 +162,7 @@ Es erfolgt kein eingehender Datenverkehr zum Connector, es sei denn, Sie initiie
 * SSH (22) ist nur erforderlich, wenn Sie eine Verbindung zum Host zur Fehlerbehebung herstellen müssen.
 * Eingehende Verbindungen über Port 3128 sind erforderlich, wenn Sie Cloud Volumes ONTAP-Systeme in einem Subnetz bereitstellen, in dem keine ausgehende Internetverbindung verfügbar ist.
 +
-Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden von AutoSupport-Nachrichten haben, konfiguriert BlueXP diese Cloud Volumes ONTAP-Systeme automatisch so, dass sie einen Proxyserver verwenden, der im Connector enthalten ist. Die einzige Anforderung besteht darin, sicherzustellen, dass die Sicherheitsgruppe des Connectors eingehende Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.
+Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden von AutoSupport Meldungen haben, konfiguriert BlueXP diese Systeme automatisch so, dass sie einen Proxyserver verwenden, der im Connector enthalten ist. Die einzige Anforderung besteht darin, sicherzustellen, dass die Sicherheitsgruppe des Connectors eingehende Verbindungen über Port 3128 zulässt. Nach der Bereitstellung des Connectors müssen Sie diesen Port öffnen.
 
 
 

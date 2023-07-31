@@ -168,14 +168,12 @@ Zum Managen von Ressourcen in Google Cloud.
 
 === Proxy-Server
 
-Wenn Ihr Unternehmen einen Proxy-Server für den gesamten ausgehenden Internet-Datenverkehr benötigt, erhalten Sie die folgenden Informationen über Ihren HTTP- oder HTTPS-Proxy:
+Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für den gesamten ausgehenden Internet-Datenverkehr erfordert, erhalten Sie die folgenden Informationen zu Ihrem HTTP- oder HTTPS-Proxy. Diese Informationen müssen Sie bei der Installation angeben.
 
 * IP-Adresse
 * Anmeldedaten
 * HTTPS-Zertifikat
 
-
-Diese Informationen müssen Sie bei der Installation angeben.
 
 Im privaten Modus sendet BlueXP lediglich Outbound-Datenverkehr zu Ihrem Cloud-Provider, um ein Cloud Volumes ONTAP System zu erstellen.
 

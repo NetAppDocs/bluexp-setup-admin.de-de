@@ -2,11 +2,9 @@
 :allow-uri-read: 
 
 
-Wenn Ihr Unternehmen einen Proxy-Server für den gesamten ausgehenden Internet-Datenverkehr benötigt, erhalten Sie die folgenden Informationen über Ihren HTTP- oder HTTPS-Proxy:
+Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für den gesamten ausgehenden Internet-Datenverkehr erfordert, erhalten Sie die folgenden Informationen zu Ihrem HTTP- oder HTTPS-Proxy. Diese Informationen müssen Sie bei der Installation angeben.
 
 * IP-Adresse
 * Anmeldedaten
 * HTTPS-Zertifikat
 
-
-Diese Informationen müssen Sie bei der Installation angeben.
