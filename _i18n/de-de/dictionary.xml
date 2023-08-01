@@ -3876,8 +3876,7 @@ Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">Hier ein Beispiel</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">Ein Screenshot der Seite mit den Zugangsdaten für das BlueXP Konto zeigt die AWS Zugangsdaten an. Dazu gehört ein Abonnementfeld, in dem der Name des Abonnements, das mit den Zugangsdaten verknüpft ist, angegeben wird.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">Das folgende Video zeigt, wie Sie die Anmeldeinformationen einem neuen Abonnement zuordnen.</block>
-  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnieren Sie BlueXP über den Azure Marketplace</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnieren Sie BlueXP über den Google Cloud Marketplace</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnieren Sie BlueXP über den AWS Marketplace</block>
+  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:</block>
+  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:</block>
+  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:</block>
 </blocks>

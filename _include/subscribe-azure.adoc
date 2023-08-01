@@ -33,11 +33,10 @@ Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem S
 
 *** Wählen Sie *Speichern*.
 +
-Das folgende Video zeigt, wie Sie die Anmeldeinformationen einem neuen Abonnement zuordnen.
+Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:
 
 +
-.Abonnieren Sie BlueXP über den Azure Marketplace
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+video::video_subscribing_azure.mp4[width=848,height=480]
 
 
 

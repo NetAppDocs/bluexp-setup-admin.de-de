@@ -264,11 +264,10 @@ Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem S
 
 *** Wählen Sie *Speichern*.
 +
-Das folgende Video zeigt, wie Sie die Anmeldeinformationen einem neuen Abonnement zuordnen.
+Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:
 
 +
-.Abonnieren Sie BlueXP über den AWS Marketplace
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
