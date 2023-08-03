@@ -3879,4 +3879,9 @@ Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.</block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:</block>
   <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:</block>
+  <block id="1250d880683e535bd4bbd8267aa3e5a1" category="summary">In diesen Videos erfahren Sie, wie Sie BlueXP über den Marketplace Ihres Cloud-Providers abonnieren können.</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnieren Sie BlueXP über den AWS Marketplace</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnieren Sie BlueXP über den Azure Marketplace</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnieren Sie BlueXP über den Google Cloud Marketplace</block>
+  <block id="4112588d5a54a8d1c620a772527cb267" category="section-title">Mein Ordner</block>
 </blocks>
