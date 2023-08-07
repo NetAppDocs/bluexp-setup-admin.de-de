@@ -162,10 +162,6 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
                 "kms:ReEncrypt*",
                 "kms:Describe*",
                 "kms:CreateGrant",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "fsx:Describe*",
                 "fsx:List*",
                 "kms:GenerateDataKeyWithoutPlaintext"
@@ -493,10 +489,6 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
                 "ec2:DescribeIamInstanceProfileAssociations",
                 "ec2:DisassociateIamInstanceProfile",
                 "ec2:DescribeInstanceAttribute",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "ec2:CreatePlacementGroup",
                 "ec2:DeletePlacementGroup"
             ],
@@ -1126,18 +1118,6 @@ Der Connector stellt die folgenden API-Anforderungen für die Implementierung un
 
 
 | Kms:GenerateDataKeyWithoutPlaintext | Ja. | Ja. | Nein 
-
-
-.4+| AWS Kostendaten für Cloud Volumes ONTAP beziehen | ce:GetReservoir Utilisation | Nein | Ja. | Nein 
-
-
-| ce:GetDimensionValues | Nein | Ja. | Nein 
-
-
-| ce:GetCostAndUsage | Nein | Ja. | Nein 
-
-
-| ce:GetTags | Nein | Ja. | Nein 
 
 
 .2+| Erstellen und managen Sie eine AWS Spread-Platzierungsgruppe für zwei HA-Nodes und den Mediator in einer einzigen AWS Availability Zone | ec2:CreatePlacementGroup | Ja. | Nein | Nein 
