@@ -203,9 +203,13 @@ Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Suppo
 
 \https://api.bluexp.netapp.com
 
+\https://api.cloud.netapp.com
+
 \https://*.cloudmanager.cloud.netapp.com
 
 \https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com/userinfo
  a| 
 Um SaaS-Funktionen und -Services in BlueXP zur Verfügung zu stellen.
 
