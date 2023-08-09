@@ -95,7 +95,7 @@ Dieses Benutzerkonto wird lokal auf dem System ausgeführt. Über BlueXP ist kei
 .Ergebnis
 Der Connector ist jetzt installiert und eingerichtet.
 
-Sobald neue Versionen der Connector-Software verfügbar sind, werden diese auf der NetApp Support Site veröffentlicht. link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Erfahren Sie, wie Sie den Connector aktualisieren können"].
+Sobald neue Versionen der Connector-Software verfügbar sind, werden diese auf der NetApp Support Site veröffentlicht. link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Erfahren Sie, wie Sie den Connector aktualisieren können"].
 
 .Was kommt als Nächstes?
 Bereitstellen von BlueXP mit den Berechtigungen, die Sie bereits eingerichtet haben.

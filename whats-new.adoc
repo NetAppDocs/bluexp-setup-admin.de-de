@@ -665,7 +665,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 Wenn Sie einen neuen Connector in Microsoft Azure erstellen, können Sie sich jetzt mit einem Azure-Dienstprincipal authentifizieren, anstatt mit den Azure-Konto-Anmeldedaten.
 
-link:task-creating-connectors-azure.html#create-a-connector-using-a-service-principal["Informieren Sie sich, wie Sie sich mit einem Azure-Service-Principal authentifizieren"].
+link:task-creating-connectors-azure.html["Informieren Sie sich, wie Sie sich mit einem Azure-Service-Principal authentifizieren"].
 
 
 
@@ -718,7 +718,7 @@ image:screenshot_nss_management.png["Einen Screenshot der Registerkarte NSS Mana
 
 In der Zeitleiste in Cloud Manager werden jetzt Aktionen und Ereignisse im Zusammenhang mit der Kontoverwaltung angezeigt. Zu den Aktionen gehören u. a. die Verknüpfung von Benutzern, die Erstellung von Arbeitsbereichen und die Erstellung von Connectors. Das Prüfen der Zeitleiste kann hilfreich sein, wenn Sie feststellen müssen, wer eine bestimmte Aktion durchgeführt hat oder ob Sie den Status einer Aktion identifizieren müssen.
 
-link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["Erfahren Sie, wie Sie den Zeitplan für den Service für die Mandantenfähigkeit filtern"].
+link:task-monitor-cm-operations.html#audit-user-activity-in-your-account["Erfahren Sie, wie Sie den Zeitplan für den Service für die Mandantenfähigkeit filtern"].
 
 
 
@@ -740,7 +740,7 @@ Sie können jetzt ein Dienstkonto-Benutzer erstellen.
 
 Ein Service-Konto fungiert als „Benutzer“, der autorisierte API-Aufrufe an Cloud Manager zur Automatisierung vornehmen kann. So ist das Management der Automatisierung einfacher, da keine Automatisierungsskripts auf Basis des Benutzerkontos eines echten Mitarbeiters erstellt werden müssen, der das Unternehmen jederzeit verlassen kann. Und bei Verwendung von Federation können Sie ein Token erstellen, ohne ein Update-Token aus der Cloud zu generieren.
 
-link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["Erfahren Sie mehr über die Verwendung von Servicekonten"].
+link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["Erfahren Sie mehr über die Verwendung von Servicekonten"].
 
 
 
@@ -748,7 +748,7 @@ link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["
 
 Private Vorschauen in Ihrem Konto können Sie jetzt auf neue NetApp Cloud-Services zugreifen, sobald diese in Cloud Manager als Vorschau verfügbar gemacht werden.
 
-link:task-managing-netapp-accounts.html#allowing-private-previews["Weitere Informationen zu dieser Option"].
+link:task-managing-netapp-accounts.html#allow-private-previews["Weitere Informationen zu dieser Option"].
 
 
 
@@ -756,7 +756,7 @@ link:task-managing-netapp-accounts.html#allowing-private-previews["Weitere Infor
 
 Sie haben auch die Möglichkeit, dass Drittanbieterservices in Ihrem Konto Zugriff auf in Cloud Manager verfügbare Drittanbieter-Services erhalten.
 
-link:task-managing-netapp-accounts.html#allowing-third-party-services["Weitere Informationen zu dieser Option"].
+link:task-managing-netapp-accounts.html#allow-third-party-services["Weitere Informationen zu dieser Option"].
 
 
 

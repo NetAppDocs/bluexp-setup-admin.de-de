@@ -141,7 +141,7 @@ image:screenshot-change-notifications.png["Ein Screenshot, in dem das Ändern vo
 
 === Fügen Sie weitere E-Mail-Empfänger hinzu
 
-Die Benutzer, die auf der Registerkarte „_Account users_“ angezeigt werden, werden automatisch von den Benutzern in Ihrem BlueXP Konto (über die) ausgefüllt link:task-managing-netapp-accounts.html#creating-and-managing-users["Seite „Konto verwalten“"]). Sie können E-Mail-Adressen auf der Registerkarte „_Additional Recipients_“ für andere Personen oder Gruppen hinzufügen, die keinen Zugriff auf BlueXP haben, aber über bestimmte Arten von Warnungen und Benachrichtigungen benachrichtigt werden müssen.
+Die Benutzer, die auf der Registerkarte „_Account users_“ angezeigt werden, werden automatisch von den Benutzern in Ihrem BlueXP Konto (über die) ausgefüllt link:task-managing-netapp-accounts.html#create-and-manage-users["Seite „Konto verwalten“"]). Sie können E-Mail-Adressen auf der Registerkarte „_Additional Recipients_“ für andere Personen oder Gruppen hinzufügen, die keinen Zugriff auf BlueXP haben, aber über bestimmte Arten von Warnungen und Benachrichtigungen benachrichtigt werden müssen.
 
 .Schritte
 . Wählen Sie auf der Seite Einstellungen für Warnmeldungen und Benachrichtigungen die Option *Neue Empfänger hinzufügen* aus.

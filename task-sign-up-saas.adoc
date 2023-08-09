@@ -39,7 +39,7 @@ Beachten Sie, dass nur englische Zeichen im Anmeldeformular zulässig sind.
 . Überprüfen Sie, wenn Sie dazu aufgefordert werden, die Endbenutzer-Lizenzvereinbarung und akzeptieren Sie die Bedingungen.
 . Geben Sie auf der Seite *Willkommen* einen Namen für Ihr Konto ein.
 +
-Wenn Ihr Unternehmen bereits über ein Konto verfügt und Sie es beitreten möchten, schließen Sie BlueXP ab und bitten Sie den Eigentümer, Sie mit dem Konto zu verknüpfen. Nachdem der Besitzer Sie hinzugefügt hat, können Sie sich einloggen und haben Zugriff auf das Konto. link:task-managing-netapp-accounts.html#adding-users["Erfahren Sie, wie Sie einem bestehenden Konto Mitglieder hinzufügen"].
+Wenn Ihr Unternehmen bereits über ein Konto verfügt und Sie es beitreten möchten, schließen Sie BlueXP ab und bitten Sie den Eigentümer, Sie mit dem Konto zu verknüpfen. Nachdem der Besitzer Sie hinzugefügt hat, können Sie sich einloggen und haben Zugriff auf das Konto. link:task-managing-netapp-accounts.html#add-users["Erfahren Sie, wie Sie einem bestehenden Konto Mitglieder hinzufügen"].
 
 +
 Der Account ist das wichtigste Element der Identitätsplattform von NetApp. Sie können Benutzer, Rollen, Berechtigungen und Arbeitsumgebungen hinzufügen und verwalten.

@@ -234,7 +234,7 @@ Sie müssen den Connector mit Arbeitsbereichen verknüpfen, damit Workspace-Admi
 
 Wenn Sie nur Kontoadministratoren haben, ist es nicht erforderlich, den Connector mit Arbeitsbereichen zu verknüpfen. Kontoadministratoren haben standardmäßig die Möglichkeit, auf alle Arbeitsbereiche in BlueXP zuzugreifen.
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["Erfahren Sie mehr über Benutzer, Arbeitsbereiche und Connectors"].
+link:concept-netapp-accounts.html["Erfahren Sie mehr über Benutzer, Arbeitsbereiche und Connectors"].
 
 .Schritte
 . Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.

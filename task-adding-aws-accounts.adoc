@@ -24,7 +24,7 @@ AWS Zugangsdaten können zu einem vorhandenen Connector oder direkt zu BlueXP hi
 
 * Fügen Sie einem vorhandenen Connector zusätzliche AWS Zugangsdaten hinzu
 +
-Wenn Sie einem vorhandenen Connector AWS Zugangsdaten hinzufügen, erhalten Sie die erforderlichen Berechtigungen für das Management von Ressourcen und Prozessen in Ihrer Public-Cloud-Umgebung. <<Add credentials to a Connector,Erfahren Sie, wie Sie AWS Zugangsdaten zu einem Connector hinzufügen>>.
+Wenn Sie einem vorhandenen Connector AWS Zugangsdaten hinzufügen, erhalten Sie die erforderlichen Berechtigungen für das Management von Ressourcen und Prozessen in Ihrer Public-Cloud-Umgebung. <<Fügen Sie zusätzliche Anmeldedaten zu einem Connector hinzu,Erfahren Sie, wie Sie AWS Zugangsdaten zu einem Connector hinzufügen>>.
 
 * Fügen Sie zur Erstellung eines Connectors AWS Credentials zu BlueXP hinzu
 +
