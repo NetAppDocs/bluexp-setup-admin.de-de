@@ -26,7 +26,7 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 * Sie können jetzt die BlueXP Audit-Service-API für den Export von Audit-Protokollen verwenden.
 +
-Der Audit-Service zeichnet Informationen zu den durch BlueXP Services ausgeführten Vorgängen auf. Dies umfasst die ursprünglichen IP-Adressen, Arbeitsbereiche, verwendete Connectors und andere Telemetriedaten. Anhand dieser Daten können Sie bestimmen, welche Aktionen durchgeführt wurden, wer sie ausgeführt hat und wann sie aufgetreten sind.
+Der Audit-Service zeichnet Informationen zu den durch BlueXP Services ausgeführten Vorgängen auf. Dazu gehören Arbeitsbereiche, verwendete Connectors und andere Telemetriedaten. Anhand dieser Daten können Sie bestimmen, welche Aktionen durchgeführt wurden, wer sie ausgeführt hat und wann sie aufgetreten sind.
 
 +
 https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["Erfahren Sie mehr über die Verwendung der Audit-Service-API"^]
