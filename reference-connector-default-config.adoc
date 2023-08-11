@@ -33,7 +33,7 @@ Wenn Sie den Connector von BlueXP oder vom Marktplatz des Cloud-Providers implem
 +
 Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.
 
-* Der Benutzername für die EC2 Linux Instanz ist ec2-user.
+* Der Benutzername für die EC2 Linux-Instanz ist ubuntu (für Connectors, die vor Mai 2023 erstellt wurden, war der Benutzername ec2-user).
 * Die Standardfestplatte des Systems ist eine 100 gib gp2-Festplatte.
 
 
