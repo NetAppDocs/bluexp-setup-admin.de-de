@@ -383,6 +383,9 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | Digitale Brieftasche | Ja. | Ja. 
 
 
+| Disaster Recovery | Nein | Nein 
+
+
 | Wirtschaftliche Effizienz | Nein | Nein 
 
 
@@ -410,10 +413,10 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | Tiering | Nein | Nein 
 
 
-| Volume-Caching | Nein | Nein 
+| Volume-Caching | Nein | Nein .5+| *Eigenschaften* 
 
 
-.5+| *Eigenschaften* | Anmeldedaten | Ja. | Ja. 
+| Anmeldedaten | Ja. | Ja. 
 
 
 | NSS-Konten | Ja. | Nein 
@@ -423,7 +426,4 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 
 
 | Suche | Ja. | Nein 
-
-
-| Zeitachse | Ja. | Ja. 
 |===

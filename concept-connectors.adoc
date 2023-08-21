@@ -65,6 +65,7 @@ Wenn Sie BlueXP im Standardmodus verwenden, ist für die folgenden Funktionen un
 * Backup und Recovery
 * Klassifizierung
 * Cloud Volumes ONTAP
+* Disaster Recovery
 * E-Series Systeme
 * Wirtschaftliche Effizienz ^1^
 * Edge-Caching
