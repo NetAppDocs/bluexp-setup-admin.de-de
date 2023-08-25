@@ -35,7 +35,8 @@ Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem S
 Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Abonnieren Sie BlueXP über den AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

@@ -54,7 +54,8 @@ Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem S
 Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.Abonnieren Sie BlueXP über den Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. Navigieren Sie nach Abschluss dieses Vorgangs zur Seite Anmeldeinformationen in BlueXP, und wählen Sie dieses neue Abonnement aus.

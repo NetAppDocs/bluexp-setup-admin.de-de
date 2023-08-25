@@ -3915,4 +3915,7 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">Beim Erstellen der Connector-VM in Azure haben Sie einen Benutzernamen angegeben und sich für die Authentifizierung mit einem Kennwort oder einem öffentlichen SSH-Schlüssel entschieden. Verwenden Sie die Authentifizierungsmethode, die Sie für die Verbindung zur VM ausgewählt haben.</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">Derzeit werden Benachrichtigungen zu folgenden BlueXP Funktionen und Services per E-Mail gesendet: Connector, BlueXP Digital Wallet, BlueXP Kopier- und Synchronisierungsfunktion, BlueXP Backup und Recovery, BlueXP Tiering, BlueXP Migrationsberichte und BlueXP Ransomware-Schutz. Weitere Services werden in zukünftigen Versionen hinzugefügt.</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnieren Sie BlueXP über den AWS Marketplace</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnieren Sie BlueXP über den Azure Marketplace</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnieren Sie BlueXP über den Google Cloud Marketplace</block>
 </blocks>
