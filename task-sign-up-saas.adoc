@@ -16,7 +16,7 @@ summary: Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie
 [role="lead"]
 Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie mit BlueXP starten, müssen Sie sich zunächst mit Ihren vorhandenen Zugangsdaten auf der NetApp Support Website anmelden oder ein NetApp Cloud-Login erstellen.
 
-.Anmelde-Optionen
+.Über diese Aufgabe
 Sie können sich bei BlueXP mithilfe einer der folgenden Optionen anmelden:
 
 * Ihre vorhandenen Zugangsdaten für die NetApp Support Site (NSS

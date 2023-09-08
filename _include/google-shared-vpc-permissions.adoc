@@ -1,0 +1,56 @@
+= 
+:allow-uri-read: 
+
+
+Wenn Sie ein gemeinsam genutztes VPC verwenden, um Ressourcen in einem Serviceprojekt bereitzustellen, müssen Sie Ihre Berechtigungen vorbereiten.
+
+Diese Tabelle dient als Referenz. Ihre Umgebung sollte nach Abschluss der IAM-Konfiguration die Berechtigungstabelle widerspiegeln.
+
+.Freigegebene VPC-Berechtigungen anzeigen
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| Identität | Ersteller | Gehostet in | Berechtigungen für Serviceprojekte | Host-Projektberechtigungen | Zweck 
+
+
+| Google-Konto zur Bereitstellung des Connectors | Individuell | Service-Projekt  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Richtlinie für die Connector-Bereitstellung"]
+ a| 
+compute.networkUser
+| Bereitstellen des Connectors im Serviceprojekt 
+
+
+| Connector-Servicekonto | Individuell | Service-Projekt  a| 
+link:reference-permissions-gcp.html["Kontorichtlinie für Connector-Service"]
+| compute.networkUser
+
+Bereitsmanager.Editor | Implementierung und Wartung von Cloud Volumes ONTAP und Services im Service-Projekt 
+
+
+| Cloud Volumes ONTAP-Servicekonto | Individuell | Service-Projekt | Storage.Administration
+
+mitglied: BlueXP Dienstkonto als serviceAccount.user | K. A. | (Optional) für Daten-Tiering sowie Backup und Recovery von BlueXP 
+
+
+| Google APIs-Serviceagent | Google Cloud | Service-Projekt  a| 
+(Standard) Editor
+ a| 
+compute.networkUser
+| Arbeitet im Auftrag der Implementierung mit Google Cloud APIs zusammen. Ermöglicht BlueXP die Nutzung des gemeinsam genutzten Netzwerks. 
+
+
+| Google Compute Engine Standard-Servicekonto | Google Cloud | Service-Projekt  a| 
+(Standard) Editor
+ a| 
+compute.networkUser
+| Implementiert Google Cloud-Instanzen und Computing-Infrastrukturen im Auftrag der Implementierung. Ermöglicht BlueXP die Nutzung des gemeinsam genutzten Netzwerks. 
+|===
+Hinweise:
+
+. Wenn Sie Firewall-Regeln nicht an die Bereitstellung übergeben und BlueXP diese für Sie erstellen lassen, ist encmentmanager.Editor nur beim Host-Projekt erforderlich. BlueXP erstellt eine Bereitstellung im Hostprojekt, die die VPC0-Firewall-Regel enthält, wenn keine Regel angegeben ist.
+. Firewall.create und firewall.delete sind nur erforderlich, wenn Sie Firewall-Regeln nicht an die Bereitstellung übergeben und BlueXP diese für Sie erstellen lassen. Diese Berechtigungen liegen im BlueXP-Konto .yaml-Datei. Wenn Sie ein HA-Paar mithilfe eines gemeinsam genutzten VPC implementieren, werden diese Berechtigungen verwendet, um die Firewall-Regeln für VPC1, 2 und 3 zu erstellen. Für alle anderen Bereitstellungen werden diese Berechtigungen auch verwendet, um Regeln für VPC0 zu erstellen.
+. Für das Daten-Tiering muss das Tiering-Servicekonto die serviceAccount.user-Rolle auf dem Servicekonto haben, nicht nur auf Projektebene. Derzeit werden serviceAccount.user auf Projektebene zugewiesen, wenn Sie das Servicekonto mit getIAMPolicy abfragen.
+
+
+====

@@ -2,8 +2,9 @@
 :allow-uri-read: 
 
 
-Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren, benötigt das Installationsprogramm für den Connector während des Installationsprozesses Zugriff auf die folgenden URLs:
-
+Endpunkte wurden während der manuellen Installation kontaktiert:: Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren, benötigt das Installationsprogramm für den Connector während des Installationsprozesses Zugriff auf die folgenden URLs:
++
+--
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
@@ -11,6 +12,9 @@ Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren, benöt
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
 * \https://cloudmanagerinfraprod.azurecr.io
+
+
+--
 
 
 Der Host versucht möglicherweise, während der Installation Betriebssystempakete zu aktualisieren. Der Host kann verschiedene Spiegelungsstandorte für diese Betriebssystempakete kontaktieren.

@@ -20,7 +20,7 @@ Erfahren Sie, wie BlueXP Azure Zugangsdaten und Berechtigungen nutzt, um Aktione
 
 == Erste Azure Zugangsdaten
 
-Wenn Sie einen Connector von BlueXP bereitstellen, müssen Sie ein Azure-Konto oder einen Service-Principal verwenden, der über die Berechtigungen zum Bereitstellen der virtuellen Connector-Maschine verfügt. Die erforderlichen Berechtigungen werden im aufgeführt link:task-set-up-permissions-azure.html["Connector-Implementierungsrichtlinie für Azure"].
+Wenn Sie einen Connector von BlueXP bereitstellen, müssen Sie ein Azure-Konto oder einen Service-Principal verwenden, der über die Berechtigungen zum Bereitstellen der virtuellen Connector-Maschine verfügt. Die erforderlichen Berechtigungen werden im aufgeführt link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Connector-Implementierungsrichtlinie für Azure"].
 
 Wenn BlueXP die Connector Virtual Machine in Azure implementiert, wird damit ein aktiviert https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Vom System zugewiesene verwaltete Identität"^] Erstellt auf einer virtuellen Maschine eine benutzerdefinierte Rolle und weist sie der virtuellen Maschine zu. Diese Rolle bietet BlueXP die Berechtigungen, die für das Management von Ressourcen und Prozessen innerhalb des Azure Abonnements erforderlich sind. link:reference-permissions-azure.html["Überprüfen Sie, wie BlueXP die Berechtigungen verwendet"].
 
@@ -66,10 +66,10 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie auf den folge
 
 * Standardmodus
 +
-** link:task-set-up-permissions-azure.html["Azure-Berechtigungen einrichten"]
-** link:task-set-up-permissions-on-prem.html["Cloud-Berechtigungen für On-Premises-Implementierungen einrichten"]
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Richten Sie Berechtigungen für eine Azure Marketplace-Implementierung ein"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Cloud-Berechtigungen für den eingeschränkten Modus einrichten"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Richten Sie Cloud-Berechtigungen für den privaten Modus ein"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 

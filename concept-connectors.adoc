@@ -141,18 +141,20 @@ Ein BlueXP Kontoadministrator kann einen Connector direkt aus BlueXP, aus dem Ma
 
 Um den Connector direkt aus BlueXP zu erstellen, sind spezielle Berechtigungen erforderlich, für die Connector-Instanz selbst sind weitere Berechtigungen erforderlich. Wenn Sie den Connector in AWS oder Azure direkt aus BlueXP erstellen, erstellt BlueXP den Connector mit den entsprechenden Berechtigungen.
 
-Weitere Informationen zum Einrichten von Berechtigungen finden Sie auf den folgenden Seiten:
+Wenn Sie BlueXP im Standardmodus verwenden, hängt die Art und Weise, wie Sie Berechtigungen bereitstellen, davon ab, wie Sie den Connector erstellen möchten.
+
+Weitere Informationen zum Einrichten von Berechtigungen finden Sie unter:
 
 * Standardmodus
 +
-** link:task-set-up-permissions-aws.html["AWS-Berechtigungen einrichten"]
-** link:task-set-up-permissions-azure.html["Azure-Berechtigungen einrichten"]
-** link:task-set-up-permissions-google.html["Google Cloud-Berechtigungen einrichten"]
-** link:task-set-up-permissions-on-prem.html["Cloud-Berechtigungen für On-Premises-Implementierungen einrichten"]
+** link:concept-install-options-aws.html["Installationsoptionen für Konnektoren in AWS"]
+** link:concept-install-options-azure.html["Optionen für die Connector-Installation in Azure"]
+** link:concept-install-options-google.html["Connector-Installationsoptionen in Google Cloud"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Cloud-Berechtigungen für On-Premises-Implementierungen einrichten"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Cloud-Berechtigungen für den eingeschränkten Modus einrichten"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Richten Sie Cloud-Berechtigungen für den privaten Modus ein"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
 Informationen zu den genauen Berechtigungen, die der Connector benötigt, finden Sie auf den folgenden Seiten:

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
 keywords: private mode quick start, quick start 
-summary: Starten Sie in wenigen Schritten mit BlueXP im privaten Modus. 
+summary: 'Erste Schritte mit BlueXP im privaten Modus: Bereiten Sie Ihre Umgebung vor und implementieren Sie den Connector.' 
 ---
-= Schneller Start für BlueXP im privaten Modus
+= Erste Schritte Workflow (privater Modus)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,22 +16,18 @@ summary: Starten Sie in wenigen Schritten mit BlueXP im privaten Modus.
 [role="lead"]
 Erste Schritte mit BlueXP im privaten Modus: Bereiten Sie Ihre Umgebung vor und implementieren Sie den Connector.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Vorbereitungen für die Implementierung
+Bevor Sie beginnen, sollten Sie ein Verständnis von haben link:concept-netapp-accounts.html["BlueXP Accounts"], link:concept-connectors.html["Anschlüsse"], und link:concept-modes.html["Bereitstellungsmodi"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] link:task-prepare-private-mode.html["Vorbereitungen für die Implementierung"]
 [role="quick-margin-list"]
 . Bereiten Sie einen dedizierten Linux-Host vor, der die Anforderungen für CPU, RAM, Festplattenspeicher, Docker Engine und mehr erfüllt.
 . Richten Sie ein Netzwerk ein, das Zugriff auf die Zielnetzwerke bietet.
 . Richten Sie bei Cloud-Bereitstellungen Berechtigungen in Ihrem Cloud-Provider ein, damit Sie diese Berechtigungen nach der Installation der Software mit dem Connector verknüpfen können.
 
 
-[role="quick-margin-para"]
-link:task-prepare-private-mode.html["Erfahren Sie, wie Sie die Implementierung vorbereiten"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren Sie den Connector
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] link:task-install-private-mode.html["Implementieren Sie den Connector"]
 [role="quick-margin-list"]
 . Installieren Sie die Connector-Software auf Ihrem eigenen Linux-Host.
 . Richten Sie BlueXP ein, indem Sie einen Webbrowser öffnen und die IP-Adresse des Linux-Hosts eingeben.
 . Stellen Sie für Cloud-Implementierungen BlueXP die Berechtigungen bereit, die Sie zuvor eingerichtet haben.
 
-
-[role="quick-margin-para"]
-link:task-install-private-mode.html["Erfahren Sie, wie Sie den Connector bereitstellen"].

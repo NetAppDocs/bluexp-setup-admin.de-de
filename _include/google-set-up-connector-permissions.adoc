@@ -1,0 +1,57 @@
+= 
+:allow-uri-read: 
+
+
+Um dem Connector die erforderlichen Berechtigungen für das Ressourcenmanagement in Google Cloud zu geben, ist ein Google Cloud-Servicekonto erforderlich. Wenn Sie den Connector erstellen, müssen Sie dieses Dienstkonto mit der Connector VM verknüpfen.
+
+.Schritte
+. Benutzerdefinierte Rolle in Google Cloud erstellen:
++
+.. Erstellen Sie eine YAML-Datei, die den Inhalt des enthält link:reference-permissions-gcp.html["Dienstkontoberechtigungen für den Connector"].
+.. Aktivieren Sie in Google Cloud die Cloud Shell.
+.. Laden Sie die YAML-Datei hoch, die die erforderlichen Berechtigungen enthält.
+.. Erstellen Sie mithilfe von eine benutzerdefinierte Rolle `gcloud iam roles create` Befehl.
++
+Im folgenden Beispiel wird auf Projektebene eine Rolle namens „Connector“ erstellt:
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud docs: Erstellen und Verwalten benutzerdefinierter Rollen"^]
+
+
+
+. Erstellen Sie ein Service-Konto in Google Cloud und weisen Sie die Rolle dem Service-Konto zu:
++
+.. Wählen Sie im IAM & Admin-Dienst *Service-Konten > Service-Konto erstellen* aus.
+.. Geben Sie die Details des Servicekontos ein und wählen Sie *Erstellen und Fortfahren*.
+.. Wählen Sie die gerade erstellte Rolle aus.
+.. Beenden Sie die verbleibenden Schritte, um die Rolle zu erstellen.
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud docs: Erstellen eines Dienstkontos"^]
+
+
+
+. Wenn Sie planen, Cloud Volumes ONTAP-Systeme in verschiedenen Projekten bereitzustellen als das Projekt, in dem sich der Connector befindet, müssen Sie dem Connector-Servicekonto Zugriff auf diese Projekte gewähren.
++
+Nehmen wir beispielsweise an, dass der Connector in Projekt 1 liegt und Sie Cloud Volumes ONTAP-Systeme in Projekt 2 erstellen möchten. Sie müssen in Projekt 2 Zugriff auf das Servicekonto gewähren.
+
++
+.. Wählen Sie aus dem IAM & Admin-Dienst das Google Cloud-Projekt aus, in dem Sie Cloud Volumes ONTAP-Systeme erstellen möchten.
+.. Wählen Sie auf der *IAM*-Seite *Grant Access* und geben Sie die erforderlichen Details ein.
++
+*** Geben Sie die E-Mail des Service-Kontos des Connectors ein.
+*** Wählen Sie die benutzerdefinierte Rolle des Connectors aus.
+*** Wählen Sie *Speichern*.
+
+
+
+
++
+Weitere Informationen finden Sie unter https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud-Dokumentation"^]
+
+
+
+.Ergebnis
+Das Servicekonto für die Connector-VM wird eingerichtet.

@@ -2,13 +2,9 @@
 :allow-uri-read: 
 
 
-* Ein dedizierter Host, auf dem Ubuntu 22.04, CentOS 7.6 bis 7.9 oder RHEL 7.6 bis 7.9 ausgeführt werden
-* 4 CPUs
-* 14 GB RAM
-* Docker Engine 19.3.1 oder höher
-
-
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
+
+
 Unterstützte Betriebssysteme::
 +
 --
@@ -24,12 +20,16 @@ Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unte
 
 
 --
+
+
 Hypervisor:: Ein Bare-Metal- oder Hosted-Hypervisor, der für Ubuntu, CentOS oder Red hat Enterprise Linux zertifiziert ist, ist erforderlich.
 +
 --
 https://access.redhat.com/certified-hypervisors["Red hat Solution: Welche Hypervisoren sind für die Ausführung von Red hat Enterprise Linux zertifiziert?"^]
 
 --
+
+
 CPU:: 4 Kerne oder 4 vCPUs
 RAM:: 14 GB
 
@@ -37,7 +37,7 @@ RAM:: 14 GB
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.xlarge.
 
 
-Schlüsselpaar:: Wenn Sie den Connector aus BlueXP oder aus AWS Marketplace erstellen, müssen Sie ein EC2-Schlüsselpaar zur Verwendung mit der Instanz auswählen.
+Schlüsselpaar:: Wenn Sie den Connector erstellen, müssen Sie ein EC2-Schlüsselpaar auswählen, das mit der Instanz verwendet werden soll.
 
 
 Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen DS3 v2.
@@ -53,5 +53,7 @@ Der Connector wird in Google Cloud auf einer VM-Instanz mit einem unterstützten
 
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
+
+
 Docker Engine:: Docker Engine Version 19.3.1 oder höher ist auf dem Host erforderlich, bevor Sie den Connector installieren. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
 

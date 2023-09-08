@@ -20,7 +20,7 @@ Erfahren Sie, wie BlueXP AWS Zugangsdaten und Berechtigungen für Ihre Aktionen 
 
 == Erste AWS Zugangsdaten
 
-Wenn Sie einen Connector von BlueXP bereitstellen, müssen Sie das ARN einer IAM-Rolle oder Zugriffsschlüssel für einen IAM-Benutzer bereitstellen. Die verwendete Authentifizierungsmethode muss über die erforderlichen Berechtigungen für die Bereitstellung der Connector-Instanz in AWS verfügen. Die erforderlichen Berechtigungen werden im aufgeführt link:task-set-up-permissions-aws.html["Connector-Implementierungsrichtlinie für AWS"].
+Wenn Sie einen Connector von BlueXP bereitstellen, müssen Sie das ARN einer IAM-Rolle oder Zugriffsschlüssel für einen IAM-Benutzer bereitstellen. Die verwendete Authentifizierungsmethode muss über die erforderlichen Berechtigungen für die Bereitstellung der Connector-Instanz in AWS verfügen. Die erforderlichen Berechtigungen werden im aufgeführt link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Connector-Implementierungsrichtlinie für AWS"].
 
 Wenn BlueXP die Connector-Instanz in AWS startet, erstellt sie eine IAM-Rolle und ein Instanzprofil für die Instanz. Zudem wird eine Richtlinie angehängt, die dem Connector Berechtigungen für das Management von Ressourcen und Prozessen innerhalb dieses AWS-Kontos bietet. link:reference-permissions-aws.html["Überprüfen Sie, wie BlueXP die Berechtigungen verwendet"].
 
@@ -84,12 +84,12 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie auf den folge
 
 * Standardmodus
 +
-** link:task-set-up-permissions-aws.html["AWS-Berechtigungen einrichten"]
-** link:task-set-up-permissions-on-prem.html["Cloud-Berechtigungen für On-Premises-Implementierungen einrichten"]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Richten Sie Berechtigungen für eine AWS Marketplace-Implementierung ein"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Cloud-Berechtigungen für den eingeschränkten Modus einrichten"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Richten Sie Cloud-Berechtigungen für den privaten Modus ein"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
 

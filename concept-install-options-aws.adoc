@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
 keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
-summary: Es gibt verschiedene Möglichkeiten, einen Connector in AWS zu erstellen. Dies ist die gängigste Methode – direkt von BlueXP. Die von Ihnen ausgewählte Installationsoption legt fest, wie Sie die Bereitstellung vorbereiten. 
+summary: Es gibt verschiedene Möglichkeiten, einen Connector in AWS zu erstellen. Dies ist die gängigste Methode – direkt von BlueXP. 
 ---
 = Installationsoptionen für Konnektoren in AWS
 :hardbreaks:
@@ -14,21 +14,19 @@ summary: Es gibt verschiedene Möglichkeiten, einen Connector in AWS zu erstelle
 
 
 [role="lead"]
-Es gibt verschiedene Möglichkeiten, einen Connector in AWS zu erstellen. Dies ist die gängigste Methode – direkt von BlueXP. Die von Ihnen ausgewählte Installationsoption legt fest, wie Sie die Bereitstellung vorbereiten.
+Es gibt verschiedene Möglichkeiten, einen Connector in AWS zu erstellen. Dies ist die gängigste Methode – direkt von BlueXP.
 
 Folgende Installationsoptionen sind verfügbar:
 
-* Connector direkt aus BlueXP erstellen (Standardoption)
+* link:task-install-connector-aws-bluexp.html["Connector direkt aus BlueXP erstellen"] (Dies ist die Standardoption)
 +
 Mit dieser Aktion wird eine EC2-Instanz gestartet, auf der Linux und die Connector-Software in einem VPC Ihrer Wahl ausgeführt werden.
 
-* Erstellen Sie einen Connector aus dem AWS Marketplace
+* link:task-install-connector-aws-marketplace.html["Erstellen Sie einen Connector aus dem AWS Marketplace"]
 +
-Mit dieser Aktion wird auch eine EC2-Instanz gestartet, auf der Linux und die Connector-Software ausgeführt werden.
+Durch diese Aktion wird auch eine EC2-Instanz gestartet, auf der Linux und die Connector-Software ausgeführt werden. Die Implementierung wird jedoch direkt über AWS Marketplace anstatt über BlueXP gestartet.
 
-* Laden Sie die Software herunter, und installieren Sie sie manuell auf Ihrem eigenen Linux-Host
+* link:task-install-connector-aws-manual.html["Laden Sie die Software herunter, und installieren Sie sie manuell auf Ihrem eigenen Linux-Host"]
 
 
 Die von Ihnen gewählte Installationsoption wirkt sich auf die Vorbereitung auf die Installation aus. Dazu gehört auch, wie Sie BlueXP die erforderlichen Berechtigungen bereitstellen, die es zur Authentifizierung und zum Management von Ressourcen in AWS benötigt.
-
-link:task-install-connector-aws.html["Erfahren Sie, wie Sie den Connector in AWS installieren"].

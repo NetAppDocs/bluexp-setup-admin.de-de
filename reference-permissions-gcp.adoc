@@ -24,9 +24,9 @@ Die unten abgebildete benutzerdefinierte Rolle bietet die Berechtigungen, die ei
 
 Sie müssen diese benutzerdefinierte Rolle auf ein Servicekonto anwenden, das mit der Connector-VM verbunden ist.
 
-* link:task-set-up-permissions-google.html["Richten Sie Berechtigungen für den Standardmodus ein"]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Richten Sie Google Cloud-Berechtigungen für den Standardmodus ein"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
 Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden.

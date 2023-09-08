@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über die webbasierte Konsole anmelden, um mit dem Management Ihrer Daten und Storage-Infrastruktur zu beginnen. 
+summary: Die Anmeldung bei BlueXP hängt vom BlueXP Implementierungsmodus ab, den Sie für Ihr Konto verwenden. 
 ---
-= Bei BlueXP anmelden (Standardmodus)
+= Melden Sie sich bei BlueXP an
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,15 @@ summary: Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über di
 
 
 [role="lead"]
+Die Anmeldung bei BlueXP hängt vom BlueXP Implementierungsmodus ab, den Sie für Ihr Konto verwenden.
+
+[role="tabbed-block"]
+====
+.Standardmodus
+--
 Nachdem Sie sich bei BlueXP angemeldet haben, können Sie sich über die webbasierte Konsole anmelden, um mit dem Management Ihrer Daten und Storage-Infrastruktur zu beginnen.
 
-.Anmelde-Optionen
+.Über diese Aufgabe
 Sie können sich über eine der folgenden Optionen bei der webbasierten Konsole von BlueXP anmelden:
 
 * Ihre vorhandenen Zugangsdaten für die NetApp Support Site (NSS
@@ -41,3 +47,57 @@ Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensver
 
 .Ergebnis
 Sie sind jetzt angemeldet und können mit BlueXP Ihre Hybrid-Multi-Cloud-Infrastruktur managen.
+
+--
+.Eingeschränkter Modus
+--
+Wenn Sie BlueXP im eingeschränkten Modus nutzen, müssen Sie sich über die lokale Benutzeroberfläche des Connector bei der BlueXP Konsole anmelden.
+
+.Über diese Aufgabe
+BlueXP unterstützt die Anmeldung über eine der folgenden Optionen, wenn Ihr Konto im eingeschränkten Modus eingerichtet wird:
+
+* Nutzen Sie Ihre E-Mail-Adresse und ein Passwort, um sich bei einem NetApp Cloud-Login anzumelden
+* Eine Verbundverbindung
++
+Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. link:concept-federation.html["Erfahren Sie mehr über den Einsatz von Identitätsföderation mit BlueXP"].
+
+
+
+.Schritte
+. Öffnen Sie einen Webbrowser, und geben Sie die folgende URL ein:
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ kann localhost, eine private IP-Adresse oder eine öffentliche IP-Adresse sein, abhängig von der Konfiguration des Hosts, auf dem Sie den Connector installiert haben. Sie müssen beispielsweise eine private IP-Adresse von einem Host eingeben, der eine Verbindung zum Connector-Host hat.
+
+. Geben Sie Ihren Benutzernamen und Ihr Kennwort ein, um sich anzumelden.
+
+
+.Ergebnis
+Sie sind jetzt angemeldet und können mit BlueXP Ihre Hybrid-Multi-Cloud-Infrastruktur managen.
+
+--
+.Privater Modus
+--
+Wenn Sie BlueXP im privaten Modus nutzen, müssen Sie sich über die lokale Benutzeroberfläche des Connector bei der BlueXP Konsole anmelden.
+
+.Über diese Aufgabe
+Der private Modus unterstützt lokale Benutzerverwaltung und -Zugriff. Authentifizierung wird nicht über den Cloud-Service von BlueXP bereitgestellt.
+
+.Schritte
+. Öffnen Sie einen Webbrowser, und geben Sie die folgende URL ein:
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ kann localhost, eine private IP-Adresse oder eine öffentliche IP-Adresse sein, abhängig von der Konfiguration des Hosts, auf dem Sie den Connector installiert haben. Sie müssen beispielsweise eine private IP-Adresse von einem Host eingeben, der eine Verbindung zum Connector-Host hat.
+
+. Geben Sie Ihren Benutzernamen und Ihr Kennwort ein, um sich anzumelden.
+
+
+.Ergebnis
+Sie sind jetzt angemeldet und können mit BlueXP Ihre Hybrid-Multi-Cloud-Infrastruktur managen.
+
+--
+====

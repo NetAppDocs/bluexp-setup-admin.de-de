@@ -30,10 +30,10 @@ Beachten Sie Folgendes:
 * Bei Bedarf können Sie die IAM-Richtlinien mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
 * Informationen zur schrittweisen Verwendung dieser Richtlinien finden Sie auf den folgenden Seiten:
 +
-** link:task-set-up-permissions-aws.html["Einrichten von Berechtigungen für Connector-Installation in AWS (Standardmodus)"]
-** link:task-set-up-permissions-on-prem.html["Berechtigungen für Connector-Installation vor Ort einrichten (Standardmodus)"]
-** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
-** link:task-prepare-private-mode.html#prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Richten Sie Berechtigungen für eine AWS Marketplace-Implementierung ein"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
+** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
 

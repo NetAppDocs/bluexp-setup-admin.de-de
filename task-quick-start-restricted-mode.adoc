@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-restricted-mode.html 
 keywords: quick start, restricted mode quick start 
-summary: Einstieg in BlueXP im eingeschränkten Modus in nur wenigen Schritten 
+summary: Der Einstieg in BlueXP ist eingeschränkt, indem Sie Ihre Umgebung vorbereiten, Connector implementieren und BlueXP abonnieren. 
 ---
-= Schnellstart für BlueXP im eingeschränkten Modus
+= Erste Schritte im Workflow (eingeschränkter Modus)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,29 +16,22 @@ summary: Einstieg in BlueXP im eingeschränkten Modus in nur wenigen Schritten
 [role="lead"]
 Der Einstieg in BlueXP ist eingeschränkt, indem Sie Ihre Umgebung vorbereiten, Connector implementieren und BlueXP abonnieren.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Vorbereitungen für die Implementierung
+Bevor Sie beginnen, sollten Sie ein Verständnis von haben link:concept-netapp-accounts.html["BlueXP Accounts"], link:concept-connectors.html["Anschlüsse"], und link:concept-modes.html["Bereitstellungsmodi"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] link:task-prepare-restricted-mode.html["Vorbereitungen für die Implementierung"]
 [role="quick-margin-list"]
 . Bereiten Sie einen dedizierten Linux-Host vor, der die Anforderungen für CPU, RAM, Festplattenspeicher, Docker Engine und mehr erfüllt.
 . Richten Sie ein Netzwerk ein, das den Zugriff auf die Zielnetzwerke, den ausgehenden Internetzugang für manuelle Installationen und das ausgehende Internet für den täglichen Zugriff bietet.
 . Richten Sie Berechtigungen in Ihrem Cloud-Provider ein, damit Sie diese Berechtigungen nach der Bereitstellung mit der Connector-Instanz verknüpfen können.
 
 
-[role="quick-margin-para"]
-link:task-prepare-restricted-mode.html["Erfahren Sie, wie Sie die Implementierung vorbereiten"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren Sie den Connector
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] link:task-install-restricted-mode.html["Implementieren Sie den Connector"]
 [role="quick-margin-list"]
 . Installieren Sie den Connector auf dem Marktplatz Ihres Cloud-Anbieters oder installieren Sie die Software manuell auf Ihrem eigenen Linux-Host.
 . Richten Sie BlueXP ein, indem Sie einen Webbrowser öffnen und die IP-Adresse des Linux-Hosts eingeben.
 . Bereitstellen von BlueXP mit den Berechtigungen, die Sie bereits eingerichtet haben.
 
 
-[role="quick-margin-para"]
-link:task-install-restricted-mode.html["Erfahren Sie, wie Sie den Connector bereitstellen"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Abonnieren Sie BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] link:task-subscribe-restricted-mode.html["Abonnieren Sie BlueXP"]
 [role="quick-margin-para"]
 Abonnieren Sie BlueXP über den Marketplace Ihres Cloud-Providers und zahlen Sie für BlueXP Services zu einem Stundensatz (PAYGO) oder über einen Jahresvertrag.
-
-[role="quick-margin-para"]
-link:task-subscribe-restricted-mode.html["Abonnieren Sie BlueXP"].
