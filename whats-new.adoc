@@ -18,7 +18,22 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
-== Juli 30
+== 10 September 2023
+
+
+
+=== Anschluss 3.9.33
+
+* Wenn Sie einen Connector in AWS von BlueXP erstellen, können Sie nun im Feld Schlüsselpaar suchen, um das Schlüsselpaar, das Sie mit der Connector-Instanz verwenden möchten, einfacher zu finden.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Ein Screenshot der Suchoption im Feld Schlüsselpaar, das beim Erstellen eines Connectors in AWS aus BlueXP auf der Seite Netzwerk angezeigt wird."]
+
+* Dieses Update enthält auch Fehlerbehebungen.
+
+
+
+
+== 30 Juli 2023
 
 
 
