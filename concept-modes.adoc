@@ -368,7 +368,7 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 | StorageGRID | Nein | Nein 
 
 
-.17+| *Services* | Backup und Recovery | Ja. | Ja. 
+.16+| *Services* | Backup und Recovery | Ja. | Ja. 
 
 
 | Klassifizierung | Ja. | Ja. 
@@ -399,9 +399,6 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 
 
 | Operative Ausfallsicherheit | Nein | Nein 
-
-
-| Schutz durch Ransomware | Nein | Nein 
 
 
 | Korrekturmaßnahmen | Nein | Nein 

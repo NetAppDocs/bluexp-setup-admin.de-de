@@ -68,7 +68,6 @@ Analyse und Kontrolle:: Mit Tools können Sie Ihren Storage und Ihre Infrastrukt
 * https://bluexp.netapp.com/digital-advisor["Digitaler Berater"^]
 * https://bluexp.netapp.com/digital-advisor["Wirtschaftliche Effizienz"^]
 * https://bluexp.netapp.com/digital-advisor["Operative Ausfallsicherheit"^]
-* https://bluexp.netapp.com/ransomware-protection["Schutz durch Ransomware"^]
 
 
 --

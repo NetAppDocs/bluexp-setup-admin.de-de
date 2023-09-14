@@ -75,7 +75,7 @@ NOTE: Die Quell-IP-Adresse ist der Connector-Host.
 | Service | Protokoll | Port | Ziel | Zweck 
 
 
-| API-Aufrufe und AutoSupport | HTTPS | 443 | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe zu Azure, zu ONTAP, zur BlueXP Klassifizierung, zum BlueXP Ransomware-Schutz und zum Senden von AutoSupport Nachrichten an NetApp 
+| API-Aufrufe und AutoSupport | HTTPS | 443 | Outbound-Internet und ONTAP Cluster Management LIF | API-Aufrufe zu Azure, zu ONTAP, zur BlueXP Klassifizierung und zum Senden von AutoSupport Nachrichten an NetApp 
 
 
 | API-Aufrufe | TCP | 8080 | BlueXP Klassifizierung | Durchführung von Prüfanfragen zur BlueXP Klassifizierungsinstanz während der Implementierung 
