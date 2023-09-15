@@ -32,7 +32,10 @@ link:reference-ports-aws.html["Sicherheitsgruppen-Regeln für AWS ansehen"].
 
 
 
-** *Storage konfigurieren*: Behalten Sie die standardmäßigen Speicheroptionen bei.
+** *Configure Storage*: Behalten Sie die Standardgröße und den Festplattentyp für das Root-Volume bei.
++
+Wenn Sie die Amazon EBS-Verschlüsselung auf dem Root-Volume aktivieren möchten, wählen Sie *Erweitert*, erweitern *Volume 1*, wählen *verschlüsselt* und wählen dann einen KMS-Schlüssel aus.
+
 ** *Erweiterte Details*: Unter *IAM Instance profile* wählen Sie die IAM-Rolle, die die erforderlichen Berechtigungen für den Connector enthält.
 ** *Zusammenfassung*: Überprüfen Sie die Zusammenfassung und wählen Sie *Launch Instance*.
 
