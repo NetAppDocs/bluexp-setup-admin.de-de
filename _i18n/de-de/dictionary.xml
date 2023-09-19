@@ -1485,7 +1485,6 @@
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*Systemdetails*: Geben Sie einen Namen für den Connector und Ihren Firmennamen ein.</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">Ein Screenshot der Seite Systemdetails, in der Sie aufgefordert werden, den Namen von BlueXP und den Firmennamen einzugeben.</block>
   <block id="c630091323c70c3e08081e625ae63da9" category="paragraph"><block ref="c630091323c70c3e08081e625ae63da9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="43601154a054554dd57207148a15b7b1" category="list-text">*Admin-Benutzer erstellen*: Erstellen Sie den Admin-Benutzer für das System.</block>
   <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">Dieses Benutzerkonto wird lokal auf dem System ausgeführt. Über BlueXP ist keine Verbindung zum aut0-Service verfügbar.</block>
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">Melden Sie sich mit dem gerade erstellten Admin-Benutzer bei BlueXP an.</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">Der Connector ist jetzt installiert und eingerichtet.</block>
@@ -3435,7 +3434,6 @@ Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.</block>
   <block id="28d4bc1715fb315a1134ddb9ce9b69ef" category="paragraph">Wenn Sie einen neuen Arbeitsbereich erstellt haben, müssen Sie den Connector auch zu diesem Arbeitsbereich hinzufügen. Wenn Sie den Connector nicht hinzufügen, können Workspace-Administratoren auf keine der Ressourcen im Arbeitsbereich zugreifen. Weitere Informationen finden Sie im folgenden Abschnitt.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Wählen Sie *Weiter*.</block>
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">*Review*: Überprüfen Sie Ihre Auswahl und wählen Sie *Launch*.</block>
-  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">Wählen Sie *Set up New BlueXP* und folgen Sie den Anweisungen, um das System einzurichten.</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Review*: Überprüfen Sie die Details, akzeptieren Sie die Lizenzvereinbarung und wählen Sie dann *Setup*.</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">Beachten Sie, dass der Connector sich derzeit mit „cloudmanager.cloud.netapp.com" in Verbindung setzt, jedoch in einer kommenden Version mit „api.bluexp.netapp.com"“ in Verbindung steht.</block>
@@ -3777,4 +3775,6 @@ Nicht in Google Cloud oder in unterstützt<block ref="da2732e6e9a1be4ab82a119453
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">API-Aufrufe an Google Cloud, an ONTAP, an BlueXP Klassifizierung und Senden von AutoSupport Nachrichten an NetApp</block>
   <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">*Configure Storage*: Behalten Sie die Standardgröße und den Festplattentyp für das Root-Volume bei.</block>
   <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">Wenn Sie die Amazon EBS-Verschlüsselung auf dem Root-Volume aktivieren möchten, wählen Sie *Erweitert*, erweitern *Volume 1*, wählen *verschlüsselt* und wählen dann einen KMS-Schlüssel aus.</block>
+  <block id="cf5973f42a5c4e31665e41b2ec75f8a0" category="list-text">Wählen Sie *Set up New BlueXP Connector* und folgen Sie den Anweisungen, um das System einzurichten.</block>
+  <block id="1759129089da3c0c000cb4c2196a2fd0" category="list-text">*Admin-Benutzer erstellen*: Erstellen Sie den Admin-Benutzer für das System.</block>
 </blocks>

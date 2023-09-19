@@ -76,7 +76,7 @@ Der folgende Bildschirm sollte angezeigt werden.
 +
 image:screenshot-onprem-darksite-welcome.png["Ein Screenshot der Begrüßungsseite, die angezeigt wird, nachdem Sie die IP-Adresse des Connectors in Ihren Webbrowser eingegeben haben."]
 
-. Wählen Sie *Set up New BlueXP* und folgen Sie den Anweisungen, um das System einzurichten.
+. Wählen Sie *Set up New BlueXP Connector* und folgen Sie den Anweisungen, um das System einzurichten.
 +
 ** *Systemdetails*: Geben Sie einen Namen für den Connector und Ihren Firmennamen ein.
 +
