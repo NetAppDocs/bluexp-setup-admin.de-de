@@ -2372,7 +2372,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">Der BlueXP Administrator, der die Verbindung erstellt hat, ist der einzige autorisierte Benutzer, der die Verbindung aktualisieren kann. Wenn Sie weitere Administratoren hinzufügen möchten, wenden Sie sich an den NetApp Support.</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">Bevor Sie einen Support-Fall beim technischen Support von NetApp eröffnen können, müssen Sie BlueXP ein NetApp Support Site Konto hinzufügen und sich dann für den Support registrieren.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Für den Support anmelden</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">Für Ihr BlueXP Konto und für einzelne Cloud Volumes ONTAP Systeme ist eine Support-Registrierung erforderlich.</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Übersicht über die Support-Registrierung</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">Es gibt zwei Registrierungsformulare, um die Support-Berechtigung zu aktivieren:</block>
   <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">Registrieren Ihres BlueXP-Konto-ID-Support-Abonnements (Ihre 20-stellige Seriennummer 960xxxxxxxxx auf der Seite Support-Ressourcen in BlueXP).</block>
@@ -2380,8 +2379,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">Registrieren der Cloud Volumes ONTAP Seriennummern für ein Abonnement auf dem Markt Ihres Cloud-Providers (dies sind 20-stellige Seriennummern von 909201xxxxxx).</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Diese Seriennummern werden als _PAYGO Seriennummern_ bezeichnet und werden zum Zeitpunkt der Cloud Volumes ONTAP Implementierung von BlueXP generiert.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">Durch das Registrieren beider Arten von Seriennummern können Kunden Funktionen wie das Öffnen von Support-Tickets und die automatische Erstellung von Support-Cases nutzen. Die Registrierung ist abgeschlossen, indem wie unten beschrieben Konten der NetApp Support Website (NSS) zu BlueXP hinzugefügt werden.</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Unterstützung für Cloud-Provider-Lösungen</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">Technischer Support zu den folgenden Cloud-Provider-Lösungen finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
   <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
@@ -3217,7 +3214,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP-Blog</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Alle BlueXP-Dokumentationen</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">Nachhaltigkeit</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 Juli 2023</block>
   <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Anschluss 3.9.31</block>
@@ -3777,4 +3773,9 @@ Nicht in Google Cloud oder in unterstützt<block ref="da2732e6e9a1be4ab82a119453
   <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">Wenn Sie die Amazon EBS-Verschlüsselung auf dem Root-Volume aktivieren möchten, wählen Sie *Erweitert*, erweitern *Volume 1*, wählen *verschlüsselt* und wählen dann einen KMS-Schlüssel aus.</block>
   <block id="cf5973f42a5c4e31665e41b2ec75f8a0" category="list-text">Wählen Sie *Set up New BlueXP Connector* und folgen Sie den Anweisungen, um das System einzurichten.</block>
   <block id="1759129089da3c0c000cb4c2196a2fd0" category="list-text">*Admin-Benutzer erstellen*: Erstellen Sie den Admin-Benutzer für das System.</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">Für den Support von BlueXP und seinen Storage-Lösungen und Services ist eine Support-Registrierung erforderlich. Um wichtige Workflows für Cloud Volumes ONTAP Systeme zu ermöglichen, ist außerdem eine Support-Registrierung erforderlich.</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">Durch die Registrierung für den Support wird die NetApp-Unterstützung für einen Fileservice eines Cloud-Providers nicht aktiviert. Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Unterstützung für Fileservices von Cloud-Providern</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Wenn Sie technischen Support für BlueXP und seine Storage-Lösungen und -Services erhalten möchten, nutzen Sie die unten beschriebenen Support-Optionen.</block>
 </blocks>
