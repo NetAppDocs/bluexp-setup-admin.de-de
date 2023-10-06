@@ -18,6 +18,16 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== 6 Oktober 2023
+
+
+
+=== Anschluss 3.9.34
+
+Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.
+
+
+
 == 10 September 2023
 
 
