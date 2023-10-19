@@ -81,6 +81,8 @@ Wenn Sie BlueXP im Standardmodus verwenden, ist für die folgenden Funktionen un
 
 ^1^ während Sie ohne Connector auf diese Dienste zugreifen können, ist ein Connector erforderlich, um Aktionen von den Diensten zu initiieren.
 
+Ein Connector ist erforderlich, um BlueXP im eingeschränkten Modus oder im privaten Modus zu verwenden.
+
 
 
 == Die Anschlüsse müssen jederzeit betriebsbereit sein
@@ -130,9 +132,9 @@ link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"].
 Ein BlueXP Kontoadministrator kann einen Connector direkt aus BlueXP, aus dem Marketplace Ihres Cloud-Providers oder durch manuelle Installation der Software auf Ihrem eigenen Linux-Host erstellen. Der Einstieg hängt davon ab, ob Sie BlueXP im Standardmodus, im eingeschränkten Modus oder im privaten Modus nutzen.
 
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
-* link:task-quick-start-standard-mode.html["Schneller Einstieg für BlueXP im Standard-Modus"]
-* link:task-quick-start-restricted-mode.html["Schnellstart für BlueXP im eingeschränkten Modus"]
-* link:task-quick-start-private-mode.html["Schneller Start für BlueXP im privaten Modus"]
+* link:task-quick-start-standard-mode.html["Einstieg in BlueXP im Standardmodus"]
+* link:task-quick-start-restricted-mode.html["Einstieg in BlueXP im eingeschränkten Modus"]
+* link:task-quick-start-private-mode.html["Starten Sie mit BlueXP im privaten Modus"]
 
 
 
@@ -157,7 +159,7 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie unter:
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
-Informationen zu den genauen Berechtigungen, die der Connector benötigt, finden Sie auf den folgenden Seiten:
+Auf den folgenden Seiten können Sie die genauen Berechtigungen anzeigen, die der Connector für den täglichen Betrieb benötigt:
 
 * link:reference-permissions-aws.html["Erfahren Sie, wie der Connector AWS-Berechtigungen nutzt"]
 * link:reference-permissions-azure.html["Erfahren Sie, wie der Connector Azure-Berechtigungen nutzt"]
