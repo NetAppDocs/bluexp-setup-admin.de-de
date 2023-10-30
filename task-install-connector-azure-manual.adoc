@@ -465,18 +465,26 @@ Hier sehen Sie ein Beispiel für den Befehl mit beiden optionalen Parametern:
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --Proxy konfiguriert den Connector so, dass er einen HTTP- oder HTTPS-Proxy-Server in einem der folgenden Formate verwendet:
 
 +
 ** \http://address:port
-** \http://username:password@address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
 ** \https://address:port
-** \https://username:password@address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
 +
-Der Benutzer muss ein lokaler Benutzer sein. Domänenbenutzer werden nicht unterstützt.
+Beachten Sie Folgendes:
+
++
+*** Der Benutzer kann ein lokaler Benutzer oder ein Domänenbenutzer sein.
+*** Für einen Domänenbenutzer müssen Sie den ASCII-Code für den \ wie oben gezeigt verwenden.
+*** BlueXP unterstützt keine Passwörter, die das Zeichen @ enthalten.
+
 
 
 
