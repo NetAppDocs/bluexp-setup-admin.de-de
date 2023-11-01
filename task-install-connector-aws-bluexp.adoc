@@ -59,6 +59,7 @@ Managen von Ressourcen in AWS. Der genaue Endpunkt hängt von der von Ihnen verw
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Support zu senden.
 

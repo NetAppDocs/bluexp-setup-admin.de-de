@@ -58,7 +58,9 @@ Um Ressourcen in Azure China Regionen zu verwalten.
 
 Um Ressourcen in Google Cloud zu verwalten.
 
-\https://support.netapp.com, um Lizenzinformationen zu erhalten und AutoSupport-Nachrichten an den NetApp-Support zu senden.
+.
+\https://support.netapp.com
+\https://mysupport.netapp.com, um Lizenzinformationen zu erhalten und AutoSupport-Nachrichten an den NetApp-Support zu senden.
 
 \https://*.api.bluexp.netapp.com
 
