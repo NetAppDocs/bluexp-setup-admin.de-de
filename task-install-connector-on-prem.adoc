@@ -87,6 +87,8 @@ Der Host versucht möglicherweise, während der Installation Betriebssystempaket
 Vom Connector kontaktierte Endpunkte:: Für den Connector ist ein ausgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public Cloud-Umgebung für den täglichen Betrieb zu managen.
 +
 --
+Beachten Sie, dass es sich bei den unten aufgeführten Endpunkten um alle CNAME-Einträge handelt.
+
 [cols="2a,1a"]
 |===
 | Endpunkte | Zweck 

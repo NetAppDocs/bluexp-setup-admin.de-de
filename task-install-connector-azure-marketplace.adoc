@@ -45,6 +45,8 @@ Outbound-Internetzugang:: Der Netzwerkstandort, an dem Sie den Connector bereits
 Vom Connector kontaktierte Endpunkte:: Für den Connector ist ein ausgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public Cloud-Umgebung für den täglichen Betrieb zu managen.
 +
 --
+Beachten Sie, dass es sich bei den unten aufgeführten Endpunkten um alle CNAME-Einträge handelt.
+
 [cols="2a,1a"]
 |===
 | Endpunkte | Zweck 
@@ -432,7 +434,10 @@ Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschr
 
 
 
+.Ergebnis
 Der Connector ist jetzt installiert und mit Ihrem BlueXP Konto eingerichtet.
+
+Wenn Azure Blob Storage in demselben Azure Abonnement genutzt wird, in dem der Connector erstellt wurde, wird automatisch eine Azure Blob Storage-Arbeitsumgebung auf dem BlueXP Bildschirm angezeigt. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Erfahren Sie, wie Sie Azure Blob Storage aus BlueXP managen"^]
 
 
 

@@ -4,7 +4,7 @@ permalink: concept-accounts-aws.html
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
 summary: Erfahren Sie, wie BlueXP AWS Zugangsdaten und Berechtigungen für Ihre Aktionen nutzt. Diese Details zu verstehen, ist hilfreich, wenn Sie die Anmeldedaten für einen oder mehrere AWS-Konten in BlueXP managen. So könnte es beispielsweise interessant sein, wann Sie BlueXP um zusätzliche AWS Zugangsdaten erweitern können. 
 ---
-= AWS Zugangsdaten und Berechtigungen
+= Weitere Informationen zu AWS Zugangsdaten und Berechtigungen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: concept-accounts-azure.html
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
 summary: Erfahren Sie, wie BlueXP Azure Zugangsdaten und Berechtigungen nutzt, um Aktionen für Sie durchzuführen. Das Verständnis dieser Details kann hilfreich sein, wenn Sie die Anmeldedaten für ein oder mehrere Azure-Abonnements verwalten. Beispielsweise könnte es hilfreich sein, wenn Sie mehr über Azure Zugangsdaten zu BlueXP erfahren möchten. 
 ---
-= Azure Zugangsdaten und Berechtigungen
+= Informationen zu Azure Zugangsdaten und Berechtigungen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

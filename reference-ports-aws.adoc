@@ -4,7 +4,7 @@ permalink: reference-ports-aws.html
 keywords: ports, security group, http, https, inbound, outbound 
 summary: Für die AWS Sicherheitsgruppe für den Connector sind sowohl ein- als auch ausgehende Regeln erforderlich. BlueXP erstellt diese Sicherheitsgruppe automatisch, wenn Sie einen Connector aus BlueXP erstellen. Sie müssen diese Sicherheitsgruppe für alle anderen Installationsoptionen einrichten. 
 ---
-= Sicherheitsgruppenregeln in AWS
+= Regeln für die Connector-Sicherheitsgruppe in AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

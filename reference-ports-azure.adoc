@@ -4,7 +4,7 @@ permalink: reference-ports-azure.html
 keywords: ports, security group, http, https, inbound, outbound 
 summary: Für die Azure-Sicherheitsgruppe für den Connector sind sowohl ein- als auch ausgehende Regeln erforderlich. BlueXP erstellt diese Sicherheitsgruppe automatisch, wenn Sie einen Connector aus BlueXP erstellen. Sie müssen diese Sicherheitsgruppe für alle anderen Installationsoptionen einrichten. 
 ---
-= Für Sicherheitsgruppen gibt es in Azure Regeln
+= Regeln für die Connector-Sicherheitsgruppe in Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

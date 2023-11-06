@@ -16,6 +16,9 @@ summary: Nachdem Sie sich jetzt angemeldet und BlueXP im Standardmodus eingerich
 [role="lead"]
 Nachdem Sie sich jetzt angemeldet und BlueXP im Standardmodus eingerichtet haben, können Benutzer Arbeitsumgebungen erstellen und erkennen und BlueXP Datenservices nutzen.
 
+
+TIP: Wenn Sie einen Connector in AWS, Microsoft Azure oder Google Cloud installiert haben, erkennt BlueXP automatisch Informationen zu Amazon S3 Buckets, Azure Blob Storage oder Google Cloud Storage an dem Ort, an dem der Connector installiert ist. Eine Arbeitsumgebung wird automatisch dem BlueXP Arbeitsbereich hinzugefügt.
+
 Hilfe erhalten Sie im https://docs.netapp.com/us-en/bluexp-family/["Startseite für die BlueXP Dokumentation"^] Um die Dokumente zu allen BlueXP Services einzusehen.
 
 .Verwandter Link

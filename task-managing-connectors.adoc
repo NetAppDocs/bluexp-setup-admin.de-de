@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
 summary: Nachdem Sie einen Connector erstellt haben, müssen Sie ihn möglicherweise ab und zu verwalten. Sie können beispielsweise zwischen den Anschlüssen wechseln, wenn Sie über mehrere verfügen. Oder Sie müssen den Connector möglicherweise manuell aktualisieren, wenn Sie BlueXP im privaten Modus verwenden. 
 ---
 = Verwalten Sie vorhandene Anschlüsse
@@ -18,6 +18,13 @@ Nachdem Sie einen Connector erstellt haben, müssen Sie ihn möglicherweise ab u
 
 link:concept-connectors.html["Erfahren Sie, wie Anschlüsse funktionieren"].
 
+[NOTE]
+====
+Der Connector enthält eine lokale Benutzeroberfläche, auf die über den Connector-Host zugegriffen werden kann. Diese UI steht Kunden zur Verfügung, die BlueXP im eingeschränkten Modus oder im privaten Modus verwenden. Wenn Sie BlueXP im Standardmodus verwenden, sollten Sie über die auf die Benutzeroberfläche zugreifen https://console.bluexp.netapp.com/["BlueXP SaaS-Konsole"^]
+
+link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"].
+
+====
 
 
 == Betriebssystem- und VM-Wartung
@@ -106,7 +113,7 @@ Wenn Sie BlueXP im privaten Modus nutzen, können Sie den Connector aktualisiere
 Der Connector muss während des Upgrade-Vorgangs neu gestartet werden, damit die webbasierte Konsole während des Upgrades nicht verfügbar ist.
 
 
-NOTE: Auf Hosts mit Internetzugang aktualisiert der Connector seine Software automatisch auf die neueste Version, sofern er über einen ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten.
+NOTE: Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden, aktualisiert der Connector seine Software automatisch auf die neueste Version, sofern er über ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten.
 
 .Schritte
 . Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"^].

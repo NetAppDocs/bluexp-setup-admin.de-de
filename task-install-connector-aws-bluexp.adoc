@@ -37,6 +37,8 @@ Outbound-Internetzugang:: Der Netzwerkstandort, an dem Sie den Connector bereits
 Vom Connector kontaktierte Endpunkte:: Für den Connector ist ein ausgehender Internetzugang erforderlich, um die folgenden Endpunkte zu kontaktieren, um Ressourcen und Prozesse in Ihrer Public Cloud-Umgebung für den täglichen Betrieb zu managen.
 +
 --
+Beachten Sie, dass es sich bei den unten aufgeführten Endpunkten um alle CNAME-Einträge handelt.
+
 [cols="2a,1a"]
 |===
 | Endpunkte | Zweck 
@@ -318,3 +320,5 @@ Die Instanz sollte in ca. 7 Minuten fertig sein. Sie sollten auf der Seite bleib
 
 .Ergebnis
 Nach Abschluss des Prozesses ist der Connector für die Nutzung über BlueXP verfügbar.
+
+Wenn sich in demselben AWS-Konto, bei dem der Connector erstellt wurde, Amazon S3-Buckets befinden, wird automatisch eine Amazon S3-Arbeitsumgebung auf dem BlueXP-Bildschirm angezeigt. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Erfahren Sie, wie Sie S3-Buckets aus BlueXP managen"^]

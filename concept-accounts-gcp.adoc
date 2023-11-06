@@ -4,7 +4,7 @@ permalink: concept-accounts-gcp.html
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
 summary: Erfahren Sie, wie BlueXP Google Cloud-Anmeldedaten und -Berechtigungen nutzt, um Aktionen für Sie durchzuführen. Diese Details zu verstehen, kann hilfreich sein, wenn Sie die Anmeldeinformationen für ein oder mehrere Google Cloud-Projekte verwalten. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist. 
 ---
-= Google Cloud Projekte, Berechtigungen und Konten
+= Mehr über Google Cloud-Projekte und -Berechtigungen erfahren
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
