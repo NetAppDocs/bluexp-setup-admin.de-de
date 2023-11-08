@@ -3775,4 +3775,7 @@ Nicht in Google Cloud oder in unterstützt<block ref="da2732e6e9a1be4ab82a119453
   <block id="260bcd27c402b5ba9f5dcabbfc1e0ddd" category="sidebar">Anmeldedaten und Abonnements</block>
   <block id="cbaee96b9499da2c5c6d3b23090382c6" category="sidebar">Informationen zu Anmeldeinformationen und Berechtigungen</block>
   <block id="9d812302dfdd0fdbf4faa0fe53b9ed24" category="sidebar">Erfahren Sie mehr über Projekte und Berechtigungen</block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">Bis 8. November 2023</block>
+  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Anschluss 3.9.35</block>
+  <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Diese Version enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen.</block>
 </blocks>
