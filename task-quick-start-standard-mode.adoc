@@ -16,7 +16,7 @@ summary: 'Einstieg in BlueXP im Standardmodus: Bereiten Sie Networking für die 
 [role="lead"]
 Einstieg in BlueXP im Standardmodus: Bereiten Sie Networking für die BlueXP Konsole vor, melden Sie sich an, erstellen Sie ein Konto, erstellen Sie optional einen Connector und abonnieren Sie BlueXP.
 
-Bevor Sie beginnen, sollten Sie ein Verständnis von haben link:concept-netapp-accounts.html["BlueXP Accounts"], link:concept-connectors.html["Anschlüsse"], und link:concept-modes.html["Bereitstellungsmodi"].
+Im Standardmodus ist BlueXP über die webbasierte Konsole für Benutzer als Cloud-Service zugänglich. Bevor Sie beginnen, sollten Sie ein Verständnis von haben link:concept-netapp-accounts.html["BlueXP Accounts"], link:concept-connectors.html["Anschlüsse"], und link:concept-modes.html["Bereitstellungsmodi"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] link:reference-networking-saas-console.html["Networking zur Nutzung der BlueXP Konsole vorbereiten"]
 [role="quick-margin-para"]
