@@ -149,14 +149,6 @@ sidebar:
         url: "/task-adding-nss-accounts.html"
       - title: Managen Sie die mit Ihren BlueXP Anmeldedaten verbundenen Zugangsdaten
         url: "/task-manage-user-credentials.html"
-    - title: Cloud Storage erkannt
-      entries:
-      - title: Amazon S3 Buckets managen
-        url: "/task-viewing-amazon-s3.html"
-      - title: Azure Blob-Konten managen
-        url: "/task-viewing-azure-blob.html"
-      - title: Management von Google Cloud Storage Buckets
-        url: "/task-viewing-gcp-storage.html"
   - title: Referenz
     entries:
     - title: Berechtigungen
