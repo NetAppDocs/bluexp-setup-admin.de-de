@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
-keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: Erfahren Sie, wie BlueXP AWS Zugangsdaten und Berechtigungen für Ihre Aktionen nutzt. Diese Details zu verstehen, ist hilfreich, wenn Sie die Anmeldedaten für einen oder mehrere AWS-Konten in BlueXP managen. So könnte es beispielsweise interessant sein, wann Sie BlueXP um zusätzliche AWS Zugangsdaten erweitern können. 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials, marketplace subscription, replace subscription, subscription 
+summary: Informieren Sie sich, wie BlueXP für Sie AWS Zugangsdaten verwendet, um Aktionen durchzuführen und wie diese Zugangsdaten mit Marketplace-Abonnements verknüpft sind. Diese Details zu verstehen, ist hilfreich, wenn Sie die Anmeldedaten für einen oder mehrere AWS-Konten in BlueXP managen. So könnte es beispielsweise interessant sein, wann Sie BlueXP um zusätzliche AWS Zugangsdaten erweitern können. 
 ---
 = Weitere Informationen zu AWS Zugangsdaten und Berechtigungen
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Erfahren Sie, wie BlueXP AWS Zugangsdaten und Berechtigungen für Ihre 
 
 
 [role="lead"]
-Erfahren Sie, wie BlueXP AWS Zugangsdaten und Berechtigungen für Ihre Aktionen nutzt. Diese Details zu verstehen, ist hilfreich, wenn Sie die Anmeldedaten für einen oder mehrere AWS-Konten in BlueXP managen. So könnte es beispielsweise interessant sein, wann Sie BlueXP um zusätzliche AWS Zugangsdaten erweitern können.
+Informieren Sie sich, wie BlueXP für Sie AWS Zugangsdaten verwendet, um Aktionen durchzuführen und wie diese Zugangsdaten mit Marketplace-Abonnements verknüpft sind. Diese Details zu verstehen, ist hilfreich, wenn Sie die Anmeldedaten für einen oder mehrere AWS-Konten in BlueXP managen. So könnte es beispielsweise interessant sein, wann Sie BlueXP um zusätzliche AWS Zugangsdaten erweitern können.
 
 
 
@@ -48,13 +48,13 @@ Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 === Fügen Sie AWS Zugangsdaten zu einem vorhandenen Connector hinzu
 
-Wenn Sie Cloud Volumes ONTAP in verschiedenen AWS-Konten starten möchten, können Sie entweder AWS-Schlüssel für einen IAM-Benutzer oder den ARN einer Rolle in einem vertrauenswürdigen Konto bereitstellen. Die folgende Abbildung zeigt zwei zusätzliche Konten: Eines mit Berechtigungen über eine IAM-Rolle in einem vertrauenswürdigen Konto und ein weiteres über die AWS Schlüssel eines IAM-Benutzers:
+Wenn Sie BlueXP mit zusätzlichen AWS-Konten nutzen möchten, können Sie entweder AWS-Schlüssel für einen IAM-Benutzer oder den ARN einer Rolle in einem vertrauenswürdigen Konto bereitstellen. Die folgende Abbildung zeigt zwei zusätzliche Konten: Eines mit Berechtigungen über eine IAM-Rolle in einem vertrauenswürdigen Konto und ein weiteres über die AWS Schlüssel eines IAM-Benutzers:
 
 image:diagram_permissions_multiple_aws.png["Ein Konzept-Image, das zwei zusätzliche Konten enthält. Jeder hat eine IAM-Richtlinie, eine ist mit dem IAM-Benutzer verbunden, die andere mit einer IAM-Rolle verbunden."]
 
 Sie würden dann die Account-Anmeldedaten zu BlueXP hinzufügen, indem Sie den Amazon Resource Name (ARN) der IAM-Rolle oder die AWS-Schlüssel für den IAM-Benutzer angeben.
 
-Nachdem Sie einen weiteren Satz von Anmeldeinformationen hinzugefügt haben, können Sie zu ihnen wechseln, wenn Sie eine neue Arbeitsumgebung erstellen:
+Sie können beispielsweise beim Erstellen einer neuen Cloud Volumes ONTAP-Arbeitsumgebung zwischen den Anmeldedaten wechseln:
 
 image:screenshot_accounts_switch_aws.png["Ein Screenshot, der die Auswahl zwischen den Cloud-Provider-Konten zeigt, nachdem Sie auf der Seite Details  Anmeldedaten Konto wechseln ausgewählt haben."]
 
@@ -72,7 +72,59 @@ Beim Hinzufügen neuer AWS Zugangsdaten zu BlueXP stehen die erforderlichen Bere
 
 
 
-== Wie sieht es mit Marketplace-Implementierungen und On-Premises-Implementierungen aus?
+== Anmeldedaten und Abonnements für den Marktplatz
+
+Die Zugangsdaten, die Sie einem Connector hinzufügen, müssen mit einem AWS Marketplace Abonnement verbunden sein, sodass Sie für Cloud Volumes ONTAP einen Stundensatz (PAYGO) oder über einen Jahresvertrag zahlen und andere BlueXP Services nutzen können.
+
+link:task-adding-aws-accounts.html#subscribe["Verbinden Sie ein AWS Abonnement"].
+
+Beachten Sie Folgendes zu AWS Zugangsdaten und Marketplace-Abonnements:
+
+* Sie können nur ein AWS Marketplace Abonnement mit einem Satz von AWS Zugangsdaten verknüpfen
+* Sie können ein bestehendes Marketplace-Abonnement durch ein neues Abonnement ersetzen
+
+
+
+
+== Häufig gestellte Fragen
+
+Die folgenden Fragen beziehen sich auf Anmeldeinformationen und Abonnements.
+
+
+
+=== Wie kann ich meine AWS Zugangsdaten sicher drehen?
+
+Wie oben in den Abschnitten beschrieben, können Sie mit BlueXP Ihre AWS Zugangsdaten auf verschiedene Weise bereitstellen: Eine mit der Connector-Instanz verbundene IAM-Rolle, indem Sie eine IAM-Rolle in einem vertrauenswürdigen Konto übernehmen oder AWS Zugriffsschlüssel bereitstellen.
+
+Bei den ersten beiden Optionen verwendet BlueXP den AWS Security Token Service, um temporäre Anmeldedaten zu erhalten, die sich ständig drehen. Dies ist die Best Practice, also automatisch und sicher.
+
+Wenn Sie BlueXP mit AWS-Zugriffsschlüsseln zur Verfügung stellen, sollten Sie die Schlüssel durch Aktualisierung in BlueXP in einem regelmäßigen Intervall drehen. Es handelt sich hierbei um einen vollständig manuellen Prozess.
+
+
+
+=== Kann ich das AWS Marketplace Abonnement für Cloud Volumes ONTAP Arbeitsumgebungen ändern?
+
+Ja, können Sie. Wenn Sie das AWS Marketplace Abonnement ändern, das mit einer Reihe von Zugangsdaten verknüpft ist, wird das neue Abonnement für alle vorhandenen und neuen Cloud Volumes ONTAP Arbeitsumgebungen in Rechnung gestellt.
+
+link:task-adding-aws-accounts.html#subscribe["Verbinden Sie ein AWS Abonnement"].
+
+
+
+=== Kann ich mehrere AWS Zugangsdaten mit jeweils unterschiedlichen Marketplace-Abonnements hinzufügen?
+
+Alle AWS Zugangsdaten, die demselben AWS Konto angehören, werden demselben AWS Marketplace Abonnement zugeordnet.
+
+Wenn Sie mehrere AWS-Anmeldeinformationen haben, die zu verschiedenen AWS-Konten gehören, können diese Anmeldeinformationen mit demselben AWS Marketplace Abonnement oder verschiedenen Abonnements verknüpft werden.
+
+
+
+=== Kann ich vorhandene Cloud Volumes ONTAP Arbeitsumgebungen auf ein anderes AWS Konto verschieben?
+
+Nein, es ist nicht möglich, die AWS Ressourcen, die Ihrer Cloud Volumes ONTAP Arbeitsumgebung zugeordnet sind, in ein anderes AWS Konto zu verschieben.
+
+
+
+=== Wie funktionieren Anmeldedaten für Marketplace-Implementierungen und On-Premises-Implementierungen?
 
 In den obigen Abschnitten wird die empfohlene Bereitstellungsmethode für den Connector beschrieben, der aus BlueXP stammt. Sie können einen Connector auch über AWS Marketplace in AWS implementieren und die Connector-Software manuell auf Ihrem eigenen Linux-Host installieren.
 
@@ -91,13 +143,3 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie auf den folge
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
-
-
-
-== Wie kann ich meine AWS Zugangsdaten sicher drehen?
-
-Wie oben beschrieben, können Sie mit BlueXP auf verschiedene Weise AWS Zugangsdaten bereitstellen: Eine mit der Konnektor-Instanz verknüpfte IAM-Rolle, eine IAM-Rolle in einem vertrauenswürdigen Konto oder AWS-Zugriffsschlüssel.
-
-Bei den ersten beiden Optionen verwendet BlueXP den AWS Security Token Service, um temporäre Anmeldedaten zu erhalten, die sich ständig drehen. Dies ist die Best Practice, also automatisch und sicher.
-
-Wenn Sie BlueXP mit AWS-Zugriffsschlüsseln zur Verfügung stellen, sollten Sie die Schlüssel durch Aktualisierung in BlueXP in einem regelmäßigen Intervall drehen. Es handelt sich hierbei um einen vollständig manuellen Prozess.

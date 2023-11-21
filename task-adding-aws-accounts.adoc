@@ -4,7 +4,7 @@ permalink: task-adding-aws-accounts.html
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials 
 summary: Fügen Sie AWS Anmeldedaten hinzu und managen Sie diese, damit BlueXP über die erforderlichen Berechtigungen verfügt, um Cloud-Ressourcen in Ihren AWS-Konten bereitzustellen und zu managen. Wenn Sie mehrere AWS-Abonnements verwalten, können Sie jedes davon auf der Seite „Anmeldeinformationen“ verschiedenen AWS Zugangsdaten zuweisen. 
 ---
-= Managen Sie AWS Anmeldeinformationen und Abonnements für BlueXP
+= Management von AWS Zugangsdaten und Marketplace-Abonnements für BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -228,7 +228,10 @@ Nachdem Sie Ihre AWS Zugangsdaten zu BlueXP hinzugefügt haben, können Sie ein 
 Es gibt zwei Szenarien, in denen Sie ein AWS Marketplace-Abonnement verknüpfen können, nachdem Sie BlueXP bereits die Zugangsdaten hinzugefügt haben:
 
 * Sie haben ein Abonnement nicht zugeordnet, wenn Sie die Anmeldeinformationen zu BlueXP hinzugefügt haben.
-* Sie möchten ein vorhandenes AWS Marketplace Abonnement durch ein neues Abonnement ersetzen.
+* Sie möchten das AWS Marketplace-Abonnement ändern, das mit den AWS Zugangsdaten verknüpft ist.
++
+Durch den Austausch des aktuellen Marketplace-Abonnements durch ein neues Abonnement wird das Marketplace-Abonnement für alle bestehenden Cloud Volumes ONTAP Arbeitsumgebungen und alle neuen Arbeitsumgebungen geändert.
+
 
 
 .Bevor Sie beginnen

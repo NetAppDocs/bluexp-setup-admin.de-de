@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: Hinzufügen und Managen von Azure-Anmeldeinformationen, um zu ermöglichen, dass BlueXP über die erforderlichen Berechtigungen zum Implementieren und Managen von Cloud-Ressourcen in Ihren Azure Abonnements verfügt. Wenn Sie mehrere Azure Marketplace-Abonnements verwalten, können Sie jedes davon auf der Seite „Anmeldeinformationen“ verschiedenen Azure Zugangsdaten zuweisen. 
 ---
-= Managen Sie Azure Anmeldedaten und Abonnements für BlueXP
+= Azure Zugangsdaten und Marketplace-Abonnements für BlueXP managen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -327,7 +327,10 @@ Nachdem Sie Ihre Azure Zugangsdaten zu BlueXP hinzugefügt haben, können Sie di
 Es gibt zwei Szenarien, in denen Sie ein Azure Marketplace-Abonnement verknüpfen können, nachdem Sie BlueXP bereits die Zugangsdaten hinzugefügt haben:
 
 * Sie haben ein Abonnement nicht zugeordnet, wenn Sie die Anmeldeinformationen zu BlueXP hinzugefügt haben.
-* Sie möchten ein vorhandenes Azure Marketplace Abonnement durch ein neues Abonnement ersetzen.
+* Sie möchten das Abonnement für Azure Marketplace ändern, das mit den Azure-Anmeldedaten verknüpft ist.
++
+Durch den Austausch des aktuellen Marketplace-Abonnements durch ein neues Abonnement wird das Marketplace-Abonnement für alle bestehenden Cloud Volumes ONTAP Arbeitsumgebungen und alle neuen Arbeitsumgebungen geändert.
+
 
 
 .Bevor Sie beginnen

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: Erfahren Sie, wie BlueXP Google Cloud-Anmeldedaten und -Berechtigungen nutzt, um Aktionen für Sie durchzuführen. Diese Details zu verstehen, kann hilfreich sein, wenn Sie die Anmeldeinformationen für ein oder mehrere Google Cloud-Projekte verwalten. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist. 
+summary: Erfahren Sie, wie BlueXP für Sie Aktionen mit Google Cloud Credentials durchführt und diese Zugangsdaten mit Marketplace-Abonnements verknüpft. Diese Details zu verstehen, kann hilfreich sein, wenn Sie die Anmeldeinformationen für ein oder mehrere Google Cloud-Projekte verwalten. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist. 
 ---
 = Mehr über Google Cloud-Projekte und -Berechtigungen erfahren
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Erfahren Sie, wie BlueXP Google Cloud-Anmeldedaten und -Berechtigungen 
 
 
 [role="lead"]
-Erfahren Sie, wie BlueXP Google Cloud-Anmeldedaten und -Berechtigungen nutzt, um Aktionen für Sie durchzuführen. Diese Details zu verstehen, kann hilfreich sein, wenn Sie die Anmeldeinformationen für ein oder mehrere Google Cloud-Projekte verwalten. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist.
+Erfahren Sie, wie BlueXP für Sie Aktionen mit Google Cloud Credentials durchführt und diese Zugangsdaten mit Marketplace-Abonnements verknüpft. Diese Details zu verstehen, kann hilfreich sein, wenn Sie die Anmeldeinformationen für ein oder mehrere Google Cloud-Projekte verwalten. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist.
 
 
 
@@ -37,6 +37,21 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie auf den folge
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Richten Sie Google Cloud-Berechtigungen für den Standardmodus ein"]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
+
+
+
+
+== Anmeldedaten und Abonnements für den Marktplatz
+
+Wenn Sie einen Connector in Google Cloud implementieren, erstellt BlueXP im Projekt, in dem sich der Connector befindet, einen StandardSatz an Anmeldeinformationen für das Google Cloud Servicekonto. Diese Anmeldedaten müssen mit einem Google Cloud Marketplace Abonnement verbunden sein, sodass Sie für Cloud Volumes ONTAP einen Stundensatz (PAYGO) zahlen und andere BlueXP Services nutzen können.
+
+link:task-adding-gcp-accounts.html["Erfahren Sie, wie Sie ein Google Cloud Marketplace Abonnement verknüpfen"].
+
+Beachten Sie Folgendes über Google Cloud-Anmeldedaten und Marketplace-Abonnements:
+
+* Einem Connector kann nur ein Satz Google Cloud-Anmeldedaten zugeordnet werden
+* Sie können den Anmeldedaten nur ein Google Cloud Marketplace-Abonnement zuweisen
+* Sie können ein bestehendes Marketplace-Abonnement durch ein neues Abonnement ersetzen
 
 
 

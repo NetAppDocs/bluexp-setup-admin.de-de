@@ -20,7 +20,9 @@ Sie können die Google Cloud-Anmeldedaten verwalten, die mit der VM-Instanz Conn
 
 == Verbinden Sie ein Marketplace-Abonnement mit Google Cloud-Anmeldedaten
 
-Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmeldedaten verknüpft ist. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.
+Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Sie können jederzeit das mit diesen Anmeldedaten verbundene Abonnement von Google Cloud Marketplace ändern. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.
+
+Durch den Austausch des aktuellen Marketplace-Abonnements durch ein neues Abonnement wird das Marketplace-Abonnement für alle bestehenden Cloud Volumes ONTAP Arbeitsumgebungen und alle neuen Arbeitsumgebungen geändert.
 
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.

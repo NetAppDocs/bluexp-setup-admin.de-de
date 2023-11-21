@@ -37,7 +37,6 @@
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">*Anmeldeort*: Wählen Sie *Amazon Web Services &gt; Connector*.</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">*Zugangsdaten definieren*: Geben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel ein.</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">*Marketplace-Abonnement*: Verknüpfen Sie diese Anmeldedaten mit einem Marketplace-Abonnement, indem Sie jetzt abonnieren oder ein vorhandenes Abonnement auswählen.</block>
-  <block id="70c85793f0a33ef534a67f193287a992" category="doc">Azure Blob-Konten managen</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Connector-Installationsoptionen in Google Cloud</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">Folgende Installationsoptionen sind verfügbar:</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">Dadurch wird eine VM-Instanz mit Linux und der Connector-Software in einem VPC Ihrer Wahl gestartet.</block>
@@ -387,7 +386,6 @@
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">Cloudkms.Keyrings.getIamPolicy</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">Diese Berechtigungen sind für das Backup und Recovery von BlueXP erforderlich.</block>
-  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">Erfahren Sie, wie BlueXP Google Cloud-Anmeldedaten und -Berechtigungen nutzt, um Aktionen für Sie durchzuführen. Diese Details zu verstehen, kann hilfreich sein, wenn Sie die Anmeldeinformationen für ein oder mehrere Google Cloud-Projekte verwalten. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist.</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">Projekt und Berechtigungen für BlueXP</block>
   <block id="627c5def4348066ddd5e7a1664e1079b" category="paragraph">Bevor Sie BlueXP zum Managen von Ressourcen in Ihrem Google Cloud-Projekt verwenden können, müssen Sie zunächst einen Connector implementieren. Der Connector kann nicht vor Ort oder bei einem anderen Cloud-Provider ausgeführt werden.</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">Zwei Berechtigungsgruppen müssen vorhanden sein, bevor Sie einen Connector direkt von BlueXP bereitstellen:</block>
@@ -1011,7 +1009,6 @@
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen n2-Standard-4.</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">Geschirmte VM-Funktionen</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">Der Connector wird in Google Cloud auf einer VM-Instanz mit einem unterstützten Betriebssystem unterstützt<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
-  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">Erfahren Sie, wie BlueXP Azure Zugangsdaten und Berechtigungen nutzt, um Aktionen für Sie durchzuführen. Das Verständnis dieser Details kann hilfreich sein, wenn Sie die Anmeldedaten für ein oder mehrere Azure-Abonnements verwalten. Beispielsweise könnte es hilfreich sein, wenn Sie mehr über Azure Zugangsdaten zu BlueXP erfahren möchten.</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Erste Azure Zugangsdaten</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Connector-Implementierungsrichtlinie für Azure</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">Überprüfen Sie, wie BlueXP die Berechtigungen verwendet</block>
@@ -1033,7 +1030,6 @@
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">Fügen Sie die Kontoanmeldeinformationen zu BlueXP hinzu</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">Das würden Sie dann tun <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> Durch Angabe von Details zum AD-Dienstprinzipal.</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">Sie können beispielsweise beim Erstellen einer neuen Cloud Volumes ONTAP-Arbeitsumgebung zwischen den Anmeldedaten wechseln:</block>
-  <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">Wie sieht es mit Marketplace-Implementierungen und On-Premises-Implementierungen aus?</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">In den obigen Abschnitten wird die empfohlene Bereitstellungsmethode für den Connector beschrieben, der aus BlueXP stammt. Sie können einen Connector auch in Azure über den Azure Marketplace implementieren und die Connector-Software auf Ihrem eigenen Linux-Host installieren.</block>
   <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">Wenn Sie den Marketplace verwenden, können Sie Berechtigungen bereitstellen, indem Sie der Connector-VM und einer vom System zugewiesenen verwalteten Identität eine benutzerdefinierte Rolle zuweisen oder den Azure AD-Dienstprinzipal verwenden.</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">Für On-Premises-Bereitstellungen können Sie keine verwaltete Identität für den Connector einrichten, aber Sie können Berechtigungen mithilfe eines Dienstprincipals bereitstellen.</block>
@@ -1212,7 +1208,6 @@
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">Sie können die Google Cloud-Anmeldedaten verwalten, die mit der VM-Instanz Connector verknüpft sind, indem Sie ein Marketplace-Abonnement zuordnen und den Abonnementprozess beheben. Mit beiden Aufgaben stellen Sie sicher, dass Sie Ihr Marketplace-Abonnement verwenden können, um BlueXP Services zu bezahlen.</block>
   <block id="f691281f53b81c9f5d73a97dc7c334fd" category="doc">Managen Sie Google Cloud-Anmeldedaten und -Abonnements für BlueXP</block>
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">Verbinden Sie ein Marketplace-Abonnement mit Google Cloud-Anmeldedaten</block>
-  <block id="e6bd6cdf191b4526ecbd9326bd7b5c24" category="paragraph">Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Sie können das Marketplace-Abonnement jederzeit ändern, das mit diesen Anmeldedaten verknüpft ist. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten.</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
@@ -1480,7 +1475,6 @@
   <block id="5d1285233566f1379ef88c010de06abc" category="list-text">*Anmeldedaten definieren*: Geben Sie Informationen über den Azure Active Directory Service Principal ein, der die erforderlichen Berechtigungen erteilt:</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloud Service-Konto</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">Verknüpfen Sie das Servicekonto mit der Konnektor-VM.</block>
-  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">Erfahren Sie, wie BlueXP AWS Zugangsdaten und Berechtigungen für Ihre Aktionen nutzt. Diese Details zu verstehen, ist hilfreich, wenn Sie die Anmeldedaten für einen oder mehrere AWS-Konten in BlueXP managen. So könnte es beispielsweise interessant sein, wann Sie BlueXP um zusätzliche AWS Zugangsdaten erweitern können.</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">Erste AWS Zugangsdaten</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">Connector-Implementierungsrichtlinie für AWS</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">Wenn BlueXP die Connector-Instanz in AWS startet, erstellt sie eine IAM-Rolle und ein Instanzprofil für die Instanz. Zudem wird eine Richtlinie angehängt, die dem Connector Berechtigungen für das Management von Ressourcen und Prozessen innerhalb dieses AWS-Kontos bietet. <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>.</block>
@@ -1494,11 +1488,9 @@
   <block id="d366b2fda179ae88058b546b6cd89726" category="list-text">Sie können AWS Zugangsdaten direkt in BlueXP hinzufügen</block>
   <block id="1fba93959336f34e08c6d34d0ca68230" category="paragraph">Weitere Informationen finden Sie in den folgenden Abschnitten.</block>
   <block id="a456be184fc96fef017630ede092b15d" category="section-title">Fügen Sie AWS Zugangsdaten zu einem vorhandenen Connector hinzu</block>
-  <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">Wenn Sie Cloud Volumes ONTAP in verschiedenen AWS-Konten starten möchten, können Sie entweder AWS-Schlüssel für einen IAM-Benutzer oder den ARN einer Rolle in einem vertrauenswürdigen Konto bereitstellen. Die folgende Abbildung zeigt zwei zusätzliche Konten: Eines mit Berechtigungen über eine IAM-Rolle in einem vertrauenswürdigen Konto und ein weiteres über die AWS Schlüssel eines IAM-Benutzers:</block>
   <block id="25743d3dcac2dfe95c6e899571bfccc3" category="inline-image-macro">Ein Konzept-Image, das zwei zusätzliche Konten enthält. Jeder hat eine IAM-Richtlinie, eine ist mit dem IAM-Benutzer verbunden, die andere mit einer IAM-Rolle verbunden.</block>
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">Sie würden dann die Account-Anmeldedaten zu BlueXP hinzufügen, indem Sie den Amazon Resource Name (ARN) der IAM-Rolle oder die AWS-Schlüssel für den IAM-Benutzer angeben.</block>
-  <block id="bc84b27c0d74f906857d6c1a83c368a0" category="paragraph">Nachdem Sie einen weiteren Satz von Anmeldeinformationen hinzugefügt haben, können Sie zu ihnen wechseln, wenn Sie eine neue Arbeitsumgebung erstellen:</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">Informieren Sie sich, wie Sie einem vorhandenen Connector AWS-Anmeldedaten hinzufügen.</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
   <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">Fügen Sie AWS Zugangsdaten direkt in BlueXP hinzu</block>
@@ -1511,7 +1503,6 @@
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">Wenn Sie den Marktplatz nutzen, werden Berechtigungen auf die gleiche Weise bereitgestellt. Sie müssen lediglich die IAM-Rolle manuell erstellen und einrichten und dann Berechtigungen für weitere Konten bereitstellen.</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">Sie können bei lokalen Implementierungen keine IAM-Rolle für das BlueXP System einrichten, aber mithilfe von AWS Zugriffsschlüsseln bieten Sie Berechtigungen.</block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">Wie kann ich meine AWS Zugangsdaten sicher drehen?</block>
-  <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">Wie oben beschrieben, können Sie mit BlueXP auf verschiedene Weise AWS Zugangsdaten bereitstellen: Eine mit der Konnektor-Instanz verknüpfte IAM-Rolle, eine IAM-Rolle in einem vertrauenswürdigen Konto oder AWS-Zugriffsschlüssel.</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">Bei den ersten beiden Optionen verwendet BlueXP den AWS Security Token Service, um temporäre Anmeldedaten zu erhalten, die sich ständig drehen. Dies ist die Best Practice, also automatisch und sicher.</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">Wenn Sie BlueXP mit AWS-Zugriffsschlüsseln zur Verfügung stellen, sollten Sie die Schlüssel durch Aktualisierung in BlueXP in einem regelmäßigen Intervall drehen. Es handelt sich hierbei um einen vollständig manuellen Prozess.</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">Der Connector verwendet eingehende Ports, wenn er manuell auf einem lokalen Linux-Host installiert wird. Möglicherweise müssen Sie diese Ports zu Planungszwecken verwenden.</block>
@@ -2661,7 +2652,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">Nachdem Sie Ihre Azure Zugangsdaten zu BlueXP hinzugefügt haben, können Sie diesen Anmeldedaten ein Azure Marketplace Abonnement zuordnen. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">Es gibt zwei Szenarien, in denen Sie ein Azure Marketplace-Abonnement verknüpfen können, nachdem Sie BlueXP bereits die Zugangsdaten hinzugefügt haben:</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">Sie haben ein Abonnement nicht zugeordnet, wenn Sie die Anmeldeinformationen zu BlueXP hinzugefügt haben.</block>
-  <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">Sie möchten ein vorhandenes Azure Marketplace Abonnement durch ein neues Abonnement ersetzen.</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Melden Sie sich bei Ihrem Azure-Konto an, wenn Sie dazu aufgefordert werden.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Sie werden auf die BlueXP-Website umgeleitet.</block>
@@ -2673,7 +2663,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">Anmeldeinformationen löschen</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">Wenn Sie keine Anmeldedaten mehr benötigen, können Sie diese aus BlueXP löschen. Sie können nur Anmeldeinformationen löschen, die nicht mit einer Arbeitsumgebung verknüpft sind.</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">Wählen Sie auf der Seite *Account Credentials* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Credentials löschen*.</block>
-  <block id="a4f513306c1a0ead14679ffb7c282460" category="doc">Amazon S3 Buckets managen</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">Azure Networking einrichten</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">Vnet und Subnetz</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">Wenn Sie den Connector erstellen, müssen Sie das vnet und das Subnetz angeben, in dem sich der Connector befinden soll.</block>
@@ -2890,7 +2879,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">AWS Abonnement zuordnen</block>
   <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">Nachdem Sie Ihre AWS Zugangsdaten zu BlueXP hinzugefügt haben, können Sie ein AWS Marketplace Abonnement mit diesen Anmeldedaten verknüpfen. Dank des Abonnements können Sie für Cloud Volumes ONTAP zu einem Stundensatz (PAYGO) bezahlen oder einen Jahresvertrag nutzen und andere BlueXP Services nutzen.</block>
   <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">Es gibt zwei Szenarien, in denen Sie ein AWS Marketplace-Abonnement verknüpfen können, nachdem Sie BlueXP bereits die Zugangsdaten hinzugefügt haben:</block>
-  <block id="dbaf1a33cea4faeebcb91c3b7d479cc9" category="list-text">Sie möchten ein vorhandenes AWS Marketplace Abonnement durch ein neues Abonnement ersetzen.</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Erfahren Sie, wie Sie einen Konnektor erstellen</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -3147,7 +3135,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP Accounts</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">Benutzerrollen</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Anmeldeinformationen und Abonnements verwalten</block>
-  <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Cloud Storage erkannt</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Referenz</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Zusammenfassung der Berechtigungen</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Wissen und Support</block>
@@ -3188,7 +3175,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">Standardmäßig werden alle aktiven Benachrichtigungen im Benachrichtigungscenter angezeigt. Sie können die Benachrichtigungen filtern, die Sie sehen, um nur die Benachrichtigungen anzuzeigen, die für Sie wichtig sind. Sie können nach BlueXP „Service“ und nach Benachrichtigung „Typ“ filtern.</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">Die Filter, die Sie im Benachrichtigungscenter festlegen, bestimmen nicht, welche Arten von Benachrichtigungen Sie per E-Mail erhalten. Standardmäßig erhalten BlueXP-Kontoadministratoren E-Mails für alle „kritischen“ und „Empfehlungsbenachrichtigungen“. Diese Benachrichtigungen gelten für alle Services. Sie können keine Benachrichtigungen nur für bestimmte Services erhalten, z. B. Connectors oder BlueXP Backup und Recovery.</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">Alle anderen Benutzer und Empfänger sind so konfiguriert, dass sie keine Benachrichtigungs-E-Mails erhalten. Sie müssen daher die Benachrichtigungseinstellungen für weitere Benutzer konfigurieren.</block>
-  <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Management von Google Cloud Storage Buckets</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">Sie sollten Folgendes haben:</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">Weitere Informationen finden Sie unter<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.xlarge wird empfohlen).</block>
@@ -3789,4 +3775,49 @@ Nicht in Google Cloud oder in unterstützt<block ref="da2732e6e9a1be4ab82a119453
   <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">Installieren und Einrichten eines Connectors im Standardmodus</block>
   <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">Installieren und Einrichten eines Connectors im privaten Modus</block>
   <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">Anmelden</block>
+  <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">Informieren Sie sich, wie BlueXP für Sie Azure Zugangsdaten verwendet, um Aktionen durchzuführen und wie diese Zugangsdaten mit Marketplace-Abonnements verknüpft sind. Das Verständnis dieser Details kann hilfreich sein, wenn Sie die Anmeldedaten für ein oder mehrere Azure-Abonnements verwalten. Beispielsweise könnte es hilfreich sein, wenn Sie mehr über Azure Zugangsdaten zu BlueXP erfahren möchten.</block>
+  <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">Anmeldedaten und Abonnements für den Marktplatz</block>
+  <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">Die Zugangsdaten, die Sie zu einem Connector hinzufügen, müssen mit einem Azure Marketplace Abonnement verbunden sein, sodass Sie für Cloud Volumes ONTAP einen Stundensatz (PAYGO) oder über einen Jahresvertrag zahlen und andere BlueXP Services nutzen können.</block>
+  <block id="fb84f4e33822ea62702acf73a6936590" category="paragraph"><block ref="1203dc0bfed75eb2f240871bcc177fc9" category="inline-link-macro-rx"></block>.</block>
+  <block id="699a4563fbdfb82a77a96312a9c5b942" category="paragraph">Beachten Sie Folgendes zu Azure Zugangsdaten und Marketplace-Abonnements:</block>
+  <block id="394fe3b41aaabcee1c8575842cbb5c99" category="list-text">Sie können nur ein Azure Marketplace Abonnement mit einem Satz von Azure Zugangsdaten verknüpfen</block>
+  <block id="d9fbcede0b5dd54b1e4b6bd98ebd3fff" category="list-text">Sie können ein bestehendes Marketplace-Abonnement durch ein neues Abonnement ersetzen</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="section-title">Häufig gestellte Fragen</block>
+  <block id="c304c6eb88f5bb91ab96ba559c3124d2" category="paragraph">Die folgende Frage bezieht sich auf Anmeldeinformationen und Abonnements.</block>
+  <block id="d1498a931fa5f0af32115f36f233018b" category="section-title">Kann ich das Azure Marketplace Abonnement für Cloud Volumes ONTAP-Arbeitsumgebungen ändern?</block>
+  <block id="eb61c2cc62653045f5374d6c02b9cb28" category="paragraph">Ja, können Sie. Mit Änderung des Abonnements für Azure Marketplace für bestimmte Azure Zugangsdaten werden alle bestehenden und neuen Cloud Volumes ONTAP-Arbeitsumgebungen mit dem neuen Abonnement abgerechnet.</block>
+  <block id="9da47999e254d317c9c5eadda7df30b7" category="section-title">Kann ich mehrere Azure Zugangsdaten mit jeweils unterschiedlichen Marketplace-Abonnements hinzufügen?</block>
+  <block id="c0e1571fee7bc6b756a9626664ca06e8" category="paragraph">Alle Azure Zugangsdaten, die zum selben Azure Abonnement gehören, werden mit demselben Azure Marketplace Abonnement verknüpft.</block>
+  <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">Wenn Sie mehrere Azure-Anmeldeinformationen haben, die zu verschiedenen Azure-Abonnements gehören, können diese Anmeldeinformationen demselben Azure Marketplace Abonnement oder verschiedenen Marketplace-Abonnements zugeordnet werden.</block>
+  <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">Kann ich vorhandene Cloud Volumes ONTAP-Arbeitsumgebungen auf ein anderes Azure Abonnement verschieben?</block>
+  <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">Nein, es ist nicht möglich, die Azure Ressourcen, die Ihrer Cloud Volumes ONTAP-Arbeitsumgebung zugeordnet sind, in ein anderes Azure Abonnement zu verschieben.</block>
+  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">Wie funktionieren Anmeldedaten für Marketplace-Implementierungen und On-Premises-Implementierungen?</block>
+  <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">Wenn Sie einen Connector in Google Cloud bereitstellen, erstellt BlueXP einen Standardsatz von Anmeldeinformationen, die der Connector-VM-Instanz zugeordnet sind. Sie können jederzeit das mit diesen Anmeldedaten verbundene Abonnement von Google Cloud Marketplace ändern. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.</block>
+  <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">Durch den Austausch des aktuellen Marketplace-Abonnements durch ein neues Abonnement wird das Marketplace-Abonnement für alle bestehenden Cloud Volumes ONTAP Arbeitsumgebungen und alle neuen Arbeitsumgebungen geändert.</block>
+  <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">Erfahren Sie, wie BlueXP für Sie Aktionen mit Google Cloud Credentials durchführt und diese Zugangsdaten mit Marketplace-Abonnements verknüpft. Diese Details zu verstehen, kann hilfreich sein, wenn Sie die Anmeldeinformationen für ein oder mehrere Google Cloud-Projekte verwalten. Vielleicht möchten Sie mehr über das Servicekonto erfahren, das mit der Connector-VM verbunden ist.</block>
+  <block id="2b28187ebaea3b39a76735548553c017" category="paragraph">Wenn Sie einen Connector in Google Cloud implementieren, erstellt BlueXP im Projekt, in dem sich der Connector befindet, einen StandardSatz an Anmeldeinformationen für das Google Cloud Servicekonto. Diese Anmeldedaten müssen mit einem Google Cloud Marketplace Abonnement verbunden sein, sodass Sie für Cloud Volumes ONTAP einen Stundensatz (PAYGO) zahlen und andere BlueXP Services nutzen können.</block>
+  <block id="09287a1087bc09afb8b07a6d1a5eae1e" category="inline-link-macro">Erfahren Sie, wie Sie ein Google Cloud Marketplace Abonnement verknüpfen</block>
+  <block id="7acdafee5614d2da4affd478462c535e" category="paragraph"><block ref="4394d3ef2937eb47839ebd4e9350c4a7" category="inline-link-macro-rx"></block>.</block>
+  <block id="ebb6d853fd57e1782a582fe71ada39d8" category="paragraph">Beachten Sie Folgendes über Google Cloud-Anmeldedaten und Marketplace-Abonnements:</block>
+  <block id="4d1b7e7c166bf4ed32fa5d56516fa083" category="list-text">Einem Connector kann nur ein Satz Google Cloud-Anmeldedaten zugeordnet werden</block>
+  <block id="6d399b7b3ed393068765f55064547297" category="list-text">Sie können den Anmeldedaten nur ein Google Cloud Marketplace-Abonnement zuweisen</block>
+  <block id="239d1b40f08bc1656a0d7e74a463506d" category="summary">Informieren Sie sich, wie BlueXP für Sie AWS Zugangsdaten verwendet, um Aktionen durchzuführen und wie diese Zugangsdaten mit Marketplace-Abonnements verknüpft sind. Diese Details zu verstehen, ist hilfreich, wenn Sie die Anmeldedaten für einen oder mehrere AWS-Konten in BlueXP managen. So könnte es beispielsweise interessant sein, wann Sie BlueXP um zusätzliche AWS Zugangsdaten erweitern können.</block>
+  <block id="83c8c6a596b650f7a3d797d7ca610eec" category="paragraph">Wenn Sie BlueXP mit zusätzlichen AWS-Konten nutzen möchten, können Sie entweder AWS-Schlüssel für einen IAM-Benutzer oder den ARN einer Rolle in einem vertrauenswürdigen Konto bereitstellen. Die folgende Abbildung zeigt zwei zusätzliche Konten: Eines mit Berechtigungen über eine IAM-Rolle in einem vertrauenswürdigen Konto und ein weiteres über die AWS Schlüssel eines IAM-Benutzers:</block>
+  <block id="69989e90b246317e0163189ff8d059e9" category="paragraph">Die Zugangsdaten, die Sie einem Connector hinzufügen, müssen mit einem AWS Marketplace Abonnement verbunden sein, sodass Sie für Cloud Volumes ONTAP einen Stundensatz (PAYGO) oder über einen Jahresvertrag zahlen und andere BlueXP Services nutzen können.</block>
+  <block id="121abc14ff73ca8b4e21d30028c17399" category="paragraph"><block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block>.</block>
+  <block id="76561e64ef8af12896c02fcfaddaf89e" category="paragraph">Beachten Sie Folgendes zu AWS Zugangsdaten und Marketplace-Abonnements:</block>
+  <block id="7b0c974aab7fa6523b2e4aa45c818464" category="list-text">Sie können nur ein AWS Marketplace Abonnement mit einem Satz von AWS Zugangsdaten verknüpfen</block>
+  <block id="d33d86c6f3f99b3b9b1b988bde0679bd" category="paragraph">Die folgenden Fragen beziehen sich auf Anmeldeinformationen und Abonnements.</block>
+  <block id="f4ccd042e43557d6dcec2b8d243b7662" category="paragraph">Wie oben in den Abschnitten beschrieben, können Sie mit BlueXP Ihre AWS Zugangsdaten auf verschiedene Weise bereitstellen: Eine mit der Connector-Instanz verbundene IAM-Rolle, indem Sie eine IAM-Rolle in einem vertrauenswürdigen Konto übernehmen oder AWS Zugriffsschlüssel bereitstellen.</block>
+  <block id="c9195aa1791c4bdbc03156535bd27fc0" category="section-title">Kann ich das AWS Marketplace Abonnement für Cloud Volumes ONTAP Arbeitsumgebungen ändern?</block>
+  <block id="2fde9464009be43ef57f1ae03915ce1b" category="paragraph">Ja, können Sie. Wenn Sie das AWS Marketplace Abonnement ändern, das mit einer Reihe von Zugangsdaten verknüpft ist, wird das neue Abonnement für alle vorhandenen und neuen Cloud Volumes ONTAP Arbeitsumgebungen in Rechnung gestellt.</block>
+  <block id="5f40627f2e8501cf250f4cc37e129f5c" category="section-title">Kann ich mehrere AWS Zugangsdaten mit jeweils unterschiedlichen Marketplace-Abonnements hinzufügen?</block>
+  <block id="f3d5116dad7634904c5a0daad024b77d" category="paragraph">Alle AWS Zugangsdaten, die demselben AWS Konto angehören, werden demselben AWS Marketplace Abonnement zugeordnet.</block>
+  <block id="941c9eda62bf4e57d449bdcf28810b26" category="paragraph">Wenn Sie mehrere AWS-Anmeldeinformationen haben, die zu verschiedenen AWS-Konten gehören, können diese Anmeldeinformationen mit demselben AWS Marketplace Abonnement oder verschiedenen Abonnements verknüpft werden.</block>
+  <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">Kann ich vorhandene Cloud Volumes ONTAP Arbeitsumgebungen auf ein anderes AWS Konto verschieben?</block>
+  <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">Nein, es ist nicht möglich, die AWS Ressourcen, die Ihrer Cloud Volumes ONTAP Arbeitsumgebung zugeordnet sind, in ein anderes AWS Konto zu verschieben.</block>
+  <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">Management von AWS Zugangsdaten und Marketplace-Abonnements für BlueXP</block>
+  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Sie möchten das AWS Marketplace-Abonnement ändern, das mit den AWS Zugangsdaten verknüpft ist.</block>
+  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">Azure Zugangsdaten und Marketplace-Abonnements für BlueXP managen</block>
+  <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Sie möchten das Abonnement für Azure Marketplace ändern, das mit den Azure-Anmeldedaten verknüpft ist.</block>
 </blocks>
