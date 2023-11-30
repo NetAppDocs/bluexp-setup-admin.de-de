@@ -487,7 +487,6 @@
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">Dedizierter Host</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">Unterstützte Betriebssysteme</block>
-  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6, 7.7, 7.8 und 7.9</block>
   <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red hat Enterprise Linux 7.6, 7.7, 7.8 und 7.9</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.</block>
@@ -1970,7 +1969,6 @@
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">AWS – Details</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">Wenn Sie den Connector von BlueXP oder vom Marktplatz des Cloud-Providers implementiert haben, beachten Sie Folgendes:</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">Der EC2-Instanztyp ist t3.xlarge.</block>
-  <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">Das Betriebssystem für das Image ist Ubuntu 22.04.</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">Die Standardfestplatte des Systems ist eine 100 gib gp2-Festplatte.</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azure – Details</block>
@@ -2089,13 +2087,8 @@ Oder</block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">Geben Sie den Namen des zu bestätigten Connectors ein, und wählen Sie dann *Entfernen*.</block>
   <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP entfernt den Connector aus seinen Datensätzen.</block>
   <block id="1e5422449b0eb99ea40cb7fe70879cc1" category="section-title">Deinstallieren Sie die Connector-Software</block>
-  <block id="1eadfd8e2f3b513abf35355f37e97001" category="paragraph">Deinstallieren Sie die Connector-Software, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Die Schritte, die Sie verwenden müssen, hängen davon ab, ob Sie den Connector auf einem Host mit Internetzugang oder einem Host in einem eingeschränkten Netzwerk installiert haben, das keinen Internetzugang hat.</block>
-  <block id="4d67fb715dceafe12fe6803426ac57b2" category="section-title">Deinstallieren Sie von einem Host mit Internetzugang</block>
-  <block id="e089c95fb359ddfa284cac5771dbcd57" category="paragraph">Der Online Connector enthält ein Deinstallationsskript, mit dem Sie die Software deinstallieren können.</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">Führen Sie auf dem Linux-Host das Deinstallationsskript aus:</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_Silent_ führt das Skript aus, ohne dass Sie zur Bestätigung aufgefordert werden.</block>
-  <block id="8df713934e0916c402f7101820962747" category="section-title">Deinstallieren Sie von einem Host ohne Internetzugang</block>
-  <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">Verwenden Sie diese Befehle, wenn Sie die Connector Software von der NetApp Support Site heruntergeladen und in einem Netzwerk mit beschränktem Zugriff installiert haben.</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Führen Sie auf dem Linux-Host die folgenden Befehle aus:</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">On-Premises-Netzwerke einrichten</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren, benötigt das Installationsprogramm für den Connector während des Installationsprozesses Zugriff auf die folgenden URLs:</block>
@@ -2444,7 +2437,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="aca7ecb913d1693820d3cecc61146e57" category="list-text">Wählen Sie die Arbeitsbereiche aus, die dem Benutzer zugeordnet werden sollen, und wählen Sie *Anwenden*.</block>
   <block id="00c13424586ec3eadb8e36d6a47c5a3d" category="paragraph">Der Benutzer kann jetzt von BlueXP auf diese Arbeitsbereiche zugreifen, solange der Connector auch mit den Arbeitsbereichen verknüpft war.</block>
   <block id="f932d2619edea0dc69b40e9be53abdc4" category="section-title">Erstellen und Verwalten von Servicekonten</block>
-  <block id="a27c9464b539fe59f34a06ecfb5eebf0" category="paragraph">Ein Servicekonto fungiert als „Benutzer“, der autorisierte API-Aufrufe zu Automatisierungszwecken an BlueXP vornehmen kann. So ist das Management der Automatisierung einfacher, da keine Automatisierungsskripts auf Basis des Benutzerkontos eines echten Mitarbeiters erstellt werden müssen, der das Unternehmen jederzeit verlassen kann. Und bei Verwendung von Federation können Sie ein Token erstellen, ohne ein Update-Token aus der Cloud zu generieren.</block>
   <block id="3867fe57530ba0aa0540b395cae02bbe" category="paragraph">Sie erteilen einem Servicekonto Berechtigungen, indem Sie ihm eine Rolle zuweisen, genau wie jeder andere BlueXP-Benutzer. Sie können das Servicekonto auch mit bestimmten Arbeitsbereichen verknüpfen, um die Arbeitsumgebungen (Ressourcen) zu kontrollieren, auf die der Service zugreifen kann.</block>
   <block id="3e90ee6ffbf4747b6daa7514209e20ef" category="paragraph">Wenn Sie das Dienstkonto erstellen, können Sie mit BlueXP eine Client-ID und einen Clientschlüssel für das Dienstkonto kopieren oder herunterladen. Dieses Schlüsselpaar wird für die Authentifizierung mit BlueXP verwendet.</block>
   <block id="41d9e1257b3e21add2e59d038938ea94" category="section-title">Erstellen eines Dienstkontos</block>
@@ -3820,4 +3812,19 @@ Nicht in Google Cloud oder in unterstützt<block ref="da2732e6e9a1be4ab82a119453
   <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Sie möchten das AWS Marketplace-Abonnement ändern, das mit den AWS Zugangsdaten verknüpft ist.</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">Azure Zugangsdaten und Marketplace-Abonnements für BlueXP managen</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Sie möchten das Abonnement für Azure Marketplace ändern, das mit den Azure-Anmeldedaten verknüpft ist.</block>
+  <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
+  <block id="7f9b20909dd63d1bee579fee63d32a4a" category="paragraph">Deinstallieren Sie die Connector-Software, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Die Schritte, die Sie verwenden müssen, hängen davon ab, ob Sie den Connector auf einem Host mit Internetzugang (Standardmodus oder eingeschränkter Modus) oder auf einem Host in einem Netzwerk ohne Internetzugang (privater Modus) installiert haben.</block>
+  <block id="704318f2299bbf226c9c1348790ad16a" category="section-title">Deinstallieren, wenn Sie den Standardmodus oder den eingeschränkten Modus verwenden</block>
+  <block id="cb4aad09336fbc7a1b8ecf07e5495e18" category="paragraph">Mit den folgenden Schritten können Sie die Connector-Software deinstallieren, wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden.</block>
+  <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">Stellen Sie eine Verbindung zur Linux-VM für den Connector her.</block>
+  <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
+  <block id="e62b509228c00429c0a06d3fd75b6e6e" category="section-title">Deinstallieren Sie die Software, wenn Sie den privaten Modus verwenden</block>
+  <block id="56772d07c7720c5dc4391eea138265a3" category="paragraph">Mit den folgenden Schritten können Sie die Connector-Software deinstallieren, wenn Sie BlueXP im privaten Modus verwenden, auf den kein Internetzugang verfügbar ist.</block>
+  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
+  <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">Voraussetzung für den Zugang zum digitalen Berater von BlueXP.</block>
+  <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">Ein Servicekonto fungiert als „Benutzer“, der autorisierte API-Aufrufe zu Automatisierungszwecken an BlueXP vornehmen kann. So ist das Management der Automatisierung einfacher, da keine Automatisierungsskripts auf Basis des Benutzerkontos eines echten Mitarbeiters erstellt werden müssen, der das Unternehmen jederzeit verlassen kann.</block>
+  <block id="f48ee857175ccdfbd5ae5d5354c32c08" category="inline-link">Erfahren Sie mehr über das Aktualisieren von Token</block>
+  <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">Beachten Sie, dass ein Aktualisierungs-Token für API-Vorgänge nicht erforderlich ist, wenn ein Servicekonto verwendet wird.<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
+  <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">Das Betriebssystem für das Image ist Ubuntu 22.04 LTS.</block>
 </blocks>

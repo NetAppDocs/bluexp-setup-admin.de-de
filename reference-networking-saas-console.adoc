@@ -27,6 +27,9 @@ Diese Endpunkte werden von dem Computer eines Benutzers kontaktiert, wenn bestim
 \https://*.console.bluexp.netapp.com | Wenn Sie die webbasierte Konsole von BlueXP verwenden, kontaktiert Ihr Webbrowser diese URLs. 
 
 
+| \https://aiq.netapp.com | Voraussetzung für den Zugang zum digitalen Berater von BlueXP. 
+
+
  a| 
 AWS-Services (amazonaws.com):
 

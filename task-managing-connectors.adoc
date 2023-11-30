@@ -230,21 +230,20 @@ BlueXP entfernt den Connector aus seinen Datensätzen.
 
 == Deinstallieren Sie die Connector-Software
 
-Deinstallieren Sie die Connector-Software, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Die Schritte, die Sie verwenden müssen, hängen davon ab, ob Sie den Connector auf einem Host mit Internetzugang oder einem Host in einem eingeschränkten Netzwerk installiert haben, das keinen Internetzugang hat.
+Deinstallieren Sie die Connector-Software, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Die Schritte, die Sie verwenden müssen, hängen davon ab, ob Sie den Connector auf einem Host mit Internetzugang (Standardmodus oder eingeschränkter Modus) oder auf einem Host in einem Netzwerk ohne Internetzugang (privater Modus) installiert haben.
 
 
 
-=== Deinstallieren Sie von einem Host mit Internetzugang
+=== Deinstallieren, wenn Sie den Standardmodus oder den eingeschränkten Modus verwenden
 
-Der Online Connector enthält ein Deinstallationsskript, mit dem Sie die Software deinstallieren können.
+Mit den folgenden Schritten können Sie die Connector-Software deinstallieren, wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden.
 
-.Schritt
+.Schritte
+. Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
 . Führen Sie auf dem Linux-Host das Deinstallationsskript aus:
 +
-[source, cli]
-----
-/opt/application/netapp/service-manager-2/uninstall.sh [silent]
-----
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
 +
 _Silent_ führt das Skript aus, ohne dass Sie zur Bestätigung aufgefordert werden.
 
@@ -252,16 +251,15 @@ _Silent_ führt das Skript aus, ohne dass Sie zur Bestätigung aufgefordert werd
 
 
 
-=== Deinstallieren Sie von einem Host ohne Internetzugang
+=== Deinstallieren Sie die Software, wenn Sie den privaten Modus verwenden
 
-Verwenden Sie diese Befehle, wenn Sie die Connector Software von der NetApp Support Site heruntergeladen und in einem Netzwerk mit beschränktem Zugriff installiert haben.
+Mit den folgenden Schritten können Sie die Connector-Software deinstallieren, wenn Sie BlueXP im privaten Modus verwenden, auf den kein Internetzugang verfügbar ist.
 
-.Schritt
+.Schritte
+. Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
 . Führen Sie auf dem Linux-Host die folgenden Befehle aus:
 +
-[source, cli]
-----
-docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
-rm -rf /opt/application/netapp/ds
-----
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
 
