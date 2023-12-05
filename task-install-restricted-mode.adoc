@@ -247,7 +247,7 @@ Sie sollten das Installationsprogramm für den „Online“-Connector herunterla
 +
 [source, cli]
 ----
-chmod +x Cloud-Manager-Connector-Cloud-<version>
+chmod +x BlueXP-Connector-Cloud-<version>
 ----
 +
 Wobei <version> die Version des Connectors ist, den Sie heruntergeladen haben.
@@ -256,7 +256,7 @@ Wobei <version> die Version des Connectors ist, den Sie heruntergeladen haben.
 +
 [source, cli]
 ----
- ./Cloud-Manager-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+ ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
 Die Parameter --Proxy und --cacert sind optional. Wenn Sie über einen Proxyserver verfügen, müssen Sie die Parameter wie dargestellt eingeben. Das Installationsprogramm fordert Sie nicht auf, Informationen über einen Proxy einzugeben.
@@ -267,7 +267,7 @@ Hier sehen Sie ein Beispiel für den Befehl mit beiden optionalen Parametern:
 +
 [source, cli]
 ----
- ./Cloud-Manager-Connector-Cloud-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.35 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --Proxy konfiguriert den Connector so, dass er einen HTTP- oder HTTPS-Proxy-Server in einem der folgenden Formate verwendet:

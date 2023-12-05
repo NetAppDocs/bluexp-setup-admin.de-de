@@ -276,9 +276,17 @@ Unterst체tzte BlueXP Services in On-Premises-Implementierungen:: BlueXP unterst�
 | Unterst체tzte Services | Hinweise 
 
 
-| Backup und Recovery | Es wird nur Backup und Restore von lokalen ONTAP Volumes in StorageGRID Systemen unterst체tzt.
+| Backup und Recovery  a| 
+* Backup und Restore von lokalen ONTAP Volumes auf StorageGRID Systemen wird unterst체tzt.
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Erfahren Sie, wie Sie On-Premises-ONTAP-Daten in StorageGRID sichern"^]
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Erfahren Sie, wie Sie On-Premises-ONTAP-Daten in StorageGRID sichern"^] 
+* Backup und Restore von lokalen ONTAP-Volumes in ONTAP S3 wird ebenfalls unterst체tzt.
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Erfahren Sie, wie Sie On-Premises-ONTAP-Daten in ONTAP S3 sichern"^]
+
+
+
 
 
 | Klassifizierung  a| 
