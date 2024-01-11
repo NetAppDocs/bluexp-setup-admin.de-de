@@ -18,6 +18,20 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== 11 Januar 2024
+
+
+
+=== Anschluss 3.9.36
+
+Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in den folgenden Cloud-Regionen:
+
+* Der Region Israel (Tel Aviv) in AWS
+* Die Region Saudi-Arabien in Google Cloud
+
+
+
+
 == Bis 5. Dezember 2023
 
 

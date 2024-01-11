@@ -39,6 +39,23 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["Beacht
 
 
 
+== Anzeigen der Version eines Connectors
+
+Sie können die Version Ihres Connectors anzeigen, um zu überprüfen, ob der Connector automatisch auf die neueste Version aktualisiert wurde, oder weil Sie ihn mit Ihrem NetApp-Vertreter teilen müssen.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP Konsole das Hilfesymbol aus.
+. Wählen Sie *Support > BlueXP Connector*.
++
+Die Version wird oben auf der Seite angezeigt.
+
++
+image:screenshot-connector-version.png["Ein Screenshot, der die Connector-Version im Support-Dashboard zeigt."]
+
+
+
+
+
 == Zwischen den Anschlüssen wechseln
 
 Wenn Sie über mehrere Anschlüsse verfügen, können Sie zwischen diesen wechseln, um die Arbeitsumgebungen zu sehen, die mit einem bestimmten Konnektor verknüpft sind.
