@@ -141,11 +141,19 @@ Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden 
 --
 
 
+Aktivieren Sie NTP:: Wenn Sie Vorhaben, die BlueXP Klassifizierung zum Scannen von Unternehmensdatenquellen zu nutzen, sollten Sie sowohl auf dem BlueXP Connector-System als auch dem BlueXP Klassifizierungssystem einen Network Time Protocol (NTP)-Service aktivieren, damit die Zeit zwischen den Systemen synchronisiert wird. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
++
+--
+Sie müssen diese Netzwerkanforderung implementieren, nachdem Sie den Connector erstellt haben.
+
+--
+
+
 
 
 == Schritt 2: Erstellen Sie eine benutzerdefinierte Rolle
 
-Erstellen Sie eine benutzerdefinierte Azure Rolle, die Sie Ihrem Azure Konto oder einem Azure AD-Dienstprinzipal zuweisen können. BlueXP authentifiziert sich mit Azure und verwendet diese Berechtigungen, um die Connector-Instanz in Ihrem Auftrag zu erstellen.
+Erstellen Sie eine benutzerdefinierte Azure Rolle, die Sie Ihrem Azure Konto oder einem Microsoft Entra-Dienstprinzipal zuweisen können. BlueXP authentifiziert sich mit Azure und verwendet diese Berechtigungen, um die Connector-Instanz in Ihrem Auftrag zu erstellen.
 
 Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
 
@@ -266,7 +274,7 @@ Sie sollten jetzt eine benutzerdefinierte Rolle namens _Azure SetupAsService_ ha
 Beim Erstellen des Connector aus BlueXP müssen Sie eine Anmeldung bereitstellen, mit der BlueXP eine Authentifizierung bei Azure und die Implementierung der VM ermöglichen kann. Sie haben zwei Möglichkeiten:
 
 . Melden Sie sich bei der entsprechenden Aufforderung mit Ihrem Azure-Konto an. Dieses Konto muss über spezifische Azure Berechtigungen verfügen. Dies ist die Standardoption.
-. Geben Sie Details zu einem Azure AD-Serviceprincipal an. Dieser Service-Principal erfordert auch spezielle Berechtigungen.
+. Geben Sie Details zu einem Dienstprinzipal von Microsoft Entra an. Dieser Service-Principal erfordert auch spezielle Berechtigungen.
 
 
 Befolgen Sie die Schritte, um eine dieser Authentifizierungsmethoden für die Verwendung mit BlueXP vorzubereiten.
@@ -303,16 +311,16 @@ Der Azure-Benutzer verfügt nun über die erforderlichen Berechtigungen für die
 --
 Anstatt sich mit Ihrem Azure Konto anzumelden, können Sie BlueXP mit den Zugangsdaten für einen Azure Serviceprinzipal bereitstellen, der über die erforderlichen Berechtigungen verfügt.
 
-Ein Service-Principal in Azure Active Directory erstellen und einrichten, um die für BlueXP erforderlichen Azure Zugangsdaten zu erhalten.
+Ein Service-Principal in der Microsoft Entra ID erstellen und einrichten, um die für BlueXP erforderlichen Azure Zugangsdaten zu erhalten.
 
-.Erstellen einer Azure Active Directory Applikation zur rollenbasierten Zugriffssteuerung
+.Erstellen Sie eine Microsoft Entra-Anwendung für die rollenbasierte Zugriffssteuerung
 . Stellen Sie sicher, dass Sie in Azure über die Berechtigungen zum Erstellen einer Active Directory-Anwendung und zum Zuweisen der Anwendung zu einer Rolle verfügen.
 +
 Weitere Informationen finden Sie unter https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure-Dokumentation: Erforderliche Berechtigungen"^]
 
-. Öffnen Sie über das Azure-Portal den *Azure Active Directory*-Service.
+. Öffnen Sie im Azure-Portal den Dienst *Microsoft Entra ID*.
 +
-image:screenshot_azure_ad.gif["Zeigt den Active Directory-Dienst in Microsoft Azure an."]
+image:screenshot_azure_ad.png["Zeigt den Active Directory-Dienst in Microsoft Azure an."]
 
 . Wählen Sie im Menü *App-Registrierungen*.
 . Wählen Sie *Neue Registrierung*.
@@ -362,7 +370,7 @@ Wenn Sie Ressourcen in mehreren Azure-Abonnements managen möchten, müssen Sie 
 
 
 .Fügen Sie Windows Azure Service Management-API-Berechtigungen hinzu
-. Wählen Sie im Dienst *Azure Active Directory* *App Registrations* aus und wählen Sie die Anwendung aus.
+. Wählen Sie im *Microsoft Entra ID*-Dienst *App-Registrierungen* aus und wählen Sie die Anwendung aus.
 . Wählen Sie *API-Berechtigungen > Berechtigung hinzufügen*.
 . Wählen Sie unter *Microsoft APIs* *Azure Service Management* aus.
 +
@@ -375,10 +383,10 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Ein Screenshot des Azure Porta
 
 
 .Die Anwendungs-ID und die Verzeichnis-ID für die Anwendung abrufen
-. Wählen Sie im Dienst *Azure Active Directory* *App Registrations* aus und wählen Sie die Anwendung aus.
+. Wählen Sie im *Microsoft Entra ID*-Dienst *App-Registrierungen* aus und wählen Sie die Anwendung aus.
 . Kopieren Sie die *Application (Client) ID* und die *Directory (Tenant) ID*.
 +
-image:screenshot_azure_app_ids.gif["Ein Screenshot, der die Anwendungs-ID (Client) und die Verzeichnis-ID (Mandant) für eine Anwendung in Azure Active Directory anzeigt"]
+image:screenshot_azure_app_ids.gif["Ein Screenshot, der die Anwendungs-(Client-)ID und Verzeichnis-(Mandanten-)ID für eine Anwendung in Microsoft Entra IDY zeigt."]
 
 +
 Wenn Sie das Azure-Konto zu BlueXP hinzufügen, müssen Sie die Anwendungs-ID (Client) und die Verzeichnis-ID (Mandant) für die Anwendung angeben. BlueXP verwendet die IDs, um sich programmatisch anzumelden.
@@ -386,17 +394,17 @@ Wenn Sie das Azure-Konto zu BlueXP hinzufügen, müssen Sie die Anwendungs-ID (C
 
 
 .Erstellen Sie einen Clientschlüssel
-. Öffnen Sie den Dienst *Azure Active Directory*.
+. Öffnen Sie den Dienst *Microsoft Entra ID*.
 . Wählen Sie *App-Registrierungen* und wählen Sie Ihre Anwendung aus.
 . Wählen Sie *Zertifikate & Geheimnisse > Neues Kundengeheimnis*.
 . Geben Sie eine Beschreibung des Geheimnisses und eine Dauer an.
 . Wählen Sie *Hinzufügen*.
 . Kopieren Sie den Wert des Clientgeheimnisses.
 +
-image:screenshot_azure_client_secret.gif["Ein Screenshot des Azure-Portals, in dem ein Client-Geheimnis für den Azure AD-Service-Principal angezeigt wird"]
+image:screenshot_azure_client_secret.gif["Ein Screenshot des Azure-Portals zeigt einen Client-Secret für den Microsoft Entra-Dienst-Principal."]
 
 +
-Jetzt gibt es einen Client-Schlüssel, den BlueXP zur Authentifizierung mit Azure AD verwenden kann.
+Jetzt haben Sie einen Client-Schlüssel, den BlueXP zur Authentifizierung mit Microsoft Entra ID verwenden kann.
 
 
 
@@ -454,7 +462,7 @@ Das Formular ist Eigentum von Microsoft und wird von Microsoft gehostet. Ihre Zu
 
 TIP: Wenn Sie bereits bei einem Azure-Konto angemeldet sind, nutzt BlueXP das Konto automatisch. Wenn Sie über mehrere Konten verfügen, müssen Sie sich möglicherweise erst abmelden, um sicherzustellen, dass Sie das richtige Konto verwenden.
 
-*** Wählen Sie *Active Directory Service Principal* aus, um Informationen über den Azure Active Directory Service Principal einzugeben, der die erforderlichen Berechtigungen gewährt:
+*** Wählen Sie *Active Directory Service Principal* aus, um Informationen über den Microsoft Entra Service Principal einzugeben, der die erforderlichen Berechtigungen gewährt:
 +
 **** Anwendungs-ID (Client)
 **** ID des Verzeichnisses (Mandant)

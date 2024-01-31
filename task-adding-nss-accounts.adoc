@@ -56,7 +56,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . Wählen Sie *NSS-Verwaltung > NSS-Konto hinzufügen*.
 . Wenn Sie dazu aufgefordert werden, wählen Sie *Weiter*, um zu einer Microsoft-Anmeldeseite umgeleitet zu werden.
 +
-NetApp verwendet Microsoft Azure Active Directory als Identitäts-Provider für Authentifizierungsservices, die sich speziell für Support und Lizenzierung entscheiden.
+NetApp verwendet Microsoft Entra ID als Identitätsanbieter für Authentifizierungsservices, die speziell auf Support und Lizenzierung zugeschnitten sind.
 
 . Geben Sie auf der Anmeldeseite die registrierte E-Mail-Adresse und das Kennwort Ihrer NetApp Support Site an, um den Authentifizierungsvorgang durchzuführen.
 +
@@ -97,32 +97,6 @@ Benutzer können jetzt das Konto beim Erstellen neuer Cloud Volumes ONTAP-System
 
 
 
-== Aktualisieren Sie ein NSS-Konto für die neue Authentifizierungsmethode
-
-Im November 2021 verwendet NetApp jetzt Microsoft Azure Active Directory als Identitäts-Provider für speziell auf Support und Lizenzierung applikationsspezifische Authentifizierungs-Services. Als Ergebnis dieses Updates werden Sie von BlueXP aufgefordert, die Anmeldeinformationen für alle vorhandenen Konten, die Sie zuvor hinzugefügt haben, zu aktualisieren.
-
-.Schritte
-. Falls noch nicht geschehen, https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Erstellen Sie ein Microsoft Azure Active Directory B2C-Konto, das mit Ihrem aktuellen BlueXP Konto verknüpft wird"^].
-. Klicken Sie oben rechts auf der BlueXP Konsole auf das Hilfesymbol und wählen Sie *Support* aus.
-. Wählen Sie *NSS Management*.
-. Wählen Sie für das NSS-Konto, das Sie aktualisieren möchten, *Konto aktualisieren*.
-+
-image:screenshot-nss-update-account.png["Ein Screenshot, in dem die Option Konto aktualisieren angezeigt wird"]
-
-. Wenn Sie dazu aufgefordert werden, wählen Sie *Weiter*, um zu einer Microsoft-Anmeldeseite umgeleitet zu werden.
-+
-NetApp verwendet Microsoft Azure Active Directory als Identitäts-Provider für Authentifizierungsservices, die sich speziell für Support und Lizenzierung entscheiden.
-
-. Geben Sie auf der Anmeldeseite die registrierte E-Mail-Adresse und das Kennwort Ihrer NetApp Support Site an, um den Authentifizierungsvorgang durchzuführen.
-+
-Nach Abschluss des Vorgangs sollte das Konto, das Sie aktualisiert haben, nun als _New_ Konto in der Tabelle aufgeführt werden. Die _ältere_ Version des Kontos ist weiterhin in der Tabelle aufgeführt, zusammen mit allen vorhandenen Arbeitsumgebungsverknüpfungen.
-
-. Wenn vorhandene Cloud Volumes ONTAP-Arbeitsumgebungen an die ältere Version des Kontos angeschlossen sind, befolgen Sie die nachstehenden Schritte <<Verbinden Sie eine Arbeitsumgebung mit einem anderen NSS-Konto,Verbinden Sie die Arbeitsumgebungen mit einem anderen NSS-Konto>>.
-. Rufen Sie die ältere Version des NSS-Kontos auf, und wählen Sie aus image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] Und wählen Sie dann *Löschen*.
-
-
-
-
 == NSS-Anmeldeinformationen aktualisieren
 
 Sie müssen die Anmeldeinformationen für Ihre NSS-Konten in BlueXP aktualisieren, wenn eine der folgenden Ereignisse eintritt:
@@ -140,7 +114,7 @@ image:screenshot-nss-update-credentials.png["Ein Screenshot, der das Aktivitäts
 
 . Wenn Sie dazu aufgefordert werden, wählen Sie *Weiter*, um zu einer Microsoft-Anmeldeseite umgeleitet zu werden.
 +
-NetApp verwendet Microsoft Azure Active Directory als Identitäts-Provider für Authentifizierungsservices, die sich speziell für Support und Lizenzierung entscheiden.
+NetApp verwendet Microsoft Entra ID als Identitätsanbieter für Authentifizierungsservices, die speziell auf Support und Lizenzierung zugeschnitten sind.
 
 . Geben Sie auf der Anmeldeseite die registrierte E-Mail-Adresse und das Kennwort Ihrer NetApp Support Site an, um den Authentifizierungsvorgang durchzuführen.
 
@@ -151,7 +125,7 @@ NetApp verwendet Microsoft Azure Active Directory als Identitäts-Provider für 
 
 Wenn Ihr Unternehmen über mehrere NetApp Support Site Accounts verfügt, können Sie ändern, welches Konto einem Cloud Volumes ONTAP System zugeordnet ist.
 
-Diese Funktion wird nur bei NSS-Konten unterstützt, die für die Verwendung von Microsoft Azure AD konfiguriert sind, das von NetApp zum Identitätsmanagement eingeführt wurde. Bevor Sie diese Funktion verwenden können, müssen Sie *NSS-Konto hinzufügen* oder *Konto aktualisieren* auswählen.
+Diese Funktion wird nur bei NSS-Konten unterstützt, die für die Verwendung der von NetApp für die Identitätsverwaltung übernommenen Microsoft-Entra-ID konfiguriert sind. Bevor Sie diese Funktion verwenden können, müssen Sie *NSS-Konto hinzufügen* oder *Konto aktualisieren* auswählen.
 
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Hilfesymbol und wählen Sie *Support* aus.
@@ -173,7 +147,7 @@ image:screenshot-nss-change-account.png["Ein Screenshot, der das Aktivitätsmen�
 
 == Zeigen Sie die E-Mail-Adresse für ein NSS-Konto an
 
-Da für die Authentifizierungsdienste von NetApp Support-Site jetzt Microsoft Azure Active Directory verwendet wird, ist der NSS-Benutzername in BlueXP in der Regel eine vom Azure AD generierte Kennung. Als Ergebnis können Sie möglicherweise nicht sofort die E-Mail-Adresse kennen, die mit diesem Konto verknüpft ist. Aber BlueXP hat die Möglichkeit, Ihnen die zugehörige E-Mail-Adresse anzuzeigen.
+Da nun Konten der NetApp-Support-Website Microsoft Entra ID für Authentifizierungsdienste verwenden, ist der in BlueXP angezeigte NSS-Benutzername in der Regel eine von Microsoft Entra generierte Kennung. Als Ergebnis können Sie möglicherweise nicht sofort die E-Mail-Adresse kennen, die mit diesem Konto verknüpft ist. Aber BlueXP hat die Möglichkeit, Ihnen die zugehörige E-Mail-Adresse anzuzeigen.
 
 
 TIP: Wenn Sie die NSS-Verwaltungsseite aufrufen, generiert BlueXP für jedes Konto in der Tabelle ein Token. Dieses Token enthält Informationen zur zugehörigen E-Mail-Adresse. Das Token wird dann entfernt, wenn Sie die Seite verlassen. Die Informationen werden niemals zwischengespeichert, wodurch Ihre Privatsphäre geschützt wird.

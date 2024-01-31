@@ -9,7 +9,7 @@ image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellun
 . Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +
 .. *Anmeldeort*: Wählen Sie *Microsoft Azure > Connector*.
-.. *Anmeldedaten definieren*: Geben Sie Informationen über den Azure Active Directory Service Principal ein, der die erforderlichen Berechtigungen erteilt:
+.. *Credentials definieren*: Geben Sie Informationen über den Microsoft Entra-Dienst-Prinzipal ein, der die erforderlichen Berechtigungen gewährt:
 +
 *** Anwendungs-ID (Client)
 *** ID des Verzeichnisses (Mandant)

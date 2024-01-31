@@ -68,7 +68,7 @@ Die folgende Tabelle enthält einen Vergleich dieser Modi.
 | Zugriff auf die Benutzeroberfläche | Von der BlueXP SaaS-Ebene aus | Lokal von der VM des Connectors aus | Lokal von der VM des Connectors aus 
 
 
-| API-Endpunkt | Die BlueXP SaaS-Ebene | Die BlueXP SaaS-Ebene | Der Anschluss 
+| API-Endpunkt | Die BlueXP SaaS-Ebene | Der Anschluss | Der Anschluss 
 
 
 | Authentifizierung | Über SaaS mit auth0, NSS-Anmeldung oder Identity Federation | Über SaaS mithilfe von auth0 oder Identity Federation | Lokale Benutzerauthentifizierung 
@@ -138,9 +138,8 @@ Außerdem ist eine Verbindung zu Cloud-Provider-Ressourcen aus der Region erford
 Unterstützter Speicherort für den Connector:: Im eingeschränkten Modus wird der Connector in der Cloud unterstützt: In einer Regierungsregion, einer souveränen Region oder einer kommerziellen Region.
 Steckverbinderinstallation:: Connector-Installation ist über den AWS oder Azure Marketplace möglich oder eine manuelle Installation auf Ihrem eigenen Linux-Host.
 Connector-Upgrades:: Automatisierte Upgrades der Connector-Software sind bei BlueXP mit monatlichen Updates erhältlich.
-Zugriff auf die Benutzeroberfläche:: Auf die Benutzeroberfläche kann über den Connector zugegriffen werden, der in Ihrer Cloud-Region bereitgestellt wird.
-API-Endpunkt:: API-Aufrufe werden an den folgenden Endpunkt vorgenommen:
-\https://cloudmanager.cloud.netapp.com
+Zugriff auf die Benutzeroberfläche:: Auf die Benutzeroberfläche kann über die virtuelle Connector-Maschine zugegriffen werden, die in Ihrer Cloud-Region bereitgestellt wird.
+API-Endpunkt:: API-Aufrufe werden an die virtuelle Connector-Maschine vorgenommen.
 Authentifizierung:: Die Authentifizierung erfolgt über den Cloud-Service von BlueXP unter Verwendung von auth0. Identitätsföderation ist ebenfalls verfügbar.
 Unterstützte BlueXP Services:: BlueXP unterstützt folgende Storage- und Datenservices mit eingeschränktem Modus:
 +

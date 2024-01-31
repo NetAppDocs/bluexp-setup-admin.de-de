@@ -689,9 +689,7 @@ Ab Dezember 2021 verwendet NetApp jetzt Microsoft Azure Active Directory als Ide
 
 Wenn Sie Ihr NSS-Konto noch nicht zu IDaaS migriert haben, müssen Sie zunächst das Konto migrieren und dann Ihre Zugangsdaten in Cloud Manager aktualisieren.
 
-* link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["Erfahren Sie, wie Sie ein NSS-Konto auf die neue Authentifizierungsmethode aktualisieren"].
-* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Erfahren Sie mehr über die Verwendung von Microsoft Azure AD durch NetApp zum Identitätsmanagement"^]
-
+https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Erfahren Sie mehr über die Verwendung von Microsoft Azure Active Directory für das Identitätsmanagement durch NetApp"^]
 
 
 
