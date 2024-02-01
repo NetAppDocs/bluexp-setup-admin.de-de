@@ -422,6 +422,51 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 == November 2022
 
+
+
+=== Einführung von BlueXP
+
+NetApp BlueXP erweitert und verbessert die über Cloud Manager bereitgestellten Funktionen. BlueXP ist eine einheitliche Managementplattform, die eine Hybrid-Multi-Cloud-Erfahrung für Storage und Datenservices über On-Premises- und Cloud-Umgebungen hinweg bietet.
+
+Unified Management:: Mit BlueXP können Sie Ihre gesamten Storage- und Daten-Assets über eine einzige Benutzeroberfläche managen.
++
+--
+Mit BlueXP können Sie Cloud-Storage erstellen und verwalten (z. B. Cloud Volumes ONTAP und Azure NetApp Files), Daten verschieben, schützen und analysieren sowie zahlreiche lokale und Edge-Storage-Geräte kontrollieren.
+
+https://bluexp.netapp.com["Weitere Informationen finden Sie auf der BlueXP-Website"^]
+
+--
+Neues Navigationsmenü:: Im Navigationsmenü von BlueXP sind die Services nun nach Kategorien sortiert und nach ihrer Funktionalität benannt. Sie können beispielsweise aus der Kategorie *Schutz* auf BlueXP Backup und Recovery zugreifen.
++
+--
+image:screenshot-navigation-menu.png["Ein Screenshot des Navigationsmenüs in BlueXP, in dem Kategorien wie Speicher und Gesundheit angezeigt werden."]
+
+--
+Neue Produktintegrationen::
++
+--
+* Sie können jetzt die Amazon S3-Buckets in den AWS-Konten verwalten, in denen der Connector installiert ist.
+* Sie können jetzt mehr lokale Storage-Systeme wie E-Series und StorageGRID managen.
+* Datenservices, die zuvor nur als Standalone-Service über eine separate UI genutzt werden können, wie etwa der BlueXP Digital Advisor (Active IQ), können jetzt genutzt werden.
+
+
+--
+Weitere Informationen .::
++
+--
+* https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Amazon S3 Buckets managen"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["Management von E-Series Storage-Systemen"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["Management von StorageGRID Storage-Systemen"^]
+* https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html["Erfahren Sie mehr über die Integration von Digital Advisor"^]
+
+
+--
+
+
+
+
+=== Aufforderung zum Aktualisieren der NSS-Anmeldeinformationen
+
 Cloud Manager fordert Sie jetzt auf, die mit Ihren Accounts der NetApp Support Website verbundenen Anmeldeinformationen zu aktualisieren, wenn das mit Ihrem Konto verknüpfte Aktualisierungs-Token nach 3 Monaten abläuft. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["Erfahren Sie, wie Sie NSS-Konten verwalten"^]
 
 
