@@ -40,6 +40,14 @@ Die Bearbeitung Ihres Namens wird nicht unterstützt, wenn Sie sich mit einer Ve
 
 
 
+=== Anforderung für den Metadatenservice für die Amazon EC2 Instanz
+
+Sie sollten beachten, dass IMDSv1 auf EC2-Instanzen erforderlich ist, bevor Sie die Connector-Software manuell in AWS installieren.
+
+link:reference-limitations.html["Erfahren Sie mehr über die Anforderung an IMDSv1 in AWS"].
+
+
+
 == 11 Januar 2024
 
 

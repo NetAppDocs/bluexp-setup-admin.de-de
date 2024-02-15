@@ -54,6 +54,14 @@ Schlüsselpaar:: Wenn Sie den Connector erstellen, müssen Sie ein EC2-Schlüsse
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
 Docker Engine:: Docker Engine Version 19.3.1 oder höher ist auf dem Host erforderlich, bevor Sie den Connector installieren. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
+IMDSv1:: Der Instance Metadata Service Version 1 (IMDSv1) ist auf EC2-Instanzen erforderlich. Der Connector wird von IMDSv2 nicht unterstützt.
++
+--
+Da IMDSv2 jetzt die Standardversion auf einer neuen EC2-Instanz ist, müssen Sie die Instanzmetadaten-Optionen ändern, um die Verwendung von IMDSv1 wiederherzustellen.
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["AWS Dokumentation: Stellen Sie die Verwendung von IMDSv1 wieder her"^]
+
+--
 
 
 
