@@ -170,15 +170,21 @@ Wenn es für Ihr Unternehmen erforderlich ist, können Sie die interne IP-Adress
 . Wenn Sie die öffentliche IP-Adresse geändert haben und eine Verbindung zur lokalen Benutzeroberfläche auf dem Connector herstellen müssen, starten Sie die Connector-Instanz neu, um die neue IP-Adresse bei BlueXP zu registrieren.
 . Wenn Sie die private IP-Adresse geändert haben, aktualisieren Sie den Backup-Speicherort für Cloud Volumes ONTAP-Konfigurationsdateien, so dass die Backups an die neue private IP-Adresse des Connectors gesendet werden.
 +
-.. Führen Sie den folgenden Befehl aus der Cloud Volumes ONTAP-CLI aus, um das aktuelle Backup-Ziel zu entfernen:
+Sie müssen den Backup-Speicherort für jedes Cloud Volumes ONTAP-System aktualisieren.
+
++
+.. Führen Sie den folgenden Befehl über die Cloud Volumes ONTAP-CLI aus, um das aktuelle Backup-Ziel anzuzeigen:
 +
 [source, cli]
 ----
-system configuration backup settings modify -destination ""
+system configuration backup show
 ----
-.. Gehen Sie zu BlueXP, und öffnen Sie die Arbeitsumgebung.
-.. Wählen Sie das Menü aus und wählen Sie *Erweitert > Konfigurationssicherungen*.
-.. Wählen Sie *Backup-Ziel Festlegen*.
+.. Führen Sie den folgenden Befehl aus, um die IP-Adresse für das Backup-Ziel zu aktualisieren:
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
 
 
 
