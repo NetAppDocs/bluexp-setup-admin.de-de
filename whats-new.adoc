@@ -34,17 +34,17 @@ Derzeit ist die Version 3.9.37 für den Standardmodus und den eingeschränkten M
 
 Wenn Sie sich mit den NetApp Cloud-Anmeldedaten bei BlueXP anmelden, können Sie jetzt Ihren Namen in *Benutzereinstellungen* bearbeiten.
 
-image:screenshot-edit-name.png["Ein Screenshot, der die Möglichkeit zeigt, Ihren Namen unter Benutzereinstellungen zu bearbeiten."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Ein Screenshot, der die Möglichkeit zeigt, Ihren Namen unter Benutzereinstellungen zu bearbeiten."]
 
 Die Bearbeitung Ihres Namens wird nicht unterstützt, wenn Sie sich mit einer Verbundverbindung oder mit Ihrem NetApp Support-Website-Konto anmelden.
 
 
 
-=== Anforderung für den Metadatenservice für die Amazon EC2 Instanz
+=== IMDSv1-Anforderung für EC2-Instanzen
 
-Sie sollten beachten, dass IMDSv1 auf EC2-Instanzen erforderlich ist, bevor Sie die Connector-Software manuell in AWS installieren.
+Sie sollten beachten, dass der Instance Metadata Service Version 1 (IMDSv1) auf Amazon EC2 Instanzen erforderlich ist, bevor Sie die Connector-Software manuell in AWS installieren.
 
-link:reference-limitations.html["Erfahren Sie mehr über die Anforderung an IMDSv1 in AWS"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Erfahren Sie mehr über die Anforderung an IMDSv1 in AWS"].
 
 
 
@@ -107,7 +107,7 @@ Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.
 
 * Wenn Sie einen Connector in AWS von BlueXP erstellen, können Sie nun im Feld Schlüsselpaar suchen, um das Schlüsselpaar, das Sie mit der Connector-Instanz verwenden möchten, einfacher zu finden.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Ein Screenshot der Suchoption im Feld Schlüsselpaar, das beim Erstellen eines Connectors in AWS aus BlueXP auf der Seite Netzwerk angezeigt wird."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Ein Screenshot der Suchoption im Feld Schlüsselpaar, das beim Erstellen eines Connectors in AWS aus BlueXP auf der Seite Netzwerk angezeigt wird."]
 
 * Dieses Update enthält auch Fehlerbehebungen.
 
