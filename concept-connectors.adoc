@@ -74,6 +74,7 @@ Wenn Sie BlueXP im Standardmodus verwenden, ist für die folgenden Funktionen un
 * Migrationsberichte
 * On-Premises-ONTAP-Cluster-Integration in BlueXP-Datenservices
 * Ausfallsicherheit der Betriebsabläufe ^1^
+* Schutz durch Ransomware
 * StorageGRID Systeme
 * Tiering
 * Volume-Caching
