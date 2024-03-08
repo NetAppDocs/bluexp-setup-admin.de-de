@@ -39,6 +39,20 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["Beacht
 
 
 
+== VM oder Instanztyp
+
+Wenn Sie einen Connector direkt aus BlueXP erstellt haben, hat BlueXP eine Virtual Machine-Instanz in Ihrem Cloud-Provider implementiert, die eine Standardkonfiguration verwendet. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einer kleineren VM-Instanz wechseln, die weniger CPU oder RAM hat.
+
+Die CPU- und RAM-Anforderungen lauten wie folgt:
+
+CPU:: 4 Kerne oder 4 vCPUs
+RAM:: 14 GB
+
+
+link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+
+
+
 == Anzeigen der Version eines Connectors
 
 Sie können die Version Ihres Connectors anzeigen, um zu überprüfen, ob der Connector automatisch auf die neueste Version aktualisiert wurde, oder weil Sie ihn mit Ihrem NetApp-Vertreter teilen müssen.
@@ -120,6 +134,81 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 --
 
+
+
+
+== Erfordern die Verwendung von IMDSv2 auf Amazon EC2 Instanzen
+
+Ab März 2024 unterstützt BlueXP jetzt den Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) mit dem Connector und Cloud Volumes ONTAP (einschließlich des Mediators für HA-Implementierungen). IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Weitere Informationen zu IMDSv2 finden Sie im AWS Security Blog"^]
+
+* IMDSv2 ist standardmäßig auf allen neuen Connector EC2-Instanzen aktiviert. IMDSv1 wurde vor März 2024 aktiviert.
+* IMDSv1 ist standardmäßig auf allen neuen und bestehenden Cloud Volumes ONTAP EC2 Instanzen aktiviert.
+
+
+Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren.
+
+.Bevor Sie beginnen
+* Die Connector-Version muss 3.9.38 oder höher sein.
+* Diese Änderung erfordert einen Neustart der Cloud Volumes ONTAP-Instanzen.
+
+
+.Über diese Aufgabe
+Für diese Schritte ist die Verwendung der AWS CLI erforderlich, da Sie das Limit für den Response-Hop auf 3 ändern müssen.
+
+.Schritte
+. Erfordern die Verwendung von IMDSv2 auf der Connector-Instanz:
++
+.. Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
++
+Als Sie die Connector-Instanz in AWS erstellt haben, haben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel angegeben. Sie können dieses Schlüsselpaar für SSH zur Instanz verwenden. Der Benutzername für die EC2 Linux-Instanz ist ubuntu (für Connectors, die vor Mai 2023 erstellt wurden, war der Benutzername ec2-user).
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs: Stellen Sie eine Verbindung zu Ihrer Linux-Instanz her"^]
+
+.. Installieren Sie die AWS CLI.
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["AWS Docs: Installieren oder aktualisieren Sie auf die neueste Version der AWS CLI"^]
+
+.. Verwenden Sie die `aws ec2 modify-instance-metadata-options` Befehl, um die Verwendung von IMDSv2 zu erfordern und das PUT Response Hop Limit auf 3 zu ändern.
++
+*Beispiel*
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: Der `http-tokens` Parameter setzt IMDSv2 auf erforderlich. Wenn `http-tokens` Ist erforderlich, müssen Sie auch festlegen `http-endpoint` Auf aktiviert.
+
+. Erfordern die Verwendung von IMDSv2 auf Cloud Volumes ONTAP Instanzen:
++
+.. Wechseln Sie zum https://console.aws.amazon.com/ec2/["Amazon EC2 Konsole"^]
+.. Wählen Sie im Navigationsbereich *instances* aus.
+.. Wählen Sie eine Cloud Volumes ONTAP-Instanz aus.
+.. Wählen Sie *Aktionen > Instanzeinstellungen > Optionen für Instanzmetadaten ändern*.
+.. Wählen Sie im Dialogfeld *Modify Instance Metadata options* Folgendes aus:
++
+*** Wählen Sie für *Instance Metadata Service* *enable* aus.
+*** Wählen Sie für *IMDSv2* *required* aus.
+*** Wählen Sie *Speichern*.
+
+
+.. Wiederholen Sie diese Schritte für andere Cloud Volumes ONTAP Instanzen, einschließlich des HA Mediators.
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["Stoppen und starten Sie die Cloud Volumes ONTAP-Instanzen"^]
+
+
+
+
+.Ergebnis
+Die Connector-Instanz und die Cloud Volumes ONTAP-Instanzen sind jetzt so konfiguriert, dass sie IMDSv2 verwenden.
 
 
 

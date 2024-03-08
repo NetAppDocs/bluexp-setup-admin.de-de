@@ -420,7 +420,7 @@ Ihr Service-Principal ist jetzt eingerichtet und Sie sollten die Anwendungs- (Cl
 Erstellen Sie den Connector direkt über die webbasierte Konsole von BlueXP.
 
 .Über diese Aufgabe
-Beim Erstellen des Connectors aus BlueXP wird eine Virtual Machine in Azure mithilfe einer Standardkonfiguration implementiert. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+Beim Erstellen des Connectors aus BlueXP wird eine Virtual Machine in Azure mithilfe einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren VM-Typ wechseln, der weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
 
 .Bevor Sie beginnen
 Sie sollten Folgendes haben:

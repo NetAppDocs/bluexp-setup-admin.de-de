@@ -378,7 +378,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud-D
 Erstellen Sie einen Connector direkt über die webbasierte Konsole von BlueXP oder über gcloude.
 
 .Über diese Aufgabe
-Beim Erstellen des Connectors wird eine Virtual Machine-Instanz in Google Cloud mit einer Standardkonfiguration bereitgestellt. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+Beim Erstellen des Connectors wird eine Virtual Machine-Instanz in Google Cloud mit einer Standardkonfiguration bereitgestellt. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einer kleineren VM-Instanz wechseln, die weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
 
 [role="tabbed-block"]
 ====

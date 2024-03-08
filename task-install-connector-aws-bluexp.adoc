@@ -270,7 +270,7 @@ Sie sollten nun über eine IAM-Rolle mit den erforderlichen Berechtigungen verf�
 Erstellen Sie den Connector direkt über die webbasierte Konsole von BlueXP.
 
 .Über diese Aufgabe
-Bei der Erstellung des Connectors aus BlueXP wird eine EC2-Instanz in AWS mit einer Standardkonfiguration implementiert. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+Bei der Erstellung des Connectors aus BlueXP wird eine EC2-Instanz in AWS mit einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren EC2-Instanztyp wechseln, der weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
 
 .Bevor Sie beginnen
 Sie sollten Folgendes haben:

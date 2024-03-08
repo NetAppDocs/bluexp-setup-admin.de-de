@@ -73,6 +73,7 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1301,6 +1302,16 @@ Der Connector stellt die folgenden API-Anfragen für das Management von Tags auf
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== 8 März 2024
+
+Die folgende Berechtigung ist jetzt in der Connector-Richtlinie enthalten:
+
+ec2:DescribeAvailability Zones
+
+Diese Berechtigung ist für eine kommende Version erforderlich. Wir werden die Versionshinweise mit weiteren Details aktualisieren, sobald diese Version verfügbar ist.
 
 
 

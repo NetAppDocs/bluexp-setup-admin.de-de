@@ -18,6 +18,54 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== 8 März 2024
+
+
+
+=== Anschluss 3.9.38
+
+Derzeit ist die Version 3.9.38 für den Standardmodus und den eingeschränkten Modus verfügbar. Diese Version enthält Unterstützung für IMDSv2 in AWS und ein AWS-Berechtigungs-Update.
+
+
+
+==== Unterstützung für IMDSv2
+
+BlueXP unterstützt jetzt den Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) mit der Connector-Instanz sowie mit Cloud Volumes ONTAP-Instanzen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.
+
+https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Weitere Informationen zu IMDSv2 finden Sie im AWS Security Blog"^]
+
+Der Instance Metadata Service (IMDS) wird in EC2-Instanzen wie folgt aktiviert:
+
+* Sie eignet sich für neue Connector-Implementierungen von BlueXP, über den AWS Marketplace oder mithilfe von https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform-Skripte"^], IMDSv2 ist standardmäßig auf der EC2-Instanz aktiviert.
+* Wenn Sie eine neue EC2-Instanz in AWS starten und dann die Connector-Software manuell installieren, ist IMDSv2 standardmäßig ebenfalls aktiviert.
+* Für bestehende Connectors wird IMDSv1 weiterhin unterstützt, Sie können IMDSv2 jedoch manuell auf der EC2-Instanz konfigurieren, wenn Sie dies wünschen.
+* Für Cloud Volumes ONTAP ist IMDSv1 standardmäßig auf neuen und bestehenden Instanzen aktiviert. Sie können IMDSv2 auf den EC2-Instanzen manuell konfigurieren, wenn Sie möchten.
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Erfahren Sie, wie Sie IMDSv2 auf vorhandenen Instanzen konfigurieren"].
+
+
+
+==== Update zu den AWS-Berechtigungen
+
+Wir haben die Connector-Richtlinie für AWS mit der Berechtigung „ec2:DescribeAvailability Zones“ aktualisiert. Diese Berechtigung ist für eine kommende Version erforderlich. Wir werden die Versionshinweise mit weiteren Details aktualisieren, sobald diese Version verfügbar ist.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Anzeigen von AWS-Berechtigungen für den Connector"].
+
+
+
+=== Proxy-Einstellungen und Cloud Volumes ONTAP-Einstellungen
+
+Die Proxy-Server-Einstellungen für den Connector sind jetzt auf der Seite *Connectors verwalten* (Standardmodus) oder auf der Seite *Connectors bearbeiten* (eingeschränkter Modus und privater Modus) verfügbar.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Erfahren Sie, wie Sie den Connector für die Verwendung eines Proxy-Servers konfigurieren"].
+
+Außerdem haben wir die Seite *Verbindungseinstellungen* in *Cloud Volumes ONTAP-Einstellungen* umbenannt.
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["Ein Screenshot, der die Option Cloud Volumes ONTAP-Einstellungen zeigt, die im Menü Einstellungen verfügbar ist."]
+
+
+
 == 15 Februar 2024
 
 
@@ -37,14 +85,6 @@ Wenn Sie sich mit den NetApp Cloud-Anmeldedaten bei BlueXP anmelden, können Sie
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Ein Screenshot, der die Möglichkeit zeigt, Ihren Namen unter Benutzereinstellungen zu bearbeiten."]
 
 Die Bearbeitung Ihres Namens wird nicht unterstützt, wenn Sie sich mit einer Verbundverbindung oder mit Ihrem NetApp Support-Website-Konto anmelden.
-
-
-
-=== IMDSv1-Anforderung für EC2-Instanzen
-
-Sie sollten beachten, dass der Instance Metadata Service Version 1 (IMDSv1) auf Amazon EC2 Instanzen erforderlich ist, bevor Sie die Connector-Software manuell in AWS installieren.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Erfahren Sie mehr über die Anforderung an IMDSv1 in AWS"].
 
 
 
