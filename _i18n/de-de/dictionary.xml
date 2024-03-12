@@ -3937,4 +3937,51 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">Bei der Erstellung des Connectors aus BlueXP wird eine EC2-Instanz in AWS mit einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren EC2-Instanztyp wechseln, der weniger CPU oder RAM hat. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">Beim Erstellen des Connectors wird eine Virtual Machine-Instanz in Google Cloud mit einer Standardkonfiguration bereitgestellt. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einer kleineren VM-Instanz wechseln, die weniger CPU oder RAM hat. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>.</block>
+  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">8 März 2021</block>
+  <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">Dieses Update enthält Verbesserungen an verschiedenen Funktionen und Services.</block>
+  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">Verbesserungen von Cloud Volumes ONTAP</block>
+  <block id="e2c75aece78307cc6efce80e0fc6a89f" category="paragraph">Diese Version von Cloud Manager enthält Verbesserungen am Management von Cloud Volumes ONTAP.</block>
+  <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">Erweiterung bei allen Cloud-Providern verfügbar</block>
+  <block id="ab2fea55ae9697fcfeae223bb8d1a161" category="paragraph">Cloud Manager kann jetzt Cloud Volumes ONTAP 9.9 implementieren und managen.</block>
+  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP</block>
+  <block id="41671c8c2787c6b4ae4a7430aaed25a5" category="paragraph"><block ref="1d003678f7aeecaa48a9a55ee79dfa0c" category="inline-link-rx"></block>.</block>
+  <block id="7b73adc87602305d19eea3376846e09c" category="section-title">Verbesserungen in AWS verfügbar</block>
+  <block id="360907953d19dad6cd45833cc14167e2" category="list-text">Die Implementierung von Cloud Volumes ONTAP 9.8 ist nun in der Umgebung der AWS Commercial Cloud Services (C2S) möglich.</block>
+  <block id="3e45f0a61d57f2e3257d5825fe5a7c94" category="inline-link">Erfahren Sie, wie Sie mit C2S beginnen</block>
+  <block id="b2d82b2661ffd005fd69b6dbe8cd323c" category="paragraph"><block ref="b2d82b2661ffd005fd69b6dbe8cd323c" category="inline-link-rx"></block></block>
+  <block id="acaa3f0ba647338374e9aa5717e4b179" category="list-text">Cloud Manager hat Ihnen immer die Möglichkeit gegeben, Cloud Volumes ONTAP-Daten mit dem AWS Key Management Service (KMS) zu verschlüsseln. Ab Cloud Volumes ONTAP 9.9 werden Daten auf EBS-Festplatten und auf S3 abgestufte Daten verschlüsselt, wenn Sie sich für einen vom Kunden gemanagten CMK entscheiden. Bisher wurden nur EBS-Daten verschlüsselt.</block>
+  <block id="dcbf930e1a349b31dc68e26e5227c6d0" category="paragraph">Beachten Sie, dass Sie für die Cloud Volumes ONTAP IAM-Rolle Zugriff zur Verwendung des CMK bereitstellen müssen.</block>
+  <block id="b2eca227b653383cc96f103eeeeaf77a" category="inline-link">Erfahren Sie mehr über die Einrichtung des AWS KMS mit Cloud Volumes ONTAP</block>
+  <block id="97e8e04f21dce84bbdc17d9128f42a47" category="paragraph"><block ref="97e8e04f21dce84bbdc17d9128f42a47" category="inline-link-rx"></block></block>
+  <block id="0ac19842b01b2e595d367d49d3a2f512" category="section-title">Erweiterung in Azure verfügbar</block>
+  <block id="f4ddf81019b69d6e9ec665b8c011944c" category="paragraph">Sie können Cloud Volumes ONTAP 9.8 jetzt im Azure Department of Defense (DoD) Impact Level 6 (IL6) implementieren.</block>
+  <block id="b1f9439900369929f00410057598c853" category="section-title">Verbesserungen in Google Cloud verfügbar</block>
+  <block id="235712a00d7d49281addbc1384cc33f2" category="list-text">In Google Cloud haben wir die Anzahl der für Cloud Volumes ONTAP 9.8 und höher erforderlichen IP-Adressen reduziert. Standardmäßig ist eine niedrigere IP-Adresse erforderlich (wir vereinheitlichen die Intercluster LIF mit der Node-Management-LIF). Darüber hinaus besteht die Möglichkeit, bei Verwendung der API die Erstellung der SVM-Management-LIF zu überspringen, was den Bedarf an einer zusätzlichen IP-Adresse verringert.</block>
+  <block id="4d75268045c1a28e17697720e7f27123" category="inline-link">Informieren Sie sich in Google Cloud über die IP-Adressanforderungen</block>
+  <block id="d28733663a4e51b540df89210de1322c" category="paragraph"><block ref="d28733663a4e51b540df89210de1322c" category="inline-link-rx"></block></block>
+  <block id="933d399c3cb0f03992675d49630ab818" category="list-text">Durch die Implementierung eines Cloud Volumes ONTAP HA-Paars in Google Cloud haben Sie nun die Möglichkeit, gemeinsame VPCs für VPC-1, VPC-2 und VPC-3 auszuwählen. Bisher könnte nur die VPC-0 eine gemeinsame VPC sein. Diese Änderung wird unterstützt durch Cloud Volumes ONTAP 9.8 und höher.</block>
+  <block id="fcc0572bd798a75498f99e20a8093f04" category="inline-link">Erfahren Sie mehr über die Netzwerkanforderungen von Google Cloud</block>
+  <block id="0007fc2f224950d7146482dd816d045a" category="paragraph"><block ref="0007fc2f224950d7146482dd816d045a" category="inline-link-rx"></block></block>
+  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">Connector-Verbesserungen</block>
+  <block id="c620fdcd127f42421f0ebb82ca0160b3" category="list-text">Cloud Manager benachrichtigt jetzt Admin-Benutzer per E-Mail, wenn ein Connector nicht ausgeführt wird.</block>
+  <block id="f4923be5b51cdac20509609eb07ce1aa" category="paragraph">Wenn Ihre Connectors stets einsatzbereit sind, können Sie die optimale Verwaltung von Cloud Volumes ONTAP und anderen NetApp Cloud-Diensten sicherstellen.</block>
+  <block id="fbbb26e1a604e4bb843aa5158a56bf75" category="list-text">Cloud Manager zeigt jetzt eine Benachrichtigung an, wenn Sie den Instanztyp für den Connector ändern müssen.</block>
+  <block id="07a7156f8ae2953eb97fcedc0f846001" category="paragraph">Wenn Sie den Instanztyp ändern, können Sie die neuen Funktionen und Funktionen verwenden, die Ihnen derzeit fehlen.</block>
+  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">Verbesserungen von Cloud Sync</block>
+  <block id="dd7348bf6510a0f506ab7acf9e645e94" category="list-text">Cloud Sync unterstützt jetzt Synchronisierungsbeziehungen zwischen ONTAP S3 Storage und SMB-Servern:</block>
+  <block id="eb6261f1bc2ebf45d278c1fde4d7cfc4" category="list-text">Von ONTAP S3 Storage zu einem SMB-Server</block>
+  <block id="cc619045f8d284993e15378035fbf631" category="list-text">Ein SMB-Server für ONTAP S3 Storage</block>
+  <block id="3d9c61bbb0656b8a470cbe7bd67859f7" category="inline-link">Anzeigen von unterstützten Synchronisierungsbeziehungen</block>
+  <block id="a75cec21dd4fd0bc8a57fdafde743e02" category="paragraph"><block ref="a75cec21dd4fd0bc8a57fdafde743e02" category="inline-link-rx"></block></block>
+  <block id="0957e4e6271f0a8785ac7980f9561e4e" category="list-text">Mit Cloud Sync können Sie die Konfiguration einer Datenbrokergruppe jetzt direkt über die Benutzeroberfläche vereinheitlichen.</block>
+  <block id="e0341128a5853714165581951816b70b" category="paragraph">Es wird nicht empfohlen, die Konfiguration selbst zu ändern. Sie sollten sich mit NetApp beraten lassen, um zu erfahren, wann die Konfiguration geändert werden kann und wie Sie sie ändern können.</block>
+  <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">Erfahren Sie mehr über die Definition einer einheitlichen Konfiguration</block>
+  <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
+  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">Cloud Tiering-Verbesserungen</block>
+  <block id="b4baef0a3a494382cb3865753733f031" category="list-text">Beim Tiering in Google Cloud Storage können Sie eine Lebenszyklusregel anwenden, damit die Tiering-Daten nach 30 Tagen von der Standard-Storage-Klasse in den kostengünstigeren Nearline-, Coldline- oder Archivspeicher überführt werden.</block>
+  <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">Es wird jetzt Cloud Tiering angezeigt, wenn Sie noch nicht erkannte On-Premises-ONTAP-Cluster haben, sodass Sie sie Cloud Manager hinzufügen können, um Tiering oder andere Services auf diesen Clustern zu aktivieren.</block>
+  <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">Erfahren Sie, wie Sie diese zusätzlichen Cluster erkennen</block>
+  <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
+  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Verbesserungen von Azure NetApp Files</block>
+  <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Sie sind nun in der Lage, das Service-Level für ein Volume dynamisch zu ändern, um die Workload-Anforderungen zu erfüllen und die Kosten zu optimieren. Das Volume wird in den anderen Kapazitäts-Pool verschoben, ohne dass sich dies auf das Volume auswirkt.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
 </blocks>
