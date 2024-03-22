@@ -29,6 +29,12 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierung
 | Services in Arbeitsumgebungen ermöglichen | Ja. | Ja. | Nein | Nein 
 
 
+| Entfernen von Arbeitsumgebungen aus einem Arbeitsbereich | Ja. | Ja. | Nein | Nein 
+
+
+| Arbeitsumgebungen löschen | Ja. | Ja. | Nein | Nein 
+
+
 | Anzeigen des Status der Datenreplizierung | Ja. | Ja. | Nein | Nein 
 
 
@@ -39,12 +45,6 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierung
 
 
 | Sehen Sie sich die Ergebnisse des BlueXP Klassifizierungs-Scans an | Ja. | Ja. | Ja. | Nein 
-
-
-| Arbeitsumgebungen löschen | Ja. | Nein | Nein | Nein 
-
-
-| Kubernetes-Cluster mit Arbeitsumgebungen verbinden | Ja. | Nein | Nein | Nein 
 
 
 | Cloud Volumes ONTAP Bericht erhalten | Ja. | Nein | Nein | Nein 
@@ -63,9 +63,6 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierung
 
 
 | Anzeigen und Verwalten des Support-Dashboards | Ja. | Nein | Nein | Nein 
-
-
-| Entfernen Sie Arbeitsumgebungen aus BlueXP | Ja. | Nein | Nein | Nein 
 
 
 | Installieren Sie ein HTTPS-Zertifikat | Ja. | Nein | Nein | Nein 
