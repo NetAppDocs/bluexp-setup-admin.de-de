@@ -470,7 +470,7 @@ Hier sehen Sie ein Beispiel für den Befehl mit beiden optionalen Parametern:
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.35 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --Proxy konfiguriert den Connector so, dass er einen HTTP- oder HTTPS-Proxy-Server in einem der folgenden Formate verwendet:
