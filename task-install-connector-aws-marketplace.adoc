@@ -103,6 +103,8 @@ Proxy-Server:: Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für 
 * HTTPS-Zertifikat
 
 
+Beachten Sie, dass BlueXP keine transparenten Proxy-Server unterstützt.
+
 --
 
 

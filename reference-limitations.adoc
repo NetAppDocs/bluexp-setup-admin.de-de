@@ -24,6 +24,14 @@ Diese Einschränkungen gelten insbesondere für die Einrichtung und Administrati
 
 
 
+=== Transparente Proxyserver werden nicht unterstützt
+
+BlueXP unterstützt in Verbindung mit dem Connector keine transparenten Proxyserver.
+
+link:task-configuring-proxy.html["Erfahren Sie mehr über die Verwendung eines Proxy-Servers mit dem Connector"].
+
+
+
 === Möglicher Konflikt mit IP-Adressen im Bereich 172
 
 BlueXP implementiert den Connector mit zwei Schnittstellen, die IP-Adressen in den Bereichen 172.17.0.0/16 und 172.18.0.0/16 haben.

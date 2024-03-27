@@ -159,6 +159,8 @@ Proxy-Server:: Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für 
 * HTTPS-Zertifikat
 
 
+Beachten Sie, dass BlueXP keine transparenten Proxy-Server unterstützt.
+
 --
 
 
@@ -330,6 +332,9 @@ Sie sollten Folgendes haben:
 * Details zu einem Proxy-Server, falls ein Proxy für den Internetzugriff über den Connector erforderlich ist.
 +
 Sie haben die Möglichkeit, nach der Installation einen Proxyserver zu konfigurieren, aber dafür muss der Connector neu gestartet werden.
+
++
+Beachten Sie, dass BlueXP keine transparenten Proxy-Server unterstützt.
 
 * Ein CA-signiertes Zertifikat, wenn der Proxy-Server HTTPS verwendet oder wenn der Proxy ein abfangenden Proxy ist.
 

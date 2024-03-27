@@ -177,10 +177,12 @@ Proxy-Server:: Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für 
 * IP-Adresse
 * Anmeldedaten
 * HTTPS-Zertifikat
+
+
+Beachten Sie, dass BlueXP keine transparenten Proxy-Server unterstützt.
+
 +
 Im privaten Modus sendet BlueXP lediglich Outbound-Datenverkehr zu Ihrem Cloud-Provider, um ein Cloud Volumes ONTAP System zu erstellen.
-
-
 
 --
 Ports:: Es gibt keinen eingehenden Datenverkehr zum Konnektor, es sei denn, Sie initiieren ihn.
