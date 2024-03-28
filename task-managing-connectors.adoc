@@ -149,6 +149,13 @@ Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen
 
 .Bevor Sie beginnen
 * Die Connector-Version muss 3.9.38 oder höher sein.
+* Cloud Volumes ONTAP muss eine der folgenden Versionen ausführen:
++
+** 9.12.1 P2 (oder jedes weitere Patch)
+** 9.13.0 P4 (oder jedes weitere Patch)
+** 9.13.1 oder eine beliebige Version nach dieser Version
+
+
 * Diese Änderung erfordert einen Neustart der Cloud Volumes ONTAP-Instanzen.
 
 
