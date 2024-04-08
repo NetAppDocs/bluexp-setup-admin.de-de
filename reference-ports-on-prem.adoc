@@ -23,7 +23,11 @@ Diese Inbound Regeln gelten für alle BlueXP Implementierungsmodelle.
 | Protokoll | Port | Zweck 
 
 
-| HTTP | 80 | Bietet HTTP-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche 
+| HTTP | 80  a| 
+* Bietet HTTP-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche
+* Wird während des Cloud Volumes ONTAP-Upgrade-Prozesses verwendet
+
+
 
 
 | HTTPS | 443 | Bietet HTTPS-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche 
