@@ -53,7 +53,17 @@ Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und 
 Schlüsselpaar:: Wenn Sie den Connector erstellen, müssen Sie ein EC2-Schlüsselpaar auswählen, das mit der Instanz verwendet werden soll.
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
-Docker Engine:: Docker Engine Version 19.3.1 oder höher ist auf dem Host erforderlich, bevor Sie den Connector installieren. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
+Docker Engine:: Docker Engine ist auf dem Host erforderlich, bevor Sie den Connector installieren.
++
+--
+* Die unterstützte Version ist mindestens 19.3.1.
+* Die maximal unterstützte Version ist 25.0.5.
++
+https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
+
+
+
+--
 
 
 
