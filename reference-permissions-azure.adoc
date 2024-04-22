@@ -731,20 +731,6 @@ Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von
 
 
 
-=== Korrekturmaßnahmen
-
-Der Connector macht die folgenden API-Anfragen zum Management von Tags auf Azure-Ressourcen, wenn Sie BlueXP zur Problembehebung verwenden:
-
-* Microsoft.Ressourcen/Ressourcen/Lesen
-* Microsoft.Ressourcen/Abonnements/Operationsergebnisse/Lesen
-* Microsoft.Resources/Subskriptionen/resourceGroups/read
-* Microsoft.Ressourcen/Abonnements/Ressourcengruppen/Ressourcen/Lesen
-* Microsoft.Ressourcen/Tags/lesen
-* Microsoft.Ressourcen/Tags/schreiben
-
-
-
-
 === Tiering
 
 Der Connector macht die folgenden API-Anfragen, wenn Sie BlueXP Tiering einrichten.

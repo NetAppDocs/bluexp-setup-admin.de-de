@@ -59,7 +59,6 @@ Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
 
 * Edge-Caching
 * Kubernetes
-* Korrekturmaßnahmen
 
 
 [role="tabbed-block"]
@@ -1279,22 +1278,6 @@ Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von
 * eks:ListClusters
 * eks:DescribeCluster
 * iam:GetInstanceProfile
-
-
-
-
-=== Korrekturmaßnahmen
-
-Der Connector stellt die folgenden API-Anfragen für das Management von Tags auf AWS Ressourcen bereit, wenn Sie BlueXP zur Problembehebung verwenden:
-
-* ec2:CreateTags
-* ec2:DeleteTags
-* ec2:DescribeTags
-* Tag:getResources
-* Tag:getTagKeys
-* Tag:getTagValues
-* Tag:TagResources
-* Tag:UntagRessourcen
 
 
 
