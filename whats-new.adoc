@@ -18,6 +18,38 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== Bis 22. April 2024
+
+
+
+=== Anschluss 3.9.39
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Derzeit ist die Version 3.9.39 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+=== AWS Berechtigungen zum Erstellen eines Connectors
+
+Zur Erstellung eines Connectors in AWS aus BlueXP sind jetzt zwei zusätzliche Berechtigungen erforderlich:
+
+[source, json]
+----
+"ec2:DescribeLaunchTemplates",
+"ec2:CreateLaunchTemplate",
+----
+Diese Berechtigungen sind erforderlich, um IMDSv2 auf der EC2-Instanz für den Connector zu aktivieren.
+
+Wir haben diese Berechtigungen in die Richtlinie aufgenommen, die beim Erstellen eines Connectors in der BlueXP Benutzeroberfläche angezeigt wird, und in derselben Richtlinie, die in der Dokumentation enthalten ist.
+
+
+NOTE: Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS von BlueXP erforderlich sind. Es ist nicht dieselbe Richtlinie, die der Connector-Instanz zugewiesen wird.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Erfahren Sie, wie Sie AWS-Berechtigungen zur Erstellung eines Connectors aus AWS einrichten"].
+
+
+
 == Bis 11. April 2024
 
 
@@ -92,6 +124,7 @@ Der Instance Metadata Service (IMDS) wird in EC2-Instanzen wie folgt aktiviert:
 
 * Für neue Connector-Implementierungen von BlueXP oder durch die Nutzung von https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform-Skripte"^], IMDSv2 ist standardmäßig auf der EC2-Instanz aktiviert.
 * Wenn Sie eine neue EC2-Instanz in AWS starten und dann die Connector-Software manuell installieren, ist IMDSv2 standardmäßig ebenfalls aktiviert.
+* Wenn Sie den Connector vom AWS Marketplace starten, ist IMDSv1 standardmäßig aktiviert. Sie können IMDSv2 auf der EC2-Instanz manuell konfigurieren.
 * Für bestehende Connectors wird IMDSv1 weiterhin unterstützt, Sie können IMDSv2 jedoch manuell auf der EC2-Instanz konfigurieren, wenn Sie dies wünschen.
 * Für Cloud Volumes ONTAP ist IMDSv1 standardmäßig auf neuen und bestehenden Instanzen aktiviert. Sie können IMDSv2 auf den EC2-Instanzen manuell konfigurieren, wenn Sie möchten.
 
