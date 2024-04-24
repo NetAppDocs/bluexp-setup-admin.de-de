@@ -155,6 +155,12 @@ Wechseln Sie zum Azure-Portal und weisen Sie der virtuellen Connector-Maschine f
 
 .Schritte
 . Öffnen Sie im Azure Portal den Service *Abonnements* und wählen Sie Ihr Abonnement aus.
++
+Es ist wichtig, die Rolle aus dem Dienst *Subscriptions* zuzuweisen, da hier der Umfang der Rollenzuweisung auf Abonnementebene festgelegt ist. Der _scope_ definiert die Ressourcen, für die der Zugriff gilt. Wenn Sie einen Umfang auf einer anderen Ebene angeben (z. B. auf Ebene der Virtual Machines), wirkt es sich darauf aus, dass Sie Aktionen aus BlueXP ausführen können.
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Microsoft Azure Dokumentation: Umfang für die rollenbasierte Zugriffssteuerung von Azure kennen"^]
+
 . Wählen Sie *Zugriffskontrolle (IAM)* > *Hinzufügen* > *Rollenzuweisung hinzufügen*.
 . Wählen Sie auf der Registerkarte *role* die Rolle *BlueXP Operator* aus und wählen Sie *Next* aus.
 +
@@ -164,7 +170,7 @@ NOTE: BlueXP Operator ist der Standardname, der in der BlueXP-Richtlinie angegeb
 . Führen Sie auf der Registerkarte *Mitglieder* die folgenden Schritte aus:
 +
 .. Weisen Sie einer * verwalteten Identität* Zugriff zu.
-.. Wählen Sie *Mitglieder auswählen*, wählen Sie das Abonnement, in dem die virtuelle Connector-Maschine erstellt wurde, wählen Sie *Virtuelle Maschine* und wählen Sie dann die virtuelle Connector-Maschine aus.
+.. Wählen Sie *Mitglieder auswählen*, wählen Sie das Abonnement, in dem die virtuelle Connector-Maschine erstellt wurde, unter *verwaltete Identität*, wählen Sie *virtuelle Maschine* und wählen Sie dann die virtuelle Connector-Maschine aus.
 .. Wählen Sie *Auswählen*.
 .. Wählen Sie *Weiter*.
 .. Wählen Sie *Überprüfen + Zuweisen*.
