@@ -37,7 +37,7 @@ link:concept-modes.html["Erfahren Sie, wie der private Modus funktioniert"].
 
 Im privaten Modus können Sie den Connector vor Ort oder in der Cloud installieren, indem Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren.
 
-Wenn Sie ein Cloud Volumes ONTAP-System in Google Cloud erstellen möchten, muss der Connector in Google Cloud ausgeführt werden--er kann nicht lokal ausgeführt werden.
+Bei der Installation des Connectors wird festgelegt, welche BlueXP Services und Funktionen beim Einsatz des privaten Modus verfügbar sind. Beispielsweise muss der Connector in der Cloud installiert sein, wenn Sie Cloud Volumes ONTAP bereitstellen und verwalten möchten. link:concept-modes.html#private-mode["Weitere Informationen zum privaten Modus"].
 
 
 
@@ -210,11 +210,9 @@ Aktivieren Sie NTP:: Wenn Sie Vorhaben, die BlueXP Klassifizierung zum Scannen v
 
 == Schritt 5: Cloud-Berechtigungen vorbereiten
 
-Wenn Sie planen, Cloud Volumes ONTAP Systeme zu erstellen, erfordert BlueXP Berechtigungen von Ihrem Cloud-Provider. Sie müssen Berechtigungen in Ihrem Cloud-Provider einrichten und diese Berechtigungen dann der Connector-Instanz zuordnen, nachdem Sie sie installiert haben.
+Wenn der Connector in der Cloud installiert ist und Sie planen, Cloud Volumes ONTAP-Systeme zu erstellen, erfordert BlueXP Berechtigungen von Ihrem Cloud-Provider. Sie müssen Berechtigungen in Ihrem Cloud-Provider einrichten und diese Berechtigungen dann der Connector-Instanz zuordnen, nachdem Sie sie installiert haben.
 
 Um die erforderlichen Schritte anzuzeigen, wählen Sie die Authentifizierungsoption aus, die Sie für Ihren Cloud-Provider verwenden möchten.
-
-Wenn Sie den Connector vor Ort installieren möchten, müssen Sie Berechtigungen über AWS Zugriffsschlüssel oder einen Azure Service-Prinzipal bereitstellen. Die anderen Optionen werden nicht unterstützt.
 
 [role="tabbed-block"]
 ====
