@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-connector.html 
+keywords: uninstall, remove connector, uninstall connector 
+summary: Deinstallieren Sie die Connector-Software, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Welche Schritte Sie durchführen müssen, hängt vom verwendeten Bereitstellungsmodus ab. Sobald ein Connector aus Ihrer Umgebung entfernt wurde, können Sie ihn aus BlueXP entfernen. 
+---
+= Deinstallieren Sie den Connector, und entfernen Sie ihn
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Deinstallieren Sie die Connector-Software, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Welche Schritte Sie durchführen müssen, hängt vom verwendeten Bereitstellungsmodus ab. Sobald ein Connector aus Ihrer Umgebung entfernt wurde, können Sie ihn aus BlueXP entfernen.
+
+link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"].
+
+
+
+== Deinstallieren Sie den Connector, wenn Sie den Standard- oder eingeschränkten Modus verwenden
+
+Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden (d. h. der Connector-Host verfügt über ausgehende Verbindungen), sollten Sie die nachstehenden Schritte ausführen, um die Connector-Software zu deinstallieren.
+
+.Schritte
+. Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
+. Führen Sie auf dem Linux-Host das Deinstallationsskript aus:
++
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
++
+_Silent_ führt das Skript aus, ohne dass Sie zur Bestätigung aufgefordert werden.
+
+
+
+.Ergebnis
+Die Connector-Software wird jetzt vom Linux-Host deinstalliert.
+
+
+
+== Deinstallieren Sie den Connector, wenn Sie den privaten Modus verwenden
+
+Wenn Sie BlueXP im privaten Modus verwenden (d. h. der Connector-Host verfügt über _no_ Outbound-Verbindungen), sollten Sie die nachstehenden Schritte ausführen, um die Connector-Software zu deinstallieren.
+
+.Schritt
+. Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
+. Führen Sie auf dem Linux-Host die folgenden Befehle aus:
++
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
+
+
+.Ergebnis
+Die Connector-Software wird jetzt vom Linux-Host deinstalliert.
+
+
+
+== Entfernen Sie die Anschlüsse von BlueXP
+
+Wenn ein Connector inaktiv ist, können Sie ihn aus der Liste der Anschlüsse in BlueXP entfernen. Sie können dies tun, wenn Sie die virtuelle Connector-Maschine gelöscht oder die Connector-Software deinstalliert haben.
+
+Beachten Sie Folgendes zum Entfernen eines Konnektors:
+
+* Durch diese Aktion wird die virtuelle Maschine nicht gelöscht.
+* Diese Aktion kann nicht rückgängig gemacht werden - sobald Sie einen Connector aus BlueXP entfernen, können Sie ihn nicht wieder hinzufügen.
+
+
+.Schritte
+. Wählen Sie im BlueXP Header das Dropdown-Menü *Connector* aus.
+. Wählen Sie *Connectors Verwalten*.
+. Wählen Sie das Aktionsmenü für einen inaktiven Konnektor aus und wählen Sie *Connector entfernen*.
++
+image:screenshot_connector_remove.gif["Ein Screenshot des Connectors-Widgets, in dem Sie einen inaktiven Connector entfernen können."]
+
+. Geben Sie den Namen des zu bestätigten Connectors ein, und wählen Sie dann *Entfernen*.
+
+
+.Ergebnis
+BlueXP entfernt den Connector aus seinen Datensätzen.

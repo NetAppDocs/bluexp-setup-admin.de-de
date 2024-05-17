@@ -31,8 +31,8 @@ Beachten Sie Folgendes:
 * Informationen zur schrittweisen Verwendung dieser Richtlinien finden Sie auf den folgenden Seiten:
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Richten Sie Berechtigungen für eine AWS Marketplace-Implementierung ein"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
@@ -1256,6 +1256,9 @@ Der Connector stellt die folgenden API-Anforderungen für die Implementierung un
 
 
 | ec2:ModifyVolume | Nein | Ja. | Nein 
+
+
+| Überprüfen Sie, ob die Verfügbarkeitszone eine AWS Local Zone ist, und überprüfen Sie, ob alle Implementierungsparameter kompatibel sind | ec2:DescribeAvailability Zones | Ja. | Nein | Ja. 
 |===
 
 
@@ -1288,13 +1291,11 @@ Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den fo
 
 
 
-=== 8 März 2024
+=== 9 Mai 2024
 
-Die folgende Berechtigung ist jetzt in der Connector-Richtlinie enthalten:
+Die folgenden Berechtigungen sind jetzt für Cloud Volumes ONTAP erforderlich:
 
 ec2:DescribeAvailability Zones
-
-Diese Berechtigung ist für eine kommende Version erforderlich. Wir werden die Versionshinweise mit weiteren Details aktualisieren, sobald diese Version verfügbar ist.
 
 
 

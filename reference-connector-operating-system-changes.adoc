@@ -1,0 +1,182 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-operating-system-changes.html 
+keywords: connector, operating systems, connector operating systems, os support, supported operating systems, rhel 8, rhel 9, red hat, docker, podman 
+summary: Wenn wir die Unterstützung für den Connector auf bestimmten Linux-Betriebssystemen hinzufügen und entfernen, haben Sie möglicherweise Fragen dazu, wie sich diese Unterstützung auf Ihre bestehenden Connector-Bereitstellungen auswirkt. 
+---
+= Änderungen an unterstützten Linux-Betriebssystemen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn wir die Unterstützung für den Connector auf bestimmten Linux-Betriebssystemen hinzufügen und entfernen, haben Sie möglicherweise Fragen dazu, wie sich diese Unterstützung auf Ihre bestehenden Connector-Bereitstellungen auswirkt.
+
+
+
+== Unterstützung für RHEL 8 und 9
+
+Ab Version 3.9.40 unterstützt BlueXP den Connector mit den folgenden Versionen von Red hat Enterprise Linux (RHEL):
+
+* 8.6 bis 8.9
+* 9.1 bis 9.3
+
+
+Beachten Sie Folgendes über die Unterstützung dieser RHEL-Versionen:
+
+Einschränkungen::
++
+--
+* Wenn der Connector auf einem RHEL 8 oder 9 Host installiert ist, hat BlueXP Backup und Recovery Einschränkungen im Zusammenhang mit Wiederherstellung einzelner Dateien und Ransomware-Scans. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["Bekannte Einschränkungen bei BlueXP Backup und Recovery"^]
+* Die BlueXP Klassifizierung wird unterstützt, wenn Sie den Connector auf einem lokalen RHEL 8- oder 9-Host installieren. Es wird nicht unterstützt, wenn sich der RHEL 8- oder RHEL 9-Host in AWS, Azure oder Google Cloud befindet.
+
+
+--
+Container-Orchestrierungstool:: Podman ist als Container-Orchestrierungstool erforderlich, wenn Sie den Connector auf einem RHEL 8 oder 9 Host installieren. Docker Engine wird mit RHEL 8 und 9 nicht unterstützt.
++
+--
+link:task-install-connector-on-prem.html#step-1-review-host-requirements["Anforderungen für Podman anzeigen"].
+
+--
+Bereitstellungsmodus:: RHEL 8 und 9 werden unterstützt, wenn BlueXP im Standardmodus oder im eingeschränkten Modus verwendet wird.
+Nur neue manuelle Installationen:: RHEL 8 und 9 werden von _New_ Connector-Installationen unterstützt, wenn der Connector manuell auf Hosts installiert wird, die auf Ihrem Standort oder in der Cloud ausgeführt werden.
+RHEL-Upgrades:: Wenn Sie einen bestehenden Connector auf einem RHEL 7-Host verwenden, unterstützen wir keine Aktualisierung des RHEL 7-Betriebssystems auf RHEL 8 oder 9. <<Vorhandene Connectors auf RHEL 7 oder CentOS 7,Erfahren Sie mehr über vorhandene Connectors unter RHEL 7 oder CentOS 7>>.
+
+
+
+
+== Einstellung der Unterstützung für RHEL 7 und CentOS 7
+
+Am 30. Juni 2024 wird RHEL 7 das Ende der Wartung (End of Maintenance, EOM) erreichen, während CentOS 7 das Ende des Lebenszyklus (End of Life, EOL) erreichen wird. NetApp wird den Connector auf diesen Linux-Distributionen bis zum 30. Juni 2024 weiterhin unterstützen.
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red hat: Wissenswertes über Red hat Enterprise Linux 7 Ende der Wartung"^]
+
+
+
+=== Vorhandene Connectors auf RHEL 7 oder CentOS 7
+
+Wenn Sie einen bestehenden Connector auf RHEL 7 oder CentOS 7 verwenden, unterstützen wir nicht die Aktualisierung oder Konvertierung des Betriebssystems auf RHEL 8 oder 9. Um einen Connector stattdessen auf einem RHEL 8- oder 9-Host auszuführen, müssen Sie die folgenden Schritte ausführen:
+
+. Richten Sie einen RHEL 8- oder 9-Host ein.
+. Installieren Sie Podman.
+. Führen Sie eine _New_ Connector-Installation durch.
+. Konfigurieren Sie den Connector so, dass die Arbeitsumgebungen erkannt werden, die der alte Connector verwaltet hat.
+
+
+
+
+== Fortgesetzte Unterstützung für Ubuntu 22.04 LTS
+
+Der Connector wird weiterhin auf Ubuntu 22.04 LTS unterstützt und ist das Standardbetriebssystem für Bereitstellungen von BlueXP und vom Markt.
+
+Docker Engine ist für dieses Betriebssystem erforderlich. Podman wird nicht unterstützt.
+
+
+
+== Zusammenfassung der unterstützten Betriebssysteme
+
+Im Folgenden finden Sie eine Zusammenfassung der Unterstützung für Betriebssysteme, die in den vorherigen Abschnitten beschrieben wurde.
+
+
+NOTE: NetApp wird den Connector unter RHEL 7 und CentOS 7 bis zum 30. Juni 2024 weiterhin unterstützen.
+
+[role="tabbed-block"]
+====
+.Standardmodus
+--
+Manuelle Installation::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6 bis 7.9
+* Red Hat Enterprise Linux
++
+** 7.6 bis 7.9
+** 8.6 bis 8.9
+** 9.1 bis 9.3
+
+
+
+
+--
+Implementierung von BlueXP:: Ubuntu 22.04 LTS
+Implementierung über den AWS Marketplace:: Ubuntu 22.04 LTS
+Implementierung über den Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Eingeschränkter Modus
+--
+Manuelle Installation::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6 bis 7.9
+* Red Hat Enterprise Linux
++
+** 7.6 bis 7.9
+** 8.6 bis 8.9
+** 9.1 bis 9.3
+
+
+
+
+--
+Implementierung über den AWS Marketplace:: Ubuntu 22.04 LTS
+Implementierung über den Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Privater Modus
+--
+Manuelle Installation::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6 bis 7.9
+* Red hat Enterprise Linux 7.6 bis 7.9
+
+
+--
+
+
+--
+====
+
+
+== Weiterführende Links
+
+
+
+=== Erste Schritte mit RHEL 8 und 9
+
+Auf den folgenden Seiten finden Sie Informationen zu Host-Anforderungen, Podman-Anforderungen und den Schritten zur Installation von Podman und Connector:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren und Einrichten eines Connectors auf dem Gelände"] (Standardmodus)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["Installieren Sie den Connector manuell in AWS"] (Standardmodus)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Installieren Sie den Connector manuell in Azure"] (Standardmodus)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Installieren Sie den Connector manuell in Google Cloud"] (Standardmodus)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["Bereiten Sie die Bereitstellung im eingeschränkten Modus vor"]
+
+
+
+
+=== So entdecken Sie Ihre Arbeitsumgebung neu
+
+Auf den folgenden Seiten finden Sie Informationen zur Wiedererkennung Ihrer Arbeitsumgebungen nach einer neuen Connector-Bereitstellung.
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Fügen Sie vorhandene Cloud Volumes ONTAP-Systeme zu BlueXP hinzu"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Erkennen von ONTAP Clustern vor Ort"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["Erstellen oder ermitteln Sie eine FSX for ONTAP-Arbeitsumgebung"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Schaffung einer Azure NetApp Files-Arbeitsumgebung"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["E-Series Systeme kennenlernen"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["StorageGRID Systeme erkennen"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["Fügen Sie einen Amazon Kubernetes-Cluster hinzu"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["Fügen Sie einen Azure Kubernetes-Cluster hinzu"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["Fügen Sie einen Google Cloud Kubernetes Cluster hinzu"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["Importieren Sie ein OpenShift-Cluster"^]
+

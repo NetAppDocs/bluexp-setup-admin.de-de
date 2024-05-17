@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: task-upgrade-connector.html 
+keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode 
+summary: BlueXP aktualisiert einen Connector automatisch auf die neueste Version, wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden. In der Regel werden jeden Monat neue Versionen veröffentlicht, um neue Funktionen einzuführen und die Stabilität zu verbessern. Sie können den Connector so konfigurieren, dass er statt dessen Bildaktualisierungen aus einem lokalen Repository zieht. Bei privaten Bereitstellungen müssen Sie den Connector immer manuell aktualisieren. 
+---
+= Aktualisieren Sie einen Connector, wenn Sie den privaten Modus verwenden
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie BlueXP im privaten Modus nutzen, können Sie den Connector aktualisieren, wenn eine neuere Version von der NetApp Support Site verfügbar ist.
+
+
+TIP: Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden, müssen Sie den Connector nicht manuell aktualisieren. BlueXP aktualisiert einen Connector automatisch auf die neueste Version, sofern der Connector über Outbound-Internetzugang verfügt, um das Softwareupdate zu erhalten.
+
+.Über diese Aufgabe
+Der Connector muss während des Upgrade-Vorgangs neu gestartet werden, damit die webbasierte Konsole während des Upgrades nicht verfügbar ist.
+
+.Schritte
+. Laden Sie die Connector-Software von der herunter https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp Support Website"^].
++
+Stellen Sie sicher, dass Sie das Offline-Installationsprogramm für private Netzwerke ohne Internetzugang herunterladen.
+
+. Kopieren Sie das Installationsprogramm auf den Linux-Host.
+. Weisen Sie Berechtigungen zum Ausführen des Skripts zu.
++
+[source, cli]
+----
+chmod +x /path/BlueXP-Connector-offline-<version>
+----
++
+Wobei <version> die Version des Connectors ist, den Sie heruntergeladen haben.
+
+. Führen Sie das Installationsskript aus:
++
+[source, cli]
+----
+sudo /path/BlueXP-Connector-offline-<version>
+----
++
+Wobei <version> die Version des Connectors ist, den Sie heruntergeladen haben.
+
+. Nachdem die Aktualisierung abgeschlossen ist, können Sie die Version des Connectors überprüfen, indem Sie *Hilfe > Support > Connector* aufrufen.
+

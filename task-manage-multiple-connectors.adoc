@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: task-manage-multiple-connectors.html 
+keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors 
+summary: Wenn Sie mehrere Connectors verwenden, können Sie mit BlueXP direkt von der Konsole aus zwischen diesen Connectors wechseln. Sie können auch eine einzige Arbeitsumgebung mit mehreren Connectors verwalten. 
+---
+= Arbeiten Sie mit mehreren Anschlüssen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie mehrere Connectors verwenden, können Sie mit BlueXP direkt von der Konsole aus zwischen diesen Connectors wechseln. Sie können auch eine einzige Arbeitsumgebung mit mehreren Connectors verwalten.
+
+
+
+== Zwischen den Anschlüssen wechseln
+
+Wenn Sie über mehrere Anschlüsse verfügen, können Sie zwischen diesen wechseln, um die Arbeitsumgebungen zu sehen, die mit einem bestimmten Konnektor verknüpft sind.
+
+Nehmen wir zum Beispiel an, dass Sie in einer Multi-Cloud-Umgebung arbeiten. Möglicherweise verfügen Sie über einen Connector in AWS und einen anderen in Google Cloud. Zum Managen der Cloud Volumes ONTAP Systeme, die in diesen Clouds ausgeführt werden, müsste zwischen diesen Anschlüssen gewechselt werden.
+
+.Schritt
+. Wählen Sie die Dropdown-Liste *Connector* aus, wählen Sie einen anderen Konnektor aus und wählen Sie dann *Switch* aus.
++
+image:screenshot_connector_switch.gif["Ein Screenshot, der das Symbol Connector in der Kopfzeile und die Aktion Switch anzeigt."]
+
+
+
+.Ergebnis
+BlueXP aktualisiert und zeigt die Arbeitsumgebungen, die mit dem ausgewählten Connector verknüpft sind.
+
+
+
+== Richten Sie eine Disaster Recovery-Konfiguration ein
+
+Sie können eine Arbeitsumgebung mit mehreren Connectors gleichzeitig für Disaster Recovery-Zwecke verwalten. Wenn ein Anschluss ausfällt, können Sie zum anderen Connector wechseln, um die Arbeitsumgebung sofort zu verwalten.
+
+.Schritte
+. Wechseln Sie zu dem anderen Connector, den Sie mit der Arbeitsumgebung verwalten möchten.
+. Erkennung der vorhandenen Arbeitsumgebung
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Fügen Sie vorhandene Cloud Volumes ONTAP-Systeme zu BlueXP hinzu"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["ONTAP Cluster erkennen"^]
+
+
+. Wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung verwalten, wählen Sie *Einstellungen > Verbindungseinstellungen* und stellen Sie den Modus für die Kapazitätsverwaltung auf *manueller Modus* ein.
++
+Um Konflikte zu vermeiden, sollte nur der Hauptanschluss auf *Automatischer Modus* gesetzt werden.
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html#capacity-management["Erfahren Sie mehr über den Kapazitätsmanagement-Modus"^]
+
+

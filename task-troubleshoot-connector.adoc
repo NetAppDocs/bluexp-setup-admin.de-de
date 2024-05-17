@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: task-troubleshoot-connector.html 
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure 
+summary: Um Probleme mit dem Konnektor zu beheben, können Sie mit dem NetApp-Support zusammenarbeiten, der Sie möglicherweise nach Ihrer System-ID oder den neuesten AutoSupport-Meldungen fragt. Sie können auch die NetApp Wissensdatenbank anzeigen, um Fehler selbst zu beheben. 
+---
+= Fehlersuche für den Anschluss durchführen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um Probleme mit dem Konnektor zu beheben, können Sie mit dem NetApp-Support zusammenarbeiten, der Sie möglicherweise nach Ihrer System-ID, der Connector-Version oder den neuesten AutoSupport-Meldungen fragt. Sie können auch die NetApp Wissensdatenbank anzeigen, um Fehler selbst zu beheben.
+
+.Verwandter Link
+link:task-get-help.html["Holen Sie sich Hilfe vom NetApp-Support"].
+
+
+
+== Suchen Sie die System-ID für einen Anschluss
+
+Um Ihnen bei den ersten Schritten zu helfen, fragen Sie möglicherweise Ihr NetApp Ansprechpartner nach der System-ID Ihres Connectors. Die ID wird in der Regel für Lizenzierungs- und Fehlerbehebungszwecke verwendet.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP Konsole das Hilfesymbol aus.
+. Wählen Sie *Support > BlueXP Connector*.
++
+Die System-ID wird oben auf der Seite angezeigt.
+
++
+*Beispiel*
+
++
+image:screenshot-system-id.png["Ein Screenshot mit der System-ID für BlueXP, der im Support Dashboard angezeigt wird."]
+
+
+
+
+
+== Anzeigen der Version eines Connectors
+
+Sie können die Version Ihres Connectors anzeigen, um zu überprüfen, ob der Connector automatisch auf die neueste Version aktualisiert wurde, oder weil Sie ihn mit Ihrem NetApp-Vertreter teilen müssen.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP Konsole das Hilfesymbol aus.
+. Wählen Sie *Support > BlueXP Connector*.
++
+Die Version wird oben auf der Seite angezeigt.
+
++
+image:screenshot-connector-version.png["Ein Screenshot, der die Connector-Version im Support-Dashboard zeigt."]
+
+
+
+
+
+== Laden Sie eine AutoSupport Nachricht herunter oder senden Sie sie
+
+Wenn Sie Probleme haben, werden Sie möglicherweise von den Mitarbeitern von NetApp gebeten, zur Fehlerbehebung eine AutoSupport Nachricht an den NetApp Support zu senden.
+
+.Schritte
+. Klicken Sie oben rechts auf der BlueXP Konsole auf das Hilfesymbol und wählen Sie *Support* aus.
++
+image:screenshot-help-support.png["Ein Screenshot des Hilfemenü, in dem Support die erste Option aufgeführt ist"]
+
+. Wählen Sie *BlueXP Connector* aus.
+. Je nachdem, wie Sie die Informationen an den NetApp Support senden, wählen Sie eine der folgenden Optionen:
++
+.. Wählen Sie die Option, um die AutoSupport-Nachricht auf Ihren lokalen Computer herunterzuladen. Sie können es dann auf bevorzugte Art und Weise an den NetApp Support senden.
+.. Wählen Sie *AutoSupport senden*, um die Nachricht direkt an den NetApp Support zu senden.
+
+
++
+image:screenshot-connector-autosupport.png["Ein Screenshot der Support-Konsole zeigt, in dem Benutzer AutoSupport Nachrichten herunterladen und versenden können."]
+
+
+
+
+
+== Beheben Sie Download-Fehler bei Verwendung eines Google Cloud NAT-Gateways
+
+Der Connector lädt automatisch Software-Updates für Cloud Volumes ONTAP herunter. Der Download kann fehlschlagen, wenn Ihre Konfiguration ein Google Cloud NAT Gateway verwendet. Sie können dieses Problem beheben, indem Sie die Anzahl der Teile begrenzen, in die das Software-Image unterteilt ist. Dieser Schritt muss mithilfe der BlueXP API abgeschlossen werden.
+
+.Schritt
+. SENDEN SIE EINE PUT-Anforderung an /occm/config mit dem folgenden JSON als Text:
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+Der Wert für _maxDownloadSessions_ kann 1 oder eine beliebige Ganzzahl größer als 1 sein. Wenn der Wert 1 ist, wird das heruntergeladene Bild nicht geteilt.
+
++
+Beachten Sie, dass 32 ein Beispielwert ist. Der Wert, den Sie verwenden sollten, hängt von Ihrer NAT-Konfiguration und der Anzahl der Sitzungen ab, die Sie gleichzeitig haben können.
+
+
+
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["Erfahren Sie mehr über den Aufruf der /occm/config API"^]
+
+
+
+== Holen Sie sich Hilfe in der NetApp Knowledge Base
+
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki["Zeigen Sie die vom NetApp-Supportteam erstellten Fehlerbehebungsinformationen an"].

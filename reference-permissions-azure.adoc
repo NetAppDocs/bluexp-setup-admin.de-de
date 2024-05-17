@@ -29,8 +29,8 @@ Wenn Sie den Connector über den Azure Marketplace bereitstellen oder den Connec
 Informationen zur schrittweisen Verwendung dieser Richtlinien finden Sie auf den folgenden Seiten:
 
 * link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Richten Sie Berechtigungen für eine Azure Marketplace-Implementierung ein"]
-* link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+* link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 

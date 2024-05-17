@@ -9,8 +9,43 @@ Unterstützte Betriebssysteme::
 +
 --
 * Ubuntu 22.04 LTS
+* CentOS 7.6 bis 7.9
++
+NetApp wird den Connector mit CentOS 7 bis zum 30. Juni 2024 weiterhin unterstützen.
+
+* Red Hat Enterprise Linux
++
+** 7.6 bis 7.9
++
+NetApp wird den Connector mit RHEL 7 bis zum 30. Juni 2024 weiterhin unterstützen.
+
+** 8.6 bis 8.9
+** 9.1 bis 9.3
++
+Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+
++
+Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unterstützt.
+
+
+
+
+
+--
+
+
+Unterstützte Betriebssysteme::
++
+--
+* Ubuntu 22.04 LTS
 * CentOS 7.6, 7.7, 7.8 und 7.9
++
+NetApp wird den Connector mit CentOS 7 bis zum 30. Juni 2024 weiterhin unterstützen.
+
 * Red hat Enterprise Linux 7.6, 7.7, 7.8 und 7.9
++
+NetApp wird den Connector mit RHEL 7 bis zum 30. Juni 2024 weiterhin unterstützen.
+
 +
 Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 
@@ -25,7 +60,7 @@ Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unte
 Hypervisor:: Ein Bare-Metal- oder Hosted-Hypervisor, der für Ubuntu, CentOS oder Red hat Enterprise Linux zertifiziert ist, ist erforderlich.
 +
 --
-https://access.redhat.com/certified-hypervisors["Red hat Solution: Welche Hypervisoren sind für die Ausführung von Red hat Enterprise Linux zertifiziert?"^]
+https://access.redhat.com/articles/973163["Red hat Solution: Welche Hypervisoren sind für die Ausführung von Red hat Enterprise Linux zertifiziert?"^]
 
 --
 
@@ -62,6 +97,31 @@ Docker Engine:: Docker Engine ist auf dem Host erforderlich, bevor Sie den Conne
 * Die maximal unterstützte Version ist 25.0.5.
 +
 https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
+
+
+
+--
+
+
+Container-Orchestrierungstool:: Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
++
+--
+* Podman Version 4.6.1 ist für Red hat Enterprise Linux 8 und 9 erforderlich.
++
+Für Podman müssen folgende Voraussetzungen erfüllt sein:
+
++
+** Der podman.Socket-Dienst muss aktiviert und gestartet werden
+** python3 muss installiert sein
+** Das Paket podman-compose Version 1.0.6 muss installiert sein
+** Podman-compose muss der Umgebungsvariable PATH hinzugefügt werden
+
+
+* Die Docker Engine ist für Ubuntu, CentOS und Red hat Enterprise Linux 7 erforderlich.
++
+** Die unterstützte Version ist mindestens 19.3.1.
+** Die maximal unterstützte Version ist 25.0.5.
+
 
 
 

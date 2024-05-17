@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-maintain-connectors.html 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+summary: Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung. Sie sollten beispielsweise Sicherheitsupdates auf dem Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen. 
+---
+= Wartung der Connector VM und des Betriebssystems
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung. Sie sollten beispielsweise Sicherheitsupdates auf dem Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.
+
+
+TIP: Wenn Sie bereits über einen Connector verfügen, sollten Sie sich dessen bewusst sein link:reference-connector-operating-system-changes.html["Änderungen an unterstützten Linux-Betriebssystemen"].
+
+
+
+== Betriebssystem-Patches und der Connector
+
+Sie müssen keine Dienste auf dem Connector-Host anhalten, wenn Sie OS-Sicherheitspatches anwenden.
+
+
+
+== VM oder Instanztyp
+
+Wenn Sie einen Connector direkt aus BlueXP erstellt haben, hat BlueXP eine Virtual Machine-Instanz in Ihrem Cloud-Provider implementiert, die eine Standardkonfiguration verwendet. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einer kleineren VM-Instanz wechseln, die weniger CPU oder RAM hat.
+
+Die CPU- und RAM-Anforderungen lauten wie folgt:
+
+CPU:: 4 Kerne oder 4 vCPUs
+RAM:: 14 GB
+
+
+link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+
+
+
+== Beenden des Starting der Konnektor-VM
+
+Wenn Sie die Connector VM anhalten und dann starten müssen, sollten Sie dies über die Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times["Beachten Sie, dass der Connector jederzeit betriebsbereit sein muss"].
+
+
+
+== Stellen Sie eine Verbindung zur Linux VM her
+
+Wenn Sie eine Verbindung zur Linux-VM herstellen möchten, auf der der Connector ausgeführt wird, können Sie dies über die Verbindungsoptionen Ihres Cloud-Providers tun.
+
+AWS:: Als Sie die Connector-Instanz in AWS erstellt haben, haben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel angegeben. Sie können dieses Schlüsselpaar für SSH zur Instanz verwenden. Der Benutzername für die EC2 Linux-Instanz ist ubuntu (für Connectors, die vor Mai 2023 erstellt wurden, war der Benutzername ec2-user).
++
+--
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs: Stellen Sie eine Verbindung zu Ihrer Linux-Instanz her"^]
+
+--
+Azure:: Beim Erstellen der Connector-VM in Azure haben Sie einen Benutzernamen angegeben und sich für die Authentifizierung mit einem Kennwort oder einem öffentlichen SSH-Schlüssel entschieden. Verwenden Sie die Authentifizierungsmethode, die Sie für die Verbindung zur VM ausgewählt haben.
++
+--
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs: SSH in Ihre VM"^]
+
+--
+Google Cloud:: Sie können keine Authentifizierungsmethode angeben, wenn Sie einen Connector in Google Cloud erstellen. Sie können eine Verbindung zur Linux VM-Instanz jedoch über die Google Cloud Console oder Google Cloud CLI (gcloudd) herstellen.
++
+--
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs: Verbindung zu Linux-VMs herstellen"^]
+
+--
+
+
+
+
+== Ändern Sie die IP-Adresse für einen Konnektor
+
+Wenn es für Ihr Unternehmen erforderlich ist, können Sie die interne IP-Adresse und die öffentliche IP-Adresse der Connector-Instanz ändern, die automatisch von Ihrem Cloud-Provider zugewiesen wird.
+
+.Schritte
+. Befolgen Sie die Anweisungen Ihres Cloud-Providers, um die lokale IP-Adresse oder die öffentliche IP-Adresse (oder beide) für die Connector-Instanz zu ändern.
+. Wenn Sie die öffentliche IP-Adresse geändert haben und eine Verbindung zur lokalen Benutzeroberfläche auf dem Connector herstellen müssen, starten Sie die Connector-Instanz neu, um die neue IP-Adresse bei BlueXP zu registrieren.
+. Wenn Sie die private IP-Adresse geändert haben, aktualisieren Sie den Backup-Speicherort für Cloud Volumes ONTAP-Konfigurationsdateien, so dass die Backups an die neue private IP-Adresse des Connectors gesendet werden.
++
+Sie müssen den Backup-Speicherort für jedes Cloud Volumes ONTAP-System aktualisieren.
+
++
+.. Führen Sie den folgenden Befehl über die Cloud Volumes ONTAP-CLI aus, um das aktuelle Backup-Ziel anzuzeigen:
++
+[source, cli]
+----
+system configuration backup show
+----
+.. Führen Sie den folgenden Befehl aus, um die IP-Adresse für das Backup-Ziel zu aktualisieren:
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
+
+
+
+
+
+
+== Bearbeiten Sie die URIs eines Connectors
+
+Fügen Sie den Uniform Resource Identifier (URI) für einen Connector hinzu und entfernen Sie ihn.
+
+.Schritte
+. Wählen Sie im BlueXP Header das Dropdown-Menü *Connector* aus.
+. Wählen Sie *Connectors Verwalten*.
+. Wählen Sie das Aktionsmenü für einen Konnektor aus und wählen Sie *URIs bearbeiten*.
+. Fügen Sie URIs hinzu und entfernen Sie sie, und wählen Sie dann *Apply*.
+

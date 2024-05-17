@@ -19,6 +19,8 @@ sidebar:
       url: "/whats-new.html"
     - title: Bekannte Einschränkungen
       url: "/reference-limitations.html"
+    - title: Änderungen an unterstützten Linux-Betriebssystemen
+      url: "/reference-connector-operating-system-changes.html"
   - title: Los geht's
     entries:
     - title: Lernen Sie die Grundlagen kennen
@@ -115,15 +117,23 @@ sidebar:
         url: "/reference-user-roles.html"
     - title: Anschlüsse
       entries:
-      - title: Suchen Sie die System-ID für einen Anschluss
-        url: "/task-finding-system-id.html"
-      - title: Verwalten Sie vorhandene Anschlüsse
-        url: "/task-managing-connectors.html"
+      - title: Wartung der VM und des Betriebssystems
+        url: "/task-maintain-connectors.html"
       - title: Installieren Sie ein HTTPS-Zertifikat für sicheren Zugriff
         url: "/task-installing-https-cert.html"
       - title: Konfigurieren Sie einen Konnektor für die Verwendung eines Proxy-Servers
         url: "/task-configuring-proxy.html"
-      - title: Standardkonfiguration für den Konnektor
+      - title: Erfordern die Verwendung von IMDSv2 auf EC2-Instanzen
+        url: "/task-require-imdsv2.html"
+      - title: Aktualisieren Sie einen Connector, wenn Sie den privaten Modus verwenden
+        url: "/task-upgrade-connector.html"
+      - title: Arbeiten Sie mit mehreren Anschlüssen
+        url: "/task-manage-multiple-connectors.html"
+      - title: Fehlersuche für den Anschluss durchführen
+        url: "/task-troubleshoot-connector.html"
+      - title: Deinstallieren Sie den Connector, und entfernen Sie ihn
+        url: "/task-uninstall-connector.html"
+      - title: Standardkonfiguration
         url: "/reference-connector-default-config.html"
     - title: Anmeldedaten und Abonnements
       entries:

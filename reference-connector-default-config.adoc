@@ -33,6 +33,7 @@ Wenn Sie den Connector von BlueXP oder vom Marktplatz des Cloud-Providers implem
 +
 Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.
 
+* Die Installation beinhaltet die Docker Engine, das erforderliche Tool zur Container-Orchestrierung.
 * Der Benutzername für die EC2 Linux-Instanz ist ubuntu (für Connectors, die vor Mai 2023 erstellt wurden, war der Benutzername ec2-user).
 * Die Standardfestplatte des Systems ist eine 100 gib gp2-Festplatte.
 
@@ -48,6 +49,7 @@ Wenn Sie den Connector von BlueXP oder vom Marktplatz des Cloud-Providers implem
 +
 Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.
 
+* Die Installation beinhaltet die Docker Engine, das erforderliche Tool zur Container-Orchestrierung.
 * Die Standardfestplatte des Systems beträgt 100 gib Premium-SSD-Festplatte.
 
 
@@ -62,6 +64,7 @@ Wenn Sie den Connector von BlueXP implementiert haben, beachten Sie Folgendes:
 +
 Das Betriebssystem enthält keine GUI. Sie müssen ein Terminal verwenden, um auf das System zuzugreifen.
 
+* Die Installation beinhaltet die Docker Engine, das erforderliche Tool zur Container-Orchestrierung.
 * Die Standardfestplatte des Systems beträgt eine persistente SSD-Festplatte mit 100 gib.
 
 
@@ -83,7 +86,7 @@ Protokolldateien sind in den folgenden Ordnern enthalten:
 Oder
 * /Opt/Application/netapp/Service-Manager-2/logs (beginnend mit den neuen 3.9.23 Installationen)
 +
-Die Protokolle in diesen Ordnern enthalten Details zu den Konnektor- und Docker-Images.
+Die Protokolle in diesen Ordnern enthalten Details zum Connector.
 
 * /Opt/Application/netapp/CloudManager/docker_occm/Data/log
 +

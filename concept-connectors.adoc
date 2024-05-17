@@ -153,10 +153,10 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie unter:
 ** link:concept-install-options-aws.html["Installationsoptionen für Konnektoren in AWS"]
 ** link:concept-install-options-azure.html["Optionen für die Connector-Installation in Azure"]
 ** link:concept-install-options-google.html["Connector-Installationsoptionen in Google Cloud"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Cloud-Berechtigungen für On-Premises-Implementierungen einrichten"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Cloud-Berechtigungen für On-Premises-Implementierungen einrichten"]
 
 
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
@@ -175,7 +175,7 @@ Wir aktualisieren die Connector-Software in der Regel jeden Monat, um neue Funkt
 
 Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden, aktualisiert der Connector seine Software automatisch auf die neueste Version, sofern er über ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten. Wenn Sie BlueXP im privaten Modus nutzen, müssen Sie den Connector manuell aktualisieren.
 
-link:task-managing-connectors.html["Erfahren Sie, wie Sie die Connector-Software manuell aktualisieren"].
+link:task-upgrade-connector.html["Erfahren Sie, wie Sie die Connector-Software manuell aktualisieren"].
 
 
 
@@ -183,7 +183,7 @@ link:task-managing-connectors.html["Erfahren Sie, wie Sie die Connector-Software
 
 Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung. Sie sollten beispielsweise Sicherheitsupdates auf dem Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.
 
-Beachten Sie, dass Sie keine Dienste auf dem Connector-Host anhalten müssen, wenn Sie ein Betriebssystem-Update ausführen.
+Beachten Sie, dass Sie bei der Anwendung kleinerer Sicherheitsupdates keine Dienste auf dem Connector-Host anhalten müssen.
 
 Wenn Sie die Connector VM anhalten und dann starten müssen, sollten Sie dies über die Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.
 
@@ -191,15 +191,11 @@ Wenn Sie die Connector VM anhalten und dann starten müssen, sollten Sie dies ü
 
 
 
-== Mehrere Arbeitsumgebungen
+== Mehrere Arbeitsumgebungen und Steckverbinder
 
 Ein Connector kann mehrere Arbeitsumgebungen in BlueXP verwalten. Die maximale Anzahl von Arbeitsumgebungen, die ein einzelner Connector managen sollte, variiert. Das hängt von der Art der Arbeitsumgebungen, der Anzahl der Volumes, der zu verwaltenden Kapazität und der Anzahl der Benutzer ab.
 
 Nutzen Sie eine umfangreiche Implementierung, arbeiten Sie mit Ihrem NetApp Ansprechpartner zusammen, um die Größe Ihrer Umgebung zu dimensionieren. Sollten Sie während des gesamten Chats Probleme haben, können Sie sich mit uns in Verbindung setzen.
-
-
-
-== Mehrere Anschlüsse
 
 In einigen Fällen benötigen Sie möglicherweise nur einen Connector, aber Sie benötigen möglicherweise zwei oder mehr Anschlüsse.
 
@@ -207,33 +203,4 @@ Hier nur ein paar Beispiele:
 
 * Sie verfügen über eine Multi-Cloud-Umgebung (z. B. AWS und Azure) und bevorzugen einen Connector in AWS und einen weiteren in Azure. Jedes managt die Cloud Volumes ONTAP Systeme, die in diesen Umgebungen ausgeführt werden.
 * Ein Service-Provider nutzt möglicherweise ein BlueXP Konto für die Bereitstellung von Services für seine Kunden und ein weiteres Konto für die Disaster Recovery für einen seiner Geschäftsbereiche. Jedes Konto hätte separate Anschlüsse.
-
-
-
-
-=== Wann wechseln
-
-Wenn Sie Ihren ersten Connector erstellen, verwendet BlueXP diesen Connector automatisch für jede zusätzliche Arbeitsumgebung, die Sie erstellen. Wenn Sie einen zusätzlichen Connector erstellen, müssen Sie zwischen diesen wechseln, um die für jeden Connector spezifischen Arbeitsumgebungen zu sehen.
-
-link:task-managing-connectors.html["Erfahren Sie, wie Sie zwischen den Anschlüssen wechseln"].
-
-
-
-=== Disaster Recovery
-
-Sie können eine Arbeitsumgebung mit mehreren Connectors gleichzeitig für Disaster Recovery-Zwecke verwalten. Wenn ein Anschluss ausfällt, können Sie zum anderen Connector wechseln, um die Arbeitsumgebung sofort zu verwalten.
-
-So richten Sie diese Konfiguration ein:
-
-. link:task-managing-connectors.html["Wechseln Sie zu einem anderen Anschluss"].
-. Erkennung der vorhandenen Arbeitsumgebung
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Fügen Sie vorhandene Cloud Volumes ONTAP-Systeme zu BlueXP hinzu"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["ONTAP Cluster erkennen"^]
-
-
-. Stellen Sie die ein https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage-management.html["Kapazitätsmanagement -Modus"^]
-+
-Nur der Hauptanschluss sollte auf *Automatikmodus* eingestellt sein. Wenn Sie zu DR-Zwecken auf einen anderen Connector wechseln, können Sie den Kapazitätsverwaltungsmodus bei Bedarf ändern.
-
 
