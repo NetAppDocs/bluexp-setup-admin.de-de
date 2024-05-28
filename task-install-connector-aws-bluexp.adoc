@@ -150,16 +150,13 @@ Bei beiden Optionen besteht der erste Schritt darin, eine IAM-Richtlinie zu erst
 
 Bei Bedarf können Sie die IAM-Richtlinie mit Hilfe des IAM einschränken `Condition` Element: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS-Dokumentation: Condition Element"^]
 
-
-TIP: Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtigungen auf die Connector-Instanz an, sodass der Connector AWS Ressourcen managen kann.
-
 .Schritte
 . Wechseln Sie zur AWS IAM-Konsole.
 . Wählen Sie *Policies > Create Policy* aus.
 . Wählen Sie *JSON*.
 . Kopieren Sie die folgende Richtlinie:
 +
-Zur Erinnerung: Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS aus BlueXP erforderlich sind. link:reference-permissions-aws.html["Berechtigungen anzeigen, die für die Connector-Instanz selbst erforderlich sind"].
+Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS von BlueXP erforderlich sind. Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtigungen auf die Connector-Instanz an, sodass der Connector AWS Ressourcen managen kann. link:reference-permissions-aws.html["Berechtigungen anzeigen, die für die Connector-Instanz selbst erforderlich sind"].
 
 +
 [source, json]
@@ -275,7 +272,9 @@ Sie sollten nun über eine IAM-Rolle mit den erforderlichen Berechtigungen verf�
 Erstellen Sie den Connector direkt über die webbasierte Konsole von BlueXP.
 
 .Über diese Aufgabe
-Bei der Erstellung des Connectors aus BlueXP wird eine EC2-Instanz in AWS mit einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren EC2-Instanztyp wechseln, der weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+* Bei der Erstellung des Connectors aus BlueXP wird eine EC2-Instanz in AWS mit einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren EC2-Instanztyp wechseln, der weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+* Wenn BlueXP den Connector erstellt, werden eine IAM-Rolle und ein Instanzprofil für die Instanz erstellt. Diese Rolle umfasst Berechtigungen, mit denen der Connector AWS Ressourcen managen kann. Sie müssen sicherstellen, dass die Rolle immer auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Versionen hinzugefügt werden. link:reference-permissions-aws.html["Erfahren Sie mehr über die IAM-Richtlinie für den Connector"].
+
 
 .Bevor Sie beginnen
 Sie sollten Folgendes haben:

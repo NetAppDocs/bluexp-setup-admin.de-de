@@ -4,6 +4,8 @@
 
 Um dem Connector die erforderlichen Berechtigungen für das Ressourcenmanagement in Google Cloud zu geben, ist ein Google Cloud-Servicekonto erforderlich. Wenn Sie den Connector erstellen, müssen Sie dieses Dienstkonto mit der Connector VM verknüpfen.
 
+Es liegt in Ihrer Verantwortung, die benutzerdefinierte Rolle zu aktualisieren, wenn in nachfolgenden Versionen neue Berechtigungen hinzugefügt werden. Wenn neue Berechtigungen erforderlich sind, werden diese in den Versionshinweisen aufgeführt.
+
 .Schritte
 . Benutzerdefinierte Rolle in Google Cloud erstellen:
 +

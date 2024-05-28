@@ -22,19 +22,20 @@ Beim Start der Connector-VM in Azure wird von BlueXP eine benutzerdefinierte Rol
 
 Die unten aufgeführte benutzerdefinierte Rolle stellt die Berechtigungen bereit, die ein Connector zur Verwaltung von Ressourcen und Prozessen in Ihrem Azure-Netzwerk benötigt.
 
-Wenn Sie einen Connector direkt aus BlueXP erstellen, wendet BlueXP diese benutzerdefinierte Rolle automatisch auf den Connector an.
+Beachten Sie Folgendes:
 
-Wenn Sie den Connector über den Azure Marketplace bereitstellen oder den Connector manuell auf einem Linux-Host installieren, müssen Sie die benutzerdefinierte Rolle selbst einrichten.
+* Wenn Sie einen Connector direkt aus BlueXP erstellen, wendet BlueXP diese benutzerdefinierte Rolle automatisch auf den Connector an.
+* Wenn Sie den Connector über den Azure Marketplace bereitstellen oder den Connector manuell auf einem Linux-Host installieren, müssen Sie die benutzerdefinierte Rolle selbst einrichten.
+* In beiden Fällen müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn in nachfolgenden Releases neue Berechtigungen hinzugefügt werden. Wenn neue Berechtigungen erforderlich sind, werden diese in den Versionshinweisen aufgeführt.
+* Informationen zur schrittweisen Verwendung dieser Richtlinien finden Sie auf den folgenden Seiten:
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Richten Sie Berechtigungen für eine Azure Marketplace-Implementierung ein"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
-Informationen zur schrittweisen Verwendung dieser Richtlinien finden Sie auf den folgenden Seiten:
-
-* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Richten Sie Berechtigungen für eine Azure Marketplace-Implementierung ein"]
-* link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
-* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
-Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden.
 
 [source, json]
 ----

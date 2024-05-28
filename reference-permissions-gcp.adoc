@@ -29,7 +29,7 @@ Sie müssen diese benutzerdefinierte Rolle auf ein Servicekonto anwenden, das mi
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
-Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden.
+Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden. Wenn neue Berechtigungen erforderlich sind, werden diese in den Versionshinweisen aufgeführt.
 
 [source, yaml]
 ----

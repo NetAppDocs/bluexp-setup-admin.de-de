@@ -161,7 +161,7 @@ Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Porta
 . Kopieren Sie die erforderlichen Berechtigungen für eine neue benutzerdefinierte Rolle in Azure und speichern Sie sie in einer JSON-Datei.
 +
 
-NOTE: Diese benutzerdefinierte Rolle enthält nur die Berechtigungen, die zum Starten der Connector-VM in Azure von BlueXP erforderlich sind. Verwenden Sie diese Richtlinie nicht für andere Situationen. Wenn BlueXP den Connector erstellt, wendet er eine neue Gruppe von Berechtigungen auf die Connector-VM an, die es dem Connector ermöglicht, die Ressourcen in Ihrer Public-Cloud-Umgebung zu verwalten.
+NOTE: Diese benutzerdefinierte Rolle enthält nur die Berechtigungen, die zum Starten der Connector-VM in Azure von BlueXP erforderlich sind. Verwenden Sie diese Richtlinie nicht für andere Situationen. Wenn BlueXP den Connector erstellt, wendet es einen neuen Satz an Berechtigungen auf die Connector-VM an, sodass der Connector Azure Ressourcen managen kann.
 
 +
 [source, json]
@@ -420,7 +420,9 @@ Ihr Service-Principal ist jetzt eingerichtet und Sie sollten die Anwendungs- (Cl
 Erstellen Sie den Connector direkt über die webbasierte Konsole von BlueXP.
 
 .Über diese Aufgabe
-Beim Erstellen des Connectors aus BlueXP wird eine Virtual Machine in Azure mithilfe einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren VM-Typ wechseln, der weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+* Beim Erstellen des Connectors aus BlueXP wird eine Virtual Machine in Azure mithilfe einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren VM-Typ wechseln, der weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+* Wenn BlueXP den Connector bereitstellt, wird eine benutzerdefinierte Rolle erstellt und dieser der Connector-VM zugewiesen. Diese Rolle umfasst Berechtigungen, mit denen der Connector Azure Ressourcen managen kann. Sie müssen sicherstellen, dass die Rolle immer auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Versionen hinzugefügt werden. link:reference-permissions-azure.html["Erfahren Sie mehr über die benutzerdefinierte Rolle für den Connector"].
+
 
 .Bevor Sie beginnen
 Sie sollten Folgendes haben:
