@@ -165,12 +165,6 @@ Backup und Restore von Applikationsdaten, Virtual Machine Daten und Kubernetes-D
 | Klassifizierung  a| 
 Unterstützt in Regierungsregionen mit eingeschränktem Modus. Nicht unterstützt in kommerziellen Regionen oder in souveränen Regionen mit eingeschränktem Modus.
 
-Es gelten die folgenden Einschränkungen:
-
-* OneDrive-Konten, SharePoint-Konten und Google-Laufwerk Konten können nicht gescannt werden.
-* Die Funktionalität der Microsoft Azure Information Protection (AIP)-Etiketten kann nicht integriert werden.
-
-
 
 
 | Cloud Volumes ONTAP | Volle Unterstützung 
