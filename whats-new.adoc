@@ -79,7 +79,7 @@ Derzeit ist die Version 3.9.40 für den Standardmodus und den eingeschränkten M
 
 ==== Unterstützung für RHEL 8 und 9
 
-Der Connector wird jetzt auf Hosts unterstützt, auf denen die folgenden Versionen von Red hat Enterprise Linux mit _New_ Connector-Installationen ausgeführt werden:
+Der Connector wird jetzt auf Hosts unterstützt, auf denen die folgenden Versionen von Red hat Enterprise Linux mit _New_ Connector-Installationen ausgeführt werden, wenn BlueXP im Standardmodus oder eingeschränkter Modus verwendet wird:
 
 * 8.6 bis 8.9
 * 9.1 bis 9.3
