@@ -47,7 +47,6 @@ Mobilität:: Daten werden durch Synchronisierung, Kopieren, Tiering und Caching 
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["Kopieren und Synchronisieren"^]
-* https://bluexp.netapp.com/global-file-cache["Edge-Caching"^]
 * https://bluexp.netapp.com/cloud-tiering["Tiering"^]
 
 

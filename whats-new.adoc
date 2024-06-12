@@ -18,6 +18,18 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 
 
+== 12 Juni 2024
+
+
+
+=== Anschluss 3.9.41
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Die Version 3.9.41 ist für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
 == 4 Juni 2024
 
 
