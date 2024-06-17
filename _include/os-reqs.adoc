@@ -87,7 +87,17 @@ Der Connector wird in Google Cloud auf einer VM-Instanz mit einem unterstützten
 
 
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
++
+--
+BlueXP nutzt `/opt` Um den zu installieren `/opt/application/netapp` Verzeichnis und es ist Inhalt.
+
+--
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
++
+--
+BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt `/var/lib/containers/storage` Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.
+
+--
 
 
 Docker Engine:: Docker Engine ist auf dem Host erforderlich, bevor Sie den Connector installieren.

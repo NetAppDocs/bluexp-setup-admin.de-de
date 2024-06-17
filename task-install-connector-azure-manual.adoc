@@ -63,7 +63,17 @@ CPU:: 4 Kerne oder 4 vCPUs
 RAM:: 14 GB
 Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen DS3 v2.
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
++
+--
+BlueXP nutzt `/opt` Um den zu installieren `/opt/application/netapp` Verzeichnis und es ist Inhalt.
+
+--
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
++
+--
+BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt `/var/lib/containers/storage` Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.
+
+--
 Container-Orchestrierungstool:: Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
 +
 --

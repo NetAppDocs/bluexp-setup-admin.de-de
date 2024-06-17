@@ -64,7 +64,17 @@ RAM:: 14 GB
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.xlarge.
 Schlüsselpaar:: Wenn Sie den Connector erstellen, müssen Sie ein EC2-Schlüsselpaar auswählen, das mit der Instanz verwendet werden soll.
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
++
+--
+BlueXP nutzt `/opt` Um den zu installieren `/opt/application/netapp` Verzeichnis und es ist Inhalt.
+
+--
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
++
+--
+BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt `/var/lib/containers/storage` Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.
+
+--
 Container-Orchestrierungstool:: Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
 +
 --
