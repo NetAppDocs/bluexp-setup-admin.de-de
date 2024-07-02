@@ -52,16 +52,8 @@ Unterstützte Betriebssysteme::
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6 bis 7.9
-+
-NetApp wird den Connector mit CentOS 7 bis zum 30. Juni 2024 weiterhin unterstützen.
-
 * Red Hat Enterprise Linux
 +
-** 7.6 bis 7.9
-+
-NetApp wird den Connector mit RHEL 7 bis zum 30. Juni 2024 weiterhin unterstützen.
-
 ** 8.6 bis 8.9
 ** 9.1 bis 9.3
 +
@@ -75,12 +67,7 @@ Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unte
 
 
 --
-Hypervisor:: Ein Bare-Metal- oder Hosted-Hypervisor, der für Ubuntu, CentOS oder Red hat Enterprise Linux zertifiziert ist, ist erforderlich.
-+
---
-https://access.redhat.com/articles/973163["Red hat Solution: Welche Hypervisoren sind für die Ausführung von Red hat Enterprise Linux zertifiziert?"^]
-
---
+Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.
 CPU:: 4 Kerne oder 4 vCPUs
 RAM:: 14 GB
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.xlarge.
@@ -117,7 +104,7 @@ Für Podman müssen folgende Voraussetzungen erfüllt sein:
 ** Podman-compose muss der Umgebungsvariable PATH hinzugefügt werden
 
 
-* Die Docker Engine ist für Ubuntu, CentOS und Red hat Enterprise Linux 7 erforderlich.
+* Docker Engine ist für Ubuntu erforderlich.
 +
 ** Die unterstützte Version ist mindestens 19.3.1.
 ** Die maximal unterstützte Version ist 25.0.5.
@@ -137,7 +124,7 @@ Wenn Sie planen, die Connector-Software manuell zu installieren, müssen Sie den
 Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
 
 * Podman ist für Red hat Enterprise Linux 8 und 9 erforderlich.
-* Die Docker Engine ist für Ubuntu, CentOS und Red hat Enterprise Linux 7 erforderlich.
+* Docker Engine ist für Ubuntu erforderlich.
 
 
 .Schritte

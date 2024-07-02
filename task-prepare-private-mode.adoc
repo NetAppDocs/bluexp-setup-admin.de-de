@@ -46,33 +46,13 @@ Bei der Installation des Connectors wird festgelegt, welche BlueXP Services und 
 Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt.
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
-Unterstützte Betriebssysteme::
+Unterstütztes Betriebssystem:: Ubuntu 22.04 LTS
 +
 --
-* Ubuntu 22.04 LTS
-* CentOS 7.6, 7.7, 7.8 und 7.9
-+
-NetApp wird den Connector mit CentOS 7 bis zum 30. Juni 2024 weiterhin unterstützen.
-
-* Red hat Enterprise Linux 7.6, 7.7, 7.8 und 7.9
-+
-NetApp wird den Connector mit RHEL 7 bis zum 30. Juni 2024 weiterhin unterstützen.
-
-+
-Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
-
-+
-Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unterstützt.
-
-
+Der Connector wird von englischsprachigen Versionen dieses Betriebssystems unterstützt.
 
 --
-Hypervisor:: Ein Bare-Metal- oder Hosted-Hypervisor, der für Ubuntu, CentOS oder Red hat Enterprise Linux zertifiziert ist, ist erforderlich.
-+
---
-https://access.redhat.com/articles/973163["Red hat Solution: Welche Hypervisoren sind für die Ausführung von Red hat Enterprise Linux zertifiziert?"^]
-
---
+Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.
 CPU:: 4 Kerne oder 4 vCPUs
 RAM:: 14 GB
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.xlarge.
