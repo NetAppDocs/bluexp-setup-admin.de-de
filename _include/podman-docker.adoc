@@ -90,7 +90,7 @@ NOTE: Verwenden der `dnf install` Befehl erfüllt die Anforderung zum Hinzufüge
 --
 .Docker Engine
 --
-Installieren Sie eine Version der Docker Engine zwischen 19.3.1 und 25.0.5.
+Installieren Sie eine Version der Docker Engine zwischen 23.0.6 und 25.0.5.
 
 .Schritte
 . Installieren Sie Die Docker Engine.

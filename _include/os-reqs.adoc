@@ -75,7 +75,7 @@ BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, d
 Docker Engine:: Docker Engine ist auf dem Host erforderlich, bevor Sie den Connector installieren.
 +
 --
-* Die unterstützte Version ist mindestens 19.3.1.
+* Die unterstützte Version ist mindestens 23.0.6.
 * Die maximal unterstützte Version ist 25.0.5.
 +
 https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
@@ -101,7 +101,7 @@ Für Podman müssen folgende Voraussetzungen erfüllt sein:
 
 * Docker Engine ist für Ubuntu erforderlich.
 +
-** Die unterstützte Version ist mindestens 19.3.1.
+** Die unterstützte Version ist mindestens 23.0.6.
 ** Die maximal unterstützte Version ist 25.0.5.
 
 

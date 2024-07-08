@@ -661,18 +661,11 @@
   <block id="a6daae7da601d04e5cdb89d612a8d9b1" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen DS3 v2.</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="summary">Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie mit BlueXP starten, müssen Sie sich zunächst mit Ihren vorhandenen Zugangsdaten auf der NetApp Support Website anmelden oder ein NetApp Cloud-Login erstellen.</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">Melden Sie sich bei BlueXP an</block>
-  <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">Sie können sich bei BlueXP mithilfe einer der folgenden Optionen anmelden:</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">Ihre vorhandenen Zugangsdaten für die NetApp Support Site (NSS</block>
-  <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">Geben Sie Ihre E-Mail-Adresse und ein Passwort an, um sich bei einem NetApp Cloud-Login anzumelden</block>
   <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">Erfahren Sie mehr über den Einsatz von Identitätsföderation mit BlueXP</block>
-  <block id="66721b55faa00316d484082879eed67d" category="paragraph">Beide Optionen unterstützen eine föderierte Verbindung, die Single Sign-On mit Anmeldeinformationen aus Ihrem Unternehmensverzeichnis (föderierte Identität) ermöglicht. Sie können nach der Anmeldung eine Verbündungsverbindung einrichten. <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">Öffnen Sie einen Webbrowser, und rufen Sie den auf<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
-  <block id="3587d9f2b48c4f0c9c40433731329a21" category="list-text">Wenn Sie über ein NetApp Support Site Konto verfügen, geben Sie die mit Ihrem NSS Konto verknüpfte E-Mail-Adresse direkt auf der *Anmelden* Seite ein.</block>
   <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">Sie können die Anmeldeseite überspringen, wenn Sie ein NSS-Konto haben. BlueXP meldet Sie im Rahmen dieser ersten Anmeldung an.</block>
-  <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">Wenn Sie noch keinen NSS-Account haben und sich mit einem NetApp Cloud Login registrieren möchten, wählen Sie *Registrieren*.</block>
-  <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">Geben Sie auf der Seite *Anmelden* die erforderlichen Informationen zur Erstellung eines NetApp Cloud-Logins ein.</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">Beachten Sie, dass nur englische Zeichen im Anmeldeformular zulässig sind.</block>
-  <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">Überprüfen Sie, wenn Sie dazu aufgefordert werden, die Endbenutzer-Lizenzvereinbarung und akzeptieren Sie die Bedingungen.</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">Geben Sie auf der Seite *Willkommen* einen Namen für Ihr Konto ein.</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">Erfahren Sie, wie Sie einem bestehenden Konto Mitglieder hinzufügen</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">Der Account ist das wichtigste Element der Identitätsplattform von NetApp. Sie können Benutzer, Rollen, Berechtigungen und Arbeitsumgebungen hinzufügen und verwalten.</block>
@@ -3918,7 +3911,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 oder eine beliebige Version nach dieser Version</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Wird während des Cloud Volumes ONTAP-Upgrade-Prozesses verwendet</block>
   <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">Docker Engine ist auf dem Host erforderlich, bevor Sie den Connector installieren.</block>
-  <block id="66a843cd9e2f1ff37fec4c91275dc9a7" category="list-text">Die unterstützte Version ist mindestens 19.3.1.</block>
   <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">Die maximal unterstützte Version ist 25.0.5.</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">Bis 11. April 2024</block>
@@ -3986,7 +3978,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="084cfc903eb108eb15642e42f36348f9" category="paragraph">Für Red Hat Enterprise Linux 8:</block>
   <block id="6f3a42415c589950b9ae4d3fe1f87dc7" category="list-text">Installieren Sie das Paket „podman-compose“ 1.0.6.</block>
   <block id="ec7c87651a5ede2a98ad4091fe48b517" category="admonition">Verwenden der<block ref="02c7499137a5d8d10292d68634eb22a0" prefix=" " category="inline-code"></block> Befehl erfüllt die Anforderung zum Hinzufügen von podman-compose zur Umgebungsvariable PATH. Der Installationsbefehl fügt podman-compose zu /usr/bin hinzu, das bereits im enthalten ist<block ref="c9bac30d1d0554c0790285219e5ad518" prefix=" " category="inline-code"></block> Option auf dem Host.</block>
-  <block id="2cb776f499f1161a0b5361cda7d46e37" category="paragraph">Installieren Sie eine Version der Docker Engine zwischen 19.3.1 und 25.0.5.</block>
   <block id="d96a084915e5de032105988cddcc2bc5" category="list-text">Installieren Sie Die Docker Engine.</block>
   <block id="08a382dc3dd0f48c28f89b74f8bac2a4" category="inline-link">Installationsanweisungen von Docker anzeigen</block>
   <block id="3907e04a67ccb717783cc69d280aaa41" category="paragraph"><block ref="3907e04a67ccb717783cc69d280aaa41" category="inline-link-rx"></block></block>
@@ -4192,4 +4183,30 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine ist für Ubuntu erforderlich.</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">Am 30. Juni 2024 erreichte RHEL 7 das Ende der Wartung (End of Maintenance, EOM), während CentOS 7 das Ende des Lebenszyklus (End of Life, EOL) erreichte. NetApp hat die Unterstützung des Connectors auf diesen Linux-Distributionen am 30. Juni 2024 eingestellt.</block>
+  <block id="547a1a61c710e2dc947389da0967d175" category="list-text">Die unterstützte Version ist mindestens 23.0.6.</block>
+  <block id="7a96db7c574c0cfb888eceb8119d9bac" category="paragraph">Installieren Sie eine Version der Docker Engine zwischen 23.0.6 und 25.0.5.</block>
+  <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">Melden Sie sich bei BlueXP an oder melden Sie sich an</block>
+  <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie mit BlueXP beginnen, müssen Sie sich als Erstes anmelden oder sich mit Ihren Zugangsdaten für die NetApp Support-Website oder SSO-Anmeldeinformationen aus Ihrem Unternehmensverzeichnis anmelden.</block>
+  <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">Wenn Sie BlueXP zum ersten Mal nutzen, können Sie sich mit einer der folgenden Optionen anmelden oder sich anmelden:</block>
+  <block id="79160996ed8489a5cf6613551aa653a7" category="list-text">BlueXP Anmeldung</block>
+  <block id="097da8092c10ffe933148ded03ffa5e7" category="list-text">Sie können sich anmelden, indem Sie eine BlueXP Anmeldung erstellen. Für diese Authentifizierungsmethode müssen Sie Ihre E-Mail-Adresse und ein Passwort angeben. Nachdem Sie Ihre E-Mail-Adresse überprüft haben, können Sie sich einloggen und anschließend ein BlueXP Konto erstellen, sofern Sie noch nicht zu einer Person gehören.</block>
+  <block id="4e509fcd83df29eba4ce6711d142163b" category="list-text">Zugangsdaten für die NetApp Support-Website (NSS</block>
+  <block id="820249dfc3701fd3b37984191fcdfd5c" category="list-text">Wenn Sie bereits über Anmeldedaten für die NetApp Support-Website verfügen, müssen Sie sich nicht bei BlueXP anmelden. Sie melden sich mit Ihren NSS-Zugangsdaten an, und BlueXP fordert Sie auf, ein BlueXP Konto zu erstellen, sofern Sie noch nicht zu einem Konto gehören.</block>
+  <block id="9cb17ba10a86a6d673f250ed811a88c2" category="list-text">Föderierte Verbindung</block>
+  <block id="b9d11f4546264baa9dae3dabfb844735" category="list-text">Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. Der erste Benutzer im Konto Ihres Unternehmens muss sich bei BlueXP anmelden oder sich über NSS-Anmeldedaten anmelden und dann den Identitätsverbund einrichten. Danach kann sich jeder nachfolgende Benutzer einfach mit seinen SSO-Anmeldeinformationen anmelden.</block>
+  <block id="a3343822f7753a8d8b67395fe90b10ba" category="paragraph"><block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
+  <block id="631a9d1918b756ca1857359538227c2a" category="list-text">Wenn Sie über ein NetApp-Support-Website-Konto verfügen oder bereits einen Identitätsverbund eingerichtet haben, geben Sie die mit Ihrem Konto verknüpfte E-Mail-Adresse direkt auf der *Anmelden*-Seite ein.</block>
+  <block id="e2a4611e209f9dc6217229cb9441c087" category="list-text">Wenn Sie sich mit einem BlueXP Login registrieren möchten, wählen Sie *Registrieren*.</block>
+  <block id="dafbc60d299b7ecf7d1bf490a178f77f" category="list-text">Geben Sie auf der Seite *Anmelden* die erforderlichen Informationen ein und wählen Sie *Weiter*.</block>
+  <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">In Ihrem Posteingang finden Sie eine E-Mail von NetApp, die Anweisungen zur Überprüfung Ihrer E-Mail-Adresse enthält.</block>
+  <block id="6a453053d8be9574b7b5d32eb1d51842" category="paragraph">Dieser Schritt ist erforderlich, bevor Sie sich bei BlueXP anmelden können.</block>
+  <block id="a0e12b903763894b05053f1758f87c86" category="list-text">Lesen Sie nach der Anmeldung die Endbenutzer-Lizenzvereinbarung durch, und akzeptieren Sie die Bedingungen.</block>
+  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">8 Juli 2024</block>
+  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">Anschluss 3.9.42</block>
+  <block id="b1360a775c6891602e0321f2a2a1aa2b" category="paragraph">Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in der Region AWS Canada West (Calgary).</block>
+  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">Aktualisierte Anforderungen für die Docker Engine</block>
+  <block id="a8b199c601f75b6af66327457070a9f8" category="paragraph">Wenn der Connector auf einem Ubuntu-Host installiert ist, ist die unterstützte Mindestversion der Docker Engine jetzt 23.0.6. Es war vorher 19.3.1.</block>
+  <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">Die maximal unterstützte Version ist immer noch 25.0.5.</block>
+  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">E-Mail-Verifizierung jetzt erforderlich</block>
+  <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">Neue Benutzer, die sich bei BlueXP anmelden, müssen jetzt ihre E-Mail-Adresse überprüfen, bevor sie sich anmelden können.</block>
 </blocks>
