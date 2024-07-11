@@ -26,6 +26,8 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in der Region AWS Canada West (Calgary).
 
+Die Version 3.9.42 ist für den Standardmodus und den eingeschränkten Modus verfügbar.
+
 
 
 === Aktualisierte Anforderungen für die Docker Engine
