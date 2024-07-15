@@ -26,6 +26,8 @@ Informieren Sie sich über die Neuerungen bei den BlueXP Administrationsfunktion
 
 BlueXP unterstützt jetzt die Installation des Connectors auf einem Red hat Enterprise Linux 8.10 Host bei Verwendung des Standardmodus oder des eingeschränkten Modus.
 
+Die Unterstützung für RHEL 8.10 beginnt mit der Version 3.9.40 des Connectors.
+
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Erfahren Sie mehr über die Unterstützung von RHEL 8 und 9 mit dem Connector"].
 
 

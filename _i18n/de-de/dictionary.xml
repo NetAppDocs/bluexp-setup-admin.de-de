@@ -4204,4 +4204,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 Juli 2024</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Unterstützung für RHEL 8.10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP unterstützt jetzt die Installation des Connectors auf einem Red hat Enterprise Linux 8.10 Host bei Verwendung des Standardmodus oder des eingeschränkten Modus.</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">Die Unterstützung für RHEL 8.10 beginnt mit der Version 3.9.40 des Connectors.</block>
 </blocks>
