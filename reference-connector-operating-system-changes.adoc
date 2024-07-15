@@ -18,15 +18,65 @@ Wenn wir die Unterstützung für den Connector auf bestimmten Linux-Betriebssyst
 
 
 
+== Unterstützte Betriebssysteme
+
+Der BlueXP Connector wird von den folgenden Linux Betriebssystemen unterstützt.
+
+[role="tabbed-block"]
+====
+.Standardmodus
+--
+Manuelle Installation::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 bis 8.10
+** 9.1 bis 9.3
+
+
+
+
+--
+Implementierung von BlueXP:: Ubuntu 22.04 LTS
+Implementierung über den AWS Marketplace:: Ubuntu 22.04 LTS
+Implementierung über den Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Eingeschränkter Modus
+--
+Manuelle Installation::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 bis 8.10
+** 9.1 bis 9.3
+
+
+
+
+--
+Implementierung über den AWS Marketplace:: Ubuntu 22.04 LTS
+Implementierung über den Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Privater Modus
+--
+Manuelle Installation:: Ubuntu 22.04 LTS
+
+
+--
+====
+
+
 == Unterstützung für RHEL 8 und 9
 
-Ab Version 3.9.40 unterstützt BlueXP den Connector mit den folgenden Versionen von Red hat Enterprise Linux (RHEL):
-
-* 8.6 bis 8.9
-* 9.1 bis 9.3
-
-
-Beachten Sie Folgendes über die Unterstützung dieser RHEL-Versionen:
+Beachten Sie die folgenden Informationen zur Unterstützung von RHEL 8 und 9:
 
 Einschränkungen::
 +
@@ -77,62 +127,6 @@ Docker Engine ist für dieses Betriebssystem erforderlich. Podman wird nicht unt
 
 
 
-== Zusammenfassung der unterstützten Betriebssysteme
-
-Im Folgenden finden Sie eine Zusammenfassung der Unterstützung für Betriebssysteme, die in den vorherigen Abschnitten beschrieben wurde.
-
-[role="tabbed-block"]
-====
-.Standardmodus
---
-Manuelle Installation::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 bis 8.9
-** 9.1 bis 9.3
-
-
-
-
---
-Implementierung von BlueXP:: Ubuntu 22.04 LTS
-Implementierung über den AWS Marketplace:: Ubuntu 22.04 LTS
-Implementierung über den Azure Marketplace:: Ubuntu 22.04 LTS
-
-
---
-.Eingeschränkter Modus
---
-Manuelle Installation::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 bis 8.9
-** 9.1 bis 9.3
-
-
-
-
---
-Implementierung über den AWS Marketplace:: Ubuntu 22.04 LTS
-Implementierung über den Azure Marketplace:: Ubuntu 22.04 LTS
-
-
---
-.Privater Modus
---
-Manuelle Installation:: Ubuntu 22.04 LTS
-
-
---
-====
-
-
 == Weiterführende Links
 
 
@@ -160,8 +154,4 @@ Auf den folgenden Seiten finden Sie Informationen zur Wiedererkennung Ihrer Arbe
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Schaffung einer Azure NetApp Files-Arbeitsumgebung"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["E-Series Systeme kennenlernen"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["StorageGRID Systeme erkennen"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["Fügen Sie einen Amazon Kubernetes-Cluster hinzu"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["Fügen Sie einen Azure Kubernetes-Cluster hinzu"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["Fügen Sie einen Google Cloud Kubernetes Cluster hinzu"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["Importieren Sie ein OpenShift-Cluster"^]
 
