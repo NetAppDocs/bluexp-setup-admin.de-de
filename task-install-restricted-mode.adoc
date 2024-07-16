@@ -46,7 +46,7 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Prüfen 
 
 
 .Schritte
-. Wechseln Sie zum https://aws.amazon.com/marketplace/pp/B018REK8QG["Seite „BlueXP“ im AWS Marketplace"^]
+. Go to the https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["BlueXP Connector listing on the AWS Marketplace"^]
 . Wählen Sie auf der Marketplace-Seite *Weiter zu Abonnieren* und wählen Sie dann *Weiter zu Konfiguration*.
 +
 image:screenshot-subscribe-aws.png["Ein Screenshot, der die Schaltflächen „Weiter zu Abonnieren“ und „Weiter zu Konfiguration“ im AWS Marketplace zeigt."]
