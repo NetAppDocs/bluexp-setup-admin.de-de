@@ -67,7 +67,19 @@ Implementierung über den Azure Marketplace:: Ubuntu 22.04 LTS
 --
 .Privater Modus
 --
-Manuelle Installation:: Ubuntu 22.04 LTS
+Manuelle Installation::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 bis 8.10
+** 9.1 bis 9.3
+
+
+
+
+--
 
 
 --
@@ -87,12 +99,7 @@ Einschränkungen::
 
 --
 Container-Orchestrierungstool:: Podman ist als Container-Orchestrierungstool erforderlich, wenn Sie den Connector auf einem RHEL 8 oder 9 Host installieren. Docker Engine wird mit RHEL 8 und 9 nicht unterstützt.
-+
---
-link:task-install-connector-on-prem.html#step-1-review-host-requirements["Anforderungen für Podman anzeigen"].
-
---
-Bereitstellungsmodus:: RHEL 8 und 9 werden unterstützt, wenn BlueXP im Standardmodus oder im eingeschränkten Modus verwendet wird.
+Bereitstellungsmodus:: RHEL 8 und 9 werden unterstützt, wenn BlueXP im Standardmodus, im eingeschränkten Modus und im privaten Modus verwendet wird.
 Nur neue manuelle Installationen:: RHEL 8 und 9 werden von _New_ Connector-Installationen unterstützt, wenn der Connector manuell auf Hosts installiert wird, die auf Ihrem Standort oder in der Cloud ausgeführt werden.
 RHEL-Upgrades:: Wenn Sie einen bestehenden Connector auf einem RHEL 7-Host verwenden, unterstützen wir keine Aktualisierung des RHEL 7-Betriebssystems auf RHEL 8 oder 9. <<Vorhandene Connectors auf RHEL 7 oder CentOS 7,Erfahren Sie mehr über vorhandene Connectors unter RHEL 7 oder CentOS 7>>.
 
@@ -135,13 +142,28 @@ Docker Engine ist für dieses Betriebssystem erforderlich. Podman wird nicht unt
 
 Auf den folgenden Seiten finden Sie Informationen zu Host-Anforderungen, Podman-Anforderungen und den Schritten zur Installation von Podman und Connector:
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren und Einrichten eines Connectors auf dem Gelände"] (Standardmodus)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["Installieren Sie den Connector manuell in AWS"] (Standardmodus)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Installieren Sie den Connector manuell in Azure"] (Standardmodus)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Installieren Sie den Connector manuell in Google Cloud"] (Standardmodus)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["Bereiten Sie die Bereitstellung im eingeschränkten Modus vor"]
+[role="tabbed-block"]
+====
+.Standardmodus
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren und Einrichten eines Connectors auf dem Gelände"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["Installieren Sie den Connector manuell in AWS"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Installieren Sie den Connector manuell in Azure"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Installieren Sie den Connector manuell in Google Cloud"]
 
 
+--
+.Eingeschränkter Modus
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["Bereiten Sie die Bereitstellung im eingeschränkten Modus vor"]
+
+--
+.Privater Modus
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html["Bereiten Sie die Bereitstellung im privaten Modus vor"]
+
+--
+====
 
 
 === So entdecken Sie Ihre Arbeitsumgebung neu

@@ -22,7 +22,7 @@ Bevor Sie beginnen, sollten Sie ein Verständnis von haben link:concept-netapp-a
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] link:task-prepare-private-mode.html["Vorbereitungen für die Implementierung"]
 [role="quick-margin-list"]
-. Bereiten Sie einen dedizierten Linux-Host vor, der die Anforderungen für CPU, RAM, Festplattenspeicher, Docker Engine und mehr erfüllt.
+. Bereiten Sie einen dedizierten Linux-Host vor, der die Anforderungen für CPU, RAM, Festplattenspeicher, Container-Orchestrierungstool und vieles mehr erfüllt.
 . Richten Sie ein Netzwerk ein, das Zugriff auf die Zielnetzwerke bietet.
 . Richten Sie bei Cloud-Bereitstellungen Berechtigungen in Ihrem Cloud-Provider ein, damit Sie diese Berechtigungen nach der Installation der Software mit dem Connector verknüpfen können.
 

@@ -157,7 +157,7 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie unter:
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
 Auf den folgenden Seiten können Sie die genauen Berechtigungen anzeigen, die der Connector für den täglichen Betrieb benötigt:

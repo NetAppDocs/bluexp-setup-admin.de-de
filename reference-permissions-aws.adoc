@@ -33,7 +33,7 @@ Beachten Sie Folgendes:
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Richten Sie Berechtigungen für eine AWS Marketplace-Implementierung ein"]
 ** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
-** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
+** link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den privaten Modus ein"]
 
 
 
