@@ -56,7 +56,6 @@ Darstellt:: Automatisierte Sicherungsmechanismen schützen Daten vor Datenverlus
 --
 * https://bluexp.netapp.com/cloud-backup["Backup und Recovery"^]
 * https://bluexp.netapp.com/replication["Replizierung"^]
-* https://bluexp.netapp.com/solutions/kubernetes["Datensicherung für Kubernetes-Workloads"^]
 
 
 --

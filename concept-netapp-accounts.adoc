@@ -59,7 +59,7 @@ Eine Arbeitsumgebung ist ein Storage-System. Beispiel:
 
 * Ein Cloud Volumes ONTAP System
 * Einem lokalen ONTAP Cluster erhalten
-* Einen Kubernetes-Cluster erstellen
+* Ein StorageGRID-System
 
 
 link:task-setting-up-netapp-accounts.html["Erfahren Sie, wie Sie einen Arbeitsbereich hinzufügen"].

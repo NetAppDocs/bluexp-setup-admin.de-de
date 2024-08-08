@@ -60,7 +60,7 @@ In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole au
 +
 ** *Name und Tags*: Geben Sie einen Namen und Tags für die Instanz ein.
 ** *Anwendung und Betriebssystembild*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.
-** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.xlarge wird empfohlen).
+** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.2xlarge wird empfohlen).
 ** *Schlüsselpaar (Login)*: Wählen Sie das Schlüsselpaar aus, mit dem Sie eine sichere Verbindung zur Instanz herstellen möchten.
 ** *Netzwerkeinstellungen*: Bearbeiten Sie die Netzwerkeinstellungen nach Bedarf:
 +
@@ -123,7 +123,7 @@ image:screenshot-gov-cloud-mktp.png["Einen Screenshot, der das BlueXP Angebot na
 
 . Befolgen Sie die Anweisungen zur Konfiguration und Bereitstellung der Instanz:
 +
-** *Wählen Sie einen Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen der unterstützten Instanztypen (t3.xlarge wird empfohlen).
+** *Wählen Sie einen Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen der unterstützten Instanztypen (t3.2xlarge wird empfohlen).
 +
 link:task-prepare-restricted-mode.html["Prüfen Sie die Anforderungen an die Instanz"].
 
@@ -174,7 +174,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Erfahre
 Beachten Sie beim Konfigurieren der VM Folgendes:
 
 +
-** *VM-Größe*: Wählen Sie eine VM-Größe, die den CPU- und RAM-Anforderungen entspricht. Wir empfehlen DS3 v2.
+** *VM-Größe*: Wählen Sie eine VM-Größe, die den CPU- und RAM-Anforderungen entspricht. Wir empfehlen Standard_D8s_v3.
 ** *Disks*: Der Connector kann mit HDD- oder SSD-Festplatten optimal funktionieren.
 ** *Öffentliche IP*: Wenn Sie eine öffentliche IP-Adresse mit der Connector VM verwenden möchten, muss die IP-Adresse eine Basis-SKU verwenden, um sicherzustellen, dass BlueXP diese öffentliche IP-Adresse verwendet.
 +

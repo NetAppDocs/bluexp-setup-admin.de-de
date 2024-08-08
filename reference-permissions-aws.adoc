@@ -45,22 +45,6 @@ Wählen Sie Ihre Region aus, um die erforderlichen Richtlinien anzuzeigen:
 ====
 Für Standardregionen werden die Berechtigungen auf zwei Richtlinien verteilt. Zwei Richtlinien sind aufgrund einer maximal zulässigen Zeichengröße für gemanagte Richtlinien in AWS erforderlich.
 
-Die erste Richtlinie bietet Berechtigungen für folgende Dienste:
-
-* Amazon S3 Bucket-Erkennung
-* Backup und Recovery
-* Klassifizierung
-* Cloud Volumes ONTAP
-* FSX für ONTAP
-* Tiering
-
-
-Die zweite Richtlinie bietet Berechtigungen für die folgenden Dienste:
-
-* Edge-Caching
-* Kubernetes
-
-
 [role="tabbed-block"]
 =====
 .Richtlinie #1
@@ -1260,29 +1244,6 @@ Der Connector stellt die folgenden API-Anforderungen für die Implementierung un
 
 | Überprüfen Sie, ob die Verfügbarkeitszone eine AWS Local Zone ist, und überprüfen Sie, ob alle Implementierungsparameter kompatibel sind | ec2:DescribeAvailability Zones | Ja. | Nein | Ja. 
 |===
-
-
-=== Edge-Caching
-
-Der Connector macht die folgenden API-Anfragen zur Implementierung von BlueXP Edge-Caching-Instanzen während der Implementierung:
-
-* Wolkenbildung:DescribeStacks
-* cloudwatch:GetMetricStatistics
-* CloudFormation:ListenStacks
-
-
-
-
-=== Kubernetes
-
-Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von Amazon EKS-Clustern vor:
-
-* ec2:DescribeRegionen
-* eks:ListClusters
-* eks:DescribeCluster
-* iam:GetInstanceProfile
-
-
 
 
 == Änderungsprotokoll

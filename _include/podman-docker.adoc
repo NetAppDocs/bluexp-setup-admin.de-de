@@ -13,7 +13,7 @@ Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevo
 ====
 .Podman
 --
-Installieren Sie Podman 4.6.1.
+Installieren Sie eine unterstützte Version von Podman. <<podman-versions,Zeigen Sie die Podman-Versionen an, die von BlueXP  unterstützt werden>>.
 
 .Schritte
 . Entfernen Sie das Paket podman-Docker, wenn es auf dem Host installiert ist.
@@ -33,16 +33,22 @@ Für Red Hat Enterprise Linux 9:
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+Wobei <version> die unterstützte Version von Podman ist, die Sie installieren. <<podman-versions,Zeigen Sie die Podman-Versionen an, die von BlueXP  unterstützt werden>>.
+
 +
 Für Red Hat Enterprise Linux 8:
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+Wobei <version> die unterstützte Version von Podman ist, die Sie installieren. <<podman-versions,Zeigen Sie die Podman-Versionen an, die von BlueXP  unterstützt werden>>.
+
 . Aktivieren und starten Sie den podman.Socket-Dienst.
 +
 [source, cli]

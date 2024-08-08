@@ -147,9 +147,9 @@ Sie müssen diese Netzwerkanforderung implementieren, nachdem Sie den Connector 
 
 Wenn Sie den Connector erstellen, müssen Sie einen virtuellen Maschinentyp auswählen, der die folgenden Anforderungen erfüllt.
 
-CPU:: 4 Kerne oder 4 vCPUs
-RAM:: 14 GB
-Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen DS3 v2.
+CPU:: 8 Kerne oder 8 vCPUs
+RAM:: 32 GB
+Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen Standard_D8s_v3.
 
 
 
@@ -409,7 +409,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Beachten Sie beim Konfigurieren der VM Folgendes:
 
 +
-** *VM-Größe*: Wählen Sie eine VM-Größe, die den CPU- und RAM-Anforderungen entspricht. Wir empfehlen DS3 v2.
+** *VM-Größe*: Wählen Sie eine VM-Größe, die den CPU- und RAM-Anforderungen entspricht. Wir empfehlen Standard_D8s_v3.
 ** *Disks*: Der Connector kann mit HDD- oder SSD-Festplatten optimal funktionieren.
 ** *Netzwerksicherheitsgruppe*: Der Connector benötigt eingehende Verbindungen über SSH, HTTP und HTTPS.
 +

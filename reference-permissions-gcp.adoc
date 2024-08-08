@@ -296,10 +296,6 @@ includedPermissions:
 - compute.instances.addAccessConfig | Um die BlueXP Klassifizierung zu aktivieren. 
 
 
-| - Container.Clusters.get
-- Container.Clusters.list | Um Kubernetes Cluster zu erkennen, die in der Google Kubernetes Engine ausgeführt werden. 
-
-
 | - compute.instanceGroups.get
 - Compute.addresses.get
 - compute.instances.updateNetworkInterface | Um Storage VMs auf Cloud Volumes ONTAP HA-Paaren zu erstellen und zu managen. 

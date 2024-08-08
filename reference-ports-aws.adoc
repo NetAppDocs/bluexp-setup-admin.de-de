@@ -39,9 +39,6 @@ Für die AWS Sicherheitsgruppe für den Connector sind sowohl ein- als auch ausg
 
 
 | TCP | 3128 | Ermöglicht Cloud Volumes ONTAP den Zugang zum Internet, um AutoSupport-Nachrichten an den NetApp Support zu senden. Nach der Bereitstellung müssen Sie diesen Port manuell öffnen. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Erfahren Sie, wie der Connector als Proxy für AutoSupport-Nachrichten verwendet wird"^] 
-
-
-| TCP | 9060, 9061 | BlueXP Klassifizierung und BlueXP Backup und Recovery in Regierungsregionen lassen sich aktivieren und nutzen. 
 |===
 
 

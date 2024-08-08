@@ -68,10 +68,7 @@ Wenn Sie BlueXP im Standardmodus verwenden, ist für die folgenden Funktionen un
 * Disaster Recovery
 * E-Series Systeme
 * Wirtschaftliche Effizienz ^1^
-* Edge-Caching
 * Google Cloud Storage Buckets
-* Kubernetes-Cluster
-* Migrationsberichte
 * On-Premises-ONTAP-Cluster-Integration in BlueXP-Datenservices
 * Ausfallsicherheit der Betriebsabläufe ^1^
 * Schutz durch Ransomware

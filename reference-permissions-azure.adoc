@@ -166,7 +166,10 @@ Beachten Sie Folgendes:
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -698,38 +701,16 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 
 
 | Verschlüsselung von Speicherkonten bei der Erstellung | Microsoft.ManagedIdentity/userAssignetIdentities/assign/Action | Ja. | Ja. | Nein 
+
+
+.3+| Verwenden Sie die Skalierungseinstellungen von Virtual Machines im flexiblen Orchestrierungsmodus, um bestimmte Zonen für Cloud Volumes ONTAP festzulegen | Microsoft: Compute/virtualMachineScaleSets/Write | Ja. | Nein | Nein 
+
+
+| Microsoft: Compute/virtualMachineScaleSets/Lesen | Ja. | Nein | Nein 
+
+
+| Microsoft: Compute/virtualMachineScaleSets/delete | Nein | Nein | Ja. 
 |===
-
-
-=== Edge-Caching
-
-Der Connector macht die folgenden API-Anfragen, wenn Sie BlueXP Edge Caching verwenden:
-
-* Microsoft.Insights/Metriken/Lesevorgang
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft.Ressourcen/Bereitstellungen/löschen
-
-
-
-
-=== Kubernetes
-
-Der Connector stellt folgende API-Anforderungen zur Erkennung und Verwaltung von Clustern in Azure Kubernetes Service (AKS):
-
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Ressourcen/Abonnements/Standorte/gelesen
-* Microsoft.Ressourcen/Abonnements/Operationsergebnisse/Lesen
-* Microsoft.Resources/Subskriptionen/resourceGroups/read
-* Microsoft.Ressourcen/Abonnements/Ressourcengruppen/Ressourcen/Lesen
-* Microsoft.ContainerService/manageCluster/lesen
-* Microsoft.ContainerService/verwaltungCluster/listClusterUserCredential/Action
-
-
 
 
 === Tiering
@@ -754,6 +735,17 @@ Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== August 07, 2024
+
+Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt, da sie für die Cloud Volumes ONTAP Unterstützung von Skalierungssets von Virtual Machines erforderlich sind:
+
+* Microsoft: Compute/virtualMachineScaleSets/Write
+* Microsoft: Compute/virtualMachineScaleSets/Lesen
+* Microsoft: Compute/virtualMachineScaleSets/delete
+
 
 
 

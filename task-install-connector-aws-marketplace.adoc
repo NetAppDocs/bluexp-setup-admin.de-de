@@ -165,9 +165,9 @@ Sie verfügen jetzt über eine IAM-Rolle, die Sie während der Implementierung �
 
 Wenn Sie den Connector erstellen, müssen Sie einen EC2-Instanztyp auswählen, der die folgenden Anforderungen erfüllt.
 
-CPU:: 4 Kerne oder 4 vCPUs
-RAM:: 14 GB
-Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.xlarge.
+CPU:: 8 Kerne oder 8 vCPUs
+RAM:: 32 GB
+Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.
 
 
 
@@ -204,7 +204,7 @@ In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole au
 +
 ** *Name und Tags*: Geben Sie einen Namen und Tags für die Instanz ein.
 ** *Anwendung und Betriebssystembild*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.
-** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.xlarge wird empfohlen).
+** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.2xlarge wird empfohlen).
 ** *Schlüsselpaar (Login)*: Wählen Sie das Schlüsselpaar aus, mit dem Sie eine sichere Verbindung zur Instanz herstellen möchten.
 ** *Netzwerkeinstellungen*: Bearbeiten Sie die Netzwerkeinstellungen nach Bedarf:
 +
