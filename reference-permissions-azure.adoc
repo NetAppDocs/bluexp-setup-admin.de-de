@@ -701,15 +701,6 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 
 
 | Verschlüsselung von Speicherkonten bei der Erstellung | Microsoft.ManagedIdentity/userAssignetIdentities/assign/Action | Ja. | Ja. | Nein 
-
-
-.3+| Verwenden Sie die Skalierungseinstellungen von Virtual Machines im flexiblen Orchestrierungsmodus, um bestimmte Zonen für Cloud Volumes ONTAP festzulegen | Microsoft: Compute/virtualMachineScaleSets/Write | Ja. | Nein | Nein 
-
-
-| Microsoft: Compute/virtualMachineScaleSets/Lesen | Ja. | Nein | Nein 
-
-
-| Microsoft: Compute/virtualMachineScaleSets/delete | Nein | Nein | Ja. 
 |===
 
 
@@ -735,17 +726,6 @@ Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
-
-
-
-=== August 07, 2024
-
-Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt, da sie für die Cloud Volumes ONTAP Unterstützung von Skalierungssets von Virtual Machines erforderlich sind:
-
-* Microsoft: Compute/virtualMachineScaleSets/Write
-* Microsoft: Compute/virtualMachineScaleSets/Lesen
-* Microsoft: Compute/virtualMachineScaleSets/delete
-
 
 
 
