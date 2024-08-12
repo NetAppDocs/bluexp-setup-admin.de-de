@@ -358,7 +358,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
 | StorageGRID | Nein | Nein 
 
 
-.14+| *Services* | Backup und Recovery | Ja.
+.15+| *Services* | Backup und Recovery | Ja.
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Zeigen Sie die Liste der unterstützten Backup-Ziele für ONTAP-Volume-Daten an"^] | Ja.
 
@@ -393,6 +393,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | Replizierung | Ja. | Ja. 
+
+
+| Software-Updates | Nein | Nein 
 
 
 | Nachhaltigkeit | Nein | Nein 

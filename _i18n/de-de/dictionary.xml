@@ -4199,4 +4199,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Verbesserungen am Support Dashboard</block>
   <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Wenn Sie auf die zugreifen<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, verwendet BlueXP  ein selbstsigniertes Zertifikat für den HTTPS-Zugriff. Falls Ihr Unternehmen dies erfordert, können Sie ein von einer Zertifizierungsstelle signiertes Zertifikat installieren, das einen besseren Schutz bietet als ein selbstsigniertes Zertifikat. Nach der Installation des Zertifikats verwendet BlueXP  das CA-signierte Zertifikat, wenn Benutzer auf die webbasierte Konsole zugreifen.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 August 2024</block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Software-Updates</block>
 </blocks>

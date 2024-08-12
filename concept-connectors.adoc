@@ -50,6 +50,7 @@ Ein Connector ist zwar nicht für die direkte Erkennung eines lokalen ONTAP-Clus
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Weitere Informationen zu den Wiederauffindungs- und Managementoptionen für lokale ONTAP Cluster"^]
 
+* Software-Updates
 * Nachhaltigkeit
 
 
