@@ -21,6 +21,11 @@ Wenn Sie BlueXP zum ersten Mal nutzen, können Sie sich mit einer der folgenden 
 
 BlueXP Anmeldung:: Sie können sich anmelden, indem Sie eine BlueXP Anmeldung erstellen. Für diese Authentifizierungsmethode müssen Sie Ihre E-Mail-Adresse und ein Passwort angeben. Nachdem Sie Ihre E-Mail-Adresse überprüft haben, können Sie sich einloggen und anschließend ein BlueXP Konto erstellen, sofern Sie noch nicht zu einer Person gehören.
 Zugangsdaten für die NetApp Support-Website (NSS:: Wenn Sie bereits über Anmeldedaten für die NetApp Support-Website verfügen, müssen Sie sich nicht bei BlueXP anmelden. Sie melden sich mit Ihren NSS-Zugangsdaten an, und BlueXP fordert Sie auf, ein BlueXP Konto zu erstellen, sofern Sie noch nicht zu einem Konto gehören.
++
+--
+Beachten Sie, dass es sich bei dem Standardpasswort um eine Einmalkennung zur registrierten E-Mail-Adresse handelt. Bei jedem Anmeldeversuch wird eine neue OTP generiert.
+
+--
 Föderierte Verbindung:: Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. Der erste Benutzer im Konto Ihres Unternehmens muss sich bei BlueXP anmelden oder sich über NSS-Anmeldedaten anmelden und dann den Identitätsverbund einrichten. Danach kann sich jeder nachfolgende Benutzer einfach mit seinen SSO-Anmeldeinformationen anmelden.
 +
 --

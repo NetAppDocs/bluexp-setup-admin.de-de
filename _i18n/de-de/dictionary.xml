@@ -4197,7 +4197,13 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Verbesserungen von Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 Februar 2021</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Verbesserungen am Support Dashboard</block>
-  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Wenn Sie auf die zugreifen<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, verwendet BlueXP  ein selbstsigniertes Zertifikat für den HTTPS-Zugriff. Falls Ihr Unternehmen dies erfordert, können Sie ein von einer Zertifizierungsstelle signiertes Zertifikat installieren, das einen besseren Schutz bietet als ein selbstsigniertes Zertifikat. Nach der Installation des Zertifikats verwendet BlueXP  das CA-signierte Zertifikat, wenn Benutzer auf die webbasierte Konsole zugreifen.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 August 2024</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Software-Updates</block>
+  <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">Unterstützte Connector-Versionen</block>
+  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">RHEL 8 und 9 werden ab den folgenden Versionen des Connectors unterstützt:</block>
+  <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 bei Verwendung von BlueXP  im Standardmodus oder eingeschränkter Modus</block>
+  <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42 bei Verwendung von BlueXP  im privaten Modus</block>
+  <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Installieren Sie ein CA-signiertes Zertifikat für den Zugriff auf die Webkonsole</block>
+  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">Standardmäßig verwendet BlueXP  ein selbstsigniertes SSL-Zertifikat, um über eine HTTPS-Verbindung sicheren Zugriff auf das<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> zu ermöglichen. Falls Ihr Unternehmen dies erfordert, können Sie ein von einer Zertifizierungsstelle signiertes Zertifikat installieren, das einen besseren Schutz bietet als ein selbstsigniertes Zertifikat. Nach der Installation des Zertifikats verwendet BlueXP  das CA-signierte Zertifikat, wenn Benutzer auf die webbasierte Konsole zugreifen.</block>
+  <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">Beachten Sie, dass es sich bei dem Standardpasswort um eine Einmalkennung zur registrierten E-Mail-Adresse handelt. Bei jedem Anmeldeversuch wird eine neue OTP generiert.</block>
 </blocks>
