@@ -48,7 +48,7 @@ Wenn Sie BlueXP im privaten Modus verwenden (d. h. der Connector-Host verfügt �
 . Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
 . Führen Sie auf dem Linux-Host die folgenden Befehle aus:
 +
-`./opt/application/netapp/ds/cleanup.sh`
+`/opt/application/netapp/ds/cleanup.sh`
 `rm -rf /opt/application/netapp/ds`
 
 

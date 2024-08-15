@@ -87,11 +87,17 @@ Wenn es für Ihr Unternehmen erforderlich ist, können Sie die interne IP-Adress
 Sie müssen den Backup-Speicherort für jedes Cloud Volumes ONTAP-System aktualisieren.
 
 +
-.. Führen Sie den folgenden Befehl über die Cloud Volumes ONTAP-CLI aus, um das aktuelle Backup-Ziel anzuzeigen:
+.. Legen Sie über die Cloud Volumes ONTAP-CLI die Berechtigungsebene auf erweitert fest:
 +
 [source, cli]
 ----
-system configuration backup show
+set -privilege advanced
+----
+.. Führen Sie den folgenden Befehl aus, um das aktuelle Backup-Ziel anzuzeigen:
++
+[source, cli]
+----
+system configuration backup settings show
 ----
 .. Führen Sie den folgenden Befehl aus, um die IP-Adresse für das Backup-Ziel zu aktualisieren:
 +
