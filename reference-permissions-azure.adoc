@@ -701,6 +701,15 @@ Der Connector stellt folgende API-Anforderungen für die Implementierung und das
 
 
 | Verschlüsselung von Speicherkonten bei der Erstellung | Microsoft.ManagedIdentity/userAssignetIdentities/assign/Action | Ja. | Ja. | Nein 
+
+
+.3+| Verwenden Sie die Skalierungseinstellungen von Virtual Machines im flexiblen Orchestrierungsmodus, um bestimmte Zonen für Cloud Volumes ONTAP festzulegen | Microsoft: Compute/virtualMachineScaleSets/Write | Ja. | Nein | Nein 
+
+
+| Microsoft: Compute/virtualMachineScaleSets/Lesen | Ja. | Nein | Nein 
+
+
+| Microsoft: Compute/virtualMachineScaleSets/delete | Nein | Nein | Ja. 
 |===
 
 
@@ -729,7 +738,18 @@ Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den fo
 
 
 
-=== 5 Dezember 2023
+=== 22 August 2024
+
+Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt, da sie für die Cloud Volumes ONTAP Unterstützung von Skalierungssets von Virtual Machines erforderlich sind:
+
+* Microsoft: Compute/virtualMachineScaleSets/Write
+* Microsoft: Compute/virtualMachineScaleSets/Lesen
+* Microsoft: Compute/virtualMachineScaleSets/delete
+
+
+
+
+=== Bis 5. Dezember 2023
 
 Die folgenden Berechtigungen für das BlueXP Backup und Recovery beim Backup von Volume-Daten auf Azure Blob Storage sind nicht mehr erforderlich:
 
@@ -768,7 +788,7 @@ Diese Genehmigung ist für Cloud Volumes ONTAP weiterhin erforderlich.
 
 
 
-=== 5. Januar 2023
+=== 5 Januar 2023
 
 Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt:
 
