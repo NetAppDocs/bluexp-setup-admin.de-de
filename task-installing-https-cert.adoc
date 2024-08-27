@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
-summary: 'Standardmäßig verwendet BlueXP ein selbstsigniertes Zertifikat für HTTPS-Zugriff auf die Webkonsole. Sie können ein Zertifikat installieren, das von einer Zertifizierungsstelle (CA) signiert wurde. Dies bietet einen besseren Sicherheitsschutz als ein selbstsigniertes Zertifikat.' 
+summary: Installieren Sie ein CA-signiertes Zertifikat für den Benutzerzugriff auf die webbasierte Konsole, wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden. 
 ---
-= Installieren Sie ein CA-signiertes Zertifikat für den Zugriff auf die Webkonsole
+= Installieren Sie ein CA-signiertes Zertifikat für den webbasierten Konsolenzugriff
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 'Standardmäßig verwendet BlueXP ein selbstsigniertes Zertifikat für 
 
 
 [role="lead"]
-Standardmäßig verwendet BlueXP  ein selbstsigniertes SSL-Zertifikat, um über eine HTTPS-Verbindung sicheren Zugriff auf das https://console.bluexp.netapp.com/["BlueXP webbasierte Konsole"^] zu ermöglichen. Falls Ihr Unternehmen dies erfordert, können Sie ein von einer Zertifizierungsstelle signiertes Zertifikat installieren, das einen besseren Schutz bietet als ein selbstsigniertes Zertifikat. Nach der Installation des Zertifikats verwendet BlueXP  das CA-signierte Zertifikat, wenn Benutzer auf die webbasierte Konsole zugreifen.
+Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, kann auf die Benutzeroberfläche über die virtuelle Connector-Maschine zugegriffen werden, die in Ihrer Cloud-Region oder vor Ort bereitgestellt wird. Standardmäßig verwendet BlueXP  ein selbstsigniertes SSL-Zertifikat, um einen sicheren HTTPS-Zugriff auf die webbasierte Konsole zu ermöglichen, die auf dem Connector ausgeführt wird. Falls Ihr Unternehmen dies erfordert, können Sie ein von einer Zertifizierungsstelle signiertes Zertifikat installieren, das einen besseren Schutz bietet als ein selbstsigniertes Zertifikat. Nach der Installation des Zertifikats verwendet BlueXP  das CA-signierte Zertifikat, wenn Benutzer auf die webbasierte Konsole zugreifen.
 
 
 
 == Bevor Sie beginnen
 
-Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#how-to-create-a-connector["Erfahren Sie, wie"].
+Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#how-to-create-a-connector["Erfahren Sie, wie Sie einen Konnektor erstellen"].
 
 
 
@@ -66,7 +66,7 @@ Das Zertifikat muss das mit Privacy Enhanced Mail (PEM) Base-64 codierte X.509-F
 
 
 .Ergebnis
-BlueXP verwendet jetzt das von der Zertifizierungsstelle signierte Zertifikat, um einen sicheren HTTPS-Zugriff zu ermöglichen. Die folgende Abbildung zeigt ein BlueXP-Konto, das für den sicheren Zugriff konfiguriert ist:
+BlueXP verwendet jetzt das von der Zertifizierungsstelle signierte Zertifikat, um einen sicheren HTTPS-Zugriff zu ermöglichen. Die folgende Abbildung zeigt einen Connector, der für sicheren Zugriff konfiguriert ist:
 
 image:screenshot_https_cert.gif["Screenshot: Zeigt die Seite HTTPS Setup an, nachdem Sie ein signiertes Zertifikat installiert haben. Auf der Seite werden die Zertifikateigenschaften und eine Option zum Erneuern des Zertifikats angezeigt."]
 
