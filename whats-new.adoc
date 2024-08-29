@@ -69,7 +69,7 @@ Aufgrund dieser Änderung sieht der Standard-VM-Instanztyp bei der Implementieru
 * Google Cloud: n2-Standard-8
 
 
-Diese Anforderung gilt für neue und vorhandene Steckverbinder.
+Die aktualisierten CPU- und RAM-Anforderungen gelten für alle neuen Connectors. Für bestehende Steckverbinder wird empfohlen, die CPU und den RAM zu erhöhen, um eine verbesserte Leistung und Zuverlässigkeit zu gewährleisten.
 
 
 
