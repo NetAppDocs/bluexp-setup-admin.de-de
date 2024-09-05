@@ -2019,14 +2019,11 @@ Oder</block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole aus starten, da Sie über die Konsole eine IAM-Rolle an die Connector-Instanz anhängen können. Dies ist mit der Aktion * von Website starten* nicht möglich.</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">Befolgen Sie die Anweisungen zur Konfiguration und Bereitstellung der Instanz:</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*Name und Tags*: Geben Sie einen Namen und Tags für die Instanz ein.</block>
-  <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*Anwendung und Betriebssystembild*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">Prüfen Sie die Anforderungen an die Instanz</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*Schlüsselpaar (Login)*: Wählen Sie das Schlüsselpaar aus, mit dem Sie eine sichere Verbindung zur Instanz herstellen möchten.</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*Netzwerkeinstellungen*: Bearbeiten Sie die Netzwerkeinstellungen nach Bedarf:</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">Wählen Sie die gewünschte VPC und das Subnetz.</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">Geben Sie an, ob die Instanz eine öffentliche IP-Adresse haben soll.</block>
-  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">Legen Sie Firewall-Einstellungen fest, die die erforderlichen Verbindungsmethoden für die Connector-Instanz SSH, HTTP und HTTPS aktivieren.</block>
-  <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">Für spezifische Konfigurationen sind noch einige Regeln erforderlich.</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*Erweiterte Details*: Unter *IAM Instance profile* wählen Sie die IAM-Rolle, die die erforderlichen Berechtigungen für den Connector enthält.</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS startet die Software mit den angegebenen Einstellungen. Die Connector-Instanz und -Software sollten in etwa fünf Minuten ausgeführt werden.</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">Identity Federation ermöglicht Single Sign-On mit BlueXP, sodass Benutzer sich mithilfe von Anmeldedaten Ihrer Unternehmensidentität anmelden können. Erste Schritte sind die Zusammenarbeit von Identity Federation mit BlueXP und ein Überblick über den Setup-Prozess möglich.</block>
@@ -3049,9 +3046,6 @@ Dieser Endpunkt ist nur in Regionen der Azure-Regierung erforderlich.</block>
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">Wählen Sie *Amazon Web Services* als Ihren Cloud-Provider und wählen Sie *Weiter*.</block>
   <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">Wählen Sie *Weiter*, um die Bereitstellung mithilfe des Produktleitfadens vorzubereiten. Jeder Schritt im Produktleitfaden enthält die Informationen, die auf dieser Seite der Dokumentation enthalten sind.</block>
   <block id="43c314e15e760781773285daf91c0ad5" category="list-text">Wählen Sie *Skip to Deployment*, wenn Sie bereits vorbereitet haben, indem Sie die Schritte auf dieser Seite befolgen.</block>
-  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">Wählen Sie auf der Marketplace-Seite *Weiter zu Abonnieren* und wählen Sie dann *Weiter zu Konfiguration*.</block>
-  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">Ändern Sie eine der Standardoptionen, und wählen Sie *Weiter zum Starten*.</block>
-  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">Wählen Sie unter *Aktion auswählen* die Option *über EC2 starten* aus und wählen Sie dann *Start* aus.</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*Zusammenfassung*: Überprüfen Sie die Zusammenfassung und wählen Sie *Launch Instance*.</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">Wählen Sie *Start*.</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">Wählen Sie *Jetzt holen* und wählen Sie dann *Weiter*.</block>
@@ -4023,7 +4017,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 Juli 2024</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">Juli 2024 (Version 1.33)</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 Juni 2024</block>
-  <block id="d2c0dfc6934302fa99dba597124c94a2" category="list-text">*Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.2xlarge wird empfohlen).</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 Kerne oder 8 vCPUs</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.</block>
@@ -4221,4 +4214,14 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Erfahren Sie mehr über die Version Cloud Volumes ONTAP 9.15.1</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">Die aktualisierten CPU- und RAM-Anforderungen gelten für alle neuen Connectors. Für bestehende Steckverbinder wird empfohlen, die CPU und den RAM zu erhöhen, um eine verbesserte Leistung und Zuverlässigkeit zu gewährleisten.</block>
+  <block id="f24abcf11233503db09edba21b8e5cdb" category="list-text">Wählen Sie auf der Marketplace-Seite *Weiter zum Abonnieren*.</block>
+  <block id="b57313d1cbeb83e2be3f889cd8fc5526" category="list-text">Um die Software zu abonnieren, wählen Sie *Bedingungen akzeptieren*.</block>
+  <block id="b33dcc2933561e1bbdc43d2b68e8ab24" category="paragraph">Das Abonnement kann einige Minuten dauern.</block>
+  <block id="11c2c43373c3fc2b79b1a6f46f2372bf" category="list-text">Wählen Sie nach Abschluss des Abonnements *Weiter zur Konfiguration* aus.</block>
+  <block id="84bdd294c5ae866bbc0419f7bba9f368" category="paragraph"><block ref="84bdd294c5ae866bbc0419f7bba9f368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2630dda750b0b4c54559adbe4e5daa21" category="list-text">Stellen Sie auf der Seite *Configure this Software* sicher, dass Sie die richtige Region ausgewählt haben, und wählen Sie dann *Continue to Launch* aus.</block>
+  <block id="4a3fda2105dbdf853aa237113073a9f0" category="list-text">Wählen Sie auf der Seite *Diese Software starten* unter *Aktion auswählen* *über EC2 starten* aus und wählen Sie dann *Start* aus.</block>
+  <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*Anwendung und Betriebssystem-Images*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.</block>
+  <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.2xlarge ist vorausgewählt und empfohlen).</block>
+  <block id="2ff5664491ece284c069195a204d44c0" category="list-text">Geben Sie die Einstellungen für Sicherheitsgruppen an, die die erforderlichen Verbindungsmethoden für die Connector-Instanz aktivieren: SSH, HTTP und HTTPS.</block>
 </blocks>

@@ -4,29 +4,34 @@
 
 .Schritte
 . Go to the https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["BlueXP Connector listing on the AWS Marketplace"^]
-. Wählen Sie auf der Marketplace-Seite *Weiter zu Abonnieren* und wählen Sie dann *Weiter zu Konfiguration*.
+. Wählen Sie auf der Marketplace-Seite *Weiter zum Abonnieren*.
 +
 image:screenshot-subscribe-aws.png["Ein Screenshot, der die Schaltflächen „Weiter zu Abonnieren“ und „Weiter zu Konfiguration“ im AWS Marketplace zeigt."]
 
-. Ändern Sie eine der Standardoptionen, und wählen Sie *Weiter zum Starten*.
-. Wählen Sie unter *Aktion auswählen* die Option *über EC2 starten* aus und wählen Sie dann *Start* aus.
+. Um die Software zu abonnieren, wählen Sie *Bedingungen akzeptieren*.
++
+Das Abonnement kann einige Minuten dauern.
+
+. Wählen Sie nach Abschluss des Abonnements *Weiter zur Konfiguration* aus.
++
+image:screenshot-subscribe-aws-configuration.png["Ein Screenshot, der die Schaltflächen „Weiter zu Abonnieren“ und „Weiter zu Konfiguration“ im AWS Marketplace zeigt."]
+
+. Stellen Sie auf der Seite *Configure this Software* sicher, dass Sie die richtige Region ausgewählt haben, und wählen Sie dann *Continue to Launch* aus.
+. Wählen Sie auf der Seite *Diese Software starten* unter *Aktion auswählen* *über EC2 starten* aus und wählen Sie dann *Start* aus.
 +
 In diesen Schritten wird beschrieben, wie Sie die Instanz von der EC2-Konsole aus starten, da Sie über die Konsole eine IAM-Rolle an die Connector-Instanz anhängen können. Dies ist mit der Aktion * von Website starten* nicht möglich.
 
 . Befolgen Sie die Anweisungen zur Konfiguration und Bereitstellung der Instanz:
 +
 ** *Name und Tags*: Geben Sie einen Namen und Tags für die Instanz ein.
-** *Anwendung und Betriebssystembild*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.
-** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.2xlarge wird empfohlen).
+** *Anwendung und Betriebssystem-Images*: Überspringen Sie diesen Abschnitt. Der Stecker AMI ist bereits ausgewählt.
+** *Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.2xlarge ist vorausgewählt und empfohlen).
 ** *Schlüsselpaar (Login)*: Wählen Sie das Schlüsselpaar aus, mit dem Sie eine sichere Verbindung zur Instanz herstellen möchten.
 ** *Netzwerkeinstellungen*: Bearbeiten Sie die Netzwerkeinstellungen nach Bedarf:
 +
 *** Wählen Sie die gewünschte VPC und das Subnetz.
 *** Geben Sie an, ob die Instanz eine öffentliche IP-Adresse haben soll.
-*** Legen Sie Firewall-Einstellungen fest, die die erforderlichen Verbindungsmethoden für die Connector-Instanz SSH, HTTP und HTTPS aktivieren.
-+
-Für spezifische Konfigurationen sind noch einige Regeln erforderlich.
-
+*** Geben Sie die Einstellungen für Sicherheitsgruppen an, die die erforderlichen Verbindungsmethoden für die Connector-Instanz aktivieren: SSH, HTTP und HTTPS.
 +
 link:reference-ports-aws.html["Sicherheitsgruppen-Regeln für AWS ansehen"].
 
