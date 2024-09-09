@@ -152,8 +152,6 @@ Beachten Sie Folgendes:
                     "Microsoft.Network/networkSecurityGroups/securityRules/write",
                     "Microsoft.Network/applicationSecurityGroups/delete",
                     "Microsoft.Network/networkSecurityGroups/securityRules/delete",
-                    "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
-                    "Microsoft.ContainerService/managedClusters/read",
                     "Microsoft.Synapse/workspaces/write",
                     "Microsoft.Synapse/workspaces/read",
                     "Microsoft.Synapse/workspaces/delete",
@@ -735,6 +733,16 @@ Der Connector stellt folgende API-Anforderungen für den täglichen Betrieb.
 == Änderungsprotokoll
 
 Wenn Berechtigungen hinzugefügt und entfernt werden, werden wir diese in den folgenden Abschnitten zur Kenntnis nehmen.
+
+
+
+=== 9 September 2024
+
+Die folgenden Berechtigungen wurden aus der JSON-Richtlinie entfernt, da BlueXP  die Erkennung und das Management von Kubernetes-Clustern nicht mehr unterstützt:
+
+* Microsoft.ContainerService/verwaltungCluster/listClusterUserCredential/Action
+* Microsoft.ContainerService/manageCluster/lesen
+
 
 
 

@@ -14,10 +14,12 @@ summary: Zum Erstellen eines Connectors aus dem Azure Marketplace müssen Sie da
 
 
 [role="lead"]
-Zum Erstellen eines Connectors aus dem Azure Marketplace müssen Sie das Netzwerk einrichten, die Azure Berechtigungen vorbereiten, die Instanzanforderungen prüfen und dann den Connector erstellen.
+Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist, einen Connector in Azure direkt aus dem Azure Marketplace zu erstellen. Zum Erstellen eines Connectors aus dem Azure Marketplace müssen Sie das Netzwerk einrichten, die Azure Berechtigungen vorbereiten, die Instanzanforderungen prüfen und dann den Connector erstellen.
 
 .Bevor Sie beginnen
-Sie sollten es überprüfen link:reference-limitations.html["Einschränkungen an den Anschlüssen"].
+* Sie sollten eine habenlink:concept-connectors.html["Verständnis von Steckverbindern"].
+* Sie sollten es überprüfen link:reference-limitations.html["Einschränkungen an den Anschlüssen"].
+
 
 
 

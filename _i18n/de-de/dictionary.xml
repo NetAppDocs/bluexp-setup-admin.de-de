@@ -489,7 +489,6 @@
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Funktionen</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">Die BlueXP Plattform umfasst vier Hauptsäulen des Datenmanagements: Storage, Mobilität, Sicherung sowie Analyse und Kontrolle.</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="list-text">Storage</block>
-  <block id="14e51ced0d5dc6abc5f091838e1fd7a8" category="list-text">Erkennen, implementieren und managen Sie Storage in AWS, Azure, Google Cloud oder vor Ort.</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
   <block id="4066a2484747588656be41f7c6f52cf0" category="list-text">Einrichtung und Verwendung<block ref="f57700eb7f072532c25bc35835afbefb" category="inline-link-rx"></block> Für effizientes, Cloud-übergreifendes Multi-Protokoll-Datenmanagement</block>
   <block id="17a28f89a71d8bcba39452a2fd7343db" category="list-text">Cloud-File-Storage-Services einrichten und verwenden:</block>
@@ -1042,8 +1041,6 @@
   <block id="9eda901ca4a8d939f48fdc3e1139b8d2" category="list-text"><block ref="9eda901ca4a8d939f48fdc3e1139b8d2" category="inline-link-macro-rx"></block></block>
   <block id="45f5c7b6248438f849cf619c647c63e4" category="paragraph">Wenn Sie BlueXP Services in AWS oder Azure mit einem On-Premises Connector nutzen möchten, müssen Sie Berechtigungen bei Ihrem Cloud-Provider einrichten, damit Sie nach der Installation die Zugangsdaten zum Connector hinzufügen können.</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
-  <block id="e1ef579b405a3d1b9ab7d84e56f110d3" category="paragraph">Wenn der Connector vor Ort installiert ist, müssen Sie BlueXP mit AWS Berechtigungen versehen, indem Sie Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen hinzufügen.</block>
-  <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">Sie müssen diese Authentifizierungsmethode verwenden, wenn der Connector vor Ort installiert ist. Sie können keine IAM-Rolle verwenden.</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">Sie sollten nun über Zugriffsschlüssel für einen IAM-Benutzer verfügen, der über die erforderlichen Berechtigungen verfügt. Nach der Installation des Connectors müssen Sie diese Anmeldeinformationen mit dem Connector von BlueXP verknüpfen.</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
   <block id="2189e37a9b7c751d238d4e13fd8f634b" category="list-text">Stellen Sie sicher, dass Sie in Azure über die Berechtigungen zum Erstellen einer Active Directory-Anwendung und zum Zuweisen der Anwendung zu einer Rolle verfügen.</block>
@@ -1095,15 +1092,11 @@
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">Geben Sie eine Beschreibung des Geheimnisses und eine Dauer an.</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">Kopieren Sie den Wert des Clientgeheimnisses.</block>
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">Ihr Service-Principal ist jetzt eingerichtet und Sie sollten die Anwendungs- (Client-)ID, die Verzeichnis- (Mandanten-)ID und den Wert des Clientgeheimnisses kopiert haben. Nach der Installation des Connectors müssen Sie diese Anmeldeinformationen mit dem Connector von BlueXP verknüpfen.</block>
-  <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">Installieren Sie einen Connector vor Ort, melden Sie sich anschließend an und richten Sie ihn für die Nutzung mit Ihrem BlueXP Konto ein.</block>
-  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">Installieren und Einrichten eines Connectors auf dem Gelände</block>
-  <block id="430c29468d032364c0f94cffe3c8a10b" category="paragraph">Laden Sie die Connector-Software herunter, und installieren Sie sie auf einem vorhandenen Linux-Host vor Ort.</block>
   <block id="e832abccfbda1e1df2db47f59705c74c" category="paragraph">Der Connector ist jetzt installiert. Am Ende der Installation wird der Connector-Dienst (occm) zweimal neu gestartet, wenn Sie einen Proxy-Server angegeben haben.</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">Öffnen Sie einen Webbrowser, und geben Sie die folgende URL ein:</block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_Ipaddress_ kann abhängig von der Konfiguration des Hosts localhost, eine private IP-Adresse oder eine öffentliche IP-Adresse sein. Wenn sich der Connector beispielsweise ohne öffentliche IP-Adresse in der Public Cloud befindet, müssen Sie eine private IP-Adresse von einem Host eingeben, der eine Verbindung zum Connector-Host hat.</block>
   <block id="2b7648ae4507d851df87a08114c2876e" category="list-text">Anmelden oder anmelden.</block>
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">Richten Sie nach der Anmeldung BlueXP ein:</block>
-  <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. (Außerdem wird der eingeschränkte Modus nicht unterstützt, wenn der Connector vor Ort installiert ist.)</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">BlueXP ist jetzt mit dem Connector eingerichtet, den Sie gerade installiert haben.</block>
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">Nachdem Sie BlueXP im eingeschränkten Modus eingerichtet haben, können Sie die BlueXP Services, die mit eingeschränktem Modus unterstützt werden, nutzen.</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">Nächste Schritte (eingeschränkter Modus)</block>
@@ -1994,7 +1987,6 @@ Oder</block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link-macro">Erfahren Sie, wie Sie in AWS einen Connector erstellen können</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link-macro">Erfahren Sie, wie Sie in Azure einen Connector erstellen</block>
   <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link-macro">Erfahren Sie, wie Sie einen Connector in Google Cloud erstellen</block>
-  <block id="b279d324941aabfaed1bf558f37a98bc" category="inline-link-macro">Erfahren Sie, wie Sie einen Konnektor vor Ort erstellen</block>
   <block id="11f541a08afbd320cd13f0c88b417a4b" category="paragraph">Wenn Sie BlueXP Services für das Management von Storage und Daten in Google Cloud nutzen möchten, muss der Connector in Google Cloud ausgeführt werden.</block>
   <block id="aca02eea323174e41d57225a762eb959" category="list-text">Eine AWS-Authentifizierungsmethode: Entweder eine IAM-Rolle oder Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen.</block>
   <block id="3f4713c771af26689845a2dfeec86b37" category="inline-link-macro">Erfahren Sie, wie Sie AWS-Berechtigungen einrichten</block>
@@ -2584,7 +2576,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="0db58c0529496c0e926af5f8c9002335" category="list-text"><block ref="60d271fc50ad3f5d03a8767578822d7b" category="inline-xref-macro-rx"></block></block>
   <block id="6fca6b826d3e4d0980a08d26e6cf905f" category="section-title">Erteilen Sie Berechtigungen, indem Sie eine IAM-Rolle in einem anderen Konto übernehmen</block>
   <block id="cc9abb75b8a4618db30dc1fa4729b191" category="paragraph">Sie können eine Vertrauensbeziehung zwischen dem Quell-AWS-Konto einrichten, in dem Sie die Connector-Instanz und anderen AWS-Konten mithilfe von IAM-Rollen bereitgestellt haben. Dann würden Sie BlueXP über die vertrauenswürdigen Konten mit dem ARN der IAM-Rollen versorgen.</block>
-  <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">Wenn der Connector vor Ort installiert ist, können Sie diese Authentifizierungsmethode nicht verwenden. AWS-Schlüssel müssen verwendet werden.</block>
   <block id="2c76935f38c3f21d03c203f5311fc4f4" category="list-text">Rufen Sie die IAM-Konsole im Zielkonto auf, in dem Sie dem Connector Berechtigungen erteilen möchten.</block>
   <block id="61b72a48f16d18bfce7a18c7ce80f123" category="list-text">Wählen Sie unter Access Management die Option *Rollen &gt; Rolle erstellen* aus, und befolgen Sie die Schritte zum Erstellen der Rolle.</block>
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">Gehen Sie wie folgt vor:</block>
@@ -2641,7 +2632,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">Bevor Sie beginnen, sollten Sie sich ein Bild davon machen, wie BlueXP im privaten Modus funktioniert.</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">Erfahren Sie, wie der private Modus funktioniert</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>.</block>
-  <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">Im privaten Modus können Sie den Connector vor Ort oder in der Cloud installieren, indem Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren.</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">Endpunkte für den täglichen Betrieb</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
@@ -2652,7 +2642,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">Aktivieren Sie eine vom System zugewiesene gemanagte Identität auf der VM, bei der Sie den Connector installieren möchten, damit Sie die erforderlichen Azure-Berechtigungen über eine benutzerdefinierte Rolle bereitstellen können.</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXP bietet mehrere Implementierungsmodi, die es Ihnen ermöglichen, BlueXP entsprechend Ihren Geschäfts- und Sicherheitsanforderungen zu nutzen. Der Standardmodus nutzt die BlueXP SaaS-Ebene, um volle Funktionalität bereitzustellen. Für Unternehmen mit Konnektivitätsbeschränkungen stehen der eingeschränkte Modus und der private Modus zur Verfügung.</block>
   <block id="534fd3c26a29e770ad82ea272b33fadf" category="paragraph">BlueXP bietet mehrere _Implementierungsmodi_, die es Ihnen ermöglichen, BlueXP entsprechend Ihren geschäftlichen und Sicherheitsanforderungen zu nutzen. _Standard Mode_ nutzt die BlueXP SaaS-Ebene für die volle Funktionalität. _Restricted Mode_ und _Private Mode_ stehen Unternehmen mit Konnektivitätsbeschränkungen zur Verfügung.</block>
-  <block id="3bee795df059c001dd8dffe355235790" category="paragraph">Während BlueXP den Datenfluss, die Kommunikation und die Datenübertragung im eingeschränkten Modus oder im Private-Modus hemmt, liegt es in Ihrer Verantwortung, dass Ihre Umgebung (lokal und in der Cloud) den erforderlichen Vorschriften entspricht.</block>
   <block id="3003441b99515b8ab9a5d515870819a4" category="paragraph">BlueXP bietet für Ihr Konto folgende Implementierungsmodi. Jeder Modus unterscheidet sich in Bezug auf Anforderungen für ausgehende Verbindungen, Bereitstellungsort, Installationsprozess, Authentifizierungsmethode, verfügbare Daten- und Speicherservices sowie Abrechnungsmethoden.</block>
   <block id="e3795acf5a54c95b1889f3c7c929ab50" category="list-text">BlueXP ist für Benutzer über die webbasierte Konsole als Cloud-Service zugänglich. Abhängig von den geplanten BlueXP Services erstellt ein BlueXP Administrator einen oder mehrere Connectors, um Daten in Ihrer Hybrid-Cloud-Umgebung zu managen.</block>
   <block id="299192dda00d9cbb51cb176b72e6f464" category="paragraph">Dieser Modus verwendet verschlüsselte Datenübertragung über das öffentliche Internet.</block>
@@ -2660,7 +2649,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="90fed451e3dab076e7f87c02c10b6e5d" category="paragraph">Dieser Modus wird in der Regel von staatlichen und lokalen Behörden und regulierten Unternehmen verwendet.</block>
   <block id="5120a32615b91a5de80fd01e90d53677" category="inline-xref">Erfahren Sie mehr über ausgehende Verbindungen zur SaaS-Ebene</block>
   <block id="26791add2e44035ab424c178d3f4c61f" category="paragraph"><block ref="4a9f480c757559738dc0bf80da949e99" category="inline-xref-macro-rx"></block>.</block>
-  <block id="9c39d5b8fd0bf20212456c9aceeaea5b" category="list-text">Ein BlueXP Connector wird lokal oder in der Cloud (in einer sicheren Region, einer souveränen Cloud-Region oder einer kommerziellen Region) installiert und verfügt über _no_ Konnektivität zur BlueXP SaaS-Schicht. Benutzer greifen lokal über die webbasierte Konsole auf BlueXP zu, die über den Connector verfügbar ist und nicht über die SaaS-Schicht.</block>
   <block id="f7a5a85e5651d269f8be77a9a2e84792" category="inline-link">Azure IL6</block>
   <block id="55fbab9267d4e9aae7daef26b314226f" category="paragraph">Die folgende Tabelle enthält einen Vergleich dieser Modi.</block>
   <block id="2113372caa2625fc2eac79b5c72bd737" category="cell">Verbindung zur BlueXP SaaS-Ebene erforderlich?</block>
@@ -2751,18 +2739,13 @@ Wenn Sie ein On-Premises-Cluster mit einem Connector ermitteln, wird die erweite
   <block id="999ae70b12514c648b606bf0f3afabcb" category="inline-link-macro">Erfahren Sie, wie Sie mit dem eingeschränkten Modus beginnen</block>
   <block id="3adc000476556fe48061c952620b6394" category="list-text"><block ref="b25261838e688763c403e651d058df29" category="inline-link-macro-rx"></block>.</block>
   <block id="cdd00bf67dbaadd905bfd3009de402e0" category="list-text"><block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>.</block>
-  <block id="f6c6b4fd2db0ea773400bb3972e0cb6a" category="paragraph">Im privaten Modus können Sie einen Connector entweder vor Ort oder in der Cloud installieren und dann BlueXP für das Datenmanagement in Ihrer gesamten Hybrid Cloud verwenden. Die SaaS-Ebene von BlueXP wird nicht verbunden.</block>
   <block id="1ba924375f21d42237f7e64fdfaa9eb2" category="paragraph">Die folgende Abbildung zeigt ein Beispiel einer Private-Mode-Implementierung, bei der der Connector in der Cloud installiert ist und sowohl Cloud Volumes ONTAP als auch einen lokalen ONTAP-Cluster managt.</block>
   <block id="a5fee7a4c74b489c2e8e8d39b686e4e8" category="inline-image-macro">Ein Konzeptbild, das ein virtuelles Netzwerk in der Cloud zeigt, in dem ein Connector ausgeführt wird und Zugriff auf die webbasierte Konsole bietet sowie Cloud Volumes ONTAP und einen AFF Cluster in einem lokalen Datacenter managt.</block>
   <block id="a694033f641f0571740cee35545e0d7b" category="paragraph"><block ref="a694033f641f0571740cee35545e0d7b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="91e148a438d522c7bf22cb76961971bb" category="paragraph">Gleichzeitig zeigt die zweite Abbildung ein Beispiel einer Private-Mode-Implementierung, bei der der Connector vor Ort installiert ist, einen lokalen ONTAP-Cluster managt und Zugriff auf unterstützte BlueXP Datenservices bietet.</block>
   <block id="abe210b497cdf1c7a95420fde5e0a084" category="inline-image-macro">Ein konzeptuelles Bild zeigt ein lokales Datacenter, in dem ein Connector ausgeführt wird und Zugriff auf die webbasierte Konsole BlueXP Datenservices bietet. Es managt auch ein AFF Cluster in einem lokalen Datacenter.</block>
   <block id="f93e5962b5e90d7eb1d0880c090f849c" category="paragraph"><block ref="f93e5962b5e90d7eb1d0880c090f849c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="310027a7e917a90953e50ed1339f3406" category="paragraph">BlueXP arbeitet im privaten Modus wie folgt:</block>
-  <block id="f3c1a94d2912b274af9305a55f3a5898" category="list-text">Im privaten Modus wird der Connector in der Cloud oder On-Premises unterstützt.</block>
-  <block id="353a8aa5f642372473dec3b281845de2" category="list-text">Manuelle Installationen des Connectors werden auf Ihrem eigenen Linux-Host in der Cloud oder vor Ort unterstützt.</block>
   <block id="7de085033718a90f09298783df66d7f7" category="list-text">Sie müssen die Connector-Software manuell aktualisieren. Die Connector Software wird in undefinierten Intervallen auf der NetApp Support Website veröffentlicht.</block>
-  <block id="f455e039c0995560727cdaff463a454e" category="list-text">Auf die Benutzeroberfläche kann über den Connector zugegriffen werden, der in Ihrer Cloud-Region oder vor Ort bereitgestellt wird.</block>
   <block id="ed7ea5a66dc5685a9fd16fc1534926fe" category="list-text">API-Aufrufe werden an die virtuelle Connector-Maschine vorgenommen.</block>
   <block id="9ebc1b25e2041947b9103da47cd1c08a" category="list-text">Die Authentifizierung erfolgt über lokale Benutzerverwaltung und -Zugriff. Authentifizierung wird nicht über den Cloud-Service von BlueXP bereitgestellt.</block>
   <block id="9155ed0ad2860f7dbb98e01dbb6fa42d" category="list-text">Unterstützte BlueXP Services in Cloud-Implementierungen</block>
@@ -2855,7 +2838,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">Beginnen Sie mit dem Standardmodus</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">Melden Sie sich bei BlueXP an</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">Einen Konnektor erstellen</block>
-  <block id="4df40e141b0559f15db8f84f78aed013" category="sidebar">On-Premises</block>
   <block id="f559abff8763b27adc86fdb8b373f2c7" category="sidebar">Abonnieren Sie BlueXP</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">Was Sie als Nächstes tun können</block>
   <block id="2e765525323590e2ff4d6c84d224de36" category="sidebar">Beginnen Sie mit dem eingeschränkten Modus</block>
@@ -3224,7 +3206,6 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
   <block id="df29cf5b19d5f16c92a7f553f92e9d4a" category="list-text"><block ref="df29cf5b19d5f16c92a7f553f92e9d4a" category="inline-link-macro-rx"></block></block>
   <block id="57e58ed1cb42b3b5aaba112bc48563a6" category="list-text"><block ref="57e58ed1cb42b3b5aaba112bc48563a6" category="inline-link-macro-rx"></block></block>
   <block id="6563bdfaccc3983704cae5a10067fc4e" category="list-text"><block ref="6563bdfaccc3983704cae5a10067fc4e" category="inline-link-macro-rx"></block></block>
-  <block id="7f80da371418dd1762f659141a966f43" category="list-text"><block ref="7f80da371418dd1762f659141a966f43" category="inline-link-macro-rx"></block></block>
   <block id="6400bfdbde707064e9b4e7768b35a3f9" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="fa53da48b043041a5a8508c7d2d93104" category="inline-link-macro-rx"></block></block>
   <block id="e5d3b66eefdb2ac002721447f12c550c" category="summary">Bei der Nutzung der webbasierten Konsole von BlueXP, die über die SaaS-Schicht bereitgestellt wird, werden mehrere Endpunkte kontaktiert, wenn einige Administrationsaufgaben durchgeführt werden. Computer, die auf die BlueXP Konsole zugreifen, sollten über Verbindungen zu diesen Endpunkten verfügen.</block>
   <block id="2ae779b46b9a3564f7c1c2e6ccea2296" category="paragraph">Diese Endpunkte werden von dem Computer eines Benutzers kontaktiert, wenn bestimmte Aktionen über die BlueXP Konsole durchgeführt werden. Sie sollten auch die Netzwerkanforderungen für den Connector und bestimmte BlueXP Services beachten. Weitere Informationen finden Sie unter den entsprechenden Links am Ende dieser Seite.</block>
@@ -3540,7 +3521,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="b750da0ca2dca4110c6636dcb1ebbe6f" category="paragraph">Jetzt haben Sie einen Client-Schlüssel, den BlueXP zur Authentifizierung mit Microsoft Entra ID verwenden kann.</block>
   <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">Erfahren Sie mehr über die Verwendung von Microsoft Azure Active Directory für das Identitätsmanagement durch NetApp</block>
   <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
-  <block id="8b0acfdcefc686d1057ba6e0a6e5660e" category="paragraph">Wenn der Connector vor Ort installiert ist, müssen Sie BlueXP mit Azure-Berechtigungen versehen, indem Sie einen Service-Prinzipal in der Microsoft Entra-ID einrichten und die für BlueXP erforderlichen Azure-Berechtigungen erhalten.</block>
   <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">Erstellen Sie eine benutzerdefinierte Azure Rolle, die Sie Ihrem Azure Konto oder einem Microsoft Entra-Dienstprinzipal zuweisen können. BlueXP authentifiziert sich mit Azure und verwendet diese Berechtigungen, um die Connector-Instanz in Ihrem Auftrag zu erstellen.</block>
   <block id="4dc29cf7d5ceac3415d2828b1afce709" category="list-text">Geben Sie Details zu einem Dienstprinzipal von Microsoft Entra an. Dieser Service-Principal erfordert auch spezielle Berechtigungen.</block>
   <block id="b4dba39cc2b8d5c6f4a03822fd76264e" category="list-text">Wählen Sie *Active Directory Service Principal* aus, um Informationen über den Microsoft Entra Service Principal einzugeben, der die erforderlichen Berechtigungen gewährt:</block>
@@ -3730,7 +3710,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 oder eine beliebige Version nach dieser Version</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Wird während des Cloud Volumes ONTAP-Upgrade-Prozesses verwendet</block>
   <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">Docker Engine ist auf dem Host erforderlich, bevor Sie den Connector installieren.</block>
-  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">Die maximal unterstützte Version ist 25.0.5.</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Wir haben die Anforderungen für die Docker Engine aktualisiert, um die maximal unterstützte Version des Connectors anzugeben. Diese ist 25.0.5. Die unterstützte Mindestversion ist immer noch 19.3.1.</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">Host-Anforderungen des Connectors anzeigen</block>
@@ -3971,7 +3950,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine ist für Ubuntu erforderlich.</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">Am 30. Juni 2024 erreichte RHEL 7 das Ende der Wartung (End of Maintenance, EOM), während CentOS 7 das Ende des Lebenszyklus (End of Life, EOL) erreichte. NetApp hat die Unterstützung des Connectors auf diesen Linux-Distributionen am 30. Juni 2024 eingestellt.</block>
   <block id="547a1a61c710e2dc947389da0967d175" category="list-text">Die unterstützte Version ist mindestens 23.0.6.</block>
-  <block id="7a96db7c574c0cfb888eceb8119d9bac" category="paragraph">Installieren Sie eine Version der Docker Engine zwischen 23.0.6 und 25.0.5.</block>
   <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">Melden Sie sich bei BlueXP an oder melden Sie sich an</block>
   <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie mit BlueXP beginnen, müssen Sie sich als Erstes anmelden oder sich mit Ihren Zugangsdaten für die NetApp Support-Website oder SSO-Anmeldeinformationen aus Ihrem Unternehmensverzeichnis anmelden.</block>
   <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">Wenn Sie BlueXP zum ersten Mal nutzen, können Sie sich mit einer der folgenden Optionen anmelden oder sich anmelden:</block>
@@ -4002,7 +3980,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">Go to the<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
   <block id="6c3a57872e006099844f13049e7b1891" category="list-text"><block ref="6c3a57872e006099844f13049e7b1891" category="inline-link-macro-rx"></block></block>
   <block id="00e6604adbc44c85a390ab929076d0bb" category="list-text">RHEL 8 und 9 werden unterstützt, wenn BlueXP im Standardmodus, im eingeschränkten Modus und im privaten Modus verwendet wird.</block>
-  <block id="f3e58ec45f13e79fe493e5ac40efdaef" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block></block>
   <block id="ce02a119fe20803f37d74f2f696ae608" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block></block>
   <block id="adf5c1237bee96f4b87ff5eb3fd3c25b" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block></block>
   <block id="5f47d3df7f8a6f7d2b2dc0a0630af052" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block></block>
@@ -4021,13 +3998,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.</block>
   <block id="021caa7094e7de94c50c2e35da292351" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen Standard_D8s_v3.</block>
   <block id="bff17a7a57b9d5cdc97a4f823a72230f" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen n2-Standard-8.</block>
-  <block id="8abbe747192e82bfa2032f017a838560" category="cell">RHEL-Version</block>
-  <block id="a364bd44d579f5e34c65860ec7315249" category="cell">Unterstützte Podman-Version</block>
-  <block id="43af2bbad49057d23c6e4820111aa078" category="paragraph">RHEL 8.6 bis 8.9</block>
-  <block id="49eebb445dc65a643c84c0a3f87edc63" category="paragraph">Podman 4.6.1</block>
-  <block id="c48cc40f38f8bc361e9a53b83a812d48" category="paragraph">RHEL 8.10</block>
-  <block id="da6353ecfbed18a800723b5888858632" category="paragraph">Podman 4.6.1 und 4.9.4</block>
-  <block id="52ee9eded79e01170d5ef36dbb0f640a" category="paragraph">RHEL 9.1 bis 9.3</block>
   <block id="91a03852a4fcc00d6d0d7b56befab967" category="inline-xref">Zeigen Sie die Podman-Versionen an, die von BlueXP  unterstützt werden</block>
   <block id="ab8cca64c499d5f050e52a06f69e6322" category="paragraph">Installieren Sie eine unterstützte Version von Podman. <block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>.</block>
   <block id="37ec26cfa2b5ba215786c921633974f0" category="paragraph">Wobei &lt;version&gt; die unterstützte Version von Podman ist, die Sie installieren. <block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>.</block>
@@ -4045,7 +4015,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*Wählen Sie einen Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen der unterstützten Instanztypen (t3.2xlarge wird empfohlen).</block>
   <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">Derzeit werden Benachrichtigungen für die folgenden BlueXP  Funktionen und Services per E-Mail gesendet: Connector, BlueXP  Digital Wallet, BlueXP  Copy and Sync, BlueXP  Backup und Recovery sowie BlueXP  Tiering. Weitere Services werden in zukünftigen Versionen hinzugefügt.</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Anschluss 3.9.43</block>
-  <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und die Voraussetzungen für neue Azure-Berechtigungen.</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">Die Version 3.9.43 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">CPU- und RAM-Anforderungen aktualisiert</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">Um eine höhere Zuverlässigkeit zu gewährleisten und die Leistung von BlueXP  und dem Connector zu verbessern, benötigen wir jetzt zusätzliche CPU und RAM für die virtuelle Connector-Maschine:</block>
@@ -4199,7 +4168,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="31c59436a743feb0e198d549a11637b0" category="section-title">12 Mai 2023</block>
   <block id="8b5a7355367fbfe0f4039d610b872ea2" category="section-title">23 März 2023</block>
   <block id="cb73adae14da8ca1c572c8494ce45515" category="section-title">5 Januar 2023</block>
-  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">22 August 2024</block>
   <block id="335b63351c39337de35ede84c3852d4d" category="section-title">Anschluss 3.9.43-Patch</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Wir haben den Connector aktualisiert, um die Version Cloud Volumes ONTAP 9.15.1 zu unterstützen.</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">Diese Version wird unterstützt und umfasst eine Aktualisierung der Connector-Richtlinie für Azure. Die Richtlinie umfasst jetzt die folgenden Berechtigungen:</block>
@@ -4208,7 +4176,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>.</block>
   <block id="649038b676315e0ebdd7132fcd5362c2" category="summary">Installieren Sie ein CA-signiertes Zertifikat für den Benutzerzugriff auf die webbasierte Konsole, wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden.</block>
   <block id="76b215b1722d5e63e6379d518b352edf" category="doc">Installieren Sie ein CA-signiertes Zertifikat für den webbasierten Konsolenzugriff</block>
-  <block id="40e7815d87fea23da90e3571602f7f78" category="paragraph">Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, kann auf die Benutzeroberfläche über die virtuelle Connector-Maschine zugegriffen werden, die in Ihrer Cloud-Region oder vor Ort bereitgestellt wird. Standardmäßig verwendet BlueXP  ein selbstsigniertes SSL-Zertifikat, um einen sicheren HTTPS-Zugriff auf die webbasierte Konsole zu ermöglichen, die auf dem Connector ausgeführt wird. Falls Ihr Unternehmen dies erfordert, können Sie ein von einer Zertifizierungsstelle signiertes Zertifikat installieren, das einen besseren Schutz bietet als ein selbstsigniertes Zertifikat. Nach der Installation des Zertifikats verwendet BlueXP  das CA-signierte Zertifikat, wenn Benutzer auf die webbasierte Konsole zugreifen.</block>
   <block id="e7b76852295808494e2734a85e108067" category="paragraph">BlueXP verwendet jetzt das von der Zertifizierungsstelle signierte Zertifikat, um einen sicheren HTTPS-Zugriff zu ermöglichen. Die folgende Abbildung zeigt einen Connector, der für sicheren Zugriff konfiguriert ist:</block>
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Erfahren Sie mehr über die Version Cloud Volumes ONTAP 9.15.1</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
@@ -4224,4 +4191,77 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*Instanztyp*: Wählen Sie je nach Verfügbarkeit der Region einen Instanztyp aus, der den RAM- und CPU-Anforderungen entspricht (t3.2xlarge ist vorausgewählt und empfohlen).</block>
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">Geben Sie die Einstellungen für Sicherheitsgruppen an, die die erforderlichen Verbindungsmethoden für die Connector-Instanz aktivieren: SSH, HTTP und HTTPS.</block>
   <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1 bis 9.4</block>
+  <block id="3b1bfd730b4217c8855d7ce0b155acdc" category="list-text">Die maximal unterstützte Version ist 26.0.0.</block>
+  <block id="c4924fa73c6ac3240841a8329a4a87a2" category="paragraph">Beachten Sie, dass Docker Engine 26 mit _New_ Connector-Installationen ab Version 3.9.44 des Connectors unterstützt wird.</block>
+  <block id="c71ee68b655a1c2de6162e6ea2837535" category="list-text">Podman ist für Red hat Enterprise Linux erforderlich.</block>
+  <block id="3ee8b338aa466b632e26ed7928d4b063" category="list-text">Podman Version 4.6.1 oder 4.9.4 ist erforderlich</block>
+  <block id="f99019d3e8e3a4daa34cad5d0e1cccc2" category="inline-xref">Zeigen Sie die von BlueXP  unterstützten Versionen der Docker Engine an</block>
+  <block id="6abb84cd1ebbb51102cb3ca371b8a8ca" category="paragraph">Installieren Sie eine unterstützte Version der Docker Engine. <block ref="2fdf32031e9fd2d8e629141f098d92fe" category="inline-xref-macro-rx"></block>.</block>
+  <block id="b425a48ec3cd2a8cf0d731578b9ac8cb" category="paragraph">Während BlueXP  den Datenverkehr, die Kommunikation und den Datenfluss im eingeschränkten Modus oder im privaten Modus hemmt, müssen Sie dafür sorgen, dass Ihre Umgebung (lokal und in der Cloud) den erforderlichen Vorschriften entspricht.</block>
+  <block id="ad8ea852a1d73dd8dbfac3b19dd09403" category="list-text">Ein BlueXP -Connector wird lokal oder in der Cloud (in einer sicheren Region, einer souveränen Cloud-Region oder einer kommerziellen Region) installiert und verfügt über _no_ Konnektivität zur BlueXP -SaaS-Schicht. Benutzer greifen lokal über die webbasierte Konsole auf BlueXP zu, die über den Connector verfügbar ist und nicht über die SaaS-Schicht.</block>
+  <block id="95f7a3f8f1594da8c9dbd6c9cb3ee51e" category="paragraph">Im privaten Modus können Sie einen Connector entweder vor Ort oder in der Cloud installieren und dann BlueXP  für das Datenmanagement in Ihrer gesamten Hybrid Cloud verwenden. Die SaaS-Ebene von BlueXP wird nicht verbunden.</block>
+  <block id="abf28f2fb4149a9c246bdad2c7003d6f" category="paragraph">Die zweite Abbildung zeigt ein Beispiel einer Private-Mode-Implementierung, bei der der Connector vor Ort installiert wird, einen lokalen ONTAP-Cluster managt und Zugriff auf unterstützte BlueXP -Datenservices bietet.</block>
+  <block id="9aa917589a67807ae517fb9273102cfc" category="list-text">Im privaten Modus wird der Connector in der Cloud oder On-Premises unterstützt.</block>
+  <block id="d807dd72163fd15a4c8f1c109e3e464f" category="list-text">Manuelle Installationen des Connectors werden auf Ihrem eigenen Linux-Host in der Cloud oder vor Ort unterstützt.</block>
+  <block id="93c8aa442d9657958e3a6b431149b6c7" category="list-text">Auf die Benutzeroberfläche kann über den Connector zugegriffen werden, der in Ihrer Cloud-Region oder vor Ort bereitgestellt wird.</block>
+  <block id="293b0d6507d1bd7abf464948b7ee72e3" category="list-text">Erkennen, implementieren und managen Sie Storage in AWS, Azure, Google Cloud oder vor Ort.</block>
+  <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">Installieren und Einrichten eines Connectors vor Ort</block>
+  <block id="66579202619073ba384ce27dfcd8dff1" category="list-text"><block ref="66579202619073ba384ce27dfcd8dff1" category="inline-link-rx"></block></block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">9 September 2024</block>
+  <block id="8edd5bd442ff2f098d5cd9a411e19444" category="paragraph">Berechtigungen wurden für Standardregionen aus der Richtlinie #2 entfernt, da BlueXP  das BlueXP  Edge Caching und die Erkennung sowie das Management von Kubernetes-Clustern nicht mehr unterstützt.</block>
+  <block id="233590199dce2cbcf120d8b311c92db1" category="example-title">Zeigen Sie die Berechtigungen an, die aus der Richtlinie entfernt wurden</block>
+  <block id="8c16b137acb60eb3b351f65f0f551d50" category="paragraph">Die folgenden Berechtigungen wurden aus der JSON-Richtlinie entfernt, da BlueXP  die Erkennung und das Management von Kubernetes-Clustern nicht mehr unterstützt:</block>
+  <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">Microsoft.ContainerService/verwaltungCluster/listClusterUserCredential/Action</block>
+  <block id="42f3fa961e42affb80862a782c9341af" category="list-text">Microsoft.ContainerService/manageCluster/lesen</block>
+  <block id="db311ee703dc0562542410a07692686e" category="paragraph">Wenn der Connector vor Ort installiert ist, können Sie diese Authentifizierungsmethode nicht verwenden. AWS-Schlüssel müssen verwendet werden.</block>
+  <block id="18eeee44961787b52080a2c714b406a6" category="paragraph">Sie müssen diese Authentifizierungsmethode verwenden, wenn der Connector vor Ort installiert ist. Sie können keine IAM-Rolle verwenden.</block>
+  <block id="0cd8313934e43905fe55906d112bfcba" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist, einen Connector in AWS direkt aus BlueXP  zu erstellen. Um einen Connector in AWS von BlueXP zu erstellen, müssen Sie Ihr Netzwerk einrichten, AWS Berechtigungen vorbereiten und anschließend den Connector erstellen.</block>
+  <block id="e74b1c05a68d1410f2fdc6be60f433dd" category="inline-link-macro">Verständnis von Steckverbindern</block>
+  <block id="a69707f32a14657a4148714e0858cc16" category="list-text">Sie sollten eine haben<block ref="265bf4041c284cedb5265913609f75cf" category="inline-link-macro-rx"></block>.</block>
+  <block id="0f6f328a496422180419aea5d68c3d2b" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist die manuelle Installation der Connector-Software auf einem Linux-Host, der in AWS ausgeführt wird. Um den Connector manuell auf Ihrem eigenen Linux-Host zu installieren, müssen Sie die Host-Anforderungen überprüfen, Ihr Netzwerk einrichten, AWS-Berechtigungen vorbereiten, den Connector installieren und dann die Berechtigungen bereitstellen, die Sie vorbereitet haben.</block>
+  <block id="bde99503b08825a9b6290c21b6ff2424" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist, einen Connector in AWS direkt aus dem AWS Marketplace zu erstellen. Um einen Connector über den AWS Marketplace zu erstellen, müssen Sie Ihr Netzwerk einrichten, die AWS-Berechtigungen vorbereiten, die Instanzanforderungen prüfen und dann den Connector erstellen.</block>
+  <block id="f83b4f8c16705e26d282f2cb4ed19e78" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist, einen Connector in Azure direkt aus BlueXP  zu erstellen. Um einen Connector in Azure aus BlueXP zu erstellen, müssen Sie Ihr Netzwerk einrichten, Azure Berechtigungen vorbereiten und anschließend den Connector erstellen.</block>
+  <block id="5cb6efc5332c23d8c22978f3559aa613" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist die manuelle Installation der Connector-Software auf einem Linux-Host, der in Azure ausgeführt wird. Um den Connector manuell auf Ihrem eigenen Linux-Host zu installieren, müssen Sie die Host-Anforderungen überprüfen, Ihr Netzwerk einrichten, Azure-Berechtigungen vorbereiten, den Connector installieren und dann die von Ihnen vorbereiteten Berechtigungen bereitstellen.</block>
+  <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist, einen Connector in Azure direkt aus dem Azure Marketplace zu erstellen. Zum Erstellen eines Connectors aus dem Azure Marketplace müssen Sie das Netzwerk einrichten, die Azure Berechtigungen vorbereiten, die Instanzanforderungen prüfen und dann den Connector erstellen.</block>
+  <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Zu den verfügbaren Installationsoptionen gehört das Erstellen des Connectors in AWS direkt aus BlueXP  oder mithilfe von gcloude. Um einen Connector in Google Cloud von BlueXP oder mithilfe von gcloude zu erstellen, müssen Sie Ihr Networking einrichten, Google Cloud-Berechtigungen vorbereiten, Google Cloud APIs aktivieren und dann den Connector erstellen.</block>
+  <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist die manuelle Installation der Connector-Software auf einem Linux-Host, der in Google Cloud ausgeführt wird. Um den Connector manuell auf Ihrem eigenen Linux-Host zu installieren, müssen Sie die Host-Anforderungen überprüfen, Ihr Netzwerk einrichten, Google Cloud-Berechtigungen vorbereiten, APIs aktivieren, den Connector installieren und dann die von Ihnen vorbereiteten Berechtigungen bereitstellen.</block>
+  <block id="2645e78b8215441741aa8ea067e0db45" category="summary">Installieren Sie einen Connector vor Ort, melden Sie sich an und richten Sie ihn für die Arbeit mit Ihrem BlueXP -Konto ein.</block>
+  <block id="e080a3173dc73a079c4fd120abb491e0" category="paragraph">Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Um den Connector vor Ort auszuführen, müssen Sie die Host-Anforderungen überprüfen, Ihr Netzwerk einrichten, Cloud-Berechtigungen vorbereiten, den Connector installieren, den Connector einrichten und dann die von Ihnen vorbereiteten Berechtigungen bereitstellen.</block>
+  <block id="5ed8d571b208e6fe2728f122d3340d93" category="paragraph">Wenn der Connector On-Premises installiert ist, müssen Sie BlueXP  über AWS-Berechtigungen verfügen, indem Sie Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen hinzufügen.</block>
+  <block id="7247a245f2594a184b7ed7669be8c32e" category="paragraph">Wenn der Connector On-Premises installiert ist, müssen Sie BlueXP  Azure-Berechtigungen erteilen, indem Sie einen Service-Principal in der Microsoft Entra-ID einrichten und die für BlueXP  erforderlichen Azure-Berechtigungen erhalten.</block>
+  <block id="d73fea737459cd596b8a61a9c640bf6f" category="paragraph">Laden Sie die Connector-Software herunter, und installieren Sie sie auf einem vorhandenen Linux-Host vor Ort.</block>
+  <block id="efa5b8441900c9d334fd44b2a0480c25" category="paragraph">Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. (Außerdem wird der eingeschränkte Modus nicht unterstützt, wenn der Connector vor Ort installiert ist.)</block>
+  <block id="703afaf08bc749a3a4cb4aa82e3edc43" category="paragraph">Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, kann auf die Benutzeroberfläche über die virtuelle Connector-Maschine zugegriffen werden, die in Ihrer Cloud-Region oder vor Ort bereitgestellt wird. Standardmäßig verwendet BlueXP  ein selbstsigniertes SSL-Zertifikat, um einen sicheren HTTPS-Zugriff auf die webbasierte Konsole zu ermöglichen, die auf dem Connector ausgeführt wird. Falls Ihr Unternehmen dies erfordert, können Sie ein von einer Zertifizierungsstelle signiertes Zertifikat installieren, das einen besseren Schutz bietet als ein selbstsigniertes Zertifikat. Nach der Installation des Zertifikats verwendet BlueXP  das CA-signierte Zertifikat, wenn Benutzer auf die webbasierte Konsole zugreifen.</block>
+  <block id="1dabb4ec55ee6a1ed060669969044936" category="paragraph">Im privaten Modus können Sie den Connector vor Ort oder in der Cloud installieren, indem Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren.</block>
+  <block id="b926732963e0a721fc9fc28ea36c9483" category="inline-link-macro">Erfahren Sie, wie Sie einen Konnektor vor Ort erstellen</block>
+  <block id="159a6de5191a13d6941603c4b5854079" category="list-text"><block ref="159a6de5191a13d6941603c4b5854079" category="inline-link-macro-rx"></block></block>
+  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">Anschluss 3.9.44</block>
+  <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">Diese Version enthält Unterstützung für Docker Engine 26, eine Erweiterung für SSL-Zertifikate und Fehlerbehebungen.</block>
+  <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">Die Version 3.9.44 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
+  <block id="000a9ac711d57d6c617331857e9c3100" category="section-title">Unterstützung für Docker Engine 26</block>
+  <block id="849eb58f322918eda95ee3acd8e4497d" category="paragraph">Docker Engine ist das erforderliche Container-Orchestrierungstool bei der Installation des Connectors auf Ubuntu 22.04 LTS.</block>
+  <block id="4391ac6ef3fe7c6a1cb6b50f0df238d3" category="paragraph">Ab der Version 3.9.44 des Connectors wird Docker Engine 26 jetzt mit _New_ Connector-Installationen unterstützt.</block>
+  <block id="ff42db58a1b88b5b9aedbcedc8daa613" category="paragraph">Die aktualisierte Liste der unterstützten Docker Engine-Versionen lautet wie folgt:</block>
+  <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">Aktualisiertes SSL-Zertifikat für lokalen UI-Zugriff</block>
+  <block id="b96edd49155123375756b26e44b38121" category="paragraph">Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, kann auf die Benutzeroberfläche über die virtuelle Connector-Maschine zugegriffen werden, die in Ihrer Cloud-Region oder vor Ort bereitgestellt wird. Standardmäßig verwendet BlueXP  ein selbstsigniertes SSL-Zertifikat, um einen sicheren HTTPS-Zugriff auf die webbasierte Konsole zu ermöglichen, die auf dem Connector ausgeführt wird.</block>
+  <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">In dieser Version haben wir Änderungen am SSL-Zertifikat für neue und bestehende Connectors vorgenommen:</block>
+  <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">Der allgemeine Name für das Zertifikat stimmt jetzt mit dem kurzen Hostnamen überein</block>
+  <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">Der alternative Name des Zertifikats ist der vollständig qualifizierte Domänenname (FQDN) des Hostcompaters</block>
+  <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Unterstützung für RHEL 9.4</block>
+  <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">BlueXP  unterstützt jetzt die Installation des Connectors auf einem Red hat Enterprise Linux 9.4-Host, wenn BlueXP  im Standardmodus oder im eingeschränkten Modus verwendet wird.</block>
+  <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">Die Unterstützung für RHEL 9.4 beginnt mit der Version 3.9.40 des Connectors.</block>
+  <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">Die aktualisierte Liste der unterstützten RHEL-Versionen für den Standardmodus und den eingeschränkten Modus enthält nun Folgendes:</block>
+  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">Unterstützung für Podman 4.9.4 mit allen RHEL-Versionen</block>
+  <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">Podman 4.9.4 wird jetzt mit allen unterstützten Versionen von Red hat Enterprise Linux unterstützt. Version 4.9.4 wurde zuvor nur mit RHEL 8.10 unterstützt.</block>
+  <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">Die aktualisierte Liste der unterstützten Podman-Versionen umfasst 4.6.1 und 4.9.4 mit Red hat Enterprise Linux-Hosts.</block>
+  <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">Podman ist ab Version 3.9.40 des Connectors für RHEL-Hosts erforderlich.</block>
+  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">AWS- und Azure-Berechtigungen wurden aktualisiert</block>
+  <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">Wir haben die AWS- und Azure-Richtlinien für den Connector aktualisiert, um nicht mehr benötigte Berechtigungen zu beseitigen. Die Berechtigungen haben sich auf das BlueXP -Edge-Caching und die Erkennung und das Management von Kubernetes-Clustern bezogen, die ab August 2024 nicht mehr unterstützt werden.</block>
+  <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">Erfahren Sie, was sich in der AWS-Richtlinie geändert hat</block>
+  <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>.</block>
+  <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">Lesen Sie, was sich in der Azure-Richtlinie geändert hat</block>
+  <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>.</block>
+  <block id="d30916c53949113e97a8033f02e41364" category="paragraph">Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.</block>
+  <block id="f0e69ccbb7ad96f546f7924206944bfa" category="sidebar">On-Premises</block>
 </blocks>

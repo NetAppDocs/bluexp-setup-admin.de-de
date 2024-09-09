@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-on-prem.html 
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: Installieren Sie einen Connector vor Ort, melden Sie sich anschließend an und richten Sie ihn für die Nutzung mit Ihrem BlueXP Konto ein. 
+summary: Installieren Sie einen Connector vor Ort, melden Sie sich an und richten Sie ihn für die Arbeit mit Ihrem BlueXP -Konto ein. 
 ---
-= Installieren und Einrichten eines Connectors auf dem Gelände
+= Installieren und Einrichten eines Connectors vor Ort
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,12 @@ summary: Installieren Sie einen Connector vor Ort, melden Sie sich anschließend
 
 
 [role="lead"]
-Installieren Sie einen Connector vor Ort, melden Sie sich anschließend an und richten Sie ihn für die Nutzung mit Ihrem BlueXP Konto ein.
+Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Um den Connector vor Ort auszuführen, müssen Sie die Host-Anforderungen überprüfen, Ihr Netzwerk einrichten, Cloud-Berechtigungen vorbereiten, den Connector installieren, den Connector einrichten und dann die von Ihnen vorbereiteten Berechtigungen bereitstellen.
 
 .Bevor Sie beginnen
-Sie sollten es überprüfen link:reference-limitations.html["Einschränkungen an den Anschlüssen"].
+* Sie sollten eine habenlink:concept-connectors.html["Verständnis von Steckverbindern"].
+* Sie sollten es überprüfen link:reference-limitations.html["Einschränkungen an den Anschlüssen"].
+
 
 
 
@@ -33,7 +35,7 @@ Unterstützte Betriebssysteme::
 * Red Hat Enterprise Linux
 +
 ** 8.6 bis 8.10
-** 9.1 bis 9.3
+** 9.1 bis 9.4
 +
 Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 
@@ -66,37 +68,12 @@ BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, d
 Container-Orchestrierungstool:: Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
 +
 --
-* Podman ist für Red hat Enterprise Linux 8 und 9 erforderlich.
-+
-[cols="50a,50a"]
-|===
-| RHEL-Version | Unterstützte Podman-Version 
-
-
- a| 
-RHEL 8.6 bis 8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1 und 4.9.4
-
-
-
- a| 
-RHEL 9.1 bis 9.3
- a| 
-Podman 4.6.1
-
-|===
+* Podman ist für Red hat Enterprise Linux erforderlich.
 +
 Für Podman müssen folgende Voraussetzungen erfüllt sein:
 
 +
+** Podman Version 4.6.1 oder 4.9.4 ist erforderlich
 ** Der podman.Socket-Dienst muss aktiviert und gestartet werden
 ** python3 muss installiert sein
 ** Das Paket podman-compose Version 1.0.6 muss installiert sein
@@ -106,7 +83,10 @@ Für Podman müssen folgende Voraussetzungen erfüllt sein:
 * Docker Engine ist für Ubuntu erforderlich.
 +
 ** Die unterstützte Version ist mindestens 23.0.6.
-** Die maximal unterstützte Version ist 25.0.5.
+** Die maximal unterstützte Version ist 26.0.0.
++
+Beachten Sie, dass Docker Engine 26 mit _New_ Connector-Installationen ab Version 3.9.44 des Connectors unterstützt wird.
+
 
 
 
@@ -212,7 +192,7 @@ NOTE: Verwenden der `dnf install` Befehl erfüllt die Anforderung zum Hinzufüge
 --
 .Docker Engine
 --
-Installieren Sie eine Version der Docker Engine zwischen 23.0.6 und 25.0.5.
+Installieren Sie eine unterstützte Version der Docker Engine. <<podman-versions,Zeigen Sie die von BlueXP  unterstützten Versionen der Docker Engine an>>.
 
 .Schritte
 . Installieren Sie Die Docker Engine.
@@ -399,7 +379,7 @@ TIP: Warum nicht Google Cloud? Der Connector kann vor Ort installiert werden und
 ====
 .AWS
 --
-Wenn der Connector vor Ort installiert ist, müssen Sie BlueXP mit AWS Berechtigungen versehen, indem Sie Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen hinzufügen.
+Wenn der Connector On-Premises installiert ist, müssen Sie BlueXP  über AWS-Berechtigungen verfügen, indem Sie Zugriffsschlüssel für einen IAM-Benutzer mit den erforderlichen Berechtigungen hinzufügen.
 
 Sie müssen diese Authentifizierungsmethode verwenden, wenn der Connector vor Ort installiert ist. Sie können keine IAM-Rolle verwenden.
 
@@ -433,7 +413,7 @@ Sie sollten nun über Zugriffsschlüssel für einen IAM-Benutzer verfügen, der 
 --
 .Azure
 --
-Wenn der Connector vor Ort installiert ist, müssen Sie BlueXP mit Azure-Berechtigungen versehen, indem Sie einen Service-Prinzipal in der Microsoft Entra-ID einrichten und die für BlueXP erforderlichen Azure-Berechtigungen erhalten.
+Wenn der Connector On-Premises installiert ist, müssen Sie BlueXP  Azure-Berechtigungen erteilen, indem Sie einen Service-Principal in der Microsoft Entra-ID einrichten und die für BlueXP  erforderlichen Azure-Berechtigungen erhalten.
 
 .Erstellen Sie eine Microsoft Entra-Anwendung für die rollenbasierte Zugriffssteuerung
 . Stellen Sie sicher, dass Sie in Azure über die Berechtigungen zum Erstellen einer Active Directory-Anwendung und zum Zuweisen der Anwendung zu einer Rolle verfügen.

@@ -33,7 +33,7 @@ Manuelle Installation::
 * Red Hat Enterprise Linux
 +
 ** 8.6 bis 8.10
-** 9.1 bis 9.3
+** 9.1 bis 9.4
 
 
 
@@ -54,7 +54,7 @@ Manuelle Installation::
 * Red Hat Enterprise Linux
 +
 ** 8.6 bis 8.10
-** 9.1 bis 9.3
+** 9.1 bis 9.4
 
 
 
@@ -154,7 +154,7 @@ Auf den folgenden Seiten finden Sie Informationen zu Host-Anforderungen, Podman-
 ====
 .Standardmodus
 --
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren und Einrichten eines Connectors auf dem Gelände"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installieren und Einrichten eines Connectors vor Ort"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["Installieren Sie den Connector manuell in AWS"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Installieren Sie den Connector manuell in Azure"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Installieren Sie den Connector manuell in Google Cloud"]

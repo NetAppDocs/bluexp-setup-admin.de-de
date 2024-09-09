@@ -12,7 +12,7 @@ Unterstützte Betriebssysteme::
 * Red Hat Enterprise Linux
 +
 ** 8.6 bis 8.10
-** 9.1 bis 9.3
+** 9.1 bis 9.4
 +
 Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 
@@ -89,7 +89,10 @@ Docker Engine:: Docker Engine ist auf dem Host erforderlich, bevor Sie den Conne
 +
 --
 * Die unterstützte Version ist mindestens 23.0.6.
-* Die maximal unterstützte Version ist 25.0.5.
+* Die maximal unterstützte Version ist 26.0.0.
++
+Beachten Sie, dass Docker Engine 26 mit _New_ Connector-Installationen ab Version 3.9.44 des Connectors unterstützt wird.
+
 +
 https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
 
@@ -102,37 +105,12 @@ https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
 Container-Orchestrierungstool:: Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
 +
 --
-* Podman ist für Red hat Enterprise Linux 8 und 9 erforderlich.
-+
-[cols="50a,50a"]
-|===
-| RHEL-Version | Unterstützte Podman-Version 
-
-
- a| 
-RHEL 8.6 bis 8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1 und 4.9.4
-
-
-
- a| 
-RHEL 9.1 bis 9.3
- a| 
-Podman 4.6.1
-
-|===
+* Podman ist für Red hat Enterprise Linux erforderlich.
 +
 Für Podman müssen folgende Voraussetzungen erfüllt sein:
 
 +
+** Podman Version 4.6.1 oder 4.9.4 ist erforderlich
 ** Der podman.Socket-Dienst muss aktiviert und gestartet werden
 ** python3 muss installiert sein
 ** Das Paket podman-compose Version 1.0.6 muss installiert sein
@@ -142,7 +120,10 @@ Für Podman müssen folgende Voraussetzungen erfüllt sein:
 * Docker Engine ist für Ubuntu erforderlich.
 +
 ** Die unterstützte Version ist mindestens 23.0.6.
-** Die maximal unterstützte Version ist 25.0.5.
+** Die maximal unterstützte Version ist 26.0.0.
++
+Beachten Sie, dass Docker Engine 26 mit _New_ Connector-Installationen ab Version 3.9.44 des Connectors unterstützt wird.
+
 
 
 

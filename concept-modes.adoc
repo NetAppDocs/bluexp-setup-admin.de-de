@@ -16,7 +16,7 @@ summary: BlueXP bietet mehrere Implementierungsmodi, die es Ihnen ermöglichen, 
 [role="lead"]
 BlueXP bietet mehrere _Implementierungsmodi_, die es Ihnen ermöglichen, BlueXP entsprechend Ihren geschäftlichen und Sicherheitsanforderungen zu nutzen. _Standard Mode_ nutzt die BlueXP SaaS-Ebene für die volle Funktionalität. _Restricted Mode_ und _Private Mode_ stehen Unternehmen mit Konnektivitätsbeschränkungen zur Verfügung.
 
-Während BlueXP den Datenfluss, die Kommunikation und die Datenübertragung im eingeschränkten Modus oder im Private-Modus hemmt, liegt es in Ihrer Verantwortung, dass Ihre Umgebung (lokal und in der Cloud) den erforderlichen Vorschriften entspricht.
+Während BlueXP  den Datenverkehr, die Kommunikation und den Datenfluss im eingeschränkten Modus oder im privaten Modus hemmt, müssen Sie dafür sorgen, dass Ihre Umgebung (lokal und in der Cloud) den erforderlichen Vorschriften entspricht.
 
 
 
@@ -38,7 +38,7 @@ Dieser Modus wird in der Regel von staatlichen und lokalen Behörden und regulie
 <<Eingeschränkter Modus,Erfahren Sie mehr über ausgehende Verbindungen zur SaaS-Ebene>>.
 
 --
-Privater Modus:: Ein BlueXP Connector wird lokal oder in der Cloud (in einer sicheren Region, einer souveränen Cloud-Region oder einer kommerziellen Region) installiert und verfügt über _no_ Konnektivität zur BlueXP SaaS-Schicht. Benutzer greifen lokal über die webbasierte Konsole auf BlueXP zu, die über den Connector verfügbar ist und nicht über die SaaS-Schicht.
+Privater Modus:: Ein BlueXP -Connector wird lokal oder in der Cloud (in einer sicheren Region, einer souveränen Cloud-Region oder einer kommerziellen Region) installiert und verfügt über _no_ Konnektivität zur BlueXP -SaaS-Schicht. Benutzer greifen lokal über die webbasierte Konsole auf BlueXP zu, die über den Connector verfügbar ist und nicht über die SaaS-Schicht.
 +
 --
 Eine sichere Region umfasst https://aws.amazon.com/federal/secret-cloud/["AWS Secret Cloud"^], https://aws.amazon.com/federal/top-secret-cloud/["Top Secret Cloud von AWS"^], und https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -216,13 +216,13 @@ Beachten Sie, dass Sie die Einstellung für den eingeschränkten Modus nicht än
 
 == Privater Modus
 
-Im privaten Modus können Sie einen Connector entweder vor Ort oder in der Cloud installieren und dann BlueXP für das Datenmanagement in Ihrer gesamten Hybrid Cloud verwenden. Die SaaS-Ebene von BlueXP wird nicht verbunden.
+Im privaten Modus können Sie einen Connector entweder vor Ort oder in der Cloud installieren und dann BlueXP  für das Datenmanagement in Ihrer gesamten Hybrid Cloud verwenden. Die SaaS-Ebene von BlueXP wird nicht verbunden.
 
 Die folgende Abbildung zeigt ein Beispiel einer Private-Mode-Implementierung, bei der der Connector in der Cloud installiert ist und sowohl Cloud Volumes ONTAP als auch einen lokalen ONTAP-Cluster managt.
 
 image:diagram-private-mode-cloud.png["Ein Konzeptbild, das ein virtuelles Netzwerk in der Cloud zeigt, in dem ein Connector ausgeführt wird und Zugriff auf die webbasierte Konsole bietet sowie Cloud Volumes ONTAP und einen AFF Cluster in einem lokalen Datacenter managt."]
 
-Gleichzeitig zeigt die zweite Abbildung ein Beispiel einer Private-Mode-Implementierung, bei der der Connector vor Ort installiert ist, einen lokalen ONTAP-Cluster managt und Zugriff auf unterstützte BlueXP Datenservices bietet.
+Die zweite Abbildung zeigt ein Beispiel einer Private-Mode-Implementierung, bei der der Connector vor Ort installiert wird, einen lokalen ONTAP-Cluster managt und Zugriff auf unterstützte BlueXP -Datenservices bietet.
 
 image:diagram-private-mode-onprem.png["Ein konzeptuelles Bild zeigt ein lokales Datacenter, in dem ein Connector ausgeführt wird und Zugriff auf die webbasierte Konsole BlueXP Datenservices bietet. Es managt auch ein AFF Cluster in einem lokalen Datacenter."]
 

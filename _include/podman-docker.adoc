@@ -96,7 +96,7 @@ NOTE: Verwenden der `dnf install` Befehl erfüllt die Anforderung zum Hinzufüge
 --
 .Docker Engine
 --
-Installieren Sie eine Version der Docker Engine zwischen 23.0.6 und 25.0.5.
+Installieren Sie eine unterstützte Version der Docker Engine. <<podman-versions,Zeigen Sie die von BlueXP  unterstützten Versionen der Docker Engine an>>.
 
 .Schritte
 . Installieren Sie Die Docker Engine.
