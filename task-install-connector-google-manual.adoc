@@ -68,12 +68,10 @@ Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
 BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt `/var/lib/containers/storage` Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.
 
 --
-
-
-[[podman-versions]]
 Container-Orchestrierungstool:: Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
 +
 --
+[[podman-versions]]
 * Podman ist für Red hat Enterprise Linux erforderlich.
 +
 Für Podman müssen folgende Voraussetzungen erfüllt sein:
@@ -88,12 +86,18 @@ Für Podman müssen folgende Voraussetzungen erfüllt sein:
 
 * Docker Engine ist für Ubuntu erforderlich.
 +
-** Die unterstützte Version ist mindestens 23.0.6.
-** Die maximal unterstützte Version ist 26.0.0.
+[cols="3*"]
+|===
+| Connector-Version | Mindestversion der Docker Engine | Maximale Version der Docker Engine 
+
+
+| _New_ Connector Installation ab 3.9.44 | 23.0.6 | 26.0.0 
+
+
+| Vor der Version 3.9.44 erstellte Anschlüsse | 23.0.6 | 25.0.5 
+|===
 +
-Beachten Sie, dass Docker Engine 26 mit _New_ Connector-Installationen ab Version 3.9.44 des Connectors unterstützt wird.
-
-
+https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
 
 
 

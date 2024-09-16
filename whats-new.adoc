@@ -30,17 +30,13 @@ Die Version 3.9.44 ist für den Standardmodus und den eingeschränkten Modus ver
 
 
 
-==== Unterstützung für Docker Engine 26
+==== Unterstützung für Docker Engine 26 mit neuen Installationen
 
-Docker Engine ist das erforderliche Container-Orchestrierungstool bei der Installation des Connectors auf Ubuntu 22.04 LTS.
+Ab der Version 3.9.44 des Connectors wird die Docker Engine 26 jetzt mit _New_ Connector-Installationen auf Ubuntu-Hosts unterstützt.
 
-Ab der Version 3.9.44 des Connectors wird Docker Engine 26 jetzt mit _New_ Connector-Installationen unterstützt.
+Wenn Sie vor der Version 3.9.44 einen vorhandenen Connector erstellt haben, ist die Docker Engine 25.0.5 immer noch die maximal unterstützte Version auf Ubuntu-Hosts.
 
-Die aktualisierte Liste der unterstützten Docker Engine-Versionen lautet wie folgt:
-
-* Die unterstützte Version ist mindestens 23.0.6.
-* Die maximal unterstützte Version ist 26.0.0.
-
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Weitere Informationen zu den Anforderungen der Docker Engine"].
 
 
 
