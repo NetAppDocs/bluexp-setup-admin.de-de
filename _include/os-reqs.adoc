@@ -33,7 +33,7 @@ Unterstütztes Betriebssystem::
 * Red Hat Enterprise Linux
 +
 ** 8.6 bis 8.10
-** 9.1 bis 9.3
+** 9.1 bis 9.4
 +
 Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 
@@ -116,17 +116,23 @@ Für Podman müssen folgende Voraussetzungen erfüllt sein:
 | Vor der Version 3.9.44 erstellte Anschlüsse | 23.0.6 | 25.0.5 
 |===
 +
-https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
+https://docs.docker.com/engine/install/["Lesen Sie die Docker-Installationsanweisungen"^]
 
 
 
 * Docker Engine ist für Ubuntu erforderlich.
 +
-** Die unterstützte Version ist mindestens 23.0.6.
-** Die maximal unterstützte Version ist 25.0.5.
+[cols="3*"]
+|===
+| Connector-Version | Mindestversion der Docker Engine | Maximale Version der Docker Engine 
+
+
+| _New_ Connector Installation ab 3.9.44 | 23.0.6 | 26.0.0 
+
+
+| Vor der Version 3.9.44 erstellte Anschlüsse | 23.0.6 | 25.0.5 
+|===
 +
-https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^]
-
-
+https://docs.docker.com/engine/install/["Lesen Sie die Docker-Installationsanweisungen"^]
 
 

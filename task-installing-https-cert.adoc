@@ -26,7 +26,20 @@ Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern k�
 
 == Installieren Sie ein HTTPS-Zertifikat
 
-Installieren Sie ein von einer Zertifizierungsstelle signiertes Zertifikat, um den sicheren Zugriff zu gewährleisten.
+Installieren Sie ein von einer Zertifizierungsstelle signiertes Zertifikat für den sicheren Zugriff auf die webbasierte Konsole, die auf dem Connector ausgeführt wird.
+
+.Über diese Aufgabe
+Sie können das Zertifikat mithilfe einer der folgenden Optionen installieren:
+
+* Erstellen Sie eine Zertifikatsignierungsanforderung (CSR) von BlueXP , senden Sie die Zertifikatsanforderung an eine Zertifizierungsstelle, und installieren Sie dann das CA-signierte Zertifikat auf dem Konnektor.
++
+Das Schlüsselpaar, das BlueXP  zur Generierung der CSR verwendet, wird intern auf dem Konnektor gespeichert. BlueXP  ruft automatisch das gleiche Schlüsselpaar (privater Schlüssel) ab, wenn Sie das Zertifikat auf dem Connector installieren.
+
+* Installieren Sie ein Zertifikat mit CA-Signatur, das Sie bereits besitzen.
++
+Mit dieser Option wird die CSR nicht über BlueXP  generiert. Sie generieren die CSR separat und speichern den privaten Schlüssel extern. Sie geben BlueXP  den privaten Schlüssel an, wenn Sie das Zertifikat installieren.
+
+
 
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *HTTPS Setup* aus.
