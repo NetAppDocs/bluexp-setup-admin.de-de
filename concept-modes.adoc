@@ -22,7 +22,7 @@ Während BlueXP  den Datenverkehr, die Kommunikation und den Datenfluss im eing
 
 == Überblick
 
-BlueXP bietet für Ihr Konto folgende Implementierungsmodi. Jeder Modus unterscheidet sich in Bezug auf Anforderungen für ausgehende Verbindungen, Bereitstellungsort, Installationsprozess, Authentifizierungsmethode, verfügbare Daten- und Speicherservices sowie Abrechnungsmethoden.
+BlueXP  bietet drei Implementierungsmodi. Jeder Modus unterscheidet sich in Bezug auf Anforderungen für ausgehende Verbindungen, Bereitstellungsort, Installationsprozess, Authentifizierungsmethode, verfügbare Daten- und Speicherservices sowie Abrechnungsmethoden.
 
 Standardmodus:: BlueXP ist für Benutzer über die webbasierte Konsole als Cloud-Service zugänglich. Abhängig von den geplanten BlueXP Services erstellt ein BlueXP Administrator einen oder mehrere Connectors, um Daten in Ihrer Hybrid-Cloud-Umgebung zu managen.
 +
@@ -407,7 +407,13 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Volume-Caching | Nein | Nein 
 
 
-.5+| *Eigenschaften* | Anmeldedaten | Ja. | Ja. 
+.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Nein | Nein 
+
+
+| BlueXP Accounts | Ja. | Ja. 
+
+
+| Anmeldedaten | Ja. | Ja. 
 
 
 | NSS-Konten | Ja. | Nein 

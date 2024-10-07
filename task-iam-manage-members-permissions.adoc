@@ -1,0 +1,307 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-members-permissions.html 
+keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
+summary: Verwalten Sie die Mitglieder Ihres Unternehmens, um Berechtigungen für verschiedene Ebenen der Ressourcenhierarchie Ihres Unternehmens bereitzustellen. 
+---
+= Fügen Sie BlueXP  IAM-Mitglieder hinzu und verwalten Sie ihre Berechtigungen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit BlueXP  Identity and Access Management (IAM) können Sie Ihrer Organisation Mitglieder hinzufügen und ihnen eine oder mehrere Rollen innerhalb Ihrer Ressourcenhierarchie zuweisen. Eine _Rolle_ enthält einen Satz von Berechtigungen, mit denen ein Mitglied bestimmte Aktionen auf einer bestimmten Ebene der Ressourcenhierarchie ausführen kann. Sie können neue Benutzerkonten und Dienstkonten zuordnen, Mitgliederrollen verwalten und vieles mehr.
+
+
+TIP: Um sicherzustellen, dass Sie den Zugriff auf Ihre BlueXP -Organisation nicht verlieren, empfiehlt es sich, zwei Mitglieder mit der Rolle „Unternehmensadministrator“ zu haben.
+
+.Über diese Aufgabe
+Wenn ein _Ordner oder Projektadministrator_ die Seite *Mitglieder* anzeigt, werden auf der Seite alle Mitglieder der Organisation angezeigt. Ein Mitglied mit dieser Rolle kann jedoch nur Mitgliederberechtigungen für die Ordner und Projekte anzeigen und verwalten, für die sie Berechtigungen haben. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über die Aktionen, die ein _Ordner- oder Projektadministrator_ durchführen kann"].
+
+
+
+== Fügen Sie Mitglieder zu Ihrer Organisation hinzu
+
+Sie können Ihrem Unternehmen zwei Arten von Mitgliedern hinzufügen: Ein Benutzerkonto und ein Service-Konto. Ein Servicekonto wird normalerweise von einer Anwendung verwendet, um bestimmte Aufgaben ohne menschliches Eingreifen zu erledigen.
+
+[role="tabbed-block"]
+====
+.Benutzerkonto
+--
+.Schritte
+. Wenn der Benutzer dies noch nicht getan hat, bitten Sie ihn, zum zu gehen https://bluexp.netapp.com/["NetApp BlueXP Website"^] und sich anzumelden.
++
+Wenn der Benutzer sich anmeldet, sollte er die Seite *Anmelden* ausfüllen, seine E-Mail-Adresse überprüfen und sich dann anmelden. Wenn er aufgefordert wird, eine Organisation zu erstellen, sollte der Benutzer BlueXP  schließen und Sie darüber informieren, dass er sein Benutzerkonto erstellt hat. Sie können den Benutzer anschließend zu Ihrer bestehenden BlueXP -Organisation hinzufügen.
+
++
+link:task-sign-up-saas.html["Erfahren Sie, wie Sie sich bei BlueXP  anmelden können"].
+
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie *Mitglieder*.
+. Wählen Sie *Mitglied hinzufügen*.
+. Führen Sie zum Hinzufügen des Mitglieds die folgenden Schritte im Dialogfeld aus:
++
+** *Entity Type*: Behalten Sie *User* ausgewählt.
+** *Benutzer-E-Mail*: Geben Sie die E-Mail-Adresse des Benutzers ein, die mit dem von ihnen erstellten BlueXP -Login verknüpft ist.
+** *Wählen Sie eine Organisation, einen Ordner oder ein Projekt*: Wählen Sie die Ebene Ihrer Ressourcenhierarchie aus, für die das Mitglied Berechtigungen haben soll.
++
+Beachten Sie Folgendes:
+
++
+*** Sie können nur aus den Ordnern und Projekten auswählen, für die Sie Administratorrechte haben.
+*** Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
+
+
+** *Wählen Sie eine Rolle*: Wählen Sie eine Rolle aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
++
+*** Wenn Sie die Organisation ausgewählt haben, können Sie aus jeder anderen Rolle als *Ordner oder Projektadministrator* wählen.
+*** Wenn Sie einen Ordner oder ein Projekt ausgewählt haben, können Sie aus jeder anderen Rolle als *Organisationsadministrator* wählen.
++
+link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte IAM-Rollen"].
+
+
+
+** *Rolle hinzufügen*: Wenn Sie Zugriff auf zusätzliche Ordner oder Projekte innerhalb Ihrer Organisation gewähren möchten, wählen Sie *Rolle hinzufügen*, geben Sie einen anderen Ordner oder ein anderes Projekt an und wählen Sie dann eine Rolle.
+
+
+. Wählen Sie *Hinzufügen*.
+
+
+.Ergebnis
+BlueXP  fügt den Benutzer zur Organisation hinzu.
+
+.Was kommt als Nächstes?
+Der Benutzer sollte eine E-Mail von NetApp BlueXP  erhalten. Die E-Mail enthält Informationen, mit denen das Mitglied auf BlueXP  zugreifen kann.
+
+--
+.Dienstkonto
+--
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie *Mitglieder*.
+. Wählen Sie *Mitglied hinzufügen*.
+. Führen Sie zum Hinzufügen des Mitglieds die folgenden Schritte im Dialogfeld aus:
++
+** *Entitätstyp*: Wählen Sie *Service-Konto*.
+** *Name des Service-Kontos*: Geben Sie einen Namen für das Service-Konto ein.
+** *Wählen Sie eine Organisation, einen Ordner oder ein Projekt*: Wählen Sie die Ebene Ihrer Ressourcenhierarchie aus, für die das Mitglied Berechtigungen haben soll.
++
+Beachten Sie Folgendes:
+
++
+*** Sie können nur aus den Ordnern und Projekten auswählen, für die Sie Administratorrechte haben.
+*** Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
+
+
+** *Wählen Sie eine Rolle*: Wählen Sie eine Rolle aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
++
+*** Wenn Sie die Organisation ausgewählt haben, können Sie aus jeder anderen Rolle als *Ordner oder Projektadministrator* wählen.
+*** Wenn Sie einen Ordner oder ein Projekt ausgewählt haben, können Sie aus jeder anderen Rolle als *Organisationsadministrator* wählen.
++
+link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte IAM-Rollen"].
+
+
+
+** *Rolle hinzufügen*: Wenn Sie Zugriff auf zusätzliche Ordner oder Projekte innerhalb Ihrer Organisation gewähren möchten, wählen Sie *Rolle hinzufügen*, geben Sie einen anderen Ordner oder ein anderes Projekt an und wählen Sie dann eine Rolle.
+
+
+. Wählen Sie *Hinzufügen*.
+. Laden Sie die Client-ID und den Client-Schlüssel herunter, oder kopieren Sie ihn.
++
+Das Clientgeheimnis ist nur einmal sichtbar und wird von BlueXP nirgendwo gespeichert. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und den Client-Schlüssel später nach Bedarf neu erstellen können.
+
+. Wählen Sie *Schließen*.
+
+
+.Ergebnis
+BlueXP  fügt das Service-Konto zu Ihrem Unternehmen hinzu.
+
+--
+====
+
+
+== Anzeigen von Organisationsmitgliedern
+
+Sie können eine Liste aller Mitglieder in Ihrer BlueXP -Organisation anzeigen. Um zu verstehen, welche Ressourcen und Berechtigungen einem Mitglied zur Verfügung stehen, können Sie die dem Mitglied zugewiesenen Rollen auf verschiedenen Ebenen der Ressourcenhierarchie Ihres Unternehmens anzeigen.
+
+.Über diese Aufgabe
+Die Seite *Mitglieder* zeigt Details über zwei Arten von Mitgliedern an: Benutzerkonten und Dienstkonten.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie *Mitglieder*.
++
+Die Mitglieder Ihrer Organisation erscheinen in der Tabelle *Mitglieder*.
+
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
+
+
+.Ergebnis
+BlueXP  zeigt Details zum Mitglied an, darunter die Ordner und Projekte, für die das Mitglied über die gesamte Ressourcenhierarchie Ihres Unternehmens verfügt.
+
+Hier ist ein Beispiel für ein Mitglied, dem die Rolle „_Folder“ oder „Project admin“ für einen Ordner zugewiesen ist, der Berechtigungen für die drei Projekte im Ordner bereitstellt.
+
+image:screenshot-iam-member-details.png["Ein Screenshot der Detailseite für ein Mitglied, das Berechtigungen für ein Projekt und einen Ordner hat."]
+
+Hier ist ein weiteres Beispiel, das ein Mitglied zeigt, das über die Rolle „Organisationsadministrator“ verfügt, die dem Benutzer Zugriff auf alle Ressourcen im Unternehmen gewährt.
+
+image:screenshot-iam-member-details-org-admin.png["Ein Screenshot der Detailseite für ein Mitglied, das über Administratorberechtigungen für die Organisation verfügt."]
+
+.Verwandte Informationen
+link:task-iam-manage-folders-projects.html#view-associated-resources-members["Alle Mitglieder anzeigen, die einem bestimmten Ordner oder Projekt zugeordnet sind"].
+
+
+
+== Verwalten der Berechtigungen eines Mitglieds
+
+Eine Rolle definiert die Berechtigungen, die einem Mitglied auf Unternehmens-, Ordner- oder Projektebene zugewiesen werden. Jedem Organisationsmitglied kann eine Rolle auf verschiedenen Ebenen der Organisationshierarchie zugewiesen werden. Es kann die gleiche Rolle oder eine andere Rolle sein. Sie können beispielsweise eine Mitgliedrolle A für Projekt 1 und Rolle B für Projekt 2 zuweisen.
+
+
+TIP: Einem Mitglied, dem die Rolle „Organisationsadministrator“ zugewiesen ist, können keine zusätzlichen Rollen zugewiesen werden. Sie verfügen bereits über Berechtigungen im gesamten Unternehmen.
+
+
+
+=== Fügen Sie einem Mitglied eine Rolle hinzu
+
+Geben Sie einem Mitglied zusätzliche Berechtigungen in Ihrem Unternehmen an, indem Sie Rollen hinzufügen, die auf die Unternehmens-, Ordner- oder Projektebene zutreffen.
+
+.Schritte
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Rolle hinzufügen* aus.
+. Führen Sie zum Hinzufügen einer Rolle die folgenden Schritte im Dialogfeld aus:
++
+** *Wählen Sie eine Organisation, einen Ordner oder ein Projekt*: Wählen Sie die Ebene Ihrer Ressourcenhierarchie aus, für die das Mitglied Berechtigungen haben soll.
++
+Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
+
+** *Wählen Sie eine Rolle*: Wählen Sie eine Rolle aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
++
+*** Wenn Sie die Organisation ausgewählt haben, können Sie aus jeder anderen Rolle als *Ordner oder Projektadministrator* wählen.
+*** Wenn Sie einen Ordner oder ein Projekt ausgewählt haben, können Sie aus jeder anderen Rolle als *Organisationsadministrator* wählen.
++
+link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte IAM-Rollen"].
+
+
+
+** *Rolle hinzufügen*: Wenn Sie Zugriff auf zusätzliche Ordner oder Projekte innerhalb Ihrer Organisation gewähren möchten, wählen Sie *Rolle hinzufügen*, geben Sie einen anderen Ordner oder ein anderes Projekt an und wählen Sie dann eine Rolle.
+
+
+. Wählen Sie *Neue Rollen hinzufügen*.
+
+
+.Ergebnis
+BlueXP  fügt die Rollen hinzu. Das Mitglied hat jetzt Berechtigungen für die Ressourcen in der Organisation, dem Ordner oder dem Projekt, das Sie ausgewählt haben.
+
+
+
+=== Wechsel von einer Rolle zur anderen
+
+Wenn Sie die Berechtigungen eines Mitglieds ändern müssen, können Sie die Rolle, die diesem Mitglied zugeordnet ist, auf Unternehmens-, Ordner- oder Projektebene ändern.
+
+Wenn Sie die Rollen für mehrere Mitglieder in Ihrer Organisation ändern müssen, können Sie die Änderungen mit einer Massenaktion gleichzeitig abschließen.
+
+[role="tabbed-block"]
+====
+.Ein Mitglied
+--
+.Schritte
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
+. Navigieren Sie in der Tabelle zur Organisation, zum Ordner oder zum Projekt, und wählen Sie dann eine neue Rolle aus.
+
+
+.Ergebnis
+BlueXP  aktualisiert die Rollen, die diesem Mitglied auf der Organisations-, Ordner- und Projektebene zugeordnet sind.
+
+--
+.Mehrere Mitglieder
+--
+.Schritte
+. Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Organisation bearbeiten*, *Ordner bearbeiten* oder *Projekt bearbeiten*.
+. Wählen Sie auf der Seite *Bearbeiten* *Zugriff*.
+. Wählen Sie alle Mitglieder aus oder wählen Sie einzeln zwei oder mehr Mitglieder aus.
+. Wählen Sie *Rolle definieren*.
++
+image:screenshot-iam-define-role.png["Ein Screenshot des Abschnitts „Zugriff“ des Dialogfelds „Bearbeiten“, in dem Sie die Aktion „Rolle definieren“ auswählen können, nachdem Sie zwei oder mehr Mitglieder ausgewählt haben."]
+
+. Wählen Sie die Rolle aus, die Sie den Mitgliedern zuweisen möchten, und wählen Sie dann *define* aus.
+
+
+.Ergebnis
+BlueXP  aktualisiert die Rollen für alle von Ihnen ausgewählten Mitglieder.
+
+--
+====
+
+
+=== Berechtigungen für einen Ordner oder ein Projekt entfernen
+
+Sie können die Berechtigungen eines Mitglieds für einen bestimmten Ordner oder ein bestimmtes Projekt entfernen, indem Sie dessen Rolle entfernen.
+
+.Über diese Aufgabe
+Wenn ein Mitglied in Ihrer Organisation Berechtigungen für einen Ordner oder ein Projekt hat, können Sie diese Rolle nicht entfernen. Sie haben zwei Möglichkeiten:
+
+* Wenn das Mitglied Berechtigungen für einen anderen Teil der Ressourcenhierarchie haben soll, müssen Sie zuerst diese Rolle hinzufügen und dann die vorhandene Rolle löschen.
+* Wenn Sie nicht möchten, dass das Mitglied über Berechtigungen für irgendetwas verfügt, können Sie das Mitglied einfach aus Ihrer Organisation entfernen.
+
+
+.Schritte
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
+. Navigieren Sie in der Tabelle zum Ordner oder zur Projektebene, und wählen Sie aus image:icon-delete.png["Ein Symbol einer Mülltonne"]
+
+
+.Ergebnis
+BlueXP  entfernt Berechtigungen für dieses Mitglied auf Ordner- oder Projektebene.
+
+
+
+== Erstellen Sie die Anmeldeinformationen für ein Dienstkonto neu
+
+Sie können die Anmeldeinformationen (Client-ID und Client Secret) für ein Dienstkonto jederzeit neu erstellen. Sie können die Anmeldeinformationen neu erstellen, wenn Sie sie verloren haben oder wenn Ihr Unternehmen erfordert, dass Sie die Sicherheitsanmeldeinformationen nach einer bestimmten Zeit drehen.
+
+.Über diese Aufgabe
+Durch das Neuerstellen der Anmeldeinformationen werden die vorhandenen Anmeldeinformationen für das Dienstkonto gelöscht und anschließend neue Anmeldeinformationen erstellt. Sie können die vorherigen Anmeldedaten nicht verwenden.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie *Mitglieder*.
+. Navigieren Sie in der Tabelle *Members* zu einem Servicekonto, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Recreate Secrets* aus.
+. Wählen Sie *Recreate*.
+. Laden Sie die Client-ID und den Client-Schlüssel herunter, oder kopieren Sie ihn.
++
+Das Clientgeheimnis ist nur einmal sichtbar und wird von BlueXP nirgendwo gespeichert. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher.
+
+. Wählen Sie *Schließen*.
+
+
+.Ergebnis
+Dem Dienstkonto sind jetzt eine neue Client-ID und ein neuer Client-Schlüssel zugeordnet.
+
+
+
+== Entfernen Sie ein Mitglied aus Ihrer Organisation
+
+Möglicherweise müssen Sie ein Mitglied aus Ihrer Organisation entfernen, z. B. wenn es Ihr Unternehmen verlassen hat.
+
+.Über diese Aufgabe
+Diese Aufgabe löscht nicht das BlueXP -Konto des Mitglieds oder das NetApp Support-Website-Konto. Es entfernt einfach das Mitglied und die zugehörigen Berechtigungen aus Ihrer Organisation.
+
+.Schritte
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Benutzer löschen* aus.
+. Bestätigen Sie, dass Sie das Mitglied aus Ihrer Organisation entfernen möchten.
+
+
+.Ergebnis
+BlueXP  entfernt das Mitglied. Wenn sich das Mitglied erneut bei BlueXP  anmeldet, haben sie keinen Zugriff mehr auf Ihre BlueXP -Organisation.
+
+
+
+== Verwandte Informationen
+
+* link:concept-identity-and-access-management.html["Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP "]
+* link:task-iam-get-started.html["Erste Schritte mit BlueXP  IAM"]
+* link:reference-iam-predefined-roles.html["Vordefinierte BlueXP  IAM-Rollen"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Erfahren Sie mehr über die API für BlueXP  IAM"^]
+

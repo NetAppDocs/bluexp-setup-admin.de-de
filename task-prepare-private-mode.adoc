@@ -46,22 +46,49 @@ Bei der Installation des Connectors wird festgelegt, welche BlueXP Services und 
 Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt.
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
-Unterstütztes Betriebssystem::
+[[podman-Versionen]]Anforderungen an das Betriebssystem und den Container:: BlueXP  unterstützt den Connector mit den folgenden Betriebssystemen, wenn BlueXP  im privaten Modus verwendet wird. Vor der Installation des Connectors ist ein Container-Orchestrierungstool erforderlich.
 +
 --
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 bis 8.10
-** 9.1 bis 9.4
-+
-Der Host muss bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
-
-+
-Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unterstützt.
+[cols="2a,2a,2a,2a,2a"]
+|===
+| Betriebssystem | Unterstützte OS-Versionen | Unterstützte Connector-Versionen | Benötigter Container-Tool | SELinux 
 
 
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9.1 bis 9.4
 
+8.6 bis 8.10
+ a| 
+3.9.42 oder höher mit BlueXP  im privaten Modus
+ a| 
+Podman Version 4.6.1 oder 4.9.4
+
+<<podman-configuration,Zeigen Sie die Konfigurationsanforderungen für Podman an>>.
+ a| 
+Unterstützt im Enforcing-Modus oder im permissiven Modus
+
+
+
+ a| 
+Ubuntu
+ a| 
+22,04 LTS
+ a| 
+3.9.29 oder höher
+ a| 
+Docker Engine 23.0.6 bis 26.0.0
+
+26.0.0 wird mit _New_ Connector 3.9.44 oder neueren Installationen unterstützt
+ a| 
+Nicht unterstützt
+
+|===
+Hinweise:
+
+* Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unterstützt.
+* Für RHEL muss der Host bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 
 
 --
@@ -88,40 +115,6 @@ Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
 BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt `/var/lib/containers/storage` Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.
 
 --
-Container-Orchestrierungstool:: Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
-+
---
-[[podman-versions]]
-* Podman ist für Red hat Enterprise Linux erforderlich.
-+
-Für Podman müssen folgende Voraussetzungen erfüllt sein:
-
-+
-** Podman Version 4.6.1 oder 4.9.4 ist erforderlich
-** Der podman.Socket-Dienst muss aktiviert und gestartet werden
-** python3 muss installiert sein
-** Das Paket podman-compose Version 1.0.6 muss installiert sein
-** Podman-compose muss der Umgebungsvariable PATH hinzugefügt werden
-
-
-* Docker Engine ist für Ubuntu erforderlich.
-+
-[cols="3*"]
-|===
-| Connector-Version | Mindestversion der Docker Engine | Maximale Version der Docker Engine 
-
-
-| _New_ Connector Installation ab 3.9.44 | 23.0.6 | 26.0.0 
-
-
-| Vor der Version 3.9.44 erstellte Anschlüsse | 23.0.6 | 25.0.5 
-|===
-+
-https://docs.docker.com/engine/install/["Lesen Sie die Docker-Installationsanweisungen"^]
-
-
-
---
 
 
 
@@ -133,7 +126,13 @@ Sie müssen den Host für den Connector vorbereiten, indem Sie Podman oder die D
 Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.
 
 * Podman ist für Red hat Enterprise Linux 8 und 9 erforderlich.
++
+<<podman-versions,Zeigen Sie die Podman-Versionen an, die von BlueXP  unterstützt werden>>.
+
 * Docker Engine ist für Ubuntu erforderlich.
++
+<<podman-versions,Zeigen Sie die von BlueXP  unterstützten Versionen der Docker Engine an>>.
+
 
 
 .Schritte
@@ -141,7 +140,13 @@ Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevo
 ====
 .Podman
 --
-Installieren Sie eine unterstützte Version von Podman. <<podman-versions,Zeigen Sie die Podman-Versionen an, die von BlueXP  unterstützt werden>>.
+Führen Sie die folgenden Schritte aus, um Podman zu installieren und zu konfigurieren, um die folgenden Anforderungen zu erfüllen:
+
+* Der podman.Socket-Dienst muss aktiviert und gestartet werden
+* python3 muss installiert sein
+* Das Paket podman-compose Version 1.0.6 muss installiert sein
+* Podman-compose muss der Umgebungsvariable PATH hinzugefügt werden
+
 
 .Schritte
 . Entfernen Sie das Paket podman-Docker, wenn es auf dem Host installiert ist.
@@ -224,13 +229,10 @@ NOTE: Verwenden der `dnf install` Befehl erfüllt die Anforderung zum Hinzufüge
 --
 .Docker Engine
 --
-Installieren Sie eine unterstützte Version der Docker Engine. <<podman-versions,Zeigen Sie die von BlueXP  unterstützten Versionen der Docker Engine an>>.
+Folgen Sie der Dokumentation von Docker, um die Docker Engine zu installieren.
 
 .Schritte
-. Installieren Sie Die Docker Engine.
-+
-https://docs.docker.com/engine/install/["Installationsanweisungen von Docker anzeigen"^]
-
+. https://docs.docker.com/engine/install/["Installationsanweisungen von Docker anzeigen"^]
 +
 Befolgen Sie die Schritte, um eine bestimmte Version der Docker Engine zu installieren. Durch die Installation der neuesten Version wird eine Docker Version installiert, die BlueXP nicht unterstützt.
 

@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-iam-get-started.html 
+keywords: iam, quick start, get started, get started with iam, identity and access management 
+summary: Um mit IAM zu beginnen, passen Sie die Hierarchie der Organisation an, fügen zusätzliche Mitglieder hinzu, fügen Ressourcen hinzu oder ermitteln und verknüpfen diese Ressourcen mit Projekten. 
+---
+= Erste Schritte mit BlueXP -Identitäts- und Zugriffsmanagement
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie sich bei BlueXP  anmelden, werden Sie aufgefordert, ein neues Unternehmen zu erstellen. Die Organisation umfasst ein Mitglied (einen Organisationsadministrator) und ein Standardprojekt. Um das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) für Ihre geschäftlichen Anforderungen einzurichten, müssen Sie die Hierarchie Ihres Unternehmens anpassen, zusätzliche Mitglieder hinzufügen, Ressourcen hinzufügen oder ermitteln und diese Ressourcen in Ihrer Hierarchie zuordnen.
+
+Sie müssen über *Organisationsadministrator*-Berechtigungen verfügen, um die gesamte Organisation über BlueXP  IAM verwalten zu können. Wenn Sie *Ordner- oder Projektadministrator*-Berechtigungen haben, können Sie nur die Ordner und Projekte verwalten, für die Sie Berechtigungen haben.
+
+Führen Sie diese Schritte aus, um eine neue BlueXP -Organisation einzurichten. Die Reihenfolge, in der Sie diese Schritte durchführen, kann je nach den Anforderungen Ihres Unternehmens unterschiedlich sein.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Bearbeiten Sie das Standardprojekt, oder fügen Sie es der Hierarchie Ihrer Organisation hinzu
+[role="quick-margin-para"]
+Sie können einfach das Standardprojekt verwenden oder zusätzliche Projekte und Ordner erstellen, die der Hierarchie Ihres Unternehmens entsprechen.
+
+[role="quick-margin-para"]
+link:task-iam-manage-folders-projects.html["Erfahren Sie, wie Sie Ihre Ressourcen mit Ordnern und Projekten organisieren"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Ordnen Sie Mitglieder Ihrer Organisation zu
+[role="quick-margin-para"]
+Wenn mehrere Mitarbeiter in Ihrem Unternehmen auf Ressourcen von BlueXP  zugreifen und diese verwalten müssen, müssen Sie ihre Benutzerkonten Ihrem Unternehmen zuordnen und die entsprechenden Berechtigungen für Ihre Ressourcenhierarchie bereitstellen. Sie haben auch die Möglichkeit, Servicekonten zu Ihrer Organisation hinzuzufügen.
+
+[role="quick-margin-para"]
+link:task-iam-manage-members-permissions.html["Erfahren Sie, wie Sie Mitglieder und ihre Berechtigungen verwalten"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Ressourcen hinzufügen oder erkennen
+[role="quick-margin-para"]
+Fügen Sie Ressourcen in BlueXP  als _Arbeitsumgebungen_ hinzu oder erkennen Sie sie. Eine Arbeitsumgebung stellt ein Speichersystem dar, das die Mitglieder des Unternehmens aus einem Projekt heraus managen. Beispielsweise ein Cloud Volumes ONTAP System oder ein On-Premises ONTAP Cluster.
+
+[role="quick-margin-para"]
+Erfahren Sie, wie Sie Ressourcen auf dem BlueXP -Bildschirm erstellen oder entdecken:
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSX für NetApp ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Dateien"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["E-Series Systeme"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["On-Premises ONTAP Cluster"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Ressourcen mit zusätzlichen Projekten verknüpfen
+[role="quick-margin-para"]
+Wenn Sie eine Ressource in BlueXP  erstellen oder ermitteln, wird diese Ressource automatisch mit dem Projekt verknüpft, das beim Erstellen oder Erkennen der Arbeitsumgebung ausgewählt wurde. Wenn Sie diese Ressource einem anderen Projekt in Ihrer Organisation zur Verfügung stellen möchten, müssen Sie eine Verknüpfung zwischen ihnen erstellen. Wenn die Ressource von einem Connector verwaltet wird, müssen Sie auch eine Zuordnung zwischen dem Projekt und dem zugehörigen Connector erstellen.
+
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html["Erfahren Sie, wie Sie die Ressourcenhierarchie Ihres Unternehmens verwalten"].
+* link:task-iam-associate-connectors.html["Erfahren Sie, wie Sie einen Connector einem Ordner oder Projekt zuordnen"].
+
+
+.Verwandte Informationen
+* link:concept-identity-and-access-management.html["Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP "]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Erfahren Sie mehr über die API für BlueXP  IAM"^]
+

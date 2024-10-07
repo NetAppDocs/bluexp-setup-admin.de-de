@@ -14,19 +14,29 @@ summary: Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewe
 
 
 [role="lead"]
-Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewer und SnapCenter-Admin bieten Benutzern spezifische Berechtigungen. Sie können eine dieser Rollen zuweisen, wenn Sie einen neuen Benutzer mit Ihrem BlueXP Konto verknüpfen.
+Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten. Sie können Benutzern in Ihrem Konto bestimmte Berechtigungen zuweisen, indem Sie eine der folgenden Rollen auswählen: Kontoadministrator, Arbeitsbereichsadministrator, Compliance-Viewer und SnapCenter-Administrator
 
-Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierungszugriff.
+Wenn Sie BlueXP  im Standardmodus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
+
+* link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
+* link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
+
 
 [cols="24,19,19,19,19"]
 |===
 | Aufgabe | Kontoadministrator | Workspace-Verwaltung | Compliance Viewer | SnapCenter Admin 
 
 
-| Verwalten von Arbeitsumgebungen | Ja. | Ja. | Nein | Nein 
+| Anschlüsse Erstellen | Ja. | Nein | Nein | Nein 
 
 
-| Services in Arbeitsumgebungen ermöglichen | Ja. | Ja. | Nein | Nein 
+| Verwalten von Arbeitsumgebungen | Ja. | Ja. | Nein | Ja. 
+
+
+| Services in Arbeitsumgebungen ermöglichen | Ja. | Ja. | Nein | Ja. 
+
+
+| Nutzung von BlueXP  Services | Ja. | Ja. | Nein | Ja. 
 
 
 | Entfernen von Arbeitsumgebungen aus einem Arbeitsbereich | Ja. | Ja. | Nein | Nein 
@@ -41,7 +51,7 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierung
 | Zeitachse anzeigen | Ja. | Ja. | Nein | Nein 
 
 
-| Wechseln Sie zwischen Arbeitsbereichen | Ja. | Ja. | Ja. | Nein 
+| Wechseln Sie zwischen Arbeitsbereichen | Ja. | Ja. | Ja. | Ja. 
 
 
 | Sehen Sie sich die Ergebnisse des BlueXP Klassifizierungs-Scans an | Ja. | Ja. | Ja. | Nein 
@@ -50,24 +60,16 @@ Die Compliance Viewer-Rolle dient dem schreibgeschützten BlueXP Klassifizierung
 | Cloud Volumes ONTAP Bericht erhalten | Ja. | Nein | Nein | Nein 
 
 
-| Anschlüsse Erstellen | Ja. | Nein | Nein | Nein 
-
-
 | BlueXP Konten managen | Ja. | Nein | Nein | Nein 
 
 
-| Anmeldeinformationen verwalten | Ja. | Nein | Nein | Nein 
+| Anmeldeinformationen verwalten | Ja. | Ja. | Nein | Nein 
 
 
-| Ändern Sie die Einstellungen von BlueXP | Ja. | Nein | Nein | Nein 
+| Ändern Sie die Einstellungen von BlueXP | Ja. | Ja. | Nein | Nein 
 
 
-| Anzeigen und Verwalten des Support-Dashboards | Ja. | Nein | Nein | Nein 
-
-
-| Installieren Sie ein HTTPS-Zertifikat | Ja. | Nein | Nein | Nein 
+| Anzeigen und Verwalten des Support-Dashboards | Ja. | Ja. | Nein | Nein 
 |===
-.Weiterführende Links
-* link:task-setting-up-netapp-accounts.html["Einrichten von Workspaces und Benutzern im BlueXP Konto"]
-* link:task-managing-netapp-accounts.html["Managen von Workspaces und Benutzern im BlueXP Konto"]
-
+.Verwandter Link
+link:task-managing-netapp-accounts.html["Managen Sie Ihr BlueXP Konto"]

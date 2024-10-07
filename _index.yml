@@ -2,13 +2,17 @@
 indexpage:
   title: Dokumentation zur Einrichtung und Administration von BlueXP
   summary: Steigen Sie ein für NetApp BlueXP, um Daten zu erstellen, zu schützen und
-    zu managen – in Ihren lokalen und Cloud-Umgebungen. Nach der Einrichtung können
-    Sie BlueXP Konten, Connectors, Cloud-Provider-Konten und vieles mehr verwalten.
+    zu managen – in Ihren lokalen und Cloud-Umgebungen. Nach Abschluss der Einrichtung
+    können Sie den Zugriff auf Ihre Ressourcen mithilfe von BlueXP  Identity and Access
+    Management (IAM) steuern und Connectors, Cloud-Provider-Konten und vieles mehr
+    verwalten.
   keywords: bluexp, connector, accounts, get started, setup, administration, sign
     up, log in, login, permissions
   lead: Steigen Sie ein für NetApp BlueXP, um Daten zu erstellen, zu schützen und
-    zu managen – in Ihren lokalen und Cloud-Umgebungen. Nach der Einrichtung können
-    Sie BlueXP Konten, Connectors, Cloud-Provider-Konten und vieles mehr verwalten.
+    zu managen – in Ihren lokalen und Cloud-Umgebungen. Nach Abschluss der Einrichtung
+    können Sie den Zugriff auf Ihre Ressourcen mithilfe von BlueXP  Identity and Access
+    Management (IAM) steuern und Connectors, Cloud-Provider-Konten und vieles mehr
+    verwalten.
   tiles:
   - title: Los geht's
     links:
@@ -22,14 +26,18 @@ indexpage:
       url: "/task-quick-start-restricted-mode.html"
     - title: Starten Sie mit dem privaten Modus
       url: "/task-quick-start-private-mode.html"
-  - title: BlueXP Accounts
+  - title: BlueXP IAM
     links:
-    - title: Mehr zu BlueXP Accounts
-      url: concept-netapp-accounts.html
-    - title: Managen Sie Ihr BlueXP Konto
-      url: task-managing-netapp-accounts.html
-    - title: Überwachen Sie den Betrieb Ihres Kontos
-      url: task-monitor-cm-operations.html
+    - title: Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP 
+      url: concept-identity-and-access-management.html
+    - title: Erste Schritte mit BlueXP  IAM
+      url: task-iam-get-started.html
+    - title: Organisieren Sie Ihre Ressourcen mit Ordnern und Projekten
+      url: task-iam-manage-folders-projects.html
+    - title: Mitglieder und deren Berechtigungen verwalten
+      url: task-iam-manage-members-permissions.html
+    - title: Verwalten Sie Ihre Ressourcenhierarchie
+      url: task-iam-manage-resources.html
   - title: Anschlüsse
     links:
     - title: Erfahren Sie mehr über Steckverbinder
@@ -82,7 +90,7 @@ indexpage:
     links:
     - title: Melden Sie sich bei BlueXP an
       url: task-logging-in.html
-    - title: Nutzung von Identitätsföderation mit BlueXP
+    - title: Nutzung der Identitätsföderation mit BlueXP 
       url: concept-federation.html
   - title: Blogs und Community
     links:

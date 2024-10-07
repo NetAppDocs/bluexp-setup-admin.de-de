@@ -25,14 +25,14 @@ Die BlueXP Plattform umfasst vier Hauptsäulen des Datenmanagements: Storage, Mo
 Storage:: Erkennen, implementieren und managen Sie Storage in AWS, Azure, Google Cloud oder vor Ort.
 +
 --
-* Einrichtung und Verwendung https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] Für effizientes, Cloud-übergreifendes Multi-Protokoll-Datenmanagement
 * Cloud-File-Storage-Services einrichten und verwenden:
 +
 ** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Dateien"^]
-** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX für ONTAP"^]
+** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX für NetApp ONTAP"^]
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service für Google Cloud"^]
 
 
+* Einrichtung und Verwendung https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] Für effizientes, Cloud-übergreifendes Multi-Protokoll-Datenmanagement
 * Erkennung und Management https://bluexp.netapp.com/netapp-on-premises["On-Premises-Storage"^]:
 +
 ** E-Series Systeme
@@ -43,7 +43,7 @@ Storage:: Erkennen, implementieren und managen Sie Storage in AWS, Azure, Google
 
 
 --
-Mobilität:: Daten werden durch Synchronisierung, Kopieren, Tiering und Caching von Daten dorthin verschoben, wo sie benötigt werden.
+Mobilität:: Daten werden durch Synchronisieren, Kopieren und Tiering dorthin verschoben, wo sie benötigt werden.
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["Kopieren und Synchronisieren"^]
@@ -55,7 +55,9 @@ Darstellt:: Automatisierte Sicherungsmechanismen schützen Daten vor Datenverlus
 +
 --
 * https://bluexp.netapp.com/cloud-backup["Backup und Recovery"^]
+* https://bluexp.netapp.com/disaster-recovery["Disaster Recovery"^]
 * https://bluexp.netapp.com/replication["Replizierung"^]
+* https://bluexp.netapp.com/ransomware-protection["Schutz durch Ransomware"^]
 
 
 --
@@ -71,7 +73,7 @@ Analyse und Kontrolle:: Mit Tools können Sie Ihren Storage und Ihre Infrastrukt
 --
 
 
-https://bluexp.netapp.com/["Erfahren Sie mehr darüber, wie Sie BlueXP für Ihr Unternehmen einsetzen können"^]
+https://bluexp.netapp.com/["Erfahren Sie mehr darüber, wie Sie mit BlueXP  Daten in Ihrer gesamten Hybrid-Multi-Cloud-Umgebung managen können"^]
 
 
 
@@ -89,35 +91,45 @@ Die Preise für BlueXP hängen von den Leistungen ab, die Sie verwenden möchten
 
 == Funktionsweise von BlueXP
 
-BlueXP umfasst eine webbasierte Konsole, die über die SaaS-Schicht bereitgestellt wird, Konten für Mandantenfähigkeit und Connectors, die Arbeitsumgebungen managen und BlueXP Cloud-Services aktivieren.
+BlueXP  umfasst eine webbasierte Konsole, die über die SaaS-Schicht bereitgestellt wird, ein Ressourcen- und Zugriffsverwaltungssystem sowie Connectors, die Arbeitsumgebungen verwalten und BlueXP -Cloud-Services aktivieren.
 
 
 
 === Software-as-a-Service
 
-Auf BlueXP kann über eine zugegriffen werden https://console.bluexp.netapp.com["Webbasierte Konsole"^] Und APIs. Dank SaaS-Erfahrung können Sie automatisch auf die neuesten Funktionen zugreifen, sobald sie veröffentlicht wurden, und ganz einfach zwischen Ihren BlueXP Konten und Connectors wechseln.
+Der Zugriff auf BlueXP  ist über ein https://console.bluexp.netapp.com["Webbasierte Konsole"^] und APIs möglich. Mit dieser SaaS-Lösung können Sie automatisch auf die neuesten Funktionen zugreifen, sobald diese veröffentlicht wurden, und problemlos zwischen Ihren BlueXP -Organisationen, -Projekten und -Connectors wechseln.
 
 
 
-=== BlueXP-Konto
+=== Identitäts- und Zugriffsmanagement (BlueXP , IAM)
 
-Wenn Sie sich zum ersten Mal bei BlueXP anmelden, werden Sie aufgefordert, ein _BlueXP Konto_ zu erstellen. Dieses Konto bietet Mandantenfähigkeit und ermöglicht es Ihnen, Benutzer und Ressourcen in isolierten Arbeitsbereichen zu organisieren_.
+Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) ist ein Modell für das Ressourcen- und Zugriffsmanagement, das ein granulares Management von Ressourcen und Berechtigungen bietet:
 
-link:concept-netapp-accounts.html["Hier erfahren Sie mehr über Accounts"].
+* Eine übergeordnete _Organisation_ ermöglicht Ihnen, den Zugriff über Ihre verschiedenen _Projekte_ zu verwalten
+* _Ordner_ ermöglicht Ihnen, verwandte Projekte zu gruppieren
+* Mit der Ressourcenverwaltung können Sie eine Ressource einem oder mehreren Ordnern oder Projekten zuordnen
+* Mit der Zugriffsverwaltung können Sie Mitgliedern auf verschiedenen Ebenen der Unternehmenshierarchie eine Rolle zuweisen
+
+
+BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus verwendet wird. Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, verwenden Sie ein BlueXP  _Account_, um Arbeitsbereiche, Benutzer und Ressourcen zu verwalten.
+
+* link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
+* link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
+
 
 
 
 === Anschlüsse
 
-Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. Ein Connector ermöglicht Ihnen das Management von Ressourcen und Prozessen in Ihren On-Premises- und Cloud-Umgebungen. Sie ist erforderlich, um Arbeitsumgebungen (z. B. Cloud Volumes ONTAP und lokale ONTAP-Cluster) zu managen und viele BlueXP Datenservices zu nutzen.
+Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. Ein Connector ermöglicht Ihnen das Management von Ressourcen und Prozessen in Ihren On-Premises- und Cloud-Umgebungen. Sie ist erforderlich, um Arbeitsumgebungen (z. B. Cloud Volumes ONTAP) zu managen und viele BlueXP -Services zu nutzen.
 
 link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].
 
 
 
-=== Eingeschränkter Modus und privater Modus
+=== Bereitstellungsmodi
 
-BlueXP wird auch in Umgebungen mit Einschränkungen bei Sicherheit und Konnektivität unterstützt. Sie können den _Restricted Mode_ oder _Private Mode_ verwenden, um die Outbound-Konnektivität zur BlueXP SaaS-Ebene zu beschränken.
+BlueXP  wird in Umgebungen mit Einschränkungen bei Sicherheit und Konnektivität unterstützt. Sie können den _Restricted Mode_ oder _Private Mode_ verwenden, um die Outbound-Konnektivität zur BlueXP SaaS-Ebene zu beschränken.
 
 link:concept-modes.html["Weitere Informationen zu den BlueXP Implementierungsmodi"].
 

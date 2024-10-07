@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-resources.html 
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management 
+summary: Verwalten Sie die Ressourcenhierarchie Ihres Unternehmens, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. 
+---
+= Management der Ressourcenhierarchie in Ihrer BlueXP -Organisation
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) ein Mitglied Ihrer Organisation zuordnen, geben Sie Berechtigungen auf Unternehmens-, Ordner- oder Projektebene ein. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Arbeitsumgebung, die BlueXP  bereits verwaltet.
+
+
+
+== Zeigen Sie die Ressourcen in Ihrem Unternehmen an
+
+Um die Ressourcenhierarchie zu verwalten, sollten Sie die Ressourcen kennen, die mit Ihrem Unternehmen verbunden sind.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie *Ressourcen*.
+
+
+.Ergebnis
+Die mit Ihrer Organisation verbundenen Ressourcen werden in der Tabelle *Ressourcen* angezeigt.
+
+.Was kommt als Nächstes?
+Um eine bestimmte Ressource zu finden, können Sie <<find-resources,suchen und filtern Sie den Inhalt der Tabelle>>.
+
+Nachdem Sie die gesuchte Ressource gefunden haben, können Sie eine der folgenden Aktionen durchführen:
+
+* <<view-folders-and-projects,Zeigen Sie die Ordner und Projekte an, die der Ressource zugeordnet sind>>
+* <<associate-resource,Verknüpfen Sie die Ressource mit zusätzlichen Ordnern und Projekten>>
+* <<remove-resource,Entfernen Sie die Ressource aus einem Ordner oder Projekt>>
+
+
+
+
+== Suchen Sie nach bestimmten Ressourcen in Ihrem Unternehmen
+
+Wenn Sie über eine große Anzahl von Ressourcen in Ihrem Unternehmen verfügen, können Sie die Such- und Filteroptionen verwenden, um eine bestimmte Ressource zu finden.
+
+.Schritte
+. Wählen Sie auf der Seite *Ressourcen* die Option *Erweiterte Suche und Filterung* aus.
+. Verwenden Sie eine der verfügbaren Optionen, um die gesuchte Ressource zu finden:
++
+** *Suche nach Ressourcenname*: Geben Sie eine Textzeichenfolge ein und wählen Sie *Hinzufügen*.
+** *Plattform*: Wählen Sie eine oder mehrere Plattformen wie Amazon Web Services.
+** *Ressourcen*: Wählen Sie eine oder mehrere Ressourcen, wie z. B. Cloud Volumes ONTAP.
+** *Organisation, Ordner oder Projekt*: Wählen Sie die gesamte Organisation, einen bestimmten Ordner oder ein bestimmtes Projekt aus.
+
+
+. Wählen Sie *Suche*.
+
+
+.Ergebnis
+Der Inhalt der Tabelle „Ressourcen“ wird aktualisiert, um die Ressourcen anzuzeigen, die zu Ihrer Such- und Filterauswahl passen.
+
+
+
+== Verknüpfen Sie eine Ressource mit Ordnern und Projekten
+
+Wenn Sie eine Ressource einem anderen Ordner oder Projekt in Ihrer Organisation zur Verfügung stellen möchten, müssen Sie eine Verknüpfung zwischen dem Ordner oder Projekt und der Ressource erstellen.
+
+.Bevor Sie beginnen
+Sie sollten verstehen, wie die Ressourcenzuordnung funktioniert. link:concept-identity-and-access-management.html#resources["Erfahren Sie mehr über Ressourcen, einschließlich wann Sie eine Ressource einem Ordner zuordnen"].
+
+.Schritte
+. Navigieren Sie auf der Seite *Ressourcen* zu einer Ressource in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Zuordnung zu Ordnern oder Projekten* aus.
+. Wählen Sie einen Ordner oder ein Projekt aus und wählen Sie dann *Accept* aus.
+. Um einen zusätzlichen Ordner oder ein weiteres Projekt zuzuordnen, wählen Sie *Ordner oder Projekt hinzufügen* und wählen Sie dann den Ordner oder das Projekt aus.
++
+Beachten Sie, dass Sie nur aus den Ordnern und Projekten auswählen können, für die Sie Administratorberechtigungen haben.
+
+. Wählen Sie *Ressourcen zuordnen*.
+
+
+.Ergebnis
+BlueXP  ordnet die Ressource den ausgewählten Ordnern und Projekten zu.
+
+* Wenn Sie die Ressource mit Projekten verknüpft haben, können Mitglieder, die Berechtigungen für diese Projekte haben, jetzt in BlueXP  auf die Ressource zugreifen.
+* Wenn Sie die Ressource einem Ordner zugeordnet haben, kann ein _Ordner oder Projektadministrator_ nun von BlueXP  IAM aus auf die Ressource zugreifen. link:concept-identity-and-access-management.html#resources["Erfahren Sie mehr über das Zuordnen einer Ressource zu einem Ordner"].
+
+
+.Nachdem Sie fertig sind
+Wenn die zugeordnete Ressource mithilfe eines BlueXP -Connectors ermittelt wird und Sie andere Mitglieder in Ihrer Organisation haben, müssen Sie den Connector auch dem Projekt zuordnen, dem die Ressource jetzt zugeordnet ist. Andernfalls können BlueXP  Mitglieder, die nicht über die Rolle „_Organisation admin_“ verfügen, nicht auf den Connector und dessen zugehörige Ressource zugreifen.
+
+link:task-iam-associate-connectors.html["Erfahren Sie, wie Sie einen Connector einem Ordner oder Projekt zuordnen"].
+
+
+
+== Zeigen Sie die mit einer Ressource verbundenen Ordner und Projekte an
+
+Um zu ermitteln, wo eine Ressource in der Hierarchie Ihrer Organisation verfügbar ist, können Sie die Ordner und Projekte anzeigen, die mit dieser Ressource verknüpft sind.
+
+.Schritte
+. Navigieren Sie auf der Seite *Ressourcen* zu einer Ressource in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
+
+
+.Ergebnis
+BlueXP  zeigt die Ordner und Projekte an, die der Ressource zugeordnet sind.
+
+Das folgende Beispiel zeigt eine Ressource, die einem Projekt zugeordnet ist.
+
+image:screenshot-iam-resource-details.png["Ein Screenshot der Seite mit den Ressourcendetails zeigt eine Ressource, die mit einem Projekt verknüpft ist, das sich direkt unter der Organisation befindet."]
+
+.Was kommt als Nächstes?
+* Sie können <<associate-resource,Verknüpfen Sie die Ressource mit einem zusätzlichen Projekt oder Ordner>>.
+* Sie können <<remove-resource,Entfernen Sie die Ressource aus einem bestimmten Ordner oder Projekt>>.
+* Wenn Sie herausfinden möchten, welche Organisationsmitglieder Zugriff auf die Ressource haben, können Sie link:task-iam-manage-folders-projects.html#view-associated-resources-members["Zeigen Sie die Mitglieder an, die Zugriff auf die Ordner und Projekte haben, die der Ressource zugeordnet sind"].
+
+
+
+
+== Eine Ressource aus einem Ordner oder Projekt entfernen
+
+Um eine Ressource aus einem Ordner oder Projekt zu entfernen, müssen Sie die Zuordnung zwischen dem Ordner oder Projekt und der Ressource entfernen. Nachdem Sie die Zuordnung entfernt haben, können Organisationsmitglieder die Ressource nicht mehr aus dem Ordner oder Projekt verwalten.
+
+.Über diese Aufgabe
+Wenn Sie eine erkannte Ressource aus der gesamten Organisation entfernen möchten, müssen Sie die Arbeitsumgebung aus dem BlueXP -Bildschirm entfernen.
+
+.Schritte
+. Navigieren Sie auf der Seite *Ressourcen* zu einer Ressource in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
+. Wählen Sie für den Ordner oder das Projekt aus, für den Sie die Ressource entfernen möchten image:icon-delete.png["Ein Symbol einer Mülltonne"]
+. Bestätigen Sie, dass Sie die Verknüpfung entfernen möchten, indem Sie *Löschen* auswählen.
+
+
+.Ergebnis
+BlueXP  entfernt die Verknüpfung. Mitglieder können nicht mehr von diesem Ordner oder Projekt auf die Ressource zugreifen.
+
+
+
+== Verwandte Informationen
+
+* link:concept-identity-and-access-management.html["Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP "]
+* link:task-iam-get-started.html["Erste Schritte mit BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Erfahren Sie mehr über die API für BlueXP  IAM"^]
+

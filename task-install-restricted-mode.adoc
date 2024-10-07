@@ -394,7 +394,7 @@ Bereitstellen von BlueXP mit dem AWS-Zugriffsschlüssel für einen IAM-Benutzer,
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
-image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+image:screenshot-settings-icon-organization.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
 . Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +
@@ -451,7 +451,7 @@ Stellen Sie BlueXP die Zugangsdaten für das zuvor von Ihnen Setup für den Azur
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
-image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+image:screenshot-settings-icon-organization.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
 . Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +

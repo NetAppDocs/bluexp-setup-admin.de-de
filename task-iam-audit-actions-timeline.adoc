@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-iam-audit-actions-timeline.html 
+keywords: iam, audit, monitor, audit iam actions, monitor iam actions 
+summary: 'Überwachung oder Prüfung von IAM-Aktionen (BlueXP  Identity and Access Management) aus dem Zeitstrahl' 
+---
+= Überwachen oder prüfen Sie die IAM-Aktivität über den BlueXP -Zeitplan
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie eine Aktion überwachen oder überwachen müssen, die über das BlueXP -Identitäts- und Zugriffsmanagement (IAM) abgeschlossen wurde, können Sie Details in der BlueXP -Zeitleiste anzeigen. Sie können beispielsweise überprüfen, wer ein Mitglied zu einer Organisation hinzugefügt hat oder ob ein Projekt erfolgreich gelöscht wurde.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Zeitleiste* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie aus den Filtern *Service* und dann *Tenancy* aus.
+. Verwenden Sie einen der anderen Filter, um zu ändern, welche Aktionen in der Tabelle angezeigt werden.
++
+Zum Beispiel können Sie den Filter *User* verwenden, um Aktionen anzuzeigen, die mit einem bestimmten Benutzerkonto zusammenhängen.
+
+
+
+.Ergebnis
+Die Zeitleiste wird aktualisiert, um Ihnen abgeschlossene Verwaltungsaktionen im Zusammenhang mit BlueXP  IAM anzuzeigen.

@@ -433,7 +433,7 @@ https://_ipaddress_[]
 
 . Richten Sie nach der Anmeldung den Konnektor ein:
 +
-.. Geben Sie das BlueXP Konto an, das dem Connector zugeordnet werden soll.
+.. Geben Sie die BlueXP -Organisation an, die dem Connector zugeordnet werden soll.
 .. Geben Sie einen Namen für das System ein.
 .. Unter *laufen Sie in einer gesicherten Umgebung?* Sperrmodus deaktiviert halten.
 +
@@ -445,7 +445,7 @@ Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschr
 
 
 .Ergebnis
-Der Connector ist jetzt installiert und mit Ihrem BlueXP Konto eingerichtet.
+Der Connector ist jetzt installiert und wird mit Ihrer BlueXP -Organisation eingerichtet.
 
 Wenn Azure Blob Storage in demselben Azure Abonnement genutzt wird, in dem der Connector erstellt wurde, wird automatisch eine Azure Blob Storage-Arbeitsumgebung auf dem BlueXP Bildschirm angezeigt. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Erfahren Sie, wie Sie Azure Blob Storage aus BlueXP managen"^]
 
@@ -499,7 +499,7 @@ Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Con
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
-image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+image:screenshot-settings-icon-organization.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
 . Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +

@@ -243,7 +243,7 @@ https://_ipaddress_[]
 
 . Richten Sie nach der Anmeldung den Konnektor ein:
 +
-.. Geben Sie das BlueXP Konto an, das dem Connector zugeordnet werden soll.
+.. Geben Sie die BlueXP -Organisation an, die dem Connector zugeordnet werden soll.
 .. Geben Sie einen Namen für das System ein.
 .. Unter *laufen Sie in einer gesicherten Umgebung?* Sperrmodus deaktiviert halten.
 +
@@ -255,7 +255,7 @@ Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschr
 
 
 .Ergebnis
-Der Connector ist jetzt mit Ihrem BlueXP Konto installiert und eingerichtet.
+Der Connector ist jetzt installiert und mit Ihrer BlueXP -Organisation eingerichtet.
 
 Öffnen Sie einen Webbrowser, und rufen Sie den auf https://console.bluexp.netapp.com["BlueXP-Konsole"^] Um den Connector mit BlueXP zu verwenden.
 

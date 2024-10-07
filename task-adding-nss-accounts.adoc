@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: Ordnen Sie Ihrem BlueXP Konto ein NetApp Support Site Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu ermöglichen. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet. 
+summary: Ordnen Sie ein NetApp Support Site Konto Ihrer Organisation oder Ihrem BlueXP  Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu ermöglichen. Diese NSS-Anmeldeinformationen sind mit der gesamten-Organisation oder dem gesamten BlueXP -Konto verknüpft. 
 ---
-= NSS-Anmeldedaten managen, die mit einem BlueXP Konto verknüpft sind
+= Verwalten von NSS-Anmeldeinformationen, die einer-Organisation oder einem BlueXP -Konto zugeordnet sind
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,23 @@ summary: Ordnen Sie Ihrem BlueXP Konto ein NetApp Support Site Konto zu, um wich
 
 
 [role="lead"]
-Ordnen Sie Ihrem BlueXP Konto ein NetApp Support Site Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu ermöglichen. Diese NSS-Zugangsdaten sind dem gesamten BlueXP Konto zugeordnet.
+Ordnen Sie ein NetApp Support Site Konto Ihrer Organisation oder Ihrem BlueXP  Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu ermöglichen. Diese NSS-Anmeldeinformationen sind mit der gesamten-Organisation oder dem gesamten BlueXP -Konto verknüpft.
+
+BlueXP  unterstützt zudem die Zuordnung eines NSS-Kontos pro BlueXP -Benutzerkonto. link:task-manage-user-credentials.html["Erfahren Sie, wie Sie Anmeldedaten auf Benutzerebene verwalten"].
 
 
-NOTE: BlueXP unterstützt zudem die Zuordnung eines NSS-Kontos pro BlueXP Benutzer. link:task-manage-user-credentials.html["Erfahren Sie, wie Sie Anmeldedaten auf Benutzerebene verwalten"].
+TIP: Wenn Sie BlueXP  im Standardmodus verwenden, verfügen Sie über eine _BlueXP  Organisation_, die Sie mit BlueXP  Identitäts- und Zugriffsmanagement (IAM) verwalten. Aber wenn Sie BlueXP  im eingeschränkten Modus oder im privaten Modus verwenden, dann haben Sie ein _BlueXP -Konto_.
+
+* link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
+* link:concept-identity-and-access-management.html["Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP "]
+* link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
+
 
 
 
 == Überblick
 
-Um die folgenden Aufgaben in BlueXP zu ermöglichen, ist es erforderlich, die NetApp Support Site Anmeldedaten mit Ihrer spezifischen BlueXP Account-ID zu verknüpfen:
+Um in BlueXP  die folgenden Aufgaben zu ermöglichen, ist es erforderlich, die Zugangsdaten der NetApp Support Website mit der angegebenen Seriennummer Ihres BlueXP  Kontos zu verknüpfen:
 
 * Implementierung von Cloud Volumes ONTAP unter Verwendung von BYOL (Bring-Your-Own-License)
 +
@@ -36,13 +43,13 @@ Die Bereitstellung Ihres NSS Kontos ist erforderlich, um Support für Ihr System
 * Aktualisieren der Cloud Volumes ONTAP Software auf die neueste Version
 
 
-Diese Zugangsdaten sind mit Ihrer spezifischen BlueXP Konto-ID verknüpft. Benutzer, die zum BlueXP Konto gehören, können über *Support > NSS Management* auf diese Anmeldedaten zugreifen.
+Diese Anmeldedaten sind mit Ihrer spezifischen Seriennummer Ihres BlueXP -Kontos verknüpft. Benutzer, die der-Organisation oder dem BlueXP -Konto angehören, können über *Support > NSS-Verwaltung* auf diese Anmeldedaten zugreifen.
 
 
 
 == Fügen Sie ein NSS-Konto hinzu
 
-Mit dem Support Dashboard können Sie Ihre NetApp Support Site Konten zur Verwendung mit BlueXP auf BlueXP Kontoebene hinzufügen und managen.
+Über das Support-Dashboard können Sie Ihre Konten der NetApp Support Website für die Verwendung mit BlueXP  auf BlueXP -Ebene oder auf Account-Ebene hinzufügen und managen.
 
 * Wenn Sie über ein Konto auf Kundenebene verfügen, können Sie ein oder mehrere NSS-Konten hinzufügen.
 * Wenn Sie einen Partner- oder Reseller-Account haben, können Sie ein oder mehrere NSS-Konten hinzufügen, können aber nicht neben Kunden-Level Accounts hinzugefügt werden.

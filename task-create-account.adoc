@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-account.html 
 keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
-summary: Wenn Sie sich bei BlueXP anmelden, werden Sie aufgefordert, ein Konto für Ihr Unternehmen zu erstellen. Dieser Account könnte alles sein, was Sie benötigen. Wenn Ihr Unternehmen jedoch mehrere Accounts benötigt, müssen Sie mithilfe der Mandanten-API zusätzliche Konten erstellen. 
+summary: Wenn Sie BlueXP  im eingeschränkten oder privaten Modus einrichten, werden Sie aufgefordert, ein Konto zu erstellen. Wenn Sie mehrere Konten benötigen, müssen Sie diese mit der Mandanten-API erstellen. 
 ---
 = Ein weiteres BlueXP Konto erstellen
 :hardbreaks:
@@ -14,14 +14,19 @@ summary: Wenn Sie sich bei BlueXP anmelden, werden Sie aufgefordert, ein Konto f
 
 
 [role="lead"]
-Wenn Sie sich bei BlueXP anmelden, werden Sie aufgefordert, ein Konto für Ihr Unternehmen zu erstellen. Dieser Account könnte alles sein, was Sie benötigen. Wenn Ihr Unternehmen jedoch mehrere Accounts benötigt, müssen Sie mithilfe der Mandanten-API zusätzliche Konten erstellen.
+Wenn Sie BlueXP  im eingeschränkten oder privaten Modus einrichten, werden Sie aufgefordert, ein _BlueXP -Konto zu erstellen, mit dem Sie Benutzer verwalten und Ressourcen organisieren können. Dieser Account könnte alles sein, was Sie benötigen. Wenn Ihr Unternehmen jedoch mehrere Accounts benötigt, müssen Sie mithilfe der Mandanten-API zusätzliche Konten erstellen.
 
-Erstellen Sie mithilfe des folgenden API-Anrufs ein zusätzliches BlueXP Konto:
+Wenn Sie BlueXP  im Standardmodus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen haben Sie eine Organisation, die Sie mit BlueXP  Identitäts- und Zugriffsmanagement (IAM) verwalten. link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"].
 
+.Schritte
+. Erstellen Sie mithilfe des folgenden API-Anrufs ein zusätzliches BlueXP Konto:
++
 POST `/tenancy/account/{accountName}`
 
++
 Wenn Sie den eingeschränkten Modus aktivieren möchten, müssen Sie Folgendes in den Anforderungstext aufnehmen:
 
++
 [source, JSON]
 ----
 {
@@ -29,11 +34,13 @@ Wenn Sie den eingeschränkten Modus aktivieren möchten, müssen Sie Folgendes i
 }
 ----
 
+
+
 NOTE: Die Einstellung für den eingeschränkten Modus kann nicht geändert werden, nachdem BlueXP das Konto erstellt hat. Der eingeschränkte Modus kann später nicht aktiviert werden, und Sie können ihn später nicht mehr deaktivieren. Sie muss zum Zeitpunkt der Kontoerstellung festgelegt werden.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html["Erfahren Sie, wie Sie diesen API-Aufruf verwenden"^]
 
-.Weiterführende Links
+.Verwandte Informationen
 * link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
 

@@ -289,7 +289,7 @@ Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern k�
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
 +
-image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+image:screenshot-settings-icon-organization.png["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
 
 . Wählen Sie *Anmeldeinformationen hinzufügen* und folgen Sie den Schritten im Assistenten.
 +
@@ -357,13 +357,13 @@ Sie werden auf die BlueXP-Website umgeleitet.
 
 .. Auf der Seite *Subscription Assignment*:
 +
-*** Wählen Sie die BlueXP Konten aus, mit denen Sie dieses Abonnement verknüpfen möchten.
-*** Wählen Sie im Feld *vorhandenes Abonnement ersetzen* aus, ob Sie das vorhandene Abonnement für ein Konto automatisch durch dieses neue Abonnement ersetzen möchten.
+*** Wählen Sie die BlueXP -Organisationen oder -Konten aus, denen Sie dieses Abonnement zuordnen möchten.
+*** Wählen Sie im Feld *bestehendes Abonnement ersetzen* aus, ob Sie das bestehende Abonnement für eine Organisation oder ein Konto automatisch durch dieses neue Abonnement ersetzen möchten.
 +
-BlueXP ersetzt das vorhandene Abonnement für alle Anmeldeinformationen im Konto durch dieses neue Abonnement. Wenn eine Gruppe von Anmeldeinformationen noch nicht mit einem Abonnement verknüpft wurde, wird dieses neue Abonnement nicht mit diesen Anmeldedaten verknüpft.
+BlueXP  ersetzt mit diesem neuen Abonnement das bestehende Abonnement für alle Anmeldeinformationen im Unternehmen oder Konto. Wenn eine Gruppe von Anmeldeinformationen noch nicht mit einem Abonnement verknüpft wurde, wird dieses neue Abonnement nicht mit diesen Anmeldedaten verknüpft.
 
 +
-Bei allen anderen Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie die folgenden Schritte wiederholen.
+Bei allen anderen Organisationen oder Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie diese Schritte wiederholen.
 
 *** Wählen Sie *Speichern*.
 +
@@ -386,7 +386,7 @@ Bearbeiten Sie Ihre Azure-Anmeldedaten in BlueXP, indem Sie die Details zu Ihren
 
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
-. Wählen Sie auf der Seite *Account Credentials* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Credentials bearbeiten*.
+. Wählen Sie auf der Seite *Unternehmensanmeldeinformationen* oder *Kontoanmeldeinformationen* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Anmeldeinformationen bearbeiten*.
 . Nehmen Sie die erforderlichen Änderungen vor und wählen Sie dann *Anwenden*.
 
 
@@ -398,6 +398,6 @@ Wenn Sie keine Anmeldedaten mehr benötigen, können Sie diese aus BlueXP lösch
 
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
-. Wählen Sie auf der Seite *Account Credentials* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Credentials löschen*.
+. Wählen Sie auf der Seite *Unternehmensanmeldeinformationen* oder *Kontoanmeldeinformationen* das Aktionsmenü für einen Satz von Anmeldeinformationen aus und wählen Sie dann *Anmeldeinformationen löschen*.
 . Wählen Sie *Löschen*, um zu bestätigen.
 

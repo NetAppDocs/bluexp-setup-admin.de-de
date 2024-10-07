@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: connector, associate connector, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource 
+summary: Wenn Mitglieder Ihres Unternehmens einen Konnektor in einem anderen Projekt verwenden müssen, müssen Sie eine Verknüpfung von BlueXP  IAM erstellen. 
+---
+= Verknüpfen Sie einen BlueXP -Konnektor mit anderen Ordnern und Projekten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ein Connector ist erforderlich, um mehrere Arten von Arbeitsumgebungen von BlueXP  aus zu verwalten. Wenn ein _Organisationsadministrator_ einen Konnektor erstellt, ordnet BlueXP  diesen Connector automatisch der Organisation und dem aktuell ausgewählten Projekt zu. Der _Organisation admin_ hat automatisch von überall im Unternehmen Zugriff auf diesen Connector. Andere Mitglieder in Ihrem Unternehmen können nur auf diesen Connector aus dem Projekt zugreifen, in dem er erstellt wurde, es sei denn, Sie verknüpfen diesen Connector mit anderen Projekten aus dem BlueXP -Identitäts- und Zugriffsmanagement (IAM).
+
+.Bevor Sie beginnen
+Sie sollten verstehen, wie die Verbindungszuordnung funktioniert. link:concept-identity-and-access-management.html#associate-connectors["Erfahren Sie mehr über die Verwendung von Steckverbindern mit BlueXP  IAM"].
+
+.Über diese Aufgabe
+* Wenn ein _Ordner- oder Projektadministrator_ die Seite *Connectors* anzeigt, werden auf der Seite alle Connectors in der Organisation angezeigt. Ein Mitglied mit dieser Rolle kann jedoch nur Connectors anzeigen und mit den Ordnern und Projekten verknüpfen, für die sie Berechtigungen haben. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über die Aktionen, die ein _Ordner- oder Projektadministrator_ durchführen kann"].
+* Aufgrund eines bekannten Problems zeigt die Seite Anschlüsse in BlueXP  IAM alle alten Steckverbinder an, die Sie zuvor aus BlueXP  entfernt haben.
+
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie *Connectors*.
+. Suchen Sie in der Tabelle den Konnektor, den Sie verknüpfen möchten.
++
+Um einen bestimmten Connector zu finden, können Sie die Suche über der Tabelle verwenden und den Inhalt der Tabelle filtern, indem Sie einen bestimmten Teil der Ressourcenhierarchie auswählen.
+
+. Um zuerst die Ordner und Projekte anzuzeigen, mit denen der Connector verknüpft ist, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und dann *Details anzeigen* aus.
++
+BlueXP  zeigt Details zu den Ordnern und Projekten an, denen der Connector zugeordnet ist.
+
+. Wählen Sie *Zuordnung zu Ordner oder Projekt*.
+. Wählen Sie einen Ordner oder ein Projekt aus und wählen Sie dann *Accept* aus.
+. Um den Connector einem zusätzlichen Ordner oder Projekt zuzuordnen, wählen Sie *Ordner oder Projekt hinzufügen* und wählen dann den Ordner oder das Projekt aus.
+. Wählen Sie *Associate Connector*.
+
+
+.Ergebnis
+BlueXP  ordnet den Connector den ausgewählten Ordnern und Projekten zu. Mitglieder, die Berechtigungen für diese Ordner und Projekte haben, können diesen Connector jetzt auswählen.
+
+.Nachdem Sie fertig sind
+Wenn Sie die vom Connector verwalteten Ressourcen mit denselben Ordnern und Projekten verknüpfen möchten, können Sie dies auf der Seite „Ressourcen“ tun.
+
+link:task-iam-manage-resources.html#associate-resource["Erfahren Sie, wie Sie eine Ressource mit Ordnern und Projekten verknüpfen"].
+
+.Verwandte Informationen
+* link:concept-connectors.html["Erfahren Sie mehr über BlueXP -Steckverbinder"]
+* link:concept-identity-and-access-management.html["Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP "]
+* link:task-iam-get-started.html["Erste Schritte mit BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Erfahren Sie mehr über die API für BlueXP  IAM"^]
+

@@ -27,7 +27,7 @@ Nehmen wir zum Beispiel an, dass Sie in einer Multi-Cloud-Umgebung arbeiten. Mö
 .Schritt
 . Wählen Sie die Dropdown-Liste *Connector* aus, wählen Sie einen anderen Konnektor aus und wählen Sie dann *Switch* aus.
 +
-image:screenshot_connector_switch.gif["Ein Screenshot, der das Symbol Connector in der Kopfzeile und die Aktion Switch anzeigt."]
+image:screenshot-connector-switch.png["Ein Screenshot, der das Symbol Connector in der Kopfzeile und die Aktion Switch anzeigt."]
 
 
 

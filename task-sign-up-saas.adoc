@@ -19,14 +19,14 @@ Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie mit Blue
 .Über diese Aufgabe
 Wenn Sie BlueXP zum ersten Mal nutzen, können Sie sich mit einer der folgenden Optionen anmelden oder sich anmelden:
 
-BlueXP Anmeldung:: Sie können sich anmelden, indem Sie eine BlueXP Anmeldung erstellen. Für diese Authentifizierungsmethode müssen Sie Ihre E-Mail-Adresse und ein Passwort angeben. Nachdem Sie Ihre E-Mail-Adresse überprüft haben, können Sie sich einloggen und anschließend ein BlueXP Konto erstellen, sofern Sie noch nicht zu einer Person gehören.
-Zugangsdaten für die NetApp Support-Website (NSS:: Wenn Sie bereits über Anmeldedaten für die NetApp Support-Website verfügen, müssen Sie sich nicht bei BlueXP anmelden. Sie melden sich mit Ihren NSS-Zugangsdaten an, und BlueXP fordert Sie auf, ein BlueXP Konto zu erstellen, sofern Sie noch nicht zu einem Konto gehören.
+BlueXP Anmeldung:: Sie können sich anmelden, indem Sie eine BlueXP Anmeldung erstellen. Für diese Authentifizierungsmethode müssen Sie Ihre E-Mail-Adresse und ein Passwort angeben. Nachdem Sie Ihre E-Mail-Adresse überprüft haben, können Sie sich anmelden und dann eine BlueXP -Organisation erstellen, sofern Sie nicht bereits einer Organisation angehören.
+Zugangsdaten für die NetApp Support-Website (NSS:: Wenn Sie bereits über Anmeldedaten für die NetApp Support-Website verfügen, müssen Sie sich nicht bei BlueXP anmelden. Sie melden sich mit Ihren NSS-Anmeldeinformationen an, und dann fordert BlueXP  Sie auf, eine BlueXP -Organisation zu erstellen, falls Sie noch nicht zu einer Organisation gehören.
 +
 --
 Beachten Sie, dass es sich bei dem Standardpasswort um eine Einmalkennung zur registrierten E-Mail-Adresse handelt. Bei jedem Anmeldeversuch wird eine neue OTP generiert.
 
 --
-Föderierte Verbindung:: Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. Der erste Benutzer im Konto Ihres Unternehmens muss sich bei BlueXP anmelden oder sich über NSS-Anmeldedaten anmelden und dann den Identitätsverbund einrichten. Danach kann sich jeder nachfolgende Benutzer einfach mit seinen SSO-Anmeldeinformationen anmelden.
+Föderierte Verbindung:: Sie können sich mit Single Sign-On über Anmeldedaten aus Ihrem Unternehmensverzeichnis (föderierte Identität) anmelden. Der erste Benutzer im Konto Ihres Unternehmens muss sich bei BlueXP anmelden oder sich über NSS-Anmeldedaten anmelden und dann den Identitätsverbund einrichten. Danach können Sie Mitglieder aus Ihrer Corporate Identity zu Ihrem Unternehmen hinzufügen. Diese Benutzer können sich dann mit ihren SSO-Anmeldeinformationen anmelden.
 +
 --
 link:concept-federation.html["Erfahren Sie mehr über den Einsatz von Identitätsföderation mit BlueXP"].
@@ -38,7 +38,7 @@ link:concept-federation.html["Erfahren Sie mehr über den Einsatz von Identität
 . Öffnen Sie einen Webbrowser, und rufen Sie den auf https://console.bluexp.netapp.com["BlueXP-Konsole"^]
 . Wenn Sie über ein NetApp-Support-Website-Konto verfügen oder bereits einen Identitätsverbund eingerichtet haben, geben Sie die mit Ihrem Konto verknüpfte E-Mail-Adresse direkt auf der *Anmelden*-Seite ein.
 +
-Sie können die Anmeldeseite überspringen, wenn Sie ein NSS-Konto haben. BlueXP meldet Sie im Rahmen dieser ersten Anmeldung an.
+In beiden Fällen werden Sie von BlueXP  im Rahmen dieser ersten Anmeldung registriert.
 
 . Wenn Sie sich mit einem BlueXP Login registrieren möchten, wählen Sie *Registrieren*.
 +
@@ -53,18 +53,21 @@ Dieser Schritt ist erforderlich, bevor Sie sich bei BlueXP anmelden können.
 
 
 . Lesen Sie nach der Anmeldung die Endbenutzer-Lizenzvereinbarung durch, und akzeptieren Sie die Bedingungen.
-. Geben Sie auf der Seite *Willkommen* einen Namen für Ihr Konto ein.
 +
-Wenn Ihr Unternehmen bereits über ein Konto verfügt und Sie es beitreten möchten, schließen Sie BlueXP ab und bitten Sie den Eigentümer, Sie mit dem Konto zu verknüpfen. Nachdem der Besitzer Sie hinzugefügt hat, können Sie sich einloggen und haben Zugriff auf das Konto. link:task-managing-netapp-accounts.html#add-users["Erfahren Sie, wie Sie einem bestehenden Konto Mitglieder hinzufügen"].
+Wenn Ihr Benutzerkonto noch nicht zu einer BlueXP -Organisation gehört, werden Sie aufgefordert, ein Benutzerkonto zu erstellen.
+
+. Geben Sie auf der Seite *Willkommen* einen Namen für Ihre BlueXP -Organisation ein.
++
+Ein Unternehmen ist das wichtigste Element im BlueXP -Identitäts- und Zugriffsmanagement (IAM). link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"].
 
 +
-Der Account ist das wichtigste Element der Identitätsplattform von NetApp. Sie können Benutzer, Rollen, Berechtigungen und Arbeitsumgebungen hinzufügen und verwalten.
+Wenn Ihr Unternehmen bereits über eine BlueXP -Organisation verfügt und Sie ihr beitreten möchten, sollten Sie BlueXP  schließen und den Eigentümer bitten, Sie der Organisation zuzuordnen. Nachdem der Besitzer Sie hinzugefügt hat, können Sie sich einloggen und haben Zugriff auf das Konto. link:task-iam-manage-members-permissions#add-members["Erfahren Sie, wie Sie Mitglieder zu einer bestehenden Organisation hinzufügen"].
 
 +
-image:screenshot-account-selection.png["Ein Screenshot der Begrüßungsseite, die angezeigt wird, wenn Sie sich bei einem neuen Konto anmelden, das nicht zu einem Konto gehört."]
+image:screenshot-create-organization.png["Ein Screenshot der Begrüßungsseite, der angezeigt wird, wenn Sie sich mit einem neuen Benutzerkonto anmelden, das keiner Organisation angehört."]
 
-. Wählen Sie *Konto Erstellen*.
+. Wählen Sie *Start*.
 
 
 .Ergebnis
-Sie haben jetzt eine BlueXP-Anmeldung und ein Konto. In den meisten Fällen besteht der nächste Schritt darin, einen Connector zu erstellen, der die Services von BlueXP mit Ihrer Hybrid-Cloud-Umgebung verbindet.
+Sie verfügen jetzt über einen BlueXP -Login und ein Unternehmen. In den meisten Fällen besteht der nächste Schritt darin, einen Connector zu erstellen, der die Services von BlueXP mit Ihrer Hybrid-Cloud-Umgebung verbindet.
