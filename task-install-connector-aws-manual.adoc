@@ -90,6 +90,14 @@ CPU:: 8 Kerne oder 8 vCPUs
 RAM:: 32 GB
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.
 Schlüsselpaar:: Wenn Sie den Connector erstellen, müssen Sie ein EC2-Schlüsselpaar auswählen, das mit der Instanz verwendet werden soll.
+SETZEN SIE bei der Verwendung von IMDSv2 das Limit für den Response Hop:: Wenn IMDSv2 auf der EC2-Instanz aktiviert ist (dies ist die Standardeinstellung für neue EC2-Instanzen), müssen Sie das PUT Response Hop Limit auf der Instanz auf 3 ändern. Wenn Sie die Begrenzung der EC2-Instanz nicht ändern, erhalten Sie beim Einrichten des Connectors einen Initialisierungsfehler in der Benutzeroberfläche.
++
+--
+* link:task-require-imdsv2.html["Erfordern die Verwendung von IMDSv2 auf Amazon EC2 Instanzen"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["AWS-Dokumentation: Ändern Sie das PUT-Response-Hop-Limit"^]
+
+
+--
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 +
 --

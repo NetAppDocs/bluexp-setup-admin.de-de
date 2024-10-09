@@ -57,7 +57,7 @@ Wenn Sie sich bei BlueXP  anmelden, werden Sie folgende Änderungen bemerken:
 * Unter Einstellungen können Sie auf die Identitäts- und Zugriffsverwaltung von BlueXP  zugreifen, um diese Verbesserungen zu nutzen
 
 
-image:screenshot-iam-introduction.png["Ein Screenshot von BlueXP  zeigt die Organisation und das Projekt, die oben in der Benutzeroberfläche ausgewählt werden können, sowie die Identitäts- und Zugriffsverwaltung, die im Menü Einstellungen verfügbar ist."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["Ein Screenshot von BlueXP  zeigt die Organisation und das Projekt, die oben in der Benutzeroberfläche ausgewählt werden können, sowie die Identitäts- und Zugriffsverwaltung, die im Menü Einstellungen verfügbar ist."]
 
 Beachten Sie Folgendes:
 
@@ -83,8 +83,8 @@ BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus verwendet wird. W
 
 ==== Weitere Schritte
 
-* link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
-* link:task-iam-get-started.html["Erste Schritte mit BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["Erste Schritte mit BlueXP  IAM"]
 
 
 
