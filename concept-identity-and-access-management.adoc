@@ -170,12 +170,6 @@ link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte 
 
 
 
-==== Anpassbare Rollen
-
-Benutzerdefinierte Rollen werden derzeit nicht unterstützt.
-
-
-
 === Anschlüsse
 
 Wenn ein _Organisationsadministrator_ einen Konnektor erstellt, ordnet BlueXP  diesen Connector automatisch der Organisation und dem aktuell ausgewählten Projekt zu. Der _Organisation admin_ hat automatisch von überall im Unternehmen Zugriff auf diesen Connector. Wenn Sie jedoch andere Mitglieder in Ihrer Organisation mit unterschiedlichen Rollen haben, können diese Mitglieder nur aus dem Projekt, in dem sie erstellt wurde, auf diesen Connector zugreifen, es sei denn, Sie verknüpfen diesen Connector mit anderen Projekten.

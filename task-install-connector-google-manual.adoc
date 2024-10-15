@@ -97,7 +97,7 @@ Der Connector wird in Google Cloud auf einer VM-Instanz mit einem unterstützten
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 +
 --
-BlueXP nutzt `/opt` Um den zu installieren `/opt/application/netapp` Verzeichnis und es ist Inhalt.
+BlueXP  verwendet `/opt`, um das Verzeichnis und seinen Inhalt zu installieren `/opt/application/netapp`.
 
 --
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein

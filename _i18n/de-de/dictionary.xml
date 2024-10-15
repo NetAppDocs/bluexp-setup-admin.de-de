@@ -3826,7 +3826,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">Der Connector wird jetzt auf Hosts unterstützt, auf denen die folgenden Versionen von Red hat Enterprise Linux mit _New_ Connector-Installationen ausgeführt werden, wenn BlueXP im Standardmodus oder eingeschränkter Modus verwendet wird:</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">Die Version 3.9.41 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
-  <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXP nutzt<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> Um den zu installieren<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> Verzeichnis und es ist Inhalt.</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP erfordert diesen Platz<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine ist für Ubuntu erforderlich.</block>
@@ -4272,8 +4271,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  unterstützt mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können.</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">Erfahren Sie mehr über vordefinierte IAM-Rollen</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
-  <block id="96798f05426bc55e0ae4e4719f68dc28" category="section-title">Anpassbare Rollen</block>
-  <block id="a38d248b1e1740da2f4eccb2dc9492be" category="paragraph">Benutzerdefinierte Rollen werden derzeit nicht unterstützt.</block>
   <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">Wenn ein _Organisationsadministrator_ einen Konnektor erstellt, ordnet BlueXP  diesen Connector automatisch der Organisation und dem aktuell ausgewählten Projekt zu. Der _Organisation admin_ hat automatisch von überall im Unternehmen Zugriff auf diesen Connector. Wenn Sie jedoch andere Mitglieder in Ihrer Organisation mit unterschiedlichen Rollen haben, können diese Mitglieder nur aus dem Projekt, in dem sie erstellt wurde, auf diesen Connector zugreifen, es sei denn, Sie verknüpfen diesen Connector mit anderen Projekten.</block>
   <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">In den folgenden Fällen können Sie einen Connector zur Verwendung mit einem anderen Projekt zur Verfügung stellen:</block>
   <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">Sie möchten Mitgliedern in Ihrer Organisation erlauben, einen vorhandenen Connector zu verwenden, um zusätzliche Arbeitsumgebungen in einem anderen Projekt zu erstellen oder zu erkennen</block>
@@ -4857,4 +4854,8 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
   <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
+  <block id="f7d8f0ba412660e43ffeb2e82b61e167" category="paragraph">BlueXP  verwendet<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block>, um das Verzeichnis und seinen Inhalt zu installieren<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block>.</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 Oktober 2024</block>
+  <block id="9071c576479353103106b574601bd920" category="section-title">Anschluss 3.9.45-Patch</block>
+  <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">Dieser Patch enthält Fehlerbehebungen.</block>
 </blocks>

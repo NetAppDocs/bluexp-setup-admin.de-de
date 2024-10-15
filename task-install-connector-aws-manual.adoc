@@ -101,7 +101,7 @@ SETZEN SIE bei der Verwendung von IMDSv2 das Limit für den Response Hop:: Wenn 
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 +
 --
-BlueXP nutzt `/opt` Um den zu installieren `/opt/application/netapp` Verzeichnis und es ist Inhalt.
+BlueXP  verwendet `/opt`, um das Verzeichnis und seinen Inhalt zu installieren `/opt/application/netapp`.
 
 --
 Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein

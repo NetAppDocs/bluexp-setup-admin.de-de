@@ -18,6 +18,16 @@ Informieren Sie sich über die Neuerungen bei den BlueXP -Verwaltungsfunktionen
 
 
 
+== 10 Oktober 2024
+
+
+
+=== Anschluss 3.9.45-Patch
+
+Dieser Patch enthält Fehlerbehebungen.
+
+
+
 == 7 Oktober 2024
 
 
