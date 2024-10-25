@@ -14,9 +14,13 @@ summary: Bei der Nutzung der webbasierten Konsole von BlueXP, die über die SaaS
 
 
 [role="lead"]
-Bei der Nutzung der webbasierten Konsole von BlueXP, die über die SaaS-Schicht bereitgestellt wird, werden mehrere Endpunkte kontaktiert, wenn einige Administrationsaufgaben durchgeführt werden. Computer, die auf die BlueXP Konsole zugreifen, sollten über Verbindungen zu diesen Endpunkten verfügen.
+Wenn Sie sich anmelden und die webbasierte BlueXP -Konsole verwenden, kontaktiert BlueXP  mehrere Endpunkte, um die von Ihnen initiierten Aktionen durchzuführen. Computer, die auf die BlueXP -Konsole zugreifen, müssen über Verbindungen zu diesen Endpunkten verfügen.
 
-Diese Endpunkte werden von dem Computer eines Benutzers kontaktiert, wenn bestimmte Aktionen über die BlueXP Konsole durchgeführt werden. Sie sollten auch die Netzwerkanforderungen für den Connector und bestimmte BlueXP Services beachten. Weitere Informationen finden Sie unter den entsprechenden Links am Ende dieser Seite.
+Diese Endpunkte werden in zwei Szenarien kontaktiert:
+
+* Vom Computer eines Benutzers, wenn bestimmte Aktionen vom ausgeführt https://console.bluexp.netapp.com["BlueXP webbasierte Konsole"^] werden, die als Software-as-a-Service (SaaS) verfügbar sind.
+* Vom Computer eines Benutzers beim Öffnen eines Webbrowsers, Eingabe der IP-Adresse des Connectors und anschließende Anmeldung und Einrichtung des Connectors. Diese Schritte sind erforderlich, wenn Sie den Connector manuell installieren.
+
 
 [cols="2*"]
 |===
@@ -24,7 +28,10 @@ Diese Endpunkte werden von dem Computer eines Benutzers kontaktiert, wenn bestim
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | Wenn Sie die webbasierte Konsole von BlueXP verwenden, kontaktiert Ihr Webbrowser diese URLs. 
+\https://*.console.bluexp.netapp.com | Dies ist der Endpunkt, den Sie im Webbrowser zur Verwendung der webbasierten Konsole von BlueXP  eingeben. 
+
+
+| \https://api.bluexp.netapp.com | Die webbasierte BlueXP -Konsole kontaktiert diesen Endpunkt, um mit der BlueXP -API für Aktionen in Bezug auf Autorisierung, Lizenzierung, Abonnements, Anmeldeinformationen, Benachrichtigungen und vieles mehr zu interagieren. 
 
 
 | \https://aiq.netapp.com | Voraussetzung für den Zugang zum digitalen Berater von BlueXP. 

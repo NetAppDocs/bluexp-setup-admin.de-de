@@ -50,7 +50,7 @@ Podman Version 4.6.1 oder 4.9.4
 
 <<podman-configuration,Zeigen Sie die Konfigurationsanforderungen für Podman an>>.
  a| 
-Unterstützt im Enforcing-Modus oder im permissiven Modus
+Unterstützt im Enforcing-Modus oder im permissiven Modus ^1^
 
 
 
@@ -81,8 +81,9 @@ Nicht unterstützt
 |===
 Hinweise:
 
-* Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unterstützt.
-* Für RHEL muss der Host bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+. Die Verwaltung von Cloud Volumes ONTAP-Systemen wird von Connectors, auf denen SELinux auf dem Betriebssystem aktiviert ist, nicht unterstützt.
+. Der Connector wird auf Englisch-sprachigen Versionen dieser Betriebssysteme unterstützt.
+. Für RHEL muss der Host bei Red hat Subscription Management registriert sein. Wenn er nicht registriert ist, kann der Host während der Connector-Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 
 
 --
@@ -248,6 +249,14 @@ Verbindungen zu Zielnetzwerken:: Ein Connector erfordert eine Netzwerkverbindung
 
 
 Outbound-Internetzugang:: Der Netzwerkstandort, an dem Sie den Connector bereitstellen, muss über eine ausgehende Internetverbindung verfügen, um bestimmte Endpunkte zu kontaktieren.
+
+
+Endpunkte, die von Computern kontaktiert werden, wenn die webbasierte Konsole von BlueXP  verwendet wird:: Computer, die über einen Webbrowser auf die BlueXP -Konsole zugreifen, müssen in der Lage sein, mehrere Endpunkte zu kontaktieren. Sie müssen die BlueXP -Konsole verwenden, um den Connector einzurichten und für die tägliche Verwendung von BlueXP .
++
+--
+link:reference-networking-saas-console.html["Bereiten Sie das Netzwerk für die BlueXP -Konsole vor"].
+
+--
 
 
 Endpunkte wurden während der manuellen Installation kontaktiert:: Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren, benötigt das Installationsprogramm für den Connector während des Installationsprozesses Zugriff auf die folgenden URLs:

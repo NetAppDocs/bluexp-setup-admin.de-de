@@ -162,7 +162,7 @@ Fügen Sie BlueXP die AWS Zugangsdaten hinzu, indem Sie das ARN einer IAM-Rolle 
 
 === Einrichten der IAM-Rolle
 
-Richten Sie eine IAM-Rolle ein, damit die BlueXP SaaS-Schicht die Rolle übernimmt.
+Richten Sie eine IAM-Rolle ein, mit der die BlueXP -SaaS-Schicht (Software as a Service) diese Rolle übernehmen kann.
 
 .Schritte
 . Wechseln Sie im Zielkonto zur IAM-Konsole.

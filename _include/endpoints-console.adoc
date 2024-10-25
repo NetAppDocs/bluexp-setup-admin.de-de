@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+Endpunkte, die von Computern kontaktiert werden, wenn die webbasierte Konsole von BlueXP  verwendet wird:: Computer, die über einen Webbrowser auf die BlueXP -Konsole zugreifen, müssen in der Lage sein, mehrere Endpunkte zu kontaktieren. Sie müssen die BlueXP -Konsole verwenden, um den Connector einzurichten und für die tägliche Verwendung von BlueXP .
++
+--
+link:reference-networking-saas-console.html["Bereiten Sie das Netzwerk für die BlueXP -Konsole vor"].
+
+--
+

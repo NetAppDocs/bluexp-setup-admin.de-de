@@ -14,7 +14,7 @@ summary: Implementieren Sie den Connector im privaten Modus, sodass Sie BlueXP o
 
 
 [role="lead"]
-Implementieren Sie den Connector im privaten Modus, sodass Sie BlueXP ohne Outbound-Konnektivität zur BlueXP SaaS-Ebene nutzen können. Installieren Sie den Connector, richten Sie BlueXP über die Benutzeroberfläche ein, die auf dem Connector ausgeführt wird, und stellen Sie dann die zuvor festgelegten Cloud-Berechtigungen bereit.
+Stellen Sie den Connector im privaten Modus bereit, sodass Sie BlueXP  ohne ausgehende Verbindung zur SaaS-Ebene (Software as a Service) von BlueXP  verwenden können. Installieren Sie den Connector, richten Sie BlueXP über die Benutzeroberfläche ein, die auf dem Connector ausgeführt wird, und stellen Sie dann die zuvor festgelegten Cloud-Berechtigungen bereit.
 
 
 

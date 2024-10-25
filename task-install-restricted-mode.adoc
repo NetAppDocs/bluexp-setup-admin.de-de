@@ -14,7 +14,7 @@ summary: Implementieren Sie den Connector im eingeschränkten Modus, sodass Sie 
 
 
 [role="lead"]
-Implementieren Sie den Connector im eingeschränkten Modus, sodass Sie BlueXP mit eingeschränkter Outbound-Konnektivität zur BlueXP SaaS-Ebene nutzen können. Installieren Sie den Connector, richten Sie BlueXP über die Benutzeroberfläche ein, die auf dem Connector ausgeführt wird, und stellen Sie dann die zuvor festgelegten Cloud-Berechtigungen bereit.
+Stellen Sie den Connector im eingeschränkten Modus bereit, sodass Sie BlueXP  mit eingeschränkter Outbound-Verbindung zur SaaS-Ebene (BlueXP  Software as a Service) verwenden können. Installieren Sie den Connector, richten Sie BlueXP über die Benutzeroberfläche ein, die auf dem Connector ausgeführt wird, und stellen Sie dann die zuvor festgelegten Cloud-Berechtigungen bereit.
 
 
 

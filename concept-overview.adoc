@@ -14,7 +14,7 @@ summary: Mit NetApp BlueXP steht Ihrem Unternehmen eine einzelne Managementplatt
 
 
 [role="lead"]
-Mit NetApp BlueXP steht Ihrem Unternehmen eine einzelne Managementplattform zur Verfügung, mit der Sie Ihre Daten über Ihre On-Premises- und Cloud-Umgebungen hinweg erstellen, schützen und regeln können. Die BlueXP SaaS-Plattform umfasst Services für Storage-Management, Datenmobilität, Datensicherung sowie Datenanalyse und -Kontrolle. Managementfunktionen werden über eine webbasierte Konsole und APIs bereitgestellt.
+Mit NetApp BlueXP steht Ihrem Unternehmen eine einzelne Managementplattform zur Verfügung, mit der Sie Ihre Daten über Ihre On-Premises- und Cloud-Umgebungen hinweg erstellen, schützen und regeln können. Die BlueXP  Software-als-Service-Plattform (SaaS) umfasst Services für Storage-Management, Datenmobilität, Datensicherung sowie Datenanalyse und -Kontrolle. Managementfunktionen werden über eine webbasierte Konsole und APIs bereitgestellt.
 
 
 

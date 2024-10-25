@@ -16,7 +16,7 @@ summary: Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funk
 [role="lead"]
 Bekannte Einschränkungen identifizieren Plattformen, Geräte oder Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit dem Produkt zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch.
 
-Diese Einschränkungen gelten insbesondere für die Einrichtung und Administration von BlueXP: Der Connector, die SaaS-Plattform und vieles mehr.
+Diese Einschränkungen sind spezifisch für die Einrichtung und Administration von BlueXP : Den Connector, die Software-as-a-Service-Plattform (SaaS) und vieles mehr.
 
 
 
