@@ -275,6 +275,9 @@ Networking für Benutzerzugriff auf die BlueXP Konsole vorbereiten:: Im eingesch
 | Endpunkte | Zweck 
 
 
+| \https://api.bluexp.netapp.com | Die webbasierte BlueXP -Konsole kontaktiert diesen Endpunkt, um mit der BlueXP -API für Aktionen in Bezug auf Autorisierung, Lizenzierung, Abonnements, Anmeldeinformationen, Benachrichtigungen und vieles mehr zu interagieren. 
+
+
 | \https://signin.b2c.netapp.com | Erforderlich, um die Zugangsdaten für die NetApp Support Site (NSS) zu aktualisieren oder neue NSS-Zugangsdaten für BlueXP hinzuzufügen 
 
 
