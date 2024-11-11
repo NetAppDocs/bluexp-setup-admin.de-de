@@ -36,17 +36,18 @@ Alle Cloud Volumes ONTAP Systeme können über die ersten AWS Zugangsdaten imple
 
 == Zusätzliche AWS Zugangsdaten
 
-Es gibt zwei Möglichkeiten, zusätzliche AWS-Anmeldedaten hinzuzufügen:
+In den folgenden Fällen können Sie BlueXP  zusätzliche AWS Zugangsdaten hinzufügen:
 
-* Sie können einem vorhandenen Connector AWS-Anmeldedaten hinzufügen
-* Sie können AWS Zugangsdaten direkt in BlueXP hinzufügen
+* Sie können Ihren bestehenden BlueXP  Connector mit einem zusätzlichen AWS-Konto verwenden
+* So erstellen Sie einen neuen Connector in einem bestimmten AWS-Konto
+* So erstellen und verwalten Sie FSX für ONTAP-Dateisysteme
 
 
 Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 
 
-=== Fügen Sie AWS Zugangsdaten zu einem vorhandenen Connector hinzu
+=== Fügen Sie AWS-Anmeldedaten hinzu, um einen Connector mit einem anderen AWS-Konto zu verwenden
 
 Wenn Sie BlueXP mit zusätzlichen AWS-Konten nutzen möchten, können Sie entweder AWS-Schlüssel für einen IAM-Benutzer oder den ARN einer Rolle in einem vertrauenswürdigen Konto bereitstellen. Die folgende Abbildung zeigt zwei zusätzliche Konten: Eines mit Berechtigungen über eine IAM-Rolle in einem vertrauenswürdigen Konto und ein weiteres über die AWS Schlüssel eines IAM-Benutzers:
 
@@ -62,13 +63,19 @@ link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["In
 
 
 
-=== Fügen Sie AWS Zugangsdaten direkt in BlueXP hinzu
+=== Fügen Sie AWS-Anmeldedaten hinzu, um einen Connector zu erstellen
 
-Beim Hinzufügen neuer AWS Zugangsdaten zu BlueXP stehen die erforderlichen Berechtigungen zum Erstellen und Managen einer FSX für ONTAP Arbeitsumgebung oder zum Erstellen eines Connectors zur Verfügung.
+Durch das Hinzufügen neuer AWS Zugangsdaten zu BlueXP  werden die zum Erstellen eines Connectors erforderlichen Berechtigungen gewährt.
 
-* link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["Informieren Sie sich, wie Sie BlueXP für Amazon FSX for ONTAP mit AWS Zugangsdaten ergänzen"^]
-* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Erfahren Sie, wie Sie zur Erstellung eines Connectors AWS Zugangsdaten zu BlueXP hinzufügen"]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Erfahren Sie, wie Sie zur Erstellung eines Connectors AWS Zugangsdaten zu BlueXP hinzufügen"]
 
+
+
+=== AWS Zugangsdaten für FSX for ONTAP hinzufügen
+
+Das Hinzufügen neuer AWS Zugangsdaten zu BlueXP  bietet die nötigen Berechtigungen zum Erstellen und Managen einer Arbeitsumgebung von FSX für ONTAP.
+
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Informieren Sie sich, wie Sie BlueXP für Amazon FSX for ONTAP mit AWS Zugangsdaten ergänzen"^]
 
 
 

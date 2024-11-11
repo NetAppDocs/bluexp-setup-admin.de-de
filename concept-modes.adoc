@@ -149,9 +149,6 @@ Unterstützte BlueXP Services:: BlueXP unterstützt folgende Storage- und Datens
 | Unterstützte Services | Hinweise 
 
 
-| Amazon FSX für ONTAP | Volle Unterstützung 
-
-
 | Azure NetApp Dateien | Volle Unterstützung 
 
 
@@ -328,7 +325,7 @@ Beachten Sie, dass einige Dienste möglicherweise eingeschränkt unterstützt we
 
 .10+| *Arbeitsumgebungen*
 
-Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeitsumgebung aus dem BlueXP Arbeitsbereich auf. Die unterstützten Backup-Ziele für BlueXP Backup und Recovery werden nicht angezeigt. | Amazon FSX für ONTAP | Ja. | Nein 
+Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeitsumgebung aus dem BlueXP Arbeitsbereich auf. Die unterstützten Backup-Ziele für BlueXP Backup und Recovery werden nicht angezeigt. | Amazon FSX für ONTAP | Nein | Nein 
 
 
 | Amazon S3 | Nein | Nein 
@@ -358,7 +355,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
 | StorageGRID | Nein | Nein 
 
 
-.16+| *Services* | Meldungen | Nein | Nein 
+.17+| *Services* | Meldungen | Nein | Nein 
 
 
 | Backup und Recovery | Ja.
@@ -408,6 +405,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | Volume-Caching | Nein | Nein 
+
+
+| Arbeitslast Fabrik | Nein | Nein 
 
 
 .7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Nein | Nein 

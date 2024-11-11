@@ -764,7 +764,7 @@ In den folgenden Abschnitten wird die Nutzung der Berechtigungen für jeden Blue
 
 === Amazon FSX für ONTAP
 
-Der Connector stellt die folgenden API-Anforderungen für das Management von Amazon FSX für ONTAP bereit:
+Der Connector stellt die folgenden API-Anforderungen zum Verwalten eines Amazon FSX für ONTAP-Dateisystems:
 
 * ec2:DescribeInstances
 * ec2:DescribeInstanceStatus
