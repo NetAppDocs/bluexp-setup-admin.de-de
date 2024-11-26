@@ -1,0 +1,39 @@
+= Freigabe des privaten Modus (3.9.46)
+:allow-uri-read: 
+
+
+
+
+=== Freigabe des privaten Modus (3.9.46)
+
+Eine neue Version für den privaten Modus steht jetzt zum Herunterladen von zur Verfügung https://mysupport.netapp.com/site/downloads["NetApp Support Website"^]
+
+Version 3.9.46 enthält Updates zu den folgenden BlueXP  Komponenten und Services.
+
+[cols="3*"]
+|===
+| Komponente oder Dienst | In dieser Version enthaltene Version | Änderungen seit der letzten privaten Modus-Freigabe 
+
+
+| Stecker | 3.9.46 | Kleinere Verbesserungen bei der Sicherheit und Fehlerbehebungen 
+
+
+| Backup und Recovery | Bis 22. November 2024 | Besuchen Sie die https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Was ist neu auf der Backup- und Recovery-Seite von BlueXP"^] und verweisen Sie auf die Änderungen, die in der Version November 2024 enthalten sind 
+
+
+| Klassifizierung | 4. November 2024 (Version 1.37) | Rufen Sie die https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Was ist neu in der BlueXP  Klassifizierungsseite"^] auf und beziehen Sie sich auf die Änderungen der Versionen 1.32 bis 1.37 
+
+
+| Cloud Volumes ONTAP-Management | Bis 11. November 2024 | Informationen zu den Änderungen der Versionen Oktober 2024 und November 2024 finden Sie im https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Neuerungen bei der Cloud Volumes ONTAP Management-Seite"^] 
+
+
+| Lokales ONTAP-Cluster-Management | Bis 26. November 2024 | Besuchen Sie die https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["Neuerungen bei der lokalen ONTAP Cluster-Management-Seite"^] und verweisen Sie auf die Änderungen, die in der Version November 2024 enthalten sind 
+|===
+Während das BlueXP  Digital Wallet und die BlueXP  Replizierung ebenfalls im Private Mode enthalten sind, gibt es keine Änderungen gegenüber der vorherigen Private Mode Version.
+
+Weitere Informationen zum privaten Modus, einschließlich der Aktualisierung, finden Sie in den folgenden Informationen:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zum privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]S
+
