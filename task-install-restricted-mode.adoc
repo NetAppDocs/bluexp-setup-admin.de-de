@@ -320,9 +320,9 @@ BlueXP einrichten:
 Wenn Sie zum ersten Mal auf die BlueXP Konsole zugreifen, werden Sie aufgefordert, ein Konto auszuwählen, mit dem der Connector verknüpft werden soll, und den eingeschränkten Modus zu aktivieren.
 
 .Bevor Sie beginnen
-Die Person, die den BlueXP -Konnektor eingerichtet hat, muss sich mit einem Login bei BlueXP  anmelden, das nicht zu einer BlueXP -Organisation gehört, die im Standardmodus arbeitet.
+Die Person, die den BlueXP -Connector eingerichtet hat, muss sich mit einem Login bei BlueXP  anmelden, das nicht zu einem BlueXP -Konto oder einer Organisation gehört.
 
-Wenn Ihre BlueXP -Anmeldung mit einer Organisation verknüpft ist, die im Standardmodus arbeitet, müssen Sie sich mit einem neuen BlueXP -Login oder mit den Anmeldedaten der NetApp Support-Website anmelden, die keiner Organisation angehören. Andernfalls wird die Option zum Aktivieren des eingeschränkten Modus auf dem Setup-Bildschirm nicht angezeigt.
+Wenn Ihr BlueXP -Login mit einem anderen Konto oder einer anderen Organisation verknüpft ist, müssen Sie sich mit einem neuen BlueXP -Login registrieren. Andernfalls wird die Option zum Aktivieren des eingeschränkten Modus auf dem Setup-Bildschirm nicht angezeigt.
 
 .Schritte
 . Öffnen Sie einen Webbrowser von einem Host, der eine Verbindung zur Verbindungsinstanz hat, und geben Sie die folgende URL ein:
