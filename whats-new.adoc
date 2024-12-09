@@ -18,6 +18,29 @@ Informieren Sie sich über die Neuerungen bei den BlueXP -Verwaltungsfunktionen
 
 
 
+== Bis 9. Dezember 2024
+
+
+
+=== Anschluss 3.9.47
+
+Diese Version des BlueXP -Connectors enthält Fehlerbehebungen und Änderungen an den Endpunkten, die während der Installation des Connectors kontaktiert wurden.
+
+Derzeit ist die Version 3.9.47 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+.Endpunkt, der den NetApp-Support während der Installation kontaktieren soll
+Wenn Sie den Connector manuell installieren, kontaktiert das Installationsprogramm nicht mehr \https://support.NetApp.com.
+
+Das Installationsprogramm kontaktiert weiterhin \https://mysupport.NetApp.com.
+
+
+
+=== Identitäts- und Zugriffsmanagement für BlueXP 
+
+Auf der Seite Connectors werden nur die derzeit verfügbaren Connectors aufgeführt. Es werden keine Anschlüsse mehr angezeigt, die Sie entfernt haben.
+
+
+
 == Bis 26. November 2024
 
 
@@ -53,7 +76,7 @@ Weitere Informationen zum privaten Modus, einschließlich der Aktualisierung, fi
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zum privaten Modus"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]S
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]
 
 
 
@@ -1134,7 +1157,7 @@ https://bluexp.netapp.com["Weitere Informationen finden Sie auf der BlueXP-Websi
 Neues Navigationsmenü:: Im Navigationsmenü von BlueXP sind die Services nun nach Kategorien sortiert und nach ihrer Funktionalität benannt. Sie können beispielsweise aus der Kategorie *Schutz* auf BlueXP Backup und Recovery zugreifen.
 +
 --
-image:screenshot-navigation-menu.png["Ein Screenshot des Navigationsmenüs in BlueXP, in dem Kategorien wie Speicher und Gesundheit angezeigt werden."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation-menu.png["Ein Screenshot des Navigationsmenüs in BlueXP, in dem Kategorien wie Speicher und Gesundheit angezeigt werden."]
 
 --
 Neue Produktintegrationen::
@@ -1510,7 +1533,7 @@ NSS-Konten (NetApp Support Site) werden jetzt über das Support-Dashboard gemana
 
 link:task-adding-nss-accounts.html["Erfahren Sie, wie Sie NSS-Konten verwalten"].
 
-image:screenshot_nss_management.png["Einen Screenshot der Registerkarte NSS Management im Support Dashboard, in dem Sie NSS-Konten hinzufügen können."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["Einen Screenshot der Registerkarte NSS Management im Support Dashboard, in dem Sie NSS-Konten hinzufügen können."]
 
 
 

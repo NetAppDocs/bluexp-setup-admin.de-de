@@ -18,63 +18,65 @@ Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management
 
 
 
-== Organisationsadministrator
+== Plattformrollen
 
-Beschreibung:: Bietet volle Kontrolle über die gesamte BlueXP -Organisation.
-Berechtigungen:: Ein Mitglied mit dieser Rolle kann alle Aktionen in BlueXP  ausführen.
+BlueXP  IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang. Die Rolle „Organisationsadministrator“ hat Berechtigungen für alle Ordner und Projekte, während der Ordner- oder Projektadministrator nur Berechtigungen für den Ordner oder das Projekt hat, dem sie zugewiesen wurden.
+
+Die Rolle „Ordner“ oder „Projektadministrator“ kann keine Konnektoren erstellen.
+
+Berechtigungen::
 
 
+[cols="24,19,19"]
+|===
+| Aufgabe | Organisationsadministrator | Ordner- oder Projektadministrator 
 
 
-== Ordner- oder Projektadministrator
+| Erstellen Sie Konnektoren | Ja. | Nein 
 
-Beschreibung:: Bietet volle Kontrolle über ein oder mehrere Projekte und Ordner.
+
+| Erstellen, Ändern oder Löschen von Arbeitsumgebungen (Hinzufügen oder Erkennen neuer Ressourcen über den BlueXP -Bildschirm) | Ja. | Ja. 
+
+
+| Erstellen Sie Projekte/Ordner, einschließlich Umbenennen, Löschen und Bearbeiten | Ja. | Ja. 
+
+
+| Rollen zuweisen und Benutzer hinzufügen | Ja. | Ja. 
+
+
+| Ressourcen und Konnektoren mit Ordnern und Projekten verknüpfen | Ja. | Ja. 
+
+
+| Verwalten Sie Anmeldeinformationen über Einstellungen > Anmeldeinformationen | Ja. | Ja. 
+
+
+| Sehen Sie sich den BlueXP -Zeitplan an | Ja. | Ja. 
+
+
+| Nutzung von BlueXP  Services | Ja. | Ja. 
+
+
+| Registrieren Sie BlueXP , um Support zu erhalten, und senden Sie Cases ein | Ja. | Ja. 
+|===
+Beispiel für Organisationsrollen in BlueXP  für eine große multinationale Organisation:: XYZ Corporation, ein multinationales Unternehmen, zielt darauf ab, den Zugriff auf Datenspeicherressourcen nach geografischen Regionen wie Nordamerika, Europa und Asien-Pazifik zu trennen. Sie möchten, dass jede Region exklusive Kontrolle über ihre Ressourcen hat und gleichzeitig eine zentrale Übersicht erhält.
 +
 --
-Wenn Sie diese Rolle auf Ordnerebene zuweisen, hat das Mitglied Berechtigungen für alle Projekte, die diesem Ordner zugeordnet sind.
+Um dies zu erreichen, erstellt eine Person, die der Rolle „Organisationsadministrator“ im BlueXP  der XYZ Corporation zugewiesen ist, eine anfängliche Arbeitsumgebung und erstellt dann für jede Region separate Ordner in BlueXP . Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der Organisationsadministrator weist einem BlueXP -Benutzer in jeder Region die Rolle „Ordner/Projekt-Administrator“ zu.
 
---
-Berechtigungen:: Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in BlueXP  ausführen:
-+
---
-* Verwalten Sie alle Arbeitsumgebungen in den Projekten und Ordnern, für die sie Berechtigungen haben
-* Alle BlueXP -Dienste verwenden
-* Über BlueXP  IAM kann ein Administrator eines Ordners die Ordner, Projekte und Ressourcen verwalten, die untergeordnete Elemente dieses Ordners sind:
-+
-** Ordner oder Projekte innerhalb des Ordners hinzufügen
-** Ordner und Projekte bearbeiten: Namen, zugeordnete Ressourcen und Mitgliederzugriff
-** Ordner und Projekte löschen
-** Fügen Sie ein Benutzerkonto hinzu und verknüpfen Sie eine Rolle auf Ordner- oder Projektebene
-** Verknüpfen eines Connectors mit einem Ordner oder Projekt
-** Fügen Sie einem Mitglied auf Ordner- oder Projektebene eine Rolle hinzu
-** Zeigen Sie Ressourcen an, die mit Ordnern und Projekten verknüpft sind
-** Zuordnen ansichtbarer Ressourcen zu zusätzlichen Ordnern oder Projekten
-** Trennen Sie eine Ressource von einem Ordner oder Projekt
-
-
-* Über BlueXP  IAM kann ein Administrator eines Projekts dieses Projekt und seine zugehörigen Ressourcen wie folgt verwalten:
-+
-** Bearbeiten Sie das Projekt: Seinen Namen, die zugehörigen Ressourcen und den Zugriff auf Mitglieder
-** Fügen Sie ein Benutzerkonto hinzu und verknüpfen Sie eine Rolle auf Projektebene
-** Verknüpfen Sie einen Connector mit einem Projekt, wenn das Mitglied Administratorrechte für andere Projekte hat, denen andere Connectors zugeordnet sind
-** Fügen Sie einem Mitglied auf Projektebene eine Rolle hinzu
-** Mit dem Projekt verknüpfte Ressourcen anzeigen
-** Ressourcen mit dem Projekt verknüpfen, wenn das Mitglied über Administratorberechtigungen für andere Projekte verfügt, denen andere Ressourcen zugeordnet sind
-** Distanzieren Sie eine Ressource vom Projekt
-** Löschen Sie das Projekt
-
-
-* Verwalten Sie Anmeldeinformationen über Einstellungen > Anmeldeinformationen
-* Sehen Sie sich den BlueXP -Zeitplan an
-* Registrieren Sie BlueXP , um Support zu erhalten, und senden Sie Cases ein
-
+Sobald die Ersteinrichtung abgeschlossen ist, können regionale Administratoren mit der Rolle „Ordner“ oder „Projektadministrator“ neue Arbeitsumgebungen erstellen und Benutzer in ihren Regionen hinzufügen. Diese regionalen Administratoren können auch Ordner und Projekte hinzufügen, entfernen oder umbenennen, denen sie zugewiesen sind. Der Unternehmensadministrator erbt Berechtigungen für neue Arbeitsumgebungen oder Ressourcen und sorgt so für Transparenz der Storage-Auslastung im gesamten Unternehmen.
 
 --
 
 
 
 
-== SnapCenter-Admin
+== Datenservices
+
+Datenservices können ihre Aufgaben in jedem Projekt oder Ordner ausführen.
+
+
+
+=== SnapCenter-Admin
 
 Beschreibung:: Bietet die Möglichkeit, Snapshots aus lokalen ONTAP Clustern mithilfe von BlueXP  Backup und Recovery für Applikationen zu sichern.
 Berechtigungen:: Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in BlueXP  ausführen:
@@ -90,7 +92,7 @@ Berechtigungen:: Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in Bl
 
 
 
-== Klassifizierungs-Viewer
+=== Klassifizierungs-Viewer
 
 Beschreibung:: Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen.
 Berechtigungen:: Zeigen Sie Compliance-Informationen an und erstellen Sie Berichte für Ressourcen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren.

@@ -21,7 +21,6 @@ Sie sollten verstehen, wie die Verbindungszuordnung funktioniert. link:concept-i
 
 .Über diese Aufgabe
 * Wenn ein _Ordner- oder Projektadministrator_ die Seite *Connectors* anzeigt, werden auf der Seite alle Connectors in der Organisation angezeigt. Ein Mitglied mit dieser Rolle kann jedoch nur Connectors anzeigen und mit den Ordnern und Projekten verknüpfen, für die sie Berechtigungen haben. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über die Aktionen, die ein _Ordner- oder Projektadministrator_ durchführen kann"].
-* Aufgrund eines bekannten Problems zeigt die Seite Anschlüsse in BlueXP  IAM alle alten Steckverbinder an, die Sie zuvor aus BlueXP  entfernt haben.
 
 
 .Schritte

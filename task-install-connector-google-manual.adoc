@@ -259,7 +259,6 @@ link:reference-networking-saas-console.html["Bereiten Sie das Netzwerk für die 
 Endpunkte wurden während der manuellen Installation kontaktiert:: Wenn Sie den Connector manuell auf Ihrem eigenen Linux-Host installieren, benötigt das Installationsprogramm für den Connector während des Installationsprozesses Zugriff auf die folgenden URLs:
 +
 --
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://signin.b2c.NetApp.com (dieser Endpunkt ist die CNAME-URL für \https://mysupport.NetApp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
