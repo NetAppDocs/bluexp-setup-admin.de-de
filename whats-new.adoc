@@ -18,6 +18,47 @@ Informieren Sie sich über die Neuerungen bei den BlueXP -Verwaltungsfunktionen
 
 
 
+== Bis 16. Dezember 2024
+
+
+
+=== Neue sichere Endpunkte zum Abrufen von Connector-Images
+
+Bei der Installation des Connectors oder bei einer automatischen Aktualisierung kontaktiert der Connector Repositorys, um Bilder für die Installation oder das Upgrade herunterzuladen. Standardmäßig hat der Connector immer die folgenden Endpunkte kontaktiert:
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+
+Der erste Endpunkt enthält eine Platzhalterkarte, weil wir keinen endgültigen Standort angeben können. Der Lastenausgleich des Repositorys wird vom Service-Provider verwaltet, was bedeutet, dass die Downloads von verschiedenen Endpunkten durchgeführt werden können.
+
+Für mehr Sicherheit kann der Connector jetzt Installationen herunterladen und Images von dedizierten Endgeräten updaten:
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+Wir empfehlen Ihnen, diese neuen Endpunkte zu verwenden, indem Sie die vorhandenen Endpunkte aus Ihren Firewall-Regeln entfernen und die neuen Endpunkte zulassen.
+
+Diese neuen Endpunkte werden ab der Version 3.9.47 des Connectors unterstützt. Es besteht keine Abwärtskompatibilität mit früheren Versionen des Connectors.
+
+Beachten Sie Folgendes:
+
+* Die vorhandenen Endpunkte werden weiterhin unterstützt. Wenn Sie die neuen Endpunkte nicht verwenden möchten, sind keine Änderungen erforderlich.
+* Der Connector kontaktiert zuerst die vorhandenen Endpunkte. Wenn auf diese Endpunkte nicht zugegriffen werden kann, kontaktiert der Connector automatisch die neuen Endpunkte.
+* Die neuen Endpunkte werden in den folgenden Szenarien nicht unterstützt:
++
+** Wenn der Connector in einer Regierungsregion installiert ist.
+** Wenn Sie den Connector mit BlueXP  Backup und Recovery oder BlueXP  Ransomware-Schutz verwenden.
+
+
++
+Für beide Szenarien können Sie die vorhandenen Endpunkte weiterhin verwenden.
+
+
+
+
+
 == Bis 9. Dezember 2024
 
 

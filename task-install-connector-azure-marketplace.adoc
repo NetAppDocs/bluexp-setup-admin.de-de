@@ -83,15 +83,7 @@ Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Suppo
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com
  a| 
 Um SaaS-Funktionen und -Services in BlueXP zur Verfügung zu stellen.
 
@@ -100,13 +92,28 @@ Beachten Sie, dass der Connector sich derzeit mit „cloudmanager.cloud.netapp.c
 
 
  a| 
-\https://*.blob.core.windows.net
+Wählen Sie zwischen zwei Endpunktsätzen:
 
-\https://cloudmanagerinfraprod.azurecr.io
+* Option 1 (empfohlen) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Option 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
  a| 
-Aktualisierung des Connectors und seiner Docker Komponenten.
+Um Bilder für Connector-Upgrades zu erhalten.
 
 |===
+^1^ die in Option 1 aufgeführten Endpunkte werden empfohlen, da sie sicherer sind. Wir empfehlen, dass Sie Ihre Firewall so einrichten, dass die in Option 1 aufgeführten Endpunkte zugelassen werden, während Sie die in Option 2 aufgeführten Endpunkte nicht zulassen. Zu diesen Endpunkten ist Folgendes zu beachten:
+
+* Die in Option 1 aufgeführten Endpunkte werden ab Version 3.9.47 des Connectors unterstützt. Es besteht keine Abwärtskompatibilität mit früheren Versionen des Connectors.
+* Der Connector kontaktiert zuerst die unter Option 2 aufgeführten Endpunkte. Wenn auf diese Endpunkte nicht zugegriffen werden kann, kontaktiert der Connector automatisch die in Option 1 aufgeführten Endpunkte.
+* Die Endpunkte in Option 1 werden nicht unterstützt, wenn Sie den Connector mit BlueXP  Backup und Recovery oder BlueXP  Ransomware-Schutz verwenden. In diesem Fall können Sie die in Option 1 aufgeführten Endpunkte nicht zulassen, während Sie die in Option 2 aufgeführten Endpunkte zulassen.
+
+
 --
 
 
