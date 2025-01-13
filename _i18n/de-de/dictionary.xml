@@ -1044,7 +1044,6 @@
   <block id="3c2636f752222ce604af87906e481f03" category="list-text"><block ref="3c2636f752222ce604af87906e481f03" category="inline-link-rx"></block></block>
   <block id="7596270426e8c5f92be308ff330e0e64" category="inline-link">Replizierungsdokumente</block>
   <block id="17ba1853097c1b83e5a82753f8133c2e" category="list-text"><block ref="17ba1853097c1b83e5a82753f8133c2e" category="inline-link-rx"></block></block>
-  <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">Verwandter Link</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">BlueXP Implementierungsmodi</block>
   <block id="672184337bf12286628179253519271e" category="paragraph"><block ref="672184337bf12286628179253519271e" category="inline-link-macro-rx"></block></block>
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">Sie können die Google Cloud-Anmeldedaten verwalten, die mit der VM-Instanz Connector verknüpft sind, indem Sie ein Marketplace-Abonnement zuordnen und den Abonnementprozess beheben. Mit beiden Aufgaben stellen Sie sicher, dass Sie Ihr Marketplace-Abonnement verwenden können, um BlueXP Services zu bezahlen.</block>
@@ -2487,9 +2486,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="3fa57b54a57f48366778b5343dad7a48" category="section-title">Zugangsdaten zu BlueXP für Amazon FSX for ONTAP hinzufügen</block>
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">BlueXP Dokumentation für Amazon FSX for ONTAP</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">Weitere Informationen finden Sie im<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
-  <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">AWS Abonnement zuordnen</block>
-  <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">Nachdem Sie Ihre AWS Zugangsdaten zu BlueXP hinzugefügt haben, können Sie ein AWS Marketplace Abonnement mit diesen Anmeldedaten verknüpfen. Dank des Abonnements können Sie für Cloud Volumes ONTAP zu einem Stundensatz (PAYGO) bezahlen oder einen Jahresvertrag nutzen und andere BlueXP Services nutzen.</block>
-  <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">Es gibt zwei Szenarien, in denen Sie ein AWS Marketplace-Abonnement verknüpfen können, nachdem Sie BlueXP bereits die Zugangsdaten hinzugefügt haben:</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Erfahren Sie, wie Sie einen Konnektor erstellen</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -2943,7 +2939,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Im folgenden Video sehen Sie, wie Sie sich für den Google Cloud Marketplace anmelden können:</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3286,7 +3281,6 @@ mitglied: BlueXP Dienstkonto als serviceAccount.user</block>
   <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">Kann ich vorhandene Cloud Volumes ONTAP Arbeitsumgebungen auf ein anderes AWS Konto verschieben?</block>
   <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">Nein, es ist nicht möglich, die AWS Ressourcen, die Ihrer Cloud Volumes ONTAP Arbeitsumgebung zugeordnet sind, in ein anderes AWS Konto zu verschieben.</block>
   <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">Management von AWS Zugangsdaten und Marketplace-Abonnements für BlueXP</block>
-  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Sie möchten das AWS Marketplace-Abonnement ändern, das mit den AWS Zugangsdaten verknüpft ist.</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">Azure Zugangsdaten und Marketplace-Abonnements für BlueXP managen</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Sie möchten das Abonnement für Azure Marketplace ändern, das mit den Azure-Anmeldedaten verknüpft ist.</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
@@ -4387,8 +4381,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="888af4d1c4f4f8cf5928fe9cc5ae80c1" category="paragraph">Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) können Sie Ihre NetApp-Ressourcen mithilfe von Projekten und Ordnern organisieren. Ein _Project_ stellt einen Arbeitsbereich in BlueXP  dar, auf den Organisationsmitglieder zur Verwaltung von _Resources_ zugreifen (z. B. ein Cloud Volumes ONTAP-System). Ein _Ordner_ gruppiert verwandte Projekte zusammen. Nachdem Sie Ihre Ressourcen in Ordnern und Projekten organisiert haben, können Sie granularen Zugriff auf Ressourcen gewähren, indem Sie Organisationsmitgliedern Berechtigungen für bestimmte Ordner und Projekte gewähren.</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">Fügen Sie einen Ordner oder ein Projekt hinzu</block>
   <block id="9b72b5a70aa482b566f3aded23197da9" category="paragraph">Wenn Sie Ihre BlueXP -Organisation erstellen, umfasst diese ein einzelnes Projekt. Sie können weitere Projekte erstellen, um die Ressourcen Ihres Unternehmens zu verwalten. Sie können optional Ordner erstellen, um verwandte Projekte zu gruppieren.</block>
-  <block id="b9b4d0d7c739aa9127b9919f23478743" category="paragraph">Die Tiefe der Hierarchie Ihres Unternehmens kann bis auf 7 Ebenen reduziert werden. Dadurch können Sie verschachtelte Ordner bis zu 6 Ebenen erstellen. Der letzte verschachtelte Ordner kann dann Projekte auf der siebten Ebene der Hierarchie enthalten.</block>
-  <block id="5ed844477243e17219a5a1bb8244cb94" category="paragraph">Die folgende Abbildung zeigt die maximale Tiefe der Hierarchie Ihres Unternehmens:</block>
   <block id="de599df9f91a76585a5d0e5049f80230" category="inline-image-macro">Ein Screenshot mit einer Organisation, sechs verschachtelten Ordnern und einem Projekt im letzten verschachtelten Ordner.</block>
   <block id="140320cb76bc5580566bd6ef83ee9d69" category="paragraph"><block ref="140320cb76bc5580566bd6ef83ee9d69" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">Wählen Sie auf der Seite *Organisation* die Option *Ordner oder Projekt hinzufügen* aus.</block>
@@ -4403,24 +4395,17 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Wählen Sie bei Bedarf *Mitglied hinzufügen*, um zusätzliche Organisationsmitglieder anzugeben, die Zugriff auf den Ordner oder das Projekt haben sollen, und wählen Sie dann eine Rolle aus. Eine Rolle definiert die Berechtigungen, die Mitglieder für den Ordner oder das Projekt haben.</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">Erfahren Sie mehr über vordefinierte IAM-Rollen</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>.</block>
-  <block id="13ea0232702fea363d7f4aaffe9ba8f1" category="paragraph">BlueXP  erstellt den Ordner oder das Projekt und ordnet die angegebenen Ressourcen und Mitglieder zu.</block>
-  <block id="698adc884d432ec429a17995e5d34320" category="section-title">Zeigen Sie die Ressourcen und Mitglieder an, die einem Ordner oder Projekt zugeordnet sind</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">Um zu überprüfen, ob Ihre Ressourcen angemessen organisiert sind und für die richtigen Mitglieder in Ihrer Organisation zugänglich sind, können Sie anzeigen, welche Ressourcen und Mitglieder einem Ordner oder Projekt zugeordnet sind.</block>
   <block id="5d051468e96f24341fd4c6192e28f6e2" category="list-text">Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *Ordner bearbeiten* oder *Projekt bearbeiten*.</block>
   <block id="3f6ecf327501ffc3f265d065c39f55b6" category="inline-image-macro">Ein Screenshot der Seite Organisation, in dem die Option Projekt bearbeiten angezeigt wird, wenn das Aktionsmenü für ein Projekt in der Tabelle ausgewählt wird.</block>
   <block id="f8731f9389f28c059bc2471d56363fcd" category="paragraph"><block ref="f8731f9389f28c059bc2471d56363fcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71aa242e147c147797dbd6f9f41b801c" category="list-text">Auf der Seite *Bearbeiten* können Sie Details zu zugehörigen Ressourcen und Mitgliederzugriff anzeigen:</block>
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">Wählen Sie *Ressourcen*, um die zugehörigen Ressourcen anzuzeigen. In der Tabelle werden in der Spalte *Status* die Ressourcen angezeigt, die dem Ordner oder Projekt zugeordnet sind.</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">Ein Screenshot der Seite „Projekt bearbeiten“ zeigt die verfügbaren Ressourcen, die Sie dem Projekt zuordnen oder aufheben können.</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">Wählen Sie *Access*, um die Mitglieder anzuzeigen, die Zugriff auf den Ordner oder das Projekt haben.</block>
   <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">Ein Screenshot der Seite Projekt bearbeiten zeigt die Mitglieder, die Zugriff auf das Projekt haben.</block>
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e17333b6af28e20b12b88031ec846a2" category="inline-xref">Ändern Sie die zugehörigen Ressourcen</block>
-  <block id="d6b7bb304d4f265bbfd145a745c68eed" category="inline-xref">Mitgliederzugriff ändern</block>
-  <block id="ba165dec55dcb067d55d8a2bbb32e738" category="paragraph">Bei Bedarf können Sie <block ref="fa5515ea77ce1b6a8dbcd79e2fc3ca20" category="inline-xref-macro-rx"></block>oder <block ref="50dc3585d06eec07143d3dfe141dd3c9" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">Ändern Sie die Ressourcen, die einem Ordner oder Projekt zugeordnet sind</block>
-  <block id="a6393b52680d3f8c4ed45e505093ff28" category="paragraph">Sie können die Ressourcen, die einem Ordner oder Projekt zugeordnet sind, ändern, indem Sie eine Ressource zuordnen oder die Zuordnung zu ihr auflösen. Sie können beispielsweise eine Ressource mit einem anderen Projekt verknüpfen, da diese Ressource über Kapazitäten verfügt, die ein anderes Team nutzen kann.</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">Wählen Sie auf der Seite *Bearbeiten* *Ressourcen* aus.</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">In der Tabelle werden in der Spalte *Status* die Ressourcen angezeigt, die dem Ordner oder Projekt zugeordnet sind.</block>
   <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">Wählen Sie die Ressourcen aus, die Sie verknüpfen oder aufheben möchten.</block>
@@ -4428,26 +4413,20 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">Ein Screenshot der Seite Projekt bearbeiten zeigt die Option Ressourcen zuordnen, die verfügbar ist, nachdem Sie Ressourcen ausgewählt haben, die derzeit nicht zugeordnet sind.</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Wählen Sie *Anwenden*</block>
-  <block id="2020ca2154e03d2358d7a18c7bd4e4ee" category="paragraph">BlueXP  ordnet die Ressourcen dem Ordner oder Projekt zu. Organisationsmitglieder, die Berechtigungen für diesen Ordner oder dieses Projekt haben, können nun auf die zugehörigen Ressourcen zugreifen.</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Ändern Sie den Mitgliederzugriff auf einen Ordner oder ein Projekt</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Ändern Sie den Mitgliederzugriff auf einen Ordner oder ein Projekt, um sicherzustellen, dass die richtigen Mitglieder Zugriff auf die Ressourcen haben, die dem Ordner oder Projekt zugeordnet sind.</block>
   <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">Wählen Sie auf der Seite *Bearbeiten* *Zugriff*.</block>
-  <block id="a8781f46e241d03a4d2657a4d6f9a9b2" category="paragraph">BlueXP  zeigt die Liste der Mitglieder an, die Zugriff auf den Ordner oder das Projekt haben.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Mitgliederzugriff ändern:</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Mitglied hinzufügen*: Wählen Sie das Mitglied aus, das Sie dem Ordner oder Projekt hinzufügen möchten, und weisen Sie ihm eine Rolle zu.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Rolle eines Mitglieds ändern*: Wählen Sie für alle Mitglieder mit einer anderen Rolle als Organisationsadministrator ihre vorhandene Rolle aus und wählen Sie dann eine neue Rolle aus.</block>
-  <block id="ec947f15d50d5e45f56ce8c956d581f0" category="paragraph">Wenn eine Rolle auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) bereitgestellt wurde, sollten Sie überlegen, ob Sie die Rolle auf der unteren oder der höheren Ebene ändern möchten. Wenn Sie z. B. die Rolle „_Folder“ oder „Project admin“ auf Ordnerebene zugewiesen haben, werden die Berechtigungen für das Mitglied durch Ändern der Rolle auf Projektebene nicht geändert. Da Rollen in der Unternehmenshierarchie übernommen werden, verfügt das Mitglied weiterhin über Administratorberechtigungen auf Projektebene.</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">Erfahren Sie mehr über Rollenvererbung</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>.</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*Mitgliederzugriff entfernen*: Für Mitglieder, die eine Rolle in dem Ordner oder Projekt definiert haben, für das Sie sich die Datei ansehen, können Sie deren Zugriff entfernen.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Verwalten Sie Berechtigungen über die Seite Mitglieder</block>
-  <block id="e8600e476151636aa41417322bf8eecb" category="paragraph">Wenn der Mitgliederzugriff auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) bereitgestellt wurde, können Sie den Mitgliederzugriff nicht entfernen, wenn Sie diesen Ordner oder dieses Projekt anzeigen. Sie müssen zu diesem Teil der Hierarchie wechseln. Alternativ können Sie <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Wählen Sie *Anwenden*.</block>
-  <block id="d93816509ec30392c51369fac191445e" category="paragraph">BlueXP  aktualisiert die Mitglieder, die Zugriff auf den Ordner oder das Projekt haben.</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">Umbenennen eines Ordners oder Projekts</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">Bei Bedarf können Sie den Namen Ihrer Ordner und Projekte ändern.</block>
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">Geben Sie auf der Seite *Bearbeiten* einen neuen Namen ein und wählen Sie *Anwenden*.</block>
-  <block id="d8f0fb037537a867a046608fffa33518" category="paragraph">BlueXP  aktualisiert den Namen des Ordners oder Projekts.</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">Löschen Sie einen Ordner oder ein Projekt</block>
   <block id="0a868630764e886d94bedbbfd727e6f4" category="paragraph">Sie können die Ordner und Projekte löschen, die Sie nicht mehr benötigen.</block>
   <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">Erfahren Sie, wie Sie Ressourcen auflösen können</block>
@@ -4455,7 +4434,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="aa028ced940586c19c0a4e4d80b01fd3" category="list-text">Ein Ordner darf keine Unterordner oder Projekte enthalten. Sie müssen diese Ordner und Projekte zuerst löschen.</block>
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *Löschen* aus.</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">Bestätigen Sie, dass Sie den Ordner oder das Projekt löschen möchten.</block>
-  <block id="d8fe55db78c51b6f4ff410e959687f9f" category="paragraph">BlueXP  löscht den Ordner oder das Projekt. Dieser Ordner oder dieses Projekt steht den Organisationsmitgliedern nicht mehr zur Verfügung.</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Verwalten Sie die Mitglieder Ihres Unternehmens, um Berechtigungen für verschiedene Ebenen der Ressourcenhierarchie Ihres Unternehmens bereitzustellen.</block>
   <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">Fügen Sie BlueXP  IAM-Mitglieder hinzu und verwalten Sie ihre Berechtigungen</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">Mit BlueXP  Identity and Access Management (IAM) können Sie Ihrer Organisation Mitglieder hinzufügen und ihnen eine oder mehrere Rollen innerhalb Ihrer Ressourcenhierarchie zuweisen. Eine _Rolle_ enthält einen Satz von Berechtigungen, mit denen ein Mitglied bestimmte Aktionen auf einer bestimmten Ebene der Ressourcenhierarchie ausführen kann. Sie können neue Benutzerkonten und Dienstkonten zuordnen, Mitgliederrollen verwalten und vieles mehr.</block>
@@ -4546,13 +4524,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Bestätigen Sie, dass Sie das Mitglied aus Ihrer Organisation entfernen möchten.</block>
   <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  entfernt das Mitglied. Wenn sich das Mitglied erneut bei BlueXP  anmeldet, haben sie keinen Zugriff mehr auf Ihre BlueXP -Organisation.</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Verwalten Sie die Ressourcenhierarchie Ihres Unternehmens, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen.</block>
-  <block id="dacc6cf59d7e0f66f697ef48b807951c" category="paragraph">Wenn Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) ein Mitglied Ihrer Organisation zuordnen, geben Sie Berechtigungen auf Unternehmens-, Ordner- oder Projektebene ein. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Arbeitsumgebung, die BlueXP  bereits verwaltet.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">Zeigen Sie die Ressourcen in Ihrem Unternehmen an</block>
-  <block id="8271e2759587670b87881a1e083e0a52" category="paragraph">Um die Ressourcenhierarchie zu verwalten, sollten Sie die Ressourcen kennen, die mit Ihrem Unternehmen verbunden sind.</block>
-  <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">Wählen Sie *Ressourcen*.</block>
-  <block id="90eb4a50a957d74015adf452111a7dd5" category="paragraph">Die mit Ihrer Organisation verbundenen Ressourcen werden in der Tabelle *Ressourcen* angezeigt.</block>
-  <block id="573f6fc7f3c18fb7721ddccfe2520412" category="inline-xref">suchen und filtern Sie den Inhalt der Tabelle</block>
-  <block id="74a216516ae6f979fa921c96dd5057a8" category="paragraph">Um eine bestimmte Ressource zu finden, können Sie <block ref="2fd3d11c7689796e93f3888013589416" category="inline-xref-macro-rx"></block>.</block>
   <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">Nachdem Sie die gesuchte Ressource gefunden haben, können Sie eine der folgenden Aktionen durchführen:</block>
   <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">Zeigen Sie die Ordner und Projekte an, die der Ressource zugeordnet sind</block>
   <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
@@ -4560,25 +4532,19 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
   <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">Entfernen Sie die Ressource aus einem Ordner oder Projekt</block>
   <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
-  <block id="a29510a9013088f354480f508c907c2e" category="section-title">Suchen Sie nach bestimmten Ressourcen in Ihrem Unternehmen</block>
-  <block id="1acca7d7f6a7f4515e946bae053cbc27" category="paragraph">Wenn Sie über eine große Anzahl von Ressourcen in Ihrem Unternehmen verfügen, können Sie die Such- und Filteroptionen verwenden, um eine bestimmte Ressource zu finden.</block>
-  <block id="a89524edc025c255e3e415e871e88e5d" category="list-text">Wählen Sie auf der Seite *Ressourcen* die Option *Erweiterte Suche und Filterung* aus.</block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">Verwenden Sie eine der verfügbaren Optionen, um die gesuchte Ressource zu finden:</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*Suche nach Ressourcenname*: Geben Sie eine Textzeichenfolge ein und wählen Sie *Hinzufügen*.</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*Plattform*: Wählen Sie eine oder mehrere Plattformen wie Amazon Web Services.</block>
   <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*Ressourcen*: Wählen Sie eine oder mehrere Ressourcen, wie z. B. Cloud Volumes ONTAP.</block>
   <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*Organisation, Ordner oder Projekt*: Wählen Sie die gesamte Organisation, einen bestimmten Ordner oder ein bestimmtes Projekt aus.</block>
   <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">Wählen Sie *Suche*.</block>
-  <block id="de1dcc903e0def1031803a58221b8303" category="paragraph">Der Inhalt der Tabelle „Ressourcen“ wird aktualisiert, um die Ressourcen anzuzeigen, die zu Ihrer Such- und Filterauswahl passen.</block>
   <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">Verknüpfen Sie eine Ressource mit Ordnern und Projekten</block>
-  <block id="6f4141394827d668d7827055e97c0bb9" category="paragraph">Wenn Sie eine Ressource einem anderen Ordner oder Projekt in Ihrer Organisation zur Verfügung stellen möchten, müssen Sie eine Verknüpfung zwischen dem Ordner oder Projekt und der Ressource erstellen.</block>
   <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">Erfahren Sie mehr über Ressourcen, einschließlich wann Sie eine Ressource einem Ordner zuordnen</block>
   <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">Sie sollten verstehen, wie die Ressourcenzuordnung funktioniert. <block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block>.</block>
   <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">Navigieren Sie auf der Seite *Ressourcen* zu einer Ressource in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *Zuordnung zu Ordnern oder Projekten* aus.</block>
   <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">Um einen zusätzlichen Ordner oder ein weiteres Projekt zuzuordnen, wählen Sie *Ordner oder Projekt hinzufügen* und wählen Sie dann den Ordner oder das Projekt aus.</block>
   <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">Beachten Sie, dass Sie nur aus den Ordnern und Projekten auswählen können, für die Sie Administratorberechtigungen haben.</block>
   <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">Wählen Sie *Ressourcen zuordnen*.</block>
-  <block id="71e4a1d057d7694dd5ea8710ca5d07a9" category="paragraph">BlueXP  ordnet die Ressource den ausgewählten Ordnern und Projekten zu.</block>
   <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">Wenn Sie die Ressource mit Projekten verknüpft haben, können Mitglieder, die Berechtigungen für diese Projekte haben, jetzt in BlueXP  auf die Ressource zugreifen.</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">Erfahren Sie mehr über das Zuordnen einer Ressource zu einem Ordner</block>
   <block id="0764009847ea7e98389494f95f4d739e" category="list-text">Wenn Sie die Ressource einem Ordner zugeordnet haben, kann ein _Ordner oder Projektadministrator_ nun von BlueXP  IAM aus auf die Ressource zugreifen. <block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>.</block>
@@ -4586,7 +4552,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">Zeigen Sie die mit einer Ressource verbundenen Ordner und Projekte an</block>
   <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">Um zu ermitteln, wo eine Ressource in der Hierarchie Ihrer Organisation verfügbar ist, können Sie die Ordner und Projekte anzeigen, die mit dieser Ressource verknüpft sind.</block>
   <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">Navigieren Sie auf der Seite *Ressourcen* zu einer Ressource in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *Details anzeigen* aus.</block>
-  <block id="147b2b655dda25ecac27a2d7381599e4" category="paragraph">BlueXP  zeigt die Ordner und Projekte an, die der Ressource zugeordnet sind.</block>
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">Das folgende Beispiel zeigt eine Ressource, die einem Projekt zugeordnet ist.</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">Ein Screenshot der Seite mit den Ressourcendetails zeigt eine Ressource, die mit einem Projekt verknüpft ist, das sich direkt unter der Organisation befindet.</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
@@ -4601,7 +4566,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="7f6be6d71b75090da3f7888443a6d4f8" category="paragraph">Wenn Sie eine erkannte Ressource aus der gesamten Organisation entfernen möchten, müssen Sie die Arbeitsumgebung aus dem BlueXP -Bildschirm entfernen.</block>
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">Wählen Sie für den Ordner oder das Projekt aus, für den Sie die Ressource entfernen möchten <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">Bestätigen Sie, dass Sie die Verknüpfung entfernen möchten, indem Sie *Löschen* auswählen.</block>
-  <block id="4cc93df03851cba78d596a3fa944ce1a" category="paragraph">BlueXP  entfernt die Verknüpfung. Mitglieder können nicht mehr von diesem Ordner oder Projekt auf die Ressource zugreifen.</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">Bei Bedarf können Sie den Namen Ihrer BlueXP -Organisation ändern.</block>
   <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">Bei Bedarf können Sie den Namen Ihrer BlueXP -Organisation von BlueXP  Identity and Access Management (IAM) aus ändern. Der Organisationsname wird oben auf der webbasierten BlueXP -Konsole und auf den IAM-Seiten angezeigt.</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">Navigieren Sie auf der Seite *Organisation* zur ersten Zeile in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *Organisation bearbeiten* aus.</block>
@@ -4965,4 +4929,27 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">Wenn sich der Connector in einer kommerziellen Region oder einer souveränen Region befindet, können Sie zwischen zwei Endpunktsätzen wählen:</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">Um Bilder für Connector-Upgrades zu erhalten, wenn der Connector in einer kommerziellen Region oder souveränen Region installiert ist.</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">Bis 16. Dezember 2024</block>
+  <block id="67f44df0b66677509cb8a85769f34ee3" category="paragraph">Im folgenden Video werden die Schritte zum Abonnieren von BlueXP  über den AWS Marketplace gezeigt:</block>
+  <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Abonnement konfigurieren*.</block>
+  <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie das Abonnement aus der Down-Liste aus und wählen Sie *Konfigurieren*.</block>
+  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">Verwandte Informationen</block>
+  <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">Konfigurieren eines AWS-Abonnements</block>
+  <block id="b8da1935866ccfc3044b85a99232dc4f" category="paragraph">Nachdem Sie Ihre AWS Zugangsdaten zu BlueXP  hinzugefügt haben, können Sie ein AWS Marketplace Abonnement mit diesen Zugangsdaten konfigurieren. Dank des Abonnements können Sie für Cloud Volumes ONTAP zu einem Stundensatz (PAYGO) bezahlen oder einen Jahresvertrag nutzen und andere BlueXP Services nutzen.</block>
+  <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">Es gibt zwei Szenarien, in denen Sie möglicherweise ein AWS Marketplace-Abonnement konfigurieren, nachdem Sie die Zugangsdaten bereits zu BlueXP  hinzugefügt haben:</block>
+  <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">Sie haben kein Abonnement konfiguriert, als Sie die Anmeldeinformationen zu BlueXP  hinzugefügt haben.</block>
+  <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Sie möchten das AWS Marketplace-Abonnement ändern, das mit den AWS Zugangsdaten konfiguriert ist.</block>
+  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">Die Tiefe der Ressourcenhierarchie Ihres Unternehmens kann bis auf 7 Ebenen reduziert werden. Dadurch können Sie verschachtelte Ordner bis zu 6 Ebenen erstellen. Der letzte verschachtelte Ordner kann dann Projekte auf der siebten Ebene der Hierarchie enthalten.</block>
+  <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">Das folgende Bild zeigt die maximale Tiefe der Ressourcenhierarchie Ihres Unternehmens:</block>
+  <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">Zeigen Sie die Ressourcen an, die einem Ordner oder Projekt zugeordnet sind</block>
+  <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">Auf der Seite *Bearbeiten* können Sie Details zum ausgewählten Ordner oder Projekt anzeigen, indem Sie die Abschnitte *Ressourcen* oder *Zugriff* erweitern.</block>
+  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">Sie können die Ressourcen, die einem Ordner oder Projekt zugeordnet sind, ändern, indem Sie eine Ressource zuordnen oder die Zuordnung zu ihr auflösen. Sie können beispielsweise eine Ressource mit einem anderen Projekt verknüpfen, da diese Ressource über Kapazitäten verfügt, die ein anderes Team nutzen kann. Sobald Sie eine Ressource einem Ordner oder Projekt zugeordnet haben, können Organisationsmitglieder, die Berechtigungen für diesen Ordner oder dieses Projekt haben, auf die zugehörige Ressource zugreifen.</block>
+  <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Anzeigen von Mitgliedern, die einem Ordner oder Projekt zugeordnet sind</block>
+  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Wenn der Mitgliederzugriff auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) bereitgestellt wurde, können Sie den Mitgliederzugriff nicht entfernen oder ändern, wenn Sie den Ordner oder das Projekt auf niedrigerer Ebene anzeigen. Sie müssen zu diesem Teil der Hierarchie wechseln und dort die Berechtigungen des Mitglieds aktualisieren. Alternativ können Sie <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
+  <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Wählen Sie auf der Seite *Bearbeiten* *Zugriff* aus, um die Liste der Mitglieder anzuzeigen, die Zugriff auf den ausgewählten Ordner oder das ausgewählte Projekt haben.</block>
+  <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Wenn Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) ein Mitglied Ihrer Organisation zuordnen, geben Sie Berechtigungen auf Unternehmens-, Ordner- oder Projektebene ein. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Speicherressource, die BlueXP  bereits managt oder bereits kennt.</block>
+  <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">Sie können ermittelte und nicht ermittelte Ressourcen anzeigen, die Ihrer Organisation zugeordnet sind. Nicht entdeckte Ressourcen sind in der Regel über Digital Advisor bekannte Speicherressourcen, für die Sie nicht als Arbeitsumgebungen hinzugefügt haben.</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Amazon FSX for NetApp ONTAP-Ressourcen werden auf der Seite IAM-Ressourcen nicht angezeigt, da Sie sie nicht mit einer IAM-Rolle verknüpfen können. Sie können diese Ressourcen in ihrem jeweiligen Arbeitsbereich oder in Arbeitslasten anzeigen.</block>
+  <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">Wählen Sie *Ressourcen*, um die Seite Ressourcen anzuzeigen.</block>
+  <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">Wählen Sie *Erweiterte Suche Und Filterung*.</block>
+  <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">Wenn Sie eine Ressource für Ordner oder Projekte in Ihrer Organisation verfügbar machen möchten, müssen Sie eine Verknüpfung zwischen dem Ordner oder Projekt und der Ressource erstellen.</block>
 </blocks>

@@ -71,5 +71,5 @@ Wenn Sie BlueXP  im Standardmodus verwenden, verfügen Sie nicht über ein Blue
 
 | Anzeigen und Verwalten des Support-Dashboards | Ja. | Ja. | Nein | Nein 
 |===
-.Verwandter Link
+.Verwandte Informationen
 link:task-managing-netapp-accounts.html["Managen Sie Ihr BlueXP Konto"]

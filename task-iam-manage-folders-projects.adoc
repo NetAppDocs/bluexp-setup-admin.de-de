@@ -23,9 +23,9 @@ Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Manage
 Wenn Sie Ihre BlueXP -Organisation erstellen, umfasst diese ein einzelnes Projekt. Sie können weitere Projekte erstellen, um die Ressourcen Ihres Unternehmens zu verwalten. Sie können optional Ordner erstellen, um verwandte Projekte zu gruppieren.
 
 .Über diese Aufgabe
-Die Tiefe der Hierarchie Ihres Unternehmens kann bis auf 7 Ebenen reduziert werden. Dadurch können Sie verschachtelte Ordner bis zu 6 Ebenen erstellen. Der letzte verschachtelte Ordner kann dann Projekte auf der siebten Ebene der Hierarchie enthalten.
+Die Tiefe der Ressourcenhierarchie Ihres Unternehmens kann bis auf 7 Ebenen reduziert werden. Dadurch können Sie verschachtelte Ordner bis zu 6 Ebenen erstellen. Der letzte verschachtelte Ordner kann dann Projekte auf der siebten Ebene der Hierarchie enthalten.
 
-Die folgende Abbildung zeigt die maximale Tiefe der Hierarchie Ihres Unternehmens:
+Das folgende Bild zeigt die maximale Tiefe der Ressourcenhierarchie Ihres Unternehmens:
 
 image:screenshot-iam-max-depth.png["Ein Screenshot mit einer Organisation, sechs verschachtelten Ordnern und einem Projekt im letzten verschachtelten Ordner."]
 
@@ -55,97 +55,6 @@ link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte 
 . Wählen Sie *Hinzufügen*.
 
 
-.Ergebnis
-BlueXP  erstellt den Ordner oder das Projekt und ordnet die angegebenen Ressourcen und Mitglieder zu.
-
-
-
-== Zeigen Sie die Ressourcen und Mitglieder an, die einem Ordner oder Projekt zugeordnet sind
-
-Um zu überprüfen, ob Ihre Ressourcen angemessen organisiert sind und für die richtigen Mitglieder in Ihrer Organisation zugänglich sind, können Sie anzeigen, welche Ressourcen und Mitglieder einem Ordner oder Projekt zugeordnet sind.
-
-.Schritte
-. Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Ordner bearbeiten* oder *Projekt bearbeiten*.
-+
-image:screenshot-iam-edit-project.png["Ein Screenshot der Seite Organisation, in dem die Option Projekt bearbeiten angezeigt wird, wenn das Aktionsmenü für ein Projekt in der Tabelle ausgewählt wird."]
-
-. Auf der Seite *Bearbeiten* können Sie Details zu zugehörigen Ressourcen und Mitgliederzugriff anzeigen:
-+
-** Wählen Sie *Ressourcen*, um die zugehörigen Ressourcen anzuzeigen. In der Tabelle werden in der Spalte *Status* die Ressourcen angezeigt, die dem Ordner oder Projekt zugeordnet sind.
-+
-image:screenshot-iam-allocated-resources.png["Ein Screenshot der Seite „Projekt bearbeiten“ zeigt die verfügbaren Ressourcen, die Sie dem Projekt zuordnen oder aufheben können."]
-
-** Wählen Sie *Access*, um die Mitglieder anzuzeigen, die Zugriff auf den Ordner oder das Projekt haben.
-+
-image:screenshot-iam-member-access.png["Ein Screenshot der Seite Projekt bearbeiten zeigt die Mitglieder, die Zugriff auf das Projekt haben."]
-
-
-
-
-
-.Was kommt als Nächstes?
-Bei Bedarf können Sie <<modify-resources,Ändern Sie die zugehörigen Ressourcen>>oder <<modify-members,Mitgliederzugriff ändern>>.
-
-
-
-== Ändern Sie die Ressourcen, die einem Ordner oder Projekt zugeordnet sind
-
-Sie können die Ressourcen, die einem Ordner oder Projekt zugeordnet sind, ändern, indem Sie eine Ressource zuordnen oder die Zuordnung zu ihr auflösen. Sie können beispielsweise eine Ressource mit einem anderen Projekt verknüpfen, da diese Ressource über Kapazitäten verfügt, die ein anderes Team nutzen kann.
-
-.Bevor Sie beginnen
-link:concept-identity-and-access-management.html#associate-resource-folder["Erfahren Sie, wann Sie eine Ressource einem Ordner zuordnen können"].
-
-.Schritte
-. Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Ordner bearbeiten* oder *Projekt bearbeiten*.
-. Wählen Sie auf der Seite *Bearbeiten* *Ressourcen* aus.
-+
-In der Tabelle werden in der Spalte *Status* die Ressourcen angezeigt, die dem Ordner oder Projekt zugeordnet sind.
-
-. Wählen Sie die Ressourcen aus, die Sie verknüpfen oder aufheben möchten.
-. Wählen Sie je nach den ausgewählten Ressourcen entweder *mit dem Projekt verknüpfen* oder *mit dem Projekt absetzen* aus.
-+
-image:screenshot-iam-associate-resources.png["Ein Screenshot der Seite Projekt bearbeiten zeigt die Option Ressourcen zuordnen, die verfügbar ist, nachdem Sie Ressourcen ausgewählt haben, die derzeit nicht zugeordnet sind."]
-
-. Wählen Sie *Anwenden*
-
-
-.Ergebnis
-BlueXP  ordnet die Ressourcen dem Ordner oder Projekt zu. Organisationsmitglieder, die Berechtigungen für diesen Ordner oder dieses Projekt haben, können nun auf die zugehörigen Ressourcen zugreifen.
-
-
-
-== Ändern Sie den Mitgliederzugriff auf einen Ordner oder ein Projekt
-
-Ändern Sie den Mitgliederzugriff auf einen Ordner oder ein Projekt, um sicherzustellen, dass die richtigen Mitglieder Zugriff auf die Ressourcen haben, die dem Ordner oder Projekt zugeordnet sind.
-
-.Schritte
-. Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Ordner bearbeiten* oder *Projekt bearbeiten*.
-. Wählen Sie auf der Seite *Bearbeiten* *Zugriff*.
-+
-BlueXP  zeigt die Liste der Mitglieder an, die Zugriff auf den Ordner oder das Projekt haben.
-
-. Mitgliederzugriff ändern:
-+
-** *Mitglied hinzufügen*: Wählen Sie das Mitglied aus, das Sie dem Ordner oder Projekt hinzufügen möchten, und weisen Sie ihm eine Rolle zu.
-** *Rolle eines Mitglieds ändern*: Wählen Sie für alle Mitglieder mit einer anderen Rolle als Organisationsadministrator ihre vorhandene Rolle aus und wählen Sie dann eine neue Rolle aus.
-+
-Wenn eine Rolle auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) bereitgestellt wurde, sollten Sie überlegen, ob Sie die Rolle auf der unteren oder der höheren Ebene ändern möchten. Wenn Sie z. B. die Rolle „_Folder“ oder „Project admin“ auf Ordnerebene zugewiesen haben, werden die Berechtigungen für das Mitglied durch Ändern der Rolle auf Projektebene nicht geändert. Da Rollen in der Unternehmenshierarchie übernommen werden, verfügt das Mitglied weiterhin über Administratorberechtigungen auf Projektebene.
-
-+
-link:concept-identity-and-access-management.html#role-inheritance["Erfahren Sie mehr über Rollenvererbung"].
-
-** *Mitgliederzugriff entfernen*: Für Mitglieder, die eine Rolle in dem Ordner oder Projekt definiert haben, für das Sie sich die Datei ansehen, können Sie deren Zugriff entfernen.
-+
-Wenn der Mitgliederzugriff auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) bereitgestellt wurde, können Sie den Mitgliederzugriff nicht entfernen, wenn Sie diesen Ordner oder dieses Projekt anzeigen. Sie müssen zu diesem Teil der Hierarchie wechseln. Alternativ können Sie link:task-iam-manage-members-permissions.html#manage-permissions["Verwalten Sie Berechtigungen über die Seite Mitglieder"].
-
-
-
-. Wählen Sie *Anwenden*.
-
-
-.Ergebnis
-BlueXP  aktualisiert die Mitglieder, die Zugriff auf den Ordner oder das Projekt haben.
-
 
 
 == Die ID für ein Projekt abrufen
@@ -174,9 +83,6 @@ Bei Bedarf können Sie den Namen Ihrer Ordner und Projekte ändern.
 . Geben Sie auf der Seite *Bearbeiten* einen neuen Namen ein und wählen Sie *Anwenden*.
 
 
-.Ergebnis
-BlueXP  aktualisiert den Namen des Ordners oder Projekts.
-
 
 
 == Löschen Sie einen Ordner oder ein Projekt
@@ -193,8 +99,82 @@ Sie können die Ordner und Projekte löschen, die Sie nicht mehr benötigen.
 . Bestätigen Sie, dass Sie den Ordner oder das Projekt löschen möchten.
 
 
-.Ergebnis
-BlueXP  löscht den Ordner oder das Projekt. Dieser Ordner oder dieses Projekt steht den Organisationsmitgliedern nicht mehr zur Verfügung.
+
+
+== Zeigen Sie die Ressourcen an, die einem Ordner oder Projekt zugeordnet sind
+
+Um zu überprüfen, ob Ihre Ressourcen angemessen organisiert sind und für die richtigen Mitglieder in Ihrer Organisation zugänglich sind, können Sie anzeigen, welche Ressourcen und Mitglieder einem Ordner oder Projekt zugeordnet sind.
+
+.Schritte
+. Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Ordner bearbeiten* oder *Projekt bearbeiten*.
++
+image:screenshot-iam-edit-project.png["Ein Screenshot der Seite Organisation, in dem die Option Projekt bearbeiten angezeigt wird, wenn das Aktionsmenü für ein Projekt in der Tabelle ausgewählt wird."]
+
+. Auf der Seite *Bearbeiten* können Sie Details zum ausgewählten Ordner oder Projekt anzeigen, indem Sie die Abschnitte *Ressourcen* oder *Zugriff* erweitern.
++
+** Wählen Sie *Ressourcen*, um die zugehörigen Ressourcen anzuzeigen. In der Tabelle werden in der Spalte *Status* die Ressourcen angezeigt, die dem Ordner oder Projekt zugeordnet sind.
++
+image:screenshot-iam-allocated-resources.png["Ein Screenshot der Seite „Projekt bearbeiten“ zeigt die verfügbaren Ressourcen, die Sie dem Projekt zuordnen oder aufheben können."]
+
+
+
+
+
+
+
+== Ändern Sie die Ressourcen, die einem Ordner oder Projekt zugeordnet sind
+
+Sie können die Ressourcen, die einem Ordner oder Projekt zugeordnet sind, ändern, indem Sie eine Ressource zuordnen oder die Zuordnung zu ihr auflösen. Sie können beispielsweise eine Ressource mit einem anderen Projekt verknüpfen, da diese Ressource über Kapazitäten verfügt, die ein anderes Team nutzen kann. Sobald Sie eine Ressource einem Ordner oder Projekt zugeordnet haben, können Organisationsmitglieder, die Berechtigungen für diesen Ordner oder dieses Projekt haben, auf die zugehörige Ressource zugreifen.
+
+.Bevor Sie beginnen
+link:concept-identity-and-access-management.html#associate-resource-folder["Erfahren Sie, wann Sie eine Ressource einem Ordner zuordnen können"].
+
+.Schritte
+. Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Ordner bearbeiten* oder *Projekt bearbeiten*.
+. Wählen Sie auf der Seite *Bearbeiten* *Ressourcen* aus.
++
+In der Tabelle werden in der Spalte *Status* die Ressourcen angezeigt, die dem Ordner oder Projekt zugeordnet sind.
+
+. Wählen Sie die Ressourcen aus, die Sie verknüpfen oder aufheben möchten.
+. Wählen Sie je nach den ausgewählten Ressourcen entweder *mit dem Projekt verknüpfen* oder *mit dem Projekt absetzen* aus.
++
+image:screenshot-iam-associate-resources.png["Ein Screenshot der Seite Projekt bearbeiten zeigt die Option Ressourcen zuordnen, die verfügbar ist, nachdem Sie Ressourcen ausgewählt haben, die derzeit nicht zugeordnet sind."]
+
+. Wählen Sie *Anwenden*
+
+
+
+
+== Anzeigen von Mitgliedern, die einem Ordner oder Projekt zugeordnet sind
+
+* Wählen Sie *Access*, um die Mitglieder anzuzeigen, die Zugriff auf den Ordner oder das Projekt haben.
++
+image:screenshot-iam-member-access.png["Ein Screenshot der Seite Projekt bearbeiten zeigt die Mitglieder, die Zugriff auf das Projekt haben."]
+
+
+
+
+
+== Ändern Sie den Mitgliederzugriff auf einen Ordner oder ein Projekt
+
+Ändern Sie den Mitgliederzugriff auf einen Ordner oder ein Projekt, um sicherzustellen, dass die richtigen Mitglieder Zugriff auf die Ressourcen haben, die dem Ordner oder Projekt zugeordnet sind.
+
+Wenn der Mitgliederzugriff auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) bereitgestellt wurde, können Sie den Mitgliederzugriff nicht entfernen oder ändern, wenn Sie den Ordner oder das Projekt auf niedrigerer Ebene anzeigen. Sie müssen zu diesem Teil der Hierarchie wechseln und dort die Berechtigungen des Mitglieds aktualisieren. Alternativ können Sie link:task-iam-manage-members-permissions.html#manage-permissions["Verwalten Sie Berechtigungen über die Seite Mitglieder"].
+
+link:concept-identity-and-access-management.html#role-inheritance["Erfahren Sie mehr über Rollenvererbung"].
+
+.Schritte
+. Navigieren Sie auf der Seite *Organisation* zu einem Projekt oder Ordner in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Ordner bearbeiten* oder *Projekt bearbeiten*.
+. Wählen Sie auf der Seite *Bearbeiten* *Zugriff* aus, um die Liste der Mitglieder anzuzeigen, die Zugriff auf den ausgewählten Ordner oder das ausgewählte Projekt haben.
+. Mitgliederzugriff ändern:
++
+** *Mitglied hinzufügen*: Wählen Sie das Mitglied aus, das Sie dem Ordner oder Projekt hinzufügen möchten, und weisen Sie ihm eine Rolle zu.
+** *Rolle eines Mitglieds ändern*: Wählen Sie für alle Mitglieder mit einer anderen Rolle als Organisationsadministrator ihre vorhandene Rolle aus und wählen Sie dann eine neue Rolle aus.
+** *Mitgliederzugriff entfernen*: Für Mitglieder, die eine Rolle in dem Ordner oder Projekt definiert haben, für das Sie sich die Datei ansehen, können Sie deren Zugriff entfernen.
+
+
+. Wählen Sie *Anwenden*.
+
 
 
 

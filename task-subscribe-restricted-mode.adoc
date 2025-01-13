@@ -30,16 +30,20 @@ Für das Abonnement von BlueXP wird ein Marketplace-Abonnement mit den Cloud-Zug
 ====
 .AWS
 --
+Im folgenden Video werden die Schritte zum Abonnieren von BlueXP  über den AWS Marketplace gezeigt:
+
+.Abonnieren Sie BlueXP über den AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
-. Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Associate Subscription*.
+. Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Abonnement konfigurieren*.
 +
 Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind. Sie können kein Marketplace-Abonnement mit Anmeldedaten verknüpfen, die mit BlueXP verknüpft sind.
 
 +
 image:screenshot_associate_subscription.png["Ein Screenshot des Aktionsmenüs für einen Satz vorhandener Anmeldedaten."]
 
-. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie das Abonnement aus der Down-Liste aus und wählen *Associate* aus.
+. Um die Anmeldeinformationen einem bestehenden Abonnement zuzuordnen, wählen Sie das Abonnement aus der Down-Liste aus und wählen Sie *Konfigurieren*.
 . Um die Anmeldeinformationen einem neuen Abonnement zuzuordnen, wählen Sie *Abonnement hinzufügen > Weiter* und befolgen Sie die Schritte im AWS Marketplace:
 +
 .. Wählen Sie *Kaufoptionen anzeigen*.
@@ -59,12 +63,6 @@ BlueXP  ersetzt mit diesem neuen Abonnement das bestehende Abonnement für alle
 Bei allen anderen Organisationen oder Konten müssen Sie das Abonnement manuell verknüpfen, indem Sie diese Schritte wiederholen.
 
 *** Wählen Sie *Speichern*.
-+
-Im folgenden Video werden die Schritte zum Abonnieren über AWS Marketplace gezeigt:
-
-+
-.Abonnieren Sie BlueXP über den AWS Marketplace
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

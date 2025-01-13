@@ -14,40 +14,21 @@ summary: Verwalten Sie die Ressourcenhierarchie Ihres Unternehmens, indem Sie Re
 
 
 [role="lead"]
-Wenn Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) ein Mitglied Ihrer Organisation zuordnen, geben Sie Berechtigungen auf Unternehmens-, Ordner- oder Projektebene ein. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Arbeitsumgebung, die BlueXP  bereits verwaltet.
+Wenn Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) ein Mitglied Ihrer Organisation zuordnen, geben Sie Berechtigungen auf Unternehmens-, Ordner- oder Projektebene ein. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Speicherressource, die BlueXP  bereits managt oder bereits kennt.
 
 
 
 == Zeigen Sie die Ressourcen in Ihrem Unternehmen an
 
-Um die Ressourcenhierarchie zu verwalten, sollten Sie die Ressourcen kennen, die mit Ihrem Unternehmen verbunden sind.
+Sie können ermittelte und nicht ermittelte Ressourcen anzeigen, die Ihrer Organisation zugeordnet sind. Nicht entdeckte Ressourcen sind in der Regel über Digital Advisor bekannte Speicherressourcen, für die Sie nicht als Arbeitsumgebungen hinzugefügt haben.
+
+
+NOTE: Amazon FSX for NetApp ONTAP-Ressourcen werden auf der Seite IAM-Ressourcen nicht angezeigt, da Sie sie nicht mit einer IAM-Rolle verknüpfen können. Sie können diese Ressourcen in ihrem jeweiligen Arbeitsbereich oder in Arbeitslasten anzeigen.
 
 .Schritte
 . Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
-. Wählen Sie *Ressourcen*.
-
-
-.Ergebnis
-Die mit Ihrer Organisation verbundenen Ressourcen werden in der Tabelle *Ressourcen* angezeigt.
-
-.Was kommt als Nächstes?
-Um eine bestimmte Ressource zu finden, können Sie <<find-resources,suchen und filtern Sie den Inhalt der Tabelle>>.
-
-Nachdem Sie die gesuchte Ressource gefunden haben, können Sie eine der folgenden Aktionen durchführen:
-
-* <<view-folders-and-projects,Zeigen Sie die Ordner und Projekte an, die der Ressource zugeordnet sind>>
-* <<associate-resource,Verknüpfen Sie die Ressource mit zusätzlichen Ordnern und Projekten>>
-* <<remove-resource,Entfernen Sie die Ressource aus einem Ordner oder Projekt>>
-
-
-
-
-== Suchen Sie nach bestimmten Ressourcen in Ihrem Unternehmen
-
-Wenn Sie über eine große Anzahl von Ressourcen in Ihrem Unternehmen verfügen, können Sie die Such- und Filteroptionen verwenden, um eine bestimmte Ressource zu finden.
-
-.Schritte
-. Wählen Sie auf der Seite *Ressourcen* die Option *Erweiterte Suche und Filterung* aus.
+. Wählen Sie *Ressourcen*, um die Seite Ressourcen anzuzeigen.
+. Wählen Sie *Erweiterte Suche Und Filterung*.
 . Verwenden Sie eine der verfügbaren Optionen, um die gesuchte Ressource zu finden:
 +
 ** *Suche nach Ressourcenname*: Geben Sie eine Textzeichenfolge ein und wählen Sie *Hinzufügen*.
@@ -59,14 +40,19 @@ Wenn Sie über eine große Anzahl von Ressourcen in Ihrem Unternehmen verfügen,
 . Wählen Sie *Suche*.
 
 
-.Ergebnis
-Der Inhalt der Tabelle „Ressourcen“ wird aktualisiert, um die Ressourcen anzuzeigen, die zu Ihrer Such- und Filterauswahl passen.
+.Was kommt als Nächstes?
+Nachdem Sie die gesuchte Ressource gefunden haben, können Sie eine der folgenden Aktionen durchführen:
+
+* <<associate-resource,Verknüpfen Sie die Ressource mit zusätzlichen Ordnern und Projekten>>
+* <<view-folders-and-projects,Zeigen Sie die Ordner und Projekte an, die der Ressource zugeordnet sind>>
+* <<remove-resource,Entfernen Sie die Ressource aus einem Ordner oder Projekt>>
+
 
 
 
 == Verknüpfen Sie eine Ressource mit Ordnern und Projekten
 
-Wenn Sie eine Ressource einem anderen Ordner oder Projekt in Ihrer Organisation zur Verfügung stellen möchten, müssen Sie eine Verknüpfung zwischen dem Ordner oder Projekt und der Ressource erstellen.
+Wenn Sie eine Ressource für Ordner oder Projekte in Ihrer Organisation verfügbar machen möchten, müssen Sie eine Verknüpfung zwischen dem Ordner oder Projekt und der Ressource erstellen.
 
 .Bevor Sie beginnen
 Sie sollten verstehen, wie die Ressourcenzuordnung funktioniert. link:concept-identity-and-access-management.html#resources["Erfahren Sie mehr über Ressourcen, einschließlich wann Sie eine Ressource einem Ordner zuordnen"].
@@ -79,13 +65,11 @@ Sie sollten verstehen, wie die Ressourcenzuordnung funktioniert. link:concept-id
 Beachten Sie, dass Sie nur aus den Ordnern und Projekten auswählen können, für die Sie Administratorberechtigungen haben.
 
 . Wählen Sie *Ressourcen zuordnen*.
++
+** Wenn Sie die Ressource mit Projekten verknüpft haben, können Mitglieder, die Berechtigungen für diese Projekte haben, jetzt in BlueXP  auf die Ressource zugreifen.
+** Wenn Sie die Ressource einem Ordner zugeordnet haben, kann ein _Ordner oder Projektadministrator_ nun von BlueXP  IAM aus auf die Ressource zugreifen. link:concept-identity-and-access-management.html#resources["Erfahren Sie mehr über das Zuordnen einer Ressource zu einem Ordner"].
 
 
-.Ergebnis
-BlueXP  ordnet die Ressource den ausgewählten Ordnern und Projekten zu.
-
-* Wenn Sie die Ressource mit Projekten verknüpft haben, können Mitglieder, die Berechtigungen für diese Projekte haben, jetzt in BlueXP  auf die Ressource zugreifen.
-* Wenn Sie die Ressource einem Ordner zugeordnet haben, kann ein _Ordner oder Projektadministrator_ nun von BlueXP  IAM aus auf die Ressource zugreifen. link:concept-identity-and-access-management.html#resources["Erfahren Sie mehr über das Zuordnen einer Ressource zu einem Ordner"].
 
 
 .Nachdem Sie fertig sind
@@ -102,9 +86,6 @@ Um zu ermitteln, wo eine Ressource in der Hierarchie Ihrer Organisation verfügb
 .Schritte
 . Navigieren Sie auf der Seite *Ressourcen* zu einer Ressource in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
 
-
-.Ergebnis
-BlueXP  zeigt die Ordner und Projekte an, die der Ressource zugeordnet sind.
 
 Das folgende Beispiel zeigt eine Ressource, die einem Projekt zugeordnet ist.
 
@@ -130,9 +111,6 @@ Wenn Sie eine erkannte Ressource aus der gesamten Organisation entfernen möchte
 . Wählen Sie für den Ordner oder das Projekt aus, für den Sie die Ressource entfernen möchten image:icon-delete.png["Ein Symbol einer Mülltonne"]
 . Bestätigen Sie, dass Sie die Verknüpfung entfernen möchten, indem Sie *Löschen* auswählen.
 
-
-.Ergebnis
-BlueXP  entfernt die Verknüpfung. Mitglieder können nicht mehr von diesem Ordner oder Projekt auf die Ressource zugreifen.
 
 
 

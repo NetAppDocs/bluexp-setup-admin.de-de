@@ -16,7 +16,7 @@ summary: Um Probleme mit dem Konnektor zu beheben, können Sie mit dem NetApp-Su
 [role="lead"]
 Um Probleme mit dem Konnektor zu beheben, können Sie mit dem NetApp-Support zusammenarbeiten, der Sie möglicherweise nach Ihrer System-ID, der Connector-Version oder den neuesten AutoSupport-Meldungen fragt. Sie können auch die NetApp Wissensdatenbank anzeigen, um Fehler selbst zu beheben.
 
-.Verwandter Link
+.Verwandte Informationen
 link:task-get-help.html["Holen Sie sich Hilfe vom NetApp-Support"].
 
 

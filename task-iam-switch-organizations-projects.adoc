@@ -73,7 +73,7 @@ Wenn Sie über mehrere Anschlüsse verfügen, können Sie zwischen diesen wechse
 .Ergebnis
 BlueXP  aktualisiert und zeigt die Arbeitsumgebungen an, die dem ausgewählten Konnektor zugeordnet sind.
 
-.Verwandter Link
+.Verwandte Informationen
 link:task-iam-associate-connectors.html["Connectors mit Ordnern und Projekten verknüpfen"].
 
 

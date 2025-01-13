@@ -136,7 +136,7 @@ Wenn Sie einen bestehenden Connector auf RHEL 7 oder CentOS 7 verwenden, unterst
 
 
 
-== Weiterführende Links
+== Verwandte Informationen
 
 
 
