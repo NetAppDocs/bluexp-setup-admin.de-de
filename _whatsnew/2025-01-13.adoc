@@ -1,0 +1,33 @@
+= Anschluss 3.9.48
+:allow-uri-read: 
+
+
+
+
+=== Anschluss 3.9.48
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Derzeit ist die Version 3.9.48 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+=== Identitäts- und Zugriffsmanagement für BlueXP 
+
+* Auf der Seite „Ressourcen“ werden jetzt nicht erkannte Ressourcen angezeigt. Nicht entdeckte Ressourcen sind Speicherressourcen, die BlueXP  kennt, aber Sie haben keine Arbeitsumgebungen für erstellt. Beispielsweise werden Ressourcen, die in Digital Advisor angezeigt werden, für die noch keine Arbeitsumgebungen vorhanden sind, auf der Seite „Ressourcen“ als nicht erkannte Ressourcen angezeigt.
+* Amazon FSX for NetApp ONTAP-Ressourcen werden auf der Seite IAM-Ressourcen nicht angezeigt, da Sie sie nicht mit einer IAM-Rolle verknüpfen können. Sie können diese Ressourcen in ihrem jeweiligen Arbeitsbereich oder in Arbeitslasten anzeigen.
+
+
+
+
+=== Erstellen eines Support-Cases für zusätzliche BlueXP  Services
+
+Nachdem Sie BlueXP  für den Support registriert haben, können Sie einen Support-Fall direkt über die webbasierte Konsole von BlueXP  erstellen. Wenn Sie den Fall erstellen, müssen Sie den Dienst auswählen, mit dem das Problem verknüpft ist.
+
+Ab dieser Version können Sie nun einen Support-Fall erstellen und ihn weiteren BlueXP  Services zuordnen:
+
+* BlueXP Disaster Recovery
+* BlueXP vor Ransomware-Schutz
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["Erfahren Sie mehr über die Erstellung eines Support-Cases"].
