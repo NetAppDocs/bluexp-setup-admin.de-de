@@ -14,11 +14,11 @@ summary: 'Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Acc
 
 
 [role="lead"]
-Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) können Sie den Zugriff auf Ihre NetApp-Ressourcen organisieren und kontrollieren. Sie können Ihre Ressourcen nach der Hierarchie Ihrer Organisation organisieren. Sie können beispielsweise Ressourcen nach geographischem Standort, Standort oder Geschäftseinheit organisieren. Anschließend können Sie Mitgliedern in bestimmten Teilen der Hierarchie Berechtigungen zuweisen, wodurch der Zugriff auf Ressourcen in anderen Teilen der Hierarchie verhindert wird.
+Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) können Sie den Zugriff auf Ihre NetApp-Ressourcen organisieren und kontrollieren. Sie können Ihre Ressourcen nach der Hierarchie Ihrer Organisation organisieren. Sie können beispielsweise Ressourcen nach geographischem Standort, Standort oder Geschäftseinheit organisieren. Anschließend können Sie Mitgliedern in bestimmten Teilen der Hierarchie Piam-Rollen zuweisen, wodurch der Zugriff auf Ressourcen in anderen Teilen der Hierarchie verhindert wird.
 
 BlueXP  IAM ersetzt und erweitert die zuvor von BlueXP  Accounts bereitgestellten Funktionen. link:whats-new.html#iam["Erfahren Sie mehr über die Einführung von BlueXP  IAM"].
 
-BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus verwendet wird. Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, verwenden Sie ein BlueXP  _Account_, um Benutzer und Ressourcen zu verwalten.
+BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus und im eingeschränkten Modus verwendet wird. Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein BlueXP  _Account_, um Benutzer und Ressourcen zu verwalten.
 
 * link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]

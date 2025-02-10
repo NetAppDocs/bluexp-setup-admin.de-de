@@ -3,6 +3,15 @@
 
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
++
+--
+Der Host kann aus einer beliebigen Architektur bestehen, die die folgenden Größenanforderungen erfüllt.
+
+* * CPU:* 8 Kerne oder 8 vCPUs
+* *RAM:* 32 GB
+
+
+--
 
 
 Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.
@@ -117,8 +126,10 @@ Hinweise:
 --
 
 
-CPU:: 8 Kerne oder 8 vCPUs
-RAM:: 32 GB
+Der Host kann beliebige Architekturen aufweisen, die diese Größenanforderungen erfüllen.
+
+* * CPU:* 8 Kerne oder 8 vCPUs
+* *RAM:* 32 GB
 
 
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.

@@ -14,9 +14,9 @@ summary: Mit einem BlueXP -Konto können Sie Benutzer verwalten und Ressourcen 
 
 
 [role="lead"]
-Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen in isolierten _Workspaces_ zu organisieren. Eine Gruppe von Benutzern kann beispielsweise Cloud Volumes ONTAP-Arbeitsumgebungen in einem Arbeitsbereich bereitstellen und verwalten, der für Benutzer, die Arbeitsumgebungen in einem anderen Arbeitsbereich verwalten, nicht sichtbar ist.
+Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen in isolierten _Workspaces_ zu organisieren. Eine Gruppe von Benutzern kann beispielsweise Cloud Volumes ONTAP-Arbeitsumgebungen in einem Arbeitsbereich bereitstellen und verwalten, der für Benutzer, die Arbeitsumgebungen in einem anderen Arbeitsbereich verwalten, nicht sichtbar ist.
 
-Wenn Sie BlueXP  im Standardmodus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
+Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
 
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]

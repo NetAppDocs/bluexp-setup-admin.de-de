@@ -14,18 +14,31 @@ summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vo
 
 
 [role="lead"]
-Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens über verschiedene Ebenen Ihrer Ressourcenhierarchie zuweisen können. Bevor Sie diese Rollen zuweisen, sollten Sie die Berechtigungen verstehen, die jede Rolle beinhaltet.
+Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens über verschiedene Ebenen Ihrer Ressourcenhierarchie zuweisen können. Bevor Sie diese Rollen zuweisen, sollten Sie die Berechtigungen verstehen, die jede Rolle beinhaltet. Die Rollen lassen sich in drei Kategorien einteilen: Plattform, Applikation und Datenservice.
 
 
 
 == Plattformrollen
 
-BlueXP  IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang. Die Rolle „Organisationsadministrator“ hat Berechtigungen für alle Ordner und Projekte, während der Ordner- oder Projektadministrator nur Berechtigungen für den Ordner oder das Projekt hat, dem sie zugewiesen wurden.
+Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können und die umfassende Berechtigungen für die BlueXP -Administration ermöglichen, einschließlich der Zuweisung von Rollen und Hinzufügen von Benutzern sowie der Möglichkeit, alle BlueXP -Funktionen auszuführen. BlueXP  IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang.
+
+
+
+=== Organisationsadministrator
+
+Ermöglicht einem Benutzer uneingeschränkten Zugriff auf alle Projekte und Ordner innerhalb einer Organisation, Hinzufügen von Mitgliedern zu einem beliebigen Projekt oder Ordner sowie Durchführung jeder BlueXP -Aufgabe und Nutzung aller Datendienste.
+
+
+
+=== Ordner- oder Projektadministrator
+
+Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Projekten oder Ordnern hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und jeden Datendienst innerhalb des Ordners oder Projekts nutzen, dem sie zugewiesen sind.
 
 Die Rolle „Ordner“ oder „Projektadministrator“ kann keine Konnektoren erstellen.
 
-Berechtigungen::
 
+
+=== Vergleichstabelle für Plattformrollen
 
 [cols="24,19,19"]
 |===
@@ -38,13 +51,25 @@ Berechtigungen::
 | Erstellen, Ändern oder Löschen von Arbeitsumgebungen (Hinzufügen oder Erkennen neuer Ressourcen über den BlueXP -Bildschirm) | Ja. | Ja. 
 
 
-| Erstellen Sie Projekte/Ordner, einschließlich Umbenennen, Löschen und Bearbeiten | Ja. | Ja. 
+| Erstellen Sie Projekte/Ordner, einschließlich Löschen | Ja. | Nein 
+
+
+| Umbenennen vorhandener Projekte/Ordner | Ja. | Ja. 
 
 
 | Rollen zuweisen und Benutzer hinzufügen | Ja. | Ja. 
 
 
-| Ressourcen und Konnektoren mit Ordnern und Projekten verknüpfen | Ja. | Ja. 
+| Ressourcen mit Ordnern und Projekten verknüpfen | Ja. | Ja. 
+
+
+| Verknüpfen von Konnektoren mit Ordnern und Projekten | Ja. | Nein 
+
+
+| Entfernen von Konnektoren aus Ordnern und Projekten | Ja. | Nein 
+
+
+| Connectors verwalten (Zertifikate, Einstellungen usw. bearbeiten) | Ja. | Nein 
 
 
 | Verwalten Sie Anmeldeinformationen über Einstellungen > Anmeldeinformationen | Ja. | Ja. 
@@ -70,15 +95,64 @@ Sobald die Ersteinrichtung abgeschlossen ist, können regionale Administratoren 
 
 
 
+== Anwendungsrollen
+
+Anwendungsrollen ermöglichen den Zugriff auf BlueXP -Anwendungen wie Active IQ Digital Advisor (auch als digitaler Berater bekannt).
+
+
+
+=== Storage-Admin
+
+Benutzer können in BlueXP  Storage-Administrationsfunktionen wie Software-Updates und das Erstellen und Löschen von BlueXP  Arbeitsumgebungen ausführen.
+
+Berechtigungen:: Kann den BlueXP -Bildschirm anzeigen. Kann BlueXP -Konnektoren erstellen und verwalten. Lese-/Schreibzugriff auf Storage-Zustands- und Governance-Funktionen von BlueXP , darunter:
++
+--
+* Digitaler Berater
+* Operative Ausfallsicherheit
+* Software-Updates (können Software-Updates durchführen)
+* Digitale Brieftasche
+* Wirtschaftliche Effizienz
+* Dashboard zur Nachhaltigkeit
+* Meldungen
+
+
+--
+
+
+
+
+=== Storage-Prüfer
+
+Bietet schreibgeschützten Zugriff auf Systemzustands- und Governance-Funktionen von BlueXP . Diese Rolle wird normalerweise Benutzern zugewiesen, die für die Überwachung des Zustands der Speicherressourcen eines Unternehmens verantwortlich sind. Benutzer mit dieser Rolle können mehrere Applikationen in BlueXP  anzeigen, um Software-Update-Pläne und Effizienzpläne zu erstellen und den Storage-Zustand insgesamt anzuzeigen.
+
+Berechtigungen:: Schreibgeschützter Zugriff auf Storage-Zustands- und Governance-Funktionen von BlueXP , darunter:
++
+--
+* Digitaler Berater
+* Operative Ausfallsicherheit
+* Software-Updates (kann Upgrade-Pläne herunterladen)
+* Digitale Brieftasche
+* Wirtschaftliche Effizienz
+* Dashboard zur Nachhaltigkeit
+* Meldungen
+
+
+--
+
+
+
+
 == Datenservices
 
-Datenservices können ihre Aufgaben in jedem Projekt oder Ordner ausführen.
+Data Services-Rollen bieten Benutzern die Berechtigung zur Verwendung von Datenservices innerhalb der Organisation, des Projekts oder des Ordners, auf die sie zugreifen können.
 
 
 
 === SnapCenter-Admin
 
-Beschreibung:: Bietet die Möglichkeit, Snapshots aus lokalen ONTAP Clustern mithilfe von BlueXP  Backup und Recovery für Applikationen zu sichern.
+Bietet die Möglichkeit, Snapshots aus lokalen ONTAP Clustern mithilfe von BlueXP  Backup und Recovery für Applikationen zu sichern.
+
 Berechtigungen:: Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in BlueXP  ausführen:
 +
 --
@@ -94,7 +168,8 @@ Berechtigungen:: Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in Bl
 
 === Klassifizierungs-Viewer
 
-Beschreibung:: Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen.
+Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen.
+
 Berechtigungen:: Zeigen Sie Compliance-Informationen an und erstellen Sie Berichte für Ressourcen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren.
 +
 --

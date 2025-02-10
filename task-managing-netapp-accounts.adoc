@@ -14,9 +14,9 @@ summary: Managen Sie Ihr BlueXP -Konto, indem Sie Benutzer hinzufügen, Service
 
 
 [role="lead"]
-Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen zu organisieren. Wenn Sie Ihr Konto erstellen, enthält es nur einen einzigen Admin-Benutzer und einen Arbeitsbereich. Sie können das Konto entsprechend Ihren Anforderungen verwalten, indem Sie Benutzer hinzufügen, Servicekonten für Automatisierungszwecke erstellen, Arbeitsbereiche hinzufügen und vieles mehr.
+Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen zu organisieren. Wenn Sie Ihr Konto erstellen, enthält es nur einen einzigen Admin-Benutzer und einen Arbeitsbereich. Sie können das Konto entsprechend Ihren Anforderungen verwalten, indem Sie Benutzer hinzufügen, Servicekonten für Automatisierungszwecke erstellen, Arbeitsbereiche hinzufügen und vieles mehr.
 
-Wenn Sie BlueXP  im Standardmodus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
+Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
 
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]

@@ -33,8 +33,10 @@ Wenn Sie einen Connector direkt aus BlueXP erstellt haben, hat BlueXP eine Virtu
 
 Die CPU- und RAM-Anforderungen lauten wie folgt:
 
-CPU:: 8 Kerne oder 8 vCPUs
-RAM:: 32 GB
+Der Host kann beliebige Architekturen aufweisen, die diese Größenanforderungen erfüllen.
+
+* * CPU:* 8 Kerne oder 8 vCPUs
+* *RAM:* 32 GB
 
 
 link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
