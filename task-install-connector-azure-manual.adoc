@@ -28,15 +28,6 @@ Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem O
 Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt.
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
-+
---
-Der Host kann aus einer beliebigen Architektur bestehen, die die folgenden Größenanforderungen erfüllt.
-
-* * CPU:* 8 Kerne oder 8 vCPUs
-* *RAM:* 32 GB
-
-
---
 Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.
 [[podman-Versionen]]Anforderungen an das Betriebssystem und den Container:: BlueXP  unterstützt den Connector mit den folgenden Betriebssystemen, wenn BlueXP  im Standardmodus oder im eingeschränkten Modus verwendet wird. Vor der Installation des Connectors ist ein Container-Orchestrierungstool erforderlich.
 +
@@ -96,13 +87,8 @@ Hinweise:
 
 
 --
-
-
-Der Host kann beliebige Architekturen aufweisen, die diese Größenanforderungen erfüllen.
-
-* * CPU:* 8 Kerne oder 8 vCPUs
-* *RAM:* 32 GB
-+
+CPU:: 8 Kerne oder 8 vCPUs
+RAM:: 32GB
 Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen Standard_D8s_v3.
 Speicherplatz in /opt:: 100 gib Speicherplatz muss verfügbar sein
 +
@@ -116,8 +102,6 @@ Festplattenspeicher in /var:: 20 gib Speicherplatz muss verfügbar sein
 BlueXP erfordert diesen Platz `/var` Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt `/var/lib/containers/storage` Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.
 
 --
-
-
 
 
 

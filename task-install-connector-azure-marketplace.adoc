@@ -156,14 +156,9 @@ Sie müssen diese Netzwerkanforderung implementieren, nachdem Sie den Connector 
 
 Wenn Sie den Connector erstellen, müssen Sie einen virtuellen Maschinentyp auswählen, der die folgenden Anforderungen erfüllt.
 
-Der Host kann beliebige Architekturen aufweisen, die diese Größenanforderungen erfüllen.
-
-* * CPU:* 8 Kerne oder 8 vCPUs
-* *RAM:* 32 GB
-+
+CPU:: 8 Kerne oder 8 vCPUs
+RAM:: 32GB
 Azure VM-Größe:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen Standard_D8s_v3.
-
-
 
 
 

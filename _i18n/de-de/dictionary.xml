@@ -4764,10 +4764,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="c16acacf37243c052df936e1994e4488" category="paragraph">Ab dieser Version können Sie nun einen Support-Fall erstellen und ihn weiteren BlueXP  Services zuordnen:</block>
   <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">Erfahren Sie mehr über die Erstellung eines Support-Cases</block>
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>.</block>
-  <block id="c933dbf26cb872c859f8dbb81999eff8" category="paragraph">Der Host kann aus einer beliebigen Architektur bestehen, die die folgenden Größenanforderungen erfüllt.</block>
-  <block id="9fc9c9f38ac896bc2bd0e275904e2b5d" category="list-text">* CPU:* 8 Kerne oder 8 vCPUs</block>
-  <block id="35116a9bfaf82c27806c3c9614e3380e" category="list-text">*RAM:* 32 GB</block>
-  <block id="c0317bb7a0bafdead64d85dfbc6db80e" category="paragraph">Der Host kann beliebige Architekturen aufweisen, die diese Größenanforderungen erfüllen.</block>
   <block id="2b67fdb5c1c9190b50c83306e4021a2c" category="paragraph"><block ref="2b67fdb5c1c9190b50c83306e4021a2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e52d2dcc592495f70c82c59eee98424f" category="list-text">Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Abonnement konfigurieren*. +neuer Screenshot erforderlich (TS) <block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">Um ein bestehendes Abonnement mit den ausgewählten Anmeldeinformationen zu konfigurieren, wählen Sie ein Google Cloud-Projekt und ein Abonnement aus der Dropdown-Liste aus, und wählen Sie dann *Konfigurieren* aus.</block>
@@ -4776,8 +4772,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">Unterstützung für das Zuweisen von mehr als einer Rolle zu einem Benutzer.</block>
   <block id="6708a31732ccaf29d9ba72b524255e3e" category="list-text">Rollen sind nun einer von drei Kategorien zugeordnet: Plattform, Applikation und Datenservices.</block>
   <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">Lesen Sie mehr über IAM-Rollen</block>
-  <block id="ff73dba782f434133f0fc81382cc8398" category="list-text">Der Applikationskategorie sind zwei neue Rollen zugeordnet: Storage Viewer und Storage Admin.<block ref="ac81447e1825c80c6c47ed7167f706b3" category="inline-link-rx"></block></block>
-  <block id="67012c1335c677ff94cd2d777a3c7213" category="list-text">IAM wird jetzt im eingeschränkten BlueXP -Modus verwendet</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) wird nun im eingeschränkten Modus verwendet.</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  Identitäts- und Zugriffsmanagement (Identity and Access Management, IAM) ist ein Modell für das Ressourcen- und Zugriffsmanagement, das die zuvor von BlueXP -Konten bereitgestellten Funktionen bei der Nutzung von BlueXP  im standardmäßigen und eingeschränkten Modus ersetzt und erweitert.</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">Wie sich BlueXP  IAM auf Ihr vorhandenes Konto im eingeschränkten Modus auswirkt</block>
@@ -4978,4 +4972,11 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Verbesserungen von Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 Februar 2021</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Verbesserungen am Support Dashboard</block>
+  <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
+  <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 Kerne oder 8 vCPUs</block>
+  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
+  <block id="911ede8df5585598c294830dafe276fa" category="list-text">32GB</block>
+  <block id="3a85c700de68ae35770a964c115eb7cb" category="list-title">Zusätzliche IAM-Verbesserungen</block>
+  <block id="afa69926e5d0001214117331ecb2e622" category="list-text">Der Applikationskategorie sind zwei neue Rollen zugeordnet: Storage Viewer und Storage Admin.</block>
+  <block id="df90fe85a844ffa5c11d99e37754376f" category="paragraph"><block ref="df90fe85a844ffa5c11d99e37754376f" category="inline-link-rx"></block></block>
 </blocks>

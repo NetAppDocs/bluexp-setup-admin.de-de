@@ -28,15 +28,6 @@ Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem O
 Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt.
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
-+
---
-Der Host kann aus einer beliebigen Architektur bestehen, die die folgenden Größenanforderungen erfüllt.
-
-* * CPU:* 8 Kerne oder 8 vCPUs
-* *RAM:* 32 GB
-
-
---
 Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.
 [[podman-Versionen]]Anforderungen an das Betriebssystem und den Container:: BlueXP  unterstützt den Connector mit den folgenden Betriebssystemen, wenn BlueXP  im Standardmodus oder im eingeschränkten Modus verwendet wird. Vor der Installation des Connectors ist ein Container-Orchestrierungstool erforderlich.
 +
@@ -96,6 +87,8 @@ Hinweise:
 
 
 --
+CPU:: 8 Kerne oder 8 vCPUs
+RAM:: 32GB
 Google Cloud-Maschinentyp:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen n2-Standard-8.
 +
 --

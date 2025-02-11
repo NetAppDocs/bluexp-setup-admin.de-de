@@ -174,14 +174,9 @@ Sie verfügen jetzt über eine IAM-Rolle, die Sie während der Implementierung �
 
 Wenn Sie den Connector erstellen, müssen Sie einen EC2-Instanztyp auswählen, der die folgenden Anforderungen erfüllt.
 
-Der Host kann beliebige Architekturen aufweisen, die diese Größenanforderungen erfüllen.
-
-* * CPU:* 8 Kerne oder 8 vCPUs
-* *RAM:* 32 GB
-+
+CPU:: 8 Kerne oder 8 vCPUs
+RAM:: 32GB
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.
-
-
 
 
 
