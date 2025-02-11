@@ -194,7 +194,7 @@ link:task-iam-manage-folders-projects.html#view-associated-resources-members["Al
 
 == Mitglieds-Rollen verwalten
 
-Organisationsmitglieder können Rollen auf jeder Ebene und mehr als einer Ebene Ihrer Ressourcenhierarchie zugewiesen werden.Sie können Mitgliedrollen zuweisen, die für ihre Verantwortlichkeiten in Ihrer BlueXP -Organisation relevant sind. Wenn in Ihrer Ressourcenhierarchie beispielsweise sieben Projekte (Arbeitsumgebungen) vertreten sind, können Sie einer Person die Rolle „Speicheradministrator“ für drei der Projekte zuweisen und dann einem anderen Mitglied den Speicheradministrator für die übrigen Projekte zuweisen. Eine weitere Möglichkeit wäre, einem Benutzer die Storage-Administratorrolle für das gesamte Unternehmen zuzuweisen. Sie können die Rollen Ihrer Mitglieder entsprechend den Anforderungen Ihres Unternehmens verwalten.
+Organisationsmitglieder können Rollen auf jeder Ebene und mehr als einer Ebene Ihrer Ressourcenhierarchie zugewiesen werden.Sie können Mitgliedrollen zuweisen, die für ihre Verantwortlichkeiten in Ihrer BlueXP -Organisation relevant sind.
 
 Sie können die Zuweisung einer Rolle zu einem Mitglied aufheben, eine neue Rolle hinzufügen oder beides. Eine Rolle definiert die Berechtigungen, die einem Mitglied auf Unternehmens-, Ordner- oder Projektebene zugewiesen werden. Sie können Mitglieds-Rollen zuweisen, die für ihre Verantwortlichkeiten in Ihrer BlueXP -Organisation relevant sind.
 
@@ -227,7 +227,7 @@ Geben Sie einem Mitglied zusätzliche Berechtigungen in Ihrem Unternehmen an, in
 +
 Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
 
-** *Wählen Sie eine Kategorie*: BlueXP  unterteilt Rollen in drei Kategorien: Plattform, Anwendung und Datendienste. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über IAM-Rollen"^].
+** *Wählen Sie eine Kategorie*: BlueXP  unterteilt Rollen in zwei Kategorien: Plattform und Datendienst. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über IAM-Rollen"^].
 ** Wählen Sie eine *Rolle*: Wählen Sie eine Rolle aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
 +
 *** Wenn Sie die Organisation ausgewählt haben, können Sie aus jeder anderen Rolle als *Ordner oder Projektadministrator* wählen.
@@ -252,7 +252,7 @@ Sie können die zugewiesene Rolle für einen auf Unternehmens-, Ordner- oder Pro
 .Schritte
 . Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
 . Erweitern Sie in der Tabelle die entsprechende Zeile für die Organisation, den Ordner oder das Projekt, in dem Sie die zugewiesene Rolle des Mitglieds ändern möchten, und wählen Sie in der Spalte *Rolle* *Ansicht* aus, um die diesem Mitglied zugewiesenen Rollen anzuzeigen.
-. Um die Rolle eines Mitglieds zu ändern, wählen Sie neben der Rolle, die Sie ändern möchten, *Ändern*. Sie können diese Rolle nur in eine Rolle innerhalb derselben Rollenkategorie ändern. Sie können beispielsweise von einer Anwendungsrolle zu einer anderen wechseln. Sie werden aufgefordert, die Änderung zu bestätigen.
+. Um die Rolle eines Mitglieds zu ändern, wählen Sie neben der Rolle, die Sie ändern möchten, *Ändern*. Sie können diese Rolle nur in eine Rolle innerhalb derselben Rollenkategorie ändern. Sie können beispielsweise von einer Datenservice-Rolle zu einer anderen wechseln. Sie werden aufgefordert, die Änderung zu bestätigen.
 +
 .. Um die Zuweisung der Rolle eines Mitglieds aufzuheben, wählen Sie  neben der Rolle aus, um die Zuweisung des Mitglieds image:icon-delete.png["Ein Symbol, das einem Papierkorb ähnelt"]zur entsprechenden Rolle aufzuheben. Sie werden aufgefordert, die Entfernung zu bestätigen.
 

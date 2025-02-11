@@ -1,0 +1,53 @@
+= Anwendungsrollen
+:allow-uri-read: 
+
+
+
+
+== Anwendungsrollen
+
+Anwendungsrollen ermöglichen den Zugriff auf BlueXP -Anwendungen wie Active IQ Digital Advisor (auch als digitaler Berater bekannt).
+
+
+
+=== Storage-Admin
+
+Benutzer können in BlueXP  Storage-Administrationsfunktionen wie Software-Updates und das Erstellen und Löschen von BlueXP  Arbeitsumgebungen ausführen.
+
+Berechtigungen:: Kann den BlueXP -Bildschirm anzeigen. Kann BlueXP -Konnektoren erstellen und verwalten. Lese-/Schreibzugriff auf Storage-Zustands- und Governance-Funktionen von BlueXP , darunter:
++
+--
+* Digitaler Berater
+* Operative Ausfallsicherheit
+* Software-Updates (können Software-Updates durchführen)
+* Digitale Brieftasche
+* Wirtschaftliche Effizienz
+* Dashboard zur Nachhaltigkeit
+* Meldungen
+
+
+--
+
+
+
+
+=== Storage-Prüfer
+
+Bietet schreibgeschützten Zugriff auf Systemzustands- und Governance-Funktionen von BlueXP . Diese Rolle wird normalerweise Benutzern zugewiesen, die für die Überwachung des Zustands der Speicherressourcen eines Unternehmens verantwortlich sind. Benutzer mit dieser Rolle können mehrere Applikationen in BlueXP  anzeigen, um Software-Update-Pläne und Effizienzpläne zu erstellen und den Storage-Zustand insgesamt anzuzeigen.
+
+Berechtigungen:: Schreibgeschützter Zugriff auf Storage-Zustands- und Governance-Funktionen von BlueXP , darunter:
++
+--
+* Digitaler Berater
+* Operative Ausfallsicherheit
+* Software-Updates (kann Upgrade-Pläne herunterladen)
+* Digitale Brieftasche
+* Wirtschaftliche Effizienz
+* Dashboard zur Nachhaltigkeit
+* Meldungen
+
+
+--
+
+
+Beispiel aus Aufgabe: Wenn beispielsweise sieben innerhalb der Ressourcenhierarchie die entsprechenden Projekte (Arbeitsumgebungen) darstellen, können Sie einer Person die Rolle Speicheradministrator für drei der Projekte zuweisen und dann einem anderen Mitglied den Speicheradministrator für die übrigen Projekte zuweisen. Eine weitere Möglichkeit wäre, einem Benutzer die Storage-Administratorrolle für das gesamte Unternehmen zuzuweisen. Sie können die Rollen Ihrer Mitglieder entsprechend den Anforderungen Ihres Unternehmens verwalten.

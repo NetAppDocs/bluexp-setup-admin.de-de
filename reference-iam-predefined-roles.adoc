@@ -14,7 +14,7 @@ summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vo
 
 
 [role="lead"]
-Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens über verschiedene Ebenen Ihrer Ressourcenhierarchie zuweisen können. Bevor Sie diese Rollen zuweisen, sollten Sie die Berechtigungen verstehen, die jede Rolle beinhaltet. Die Rollen lassen sich in drei Kategorien einteilen: Plattform, Applikation und Datenservice.
+Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens über verschiedene Ebenen Ihrer Ressourcenhierarchie zuweisen können. Bevor Sie diese Rollen zuweisen, sollten Sie die Berechtigungen verstehen, die jede Rolle beinhaltet. Die Rollen lassen sich in zwei Kategorien unterteilen: Plattform und Datenservice.
 
 
 
@@ -89,54 +89,6 @@ Beispiel für Organisationsrollen in BlueXP  für eine große multinationale Or
 Um dies zu erreichen, erstellt eine Person, die der Rolle „Organisationsadministrator“ im BlueXP  der XYZ Corporation zugewiesen ist, eine anfängliche Arbeitsumgebung und erstellt dann für jede Region separate Ordner in BlueXP . Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der Organisationsadministrator weist einem BlueXP -Benutzer in jeder Region die Rolle „Ordner/Projekt-Administrator“ zu.
 
 Sobald die Ersteinrichtung abgeschlossen ist, können regionale Administratoren mit der Rolle „Ordner“ oder „Projektadministrator“ neue Arbeitsumgebungen erstellen und Benutzer in ihren Regionen hinzufügen. Diese regionalen Administratoren können auch Ordner und Projekte hinzufügen, entfernen oder umbenennen, denen sie zugewiesen sind. Der Unternehmensadministrator erbt Berechtigungen für neue Arbeitsumgebungen oder Ressourcen und sorgt so für Transparenz der Storage-Auslastung im gesamten Unternehmen.
-
---
-
-
-
-
-== Anwendungsrollen
-
-Anwendungsrollen ermöglichen den Zugriff auf BlueXP -Anwendungen wie Active IQ Digital Advisor (auch als digitaler Berater bekannt).
-
-
-
-=== Storage-Admin
-
-Benutzer können in BlueXP  Storage-Administrationsfunktionen wie Software-Updates und das Erstellen und Löschen von BlueXP  Arbeitsumgebungen ausführen.
-
-Berechtigungen:: Kann den BlueXP -Bildschirm anzeigen. Kann BlueXP -Konnektoren erstellen und verwalten. Lese-/Schreibzugriff auf Storage-Zustands- und Governance-Funktionen von BlueXP , darunter:
-+
---
-* Digitaler Berater
-* Operative Ausfallsicherheit
-* Software-Updates (können Software-Updates durchführen)
-* Digitale Brieftasche
-* Wirtschaftliche Effizienz
-* Dashboard zur Nachhaltigkeit
-* Meldungen
-
-
---
-
-
-
-
-=== Storage-Prüfer
-
-Bietet schreibgeschützten Zugriff auf Systemzustands- und Governance-Funktionen von BlueXP . Diese Rolle wird normalerweise Benutzern zugewiesen, die für die Überwachung des Zustands der Speicherressourcen eines Unternehmens verantwortlich sind. Benutzer mit dieser Rolle können mehrere Applikationen in BlueXP  anzeigen, um Software-Update-Pläne und Effizienzpläne zu erstellen und den Storage-Zustand insgesamt anzuzeigen.
-
-Berechtigungen:: Schreibgeschützter Zugriff auf Storage-Zustands- und Governance-Funktionen von BlueXP , darunter:
-+
---
-* Digitaler Berater
-* Operative Ausfallsicherheit
-* Software-Updates (kann Upgrade-Pläne herunterladen)
-* Digitale Brieftasche
-* Wirtschaftliche Effizienz
-* Dashboard zur Nachhaltigkeit
-* Meldungen
-
 
 --
 
