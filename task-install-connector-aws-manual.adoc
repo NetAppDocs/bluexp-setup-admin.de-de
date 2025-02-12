@@ -28,6 +28,15 @@ Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem O
 Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt.
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
++
+--
+Der Host kann eine beliebige Architektur aufweisen, die die folgenden Größenanforderungen erfüllt:
+
+* CPU: 8 Cores oder 8 vCPUs
+* RAM: 32 GB
+
+
+--
 Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.
 [[podman-Versionen]]Anforderungen an das Betriebssystem und den Container:: BlueXP  unterstützt den Connector mit den folgenden Betriebssystemen, wenn BlueXP  im Standardmodus oder im eingeschränkten Modus verwendet wird. Vor der Installation des Connectors ist ein Container-Orchestrierungstool erforderlich.
 +
@@ -87,8 +96,6 @@ Hinweise:
 
 
 --
-CPU:: 8 Kerne oder 8 vCPUs
-RAM:: 32GB
 Instanztyp für AWS EC2:: Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.
 Schlüsselpaar:: Wenn Sie den Connector erstellen, müssen Sie ein EC2-Schlüsselpaar auswählen, das mit der Instanz verwendet werden soll.
 SETZEN SIE bei der Verwendung von IMDSv2 das Limit für den Response Hop:: Wenn IMDSv2 auf der EC2-Instanz aktiviert ist (dies ist die Standardeinstellung für neue EC2-Instanzen), müssen Sie das PUT Response Hop Limit auf der Instanz auf 3 ändern. Wenn Sie die Begrenzung der EC2-Instanz nicht ändern, erhalten Sie beim Einrichten des Connectors einen Initialisierungsfehler in der Benutzeroberfläche.

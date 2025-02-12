@@ -3,6 +3,15 @@
 
 
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
++
+--
+Der Host kann eine beliebige Architektur aufweisen, die die folgenden Größenanforderungen erfüllt:
+
+* CPU: 8 Cores oder 8 vCPUs
+* RAM: 32 GB
+
+
+--
 
 
 Hypervisor:: Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.
