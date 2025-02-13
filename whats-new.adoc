@@ -1069,9 +1069,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Er
 ** Dallas (USA-Süd-1)
 
 
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
-
 
 
 
@@ -1095,9 +1092,6 @@ Red hat 7.6, 7.7, 7.8 und 7.9 werden weiterhin von neuen und vorhandenen Connect
 
 * Der Connector wird jetzt in der Region Katar in Google Cloud unterstützt.
 * Der Connector wird auch in der Region Sweden Central in Microsoft Azure unterstützt.
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
-
 * Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
@@ -1140,9 +1134,6 @@ Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-B
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten"].
 
 * Der Connector wird nun in der Region Google Cloud Turin unterstützt.
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
-
 * Sie können jetzt die Anmeldedaten für den Benutzer managen, die mit Ihrer BlueXP Anmeldung verknüpft sind: ONTAP Zugangsdaten und NSS Zugangsdaten (NetApp Support Site).
 +
 Wenn Sie zu *Einstellungen > Anmeldeinformationen* wechseln, können Sie die Anmeldeinformationen anzeigen, die Anmeldeinformationen aktualisieren und löschen. Wenn Sie beispielsweise das Passwort für diese Anmeldedaten ändern, müssen Sie das Passwort in BlueXP aktualisieren.
@@ -1440,9 +1431,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 * Der Connector wird nun in der Region Azure West US 3 unterstützt.
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
-
 * Diese Version des Connectors enthält auch Cloud Volumes ONTAP-Verbesserungen.
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2022["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
@@ -1472,9 +1460,6 @@ NOTE: Vorhandene Anmeldungen, die eine E-Mail-Adresse und ein Passwort verwenden
 
 * Der Connector wird nun in der Region AWS Jakarta unterstützt (AP-Südost-3).
 * Der Connector wird nun in der Region Azure Brazil Southeast unterstützt.
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
-
 * Diese Version des Connectors enthält außerdem Cloud Volumes ONTAP-Verbesserungen und On-Premises-ONTAP-Cluster-Verbesserungen.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
@@ -1508,9 +1493,6 @@ Wir haben den Connector aktualisiert, um Bug Fixes einzuführen. Die bemerkenswe
 ** Mailand (europa-West8)
 ** Santiago (southamerica-west1)
 
-
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
 
 * Wenn Sie das Google Cloud-Servicekonto auswählen, das mit dem Connector verwendet werden soll, zeigt Cloud Manager jetzt die E-Mail-Adresse an, die mit jedem Dienstkonto verknüpft ist. Durch das Anzeigen der E-Mail-Adresse kann es leichter sein, zwischen Servicekonten, die denselben Namen haben, zu unterscheiden.
 +

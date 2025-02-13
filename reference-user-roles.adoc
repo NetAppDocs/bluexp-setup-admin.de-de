@@ -16,6 +16,9 @@ summary: Die Rollen Kontoverwaltung, Arbeitsbereichsverwaltung, Compliance Viewe
 [role="lead"]
 Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten. Sie können Benutzern in Ihrem Konto bestimmte Berechtigungen zuweisen, indem Sie eine der folgenden Rollen auswählen: Kontoadministrator, Arbeitsbereichsadministrator, Compliance-Viewer und SnapCenter-Administrator
 
+
+NOTE: Ab Februar 2025 sind diese Benutzerrollen für Standard- und eingeschränkte Bereitstellungsmodi veraltet. Der private BlueXP -Modus bietet nur eine Rolle für die Zuordnung zu Benutzern. Dabei handelt es sich um die Administratorrolle von Cloud Manager, die alle BlueXP -Berechtigungen gewährt.
+
 Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
 
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
