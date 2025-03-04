@@ -1768,7 +1768,6 @@ Oder</block>
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">Fügen Sie den Uniform Resource Identifier (URI) für einen Connector hinzu und entfernen Sie ihn.</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">Wählen Sie im BlueXP Header das Dropdown-Menü *Connector* aus.</block>
   <block id="9cf3804bed44acd4f31054cd5804edd6" category="list-text">Wählen Sie *Connectors Verwalten*.</block>
-  <block id="330b38a06abadd478b0e03585b3789a5" category="list-text">Wählen Sie das Aktionsmenü für einen Konnektor aus und wählen Sie *URIs bearbeiten*.</block>
   <block id="fb9b59364e346ccfcbfc4636f13644b5" category="list-text">Fügen Sie URIs hinzu und entfernen Sie sie, und wählen Sie dann *Apply*.</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">Beheben Sie Download-Fehler bei Verwendung eines Google Cloud NAT-Gateways</block>
   <block id="2eac5df1bc108f46482e586570f46442" category="paragraph">Der Connector lädt automatisch Software-Updates für Cloud Volumes ONTAP herunter. Der Download kann fehlschlagen, wenn Ihre Konfiguration ein Google Cloud NAT Gateway verwendet. Sie können dieses Problem beheben, indem Sie die Anzahl der Teile begrenzen, in die das Software-Image unterteilt ist. Dieser Schritt muss mithilfe der BlueXP API abgeschlossen werden.</block>
@@ -4980,4 +4979,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">Nachdem BlueXP  die virtuelle Connector-Maschine in Azure bereitgestellt hat, wird ein auf der virtuellen Maschine aktiviert<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>, erstellt automatisch die Rolle, die sie benötigt, und weist sie der virtuellen Maschine zu. Die automatisch erstellte Rolle erteilt BlueXP  die erforderlichen Berechtigungen zum Managen der Ressourcen und Prozesse in diesem Azure-Abonnement. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">Schritt 4: Einrichten von Berechtigungen für die Connector-Bereitstellung</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">Erstellen Sie eine benutzerdefinierte Rolle für die Connector-Bereitstellung</block>
+  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">Wählen Sie *Connector-URIs*.</block>
 </blocks>

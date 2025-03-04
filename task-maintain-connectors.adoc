@@ -118,6 +118,7 @@ Fügen Sie den Uniform Resource Identifier (URI) für einen Connector hinzu und 
 .Schritte
 . Wählen Sie im BlueXP Header das Dropdown-Menü *Connector* aus.
 . Wählen Sie *Connectors Verwalten*.
-. Wählen Sie das Aktionsmenü für einen Konnektor aus und wählen Sie *URIs bearbeiten*.
+. Wählen Sie das Aktionsmenü für einen Konnektor aus und wählen Sie *Connector bearbeiten*.
+. Wählen Sie *Connector-URIs*.
 . Fügen Sie URIs hinzu und entfernen Sie sie, und wählen Sie dann *Apply*.
 
