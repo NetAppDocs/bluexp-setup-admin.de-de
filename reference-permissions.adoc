@@ -116,7 +116,7 @@ BlueXP erfordert für den Connector und einzelne Services Azure Berechtigungen.
 | Ziel | Beschreibung | Verlinken 
 
 
-| Implementieren Sie den Connector von BlueXP | Wenn Sie einen Connector von BlueXP bereitstellen, müssen Sie ein Azure-Konto oder einen Service-Principal verwenden, der über die Berechtigungen zum Bereitstellen der Connector-VM in Azure verfügt. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Azure-Berechtigungen einrichten"] 
+| Implementieren Sie den Connector von BlueXP | Wenn Sie einen Connector von BlueXP bereitstellen, müssen Sie ein Azure-Konto oder einen Service-Principal verwenden, der über die Berechtigungen zum Bereitstellen der Connector-VM in Azure verfügt. | link:task-install-connector-azure-bluexp.html#connector-custom-role["Azure-Berechtigungen einrichten"] 
 
 
 | Geben Sie Berechtigungen für den Connector an  a| 

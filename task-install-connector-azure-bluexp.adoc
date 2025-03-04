@@ -14,7 +14,7 @@ summary: Um einen Connector in Azure aus BlueXP zu erstellen, müssen Sie Ihr Ne
 
 
 [role="lead"]
-Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist, einen Connector in Azure direkt aus BlueXP  zu erstellen. Um einen Connector in Azure aus BlueXP zu erstellen, müssen Sie Ihr Netzwerk einrichten, Azure Berechtigungen vorbereiten und anschließend den Connector erstellen.
+Sie können einen Connector in Azure direkt aus BlueXP  erstellen. Um einen Connector in Azure von BlueXP  zu erstellen, müssen Sie Ihr Netzwerk einrichten, eine Azure-Rolle für die Bereitstellung des Connectors vorbereiten und dann den Connector implementieren.
 
 .Bevor Sie beginnen
 * Sie sollten eine habenlink:concept-connectors.html["Verständnis von Steckverbindern"].
@@ -160,9 +160,13 @@ Sie müssen diese Netzwerkanforderung implementieren, nachdem Sie den Connector 
 
 
 
-== Schritt 2: Erstellen Sie eine benutzerdefinierte Rolle
+== Schritt 2: Erstellen einer Connector-Bereitstellungsrichtlinie (benutzerdefinierte Rolle)
+
+Sie müssen eine benutzerdefinierte Rolle erstellen, die über Berechtigungen zum Bereitstellen des Connectors in Azure verfügt.
 
 Erstellen Sie eine benutzerdefinierte Azure Rolle, die Sie Ihrem Azure Konto oder einem Microsoft Entra-Dienstprinzipal zuweisen können. BlueXP authentifiziert sich mit Azure und verwendet diese Berechtigungen, um die Connector-Instanz in Ihrem Auftrag zu erstellen.
+
+Nachdem BlueXP  die virtuelle Connector-Maschine in Azure bereitgestellt hat, wird ein auf der virtuellen Maschine aktiviert https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Vom System zugewiesene verwaltete Identität"^], erstellt automatisch die Rolle, die sie benötigt, und weist sie der virtuellen Maschine zu. Die automatisch erstellte Rolle erteilt BlueXP  die erforderlichen Berechtigungen zum Managen der Ressourcen und Prozesse in diesem Azure-Abonnement. link:reference-permissions-azure.html["Überprüfen Sie, wie BlueXP die Berechtigungen verwendet"].
 
 Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
 

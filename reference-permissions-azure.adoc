@@ -16,17 +16,16 @@ summary: Beim Start der Connector-VM in Azure wird von BlueXP eine benutzerdefin
 [role="lead"]
 Beim Start der Connector-VM in Azure wird von BlueXP eine benutzerdefinierte Rolle an die VM angehängt, die dem Connector Berechtigungen für das Management von Ressourcen und Prozessen innerhalb des Azure-Abonnements bietet. Der Connector nutzt die Berechtigungen, um API-Aufrufe an mehrere Azure-Services durchzuführen.
 
+Ob Sie diese benutzerdefinierte Rolle für den Connector erstellen müssen, hängt davon ab, wie Sie sie bereitgestellt haben.
 
+.Bereitstellung über BlueXP 
+Wenn Sie die virtuelle Connector-Maschine mit BlueXP  in Azure bereitstellen, wird ein auf der virtuellen Maschine aktiviert https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Vom System zugewiesene verwaltete Identität"^], eine benutzerdefinierte Rolle erstellt und der virtuellen Maschine zugewiesen. Diese Rolle bietet BlueXP die Berechtigungen, die für das Management von Ressourcen und Prozessen innerhalb des Azure Abonnements erforderlich sind. Die Berechtigungen der Rolle werden beim Upgrade des Connectors auf dem neuesten Stand gehalten. Sie müssen diese Rolle nicht für den Connector erstellen oder Aktualisierungen verwalten.
 
-== Berechtigungen für benutzerdefinierte Rollen
+.Manuell oder über Azure Marketplace implementieren
+Wenn Sie den Connector über den Azure Marketplace bereitstellen oder den Connector manuell auf einem Linux-Host installieren, müssen Sie die benutzerdefinierte Rolle selbst einrichten und ihre Berechtigungen bei allen Änderungen beibehalten.
 
-Die unten aufgeführte benutzerdefinierte Rolle stellt die Berechtigungen bereit, die ein Connector zur Verwaltung von Ressourcen und Prozessen in Ihrem Azure-Netzwerk benötigt.
+Sie müssen sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn in nachfolgenden Versionen neue Berechtigungen hinzugefügt werden. Wenn neue Berechtigungen erforderlich sind, werden diese in den Versionshinweisen aufgeführt.
 
-Beachten Sie Folgendes:
-
-* Wenn Sie einen Connector direkt aus BlueXP erstellen, wendet BlueXP diese benutzerdefinierte Rolle automatisch auf den Connector an.
-* Wenn Sie den Connector über den Azure Marketplace bereitstellen oder den Connector manuell auf einem Linux-Host installieren, müssen Sie die benutzerdefinierte Rolle selbst einrichten.
-* In beiden Fällen müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn in nachfolgenden Releases neue Berechtigungen hinzugefügt werden. Wenn neue Berechtigungen erforderlich sind, werden diese in den Versionshinweisen aufgeführt.
 * Informationen zur schrittweisen Verwendung dieser Richtlinien finden Sie auf den folgenden Seiten:
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Richten Sie Berechtigungen für eine Azure Marketplace-Implementierung ein"]

@@ -409,7 +409,7 @@ Aktivieren Sie NTP:: Wenn Sie Vorhaben, die BlueXP Klassifizierung zum Scannen v
 
 
 
-== Schritt 4: Berechtigungen einrichten
+== Schritt 4: Einrichten von Berechtigungen für die Connector-Bereitstellung
 
 Sie müssen Azure-Berechtigungen für BlueXP bereitstellen, indem Sie eine der folgenden Optionen verwenden:
 
@@ -421,7 +421,7 @@ Führen Sie die Schritte zum Vorbereiten von Berechtigungen für BlueXP durch.
 
 [role="tabbed-block"]
 ====
-.Benutzerdefinierte Rolle
+.Erstellen Sie eine benutzerdefinierte Rolle für die Connector-Bereitstellung
 --
 Beachten Sie, dass Sie eine benutzerdefinierte Azure-Rolle über das Azure-Portal, Azure PowerShell, Azure CLI oder REST-API erstellen können. Die folgenden Schritte zeigen, wie Sie die Rolle mithilfe der Azure-CLI erstellen. Wenn Sie eine andere Methode verwenden möchten, finden Sie weitere Informationen unter https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure-Dokumentation"^]
 
