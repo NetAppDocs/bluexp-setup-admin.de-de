@@ -5025,6 +5025,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">Erfahren Sie, wie Sie die automatische Aktualisierung für den Connector deaktivieren.</block>
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">Das Deaktivieren der automatischen Aktualisierung für den Connector besteht aus zwei Schritten. Zunächst müssen Sie sicherstellen, dass Ihr aktueller Anschluss ordnungsgemäß und aktuell ist. Anschließend bearbeiten Sie eine Konfigurationsdatei, um die automatische Aktualisierungsfunktion zu deaktivieren.</block>
-  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 März 2025</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">Standardmäßig werden Benutzer nicht aufgefordert, ihre ONTAP-Anmeldedaten für den Zugriff auf ONTAP System Manager einzugeben. Ein BlueXP -Administrator (mit der Administratorrolle des Unternehmens) kann BlueXP  jedoch so konfigurieren, dass Benutzer aufgefordert werden, ihre ONTAP-Anmeldedaten einzugeben. Wenn diese Einstellung aktiviert ist, müssen Benutzer jedes Mal ihre ONTAP-Anmeldeinformationen eingeben.</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">6 März 2025</block>
 </blocks>
