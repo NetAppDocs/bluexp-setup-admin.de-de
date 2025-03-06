@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task-ontap-access-connector.html 
+keywords: administer, credentials, ONTAP, connector, Cloud Volumes ONTAP, on-premises, roles, permissions 
+summary: Administratoren können einen BlueXP -Konnektor konfigurieren, um einen Benutzer zur Eingabe seiner ONTAP-Anmeldeinformationen aufzufordern. 
+---
+= Erzwingen der ONTAP-Berechtigungen für die erweiterte ONTAP-Ansicht (ONTAP System Manager)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Standardmäßig können BlueXP -Benutzer mit den Zugangsdaten für den Konnektor auf die erweiterte Ansicht (ONTAP System Manager) zugreifen. Sie können BlueXP  so konfigurieren, dass Benutzer stattdessen zur Eingabe ihrer ONTAP-Anmeldeinformationen aufgefordert werden. So wird sichergestellt, dass die ONTAP-Berechtigungen eines Benutzers angewendet werden, wenn er mit ONTAP-Clustern sowohl in Cloud Volumes ONTAP- als auch in ONTAP On-Premises-Clustern arbeitet.
+
+
+NOTE: Sie müssen entweder über die Administratorrolle des Unternehmens verfügen, um die Verbindungseinstellungen bearbeiten zu können.
+
+.Schritte
+. Wählen Sie im BlueXP Header das Dropdown-Menü *Connector* aus.
+. Wählen Sie *Connectors Verwalten*.
+. Wählen Sie das Aktionsmenü in der Zeile aus, die dem Connector entspricht, den Sie bearbeiten möchten.
+. Erweitern Sie die Option *Anmeldeinformationen erzwingen*.
+. Aktivieren Sie das Kontrollkästchen, um die Option *Anmeldeinformationen erzwingen* zu aktivieren, und wählen Sie dann *Speichern*.
+. Überprüfen Sie, ob die Option aktiviert ist, indem Sie die Option *Anmeldeinformationen erzwingen* anzeigen.
++
+image:screenshot-force-credentials-on.png["Screenshot, der zeigt, dass die Force-Anmeldeinformationen aktiviert sind"]
+
+

@@ -1,0 +1,9 @@
+= Benutzer zum Zugriff auf die erweiterte Ansicht zwingen, ONTAP-Anmeldedaten einzugeben (ONTAP System Manager)
+:allow-uri-read: 
+
+
+
+
+=== Benutzer zum Zugriff auf die erweiterte Ansicht zwingen, ONTAP-Anmeldedaten einzugeben (ONTAP System Manager)
+
+Sie können Benutzer nun zum Zugriff auf ONTAP System Manager zwingen, ihre ONTAP-Anmeldedaten einzugeben. Diese Einstellung gilt sowohl für Cloud Volumes ONTAP als auch für ONTAP vor Ort. Benutzer mit der Rolle „Organisationsadministrator“ können diese Einstellung konfigurieren.

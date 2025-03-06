@@ -4,7 +4,7 @@ permalink: task-upgrade-connector.html
 keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode 
 summary: BlueXP aktualisiert einen Connector automatisch auf die neueste Version, wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden. In der Regel werden jeden Monat neue Versionen veröffentlicht, um neue Funktionen einzuführen und die Stabilität zu verbessern. Sie können den Connector so konfigurieren, dass er statt dessen Bildaktualisierungen aus einem lokalen Repository zieht. Bei privaten Bereitstellungen müssen Sie den Connector immer manuell aktualisieren. 
 ---
-= Aktualisieren Sie einen Connector, wenn Sie den privaten Modus verwenden
+= Management von Connector-Upgrades
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,99 @@ summary: BlueXP aktualisiert einen Connector automatisch auf die neueste Version
 
 
 [role="lead"]
-Wenn Sie BlueXP im privaten Modus nutzen, können Sie den Connector aktualisieren, wenn eine neuere Version von der NetApp Support Site verfügbar ist.
+Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, aktualisiert BlueXP  Ihren Connector automatisch auf die neueste Version, solange der Connector über ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten. Wenn Sie die Verwaltung bei Aktualisierung des Connectors manuell vornehmen müssen, können Sie automatische Upgrades für den Standardmodus oder den eingeschränkten Modus deaktivieren.
 
 
-TIP: Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden, müssen Sie den Connector nicht manuell aktualisieren. BlueXP aktualisiert einen Connector automatisch auf die neueste Version, sofern der Connector über Outbound-Internetzugang verfügt, um das Softwareupdate zu erhalten.
+NOTE: Wenn Sie BlueXP  im privaten Modus ausführen, müssen Sie den Connector immer selbst aktualisieren.
 
-.Über diese Aufgabe
+
+
+== Deaktivieren Sie automatische Upgrades
+
+Das Deaktivieren der automatischen Aktualisierung für den Connector besteht aus zwei Schritten. Zunächst müssen Sie sicherstellen, dass Ihr aktueller Anschluss ordnungsgemäß und aktuell ist. Anschließend bearbeiten Sie eine Konfigurationsdatei, um die automatische Aktualisierungsfunktion zu deaktivieren.
+
+
+NOTE: Sie können die automatischen Upgrades nur deaktivieren, wenn Sie über Connector-Version 3.9.48 oder höher verfügen.
+
+
+
+=== Überprüfen Sie den Zustand des Connectors
+
+Sie sollten überprüfen, ob Ihr Connector stabil ist und alle Container, die auf Ihrer Konnektor-VM ausgeführt werden, ordnungsgemäß ausgeführt werden. Nachdem Sie die automatischen Upgrades deaktiviert haben, prüft die Connector-VM nicht mehr nach neuen Services oder Upgrade-Paketen.
+
+Verwenden Sie einen der folgenden Befehle, um den Anschluss zu überprüfen. Alle Dienste sollten den Status _Running_ haben. Ist dies nicht der Fall, wenden Sie sich vor dem Deaktivieren der automatischen Aktualisierung an den NetApp Support.
+
+Docker::
++
+--
+[source, cli]
+----
+docker ps -a
+----
+--
+Podman::
++
+--
+[source, cli]
+----
+podman ps -a
+----
+--
+
+
+
+
+=== Deaktivieren Sie die automatische Aktualisierung für den Connector
+
+Sie deaktivieren die automatischen Upgrades, indem Sie in der Datei _com/opt/Application/NetApp/Service-Manager-2/config.json_ das Flag _isUpgradeDisabled_ setzen. Standardmäßig ist dieses Flag auf false gesetzt und Ihr Connector wird automatisch aktualisiert. Sie können dieses Flag auf true setzen, um automatische Upgrades zu deaktivieren.
+
+Um die automatische Aktualisierung wieder zu aktivieren, verwenden Sie diese Schritte und setzen Sie das _isUpgradeDisabled_-Flag auf false.
+
+.Schritte
+. Stellen Sie sicher, dass Ihr Anschluss auf dem neuesten Stand und in gutem Zustand ist.
+. Bearbeiten Sie die Datei _/opt/Application/NetApp/Service-Manager-2/config.json_, und ändern Sie den Wert des Flags _isUpgradeDisabled_ auf true, wie unten in diesem Beispiel gezeigt.
++
+[source]
+----
+{
+  "environment": "production",
+  "proxySetting": "notConfigured",
+  "accountId": "account-NVKiCdw2",
+  "clientId": "EalzoDIDFyovsQarrXiBYa15dZZvZxD6",
+  "enc_clientSecret": "f151lvsq3NRQDGSAGV8T3YHdSch21na6MWBtTkAXHWSGpsW5UWkRhvXpTTf6lBpocXUUr4YETIZuEHz5aWDFdB0JIz65YVJX/vTKWTN2iIpH7DUTRGISKp2UCIVixtGi",
+  "version": "3.0.76",
+  "site": "stdonpremv49",
+  "company": "NetApp",
+  "systemId": "4a4c4d97-80c2-4989-8c9f-75a92925eabb",
+  "encryptedMysqlPassword": "f151lvsq3NRQDGSAGV8T3RQN7wsmegYWXg5KXWvxyMksdg51qhTSg00SvvrhXFq0",
+  "mysqlWasConfigured": true,
+  "encryptionKey": "g4/6CAp2Aclqkrl4gb1C4A==",
+  "keyStorePassword": "Netapp234",
+  "trustStorePassword": "ugauga",
+  "dockerRepoConfig": {
+    "username": "client-infra-prod-read",
+    "encryptedPassword": "f151lvsq3NRQDGSAGV8T3W7IxfTUVELHcXa44msIIsQrtrobO32gIqG9mjpz8rbVmOryIIHcZt03UBbjdwJ5/Q==",
+    "registry": "cloudmanagerinfraprod.azurecr.io",
+    "imageNamespace": "",
+    "repoType": "DEFAULT_DOCKER_REPO"
+  },
+  "isUpgradeDisabled": true,
+  "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
+}
+----
+. Speichern Sie Ihre Datei.
+. Starten Sie den Service Manager 2 neu, indem Sie den folgenden Befehl ausführen:
++
+[source, cli]
+----
+systemctl restart netapp-service-manager.service
+----
+
+
+
+
+== Aktualisieren Sie den Anschluss
+
 Der Connector muss während des Upgrade-Vorgangs neu gestartet werden, damit die webbasierte Konsole während des Upgrades nicht verfügbar ist.
 
 .Schritte

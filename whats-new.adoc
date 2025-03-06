@@ -18,6 +18,22 @@ Informieren Sie sich über die Neuerungen bei den BlueXP -Verwaltungsfunktionen
 
 
 
+== 15 Februar 2025
+
+
+
+=== Stecker
+
+Sie können jetzt automatische Upgrades für den Connector deaktivieren. Dies ist hilfreich, wenn Sie aus geschäftlichen Gründen Software-Upgrades manuell durchführen müssen.
+
+Kunden, die Connector Version 3.9.48 oder höher verwenden, können automatische Upgrades deaktivieren.
+
+.Verwandte Informationen
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Management von Connector-Upgrades"]
+
+
+
+
 == 10 Februar 2025
 
 

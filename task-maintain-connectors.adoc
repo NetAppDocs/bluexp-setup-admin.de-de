@@ -41,7 +41,7 @@ link:reference-connector-default-config.html["Informieren Sie sich über die Sta
 
 
 
-== Beenden des Starting der Konnektor-VM
+== Anhalten und Starten der Konnektor-VM
 
 Wenn Sie die Connector VM anhalten und dann starten müssen, sollten Sie dies über die Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.
 
@@ -119,6 +119,6 @@ Fügen Sie den Uniform Resource Identifier (URI) für einen Connector hinzu und 
 . Wählen Sie im BlueXP Header das Dropdown-Menü *Connector* aus.
 . Wählen Sie *Connectors Verwalten*.
 . Wählen Sie das Aktionsmenü für einen Konnektor aus und wählen Sie *Connector bearbeiten*.
-. Wählen Sie *Connector-URIs*.
+. Erweitern Sie die Leiste *Konnektor-URIs*, um die URIs für einen Konnektor anzuzeigen.
 . Fügen Sie URIs hinzu und entfernen Sie sie, und wählen Sie dann *Apply*.
 
