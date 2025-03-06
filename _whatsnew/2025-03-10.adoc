@@ -1,14 +1,6 @@
-= Anschluss 3.9.50
+= Aktualisierung von Connector 3.9.49
 :allow-uri-read: 
 
-
-
-
-=== Anschluss 3.9.50
-
-Diese Version des BlueXP -Connectors enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen sowie die folgenden Funktionen.
-
-Derzeit ist die Version 3.9.50 für den Standardmodus und den eingeschränkten Modus verfügbar.
 
 
 
