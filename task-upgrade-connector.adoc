@@ -92,7 +92,6 @@ Um die automatische Aktualisierung wieder zu aktivieren, verwenden Sie diese Sch
   },
   "isUpgradeDisabled": true,
   "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
-}
 ----
 . Speichern Sie Ihre Datei.
 . Starten Sie den Service Manager 2 neu, indem Sie den folgenden Befehl ausführen:
