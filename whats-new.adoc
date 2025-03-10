@@ -18,6 +18,24 @@ Informieren Sie sich über die Neuerungen bei den BlueXP -Verwaltungsfunktionen
 
 
 
+== 10 März 2025
+
+
+
+=== Aktualisierung von Connector 3.9.50
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Derzeit ist die Version 3.9.50 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+=== NetApp Keystone Beta verfügbar in BlueXP 
+
+NetApp Keystone wird bald bei BlueXP  erhältlich sein und ist jetzt als Beta-Version erhältlich. Sie können die Anmeldeseite für die NetApp Keystone Beta über die linke Navigationsleiste von BlueXP  aufrufen.
+
+
+
 == 6 März 2025
 
 

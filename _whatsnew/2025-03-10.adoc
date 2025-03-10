@@ -1,34 +1,17 @@
-= Aktualisierung von Connector 3.9.49
+= Aktualisierung von Connector 3.9.50
 :allow-uri-read: 
 
 
 
 
-=== Aktualisierung von Connector 3.9.49
+=== Aktualisierung von Connector 3.9.50
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Derzeit ist die Version 3.9.50 für den Standardmodus und den eingeschränkten Modus verfügbar.
 
 
 
-==== Zugriff auf ONTAP System Manager, wenn BlueXP  einen Connector verwendet
+=== NetApp Keystone Beta verfügbar in BlueXP 
 
-Ein BlueXP -Administrator (Benutzer mit Administratorrolle des Unternehmens) kann BlueXP  so konfigurieren, dass Benutzer aufgefordert werden, ihre ONTAP-Anmeldeinformationen einzugeben, um auf den ONTAP-Systemmanager zuzugreifen. Wenn diese Einstellung aktiviert ist, müssen Benutzer ihre ONTAP-Anmeldeinformationen jedes Mal eingeben, da sie nicht in BlueXP  gespeichert sind.
-
-Diese Funktion ist ab Connector Version 3.9.49 verfügbar. link:task-ontap-access-connector.html["Erfahren Sie, wie Sie die Einstellungen für Anmeldeinformationen konfigurieren."^].
-
-
-
-=== Aktualisierung von Connector 3.9.48
-
-
-
-==== Möglichkeit, die Einstellung für die automatische Aktualisierung des Connectors zu deaktivieren
-
-Sie können die automatische Upgrade-Funktion des Connectors deaktivieren.
-
-Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, aktualisiert BlueXP  Ihren Connector automatisch auf die neueste Version, solange der Connector über ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten. Wenn Sie die Verwaltung bei Aktualisierung des Connectors manuell vornehmen müssen, können Sie jetzt automatische Upgrades für den Standardmodus oder den eingeschränkten Modus deaktivieren.
-
-
-NOTE: Diese Änderung wirkt sich nicht auf den privaten BlueXP -Modus aus, in dem Sie den Connector immer selbst aktualisieren müssen.
-
-Diese Funktion ist ab Connector Version 3.9.48 verfügbar.
-
-link:task-upgrade-connector.html["Erfahren Sie, wie Sie die automatische Aktualisierung für den Connector deaktivieren."^]
+NetApp Keystone wird bald bei BlueXP  erhältlich sein und ist jetzt als Beta-Version erhältlich. Sie können die Anmeldeseite für die NetApp Keystone Beta über die linke Navigationsleiste von BlueXP  aufrufen.
