@@ -1,10 +1,10 @@
-= Aktualisierung von Connector 3.9.50
+= Anschluss 3.9.50
 :allow-uri-read: 
 
 
 
 
-=== Aktualisierung von Connector 3.9.50
+=== Anschluss 3.9.50
 
 Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
 

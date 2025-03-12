@@ -22,7 +22,7 @@ Informieren Sie sich über die Neuerungen bei den BlueXP -Verwaltungsfunktionen
 
 
 
-=== Aktualisierung von Connector 3.9.50
+=== Anschluss 3.9.50
 
 Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
 
