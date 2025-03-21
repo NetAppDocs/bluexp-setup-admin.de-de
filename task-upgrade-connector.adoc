@@ -23,7 +23,7 @@ NOTE: Wenn Sie BlueXP  im privaten Modus ausführen, müssen Sie den Connector 
 
 == Deaktivieren Sie automatische Upgrades
 
-Das Deaktivieren der automatischen Aktualisierung für den Connector besteht aus zwei Schritten. Zunächst müssen Sie sicherstellen, dass Ihr aktueller Anschluss ordnungsgemäß und aktuell ist. Anschließend bearbeiten Sie eine Konfigurationsdatei, um die automatische Aktualisierungsfunktion zu deaktivieren.
+Das Deaktivieren der automatischen Aktualisierung für den Connector besteht aus zwei Schritten. Zunächst müssen Sie sicherstellen, dass Ihr Connector gesund und aktuell ist. Anschließend bearbeiten Sie eine Konfigurationsdatei, um die automatische Aktualisierungsfunktion zu deaktivieren.
 
 
 NOTE: Sie können die automatischen Upgrades nur deaktivieren, wenn Sie über Connector-Version 3.9.48 oder höher verfügen.
@@ -58,13 +58,14 @@ podman ps -a
 
 === Deaktivieren Sie die automatische Aktualisierung für den Connector
 
-Sie deaktivieren die automatischen Upgrades, indem Sie in der Datei _com/opt/Application/NetApp/Service-Manager-2/config.json_ das Flag _isUpgradeDisabled_ setzen. Standardmäßig ist dieses Flag auf false gesetzt und Ihr Connector wird automatisch aktualisiert. Sie können dieses Flag auf true setzen, um automatische Upgrades zu deaktivieren.
+Sie deaktivieren die automatischen Upgrades, indem Sie in der Datei _com/opt/Application/NetApp/Service-Manager-2/config.json_ das Flag _isUpgradeDisabled_ setzen. Standardmäßig ist dieses Flag auf false gesetzt und Ihr Connector wird automatisch aktualisiert. Sie können dieses Flag auf true setzen, um automatische Upgrades zu deaktivieren. Sie sollten mit der JSON-Syntax vertraut sein, bevor Sie diesen Schritt abschließen.
 
 Um die automatische Aktualisierung wieder zu aktivieren, verwenden Sie diese Schritte und setzen Sie das _isUpgradeDisabled_-Flag auf false.
 
 .Schritte
 . Stellen Sie sicher, dass Ihr Anschluss auf dem neuesten Stand und in gutem Zustand ist.
-. Bearbeiten Sie die Datei _/opt/Application/NetApp/Service-Manager-2/config.json_, und ändern Sie den Wert des Flags _isUpgradeDisabled_ auf true, wie unten in diesem Beispiel gezeigt.
+. Erstellen Sie eine Sicherungskopie der Datei _/opt/Application/NetApp/Service-Manager-2/config.json_, um sicherzustellen, dass Sie Ihre Änderungen rückgängig machen können.
+. Bearbeiten Sie die Datei _/opt/Application/NetApp/Service-Manager-2/config.json_ und ändern Sie den Wert des Flags _isUpgradeDisabled_ auf true.
 +
 [source]
 ----
@@ -76,6 +77,12 @@ Um die automatische Aktualisierung wieder zu aktivieren, verwenden Sie diese Sch
 [source, cli]
 ----
 systemctl restart netapp-service-manager.service
+----
+. Führen Sie den folgenden Befehl aus, und überprüfen Sie, ob der Connector-Status als _Active(Running)_: _ Angezeigt wird
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
 ----
 
 
