@@ -5034,4 +5034,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">Erstellen Sie eine Sicherungskopie der Datei _/opt/Application/NetApp/Service-Manager-2/config.json_, um sicherzustellen, dass Sie Ihre Änderungen rückgängig machen können.</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">Bearbeiten Sie die Datei _/opt/Application/NetApp/Service-Manager-2/config.json_ und ändern Sie den Wert des Flags _isUpgradeDisabled_ auf true.</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">Führen Sie den folgenden Befehl aus, und überprüfen Sie, ob der Connector-Status als _Active(Running)_: _ Angezeigt wird</block>
+  <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">Digital Wallet (nur Lizenzen, Abonnement-Überwachung erfordert einen Connector)</block>
 </blocks>

@@ -36,7 +36,7 @@ Für die Einrichtung und das Management von Azure NetApp Files ist kein Connecto
 * Cloud Volumes Service für Google Cloud
 * Kopieren und Synchronisieren
 * Digitaler Berater
-* Digitale Brieftasche
+* Digital Wallet (nur Lizenzen, Abonnement-Überwachung erfordert einen Connector)
 +
 In fast allen Fällen können Sie der Digital Wallet ohne Connector eine Lizenz hinzufügen.
 
