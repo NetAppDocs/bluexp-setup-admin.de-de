@@ -72,6 +72,10 @@ image:screenshot-help-support.png["Ein Screenshot des Hilfemenü, in dem Support
 +
 .. Wählen Sie die Option, um die AutoSupport-Nachricht auf Ihren lokalen Computer herunterzuladen. Sie können es dann auf bevorzugte Art und Weise an den NetApp Support senden.
 .. Wählen Sie *AutoSupport senden*, um die Nachricht direkt an den NetApp Support zu senden.
++
+
+NOTE: Wenn BlueXP  die AutoSupport Meldung senden soll, kann es bis zu fünf Stunden dauern, da beim Senden von AutoSupport Meldungen automatisch ein Lastausgleich bei BlueXP  erfolgt. Wenn Ihre Kommunikation mit dem NetApp-Support zeitkritisch ist, sollten Sie die Datei herunterladen und an den NetApp-Support senden.
+
 
 
 +
