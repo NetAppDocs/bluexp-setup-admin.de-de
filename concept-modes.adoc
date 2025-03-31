@@ -196,14 +196,11 @@ Bei Cloud Volumes ONTAP werden sowohl kapazitätsbasierte Lizenzierung als auch 
 Erste Schritte mit eingeschränkter Modus:: Wenn Sie Ihr BlueXP Konto erstellen, müssen Sie den eingeschränkten Modus aktivieren.
 +
 --
-Wenn Sie noch kein Konto haben, werden Sie aufgefordert, Ihr Konto zu erstellen und den eingeschränkten Modus zu aktivieren, wenn Sie sich zum ersten Mal über einen Connector bei BlueXP anmelden, den Sie manuell installiert haben oder den Sie auf dem Marktplatz Ihres Cloud-Providers erstellt haben.
+Wenn Sie noch keine Organisation haben, werden Sie aufgefordert, Ihr Unternehmen zu erstellen und den eingeschränkten Modus zu aktivieren, wenn Sie sich zum ersten Mal über einen Connector bei BlueXP  anmelden, den Sie manuell installiert haben oder den Sie auf dem Marktplatz Ihres Cloud-Providers erstellt haben.
 
-Wenn Sie bereits ein Konto haben und ein weiteres erstellen möchten, müssen Sie die Mandanten-API verwenden.
-
-Beachten Sie, dass Sie die Einstellung für den eingeschränkten Modus nicht ändern können, nachdem BlueXP das Konto erstellt hat. Der eingeschränkte Modus kann später nicht aktiviert werden, und Sie können ihn später nicht mehr deaktivieren. Sie muss zum Zeitpunkt der Kontoerstellung festgelegt werden.
+Beachten Sie, dass Sie die Einstellung für den eingeschränkten Modus nicht ändern können, nachdem BlueXP  die Organisation erstellt hat. Der eingeschränkte Modus kann später nicht aktiviert werden, und Sie können ihn später nicht mehr deaktivieren.
 
 * link:task-quick-start-restricted-mode.html["Erfahren Sie, wie Sie mit dem eingeschränkten Modus beginnen"].
-* link:task-create-account.html["Erstellen Sie ein zusätzliches BlueXP Konto"].
 
 
 --

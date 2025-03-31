@@ -14,7 +14,7 @@ summary: Mit einem BlueXP -Konto können Sie Benutzer verwalten und Ressourcen 
 
 
 [role="lead"]
-Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen in isolierten _Workspaces_ zu organisieren. Eine Gruppe von Benutzern kann beispielsweise Cloud Volumes ONTAP-Arbeitsumgebungen in einem Arbeitsbereich bereitstellen und verwalten, der für Benutzer, die Arbeitsumgebungen in einem anderen Arbeitsbereich verwalten, nicht sichtbar ist.
+Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen in einem isolierten _Arbeitsbereich_ zu organisieren.
 
 Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
 
@@ -26,11 +26,9 @@ Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, ver
 
 == Überblick
 
-Wenn Sie zum ersten Mal auf BlueXP zugreifen, werden Sie aufgefordert, ein Konto auszuwählen oder zu erstellen. Wenn Sie noch kein Konto haben, wird beispielsweise der folgende Bildschirm angezeigt:
+Wenn Sie zum ersten Mal auf BlueXP  zugreifen, wird bereits ein Konto mit dem Arbeitsbereich _Workspace-1_ erstellt.
 
-image:screenshot-account-selection.png["Ein Screenshot des BlueXP Einrichtungsassistenten fordert Sie zur Eingabe des BlueXP Kontos auf, in dem Sie BlueXP erstellen möchten."]
-
-BlueXP-Kontoadministratoren können dann die Einstellungen für dieses Konto ändern, indem sie Benutzer (Mitglieder), Arbeitsbereiche und Connectors verwalten:
+Anschließend können Sie diesem Konto Mitglieder (Benutzer) hinzufügen und Connectors bereitstellen:
 
 image:screenshot-account-settings.png["Ein Screenshot mit dem Widget „Konto verwalten“, über das Sie Benutzer, Arbeitsbereiche und Connectors verwalten können."]
 
@@ -40,31 +38,17 @@ link:task-managing-netapp-accounts.html["Erfahren Sie, wie Sie Ihr BlueXP Konto 
 
 == Mitglieder
 
-Mitglieder sind BlueXP Benutzer, die Sie mit Ihrem BlueXP Konto verknüpfen. Wenn Sie einen Benutzer mit einem Konto und einem oder mehreren Arbeitsbereichen in diesem Konto verknüpfen, können diese Benutzer Arbeitsumgebungen in BlueXP erstellen und verwalten.
-
-Wenn Sie einen Benutzer zuordnen, weisen Sie ihm eine Rolle zu:
-
-* _Account Admin_: Kann jede Aktion in BlueXP ausführen.
-* _Workspace Admin_: Kann Ressourcen im zugewiesenen Arbeitsbereich erstellen und verwalten.
-* _Compliance Viewer_: Kann nur Compliance-Informationen für die BlueXP-Klassifizierung anzeigen und Berichte für Arbeitsbereiche generieren, auf die sie zugreifen dürfen.
-
-
-link:reference-user-roles.html["Hier erfahren Sie mehr über diese Rollen"].
+Mitglieder sind BlueXP Benutzer, die Sie mit Ihrem BlueXP Konto verknüpfen. Durch die Verknüpfung eines Benutzers mit einem Konto und Ihrem Arbeitsbereich in diesem Konto können diese Benutzer Arbeitsumgebungen in BlueXP  erstellen und verwalten.
 
 
 
-== Arbeitsbereiche
+== Workspace
 
-In BlueXP isoliert ein Workspace eine beliebige Anzahl von „ Arbeitsumgebungen“ von anderen Benutzern im Konto. Workspace-Administratoren können nicht auf die Arbeitsumgebungen in einem Arbeitsbereich zugreifen, es sei denn, der Kontoadministrator ordnet den Administrator diesem Arbeitsbereich zu.
+In BlueXP isoliert ein Workspace eine beliebige Anzahl von „ Arbeitsumgebungen“ von anderen Benutzern im Konto. BlueXP -Benutzer (Mitglieder) können nicht auf die Arbeitsumgebungen in einem Arbeitsbereich zugreifen, wenn sie nicht mit diesem Arbeitsbereich verknüpft sind.
 
-Eine Arbeitsumgebung ist ein Storage-System. Beispiel:
+Eine Arbeitsumgebung repräsentiert Storage-Systeme wie Ihren lokalen ONTAP Cluster.
 
-* Ein Cloud Volumes ONTAP System
-* Einem lokalen ONTAP Cluster erhalten
-* Ein StorageGRID-System
-
-
-link:task-setting-up-netapp-accounts.html["Erfahren Sie, wie Sie einen Arbeitsbereich hinzufügen"].
+Der private BlueXP -Modus unterstützt nur einen Arbeitsbereich.
 
 
 
@@ -72,33 +56,6 @@ link:task-setting-up-netapp-accounts.html["Erfahren Sie, wie Sie einen Arbeitsbe
 
 Mit einem Connector führen Sie die Aktionen aus, die BlueXP für das Management der Dateninfrastruktur benötigt. Der Connector wird auf einer virtuellen Maschineninstanz ausgeführt, die Sie in Ihrem Cloud-Provider oder auf einem von Ihnen konfigurierten On-Premises-Host bereitstellen.
 
-Sie können einen Connector mit mehr als einem BlueXP Service verwenden. Wenn Sie beispielsweise einen Connector zum Management von Cloud Volumes ONTAP verwenden, können Sie diesen Connector mit einem anderen Service wie BlueXP Tiering verwenden.
+Sie können einen Connector mit mehr als einem BlueXP Service verwenden. Wenn Sie beispielsweise einen Connector für das Management von Backup und Recovery verwenden, können Sie diesen Connector mit einem anderen Service wie BlueXP  Tiering verwenden.
 
 link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].
-
-
-
-== Beispiele
-
-In den folgenden Beispielen wird veranschaulicht, wie Sie Ihre Konten einrichten könnten.
-
-
-NOTE: In beiden nachfolgenden Beispielbildern haben Connector und Cloud Volumes ONTAP Systeme noch nicht wirklich _in_ dem BlueXP Konto - sie werden in einem Cloud-Provider ausgeführt. Dies ist eine konzeptionelle Darstellung der Beziehung zwischen den einzelnen Komponenten.
-
-
-
-=== Mehrere Arbeitsbereiche
-
-Das folgende Beispiel zeigt ein Konto, das zwei Arbeitsbereiche zum Erstellen isolierter Umgebungen verwendet. Der erste Arbeitsbereich ist für eine Produktionsumgebung und der zweite für eine Entwicklungsumgebung.
-
-image:diagram_cloud_central_accounts_one.png["Ein Diagramm mit einem einzelnen BlueXP Konto, das zwei Workspaces enthält. Jeder Arbeitsbereich ist mit demselben Connector verknüpft, und jeder hat seinen eigenen Workspace-Administrator"]
-
-
-
-=== Mehrere Konten
-
-Das folgende Beispiel zeigt die höchste Mandantenfähigkeitsstufe durch die Verwendung von zwei separaten BlueXP Konten. So kann ein Service Provider beispielsweise BlueXP in einem Konto für die Bereitstellung von Services für seine Kunden nutzen und gleichzeitig einen anderen Account für die Disaster Recovery einer seiner Geschäftsbereiche verwenden.
-
-Beachten Sie, dass Konto 2 zwei separate Anschlüsse enthält. Dies kann passieren, wenn Systeme in verschiedenen Regionen oder separaten Cloud-Providern vorhanden sind.
-
-image:diagram_cloud_central_accounts_two.png["Ein Diagramm mit zwei BlueXP Konten mit jeweils mehreren Workspaces und zugehörigen Workspace-Administratoren."]

@@ -14,7 +14,7 @@ summary: Managen Sie Ihr BlueXP -Konto, indem Sie Benutzer hinzufügen, Service
 
 
 [role="lead"]
-Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen zu organisieren. Wenn Sie Ihr Konto erstellen, enthält es nur einen einzigen Admin-Benutzer und einen Arbeitsbereich. Sie können das Konto entsprechend Ihren Anforderungen verwalten, indem Sie Benutzer hinzufügen, Servicekonten für Automatisierungszwecke erstellen, Arbeitsbereiche hinzufügen und vieles mehr.
+Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen zu organisieren. Wenn Sie Ihr Konto erstellen, enthält es nur einen einzigen Benutzer und einen Arbeitsbereich. Sie können das Konto entsprechend Ihren Anforderungen verwalten, indem Sie Benutzer hinzufügen und Servicekonten für Automatisierungszwecke erstellen.
 
 Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
 
@@ -26,15 +26,39 @@ Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, ver
 
 == Account-Management mit der Mandanten-API
 
-Wenn Sie Ihre Kontoeinstellungen durch Senden von API-Anfragen verwalten möchten, müssen Sie die API _Tenancy_ verwenden. Diese API unterscheidet sich von der BlueXP API, die Sie zum Erstellen und Verwalten von Cloud Volumes ONTAP-Arbeitsumgebungen verwenden.
+Wenn Sie Ihre Kontoeinstellungen durch Senden von API-Anfragen verwalten möchten, müssen Sie die API _Tenancy_ verwenden. Diese API unterscheidet sich von der BlueXP -API. Beachten Sie, dass Sie selbst mit der API keine neuen Konten oder Arbeitsbereiche im privaten Modus erstellen können.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html["Anzeige von Endpunkten für die Mandanten-API"^]
 
 
 
+== Benennen Sie den Arbeitsbereich um
+
+Verwalten Sie Ihre Arbeitsbereiche, indem Sie sie erstellen, umbenennen und löschen. Beachten Sie, dass Sie einen Arbeitsbereich nicht löschen können, wenn er Ressourcen enthält. Er muss leer sein.
+
+.Schritte
+. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
+. Wählen Sie *Workspaces*.
+. Wählen Sie *Umbenennen*, um den Arbeitsbereich umzubenennen.
+
+
+
+
+== Ändern Sie Ihren Kontonamen
+
+Ändern Sie Ihren Kontonamen jederzeit, um ihn in etwas Sinnvolles für Sie zu ändern.
+
+.Schritte
+. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
+. Wählen Sie auf der Registerkarte *Übersicht* das Bearbeiten-Symbol neben dem Kontonamen.
+. Geben Sie einen neuen Kontonamen ein und wählen Sie *Speichern*.
+
+
+
+
 == Erstellen und Verwalten von Benutzern
 
-Der Benutzer in Ihrem Konto kann auf die Ressourcen in bestimmten Arbeitsbereichen zugreifen und diese verwalten.
+Die Benutzer in Ihrem Konto können auf die Ressourcen in Ihrem Arbeitsbereich zugreifen und diese verwalten.
 
 
 
@@ -43,7 +67,6 @@ Der Benutzer in Ihrem Konto kann auf die Ressourcen in bestimmten Arbeitsbereich
 Ordnen Sie Benutzer Ihrem BlueXP Konto zu, damit diese Benutzer Arbeitsumgebungen in BlueXP erstellen und managen können.
 
 .Schritte
-. Wenn der Benutzer dies noch nicht getan hat, bitten Sie den Benutzer, zu wechseln https://bluexp.netapp.com/["NetApp BlueXP Website"^] Und melden Sie sich an.
 . Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus.
 +
 image:screenshot-account-settings-menu.png["Ein Screenshot, in dem die Option Kontoeinstellungen im oberen Banner von BlueXP angezeigt wird."]
@@ -53,26 +76,13 @@ image:screenshot-account-settings-menu.png["Ein Screenshot, in dem die Option Ko
 image:screenshot-manage-account-settings.png["Ein Screenshot, in dem die Option „Kontoeinstellungen verwalten“ angezeigt wird, die im Dropdown-Menü „Konto“ verfügbar ist."]
 
 . Wählen Sie auf der Registerkarte Mitglieder die Option * Associate User*.
-. Geben Sie die E-Mail-Adresse des Benutzers ein, und wählen Sie eine Rolle für den Benutzer aus:
-+
-** *Account Admin*: Kann jede Aktion in BlueXP ausführen.
-** *Workspace Admin*: Kann Ressourcen in zugewiesenen Workspaces erstellen und verwalten.
-** *Compliance Viewer*: Kann nur Compliance-Informationen für die BlueXP-Klassifizierung anzeigen und Berichte für Arbeitsbereiche generieren, auf die sie zugreifen dürfen.
-
-
-. Wenn Sie Workspace Admin oder Compliance Viewer ausgewählt haben, wählen Sie eine oder mehrere Arbeitsbereiche aus, die diesem Benutzer zugeordnet werden sollen.
-+
-image:screenshot_associate_user.gif["Ein Screenshot, der zeigt, wie ein Benutzer durch Auswahl einer Rolle und der zugehörigen Arbeitsbereiche zugeordnet wird."]
-
-. Wählen Sie *Mitarbeiter*.
-
-
-.Ergebnis
-Der Benutzer sollte eine E-Mail von NetApp BlueXP mit dem Titel „Account Association“ erhalten. Die E-Mail enthält die Informationen, die für den Zugriff auf BlueXP erforderlich sind.
+. Geben Sie die E-Mail-Adresse des Benutzers ein.
+. Wählen Sie *Mitarbeiter*. Der Benutzer sollte eine E-Mail von NetApp BlueXP  mit dem Titel „Kontenzuordnung“ erhalten. Die E-Mail enthält die Informationen, die für den Zugriff auf BlueXP  erforderlich sind.
 
 
 
-=== Benutzer entfernen
+
+=== Benutzer aus Ihrem Konto entfernen
 
 Durch das Auflösen der Zuordnung eines Benutzers wird kein Zugriff mehr auf die Ressourcen in einem BlueXP Konto möglich.
 
@@ -82,47 +92,14 @@ Durch das Auflösen der Zuordnung eines Benutzers wird kein Zugriff mehr auf die
 image:screenshot-manage-account-settings.png["Ein Screenshot, in dem die Option „Kontoeinstellungen verwalten“ angezeigt wird, die im Dropdown-Menü „Konto“ verfügbar ist."]
 
 . Wählen Sie auf der Registerkarte Mitglieder das Aktionsmenü in der Zeile aus, die dem Benutzer entspricht.
-+
-image:screenshot_associate_user_workspace.png["Ein Screenshot, der das Aktionsmenü anzeigt, das verfügbar ist, wenn der Mauszeiger über den Namen eines Benutzers in der Benutzertabelle bewegt wird."]
-
 . Wählen Sie *Benutzer aufheben*, und wählen Sie zur Bestätigung *Zuordnung aufheben*.
 
-
-.Ergebnis
-Der Benutzer kann nicht mehr auf die Ressourcen in diesem BlueXP Konto zugreifen.
-
-
-
-=== Verwalten der Arbeitsbereiche eines Arbeitsbereichsadministrators
-
-Sie können Workspace-Administratoren jederzeit mit Arbeitsbereichen verknüpfen und sie ablösen. Durch die Verknüpfung des Benutzers können die Arbeitsumgebungen in diesem Arbeitsbereich erstellt und angezeigt werden.
-
-
-NOTE: Sie müssen den Connector auch mit Workspaces verknüpfen, damit Workspace-Administratoren auf die Workspaces von BlueXP zugreifen können. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["Erfahren Sie, wie Sie die Arbeitsbereiche eines Connectors verwalten"].
-
-.Schritte
-. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
-+
-image:screenshot-manage-account-settings.png["Ein Screenshot, in dem die Option „Kontoeinstellungen verwalten“ angezeigt wird, die im Dropdown-Menü „Konto“ verfügbar ist."]
-
-. Wählen Sie auf der Registerkarte Mitglieder das Aktionsmenü in der Zeile aus, die dem Benutzer entspricht.
-+
-image:screenshot_associate_user_workspace.png["Ein Screenshot, der das Aktionsmenü anzeigt, das verfügbar ist, wenn der Mauszeiger über den Namen eines Benutzers in der Benutzertabelle bewegt wird."]
-
-. Wählen Sie *Arbeitsbereiche Verwalten*.
-. Wählen Sie die Arbeitsbereiche aus, die dem Benutzer zugeordnet werden sollen, und wählen Sie *Anwenden*.
-
-
-.Ergebnis
-Der Benutzer kann jetzt von BlueXP auf diese Arbeitsbereiche zugreifen, solange der Connector auch mit den Arbeitsbereichen verknüpft war.
 
 
 
 == Erstellen und Verwalten von Servicekonten
 
 Ein Servicekonto fungiert als „Benutzer“, der autorisierte API-Aufrufe zu Automatisierungszwecken an BlueXP vornehmen kann. So ist das Management der Automatisierung einfacher, da keine Automatisierungsskripts auf Basis des Benutzerkontos eines echten Mitarbeiters erstellt werden müssen, der das Unternehmen jederzeit verlassen kann.
-
-Sie erteilen einem Servicekonto Berechtigungen, indem Sie ihm eine Rolle zuweisen, genau wie jeder andere BlueXP-Benutzer. Sie können das Servicekonto auch mit bestimmten Arbeitsbereichen verknüpfen, um die Arbeitsumgebungen (Ressourcen) zu kontrollieren, auf die der Service zugreifen kann.
 
 Wenn Sie das Dienstkonto erstellen, können Sie mit BlueXP eine Client-ID und einen Clientschlüssel für das Dienstkonto kopieren oder herunterladen. Dieses Schlüsselpaar wird für die Authentifizierung mit BlueXP verwendet.
 
@@ -144,7 +121,7 @@ image:screenshot-account-settings-menu.png["Ein Screenshot, in dem die Option Ko
 image:screenshot-manage-account-settings.png["Ein Screenshot, in dem die Option „Kontoeinstellungen verwalten“ angezeigt wird, die im Dropdown-Menü „Konto“ verfügbar ist."]
 
 . Wählen Sie auf der Registerkarte Mitglieder die Option *Service-Konto erstellen*.
-. Geben Sie einen Namen ein, und wählen Sie eine Rolle aus. Wenn Sie eine andere Rolle als Kontoadministrator auswählen, wählen Sie den Arbeitsbereich aus, der mit diesem Dienstkonto verknüpft werden soll.
+. Geben Sie einen Namen ein.
 . Wählen Sie *Erstellen*.
 . Kopieren Sie die Client-ID und den Clientschlüssel, oder laden Sie sie herunter.
 +
@@ -209,78 +186,4 @@ image:screenshot_service_account_actions.gif["Ein Screenshot, der das Aktionsmen
 
 . Wählen Sie *Löschen*.
 . Wählen Sie zur Bestätigung noch einmal *Löschen*.
-
-
-
-
-== Arbeitsbereiche verwalten
-
-Verwalten Sie Ihre Arbeitsbereiche, indem Sie sie erstellen, umbenennen und löschen. Beachten Sie, dass Sie einen Arbeitsbereich nicht löschen können, wenn er Ressourcen enthält. Er muss leer sein.
-
-.Schritte
-. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
-. Wählen Sie *Workspaces*.
-. Wählen Sie eine der folgenden Optionen:
-+
-** Wählen Sie *Neuen Arbeitsbereich hinzufügen*, um einen neuen Arbeitsbereich zu erstellen.
-** Wählen Sie *Umbenennen*, um den Arbeitsbereich umzubenennen.
-** Wählen Sie *Löschen*, um den Arbeitsbereich zu löschen.
-
-
-+
-Wenn Sie einen neuen Arbeitsbereich erstellt haben, müssen Sie den Connector auch zu diesem Arbeitsbereich hinzufügen. Wenn Sie den Connector nicht hinzufügen, können Workspace-Administratoren auf keine der Ressourcen im Arbeitsbereich zugreifen. Weitere Informationen finden Sie im folgenden Abschnitt.
-
-
-
-
-
-== Die Arbeitsbereiche eines Connectors verwalten
-
-Sie müssen den Connector mit Arbeitsbereichen verknüpfen, damit Workspace-Administratoren von BlueXP auf diese Arbeitsbereiche zugreifen können.
-
-Wenn Sie nur Kontoadministratoren haben, ist es nicht erforderlich, den Connector mit Arbeitsbereichen zu verknüpfen. Kontoadministratoren haben standardmäßig die Möglichkeit, auf alle Arbeitsbereiche in BlueXP zuzugreifen.
-
-link:concept-netapp-accounts.html["Erfahren Sie mehr über Benutzer, Arbeitsbereiche und Connectors"].
-
-.Schritte
-. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
-. Wählen Sie *Connector*.
-. Wählen Sie *Arbeitsbereiche verwalten* für den Konnektor, den Sie verknüpfen möchten.
-. Wählen Sie die Arbeitsbereiche aus, die dem Connector zugeordnet werden sollen, und wählen Sie *Apply*.
-
-
-
-
-== Ändern Sie Ihren Kontonamen
-
-Ändern Sie Ihren Kontonamen jederzeit, um ihn in etwas Sinnvolles für Sie zu ändern.
-
-.Schritte
-. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
-. Wählen Sie auf der Registerkarte *Übersicht* das Bearbeiten-Symbol neben dem Kontonamen.
-. Geben Sie einen neuen Kontonamen ein und wählen Sie *Speichern*.
-
-
-
-
-== Private Vorschauen zulassen
-
-Erlauben Sie privaten Vorschauen in Ihrem Konto, auf neue Services zuzugreifen, die als Vorschau in BlueXP zur Verfügung gestellt werden.
-
-Services in der privaten Vorschau sind nicht garantiert, dass sich wie erwartet verhalten und können Ausfälle aufrecht erhalten und fehlende Funktionen sein.
-
-.Schritte
-. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
-. Aktivieren Sie auf der Registerkarte *Übersicht* die Einstellung *Private Vorschau zulassen*.
-
-
-
-
-== Drittanbieter-Services zulassen
-
-Lassen Sie Drittanbieter-Services in Ihrem Konto zu, um Zugriff auf Dienste von Drittanbietern zu erhalten, die in BlueXP verfügbar sind. Drittanbieter-Services sind ähnlich wie die Services von NetApp, werden aber von Drittanbieter gemanagt und unterstützt.
-
-.Schritte
-. Wählen Sie oben in BlueXP das Dropdown-Menü *Account* aus und wählen Sie *Konto verwalten* aus.
-. Aktivieren Sie auf der Registerkarte *Übersicht* die Option *Drittanbieter-Services zulassen*.
 
