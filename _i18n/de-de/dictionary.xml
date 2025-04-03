@@ -4940,4 +4940,14 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="e9c015fe86d3a5d04392492e021c0201" category="section-title">Benutzer aus Ihrem Konto entfernen</block>
   <block id="dd74de0d68eefd1c10bd1501afbc8b46" category="list-text">Geben Sie einen Namen ein.</block>
   <block id="7711ad044bac260fa3951b31e2d96f88" category="sidebar">BlueXP -Konten (nur privater Modus)</block>
+  <block id="4da9a5d0cff1ab5f795fbdd68c2eedc2" category="doc">Freigabe des privaten Modus (3.9.50)</block>
+  <block id="3ed9698e266f4060e99b8c0f2f38b027" category="paragraph">Version 3.9.50 enthält Updates zu den folgenden BlueXP  Komponenten und Services.</block>
+  <block id="5820ebbb1da4e36bc0eb0db564450b99" category="cell">3.9.50, 3.9.49</block>
+  <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">Was ist neu in BlueXP  Connector Seite</block>
+  <block id="e411690e8dc95cbf79272f1e53cce845" category="cell">GTO auf<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> und beziehen sich auf die Änderungen, die für die Versionen 3.9.50 und 3.9.49 enthalten sind.</block>
+  <block id="499d067ffbbd553e23809aa38aa67bfa" category="cell">17 März 2025</block>
+  <block id="0e231d3391a335865e696150143618bc" category="cell">Gehen Sie auf<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> und beziehen Sie sich auf die Änderungen, die in der Version März 2024 enthalten sind.</block>
+  <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">10. März 2025 (Version 1.41)</block>
+  <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">Rufen Sie die<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> auf und beziehen Sie sich auf die Änderungen der Versionen 1.38 bis 1.371.41.</block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 März 2025</block>
 </blocks>
