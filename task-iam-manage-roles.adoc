@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-roles.html 
+keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members 
+summary: Das Identitäts- und Zugriffsmanagement von BlueXP  ermöglicht es Ihnen, mithilfe von Ordnern und Projekten eine vollständige Ressourcenhierarchie darzustellen. 
+---
+= Verwenden Sie Rollen, um den Benutzerzugriff auf Ressourcen zu verwalten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit BlueXP  können Sie Benutzern Rollen basierend auf den jeweiligen Aufgaben und Bereichen zuweisen.
+
+Benutzer mit den Rollen „Organisationsadministrator“, „Ordner“ oder „Projektadministrator“ sind dafür verantwortlich, anderen Benutzern Rollen zuzuweisen. Sie können Zugriffsrollen auf Projekt- oder Ordnerbasis zuweisen. Sie können einem Benutzer beispielsweise die Administratorrolle für Ransomware-Schutz für ein Projekt und die SnapCenter-Administratorrolle für ein anderes Projekt zuweisen. Wenn ein Benutzer alternativ die Rolle „Klassifikationsadministrator“ für alle Projekte in einem bestimmten Ordner benötigt, können Sie ihm diese Zugriffsrolle auf Ordnerebene gewähren.
+
+Verwenden Sie Zugriffsrollen, um auf Basis der spezifischen BlueXP -Aufgaben, die Benutzer durchführen müssen, Zugriff auf Storage-Ressourcen zuzuweisen. Wenn ein BlueXP -Benutzer beispielsweise mit Ransomware-Schutzservices interagieren muss, muss ihm eine Zugriffsrolle zugewiesen werden, die entweder Viewing- oder Administrationsberechtigungen für den Ransomware-Schutzservice für das Projekt umfasst, für das die Zugriffsrolle gewährt wird.
+
+Weisen Sie Benutzern Rollen basierend auf Ihrer IAM-Strategie zu, um die Sicherheit zu erhöhen. BlueXP  IAM-Rollen sollen sicherstellen, dass Benutzer nur auf die benötigten Ressourcen zugreifen können.
+
+
+NOTE: Denken Sie daran, dass Sie Ressourcen nicht direkt gewähren können. Ressourcen müssen zuerst Projekten zugewiesen werden. Sie sollten Ihre Ressourcenhierarchie einrichten, bevor Sie Benutzerzugriff zuweisen. link:task-iam-manage-folders-projects.html["Erfahren Sie, wie Sie Ihre Ressourcen in BlueXP  IAM mit Ordnern und Projekten organisieren."]
+
+
+
+== Rollen anzeigen, die einem Mitglied zugewiesen sind
+
+Wenn Sie ein Mitglied zu Ihrer BlueXP -Organisation hinzufügen, werden Sie aufgefordert, ihm eine Rolle zuzuweisen. Sie können Mitglieder überprüfen, welche Rollen sie derzeit zugewiesen haben.
+
+Wenn Sie die Rolle _Ordner oder Projektadministrator_ haben, werden auf der Seite alle Mitglieder der Organisation angezeigt. Sie können jedoch nur Mitgliederberechtigungen für die Ordner und Projekte anzeigen und verwalten, für die Sie Berechtigungen haben. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über die Aktionen, die ein _Ordner- oder Projektadministrator_ durchführen kann"].
+
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
+. Erweitern Sie in der Tabelle die entsprechende Zeile für die Organisation, den Ordner oder das Projekt, in dem Sie die zugewiesene Rolle des Mitglieds anzeigen möchten, und wählen Sie in der Spalte *Rolle* *Ansicht* aus.
+
+
+
+
+== Fügen Sie einem Mitglied eine Zugriffsrolle hinzu
+
+Normalerweise weisen Sie dem Mitglied eine Rolle zu, wenn Sie sie Ihrem Unternehmen hinzufügen. Sie können die Rolle eines Mitglieds jedoch jederzeit aktualisieren, indem Sie eine Rolle entfernen oder eine andere Rolle hinzufügen. Sie können den Zugriff eines Benutzers auf ein Projekt entfernen, indem Sie dessen Rolle entfernen.
+
+Sie können einem Benutzer eine Zugriffsrolle für Ihr Unternehmen, Ihren Ordner oder Ihr Projekt zuweisen.
+
+Mitglieder können innerhalb eines Projekts und in verschiedenen Projekten mehrere Rollen haben. Kleinere Unternehmen können beispielsweise dem gleichen Benutzer alle verfügbaren Zugriffsrollen zuweisen, während in größeren Unternehmen möglicherweise Benutzer speziellere Aufgaben in BlueXP  ausführen. Alternativ können Sie einem Benutzer auch die Rolle eines Ransomware-Projektadministrators für das Unternehmen zuweisen. So könnte der Benutzer beispielsweise bei allen Projekten im Unternehmen Ransomware-Schutzaufgaben durchführen.
+
+Die Strategie für Ihre Zugriffsrolle sollte auf die Art und Weise ausgerichtet sein, wie Sie Ihre NetApp-Ressourcen in BlueXP  organisiert haben.
+
+
+TIP: Einem Mitglied, dem die Rolle „Organisationsadministrator“ zugewiesen ist, können keine zusätzlichen Rollen zugewiesen werden. Sie verfügen bereits über Berechtigungen im gesamten Unternehmen. Einem Mitglied mit der Rolle „Ordner“ oder „Projekt“ können keine anderen Rollen innerhalb des Ordners oder Projekts zugewiesen werden, in denen diese Rolle bereits vorhanden ist. Beide Rollen bieten Zugriff auf alle BlueXP  Services im Umfang, den sie zugewiesen sind.
+
+.Schritte
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Rolle hinzufügen* aus.
+. Führen Sie zum Hinzufügen einer Rolle die folgenden Schritte im Dialogfeld aus:
++
+** *Wählen Sie eine Organisation, einen Ordner oder ein Projekt*: Wählen Sie die Ebene Ihrer Ressourcenhierarchie aus, für die das Mitglied Berechtigungen haben soll.
++
+Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
+
+** *Wählen Sie eine Kategorie*: BlueXP  unterteilt Rollen in zwei Kategorien: Plattform und Datendienst. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen"^].
+** Wählen Sie eine *Rolle*: Wählen Sie eine Rolle aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
+
+
+
+
+link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen"^]. * *Rolle hinzufügen*: Wenn Sie Zugriff auf zusätzliche Ordner oder Projekte innerhalb Ihrer Organisation gewähren möchten, wählen Sie *Rolle hinzufügen*, geben Sie einen anderen Ordner oder ein anderes Projekt oder eine Rollenkategorie an und wählen Sie dann eine Rollenkategorie und eine entsprechende Rolle aus.
+
+. Wählen Sie *Neue Rollen hinzufügen*.
+
+
+
+
+=== Ändern Sie die zugewiesene Rolle eines Mitglieds
+
+Sie können die zugewiesenen Rollen für ein Mitglied ändern, wenn Sie den Zugriff für einen Benutzer anpassen müssen.
+
+.Schritte
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
+. Erweitern Sie in der Tabelle die entsprechende Zeile für die Organisation, den Ordner oder das Projekt, in dem Sie die zugewiesene Rolle des Mitglieds ändern möchten, und wählen Sie in der Spalte *Rolle* *Ansicht* aus, um die diesem Mitglied zugewiesenen Rollen anzuzeigen.
+. Sie können eine vorhandene Rolle für ein Mitglied ändern oder eine Rolle entfernen.
++
+.. Um die Rolle eines Mitglieds zu ändern, wählen Sie neben der Rolle, die Sie ändern möchten, *Ändern*. Sie können diese Rolle nur in eine Rolle innerhalb derselben Rollenkategorie ändern. Sie können beispielsweise von einer Datenservice-Rolle zu einer anderen wechseln. Sie werden aufgefordert, die Änderung zu bestätigen.
+.. Um die Zuweisung der Rolle eines Mitglieds aufzuheben, wählen Sie  neben der Rolle aus, um die Zuweisung des Mitglieds image:icon-delete.png["Ein Symbol, das einem Papierkorb ähnelt"]zur entsprechenden Rolle aufzuheben. Sie werden aufgefordert, die Entfernung zu bestätigen.
+
+
+
