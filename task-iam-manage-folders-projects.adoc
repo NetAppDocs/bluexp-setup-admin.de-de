@@ -45,10 +45,10 @@ link:concept-identity-and-access-management.html#associate-resource-folder["Erfa
 
 ** *Access*: Zeigen Sie die Mitglieder an, die auf Basis der bereits in Ihrer Ressourcenhierarchie definierten Berechtigungen Zugriff auf den Ordner oder das Projekt haben.
 +
-Wählen Sie bei Bedarf *Mitglied hinzufügen*, um zusätzliche Organisationsmitglieder anzugeben, die Zugriff auf den Ordner oder das Projekt haben sollen, und wählen Sie dann eine Rolle aus. Eine Rolle definiert die Berechtigungen, die Mitglieder für den Ordner oder das Projekt haben.
+Wählen Sie bei Bedarf *Mitglied hinzufügen*, um zusätzliche Organisationsmitglieder anzugeben, die Zugriff auf den Ordner oder das Projekt haben sollen, und wählen Sie dann eine Rolle aus. Eine Zugriffsrolle definiert die Berechtigungen, die Mitglieder für den Ordner oder das Projekt haben.
 
 +
-link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte IAM-Rollen"].
+link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen"].
 
 
 
@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["Ein Screenshot der Seite Projekt bearbei
 
 Ändern Sie den Mitgliederzugriff auf einen Ordner oder ein Projekt, um sicherzustellen, dass die richtigen Mitglieder Zugriff auf die Ressourcen haben, die dem Ordner oder Projekt zugeordnet sind.
 
-Wenn der Mitgliederzugriff auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) bereitgestellt wurde, können Sie den Mitgliederzugriff nicht entfernen oder ändern, wenn Sie den Ordner oder das Projekt auf niedrigerer Ebene anzeigen. Sie müssen zu diesem Teil der Hierarchie wechseln und dort die Berechtigungen des Mitglieds aktualisieren. Alternativ können Sie link:task-iam-manage-members-permissions.html#manage-permissions["Verwalten Sie Berechtigungen über die Seite Mitglieder"].
+Wenn der Zugriff auf Mitglieder auf einer höheren Hierarchieebene (auf Ordner- oder Organisationsebene) gewährt wurde, können Sie ihre Rolle beim Anzeigen des Ordners oder Projekts auf niedrigerer Ebene nicht entfernen oder ändern. Sie müssen zu diesem Teil der Hierarchie wechseln und dort die Rolle des Mitglieds aktualisieren. Alternativ können Sie link:task-iam-manage-roles.html#manage-permissions["Rollen über die Seite Mitglieder verwalten"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Erfahren Sie mehr über Rollenvererbung"].
 
