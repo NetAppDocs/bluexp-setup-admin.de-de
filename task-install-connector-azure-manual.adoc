@@ -14,7 +14,7 @@ summary: Um den Connector manuell auf Ihrem eigenen Linux-Host zu installieren, 
 
 
 [role="lead"]
-Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist die manuelle Installation der Connector-Software auf einem Linux-Host, der in Azure ausgeführt wird. Um den Connector manuell auf Ihrem eigenen Linux-Host zu installieren, müssen Sie die Host-Anforderungen überprüfen, Ihr Netzwerk einrichten, Azure-Berechtigungen vorbereiten, den Connector installieren und dann die von Ihnen vorbereiteten Berechtigungen bereitstellen.
+Sie können einen Connector manuell auf einem Linux-Host installieren, der in Azure ausgeführt wird. Um den Connector manuell auf Ihrem eigenen Linux-Host zu installieren, müssen Sie die Host-Anforderungen überprüfen, Ihr Netzwerk einrichten, Azure-Berechtigungen vorbereiten, den Connector installieren und dann die von Ihnen vorbereiteten Berechtigungen bereitstellen.
 
 .Bevor Sie beginnen
 * Sie sollten eine habenlink:concept-connectors.html["Verständnis von Steckverbindern"].

@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Ein Connector ist die von Ihnen installierte NetApp Software, die die Aktionen ausführt, die BlueXP  zum Management der Storage-Infrastruktur benötigt. Sie benötigen für viele Funktionen von BlueXP  keinen Connector, aber einige Funktionen sind nicht verfügbar, wenn Sie dies nicht tun.
