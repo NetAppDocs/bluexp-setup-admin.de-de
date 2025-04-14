@@ -19,4 +19,4 @@ Derzeit ist die Version 3.9.51 für den Standardmodus und den eingeschränkten M
 * Wenn Sie über die Rolle „Org-Administrator“ oder „Ordner“ oder „Projektadministrator“ verfügen, können Sie jetzt ein Keystone-Abonnement mit einem IAM-Projekt verknüpfen. Durch die Verknüpfung einer Keystone Subscription mit einem IAM-Projekt können Sie den Zugriff auf Keystone innerhalb von BlueXP  steuern.
 
 
-link:reference-iam-predefined-roles.html["Informieren Sie sich über die neuen Rollen."^].
+link:reference-iam-predefined-roles.html["Informieren Sie sich über die neuen Rollen."^]

@@ -4923,7 +4923,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">Derzeit ist die Version 3.9.51 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Identitäts- und Zugriffsmanagement (BlueXP , IAM)</block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">Informieren Sie sich über die neuen Rollen.</block>
-  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>.</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">Bis 14. April 2025</block>
   <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Benutzer ohne den Org-Administrator, Ordner- oder Projektadministrator müssen einer Ransomware-Sicherheitsrolle zugewiesen werden, um Zugriff auf Ransomware-Schutz zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Ransomware Protection Admin oder Ransomware Protection Viewer.</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Benutzer ohne Org.-Administrator, Ordner- oder Projektadministrator müssen einer Keystone-Rolle zugewiesen werden, um Zugriff auf Keystone zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Keystone Admin oder Keystone Viewer.</block>
@@ -5025,4 +5024,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Einrichtung und Administration von BlueXP </block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">Mitglieder und Dienstkonten hinzufügen</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">Verwenden Sie Rollen, um den Zugriff der Mitglieder auf Ressourcen zu steuern</block>
+  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
 </blocks>
