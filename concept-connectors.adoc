@@ -22,7 +22,7 @@ Wenn Sie BlueXP  im Standardmodus ausführen, müssen Sie keinen Konnektor inst
 
 == Was Sie im Standardmodus auf einen Connector verzichten können
 
-Einige der wichtigsten Dienste von BlueXP  sind ohne Installation eines Connectors verfügbar, wenn Sie im Standardmodus ausgeführt werden.
+Mit BlueXP  können Sie Ihre Storage-Ressourcen zentral managen, ohne einen Connector zu installieren, wenn Sie im Standard-Modus ausgeführt werden.
 
 Ohne Connector können Sie die folgenden BlueXP Funktionen und Services nutzen:
 
