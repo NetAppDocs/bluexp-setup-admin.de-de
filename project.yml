@@ -127,7 +127,7 @@ sidebar:
         url: "/task-iam-rename-organization.html"
       - title: Überwachung oder Prüfung der IAM-Aktivität
         url: "/task-iam-audit-actions-timeline.html"
-      - title: Vordefinierte IAM-Rollen
+      - title: Zugriffsrollen für BlueXP
         url: "/reference-iam-predefined-roles.html"
     - title: BlueXP -Konten (nur privater Modus)
       entries:

@@ -247,6 +247,6 @@ In den folgenden Beispielen wird beschrieben, wie Sie IAM zur Verwaltung Ihrer B
 * link:task-iam-switch-organizations-projects.html["Wechsel zwischen BlueXP -Projekten und Organisationen"]
 * link:task-iam-rename-organization.html["Benennen Sie Ihre BlueXP -Organisation um"]
 * link:task-iam-audit-actions-timeline.html["Überwachung oder Prüfung der IAM-Aktivität"]
-* link:reference-iam-predefined-roles.html["Vordefinierte BlueXP  IAM-Rollen"]
+* link:reference-iam-predefined-roles.html["Zugriffsrollen für BlueXP"]
 * https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Erfahren Sie mehr über die API für BlueXP  IAM"^]
 
