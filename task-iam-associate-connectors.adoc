@@ -13,9 +13,7 @@ summary: Wenn Mitglieder Ihres Unternehmens einen Konnektor in einem anderen Pro
 :imagesdir: ./media/
 
 
-[role="lead"]
-Ein Connector ist erforderlich, um mehrere Arten von Arbeitsumgebungen von BlueXP  aus zu verwalten. Wenn ein _Organisationsadministrator_ einen Konnektor erstellt, ordnet BlueXP  diesen Connector automatisch der Organisation und dem aktuell ausgewählten Projekt zu. Der _Organisation admin_ hat automatisch von überall im Unternehmen Zugriff auf diesen Connector. Andere Mitglieder in Ihrem Unternehmen können nur auf diesen Connector aus dem Projekt zugreifen, in dem er erstellt wurde, es sei denn, Sie verknüpfen diesen Connector mit anderen Projekten aus dem BlueXP -Identitäts- und Zugriffsmanagement (IAM).
-
+ \When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. Other members in your organization can only access that Connector from the project in which it was created, unless you associate that Connector with other projects from BlueXP identity and access management (IAM).
 .Bevor Sie beginnen
 Sie sollten verstehen, wie die Verbindungszuordnung funktioniert. link:concept-identity-and-access-management.html#associate-connectors["Erfahren Sie mehr über die Verwendung von Steckverbindern mit BlueXP  IAM"].
 

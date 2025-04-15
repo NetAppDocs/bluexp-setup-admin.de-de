@@ -12,7 +12,7 @@
 
 Ein BlueXP -Administrator (Benutzer mit Administratorrolle des Unternehmens) kann BlueXP  so konfigurieren, dass Benutzer aufgefordert werden, ihre ONTAP-Anmeldeinformationen einzugeben, um auf den ONTAP-Systemmanager zuzugreifen. Wenn diese Einstellung aktiviert ist, müssen Benutzer ihre ONTAP-Anmeldeinformationen jedes Mal eingeben, da sie nicht in BlueXP  gespeichert sind.
 
-Diese Funktion ist ab Connector Version 3.9.49 verfügbar. link:task-ontap-access-connector.html["Erfahren Sie, wie Sie die Einstellungen für Anmeldeinformationen konfigurieren."^].
+Diese Funktion ist ab Connector Version 3.9.49 verfügbar. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Erfahren Sie, wie Sie die Einstellungen für Anmeldeinformationen konfigurieren."^].
 
 
 
@@ -31,4 +31,4 @@ NOTE: Diese Änderung wirkt sich nicht auf den privaten BlueXP -Modus aus, in d
 
 Diese Funktion ist ab Connector Version 3.9.48 verfügbar.
 
-link:task-upgrade-connector.html["Erfahren Sie, wie Sie die automatische Aktualisierung für den Connector deaktivieren."^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie die automatische Aktualisierung für den Connector deaktivieren."^]

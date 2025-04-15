@@ -14,7 +14,7 @@ summary: Um einen Connector in AWS von BlueXP zu erstellen, müssen Sie Ihr Netz
 
 
 [role="lead"]
-Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Mit ihr können Sie alle Funktionen und Services von BlueXP  nutzen. Eine der verfügbaren Installationsoptionen ist, einen Connector in AWS direkt aus BlueXP  zu erstellen. Um einen Connector in AWS von BlueXP zu erstellen, müssen Sie Ihr Netzwerk einrichten, AWS Berechtigungen vorbereiten und anschließend den Connector erstellen.
+Sie können einen Connector in AWS direkt aus BlueXP  erstellen. Um einen Connector in AWS von BlueXP zu erstellen, müssen Sie Ihr Netzwerk einrichten, AWS Berechtigungen vorbereiten und anschließend den Connector erstellen.
 
 .Bevor Sie beginnen
 * Sie sollten eine habenlink:concept-connectors.html["Verständnis von Steckverbindern"].

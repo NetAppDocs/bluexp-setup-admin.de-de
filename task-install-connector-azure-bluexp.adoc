@@ -14,7 +14,7 @@ summary: Um einen Connector in Azure aus BlueXP zu erstellen, müssen Sie Ihr Ne
 
 
 [role="lead"]
-Sie können einen Connector in Azure direkt aus BlueXP  erstellen. Um einen Connector in Azure von BlueXP  zu erstellen, müssen Sie Ihr Netzwerk einrichten, eine Azure-Rolle für die Bereitstellung des Connectors vorbereiten und dann den Connector implementieren.
+Sie können einen Connector in Azure direkt von BlueXP  installieren. Um einen Connector in Azure von BlueXP  zu erstellen, müssen Sie Ihr Netzwerk einrichten, eine Azure-Rolle für die Bereitstellung des Connectors vorbereiten und dann den Connector implementieren.
 
 .Bevor Sie beginnen
 * Sie sollten eine habenlink:concept-connectors.html["Verständnis von Steckverbindern"].
