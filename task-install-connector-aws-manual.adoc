@@ -345,8 +345,6 @@ Um Lizenzinformationen zu erhalten und AutoSupport Meldungen an den NetApp Suppo
  a| 
 Um SaaS-Funktionen und -Services in BlueXP zur Verfügung zu stellen.
 
-Beachten Sie, dass der Connector sich derzeit mit „cloudmanager.cloud.netapp.com" in Verbindung setzt, jedoch in einer kommenden Version mit „api.bluexp.netapp.com"“ in Verbindung steht.
-
 
 
  a| 

@@ -71,8 +71,6 @@ Um Ressourcen in Google Cloud zu verwalten.
 
 Um SaaS-Funktionen und -Services in BlueXP anzubieten.
 
-Beachten Sie, dass der Connector sich derzeit mit „cloudmanager.cloud.netapp.com" in Verbindung setzt, jedoch in einer kommenden Version mit „api.bluexp.netapp.com"“ in Verbindung steht.
-
 A Wählen Sie zwischen zwei Endpunktgruppen:
 
 * Option 1 (empfohlen) ^1^
