@@ -34,10 +34,11 @@ indexpage:
       url: task-iam-get-started.html
     - title: Organisieren Sie Ihre Ressourcen mit Ordnern und Projekten
       url: task-iam-manage-folders-projects.html
-    - title: Mitglieder und deren Berechtigungen verwalten
+    - title: Mitglieder und Dienstkonten hinzufügen
       url: task-iam-manage-members-permissions.html
-    - title: Verwalten Sie Ihre Ressourcenhierarchie
-      url: task-iam-manage-resources.html
+    - title: Verwenden Sie Rollen, um den Zugriff der Mitglieder auf Ressourcen zu
+        steuern
+      url: task-iam-manage-roles.html
   - title: Anschlüsse
     links:
     - title: Erfahren Sie mehr über Steckverbinder

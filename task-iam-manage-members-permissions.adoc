@@ -4,7 +4,7 @@ permalink: task-iam-manage-members-permissions.html
 keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
 summary: Verwalten Sie die Mitglieder Ihres Unternehmens, um Berechtigungen für verschiedene Ebenen der Ressourcenhierarchie Ihres Unternehmens bereitzustellen. 
 ---
-= Fügen Sie BlueXP  IAM-Mitglieder hinzu und verwalten Sie ihre Berechtigungen
+= Fügen Sie BlueXP -Mitglieder hinzu und verwalten Sie ihre Berechtigungen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -75,7 +75,7 @@ Beachten Sie Folgendes:
 +
 *** Wenn Sie einen Ordner oder ein Projekt ausgewählt haben, können Sie aus jeder anderen Rolle als *Organisationsadministrator* wählen.
 +
-link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte IAM-Rollen"].
+link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen"].
 
 
 
@@ -132,18 +132,9 @@ Das Clientgeheimnis ist nur einmal sichtbar und wird von BlueXP nirgendwo gespei
 
 === Anzeigen von Organisationsmitgliedern
 
-Sie können eine Liste aller Mitglieder in Ihrer BlueXP -Organisation anzeigen. Um zu verstehen, welche Ressourcen und Berechtigungen einem Mitglied zur Verfügung stehen, können Sie die dem Mitglied zugewiesenen Rollen auf verschiedenen Ebenen der Ressourcenhierarchie Ihres Unternehmens anzeigen.
+Sie können eine Liste aller Mitglieder in Ihrer BlueXP -Organisation anzeigen. Um zu verstehen, welche Ressourcen und Berechtigungen einem Mitglied zur Verfügung stehen, können Sie die dem Mitglied zugewiesenen Rollen auf verschiedenen Ebenen der Ressourcenhierarchie Ihres Unternehmens anzeigen. link:task-iam-manage-roles.html["Erfahren Sie, wie Sie mit Rollen den Zugriff auf BlueXP -Ressourcen steuern."^]
 
-Hier ist ein Beispiel für ein Mitglied, dem die Rolle „_Folder“ oder „Project admin“ für einen Ordner zugewiesen ist, der Berechtigungen für die drei Projekte im Ordner bereitstellt.
-
-image:screenshot-iam-member-details.png["Ein Screenshot der Detailseite für ein Mitglied, das Berechtigungen für ein Projekt und einen Ordner hat."]
-
-Hier ist ein weiteres Beispiel, das ein Mitglied zeigt, das über die Rolle „Organisationsadministrator“ verfügt, die dem Benutzer Zugriff auf alle Ressourcen im Unternehmen gewährt.
-
-image:screenshot-iam-member-details-org-admin.png["Ein Screenshot der Detailseite für ein Mitglied, das über Administratorberechtigungen für die Organisation verfügt."]
-
-.Über diese Aufgabe
-Die Seite *Mitglieder* zeigt Details über zwei Arten von Mitgliedern an: Benutzerkonten und Dienstkonten.
+TSie können sowohl Benutzerkonten als auch Dienstkonten auf der Seite *Mitglieder* anzeigen.
 
 .Schritte
 . Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
@@ -189,75 +180,6 @@ Das Clientgeheimnis ist nur einmal sichtbar und wird von BlueXP nirgendwo gespei
 
 .Verwandte Informationen
 link:task-iam-manage-folders-projects.html#view-associated-resources-members["Alle Mitglieder anzeigen, die einem bestimmten Ordner oder Projekt zugeordnet sind"].
-
-
-
-== Mitglieds-Rollen verwalten
-
-Organisationsmitglieder können Rollen auf jeder Ebene und mehr als einer Ebene Ihrer Ressourcenhierarchie zugewiesen werden.Sie können Mitgliedrollen zuweisen, die für ihre Verantwortlichkeiten in Ihrer BlueXP -Organisation relevant sind.
-
-Sie können die Zuweisung einer Rolle zu einem Mitglied aufheben, eine neue Rolle hinzufügen oder beides. Eine Rolle definiert die Berechtigungen, die einem Mitglied auf Unternehmens-, Ordner- oder Projektebene zugewiesen werden. Sie können Mitglieds-Rollen zuweisen, die für ihre Verantwortlichkeiten in Ihrer BlueXP -Organisation relevant sind.
-
-Jedem Organisationsmitglied kann eine Rolle auf verschiedenen Ebenen der Organisationshierarchie zugewiesen werden. Es kann die gleiche Rolle oder eine andere Rolle sein. Sie können beispielsweise eine Mitgliedrolle A für Projekt 1 und Rolle B für Projekt 2 zuweisen.
-
-
-TIP: Einem Mitglied, dem die Rolle „Organisationsadministrator“ zugewiesen ist, können keine zusätzlichen Rollen zugewiesen werden. Sie verfügen bereits über Berechtigungen im gesamten Unternehmen.
-
-
-
-=== Rollen anzeigen, die einem Mitglied zugewiesen sind
-
-Sie können ein Mitglied anzeigen, um zu überprüfen, welchen Rollen sie derzeit zugewiesen sind.
-
-. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
-. Erweitern Sie in der Tabelle die entsprechende Zeile für die Organisation, den Ordner oder das Projekt, in dem Sie die zugewiesene Rolle des Mitglieds anzeigen möchten, und wählen Sie in der Spalte *Rolle* *Ansicht* aus.
-
-
-
-
-=== Weisen Sie eine Rolle zu
-
-Geben Sie einem Mitglied zusätzliche Berechtigungen in Ihrem Unternehmen an, indem Sie Rollen hinzufügen, die auf die Unternehmens-, Ordner- oder Projektebene zutreffen.
-
-.Schritte
-. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Rolle hinzufügen* aus.
-. Führen Sie zum Hinzufügen einer Rolle die folgenden Schritte im Dialogfeld aus:
-+
-** *Wählen Sie eine Organisation, einen Ordner oder ein Projekt*: Wählen Sie die Ebene Ihrer Ressourcenhierarchie aus, für die das Mitglied Berechtigungen haben soll.
-+
-Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
-
-** *Wählen Sie eine Kategorie*: BlueXP  unterteilt Rollen in zwei Kategorien: Plattform und Datendienst. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über IAM-Rollen"^].
-** Wählen Sie eine *Rolle*: Wählen Sie eine Rolle aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
-+
-*** Wenn Sie die Organisation ausgewählt haben, können Sie aus jeder anderen Rolle als *Ordner oder Projektadministrator* wählen.
-*** Wenn Sie einen Ordner oder ein Projekt ausgewählt haben, können Sie aus jeder anderen Rolle als *Organisationsadministrator* wählen.
-+
-link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte IAM-Rollen"].
-
-
-
-** *Rolle hinzufügen*: Wenn Sie Zugriff auf zusätzliche Ordner oder Projekte innerhalb Ihrer Organisation gewähren möchten, wählen Sie *Rolle hinzufügen*, geben Sie einen anderen Ordner oder ein anderes Projekt oder eine Rollenkategorie an und wählen Sie dann eine Rollenkategorie und eine entsprechende Rolle aus.
-
-
-. Wählen Sie *Neue Rollen hinzufügen*.
-
-
-
-
-=== Ändern Sie die zugewiesene Rolle eines Mitglieds
-
-Sie können die zugewiesene Rolle für einen auf Unternehmens-, Ordner- oder Projektebene ändern. Mitglieder können verschiedene Rollen auf verschiedenen Ebenen Ihres Unternehmens haben.
-
-.Schritte
-. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
-. Erweitern Sie in der Tabelle die entsprechende Zeile für die Organisation, den Ordner oder das Projekt, in dem Sie die zugewiesene Rolle des Mitglieds ändern möchten, und wählen Sie in der Spalte *Rolle* *Ansicht* aus, um die diesem Mitglied zugewiesenen Rollen anzuzeigen.
-. Um die Rolle eines Mitglieds zu ändern, wählen Sie neben der Rolle, die Sie ändern möchten, *Ändern*. Sie können diese Rolle nur in eine Rolle innerhalb derselben Rollenkategorie ändern. Sie können beispielsweise von einer Datenservice-Rolle zu einer anderen wechseln. Sie werden aufgefordert, die Änderung zu bestätigen.
-+
-.. Um die Zuweisung der Rolle eines Mitglieds aufzuheben, wählen Sie  neben der Rolle aus, um die Zuweisung des Mitglieds image:icon-delete.png["Ein Symbol, das einem Papierkorb ähnelt"]zur entsprechenden Rolle aufzuheben. Sie werden aufgefordert, die Entfernung zu bestätigen.
-
-
-
 
 
 

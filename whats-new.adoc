@@ -1840,15 +1840,11 @@ link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["Erfa
 
 Private Vorschauen in Ihrem Konto können Sie jetzt auf neue NetApp Cloud-Services zugreifen, sobald diese in Cloud Manager als Vorschau verfügbar gemacht werden.
 
-link:task-managing-netapp-accounts.html#allow-private-previews["Weitere Informationen zu dieser Option"].
-
 
 
 === Drittanbieter-Services
 
 Sie haben auch die Möglichkeit, dass Drittanbieterservices in Ihrem Konto Zugriff auf in Cloud Manager verfügbare Drittanbieter-Services erhalten.
-
-link:task-managing-netapp-accounts.html#allow-third-party-services["Weitere Informationen zu dieser Option"].
 
 
 
