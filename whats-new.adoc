@@ -82,6 +82,12 @@ Weitere Informationen zum privaten Modus, einschließlich der Aktualisierung, fi
 
 Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
 
+* Die Verwaltung von Cloud Volumes ONTAP-Systemen wird jetzt von Connectors unterstützt, auf denen SELinux auf dem Betriebssystem aktiviert ist.
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Erfahren Sie mehr über SELinux"^]
+
+
+
 Derzeit ist die Version 3.9.50 für den Standardmodus und den eingeschränkten Modus verfügbar.
 
 
@@ -125,6 +131,31 @@ Diese Funktion ist ab Connector Version 3.9.48 verfügbar.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie die automatische Aktualisierung für den Connector deaktivieren."^]
 
+
+
+== 18 Februar 2025
+
+
+
+=== Freigabe des privaten Modus (3.9.48)
+
+Eine neue Version für den privaten Modus steht jetzt zum Herunterladen von zur Verfügung https://mysupport.netapp.com/site/downloads["NetApp Support Website"^]
+
+Version 3.9.48 enthält Updates zu den folgenden BlueXP  Komponenten und Services.
+
+[cols="3*"]
+|===
+| Komponente oder Dienst | In dieser Version enthaltene Version | Änderungen seit der letzten privaten Modus-Freigabe 
+
+
+| Stecker | 3.9.48 | Lesen Sie die https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["Was ist neu in BlueXP  Connector Seite"], und lesen Sie die Änderungen für Version 3.9.48. 
+
+
+| Backup und Recovery | 21 Februar 2025 | Besuchen Sie die https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Was ist neu auf der Backup- und Recovery-Seite von BlueXP"^] und beziehen Sie sich auf die Änderungen, die in der Version Februar 2025 enthalten sind. 
+
+
+| Klassifizierung | 22. Januar 2025 (Version 1.39) | Gehen Sie auf https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Was ist neu in der BlueXP  Klassifizierungsseite"^] und beziehen Sie sich auf die Änderungen, die in Version 1.39 enthalten sind. 
+|===
 
 
 == 10 Februar 2025
