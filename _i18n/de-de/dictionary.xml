@@ -2173,7 +2173,6 @@ Beachten Sie, dass die Seite zwischen dem Testen der Verbindung und dem Aktivier
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">Nachdem Sie Ihre Azure Zugangsdaten zu BlueXP hinzugefügt haben, können Sie diesen Anmeldedaten ein Azure Marketplace Abonnement zuordnen. Mit dem Abonnement können Sie ein Pay-as-you-go Cloud Volumes ONTAP System erstellen und andere BlueXP Services nutzen.</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">Es gibt zwei Szenarien, in denen Sie ein Azure Marketplace-Abonnement verknüpfen können, nachdem Sie BlueXP bereits die Zugangsdaten hinzugefügt haben:</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">Sie haben ein Abonnement nicht zugeordnet, wenn Sie die Anmeldeinformationen zu BlueXP hinzugefügt haben.</block>
-  <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Melden Sie sich bei Ihrem Azure-Konto an, wenn Sie dazu aufgefordert werden.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Sie werden auf die BlueXP-Website umgeleitet.</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">Auf der Seite *Subscription Assignment*:</block>
@@ -5013,7 +5012,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">Datenservice-Rollen</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">Nachfolgend finden Sie eine Liste der Rollen in der Datenservicekategorie. Jede Rolle gewährt bestimmte Berechtigungen innerhalb ihres festgelegten Umfangs. Benutzer, die nicht über die erforderliche Rolle für den Datenservice oder eine Plattformfunktion verfügen, können nicht auf den Datenservice zugreifen.</block>
   <block id="490e13bea5876f4583d326593619ee16" category="list-text">Die Verwaltung von Cloud Volumes ONTAP-Systemen wird jetzt von Connectors unterstützt, auf denen SELinux auf dem Betriebssystem aktiviert ist.</block>
-  <block id="a34db0f5fbf1e24b51b5a7a24f301c5e" category="doc">Verwaltung der zugehörigen BlueXP  für NSS-Anmeldeinformationen</block>
   <block id="c60157a3e7becc31536d0dc036b53af0" category="admonition">Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie über eine _BlueXP  Organisation_, die Sie mit BlueXP  Identitäts- und Zugriffsmanagement (IAM) verwalten. Aber wenn Sie BlueXP  im privaten Modus verwenden, dann haben Sie ein _BlueXP -Konto_.</block>
   <block id="6dbd01b1c2b8dd3f051f0a9d6b7b2bd3" category="paragraph">Sie können Ihre Konten für die NetApp Support-Website zur Verwendung mit BlueXP  über das Support Dashboard in BlueXP  hinzufügen und managen.</block>
   <block id="cd35825320d9b999711fdb0b0b96b105" category="paragraph">Wenn Sie Ihr NSS-Konto hinzugefügt haben, kann BlueXP  diese Informationen für Bereiche wie Lizenzdownloads, Überprüfung von Software-Upgrades und zukünftige Support-Registrierungen verwenden.</block>
@@ -5023,7 +5021,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="256ed78b4e0484125eb0f0e66fdb7156" category="inline-link-macro">Erfahren Sie mehr über das Benachrichtigungscenter</block>
   <block id="4689ffd51b2968888f8c155b13dfcaf5" category="paragraph">Aus Sicherheitsgründen müssen Sie Ihre NSS-Anmeldeinformationen alle 90 Tage aktualisieren. Sie werden im BlueXP -Benachrichtigungscenter benachrichtigt, wenn Ihre NSS-Anmeldeinformationen abgelaufen sind. <block ref="7547de016d191efcd551f32d625b2bc1" category="inline-link-macro-rx"></block>.</block>
   <block id="a68bd898b36ffcd9b8247470114f5f4a" category="paragraph">Abgelaufene Anmeldeinformationen können Folgendes stören, sind aber nicht beschränkt auf:</block>
-  <block id="41a210fc1fd64ddb44bf15d9fe670679" category="list-text">Lizenz-Updates in Digital Wallet, d. h. Sie können nicht die neu erworbene Kapazität nutzen.</block>
   <block id="9866777d09d57d152447888262701c25" category="list-text">Möglichkeit, Support-Fälle einzureichen und zu verfolgen</block>
   <block id="6179959f116f310a8ad1ec9ecbaf81f6" category="paragraph">Darüber hinaus können Sie die NSS-Anmeldeinformationen, die Ihrer Organisation zugeordnet sind, aktualisieren, wenn Sie das NSS-Konto Ihrer BlueXP -Organisation ändern möchten. Wenn beispielsweise die Person, die mit Ihrem NSS-Konto verknüpft ist, Ihr Unternehmen verlassen hat.</block>
   <block id="021c1a8115e127518ed9afb84086b193" category="paragraph">NetApp verwendet Microsoft Entra ID als Identitätsanbieter für Authentifizierungsservices im Zusammenhang mit Support und Lizenzierung.</block>
@@ -5033,4 +5030,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">Wählen Sie für das NSS-Konto, das Sie aktualisieren möchten<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, und wählen Sie dann *E-Mail-Adresse anzeigen* aus. Sie können die Schaltfläche Kopieren verwenden, um die E-Mail-Adresse zu kopieren.</block>
   <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">Sie können kein Konto löschen, das derzeit mit einer Cloud Volumes ONTAP-Arbeitsumgebung verknüpft ist. Sie müssen zuerst zu <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 Februar 2025</block>
+  <block id="186343db38833a48df757e694e69337d" category="doc">NSS-Anmeldeinformationen verwalten, die mit BlueXP  verknüpft sind</block>
+  <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Lizenz-Updates in Digital Wallet, d. h. Sie können nicht die neu erworbene Kapazität nutzen.</block>
 </blocks>
