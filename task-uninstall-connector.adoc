@@ -35,9 +35,6 @@ _Silent_ f체hrt das Skript aus, ohne dass Sie zur Best채tigung aufgefordert werd
 
 
 
-.Ergebnis
-Die Connector-Software wird jetzt vom Linux-Host deinstalliert.
-
 
 
 == Deinstallieren Sie den Connector, wenn Sie den privaten Modus verwenden
@@ -48,13 +45,31 @@ Wenn Sie BlueXP im privaten Modus verwenden (d. h. der Connector-Host verf체gt �
 . Stellen Sie eine Verbindung zur Linux-VM f체r den Connector her.
 . F체hren Sie auf dem Linux-Host die folgenden Befehle aus:
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. Entfernen Sie vom Linux-Host die alten, jetzt nicht verwendeten Container-Image-Dateien. Dadurch wird sichergestellt, dass gen체gend Speicherplatz im Verzeichnis /var vorhanden ist, um es erneut zu installieren.
++
+[role="tabbed-block"]
+====
+.Podman
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
-
-
-.Ergebnis
-Die Connector-Software wird jetzt vom Linux-Host deinstalliert.
 
 
 
@@ -77,6 +92,3 @@ image:screenshot_connector_remove.gif["Ein Screenshot des Connectors-Widgets, in
 
 . Geben Sie den Namen des zu best채tigten Connectors ein, und w채hlen Sie dann *Entfernen*.
 
-
-.Ergebnis
-BlueXP entfernt den Connector aus seinen Datens채tzen.

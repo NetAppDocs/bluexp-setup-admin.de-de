@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung. Sie sollten beispielsweise Sicherheitsupdates auf dem Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.
+Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung (des Kunden). Beispielsweise sollten Sie (Kunde) Sicherheitsupdates für das Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.
 
 Beachten Sie, dass Sie bei der Anwendung kleinerer Sicherheitsupdates keine Dienste auf dem Connector-Host anhalten müssen.
 

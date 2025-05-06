@@ -1714,7 +1714,6 @@ Oder</block>
   <block id="e8e3de05575910fc8863b3e5715b75a4" category="inline-image-macro">Ein Screenshot des Connectors-Widgets, in dem Sie einen inaktiven Connector entfernen können.</block>
   <block id="2edb4e92b7a9da8aeba40d13e6c35982" category="paragraph"><block ref="2edb4e92b7a9da8aeba40d13e6c35982" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">Geben Sie den Namen des zu bestätigten Connectors ein, und wählen Sie dann *Entfernen*.</block>
-  <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP entfernt den Connector aus seinen Datensätzen.</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">Führen Sie auf dem Linux-Host das Deinstallationsskript aus:</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_Silent_ führt das Skript aus, ohne dass Sie zur Bestätigung aufgefordert werden.</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Führen Sie auf dem Linux-Host die folgenden Befehle aus:</block>
@@ -3529,7 +3528,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="716e455593e3f61d09e3bf6cbb30d375" category="doc">Deinstallieren Sie den Connector, und entfernen Sie ihn</block>
   <block id="0ca48b615c940d64cdde98b76cdee8b3" category="section-title">Deinstallieren Sie den Connector, wenn Sie den Standard- oder eingeschränkten Modus verwenden</block>
   <block id="da529abe542a53761e1008dc23815cf7" category="paragraph">Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden (d. h. der Connector-Host verfügt über ausgehende Verbindungen), sollten Sie die nachstehenden Schritte ausführen, um die Connector-Software zu deinstallieren.</block>
-  <block id="0f915c6b577573f25e2e8bfac8c2aacb" category="paragraph">Die Connector-Software wird jetzt vom Linux-Host deinstalliert.</block>
   <block id="32b4ba2ff55d15357ed5b70aeb566059" category="section-title">Deinstallieren Sie den Connector, wenn Sie den privaten Modus verwenden</block>
   <block id="34a2bd34ae23cc65060f62957132c0eb" category="paragraph">Wenn Sie BlueXP im privaten Modus verwenden (d. h. der Connector-Host verfügt über _no_ Outbound-Verbindungen), sollten Sie die nachstehenden Schritte ausführen, um die Connector-Software zu deinstallieren.</block>
   <block id="a1fd436d8cb76b77def4aeb2d8bba352" category="doc">Wartung der Connector VM und des Betriebssystems</block>
@@ -3674,7 +3672,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">Beachten Sie, dass es sich bei dem Standardpasswort um eine Einmalkennung zur registrierten E-Mail-Adresse handelt. Bei jedem Anmeldeversuch wird eine neue OTP generiert.</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">Legen Sie über die Cloud Volumes ONTAP-CLI die Berechtigungsebene auf erweitert fest:</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">Führen Sie den folgenden Befehl aus, um das aktuelle Backup-Ziel anzuzeigen:</block>
-  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="d44b908365d28414a72f5b042c756f89" category="cell">Verwenden Sie die Skalierungseinstellungen von Virtual Machines im flexiblen Orchestrierungsmodus, um bestimmte Zonen für Cloud Volumes ONTAP festzulegen</block>
   <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft: Compute/virtualMachineScaleSets/Write</block>
   <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft: Compute/virtualMachineScaleSets/Lesen</block>
@@ -5032,4 +5029,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 Februar 2025</block>
   <block id="186343db38833a48df757e694e69337d" category="doc">NSS-Anmeldeinformationen verwalten, die mit BlueXP  verknüpft sind</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Lizenz-Updates in Digital Wallet, d. h. Sie können nicht die neu erworbene Kapazität nutzen.</block>
+  <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung (des Kunden). Beispielsweise sollten Sie (Kunde) Sicherheitsupdates für das Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.</block>
+  <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">Entfernen Sie vom Linux-Host die alten, jetzt nicht verwendeten Container-Image-Dateien. Dadurch wird sichergestellt, dass genügend Speicherplatz im Verzeichnis /var vorhanden ist, um es erneut zu installieren.</block>
 </blocks>
