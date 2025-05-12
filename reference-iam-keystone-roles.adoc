@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-keystone-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Administratorrollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können. 
+---
+= Keystone Zugriffsrollen für BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Keystone Rollen bieten Zugriff auf die Keystone Dashboards und ermöglichen Benutzern das Anzeigen und Managen ihres Keystone Abonnements. Es gibt zwei Keystone Rollen: Keystone Administrator und Keystone Viewer. Der Hauptunterschied zwischen den beiden Rollen ist die Aktionen, die sie in Keystone ergreifen können. Die Keystone-Administratorrolle ist die einzige Rolle, die erlaubt ist, Serviceanfragen zu erstellen oder Abonnements zu ändern.
+
+.Beispiel für Keystone-Rollen in BlueXP 
+Im Rahmen eines Keystone Abonnements hat XYZ Corporation von vier Storage Engineers aus unterschiedlichen Abteilungen Informationen zu ihrem Keystone Abonnement einzusehen. Obwohl alle diese Benutzer das Keystone Abonnement überwachen müssen, darf nur der Teamleiter Serviceanfragen stellen. Drei der Teammitglieder erhalten die Rolle *Keystone Viewer*, während der Teamleiter die Rolle *Keystone Admin* erhält, so dass ein Kontrollpunkt für Serviceanfragen für das Unternehmen besteht.
+
+Die folgende Tabelle zeigt die Aktionen, die die einzelnen Keystone Rollen durchführen können.
+
+[cols="40,20a,20a"]
+|===
+| Funktion und Aktion | Keystone Admin | Keystone Viewer 
+
+
+| Zeigen Sie die folgenden Registerkarten an: Abonnement, Assets, Monitor und Administration  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Keystone Abonnementseite*: 
+
+
+| Abonnements anzeigen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Abonnements ändern oder erneuern  a| 
+Ja.
+ a| 
+Nein
+
+
+
+3+| *Seite „Keystone Assets“*: 
+
+
+| Assets anzeigen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Verwalten von Assets  a| 
+Ja.
+ a| 
+Nein
+
+
+
+3+| *Keystone-Alerts-Seite*: 
+
+
+| Anzeigen von Meldungen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Verwalten von Meldungen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Erstellen Sie Warnmeldungen für sich selbst.  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Digital Wallet*: 
+
+
+| Digital Wallet anzeigen können  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Keystone-Berichtsseite*: 
+
+
+| Berichte herunterladen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Verwalten von Berichten  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Erstellen Sie Berichte für sich selbst.  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Serviceanfragen*: 
+
+
+| Erstellen Sie Serviceanfragen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Service-Requests anzeigen, die von einem beliebigen Benutzer innerhalb der Organisation erstellt wurden  a| 
+Ja.
+ a| 
+Ja.
+
+|===

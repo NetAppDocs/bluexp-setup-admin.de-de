@@ -407,7 +407,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Arbeitslast Fabrik | Nein | Nein 
 
 
-.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Nein | Nein 
+.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Ja. | Nein 
 
 
 | BlueXP Accounts | Ja. | Ja. 

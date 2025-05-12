@@ -1,0 +1,186 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-ransomware-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Administratorrollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können. 
+---
+= Zugriffsrollen für Ransomware-Schutz für BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ransomware-Rollen wurden für den Zugriff auf den Ransomware-Datensicherungsservice entwickelt. Benutzern kann entweder eine Administratorrolle zugewiesen werden, mit der sie Maßnahmen zum Schutz vor Ransomware ergreifen können, oder eine Zuschauerrolle, wenn sie nur Überwachungsaufgaben übernehmen. Die beiden Rollen sind Ransomware Protection Admin und Ransomware Protection Viewer. Der Hauptunterschied zwischen den beiden Rollen sind die Aktionen, die sie zum Schutz vor Ransomware ergreifen können.
+
+Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die jede BlueXP  Ransomware-Schutzrolle ausführen kann.
+
+[cols="40,20a,20a"]
+|===
+| Funktion und Aktion | Administrator für Ransomware-Schutz | Viewer für Ransomware-Schutz 
+
+
+| Dashboard und alle Registerkarten anzeigen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Kostenlos testen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Beginnen Sie mit der Erkennung von Workloads  a| 
+Ja.
+ a| 
+Nein
+
+
+
+3+| *Auf der Registerkarte Schutz*: 
+
+
+| Richtlinien hinzufügen, ändern oder löschen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Schutz von Workloads  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Sensible Daten erkennen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Bearbeiten Sie den Workload-Schutz  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Workload-Details anzeigen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Download von Daten  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Auf der Registerkarte Warnungen*: 
+
+
+| Anzeigen von Alarmdetails  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Bearbeiten Sie den Ereignisstatus  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Anzeigen von Vorfalldetails  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Vollständige Liste der betroffenen Dateien abrufen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Warnmeldungen herunterladen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Auf der Registerkarte Wiederherstellen*: 
+
+
+| Betroffene Dateien herunterladen  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Restore-Workload  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Wiederherstellungsdaten herunterladen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Berichte herunterladen  a| 
+Ja.
+ a| 
+Ja.
+
+
+
+3+| *Auf der Registerkarte Einstellungen*: 
+
+
+| Backup-Ziele hinzufügen oder ändern  a| 
+Ja.
+ a| 
+Nein
+
+
+
+| SIEM-Ziele hinzufügen oder ändern  a| 
+Ja.
+ a| 
+Nein
+
+
+
+3+| *Auf der Registerkarte Berichte*: 
+
+
+| Berichte herunterladen  a| 
+Ja.
+ a| 
+Ja.
+
+|===

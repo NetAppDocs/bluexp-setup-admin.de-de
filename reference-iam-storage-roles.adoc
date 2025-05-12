@@ -1,0 +1,310 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-storage-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Administratorrollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können. 
+---
+= Storage-Zugriffsrollen für BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Benutzern folgende Rollen zuweisen, um ihnen Zugriff auf die Storage-Managementfunktionen in BlueXP  zu ermöglichen, die mit unterstützten Speicherressourcen verknüpft sind. Benutzern kann entweder eine Administratorrolle zugewiesen werden, mit der sie Aktionen im Storage-Management ausführen können, oder eine Zuschauerrolle, wenn sie lediglich Überwachungsaufgaben übernehmen.
+
+Storage-Rollen können Benutzern für die folgenden Storage-Ressourcen und -Funktionen zugewiesen werden:
+
+Storage-Ressourcen:
+
+* On-Premises ONTAP Cluster
+* StorageGRID
+* E-Series
+
+
+BlueXP  Services und Funktionen:
+
+* Digitaler Berater
+* Software-Updates
+* Operative Ausfallsicherheit
+* Wirtschaftliche Effizienz
+* Nachhaltigkeit
+
+
+.Beispiel für Storage-Rollen in BlueXP 
+Bei der XYZ Corporation, einem multinationalen Unternehmen, gibt es ein großes Team aus Storage Engineers und Storage-Administratoren. Sie möchten dem Team das Management der Storage Assets für seine jeweiligen Regionen ermöglichen, aber den Zugriff auf wichtige BlueXP -Administrationsaufgaben wie Benutzermanagement, Connector-Erstellung und Kostenmanagementtools wie Digital Wallet einschränken.
+
+In einem Team von 12 Benutzern wird die Rolle *Storage Viewer* zugewiesen, mit der sie die Speicherressourcen für die BlueXP -Projekte überwachen können, denen sie zugewiesen sind. Die restlichen neun erhalten die Rolle *Speicheradministrator*, die die Möglichkeit beinhaltet, Softwareupdates zu verwalten, über BlueXP  auf ONTAP-System-Manager zuzugreifen sowie Speicherressourcen zu erkennen (funktionierende Umgebungen hinzufügen). Eine Person im Team erhält die Rolle *Systemgesundheitsspezialist*, damit sie den Zustand der Speicherressourcen in ihrer Region verwalten können, aber keine Arbeitsumgebungen ändern oder löschen können. Diese Person kann auch Software-Updates für die Speicherressourcen für Projekte durchführen, denen sie zugewiesen sind.
+
+Die Organisation hat zwei zusätzliche Benutzer mit der Rolle *Organisationsadministrator*, die alle Aspekte von BlueXP  verwalten können, einschließlich Benutzerverwaltung, Connector-Erstellung und Kostenmanagement-Tools wie Digital Wallet, sowie mehrere Benutzer mit der Rolle *Ordner oder Projektadministrator*, die BlueXP -Verwaltungsaufgaben für die Ordner und Projekte, denen sie zugewiesen sind, durchführen können.
+
+Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die die einzelnen BlueXP  Storage-Rollen durchführen können.
+
+[cols="40,20a,20a,20a"]
+|===
+| Funktion und Aktion | Storage-Admin | Spezialist für den Systemzustand | Storage-Prüfer 
+
+
+4+| * Leinwand*: 
+
+
+| Neue Ressourcen entdecken (neue Arbeitsumgebung schaffen)  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Erkannte Ressourcen anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Arbeitsumgebungen löschen  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| Ändern von Arbeitsumgebungen  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| *Connector Erstellen*  a| 
+Nein
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+4+| *Digitale Beraterin* 
+
+
+| Alle Seiten und Funktionen anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+4+| *Digital Wallet* 
+
+
+| Alle Seiten und Funktionen anzeigen  a| 
+Nein
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+4+| *Software-Updates* 
+
+
+| Landing Page und Empfehlungen anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Besprechen Sie mögliche Versionsempfehlungen und die wichtigsten Vorteile  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Anzeigen von Aktualisierungsdetails für ein Cluster  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Führen Sie Prüfungen vor dem Update durch, und laden Sie den Upgrade-Plan herunter  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Installieren Sie Softwareupdates  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+4+| *Ausfallsicherheit im Betrieb* 
+
+
+| Überprüfen Sie Sicherheitsrisiken  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Ansible Playbooks herunterladen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Automatische Behebung von Fehlern  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+4+| *Wirtschaftliche Effizienz* 
+
+
+| Überprüfen Sie den Kapazitätsplanungsstatus  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Nächste Aktion auswählen (Best Practice, Stufe)  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| Tiering selten genutzter Daten in den Cloud-Storage und Freigabe des Storage –  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Erinnerungen einrichten  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+4+| *Nachhaltigkeit* 
+
+
+| Dashboard und Empfehlungen anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Berichtdaten herunterladen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Bearbeiten Sie den Prozentsatz der CO2-Minderung  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Empfehlungen festlegen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Empfehlungen zurückstellen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+4+| *Zugang zum System Manager* 
+
+
+| Kann Anmeldeinformationen eingeben  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+4+| *Anmeldeinformationen* 
+
+
+| Benutzeranmeldeinformationen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+|===

@@ -1658,7 +1658,6 @@ Oder</block>
   <block id="738140038c4506b7e29508b58d682758" category="paragraph"><block ref="738140038c4506b7e29508b58d682758" category="inline-link-rx"></block></block>
   <block id="28d40d49edc5d8557dfa8624f4921f55" category="section-title">Betriebssystem- und VM-Wartung</block>
   <block id="19584c42f9ee050980069e98aba18776" category="paragraph">Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung. Sie sollten beispielsweise Sicherheitsupdates auf dem Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.</block>
-  <block id="58eaadf4bb73c6121323ec8ad981c1bf" category="paragraph">Wenn Sie die Connector VM anhalten und dann starten müssen, sollten Sie dies über die Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.</block>
   <block id="56f7fa1ed2a5960645c3e1c3f3521ac4" category="inline-link-macro">Beachten Sie, dass der Connector jederzeit betriebsbereit sein muss</block>
   <block id="50f74838f982f7a3b705af170ddd7da4" category="paragraph"><block ref="c94a7910d5b535a9c639377af3b5e75b" category="inline-link-macro-rx"></block>.</block>
   <block id="f86faf1862caeed3f6dccfce3a669edf" category="section-title">Zwischen den Anschlüssen wechseln</block>
@@ -3486,7 +3485,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="99ca40e706695ba7607287669fab39f3" category="cell">Überprüfen Sie, ob die Verfügbarkeitszone eine AWS Local Zone ist, und überprüfen Sie, ob alle Implementierungsparameter kompatibel sind</block>
   <block id="0683995d371439e19d907680da921ba9" category="section-title">9 Mai 2024</block>
   <block id="376a26b461e6c64a1c38b284dbc9703f" category="paragraph">Die folgenden Berechtigungen sind jetzt für Cloud Volumes ONTAP erforderlich:</block>
-  <block id="caf547270bba046bebc03d7ccf4b0203" category="paragraph">Beachten Sie, dass Sie bei der Anwendung kleinerer Sicherheitsupdates keine Dienste auf dem Connector-Host anhalten müssen.</block>
   <block id="ebb952d62c1eec36921c93691e959c82" category="paragraph"><block ref="ebb952d62c1eec36921c93691e959c82" category="inline-link-macro-rx"></block></block>
   <block id="25ed61080ee73d701a5ba6feef931050" category="paragraph"><block ref="25ed61080ee73d701a5ba6feef931050" category="inline-link-macro-rx"></block></block>
   <block id="1b9eb4a1347f52519d9e7d0e26300a53" category="paragraph"><block ref="01cf67ff20127008355664826b726767" category="inline-link-macro-rx"></block>.</block>
@@ -3951,19 +3949,13 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24.04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können.</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">Organisationsadministrator</block>
-  <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in BlueXP  ausführen:</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">Verwalten Sie alle Arbeitsumgebungen in den Projekten und Ordnern, für die sie Berechtigungen haben</block>
   <block id="b510afc7b0f705daf7ba3b0e6a9509ab" category="list-text">Alle BlueXP -Dienste verwenden</block>
   <block id="379e8cc7b99cd4d7696788fde49a89de" category="list-text">Verwalten Sie Anmeldeinformationen über Einstellungen &gt; Anmeldeinformationen</block>
   <block id="5c2549b200adb54fcf4ab1fa173b79b7" category="list-text">Sehen Sie sich den BlueXP -Zeitplan an</block>
   <block id="ea6f3818343083288cee520c382ca65a" category="list-text">Registrieren Sie BlueXP , um Support zu erhalten, und senden Sie Cases ein</block>
   <block id="36910b765d93c29f4611f725c05faabe" category="section-title">SnapCenter-Admin</block>
-  <block id="9475c3d2084f0988bba4e27b2659a267" category="list-text">Bietet die Möglichkeit, Snapshots aus lokalen ONTAP Clustern mithilfe von BlueXP  Backup und Recovery für Applikationen zu sichern.</block>
   <block id="b839a58c0750f04dc83675a2a8c1ba61" category="list-text">Führen Sie alle Aktionen über Backup und Recovery &gt; Anwendungen aus</block>
-  <block id="1393a4279651a3334e20f39925a139f5" category="section-title">Klassifizierungs-Viewer</block>
-  <block id="4a7c2bc5a034a095b9cd966aff4637c5" category="list-text">Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen.</block>
-  <block id="84e4a7656b5466806bf9fbeda2eedd15" category="list-text">Zeigen Sie Compliance-Informationen an und erstellen Sie Berichte für Ressourcen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren.</block>
-  <block id="5f8c43dca47697fafd9a89eae3ea6f82" category="paragraph">Einem Mitglied, das diese Rolle hat, stehen keine anderen Aktionen zur Verfügung.</block>
   <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
   <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">Bereiten Sie das Netzwerk für die BlueXP -Konsole vor</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">Verwandte Informationen</block>
@@ -4891,13 +4883,8 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="31e872437335d3d81483e87525b418b2" category="paragraph">Eine _Organisation_ ist die oberste Ebene des IAM-Systems von BlueXP  und repräsentiert in der Regel Ihr Unternehmen. Ihr Unternehmen besteht aus Ordnern, Projekten, Mitgliedern, Rollen und Ressourcen. Konnektoren sind bestimmten Projekten in der Organisation zugeordnet.</block>
   <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">Wenn Sie sich bei BlueXP  anmelden, werden Sie aufgefordert, ein neues Unternehmen zu erstellen.</block>
   <block id="229579d2bfa52f21a46468d1600ae5db" category="paragraph">Sie müssen keine Ordner erstellen. Sie sind optional.</block>
-  <block id="778cae7482baa87153f906bf3473adc3" category="section-title">Vordefinierte Rollen</block>
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  unterstützt mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können.</block>
-  <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">Erfahren Sie mehr über vordefinierte IAM-Rollen</block>
-  <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Plattformrollen</block>
-  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">Ermöglicht einem Benutzer uneingeschränkten Zugriff auf alle Projekte und Ordner innerhalb einer Organisation, Hinzufügen von Mitgliedern zu einem beliebigen Projekt oder Ordner sowie Durchführung jeder BlueXP -Aufgabe und Nutzung aller Datendienste.</block>
-  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">Vergleichstabelle für Plattformrollen</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Beispiel für Organisationsrollen in BlueXP  für eine große multinationale Organisation</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Wählen Sie bei Bedarf *Mitglied hinzufügen*, um zusätzliche Organisationsmitglieder anzugeben, die Zugriff auf den Ordner oder das Projekt haben sollen, und wählen Sie dann eine Rolle aus. Eine Rolle definiert die Berechtigungen, die Mitglieder für den Ordner oder das Projekt haben.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Verwalten Sie Berechtigungen über die Seite Mitglieder</block>
@@ -4916,9 +4903,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
   <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">Anwendungsrollen</block>
   <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Keystone Rollen</block>
-  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">Mithilfe der folgenden Rollen können Sie Benutzern Zugriff auf Keystone zuweisen.</block>
-  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">*Keystone admin*: Verwalten Sie das Keystone Abonnement und ergreifen Sie Maßnahmen zu Warnungen, Berichten und Abonnements.</block>
-  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">*Keystone Viewer*: Sehen Sie sich das Keystone Abonnement an und sehen Sie sich Berichte, Warnungen und Assets an.</block>
   <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">Die folgende Tabelle zeigt die Aktionen, die die einzelnen Keystone Rollen durchführen können.</block>
   <block id="4420e7353184ac575b539cdce1b991db" category="cell">Funktion und Aktion</block>
   <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Keystone Admin</block>
@@ -4940,10 +4924,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">Erstellen Sie Berichte für sich selbst.</block>
   <block id="3b8988881170da948296006bcb3af098" category="cell">*Serviceanfragen*:</block>
   <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">Erstellen Sie Serviceanfragen</block>
-  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">Die Klassifizierung hat keine Administratorrolle.</block>
-  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">Mit den folgenden Rollen können Sie Benutzern Zugriff auf einen Ransomware-Schutz zuweisen.</block>
-  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*Ransomware-Schutz admin*: Verwalten Sie Aktionen auf den Registerkarten Schützen, Warnungen, Wiederherstellen, Einstellungen und Berichte.</block>
-  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">*Ransomware Protection Viewer*: Workload-Daten anzeigen, Warnungsdaten anzeigen, Wiederherstellungsdaten herunterladen und Berichte herunterladen.</block>
   <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die jede BlueXP  Ransomware-Schutzrolle ausführen kann.</block>
   <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">Administrator für Ransomware-Schutz</block>
   <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">Viewer für Ransomware-Schutz</block>
@@ -4992,20 +4972,15 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Einrichtung und Administration von BlueXP</block>
   <block id="52ae0ac7aa539174fa20e657c71eddf3" category="paragraph">Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens über verschiedene Ebenen Ihrer Ressourcenhierarchie zuweisen können. Bevor Sie diese Rollen zuweisen, sollten Sie die Berechtigungen verstehen, die jede Rolle beinhaltet. Die Rollen lassen sich in folgende Kategorien einteilen: Plattform, Applikation und Datenservice.</block>
   <block id="af7aabee58f78d8c3ba27e6b227a45cd" category="paragraph">Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. Sie erlauben alle Berechtigungen für die BlueXP Administration, einschließlich dem Zuweisen von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP  IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang.</block>
-  <block id="354b5c7e04f33eff066b4dc5b8104237" category="paragraph">Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Ordnern oder Projekten hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und beliebige Datendienste oder Anwendungen auf Ressourcen innerhalb des Ordners oder Projekts verwenden, denen sie zugewiesen sind.</block>
-  <block id="ac6f21d3ccd4ab7c12a14f56f9a464bd" category="paragraph">Die Rolle „Ordner“ oder „Projektadministrator“ kann keine Connectors erstellen.</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">Anschlüsse Erstellen</block>
   <block id="1963c5def9c98c78ad1a24795d77fd45" category="cell">Erstellen Sie Ordner und Projekte, einschließlich Löschen</block>
   <block id="3e02e95230f791e515adffdd7086123c" category="cell">Umbenennen vorhandener Ordner und Projekte</block>
   <block id="c9cff18229760a66e25f980da9c1850b" category="cell">Entfernen Sie Connectors aus Ordnern und Projekten</block>
   <block id="b6f5b5483997d6dff9a8ee0bc1932433" category="cell">Connectors verwalten (Zertifikate, Einstellungen usw. bearbeiten)</block>
-  <block id="0600246627669cf56a49de00fb320e66" category="paragraph">Um dies zu erreichen, erstellt eine Person, die der Rolle „Organisationsadministrator“ im BlueXP  der XYZ Corporation zugewiesen ist, eine anfängliche Arbeitsumgebung und erstellt dann für jede Region separate Ordner in BlueXP . Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der Administrator der Organisation weist einem BlueXP -Benutzer in jeder Region die Rolle „Ordner/Projekt-Administrator“ zu.</block>
-  <block id="35a83113bde80420d7102c597d0dfac6" category="paragraph">Sobald die Ersteinrichtung abgeschlossen ist, können regionale Administratoren mit der Rolle „Ordner“ oder „Projektadministrator“ neue Arbeitsumgebungen erstellen und Benutzer in ihren Regionen hinzufügen. Diese regionalen Administratoren können auch Ordner und Projekte hinzufügen, entfernen oder umbenennen, denen sie zugewiesen sind. Der Unternehmensadministrator erbt Berechtigungen für neue Arbeitsumgebungen oder Ressourcen und sorgt so für Transparenz der Storage-Auslastung im gesamten Unternehmen.</block>
   <block id="d76310e425debd9a2b76f8114d4c1d27" category="paragraph">Im Folgenden finden Sie eine Liste der Rollen in der Anwendungskategorie. Jede Rolle gewährt bestimmte Berechtigungen innerhalb ihres festgelegten Umfangs. Benutzer, die nicht über die erforderliche Anwendungsrolle oder eine Plattformrolle verfügen, können nicht auf die Anwendung zugreifen.</block>
   <block id="4be5ebc45ada5051c97493c24dafb98f" category="admonition">Der Zugriff auf Keystone über BlueXP  ist derzeit in der Beta-Phase. Wenn Sie an der Keystone Beta-Version teilnehmen möchten, wenden Sie sich an Ihren NetApp Ansprechpartner.</block>
   <block id="124cd0f2df6f1c0e90303ec188b16200" category="cell">Abonnements anzeigen</block>
   <block id="d01d98071916332acadef4e86c7ff279" category="cell">Abonnements ändern oder erneuern</block>
-  <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">CView-Serviceanforderungen, die von einem beliebigen Benutzer innerhalb der Organisation erstellt wurden</block>
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">Datenservice-Rollen</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">Nachfolgend finden Sie eine Liste der Rollen in der Datenservicekategorie. Jede Rolle gewährt bestimmte Berechtigungen innerhalb ihres festgelegten Umfangs. Benutzer, die nicht über die erforderliche Rolle für den Datenservice oder eine Plattformfunktion verfügen, können nicht auf den Datenservice zugreifen.</block>
   <block id="490e13bea5876f4583d326593619ee16" category="list-text">Die Verwaltung von Cloud Volumes ONTAP-Systemen wird jetzt von Connectors unterstützt, auf denen SELinux auf dem Betriebssystem aktiviert ist.</block>
@@ -5027,8 +5002,113 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">Wählen Sie für das NSS-Konto, das Sie aktualisieren möchten<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, und wählen Sie dann *E-Mail-Adresse anzeigen* aus. Sie können die Schaltfläche Kopieren verwenden, um die E-Mail-Adresse zu kopieren.</block>
   <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">Sie können kein Konto löschen, das derzeit mit einer Cloud Volumes ONTAP-Arbeitsumgebung verknüpft ist. Sie müssen zuerst zu <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 Februar 2025</block>
-  <block id="186343db38833a48df757e694e69337d" category="doc">NSS-Anmeldeinformationen verwalten, die mit BlueXP  verknüpft sind</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Lizenz-Updates in Digital Wallet, d. h. Sie können nicht die neu erworbene Kapazität nutzen.</block>
   <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung (des Kunden). Beispielsweise sollten Sie (Kunde) Sicherheitsupdates für das Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.</block>
   <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">Entfernen Sie vom Linux-Host die alten, jetzt nicht verwendeten Container-Image-Dateien. Dadurch wird sichergestellt, dass genügend Speicherplatz im Verzeichnis /var vorhanden ist, um es erneut zu installieren.</block>
+  <block id="1d91ba09123988594615f201a8f3eb35" category="paragraph">27.0.0 und 28.0.0 werden mit _New_ Connector 3.9.52 oder neueren Installationen unterstützt</block>
+  <block id="acd994f3f908677c5d2ca549b13f2fdd" category="paragraph">Beachten Sie, dass Sie (Kunde) keine Dienste auf dem Connector-Host anhalten müssen, wenn Sie kleinere Sicherheitsupdates anwenden.</block>
+  <block id="cadb6c86b1cf837dd9677b37639d5d4d" category="paragraph">Wenn Sie (Kunde) die Connector VM anhalten und dann starten müssen, sollten Sie dies von der Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.</block>
+  <block id="f4136fdf902ca32b4530c7a614c0ed71" category="doc">Anschluss 3.9.52</block>
+  <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">Diese Version des BlueXP -Connectors enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen sowie einige zusätzliche Updates.</block>
+  <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">Derzeit ist die Version 3.9.52 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
+  <block id="66b821747bf772a5a92a60270143558a" category="section-title">Unterstützung für Docker 27 und Docker 28</block>
+  <block id="01bd213c78b554183ce88619eeb02cce" category="paragraph">Docker 27 und Docker 28 werden nun vom Connector unterstützt.</block>
+  <block id="ab83fd01c3620a62252ab67adbc06a91" category="section-title">Keystone Administration in BlueXP  verfügbar</block>
+  <block id="4359bea5882e2896e306955792589a33" category="paragraph">Die Beta für NetApp Keystone in BlueXP  hat den Zugriff auf die Keystone Administration hinzugefügt. Sie können die Anmeldeseite für die NetApp Keystone Beta über die linke Navigationsleiste von BlueXP  aufrufen.</block>
+  <block id="3c4f7accda6c4e5b05c122dfef01bebe" category="paragraph">In den folgenden Abschnitten werden die verschiedenen Komponenten der Verwendung von IAM in BlueXP  beschrieben.</block>
+  <block id="e95e1ea14aa7dd2b3186795a75b45b13" category="paragraph">Sie können Ihre Ressourcen in Ordnern organisieren, wenn Sie die Trennung von Verantwortung oder Speicherressourcen benötigen.</block>
+  <block id="b1371d1a1eaa0db34a42be4569a94358" category="section-title">Zugriffsrollen</block>
+  <block id="55b6d94d9ad6439fe5c46ccdba149ed3" category="paragraph">BlueXP  unterstützt verschiedene Zugriffsrollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können.</block>
+  <block id="2c2e7be4268cd14a5e106bbdd7de7669" category="section-title">Zugriffsrollen</block>
+  <block id="481fde2b9d3163b5bc94a4f5d5a81c31" category="summary">Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Administratorrollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können.</block>
+  <block id="917ed85266888b2a7a9981b7b5a988fd" category="doc">Keystone Zugriffsrollen für BlueXP </block>
+  <block id="8523ef412b93586e7483ff371da34a44" category="paragraph">Keystone Rollen bieten Zugriff auf die Keystone Dashboards und ermöglichen Benutzern das Anzeigen und Managen ihres Keystone Abonnements. Es gibt zwei Keystone Rollen: Keystone Administrator und Keystone Viewer. Der Hauptunterschied zwischen den beiden Rollen ist die Aktionen, die sie in Keystone ergreifen können. Die Keystone-Administratorrolle ist die einzige Rolle, die erlaubt ist, Serviceanfragen zu erstellen oder Abonnements zu ändern.</block>
+  <block id="cf05bacc5606910682219fb31232e8be" category="paragraph-title">Beispiel für Keystone-Rollen in BlueXP </block>
+  <block id="6711a14165f040e53c13e848daea3ef0" category="paragraph">Im Rahmen eines Keystone Abonnements hat XYZ Corporation von vier Storage Engineers aus unterschiedlichen Abteilungen Informationen zu ihrem Keystone Abonnement einzusehen. Obwohl alle diese Benutzer das Keystone Abonnement überwachen müssen, darf nur der Teamleiter Serviceanfragen stellen. Drei der Teammitglieder erhalten die Rolle *Keystone Viewer*, während der Teamleiter die Rolle *Keystone Admin* erhält, so dass ein Kontrollpunkt für Serviceanfragen für das Unternehmen besteht.</block>
+  <block id="e9bbe4519d8938c73c2ce0dbaa4adf60" category="cell">Service-Requests anzeigen, die von einem beliebigen Benutzer innerhalb der Organisation erstellt wurden</block>
+  <block id="f14b021b1ac020c4bd6150459ddd2d19" category="doc">Zugriffsrollen für die BlueXP -Plattform</block>
+  <block id="2a80e7029e86e0b477bbea9ab387b5e3" category="paragraph">Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. Sie erlauben alle Berechtigungen für die BlueXP Administration, einschließlich dem Zuweisen von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP  enthält zwei Plattformrollen: *Organisationsadministrator* und *Ordner oder Projektadministrator*. Der Hauptunterschied zwischen den beiden BlueXP -Plattformrollen ist der Umfang, in dem die Rolle angewendet wird.</block>
+  <block id="0a93e6a5a2b06eac2cb4370bc70d9a40" category="paragraph">Um dies zu erreichen, erstellt eine Person, die der Rolle *Organisationsadministrator* im BlueXP  der XYZ Corporation zugewiesen ist, eine anfängliche Arbeitsumgebung und erstellt dann für jede Region separate Ordner in BlueXP . Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der *Organisationsadministrator* weist einem BlueXP -Benutzer in jeder Region die Rolle *Ordner oder Projektadministrator* zu.</block>
+  <block id="14be76003904f893c083de9f6a193111" category="paragraph">Sobald die Ersteinrichtung abgeschlossen ist, können regionale Administratoren mit der Rolle *Ordner oder Projektadministrator* neue Arbeitsumgebungen erstellen und Benutzer innerhalb ihrer Regionen hinzufügen. Diese regionalen Administratoren können auch Ordner und Projekte hinzufügen, entfernen oder umbenennen, denen sie zugewiesen sind. Der *Organisationsadministrator* erbt Berechtigungen für alle neuen Arbeitsumgebungen oder Ressourcen und sorgt so für Transparenz der Speichernutzung im gesamten Unternehmen.</block>
+  <block id="f7e279e88014dd7b5f4694b49a2c91f2" category="paragraph">Die folgende Tabelle zeigt die Aktionen, die die einzelnen Rollen der BlueXP -Plattform durchführen können.</block>
+  <block id="3aba2887bff41f744b43940b1b82080a" category="cell">Plattformrolle</block>
+  <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">Zuständigkeiten</block>
+  <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">Org.-Admin</block>
+  <block id="35ccbb635b1465432c3a19f88cbf034c" category="cell"><block ref="35ccbb635b1465432c3a19f88cbf034c" category="inline-link-macro-rx"></block></block>
+  <block id="6d67156c2e45db37cd67283f29d6768d" category="cell">Ermöglicht einem Benutzer uneingeschränkten Zugriff auf alle Projekte und Ordner innerhalb einer Organisation, Hinzufügen von Mitgliedern zu einem beliebigen Projekt oder Ordner sowie Durchführung jeder BlueXP -Aufgabe und Nutzung aller Datendienste. Benutzer mit dieser Rolle müssen die gesamte BlueXP -Umgebung organisieren und verwalten. Sie können Ordner und Projekte erstellen, Rollen zuweisen und jedem Projekt oder Ordner Benutzer hinzufügen. Sie können auch alle Arbeitsumgebungen innerhalb des Unternehmens verwalten. Dies ist die einzige Zugriffsrolle, die Connectors erstellen kann.</block>
+  <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
+  <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Ordnern oder Projekten hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und beliebige Datendienste oder Anwendungen auf Ressourcen innerhalb des Ordners oder Projekts verwenden, denen sie zugewiesen sind. Die Rolle „Ordner“ oder „Projektadministrator“ KANN KEINE Connectors erstellen.</block>
+  <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Anwendungsrolle</block>
+  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
+  <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen.</block>
+  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
+  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. ////</block>
+  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Storage-Admin</block>
+  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Verwaltung von Storage-Zustands- und Governance-Funktionen, Erkennung von Storage-Ressourcen sowie Ändern und Löschen vorhandener Arbeitsumgebungen</block>
+  <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">Storage-Prüfer</block>
+  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
+  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">Zeigen Sie den Speicherzustand und die Governance-Funktionen an und zeigen Sie zuvor erkannte Speicherressourcen an. Vorhandene Speicherarbeitsumgebungen können nicht erkannt, geändert oder gelöscht werden.</block>
+  <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">Spezialist für den Systemzustand</block>
+  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
+  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">Verwaltung von Storage- und Funktionszustands- und Governance-Funktionen; alle Berechtigungen des Storage-Administrators außer bestehende Arbeitsumgebungen können nicht geändert oder gelöscht werden. ////</block>
+  <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">Datenservice-Rolle</block>
+  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">Klassifizierungs-Admin</block>
+  <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen. Klassifizierung hat keine Viewer-Rolle. Benutzer mit dieser Rolle können Compliance-Informationen anzeigen und Berichte für Ressourcen erstellen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren.</block>
+  <block id="d9662380e44d74fee971f8bcdbb998ba" category="cell"><block ref="d9662380e44d74fee971f8bcdbb998ba" category="inline-link-macro-rx"></block></block>
+  <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">Verwalten Sie Aktionen auf den Registerkarten Schützen, Warnungen, Wiederherstellen, Einstellungen und Berichte des Ransomware-Schutz-Service.</block>
+  <block id="61e1bc1deec24a3ec686d90d9df2cf23" category="cell"><block ref="61e1bc1deec24a3ec686d90d9df2cf23" category="inline-link-macro-rx"></block></block>
+  <block id="c449660979799948a46372470a0eddb9" category="cell">Anzeigen von Workload-Daten, Anzeigen von Warnungsdaten, Herunterladen von Wiederherstellungsdaten und Herunterladen von Berichten im Ransomware-Schutzdienst.</block>
+  <block id="7da7bcb3da6129c11bc8f0544e81beb1" category="paragraph">Bietet die Möglichkeit, Snapshots aus lokalen ONTAP Clustern mithilfe von BlueXP  Backup und Recovery für Applikationen zu sichern. Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in BlueXP  ausführen:</block>
+  <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">Zugriffsrollen für Ransomware-Schutz für BlueXP </block>
+  <block id="47ecf80e12db1325b5156ff3a7d35b15" category="paragraph">Ransomware-Rollen wurden für den Zugriff auf den Ransomware-Datensicherungsservice entwickelt. Benutzern kann entweder eine Administratorrolle zugewiesen werden, mit der sie Maßnahmen zum Schutz vor Ransomware ergreifen können, oder eine Zuschauerrolle, wenn sie nur Überwachungsaufgaben übernehmen. Die beiden Rollen sind Ransomware Protection Admin und Ransomware Protection Viewer. Der Hauptunterschied zwischen den beiden Rollen sind die Aktionen, die sie zum Schutz vor Ransomware ergreifen können.</block>
+  <block id="318302fa87b47b527d51268d94db7ea6" category="doc">Storage-Zugriffsrollen für BlueXP </block>
+  <block id="53105795a2d166c0331ae09564295071" category="paragraph">Sie können Benutzern folgende Rollen zuweisen, um ihnen Zugriff auf die Storage-Managementfunktionen in BlueXP  zu ermöglichen, die mit unterstützten Speicherressourcen verknüpft sind. Benutzern kann entweder eine Administratorrolle zugewiesen werden, mit der sie Aktionen im Storage-Management ausführen können, oder eine Zuschauerrolle, wenn sie lediglich Überwachungsaufgaben übernehmen.</block>
+  <block id="09e3c84fe1afd5eaa9fc94f8638d3695" category="paragraph">Storage-Rollen können Benutzern für die folgenden Storage-Ressourcen und -Funktionen zugewiesen werden:</block>
+  <block id="2074db110c64e6023c79b620df0670af" category="paragraph">Storage-Ressourcen:</block>
+  <block id="8961844857d18125fa7300df96ad4e94" category="paragraph">BlueXP  Services und Funktionen:</block>
+  <block id="7d4d3675a79561800c46dfdad71222a2" category="paragraph-title">Beispiel für Storage-Rollen in BlueXP </block>
+  <block id="47f8970af0c44342a763bfde8e222e13" category="paragraph">Bei der XYZ Corporation, einem multinationalen Unternehmen, gibt es ein großes Team aus Storage Engineers und Storage-Administratoren. Sie möchten dem Team das Management der Storage Assets für seine jeweiligen Regionen ermöglichen, aber den Zugriff auf wichtige BlueXP -Administrationsaufgaben wie Benutzermanagement, Connector-Erstellung und Kostenmanagementtools wie Digital Wallet einschränken.</block>
+  <block id="3917088f255e5877d39c6fe9da2e1f62" category="paragraph">In einem Team von 12 Benutzern wird die Rolle *Storage Viewer* zugewiesen, mit der sie die Speicherressourcen für die BlueXP -Projekte überwachen können, denen sie zugewiesen sind. Die restlichen neun erhalten die Rolle *Speicheradministrator*, die die Möglichkeit beinhaltet, Softwareupdates zu verwalten, über BlueXP  auf ONTAP-System-Manager zuzugreifen sowie Speicherressourcen zu erkennen (funktionierende Umgebungen hinzufügen). Eine Person im Team erhält die Rolle *Systemgesundheitsspezialist*, damit sie den Zustand der Speicherressourcen in ihrer Region verwalten können, aber keine Arbeitsumgebungen ändern oder löschen können. Diese Person kann auch Software-Updates für die Speicherressourcen für Projekte durchführen, denen sie zugewiesen sind.</block>
+  <block id="31fd11b2048f5356558b9e26634e67ce" category="paragraph">Die Organisation hat zwei zusätzliche Benutzer mit der Rolle *Organisationsadministrator*, die alle Aspekte von BlueXP  verwalten können, einschließlich Benutzerverwaltung, Connector-Erstellung und Kostenmanagement-Tools wie Digital Wallet, sowie mehrere Benutzer mit der Rolle *Ordner oder Projektadministrator*, die BlueXP -Verwaltungsaufgaben für die Ordner und Projekte, denen sie zugewiesen sind, durchführen können.</block>
+  <block id="294e40f9cc227c86e788ac8d546ddade" category="paragraph">Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die die einzelnen BlueXP  Storage-Rollen durchführen können.</block>
+  <block id="32d0b8cf78bc04242aed5ba6801818b6" category="cell">* Leinwand*:</block>
+  <block id="eaef5d2ec844a2f5d6658bd86a05a85a" category="cell">Neue Ressourcen entdecken (neue Arbeitsumgebung schaffen)</block>
+  <block id="65075797bf35acb1b1da033d464a2127" category="cell">Erkannte Ressourcen anzeigen</block>
+  <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">Arbeitsumgebungen löschen</block>
+  <block id="c7b18a0b4f7adea3bae003772260030d" category="cell">Ändern von Arbeitsumgebungen</block>
+  <block id="a58bf8bc00d7951e76f88f0a279baa68" category="cell">*Connector Erstellen*</block>
+  <block id="8822cc008eedc76497bc19a6017e6e3c" category="cell">*Digitale Beraterin*</block>
+  <block id="eab210dd297eed7a23f02ae9ff070512" category="cell">Alle Seiten und Funktionen anzeigen</block>
+  <block id="15f388beaad85e03ee21e73343d1f1e7" category="cell">*Digital Wallet*</block>
+  <block id="5c079e1551d5969c8a448104c556be58" category="cell">*Software-Updates*</block>
+  <block id="f65dcc1f4a8bfacd0a2da1809fb7646a" category="cell">Landing Page und Empfehlungen anzeigen</block>
+  <block id="b578911d78bfaf1e75bbe69b0a471d0b" category="cell">Besprechen Sie mögliche Versionsempfehlungen und die wichtigsten Vorteile</block>
+  <block id="34153016d27f6bc08ca28afe350597f0" category="cell">Anzeigen von Aktualisierungsdetails für ein Cluster</block>
+  <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">Führen Sie Prüfungen vor dem Update durch, und laden Sie den Upgrade-Plan herunter</block>
+  <block id="26c438938da81386c731f3d387eda803" category="cell">Installieren Sie Softwareupdates</block>
+  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*Ausfallsicherheit im Betrieb*</block>
+  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">Überprüfen Sie Sicherheitsrisiken</block>
+  <block id="0416203226164e8fc52087494d33b58d" category="cell">Ansible Playbooks herunterladen</block>
+  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">Automatische Behebung von Fehlern</block>
+  <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*Wirtschaftliche Effizienz*</block>
+  <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">Überprüfen Sie den Kapazitätsplanungsstatus</block>
+  <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">Nächste Aktion auswählen (Best Practice, Stufe)</block>
+  <block id="80b117d13aeb1c0337cca44c4f432522" category="cell">Tiering selten genutzter Daten in den Cloud-Storage und Freigabe des Storage –</block>
+  <block id="92232278439b322df2fe12388a374e65" category="cell">Erinnerungen einrichten</block>
+  <block id="b028539b680706e70a20202f01750b69" category="cell">*Nachhaltigkeit*</block>
+  <block id="912c827ef07339a2dbfe984d27d383f4" category="cell">Dashboard und Empfehlungen anzeigen</block>
+  <block id="7060312ff39606d1f6621f242cc6790b" category="cell">Berichtdaten herunterladen</block>
+  <block id="512234aa0dc7508aa0db235f9f41b384" category="cell">Bearbeiten Sie den Prozentsatz der CO2-Minderung</block>
+  <block id="45ecf2d70851bc50cacb9f98bc2fea05" category="cell">Empfehlungen festlegen</block>
+  <block id="7aea1a17c89c2ee783bd1fa5128e24a4" category="cell">Empfehlungen zurückstellen</block>
+  <block id="6223d9366b08aab00344df4d74ae6ef3" category="cell">*Zugang zum System Manager*</block>
+  <block id="27f3006d10a705c76accae9904ea16cd" category="cell">Kann Anmeldeinformationen eingeben</block>
+  <block id="3a8e375f86c81e7b283b9ee0db531e4d" category="cell">*Anmeldeinformationen*</block>
+  <block id="1dc9c22149f4c0ef8e2fc6c49159dc73" category="cell">Benutzeranmeldeinformationen</block>
+  <block id="6cf4eb09d2134609121513a507415999" category="doc">Mit Git BlueXP  verknüpfte NSS-Anmeldeinformationen verwalten</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">12 Mai 2025</block>
+  <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">Informieren Sie sich über Zugriffsrollen von BlueXP </block>
+  <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Datenservices</block>
+  <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Ransomware-Schutzfunktionen</block>
 </blocks>

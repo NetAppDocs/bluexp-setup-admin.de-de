@@ -191,9 +191,9 @@ link:task-upgrade-connector.html["Erfahren Sie, wie Sie die Connector-Software m
 
 Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung (des Kunden). Beispielsweise sollten Sie (Kunde) Sicherheitsupdates für das Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.
 
-Beachten Sie, dass Sie bei der Anwendung kleinerer Sicherheitsupdates keine Dienste auf dem Connector-Host anhalten müssen.
+Beachten Sie, dass Sie (Kunde) keine Dienste auf dem Connector-Host anhalten müssen, wenn Sie kleinere Sicherheitsupdates anwenden.
 
-Wenn Sie die Connector VM anhalten und dann starten müssen, sollten Sie dies über die Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.
+Wenn Sie (Kunde) die Connector VM anhalten und dann starten müssen, sollten Sie dies von der Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.
 
 <<Die Anschlüsse müssen jederzeit betriebsbereit sein,Beachten Sie, dass der Connector jederzeit betriebsbereit sein muss>>.
 

@@ -131,7 +131,19 @@ sidebar:
       - title: Überwachung oder Prüfung der IAM-Aktivität
         url: "/task-iam-audit-actions-timeline.html"
       - title: Zugriffsrollen für BlueXP
-        url: "/reference-iam-predefined-roles.html"
+        entries:
+        - title: Informieren Sie sich über Zugriffsrollen von BlueXP 
+          url: "/reference-iam-predefined-roles.html"
+        - title: Plattformrollen
+          url: "/reference-iam-platform-roles.html"
+        - title: Anwendungsrollen
+          entries:
+          - title: Keystone Rollen
+            url: "/reference-iam-keystone-roles.html"
+        - title: Datenservices
+          entries:
+          - title: Ransomware-Schutzfunktionen
+            url: "/reference-iam-ransomware-roles.html"
     - title: BlueXP -Konten (nur privater Modus)
       entries:
       - title: Informationen zu Accounts

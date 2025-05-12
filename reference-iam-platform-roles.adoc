@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-platform-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können. 
+---
+= Zugriffsrollen für die BlueXP -Plattform
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. Sie erlauben alle Berechtigungen für die BlueXP Administration, einschließlich dem Zuweisen von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP  enthält zwei Plattformrollen: *Organisationsadministrator* und *Ordner oder Projektadministrator*. Der Hauptunterschied zwischen den beiden BlueXP -Plattformrollen ist der Umfang, in dem die Rolle angewendet wird.
+
+.Beispiel für Organisationsrollen in BlueXP  für eine große multinationale Organisation
+XYZ Corporation, ein multinationales Unternehmen, zielt darauf ab, den Zugriff auf Datenspeicherressourcen nach geografischen Regionen wie Nordamerika, Europa und Asien-Pazifik zu trennen. Sie möchten, dass jede Region exklusive Kontrolle über ihre Ressourcen hat und gleichzeitig eine zentrale Übersicht erhält.
+
+Um dies zu erreichen, erstellt eine Person, die der Rolle *Organisationsadministrator* im BlueXP  der XYZ Corporation zugewiesen ist, eine anfängliche Arbeitsumgebung und erstellt dann für jede Region separate Ordner in BlueXP . Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der *Organisationsadministrator* weist einem BlueXP -Benutzer in jeder Region die Rolle *Ordner oder Projektadministrator* zu.
+
+Sobald die Ersteinrichtung abgeschlossen ist, können regionale Administratoren mit der Rolle *Ordner oder Projektadministrator* neue Arbeitsumgebungen erstellen und Benutzer innerhalb ihrer Regionen hinzufügen. Diese regionalen Administratoren können auch Ordner und Projekte hinzufügen, entfernen oder umbenennen, denen sie zugewiesen sind. Der *Organisationsadministrator* erbt Berechtigungen für alle neuen Arbeitsumgebungen oder Ressourcen und sorgt so für Transparenz der Speichernutzung im gesamten Unternehmen.
+
+Die folgende Tabelle zeigt die Aktionen, die die einzelnen Rollen der BlueXP -Plattform durchführen können.
+
+[cols="2,1,1"]
+|===
+| Aufgabe | Organisationsadministrator | Ordner- oder Projektadministrator 
+
+
+| Anschlüsse Erstellen | Ja. | Nein 
+
+
+| Erstellen, Ändern oder Löschen von Arbeitsumgebungen (Hinzufügen oder Erkennen neuer Ressourcen über den BlueXP -Bildschirm) | Ja. | Ja. 
+
+
+| Erstellen Sie Ordner und Projekte, einschließlich Löschen | Ja. | Nein 
+
+
+| Umbenennen vorhandener Ordner und Projekte | Ja. | Ja. 
+
+
+| Rollen zuweisen und Benutzer hinzufügen | Ja. | Ja. 
+
+
+| Ressourcen mit Ordnern und Projekten verknüpfen | Ja. | Ja. 
+
+
+| Connectors mit Ordnern und Projekten verknüpfen | Ja. | Nein 
+
+
+| Entfernen Sie Connectors aus Ordnern und Projekten | Ja. | Nein 
+
+
+| Connectors verwalten (Zertifikate, Einstellungen usw. bearbeiten) | Ja. | Nein 
+
+
+| Verwalten Sie Anmeldeinformationen über Einstellungen > Anmeldeinformationen | Ja. | Ja. 
+
+
+| Sehen Sie sich den BlueXP -Zeitplan an | Ja. | Ja. 
+
+
+| Nutzung von BlueXP  Services | Ja. | Ja. 
+
+
+| Registrieren Sie BlueXP , um Support zu erhalten, und senden Sie Cases ein | Ja. | Ja. 
+|===
