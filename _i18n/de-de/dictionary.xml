@@ -5039,19 +5039,10 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Ordnern oder Projekten hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und beliebige Datendienste oder Anwendungen auf Ressourcen innerhalb des Ordners oder Projekts verwenden, denen sie zugewiesen sind. Die Rolle „Ordner“ oder „Projektadministrator“ KANN KEINE Connectors erstellen.</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Anwendungsrolle</block>
-  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen.</block>
-  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
-  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. ////</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Storage-Admin</block>
-  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Verwaltung von Storage-Zustands- und Governance-Funktionen, Erkennung von Storage-Ressourcen sowie Ändern und Löschen vorhandener Arbeitsumgebungen</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">Storage-Prüfer</block>
-  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
-  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">Zeigen Sie den Speicherzustand und die Governance-Funktionen an und zeigen Sie zuvor erkannte Speicherressourcen an. Vorhandene Speicherarbeitsumgebungen können nicht erkannt, geändert oder gelöscht werden.</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">Spezialist für den Systemzustand</block>
-  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
-  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">Verwaltung von Storage- und Funktionszustands- und Governance-Funktionen; alle Berechtigungen des Storage-Administrators außer bestehende Arbeitsumgebungen können nicht geändert oder gelöscht werden. ////</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">Datenservice-Rolle</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">Klassifizierungs-Admin</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen. Klassifizierung hat keine Viewer-Rolle. Benutzer mit dieser Rolle können Compliance-Informationen anzeigen und Berichte für Ressourcen erstellen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren.</block>
@@ -5111,4 +5102,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">Informieren Sie sich über Zugriffsrollen von BlueXP </block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Datenservices</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Ransomware-Schutzfunktionen</block>
+  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
+  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen.</block>
 </blocks>

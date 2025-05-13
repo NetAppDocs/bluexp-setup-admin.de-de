@@ -46,19 +46,10 @@ NOTE: Der Zugriff auf Keystone über BlueXP  ist derzeit in der Beta-Phase. Wen
 | Anwendungsrolle | Zuständigkeiten 
 
 
-| link:reference-iam-keystone-roles.html["Keystone Admin"] | Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
+| link:reference-iam-keystone-roles.html["Keystone Admin"^] | Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
 
 
-| link:reference-iam-keystone-roles.html["Keystone Viewer"] | Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. //// 
-
-
-| link:reference-iam-storage-roles.html["Storage-Admin"] | Verwaltung von Storage-Zustands- und Governance-Funktionen, Erkennung von Storage-Ressourcen sowie Ändern und Löschen vorhandener Arbeitsumgebungen 
-
-
-| link:reference-iam-storage-roles.html["Storage-Prüfer"] | Zeigen Sie den Speicherzustand und die Governance-Funktionen an und zeigen Sie zuvor erkannte Speicherressourcen an. Vorhandene Speicherarbeitsumgebungen können nicht erkannt, geändert oder gelöscht werden. 
-
-
-| link:reference-iam-storage-roles.html["Spezialist für den Systemzustand"] | Verwaltung von Storage- und Funktionszustands- und Governance-Funktionen; alle Berechtigungen des Storage-Administrators außer bestehende Arbeitsumgebungen können nicht geändert oder gelöscht werden. //// 
+| link:reference-iam-keystone-roles.html["Keystone Viewer"^] | Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
 |===
 
 
