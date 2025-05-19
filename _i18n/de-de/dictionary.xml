@@ -5105,4 +5105,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
   <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen.</block>
+  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Sichere Endpunkte für Connector-Downloads werden jetzt für Backup und Recovery sowie für Ransomware-Schutz unterstützt</block>
+  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Erfahren Sie mehr über Downloads von sicheren Endpunkten für Connector.</block>
+  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Wenn Sie Backup und Recovery oder Ransomware-Schutz verwenden, können Sie jetzt sichere Endpunkte für Connector-Downloads verwenden. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
 </blocks>

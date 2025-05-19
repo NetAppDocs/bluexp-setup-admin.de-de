@@ -54,6 +54,12 @@ Derzeit ist die Version 3.9.51 für den Standardmodus und den eingeschränkten M
 
 
 
+==== Sichere Endpunkte für Connector-Downloads werden jetzt für Backup und Recovery sowie für Ransomware-Schutz unterstützt
+
+Wenn Sie Backup und Recovery oder Ransomware-Schutz verwenden, können Sie jetzt sichere Endpunkte für Connector-Downloads verwenden. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["Erfahren Sie mehr über Downloads von sicheren Endpunkten für Connector."^]
+
+
+
 === Identitäts- und Zugriffsmanagement (BlueXP , IAM)
 
 * Benutzer ohne den Org-Administrator, Ordner oder Projektadministrator müssen eine Ransomware-Schutzrolle zugewiesen werden, um Zugriff auf Ransomware-Schutz zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Ransomware Protection Admin oder Ransomware Protection Viewer.
