@@ -72,6 +72,8 @@ Red Hat Enterprise Linux
 9.1 bis 9.4
 
 8.6 bis 8.10
+
+7,9
  a| 
 3.9.40 oder höher mit BlueXP  im Standard- oder eingeschränkter Modus
  a| 
