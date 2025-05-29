@@ -14,16 +14,16 @@ summary: Das Identitäts- und Zugriffsmanagement von BlueXP  ermöglicht es Ihn
 
 
 [role="lead"]
-Mit BlueXP  können Sie Benutzern Rollen basierend auf den jeweiligen Aufgaben und Bereichen zuweisen.
+Innerhalb von BlueXP können Sie Benutzern Rollen zuweisen, je nachdem, was sie tun müssen und wo.
 
-Benutzer mit den Rollen „Organisationsadministrator“, „Ordner“ oder „Projektadministrator“ sind dafür verantwortlich, anderen Benutzern Rollen zuzuweisen. Sie können Zugriffsrollen auf Projekt- oder Ordnerbasis zuweisen. Sie können einem Benutzer beispielsweise die Administratorrolle für Ransomware-Schutz für ein Projekt und die SnapCenter-Administratorrolle für ein anderes Projekt zuweisen. Wenn ein Benutzer alternativ die Rolle „Klassifikationsadministrator“ für alle Projekte in einem bestimmten Ordner benötigt, können Sie ihm diese Zugriffsrolle auf Ordnerebene gewähren.
+Benutzer mit der Rolle *Organisationsadministrator* oder *Ordner- oder Projektadministrator* sind dafür verantwortlich, anderen Benutzern Rollen zuzuweisen. Sie können Zugriffsrollen auf Projekt- oder Ordnerbasis zuweisen. Sie können einem Benutzer beispielsweise die Administratorrolle für Ransomware-Schutz für ein Projekt und die SnapCenter-Administratorrolle für ein anderes Projekt zuweisen. Wenn ein Benutzer alternativ die Rolle „Klassifikationsadministrator“ für alle Projekte in einem bestimmten Ordner benötigt, können Sie ihm diese Zugriffsrolle auf Ordnerebene gewähren.
 
 Verwenden Sie Zugriffsrollen, um auf Basis der spezifischen BlueXP -Aufgaben, die Benutzer durchführen müssen, Zugriff auf Storage-Ressourcen zuzuweisen. Wenn ein BlueXP -Benutzer beispielsweise mit Ransomware-Schutzservices interagieren muss, muss ihm eine Zugriffsrolle zugewiesen werden, die entweder Viewing- oder Administrationsberechtigungen für den Ransomware-Schutzservice für das Projekt umfasst, für das die Zugriffsrolle gewährt wird.
 
 Weisen Sie Benutzern Rollen basierend auf Ihrer IAM-Strategie zu, um die Sicherheit zu erhöhen. BlueXP  IAM-Rollen sollen sicherstellen, dass Benutzer nur auf die benötigten Ressourcen zugreifen können.
 
 
-NOTE: Denken Sie daran, dass Sie Ressourcen nicht direkt gewähren können. Ressourcen müssen zuerst Projekten zugewiesen werden. Sie sollten Ihre Ressourcenhierarchie einrichten, bevor Sie Benutzerzugriff zuweisen. link:task-iam-manage-folders-projects.html["Erfahren Sie, wie Sie Ihre Ressourcen in BlueXP  IAM mit Ordnern und Projekten organisieren."]
+NOTE: Denken Sie daran, dass Sie keinen direkten Zugriff auf Ressourcen gewähren können. Ressourcen müssen zuerst Projekten zugewiesen werden. Sie sollten Ihre Ressourcenhierarchie einrichten, bevor Sie Benutzerzugriff zuweisen. link:task-iam-manage-folders-projects.html["Erfahren Sie, wie Sie Ihre Ressourcen in BlueXP  IAM mit Ordnern und Projekten organisieren."]
 
 
 
@@ -39,9 +39,9 @@ Wenn Sie die Rolle _Ordner oder Projektadministrator_ haben, werden auf der Seit
 
 
 
-== Fügen Sie einem Mitglied eine Zugriffsrolle hinzu
+== Einem Mitglied eine Zugriffsrolle hinzufügen
 
-Normalerweise weisen Sie dem Mitglied eine Rolle zu, wenn Sie sie Ihrem Unternehmen hinzufügen. Sie können die Rolle eines Mitglieds jedoch jederzeit aktualisieren, indem Sie eine Rolle entfernen oder eine andere Rolle hinzufügen. Sie können den Zugriff eines Benutzers auf ein Projekt entfernen, indem Sie dessen Rolle entfernen.
+Normalerweise weisen Sie dem Mitglied eine Rolle zu, wenn Sie sie Ihrem Unternehmen hinzufügen. Sie können die Rolle eines Mitglieds jedoch jederzeit aktualisieren, indem Sie entweder eine Rolle entfernen oder eine andere Rolle hinzufügen. Sie können den Zugriff eines Benutzers auf ein Projekt entfernen, indem Sie dessen Rolle entfernen.
 
 Sie können einem Benutzer eine Zugriffsrolle für Ihr Unternehmen, Ihren Ordner oder Ihr Projekt zuweisen.
 

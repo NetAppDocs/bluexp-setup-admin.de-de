@@ -94,14 +94,6 @@ Diese Dokumentation unterliegt der EULA. Wenn das Produkt nicht in Übereinstimm
 
 
 
-=== Auswirkungen auf Cloud Volumes ONTAP
-
-Ein Konnektor ist eine wichtige Komponente für den Zustand und Betrieb von Cloud Volumes ONTAP. Wenn ein Connector heruntergefahren wird, werden Cloud Volumes ONTAP PAYGO-Systeme und kapazitätsbasierte BYOL-Systeme heruntergefahren, nachdem die Kommunikation mit einem Connector über einen Zeitraum von mehr als 14 Tagen unterbrochen wurde. Dies geschieht, weil der Connector jeden Tag die Lizenzierung auf dem System aktualisiert.
-
-Wenn Ihr Cloud Volumes ONTAP System über eine Node-basierte BYOL-Lizenz verfügt, wird das System nach 14 Tagen weiter ausgeführt, da die Lizenz auf dem Cloud Volumes ONTAP System installiert wird.
-
-
-
 == Unterstützte Standorte
 
 Ein Connector wird an folgenden Stellen unterstützt:

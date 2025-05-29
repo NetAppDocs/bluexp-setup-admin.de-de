@@ -303,6 +303,27 @@ Beispiel:
 +
 --cacert gibt ein CA-signiertes Zertifikat für den HTTPS-Zugriff zwischen dem Connector und dem Proxy-Server an. Dieser Parameter ist nur erforderlich, wenn Sie einen HTTPS-Proxyserver angeben oder wenn der Proxy ein abfangenden Proxy ist.
 
+. Wenn Sie Podman verwendet haben, müssen Sie den Aardvark-DNS-Port anpassen.
++
+.. Stellen Sie per SSH eine Verbindung zur virtuellen Maschine des BlueXP Connector her.
+.. Öffnen Sie die Datei podman_/usr/share/containers/containers.conf_ und ändern Sie den gewählten Port für den Aardvark DNS-Dienst. Ändern Sie ihn beispielsweise in 54.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. Starten Sie die virtuelle Connector-Maschine neu.
+
+
 
 
 .Ergebnis

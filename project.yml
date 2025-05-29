@@ -140,6 +140,8 @@ sidebar:
           entries:
           - title: Keystone Rollen
             url: "/reference-iam-keystone-roles.html"
+          - title: Speicherrollen
+            url: "/reference-iam-storage.roles.html"
         - title: Datenservices
           entries:
           - title: Ransomware-Schutzfunktionen

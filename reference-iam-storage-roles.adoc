@@ -16,6 +16,9 @@ summary: Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Admini
 [role="lead"]
 Sie können Benutzern folgende Rollen zuweisen, um ihnen Zugriff auf die Storage-Managementfunktionen in BlueXP  zu ermöglichen, die mit unterstützten Speicherressourcen verknüpft sind. Benutzern kann entweder eine Administratorrolle zugewiesen werden, mit der sie Aktionen im Storage-Management ausführen können, oder eine Zuschauerrolle, wenn sie lediglich Überwachungsaufgaben übernehmen.
 
+
+NOTE: Diese Rollen sind über die BlueXP-Partnerschafts-API nicht verfügbar.
+
 Storage-Rollen können Benutzern für die folgenden Storage-Ressourcen und -Funktionen zugewiesen werden:
 
 Storage-Ressourcen:

@@ -43,8 +43,8 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 
 
-== c0227cef6f07a8cd2ac72f2945b031aa
+== Open Source
 
-9b73989307c1975dfa4d5e1581e4afe8
+In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.
 
 link:media/notice.pdf["Hinweis für BlueXP"^]

@@ -4,7 +4,7 @@ permalink: reference-iam-predefined-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
 summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können. 
 ---
-= Zugriffsrollen für BlueXP
+= Informieren Sie sich über Zugriffsrollen von BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,17 +20,17 @@ Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management
 
 == Plattformrollen
 
-Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. Sie erlauben alle Berechtigungen für die BlueXP Administration, einschließlich dem Zuweisen von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP  IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang.
+Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. Sie erlauben alle Berechtigungen für die BlueXP Administration, einschließlich dem Zuweisen von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner- oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang.
 
 [cols="1,2"]
 |===
 | Plattformrolle | Zuständigkeiten 
 
 
-| link:reference-iam-platform-roles.html["Org.-Admin"^] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf alle Projekte und Ordner innerhalb einer Organisation, Hinzufügen von Mitgliedern zu einem beliebigen Projekt oder Ordner sowie Durchführung jeder BlueXP -Aufgabe und Nutzung aller Datendienste. Benutzer mit dieser Rolle müssen die gesamte BlueXP -Umgebung organisieren und verwalten. Sie können Ordner und Projekte erstellen, Rollen zuweisen und jedem Projekt oder Ordner Benutzer hinzufügen. Sie können auch alle Arbeitsumgebungen innerhalb des Unternehmens verwalten. Dies ist die einzige Zugriffsrolle, die Connectors erstellen kann. 
+| link:reference-iam-platform-roles.html["Org.-Admin"] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf alle Projekte und Ordner innerhalb einer Organisation, Hinzufügen von Mitgliedern zu einem beliebigen Projekt oder Ordner sowie Durchführung jeder BlueXP -Aufgabe und Nutzung aller Datendienste. Benutzer mit dieser Rolle müssen die gesamte BlueXP -Umgebung organisieren und verwalten. Sie können Ordner und Projekte erstellen, Rollen zuweisen und jedem Projekt oder Ordner Benutzer hinzufügen. Sie können auch alle Arbeitsumgebungen innerhalb des Unternehmens verwalten. Dies ist die einzige Zugriffsrolle, die Connectors erstellen kann. 
 
 
-| link:reference-iam-platform-roles.html["Ordner- oder Projektadministrator"^] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Ordnern oder Projekten hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und beliebige Datendienste oder Anwendungen auf Ressourcen innerhalb des Ordners oder Projekts verwenden, denen sie zugewiesen sind. Die Rolle „Ordner“ oder „Projektadministrator“ KANN KEINE Connectors erstellen. 
+| link:reference-iam-platform-roles.html["Ordner- oder Projektadministrator"] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Ordnern oder Projekten hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und beliebige Datendienste oder Anwendungen auf Ressourcen innerhalb des Ordners oder Projekts verwenden, denen sie zugewiesen sind. Die Rolle „Ordner“ oder „Projektadministrator“ KANN KEINE Connectors erstellen. 
 |===
 
 
@@ -46,10 +46,19 @@ NOTE: Der Zugriff auf Keystone über BlueXP  ist derzeit in der Beta-Phase. Wen
 | Anwendungsrolle | Zuständigkeiten 
 
 
-| link:reference-iam-keystone-roles.html["Keystone Admin"^] | Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
+| link:reference-iam-keystone-roles.html["Keystone Admin"] | Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
 
 
-| link:reference-iam-keystone-roles.html["Keystone Viewer"^] | Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
+| link:reference-iam-keystone-roles.html["Keystone Viewer"] | Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
+
+
+| link:reference-iam-storage-roles.html["Storage-Admin"] | Verwaltung von Storage-Zustands- und Governance-Funktionen, Erkennung von Storage-Ressourcen sowie Ändern und Löschen vorhandener Arbeitsumgebungen 
+
+
+| link:reference-iam-storage-roles.html["Storage-Prüfer"] | Zeigen Sie den Speicherzustand und die Governance-Funktionen an und zeigen Sie zuvor erkannte Speicherressourcen an. Vorhandene Speicherarbeitsumgebungen können nicht erkannt, geändert oder gelöscht werden. 
+
+
+| link:reference-iam-storage-roles.html["Spezialist für den Systemzustand"] | Verwaltung von Storage- und Funktionszustands- und Governance-Funktionen; alle Berechtigungen des Storage-Administrators außer bestehende Arbeitsumgebungen können nicht geändert oder gelöscht werden. 
 |===
 
 
@@ -65,10 +74,10 @@ Nachfolgend finden Sie eine Liste der Rollen in der Datenservicekategorie. Jede 
 | Klassifizierungs-Admin | Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen. Klassifizierung hat keine Viewer-Rolle. Benutzer mit dieser Rolle können Compliance-Informationen anzeigen und Berichte für Ressourcen erstellen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren. 
 
 
-| link:reference-iam-ransomware-roles.html["Administrator für Ransomware-Schutz"^] | Verwalten Sie Aktionen auf den Registerkarten Schützen, Warnungen, Wiederherstellen, Einstellungen und Berichte des Ransomware-Schutz-Service. 
+| link:reference-iam-ransomware-roles.html["Administrator für Ransomware-Schutz"] | Verwalten Sie Aktionen auf den Registerkarten Schützen, Warnungen, Wiederherstellen, Einstellungen und Berichte des Ransomware-Schutz-Service. 
 
 
-| link:reference-iam-ransomware-roles.html["Viewer für Ransomware-Schutz"^] | Anzeigen von Workload-Daten, Anzeigen von Warnungsdaten, Herunterladen von Wiederherstellungsdaten und Herunterladen von Berichten im Ransomware-Schutzdienst. 
+| link:reference-iam-ransomware-roles.html["Viewer für Ransomware-Schutz"] | Anzeigen von Workload-Daten, Anzeigen von Warnungsdaten, Herunterladen von Wiederherstellungsdaten und Herunterladen von Berichten im Ransomware-Schutzdienst. 
 
 
 | SnapCenter-Admin  a| 

@@ -152,11 +152,14 @@ Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevo
 --
 Führen Sie die folgenden Schritte aus, um Podman zu installieren und zu konfigurieren, um die folgenden Anforderungen zu erfüllen:
 
-* Der podman.Socket-Dienst muss aktiviert und gestartet werden
-* python3 muss installiert sein
-* Das Paket podman-compose Version 1.0.6 muss installiert sein
-* Podman-compose muss der Umgebungsvariable PATH hinzugefügt werden
+* Aktivieren und starten Sie den Dienst podman.socket
+* python3 einbauen
+* Installieren Sie das Podman-Compose-Paket Version 1.0.6
+* Fügen Sie podman-compose zur Umgebungsvariablen PATH hinzu
 
+
+
+NOTE: Passen Sie bei Verwendung von Podman den aardvark-dns-Dienstport (Standard: 53) nach der Installation des Connectors an, um Konflikte mit dem DNS-Port auf dem Host zu vermeiden. Folgen Sie den Anweisungen zur Portkonfiguration.
 
 .Schritte
 . Entfernen Sie das Paket podman-Docker, wenn es auf dem Host installiert ist.
