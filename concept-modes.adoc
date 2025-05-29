@@ -166,9 +166,7 @@ Unterstützt in Regierungsregionen mit eingeschränktem Modus. Nicht unterstütz
 | Digitale Brieftasche | Sie können das Digital Wallet mit den unten aufgeführten unterstützten Lizenzierungsoptionen für den eingeschränkten Modus verwenden. 
 
 
-| On-Premises ONTAP Cluster | Erkennung mit einem Connector und Ermittlung ohne einen Connector (direkte Erkennung) werden unterstützt.
-
-Wenn Sie ein On-Premises-Cluster mit einem Connector ermitteln, wird die erweiterte Ansicht (System Manager) nicht unterstützt. 
+| On-Premises ONTAP Cluster | Erkennung mit einem Connector und Ermittlung ohne einen Connector (direkte Erkennung) werden unterstützt. Wenn Sie einen lokalen Cluster mit einem Connector entdecken, wird die erweiterte Ansicht (System Manager) nicht unterstützt. 
 
 
 | Replizierung | Unterstützt in Regierungsregionen mit eingeschränktem Modus. Nicht unterstützt in kommerziellen Regionen oder in souveränen Regionen mit eingeschränktem Modus. 
@@ -251,7 +249,7 @@ Unterstützte BlueXP Services in Cloud-Implementierungen:: BlueXP unterstützt b
 Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt. 
 |===
 --
-Unterstützte BlueXP Services in On-Premises-Implementierungen:: BlueXP unterstützt bei der On-Premises-Installation des Connector folgende Storage- und Datenservices mit Private Mode:
+Unterstützte BlueXP-Dienste in lokalen Bereitstellungen:: BlueXP unterstützt bei der On-Premises-Installation des Connector folgende Storage- und Datenservices mit Private Mode:
 +
 --
 [cols="2*"]
@@ -343,7 +341,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
 | Google Cloud Storage | Nein | Nein 
 
 
-| ONTAP-Cluster vor Ort | Ja. | Ja. 
+| On-Premises-ONTAP-Cluster | Ja. | Ja. 
 
 
 | E-Series | Nein | Nein 

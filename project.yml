@@ -224,7 +224,7 @@ sidebar:
         url: "/reference-ports-azure.html"
       - title: Connector-Firewall-Regeln in Google Cloud
         url: "/reference-ports-gcp.html"
-      - title: Anschlüsse für den On-Prem Connector
+      - title: Ports für den lokalen Connector
         url: "/reference-ports-on-prem.html"
   - title: Wissen und Support
     entries:

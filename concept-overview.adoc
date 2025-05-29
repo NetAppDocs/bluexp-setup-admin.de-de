@@ -79,10 +79,10 @@ BlueXP  umfasst eine umfassende Suite integrierter Datenservices, die Sie bei d
 
 BlueXP -Warnmeldungen:: Sie erhalten Probleme im Zusammenhang mit Kapazität, Verfügbarkeit, Performance, Sicherung und Sicherheit in Ihrer ONTAP-Umgebung.
 BlueXP Automatisierungskatalog:: Verwenden Sie skriptbasierte Lösungen, um die Implementierung und Integration von NetApp Produkten und Services zu automatisieren.
-BlueXP Backup und Recovery:: Backup und Restore von Cloud- und On-Premises-Daten
+BlueXP Backup und Recovery:: Sichern und Wiederherstellen von Cloud- und lokalen Daten.
 BlueXP Klassifizierung:: Sorgen Sie für den Schutz Ihrer Applikationsdaten und Cloud-Umgebungen.
 BlueXP Cloud-OPS:: Erhalten Sie einen transparenten Überblick über Ihre Cloud-Computing-Ausgaben und lassen Sie potenzielle Einsparungen erkennen.
-BlueXP Kopier- und Synchronisierungsfunktion:: Datensynchronisierung von On-Premises- und Cloud-Datenspeichern
+BlueXP Kopier- und Synchronisierungsfunktion:: Synchronisieren Sie Daten zwischen lokalen und Cloud-Datenspeichern.
 BlueXP Digital Advisor:: Prädiktive Analysen und proaktiver Support optimieren die Dateninfrastruktur
 Das Digital Wallet von BlueXP:: Verwalten und überwachen Sie Ihre Lizenzen und Abonnements.
 BlueXP Disaster Recovery:: Schützen Sie lokale VMware-Workloads mit VMware Cloud on Amazon FSX for ONTAP als Disaster-Recovery-Standort.
@@ -92,7 +92,7 @@ BlueXP vor Ransomware-Schutz:: Erkennen Sie Anomalien, die möglicherweise zu Ra
 BlueXP Replizierung:: Replizieren Sie Daten zwischen Storage-Systemen, um Backup und Disaster Recovery zu unterstützen.
 BlueXP  Software-Updates:: Automatisierung von Bewertung, Planung und Ausführung von ONTAP Upgrades
 BlueXP NachhaltigkeitssDashboard:: Analysieren Sie die Nachhaltigkeit Ihrer Storage-Systeme
-BlueXP Tiering:: Erweitern Sie Ihren lokalen ONTAP-Storage in die Cloud.
+BlueXP Tiering:: Erweitern Sie Ihren lokalen ONTAP-Speicher auf die Cloud.
 BlueXP Volume-Caching:: Erstellen Sie ein schreibbares Cache-Volume, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von Volumes zu reduzieren, auf die sehr viel zugegriffen wird.
 BlueXP -Workload ist werkseitig eingestellt:: Entwerfen, Einrichten und Betreiben wichtiger Workloads mit Amazon FSX für NetApp ONTAP
 

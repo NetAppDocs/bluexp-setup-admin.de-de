@@ -4,7 +4,7 @@ permalink: reference-ports-on-prem.html
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
 summary: Der Connector verwendet eingehende Ports, wenn er manuell auf einem lokalen Linux-Host installiert wird. Möglicherweise müssen Sie diese Ports zu Planungszwecken verwenden. 
 ---
-= Anschlüsse für den On-Prem Connector
+= Ports für den lokalen Connector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

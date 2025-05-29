@@ -4,7 +4,7 @@ permalink: concept-connectors.html
 keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
 summary: Connector ist die NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem On-Premises-Netzwerk ausgeführt wird. Sie führt die Aktionen aus, die BlueXP für das Management der Dateninfrastruktur benötigt. Der Connector fragt fortlaufend die BlueXP SaaS-Ebene nach möglichen Aktionen ab. Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. 
 ---
-= Erfahren Sie mehr über Steckverbinder
+= Erfahren Sie mehr über BlueXP -Steckverbinder
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -48,7 +48,7 @@ Zum Hinzufügen einer Lizenz zur digitalen Brieftasche ist nur ein Connector erf
 Ein Connector ist zwar nicht für die direkte Erkennung eines lokalen ONTAP-Clusters erforderlich, jedoch ist ein Connector erforderlich, wenn Sie zusätzliche BlueXP-Funktionen nutzen möchten.
 
 +
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Weitere Informationen zu den Wiederauffindungs- und Managementoptionen für lokale ONTAP Cluster"^]
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Erfahren Sie mehr über Erkennungs- und Verwaltungsoptionen für lokale ONTAP-Cluster"^]
 
 * Software-Updates
 * Nachhaltigkeit
@@ -90,7 +90,7 @@ Ein Connector ist erforderlich, um BlueXP im eingeschränkten Modus oder im priv
 
 Anschlüsse sind ein grundlegender Bestandteil der Service-Architektur von BlueXP. Es liegt in Ihrer Verantwortung sicherzustellen, dass die entsprechenden Steckverbinder jederzeit betriebsbereit und zugänglich sind. Während der Service darauf ausgelegt ist, kurze Ausfälle der Connector-Verfügbarkeit zu überwinden, müssen Sie bei Bedarf sofort Maßnahmen ergreifen, um Infrastrukturausfälle zu beheben.
 
-Diese Dokumentation unterliegt der EULA. Wenn das Produkt nicht in Übereinstimmung mit der Dokumentation betrieben wird, können die Funktionalität und der Betrieb des Produkts sowie Ihre Rechte im Rahmen der EULA beeinträchtigt werden.
+Diese Dokumentation unterliegt der EULA. Wenn das Produkt nicht gemäß der Dokumentation betrieben wird, können die Funktionalität und der Betrieb des Produkts sowie Ihre Rechte gemäß der EULA beeinträchtigt werden.
 
 
 
@@ -114,7 +114,7 @@ Wenn Sie BlueXP Services in Verbindung mit Google Cloud nutzen möchten, müssen
 
 == Kommunikation mit Cloud-Providern
 
-Der Connector verwendet TLS 1.2 für die gesamte Kommunikation zu AWS, Azure und Google Cloud.
+Der Connector verwendet TLS 1.3 für die gesamte Kommunikation zu AWS, Azure und Google Cloud.
 
 
 
@@ -126,9 +126,9 @@ link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"].
 
 
 
-== So erstellen Sie einen Konnektor
+== So installieren Sie einen Connector
 
-Sie können einen Connector direkt von BlueXP , vom Marktplatz Ihres Cloud-Providers oder durch manuelle Installation der Software auf Ihrem eigenen Linux-Host erstellen. Der Einstieg hängt davon ab, ob Sie BlueXP im Standardmodus, im eingeschränkten Modus oder im privaten Modus nutzen.
+Sie können einen Connector direkt von BlueXP, vom Marktplatz Ihres Cloud-Anbieters oder durch manuelle Installation der Software auf Ihrem eigenen Linux-Host installieren. Der Einstieg hängt davon ab, ob Sie BlueXP im Standardmodus, im eingeschränkten Modus oder im privaten Modus nutzen.
 
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
 * link:task-quick-start-standard-mode.html["Einstieg in BlueXP im Standardmodus"]
@@ -151,7 +151,7 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie unter:
 ** link:concept-install-options-aws.html["Installationsoptionen für Konnektoren in AWS"]
 ** link:concept-install-options-azure.html["Optionen für die Connector-Installation in Azure"]
 ** link:concept-install-options-google.html["Connector-Installationsoptionen in Google Cloud"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Cloud-Berechtigungen für On-Premises-Implementierungen einrichten"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Einrichten von Cloudberechtigungen für lokale Bereitstellungen"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
@@ -171,7 +171,7 @@ Es liegt in Ihrer Verantwortung, die Connector-Richtlinien zu aktualisieren, wen
 
 == Connector-Upgrades
 
-Wir aktualisieren die Connector-Software in der Regel jeden Monat, um neue Funktionen einzuführen und Stabilitätsverbesserungen zu ermöglichen. Während die meisten Dienste und Funktionen der BlueXP -Plattform über SaaS-basierte Software angeboten werden, sind einige Funktionen von der Version des Connectors abhängig. Dazu gehören Cloud Volumes ONTAP-Management, On-Premises-ONTAP-Cluster-Management, Einstellungen und Hilfe.
+Wir aktualisieren die Connector-Software in der Regel jeden Monat, um neue Funktionen einzuführen und Stabilitätsverbesserungen zu ermöglichen. Während die meisten Dienste und Funktionen der BlueXP -Plattform über SaaS-basierte Software angeboten werden, sind einige Funktionen von der Version des Connectors abhängig. Dazu gehören die Verwaltung von Cloud Volumes ONTAP, die Verwaltung von ONTAP-Clustern vor Ort, Einstellungen und Hilfe.
 
 Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden, aktualisiert der Connector seine Software automatisch auf die neueste Version, sofern er über ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten. Wenn Sie BlueXP im privaten Modus nutzen, müssen Sie den Connector manuell aktualisieren.
 
@@ -201,6 +201,6 @@ In einigen Fällen benötigen Sie möglicherweise nur einen Connector, aber Sie 
 
 Hier nur ein paar Beispiele:
 
-* Sie verfügen über eine Multi-Cloud-Umgebung (z. B. AWS und Azure) und bevorzugen einen Connector in AWS und einen weiteren in Azure. Jedes managt die Cloud Volumes ONTAP Systeme, die in diesen Umgebungen ausgeführt werden.
+* Sie verfügen über eine Multicloud-Umgebung (z. B. AWS und Azure) und möchten lieber einen Connector in AWS und einen anderen in Azure haben. Jedes managt die Cloud Volumes ONTAP Systeme, die in diesen Umgebungen ausgeführt werden.
 * Ein Service-Provider nutzt möglicherweise eine BlueXP  Organisation, um ihren Kunden Services bereitzustellen, während ein anderes Unternehmen für Disaster Recovery für einen seiner Geschäftseinheiten einsetzt. Jedes Unternehmen verfügt über separate Connectors.
 

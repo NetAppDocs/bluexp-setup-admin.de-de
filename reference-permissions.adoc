@@ -184,7 +184,7 @@ Wenn Sie BlueXP Backup und Recovery für ein Backup von Cloud Volumes ONTAP verw
 
 
 
-| Backup von lokalen ONTAP Clustern in Google Cloud | Wenn Sie Backup und Recovery von lokalen ONTAP-Clustern mit BlueXP nutzen, müssen Sie Berechtigungen zum Connector hinzufügen, um die Funktion „Suchen und Wiederherstellen“ nutzen zu können. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Berechtigungen für die Funktion Suchen  Wiederherstellen"^] 
+| Backup von lokalen ONTAP Clustern in Google Cloud | Wenn Sie BlueXP Backup und Recovery zum Sichern von ONTAP-Clustern vor Ort verwenden, müssen Sie dem Connector Berechtigungen hinzufügen, um die Funktion „Suchen und Wiederherstellen“ verwenden zu können. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Berechtigungen für die Funktion Suchen  Wiederherstellen"^] 
 |===
 
 

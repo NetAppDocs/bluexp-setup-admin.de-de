@@ -131,7 +131,7 @@ Nein, es ist nicht möglich, die AWS Ressourcen, die Ihrer Cloud Volumes ONTAP A
 
 
 
-=== Wie funktionieren Anmeldedaten für Marketplace-Implementierungen und On-Premises-Implementierungen?
+=== Wie funktionieren Anmeldeinformationen für Marktplatzbereitstellungen und lokale Bereitstellungen?
 
 In den obigen Abschnitten wird die empfohlene Bereitstellungsmethode für den Connector beschrieben, der aus BlueXP stammt. Sie können einen Connector auch über AWS Marketplace in AWS implementieren und die Connector-Software manuell auf Ihrem eigenen Linux-Host installieren.
 
@@ -144,7 +144,7 @@ Weitere Informationen zum Einrichten von Berechtigungen finden Sie auf den folge
 * Standardmodus
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Richten Sie Berechtigungen für eine AWS Marketplace-Implementierung ein"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Richten Sie Berechtigungen für On-Premises-Implementierungen ein"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Einrichten von Berechtigungen für lokale Bereitstellungen"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Richten Sie Berechtigungen für den eingeschränkten Modus ein"]
