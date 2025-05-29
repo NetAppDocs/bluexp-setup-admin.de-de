@@ -284,7 +284,7 @@ Nachdem Sie ein Azure-Konto mit den erforderlichen Berechtigungen angegeben habe
 Falls Sie diese Zugangsdaten gerade bei Ihrem Cloud-Provider erstellt haben, kann es einige Minuten dauern, bis sie zur Verwendung verfügbar sind. Warten Sie einige Minuten, bevor Sie BlueXP die Anmeldeinformationen hinzufügen.
 
 .Bevor Sie beginnen
-Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#how-to-create-a-connector["Erfahren Sie, wie Sie einen Konnektor erstellen"].
+Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#connector-installation["Erfahren Sie, wie Sie einen Konnektor erstellen"].
 
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
@@ -334,7 +334,7 @@ Durch den Austausch des aktuellen Marketplace-Abonnements durch ein neues Abonne
 
 
 .Bevor Sie beginnen
-Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#how-to-create-a-connector["Erfahren Sie, wie"].
+Sie müssen einen Connector erstellen, bevor Sie die BlueXP-Einstellungen ändern können. l link:concept-connectors.html#connector-installation["Erfahren Sie, wie Sie einen Konnektor erstellen"] .
 
 .Schritte
 . Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.

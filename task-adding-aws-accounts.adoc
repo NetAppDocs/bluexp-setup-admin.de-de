@@ -235,7 +235,7 @@ Durch den Austausch des aktuellen Marketplace-Abonnements durch ein neues Abonne
 
 
 .Bevor Sie beginnen
-Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#how-to-create-a-connector["Erfahren Sie, wie Sie einen Konnektor erstellen"].
+Sie müssen einen Konnektor erstellen, bevor Sie BlueXP-Einstellungen ändern können. link:concept-connectors.html#connector-installation["Erfahren Sie, wie Sie einen Konnektor erstellen"].
 
 Im folgenden Video werden die Schritte zum Abonnieren von BlueXP  über den AWS Marketplace gezeigt:
 

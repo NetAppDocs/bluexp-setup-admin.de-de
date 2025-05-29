@@ -22,13 +22,13 @@ Sie sollten verstehen, wie die Verbindungszuordnung funktioniert. link:concept-i
 
 
 .Schritte
-. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Einstellungssymbol"].
 . Wählen Sie *Connectors*.
 . Suchen Sie in der Tabelle den Konnektor, den Sie verknüpfen möchten.
 +
-Um einen bestimmten Connector zu finden, können Sie die Suche über der Tabelle verwenden und den Inhalt der Tabelle filtern, indem Sie einen bestimmten Teil der Ressourcenhierarchie auswählen.
+Verwenden Sie die Suche über der Tabelle, um einen bestimmten Connector zu finden, oder filtern Sie die Tabelle nach Ressourcenhierarchie.
 
-. Um zuerst die Ordner und Projekte anzuzeigen, mit denen der Connector verknüpft ist, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und dann *Details anzeigen* aus.
+. Um die mit dem Connector verknüpften Ordner und Projekte anzuzeigen, wählen Sie image:icon-action.png["Ein Symbol mit drei Punkten"] und wählen Sie dann *Details anzeigen*.
 +
 BlueXP  zeigt Details zu den Ordnern und Projekten an, denen der Connector zugeordnet ist.
 
