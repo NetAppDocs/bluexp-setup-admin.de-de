@@ -14,12 +14,12 @@ summary: Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Admini
 
 
 [role="lead"]
-Sie können Benutzern folgende Rollen zuweisen, um ihnen Zugriff auf die Storage-Managementfunktionen in BlueXP  zu ermöglichen, die mit unterstützten Speicherressourcen verknüpft sind. Benutzern kann entweder eine Administratorrolle zugewiesen werden, mit der sie Aktionen im Storage-Management ausführen können, oder eine Zuschauerrolle, wenn sie lediglich Überwachungsaufgaben übernehmen.
+Sie können Benutzern folgende Rollen zuweisen, um ihnen Zugriff auf die Storage-Managementfunktionen in BlueXP  zu ermöglichen, die mit unterstützten Speicherressourcen verknüpft sind. Sie können Benutzern eine Administratorrolle zum Verwalten des Speichers oder eine Viewer-Rolle zum Überwachen zuweisen.
 
 
 NOTE: Diese Rollen sind über die BlueXP-Partnerschafts-API nicht verfügbar.
 
-Storage-Rollen können Benutzern für die folgenden Storage-Ressourcen und -Funktionen zugewiesen werden:
+Administratoren können Benutzern Speicherrollen für die folgenden Speicherressourcen und -funktionen zuweisen:
 
 Storage-Ressourcen:
 
@@ -38,13 +38,13 @@ BlueXP  Services und Funktionen:
 
 
 .Beispiel für Storage-Rollen in BlueXP 
-Bei der XYZ Corporation, einem multinationalen Unternehmen, gibt es ein großes Team aus Storage Engineers und Storage-Administratoren. Sie möchten dem Team das Management der Storage Assets für seine jeweiligen Regionen ermöglichen, aber den Zugriff auf wichtige BlueXP -Administrationsaufgaben wie Benutzermanagement, Connector-Erstellung und Kostenmanagementtools wie Digital Wallet einschränken.
+Bei der XYZ Corporation, einem multinationalen Unternehmen, gibt es ein großes Team aus Storage Engineers und Storage-Administratoren. Sie ermöglichen diesem Team die Verwaltung von Speicherressourcen für ihre Regionen und beschränken gleichzeitig den Zugriff auf zentrale BlueXP-Aufgaben wie Benutzerverwaltung, Connector-Erstellung und Kostentools wie die digitale Geldbörse.
 
 In einem Team von 12 Benutzern wird die Rolle *Storage Viewer* zugewiesen, mit der sie die Speicherressourcen für die BlueXP -Projekte überwachen können, denen sie zugewiesen sind. Die restlichen neun erhalten die Rolle *Speicheradministrator*, die die Möglichkeit beinhaltet, Softwareupdates zu verwalten, über BlueXP  auf ONTAP-System-Manager zuzugreifen sowie Speicherressourcen zu erkennen (funktionierende Umgebungen hinzufügen). Eine Person im Team erhält die Rolle *Systemgesundheitsspezialist*, damit sie den Zustand der Speicherressourcen in ihrer Region verwalten können, aber keine Arbeitsumgebungen ändern oder löschen können. Diese Person kann auch Software-Updates für die Speicherressourcen für Projekte durchführen, denen sie zugewiesen sind.
 
 Die Organisation hat zwei zusätzliche Benutzer mit der Rolle *Organisationsadministrator*, die alle Aspekte von BlueXP  verwalten können, einschließlich Benutzerverwaltung, Connector-Erstellung und Kostenmanagement-Tools wie Digital Wallet, sowie mehrere Benutzer mit der Rolle *Ordner oder Projektadministrator*, die BlueXP -Verwaltungsaufgaben für die Ordner und Projekte, denen sie zugewiesen sind, durchführen können.
 
-Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die die einzelnen BlueXP  Storage-Rollen durchführen können.
+Die folgende Tabelle zeigt die Aktionen, die jede BlueXP-Speicherrolle ausführt.
 
 [cols="40,20a,20a,20a"]
 |===

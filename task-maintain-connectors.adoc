@@ -14,7 +14,7 @@ summary: Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer V
 
 
 [role="lead"]
-Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer Verantwortung. Sie sollten beispielsweise Sicherheitsupdates auf dem Betriebssystem auf dem Connector-Host anwenden, indem Sie die Standardverfahren Ihres Unternehmens für die Betriebssystemverteilung befolgen.
+Die Wartung des Betriebssystems auf dem Connector-Host liegt in Ihrer (Kunden-)Verantwortung. Sie (der Kunde) sollten beispielsweise Sicherheitsupdates auf das Betriebssystem auf dem Connector-Host anwenden und dabei die Standardverfahren Ihres Unternehmens zur Betriebssystemverteilung befolgen.
 
 
 TIP: Wenn Sie bereits über einen Connector verfügen, sollten Sie sich dessen bewusst sein link:reference-connector-operating-system-changes.html["Änderungen an unterstützten Linux-Betriebssystemen"].

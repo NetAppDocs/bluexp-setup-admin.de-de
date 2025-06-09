@@ -27,6 +27,9 @@ Ein Connector ist eine NetApp Software, die in Ihrem Cloud-Netzwerk oder Ihrem O
 
 Die Connector-Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Port-Anforderungen usw. erfüllt.
 
+
+NOTE: Der Connector reserviert den UID- und GID-Bereich von 19000 bis 19200. Dieser Bereich ist fest und kann nicht geändert werden. Wenn Drittanbietersoftware auf Ihrem Host UIDs oder GIDs innerhalb dieses Bereichs verwendet, schlägt die Connector-Installation fehl. NetApp empfiehlt die Verwendung eines Hosts ohne Drittanbietersoftware, um Konflikte zu vermeiden.
+
 Dedizierter Host:: Der Connector wird nicht auf einem Host unterstützt, der für andere Anwendungen freigegeben ist. Der Host muss ein dedizierter Host sein.
 +
 --

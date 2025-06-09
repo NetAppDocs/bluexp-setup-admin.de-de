@@ -22,24 +22,24 @@ Führen Sie diese Schritte aus, um eine neue BlueXP -Organisation einzurichten.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Bearbeiten Sie das Standardprojekt, oder fügen Sie es der Hierarchie Ihrer Organisation hinzu
 [role="quick-margin-para"]
-Sie können einfach das Standardprojekt verwenden oder zusätzliche Projekte und Ordner erstellen, die der Hierarchie Ihres Unternehmens entsprechen.
+Verwenden Sie das Standardprojekt oder erstellen Sie zusätzliche Projekte und Ordner, die Ihrer Unternehmenshierarchie entsprechen.
 
 [role="quick-margin-para"]
 link:task-iam-manage-folders-projects.html["Erfahren Sie, wie Sie Ihre Ressourcen mit Ordnern und Projekten organisieren"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Ordnen Sie Mitglieder Ihrer Organisation zu
 [role="quick-margin-para"]
-Wenn mehrere Mitarbeiter in Ihrem Unternehmen auf Ressourcen von BlueXP  zugreifen und diese verwalten müssen, müssen Sie ihre Benutzerkonten Ihrem Unternehmen zuordnen und die entsprechenden Berechtigungen für Ihre Ressourcenhierarchie bereitstellen. Sie haben auch die Möglichkeit, Servicekonten zu Ihrer Organisation hinzuzufügen.
+Wenn mehrere Personen in Ihrem Unternehmen Zugriff auf BlueXP benötigen, verknüpfen Sie deren Benutzerkonten mit Ihrer Organisation und weisen Sie die erforderlichen Berechtigungen zu. Sie haben auch die Möglichkeit, Servicekonten zu Ihrer Organisation hinzuzufügen.
 
 [role="quick-margin-para"]
 link:task-iam-manage-members-permissions.html["Erfahren Sie, wie Sie Mitglieder und ihre Berechtigungen verwalten"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Ressourcen hinzufügen oder erkennen
 [role="quick-margin-para"]
-Fügen Sie Ressourcen in BlueXP  als _Arbeitsumgebungen_ hinzu oder erkennen Sie sie. Eine Arbeitsumgebung stellt ein Speichersystem dar, das die Mitglieder des Unternehmens aus einem Projekt heraus managen. Beispielsweise ein Cloud Volumes ONTAP System oder ein On-Premises ONTAP Cluster.
+Fügen Sie Ressourcen in BlueXP als Arbeitsumgebungen hinzu oder entdecken Sie sie. Organisationsmitglieder verwalten eine Arbeitsumgebung, die ein Speichersystem darstellt, innerhalb eines Projekts.
 
 [role="quick-margin-para"]
-Erfahren Sie, wie Sie Ressourcen auf dem BlueXP -Bildschirm erstellen oder entdecken:
+Erfahren Sie, wie Sie Ressourcen erstellen oder entdecken:
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSX für NetApp ONTAP"^]
@@ -52,7 +52,7 @@ Erfahren Sie, wie Sie Ressourcen auf dem BlueXP -Bildschirm erstellen oder entd
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Ressourcen mit zusätzlichen Projekten verknüpfen
 [role="quick-margin-para"]
-Wenn Sie eine Ressource in BlueXP  erstellen oder ermitteln, wird diese Ressource automatisch mit dem Projekt verknüpft, das beim Erstellen oder Erkennen der Arbeitsumgebung ausgewählt wurde. Wenn Sie diese Ressource einem anderen Projekt in Ihrer Organisation zur Verfügung stellen möchten, müssen Sie eine Verknüpfung zwischen ihnen erstellen. Wenn die Ressource von einem Connector verwaltet wird, müssen Sie auch eine Zuordnung zwischen dem Projekt und dem zugehörigen Connector erstellen.
+Wenn Sie eine Ressource in BlueXP  erstellen oder ermitteln, wird diese Ressource automatisch mit dem Projekt verknüpft, das beim Erstellen oder Erkennen der Arbeitsumgebung ausgewählt wurde. Wenn Sie diese Ressource einem anderen Projekt in Ihrer Organisation zur Verfügung stellen möchten, müssen Sie eine Verknüpfung zwischen ihnen erstellen. Wenn ein Connector die Ressource verwaltet, verknüpfen Sie den Connector mit dem entsprechenden Projekt.
 
 [role="quick-margin-list"]
 * link:task-iam-manage-resources.html["Erfahren Sie, wie Sie die Ressourcenhierarchie Ihres Unternehmens verwalten"].

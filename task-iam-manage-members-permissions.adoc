@@ -4,7 +4,7 @@ permalink: task-iam-manage-members-permissions.html
 keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
 summary: Verwalten Sie die Mitglieder Ihres Unternehmens, um Berechtigungen für verschiedene Ebenen der Ressourcenhierarchie Ihres Unternehmens bereitzustellen. 
 ---
-= Fügen Sie BlueXP -Mitglieder hinzu und verwalten Sie ihre Berechtigungen
+= BlueXP-Mitglieder und Dienstkonten hinzufügen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,8 @@ summary: Verwalten Sie die Mitglieder Ihres Unternehmens, um Berechtigungen für
 [role="lead"]
 Mit BlueXP  Identity and Access Management (IAM) können Sie Ihrer Organisation Mitglieder hinzufügen und ihnen eine oder mehrere Rollen innerhalb Ihrer Ressourcenhierarchie zuweisen. Eine _Rolle_ enthält einen Satz von Berechtigungen, mit denen ein Mitglied bestimmte Aktionen auf einer bestimmten Ebene der Ressourcenhierarchie ausführen kann. Sie können neue Benutzerkonten und Dienstkonten zuordnen, Mitgliederrollen verwalten und vieles mehr.
 
-Vorschlag: TIPP: Stellen Sie sicher, dass zwei Mitglieder die Rolle des Organisationsadministrators haben, um den Zugriff auf Ihre BlueXP-Organisation nicht zu verlieren.
+
+TIP: Stellen Sie sicher, dass zwei Mitglieder über die Rolle des Organisationsadministrators verfügen, um den Zugriff auf Ihre BlueXP-Organisation nicht zu verlieren.
 
 Um Benutzer und deren Berechtigungen zu verwalten, müssen Sie eine der folgenden Rollen zuweisen:
 
@@ -36,9 +37,9 @@ Benutzer mit dieser Rolle können nur Mitglieder eines bestimmten Ordners oder P
 
 == Fügen Sie Mitglieder zu Ihrer Organisation hinzu
 
-Sie können Ihrem Unternehmen zwei Arten von Mitgliedern hinzufügen: Ein Benutzerkonto und ein Service-Konto. Ein Servicekonto wird normalerweise von einer Anwendung verwendet, um bestimmte Aufgaben ohne menschliches Eingreifen zu erledigen.
+Sie können Ihrem Unternehmen zwei Arten von Mitgliedern hinzufügen: Ein Benutzerkonto und ein Service-Konto. Ein Dienstkonto wird typischerweise von einer Anwendung verwendet, um bestimmte Aufgaben ohne menschliches Eingreifen über die BlueXP-API auszuführen. Ein Benutzerkonto wird typischerweise von einer Person verwendet, um sich bei BlueXP anzumelden und Ressourcen zu verwalten.
 
-Sie können ein Servicekonto direkt über BlueXP  hinzufügen. Benutzer müssen sich für ein BlueXP-Konto anmelden, bevor sie einer Organisation hinzugefügt oder ihnen eine Rolle zugewiesen werden.
+Benutzer müssen sich zunächst für ein BlueXP-Konto registrieren, bevor Sie sie einer Organisation hinzufügen oder ihnen eine Rolle zuweisen können. Sie können jedoch auch direkt aus BlueXP heraus Dienstkonten erstellen.
 
 Um Benutzer und deren Berechtigungen zu verwalten, müssen Sie über die Rolle *Organisationsadministrator* oder die Rolle *Ordner oder Projektadministrator* verfügen. Denken Sie daran, dass Benutzer mit der Rolle *Ordner oder Projektadministrator* nur Mitglieder für den Ordner oder Projekte verwalten können, für die sie Administratorrechte besitzen.
 
@@ -129,11 +130,14 @@ lueXP zeigt das Client-Geheimnis nur einmal an und speichert es nicht. Kopieren 
 ====
 
 
-=== Anzeigen von Organisationsmitgliedern
+== Anzeigen von Organisationsmitgliedern
 
 Sie können eine Liste aller Mitglieder in Ihrer BlueXP -Organisation anzeigen. Um zu verstehen, welche Ressourcen und Berechtigungen einem Mitglied zur Verfügung stehen, können Sie die dem Mitglied zugewiesenen Rollen auf verschiedenen Ebenen der Ressourcenhierarchie Ihres Unternehmens anzeigen. link:task-iam-manage-roles.html["Erfahren Sie, wie Sie mit Rollen den Zugriff auf BlueXP -Ressourcen steuern."^]
 
-TSie können sowohl Benutzerkonten als auch Dienstkonten auf der Seite *Mitglieder* anzeigen.
+Sie können sowohl Benutzerkonten als auch Dienstkonten auf der Seite *Mitglieder* anzeigen.
+
+
+NOTE: Sie können auch alle Mitglieder anzeigen, die einem bestimmten Ordner oder Projekt zugeordnet sind. link:task-iam-manage-folders-projects.html#view-associated-resources-members["Weitere Informationen ."].
 
 .Schritte
 . Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
@@ -146,7 +150,7 @@ In der Tabelle *Mitglieder* werden die Mitglieder Ihrer Organisation angezeigt.
 
 
 
-=== Entfernen Sie ein Mitglied aus Ihrer Organisation
+== Entfernen Sie ein Mitglied aus Ihrer Organisation
 
 Möglicherweise müssen Sie ein Mitglied aus Ihrer Organisation entfernen, beispielsweise wenn es Ihr Unternehmen verlässt.
 
@@ -159,7 +163,7 @@ Durch das Entfernen eines Mitglieds werden dessen Berechtigungen aufgehoben, sei
 
 
 
-=== Erstellen Sie die Anmeldeinformationen für ein Dienstkonto neu
+== Erstellen Sie die Anmeldeinformationen für ein Dienstkonto neu
 
 Erstellen Sie neue Anmeldeinformationen, wenn diese verloren gegangen sind oder wenn eine Aktualisierung der Sicherheitsanmeldeinformationen erforderlich ist.
 
@@ -177,24 +181,27 @@ BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nirgendwo. Kopi
 
 
 
-.Verwandte Informationen
-link:task-iam-manage-folders-projects.html#view-associated-resources-members["Alle Mitglieder anzeigen, die einem bestimmten Ordner oder Projekt zugeordnet sind"].
 
 
+== Verwalten der Multi-Faktor-Authentifizierung (MFA) eines Benutzers
 
-=== Heben Sie die Zuweisung einer Rolle zu einem Mitglied auf
+Wenn ein Benutzer den Zugriff auf sein MFA-Gerät verloren hat, können Sie seine MFA-Konfiguration entweder entfernen oder deaktivieren.
 
-Sie können die Berechtigungen eines Mitglieds für einen bestimmten Ordner oder ein bestimmtes Projekt entfernen, indem Sie dessen Rolle entfernen.
+Wenn Sie die MFA-Konfiguration entfernen, muss der Benutzer MFA bei der Anmeldung bei BlueXP erneut einrichten. Wenn der Benutzer nur vorübergehend den Zugriff auf sein MFA-Gerät verloren hat, kann er den Wiederherstellungscode verwenden, den er bei der Einrichtung von MFA gespeichert hat, um sich bei BlueXP anzumelden.
 
-Wenn ein Mitglied in Ihrer Organisation Berechtigungen für einen Ordner oder ein Projekt hat, können Sie diese Rolle nicht entfernen. Sie haben zwei Möglichkeiten:
+Wenn Benutzer keinen Zugriff auf ihren Wiederherstellungscode haben, können Sie die MFA des Benutzers vorübergehend deaktivieren, sodass er sich ohne MFA anmelden kann. Die Deaktivierung der MFA für einen Benutzer dauert nur acht Stunden und wird anschließend automatisch wieder aktiviert. Der Benutzer kann sich während dieser Zeit einmal ohne MFA anmelden. Nach Ablauf der acht Stunden muss er sich mit MFA bei BlueXP anmelden.
 
-* Wenn das Mitglied Berechtigungen für einen anderen Teil der Ressourcenhierarchie haben soll, müssen Sie zuerst diese Rolle hinzufügen und dann die vorhandene Rolle löschen.
-* Wenn Sie nicht möchten, dass das Mitglied über Berechtigungen für irgendetwas verfügt, sollten Sie das Mitglied aus Ihrer Organisation entfernen.
 
+NOTE: Sie müssen über eine E-Mail-Adresse in derselben Domäne wie der betroffene Benutzer verfügen, um die Multi-Faktor-Authentifizierung dieses Benutzers verwalten zu können.
 
 .Schritte
-. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
-. Navigieren Sie in der Tabelle zum Ordner oder zur Projektebene, und wählen Sie dann image:icon-delete.png["Ein Symbol einer Mülltonne"]. Sie werden aufgefordert, die Entfernung zu bestätigen.
+. Wählen Sie oben rechts in der Konsole image:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."] > *Identitäts- und Zugriffsverwaltung*.
+. Wählen Sie *Mitglieder*.
++
+Die Mitglieder Ihrer Organisation erscheinen in der Tabelle *Mitglieder*.
+
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Multi-Faktor-Authentifizierung verwalten*.
+. Wählen Sie, ob die MFA-Konfiguration des Benutzers entfernt oder deaktiviert werden soll.
 
 
 

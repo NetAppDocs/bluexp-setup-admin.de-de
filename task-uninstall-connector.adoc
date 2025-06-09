@@ -22,7 +22,7 @@ link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"].
 
 == Deinstallieren Sie den Connector, wenn Sie den Standard- oder eingeschränkten Modus verwenden
 
-Wenn Sie BlueXP im Standardmodus oder im eingeschränkten Modus verwenden (d. h. der Connector-Host verfügt über ausgehende Verbindungen), sollten Sie die nachstehenden Schritte ausführen, um die Connector-Software zu deinstallieren.
+Wenn Sie den Standardmodus oder den eingeschränkten Modus verwenden (mit anderen Worten, der Connector-Host verfügt über eine ausgehende Konnektivität), sollten Sie die folgenden Schritte ausführen, um die Connector-Software zu deinstallieren.
 
 .Schritte
 . Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
@@ -39,7 +39,7 @@ _Silent_ führt das Skript aus, ohne dass Sie zur Bestätigung aufgefordert werd
 
 == Deinstallieren Sie den Connector, wenn Sie den privaten Modus verwenden
 
-Wenn Sie BlueXP im privaten Modus verwenden (d. h. der Connector-Host verfügt über _no_ Outbound-Verbindungen), sollten Sie die nachstehenden Schritte ausführen, um die Connector-Software zu deinstallieren.
+Wenn Sie den privaten Modus verwenden (mit anderen Worten, der Connector-Host hat _keine_ ausgehende Konnektivität), sollten Sie die folgenden Schritte ausführen, um die Connector-Software zu deinstallieren.
 
 .Schritt
 . Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
@@ -50,7 +50,7 @@ Wenn Sie BlueXP im privaten Modus verwenden (d. h. der Connector-Host verfügt �
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 ----
-. Entfernen Sie vom Linux-Host die alten, jetzt nicht verwendeten Container-Image-Dateien. Dadurch wird sichergestellt, dass genügend Speicherplatz im Verzeichnis /var vorhanden ist, um es erneut zu installieren.
+. Löschen Sie vom Linux-Host alte, nicht verwendete Container-Imagedateien, um im Verzeichnis /var Speicherplatz für die Neuinstallation freizugeben.
 +
 [role="tabbed-block"]
 ====
@@ -80,7 +80,7 @@ Wenn ein Connector inaktiv ist, können Sie ihn aus der Liste der Anschlüsse in
 Beachten Sie Folgendes zum Entfernen eines Konnektors:
 
 * Durch diese Aktion wird die virtuelle Maschine nicht gelöscht.
-* Diese Aktion kann nicht rückgängig gemacht werden - sobald Sie einen Connector aus BlueXP entfernen, können Sie ihn nicht wieder hinzufügen.
+* Diese Aktion kann nicht rückgängig gemacht werden. Wenn Sie einen Connector einmal entfernt haben, können Sie ihn nicht wieder hinzufügen.
 
 
 .Schritte

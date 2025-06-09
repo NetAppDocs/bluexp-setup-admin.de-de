@@ -14,16 +14,16 @@ summary: Verwalten Sie die Ressourcenhierarchie Ihres Unternehmens, indem Sie Re
 
 
 [role="lead"]
-Wenn Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) ein Mitglied Ihrer Organisation zuordnen, geben Sie Berechtigungen auf Unternehmens-, Ordner- oder Projektebene ein. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Speicherressource, die BlueXP  bereits managt oder bereits kennt.
+Wenn Sie ein Mitglied Ihrer Organisation zuordnen, erteilen Sie Berechtigungen auf Organisations-, Ordner- oder Projektebene. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Speicherressource, die BlueXP  bereits managt oder bereits kennt.
 
 
 
 == Zeigen Sie die Ressourcen in Ihrem Unternehmen an
 
-Sie können ermittelte und nicht ermittelte Ressourcen anzeigen, die Ihrer Organisation zugeordnet sind. Nicht entdeckte Ressourcen sind in der Regel über Digital Advisor bekannte Speicherressourcen, für die Sie nicht als Arbeitsumgebungen hinzugefügt haben.
+Sie können ermittelte und nicht ermittelte Ressourcen anzeigen, die Ihrer Organisation zugeordnet sind. Unentdeckte Ressourcen sind Speicherressourcen, die vom Digital Advisor identifiziert, aber nicht als Arbeitsumgebungen hinzugefügt wurden.
 
 
-NOTE: Amazon FSX for NetApp ONTAP-Ressourcen werden auf der Seite IAM-Ressourcen nicht angezeigt, da Sie sie nicht mit einer IAM-Rolle verknüpfen können. Sie können diese Ressourcen in ihrem jeweiligen Arbeitsbereich oder in Arbeitslasten anzeigen.
+NOTE: Auf der IAM-Ressourcenseite werden keine Amazon FSx für NetApp ONTAP-Ressourcen angezeigt, da Sie sie keiner IAM-Rolle zuordnen können. Sie können diese Ressourcen in ihrem jeweiligen Arbeitsbereich oder in Arbeitslasten anzeigen.
 
 .Schritte
 . Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
@@ -44,7 +44,7 @@ NOTE: Amazon FSX for NetApp ONTAP-Ressourcen werden auf der Seite IAM-Ressourcen
 
 == Verknüpfen Sie eine Ressource mit Ordnern und Projekten
 
-Wenn Sie eine Ressource für Ordner oder Projekte in Ihrer Organisation verfügbar machen möchten, müssen Sie eine Verknüpfung zwischen dem Ordner oder Projekt und der Ressource erstellen.
+Um eine Ressource für einen Ordner oder ein Projekt verfügbar zu machen, ordnen Sie die Ressource dem Ordner oder Projekt zu.
 
 .Bevor Sie beginnen
 Sie sollten verstehen, wie die Ressourcenzuordnung funktioniert. link:concept-identity-and-access-management.html#resources["Erfahren Sie mehr über Ressourcen, einschließlich wann Sie eine Ressource einem Ordner zuordnen"].
@@ -93,7 +93,7 @@ NOTE: Wenn Sie herausfinden möchten, welche Organisationsmitglieder Zugriff auf
 
 == Eine Ressource aus einem Ordner oder Projekt entfernen
 
-Um eine Ressource aus einem Ordner oder Projekt zu entfernen, müssen Sie die Zuordnung zwischen dem Ordner oder Projekt und der Ressource entfernen. Nachdem Sie die Zuordnung entfernt haben, können Organisationsmitglieder die Ressource nicht mehr aus dem Ordner oder Projekt verwalten.
+Um eine Ressource aus einem Ordner oder Projekt zu entfernen, müssen Sie die Zuordnung zwischen dem Ordner oder Projekt und der Ressource entfernen. Durch das Entfernen der Zuordnung wird verhindert, dass Mitglieder der Organisation die Ressource im Ordner oder Projekt verwalten.
 
 
 NOTE: Wenn Sie eine erkannte Ressource aus der gesamten Organisation entfernen möchten, müssen Sie die Arbeitsumgebung aus dem BlueXP -Bildschirm entfernen.

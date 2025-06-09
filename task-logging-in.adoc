@@ -16,8 +16,6 @@ summary: Die Anmeldung bei BlueXP hängt vom BlueXP Implementierungsmodus ab, de
 [role="lead"]
 Die Anmeldung bei BlueXP hängt vom BlueXP Implementierungsmodus ab, den Sie für Ihr Konto verwenden.
 
-Der Connector enthält eine lokale Benutzeroberfläche, auf die über den Connector-Host zugegriffen werden kann. Diese UI steht Kunden zur Verfügung, die BlueXP im eingeschränkten Modus oder im privaten Modus verwenden. Wenn Sie BlueXP im Standardmodus verwenden, sollten Sie über die auf die Benutzeroberfläche zugreifen https://console.bluexp.netapp.com/["BlueXP SaaS-Konsole"^]
-
 link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"].
 
 [role="tabbed-block"]

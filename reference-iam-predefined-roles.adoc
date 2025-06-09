@@ -20,14 +20,14 @@ Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management
 
 == Plattformrollen
 
-Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. Sie erlauben alle Berechtigungen für die BlueXP Administration, einschließlich dem Zuweisen von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner- oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang.
+Plattformrollen gewähren alle Berechtigungen für die BlueXP-Administration, einschließlich der Zuweisung von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP IAM umfasst zwei Plattformrollen: Organisationsadministrator und Ordner- oder Projektadministrator. Der Hauptunterschied zwischen den beiden BlueXP  IAM-Plattformrollen ist der Umfang.
 
 [cols="1,2"]
 |===
 | Plattformrolle | Zuständigkeiten 
 
 
-| link:reference-iam-platform-roles.html["Org.-Admin"] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf alle Projekte und Ordner innerhalb einer Organisation, Hinzufügen von Mitgliedern zu einem beliebigen Projekt oder Ordner sowie Durchführung jeder BlueXP -Aufgabe und Nutzung aller Datendienste. Benutzer mit dieser Rolle müssen die gesamte BlueXP -Umgebung organisieren und verwalten. Sie können Ordner und Projekte erstellen, Rollen zuweisen und jedem Projekt oder Ordner Benutzer hinzufügen. Sie können auch alle Arbeitsumgebungen innerhalb des Unternehmens verwalten. Dies ist die einzige Zugriffsrolle, die Connectors erstellen kann. 
+| link:reference-iam-platform-roles.html["Org.-Admin"] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf alle Projekte und Ordner innerhalb einer Organisation, Hinzufügen von Mitgliedern zu einem beliebigen Projekt oder Ordner sowie Durchführung jeder BlueXP -Aufgabe und Nutzung aller Datendienste. Benutzer mit dieser Rolle organisieren und verwalten die gesamte BlueXP-Umgebung. Sie erstellen Ordner und Projekte, weisen Rollen zu, fügen Benutzer hinzu und können alle Arbeitsumgebungen verwalten, sofern sie über die entsprechenden Berechtigungen verfügen. Dies ist die einzige Zugriffsrolle, die Connectors erstellen kann. 
 
 
 | link:reference-iam-platform-roles.html["Ordner- oder Projektadministrator"] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Ordnern oder Projekten hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und beliebige Datendienste oder Anwendungen auf Ressourcen innerhalb des Ordners oder Projekts verwenden, denen sie zugewiesen sind. Die Rolle „Ordner“ oder „Projektadministrator“ KANN KEINE Connectors erstellen. 
@@ -37,9 +37,6 @@ Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. 
 == Anwendungsrollen
 
 Im Folgenden finden Sie eine Liste der Rollen in der Anwendungskategorie. Jede Rolle gewährt bestimmte Berechtigungen innerhalb ihres festgelegten Umfangs. Benutzer, die nicht über die erforderliche Anwendungsrolle oder eine Plattformrolle verfügen, können nicht auf die Anwendung zugreifen.
-
-
-NOTE: Der Zugriff auf Keystone über BlueXP  ist derzeit in der Beta-Phase. Wenn Sie an der Keystone Beta-Version teilnehmen möchten, wenden Sie sich an Ihren NetApp Ansprechpartner.
 
 [cols="1,2"]
 |===
@@ -80,16 +77,7 @@ Nachfolgend finden Sie eine Liste der Rollen in der Datenservicekategorie. Jede 
 | link:reference-iam-ransomware-roles.html["Viewer für Ransomware-Schutz"] | Anzeigen von Workload-Daten, Anzeigen von Warnungsdaten, Herunterladen von Wiederherstellungsdaten und Herunterladen von Berichten im Ransomware-Schutzdienst. 
 
 
-| SnapCenter-Admin  a| 
-Bietet die Möglichkeit, Snapshots aus lokalen ONTAP Clustern mithilfe von BlueXP  Backup und Recovery für Applikationen zu sichern. Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in BlueXP  ausführen:
-
-* Führen Sie alle Aktionen über Backup und Recovery > Anwendungen aus
-* Verwalten Sie alle Arbeitsumgebungen in den Projekten und Ordnern, für die sie Berechtigungen haben
-* Alle BlueXP -Dienste verwenden
-
-
-SnapCenter hat keine Viewer-Rolle.
-
+| SnapCenter-Admin | Bietet die Möglichkeit, Snapshots aus lokalen ONTAP Clustern mithilfe von BlueXP  Backup und Recovery für Applikationen zu sichern. Ein Mitglied mit dieser Rolle kann die folgenden Aktionen in BlueXP ausführen: * Alle Aktionen unter „Sicherung und Wiederherstellung > Anwendungen“ ausführen * Alle Arbeitsumgebungen in den Projekten und Ordnern verwalten, für die es Berechtigungen hat * Alle BlueXP-Dienste verwenden SnapCenter hat keine Viewer-Rolle. 
 |===
 
 

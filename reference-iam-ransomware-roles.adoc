@@ -16,7 +16,7 @@ summary: Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Admini
 [role="lead"]
 Ransomware-Rollen ermöglichen Benutzern den Zugriff auf den Ransomware-Schutzdienst. Benutzern kann entweder eine Administratorrolle zugewiesen werden, die ihnen das Ergreifen von Maßnahmen zum Ransomware-Schutz ermöglicht, oder eine Viewer-Rolle, wenn sie lediglich Überwachungsaufgaben haben. Die beiden Rollen sind Ransomware Protection Admin und Ransomware Protection Viewer. Der Hauptunterschied zwischen den beiden Rollen sind die Aktionen, die sie zum Schutz vor Ransomware ergreifen können.
 
-Die folgende Tabelle zeigt, dass Aktionen ausgeführt werden können, die jede BlueXP  Ransomware-Schutzrolle ausführen kann.
+Die folgende Tabelle zeigt die Aktionen, die jede BlueXP-Ransomware-Schutzrolle ausführen kann.
 
 [cols="40,20a,20a"]
 |===
@@ -37,7 +37,7 @@ Nein
 
 
 
-| Beginnen Sie mit der Erkennung von Workloads  a| 
+| Workloads erkennen  a| 
 Ja.
  a| 
 Nein

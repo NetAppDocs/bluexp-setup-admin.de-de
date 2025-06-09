@@ -44,7 +44,7 @@ Die folgende Tabelle enthält einen Vergleich der Zeitleiste und des Benachricht
 
 == Überwachen Sie die Benutzeraktivität über den BlueXP -Zeitplan
 
-Die Chronik in BlueXP  zeigt die Aktionen an, die Benutzer zur Verwaltung Ihrer Organisation oder Ihres Kontos durchgeführt haben. Dazu gehören Verwaltungsaktionen wie das Zuordnen von Benutzern, das Erstellen von Arbeitsumgebungen, das Erstellen von Connectors und vieles mehr.
+Die Zeitleiste zeigt die Aktionen, die Benutzer zur Verwaltung Ihrer Organisation oder Ihres Kontos ausgeführt haben. Dazu gehören Verwaltungsaktionen wie das Zuordnen von Benutzern, das Erstellen von Arbeitsumgebungen, das Erstellen von Connectors und vieles mehr.
 
 Das Prüfen der Zeitleiste kann hilfreich sein, wenn Sie feststellen müssen, wer eine bestimmte Aktion durchgeführt hat oder ob Sie den Status einer Aktion identifizieren müssen.
 
@@ -137,7 +137,7 @@ Sie können bestimmte Arten von Benachrichtigungen per E-Mail versenden, damit S
 
 [NOTE]
 ====
-* Benachrichtigungen zu folgenden BlueXP  Funktionen und Services werden per E-Mail gesendet: Connector, BlueXP  Digital Wallet, BlueXP  Copy and Sync sowie BlueXP  Backup und Recovery.
+* Für die folgenden Funktionen und Dienste werden Benachrichtigungen per E-Mail gesendet: Connector, digitale Geldbörse, Kopieren und Synchronisieren sowie Sichern und Wiederherstellen.
 * Das Senden von E-Mail-Benachrichtigungen wird nicht unterstützt, wenn der Connector auf einer Website ohne Internetzugang installiert ist.
 
 
@@ -146,7 +146,7 @@ Die Filter, die Sie im Benachrichtigungscenter festlegen, bestimmen nicht, welch
 
 Alle anderen Benutzer und Empfänger sind so konfiguriert, dass sie keine Benachrichtigungs-E-Mails erhalten. Sie müssen daher die Benachrichtigungseinstellungen für weitere Benutzer konfigurieren.
 
-Sie müssen BlueXP -Administratoren sein, um die Benachrichtigungseinstellungen anpassen zu können.
+Sie müssen über die Rolle des Organisationsadministrators verfügen, um die Benachrichtigungseinstellungen anzupassen.
 
 .Schritte
 . Wählen Sie in der BlueXP Menüleiste *Einstellungen > Einstellungen für Warnmeldungen und Benachrichtigungen* aus.
@@ -168,7 +168,7 @@ image:screenshot-change-notifications.png["Ein Screenshot, in dem das Ändern vo
 
 === Fügen Sie weitere E-Mail-Empfänger hinzu
 
-Die Benutzer, die auf der Registerkarte „_Users_“ angezeigt werden, werden automatisch von den Benutzern in Ihrer BlueXP -Organisation oder Ihrem Konto ausgefüllt. Sie können E-Mail-Adressen auf der Registerkarte „_Additional Recipients_“ für andere Personen oder Gruppen hinzufügen, die keinen Zugriff auf BlueXP haben, aber über bestimmte Arten von Warnungen und Benachrichtigungen benachrichtigt werden müssen.
+Die Benutzer, die auf der Registerkarte „Benutzer“ angezeigt werden, werden automatisch aus den Benutzern in Ihrer Organisation oder Ihrem Konto gefüllt. Sie können E-Mail-Adressen auf der Registerkarte „_Additional Recipients_“ für andere Personen oder Gruppen hinzufügen, die keinen Zugriff auf BlueXP haben, aber über bestimmte Arten von Warnungen und Benachrichtigungen benachrichtigt werden müssen.
 
 .Schritte
 . Wählen Sie auf der Seite Einstellungen für Warnmeldungen und Benachrichtigungen die Option *Neue Empfänger hinzufügen* aus.

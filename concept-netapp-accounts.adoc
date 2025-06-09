@@ -14,9 +14,9 @@ summary: Mit einem BlueXP -Konto können Sie Benutzer verwalten und Ressourcen 
 
 
 [role="lead"]
-Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein _BlueXP -Konto_, um Benutzer zu verwalten und Ressourcen in einem isolierten _Arbeitsbereich_ zu organisieren.
+Wenn Sie den privaten Modus verwenden, nutzen Sie ein _BlueXP-Konto_, um Benutzer zu verwalten und Ressourcen in einem isolierten _Arbeitsbereich_ zu organisieren.
 
-Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie nicht über ein BlueXP -Konto. Stattdessen verfügen Sie über eine _BlueXP -Organisation_, die Sie mit BlueXP -Identitäts- und Zugriffsmanagement (IAM) verwalten.
+Wenn Sie den Standardmodus oder den eingeschränkten Modus verwenden, verfügen Sie über kein Konto. Stattdessen verfügen Sie über eine Organisation, die Sie mithilfe der Identitäts- und Zugriffsverwaltung (IAM) verwalten.
 
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
@@ -38,15 +38,15 @@ link:task-managing-netapp-accounts.html["Erfahren Sie, wie Sie Ihr BlueXP Konto 
 
 == Mitglieder
 
-Mitglieder sind BlueXP Benutzer, die Sie mit Ihrem BlueXP Konto verknüpfen. Durch die Verknüpfung eines Benutzers mit einem Konto und Ihrem Arbeitsbereich in diesem Konto können diese Benutzer Arbeitsumgebungen in BlueXP  erstellen und verwalten.
+Mitglieder sind Benutzer, die Sie Ihrem Konto zuordnen. Durch die Zuordnung eines Benutzers zu einem Konto und Ihrem Arbeitsbereich in diesem Konto können diese Benutzer Arbeitsumgebungen erstellen und verwalten.
 
 
 
 == Workspace
 
-In BlueXP isoliert ein Workspace eine beliebige Anzahl von „ Arbeitsumgebungen“ von anderen Benutzern im Konto. BlueXP -Benutzer (Mitglieder) können nicht auf die Arbeitsumgebungen in einem Arbeitsbereich zugreifen, wenn sie nicht mit diesem Arbeitsbereich verknüpft sind.
+Ein Arbeitsbereich isoliert eine beliebige Anzahl von Arbeitsumgebungen von anderen Benutzern im Konto. Benutzer (Mitglieder) können nur dann auf die Arbeitsumgebungen eines Arbeitsbereichs zugreifen, wenn sie diesem Arbeitsbereich zugeordnet sind.
 
-Eine Arbeitsumgebung repräsentiert Storage-Systeme wie Ihren lokalen ONTAP Cluster.
+Eine Arbeitsumgebung stellt ein Speichersystem wie beispielsweise Ihren lokalen ONTAP-Cluster dar.
 
 Der private BlueXP -Modus unterstützt nur einen Arbeitsbereich.
 
@@ -54,8 +54,8 @@ Der private BlueXP -Modus unterstützt nur einen Arbeitsbereich.
 
 == Anschlüsse
 
-Mit einem Connector führen Sie die Aktionen aus, die BlueXP für das Management der Dateninfrastruktur benötigt. Der Connector wird auf einer virtuellen Maschineninstanz ausgeführt, die Sie in Ihrem Cloud-Provider oder auf einem von Ihnen konfigurierten On-Premises-Host bereitstellen.
+Ein Connector führt die erforderlichen Aktionen aus, um Ihre Dateninfrastruktur zu verwalten. Der Connector wird auf einer virtuellen Maschineninstanz ausgeführt, die Sie in Ihrem Cloud-Provider oder auf einem von Ihnen konfigurierten On-Premises-Host bereitstellen.
 
-Sie können einen Connector mit mehr als einem BlueXP Service verwenden. Wenn Sie beispielsweise einen Connector für das Management von Backup und Recovery verwenden, können Sie diesen Connector mit einem anderen Service wie BlueXP  Tiering verwenden.
+Sie können einen Connector mit mehreren Datendiensten verwenden. Wenn Sie beispielsweise einen Connector zur Verwaltung von Sicherung und Wiederherstellung verwenden, können Sie denselben Connector auch mit einem anderen Dienst wie Tiering verwenden.
 
 link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].

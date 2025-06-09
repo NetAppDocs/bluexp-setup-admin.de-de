@@ -17,7 +17,7 @@ summary: Die Identitäts- und Zugriffsverwaltung von BlueXP  bietet zwei Admini
 Keystone Rollen bieten Zugriff auf die Keystone Dashboards und ermöglichen Benutzern das Anzeigen und Managen ihres Keystone Abonnements. Es gibt zwei Keystone Rollen: Keystone Administrator und Keystone Viewer. Der Hauptunterschied zwischen den beiden Rollen ist die Aktionen, die sie in Keystone ergreifen können. Die Keystone-Administratorrolle ist die einzige Rolle, die erlaubt ist, Serviceanfragen zu erstellen oder Abonnements zu ändern.
 
 .Beispiel für Keystone-Rollen in BlueXP 
-Im Rahmen eines Keystone Abonnements hat XYZ Corporation von vier Storage Engineers aus unterschiedlichen Abteilungen Informationen zu ihrem Keystone Abonnement einzusehen. Obwohl alle diese Benutzer das Keystone Abonnement überwachen müssen, darf nur der Teamleiter Serviceanfragen stellen. Drei der Teammitglieder erhalten die Rolle *Keystone Viewer*, während der Teamleiter die Rolle *Keystone Admin* erhält, so dass ein Kontrollpunkt für Serviceanfragen für das Unternehmen besteht.
+Bei der XYZ Corporation sind vier Speicheringenieure aus verschiedenen Abteilungen damit beschäftigt, die Keystone-Abonnementinformationen anzuzeigen. Obwohl alle diese Benutzer das Keystone Abonnement überwachen müssen, darf nur der Teamleiter Serviceanfragen stellen. Drei der Teammitglieder erhalten die Rolle *Keystone Viewer*, während der Teamleiter die Rolle *Keystone Admin* erhält, so dass ein Kontrollpunkt für Serviceanfragen für das Unternehmen besteht.
 
 Die folgende Tabelle zeigt die Aktionen, die die einzelnen Keystone Rollen durchführen können.
 

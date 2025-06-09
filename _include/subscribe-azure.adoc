@@ -3,7 +3,7 @@
 
 
 .Schritte
-. Klicken Sie oben rechts auf der BlueXP Konsole auf das Symbol Einstellungen, und wählen Sie *Credentials* aus.
+. Wählen Sie oben rechts in der Konsole das Symbol „Einstellungen“ und dann „Anmeldeinformationen“ aus.
 . Wählen Sie das Aktionsmenü für einen Satz von Anmeldeinformationen und dann *Abonnement konfigurieren*.
 +
 Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind. Sie können kein Marketplace-Abonnement mit Anmeldedaten verknüpfen, die mit BlueXP verknüpft sind.
@@ -16,7 +16,7 @@ Sie müssen Anmeldeinformationen auswählen, die einem Connector zugeordnet sind
 .. Füllen Sie das Formular aus und wählen Sie *Abonnieren*.
 .. Wählen Sie nach Abschluss des Abonnements *Konto jetzt konfigurieren* aus.
 +
-Sie werden auf die BlueXP-Website umgeleitet.
+Sie werden zu BlueXP weitergeleitet.
 
 .. Auf der Seite *Subscription Assignment*:
 +
@@ -33,7 +33,7 @@ Bei allen anderen Organisationen oder Konten müssen Sie das Abonnement manuell 
 Im folgenden Video sehen Sie, wie Sie im Azure Marketplace abonnieren:
 
 +
-.Abonnieren Sie BlueXP über den Azure Marketplace
+.Abonnieren Sie NetApp Intelligent Services vom Azure Marketplace
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 

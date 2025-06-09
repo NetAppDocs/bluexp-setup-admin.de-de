@@ -14,7 +14,7 @@ summary: BlueXP aktualisiert einen Connector automatisch auf die neueste Version
 
 
 [role="lead"]
-Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, aktualisiert BlueXP  Ihren Connector automatisch auf die neueste Version, solange der Connector über ausgehenden Internetzugang verfügt, um das Softwareupdate zu erhalten. Wenn Sie die Verwaltung bei Aktualisierung des Connectors manuell vornehmen müssen, können Sie automatische Upgrades für den Standardmodus oder den eingeschränkten Modus deaktivieren.
+Wenn Sie den Standardmodus oder den eingeschränkten Modus verwenden, aktualisiert BlueXP Ihren Connector automatisch auf die neueste Version, sofern der Connector über ausgehenden Internetzugang verfügt, um das Softwareupdate abzurufen. Wenn Sie die Verwaltung bei Aktualisierung des Connectors manuell vornehmen müssen, können Sie automatische Upgrades für den Standardmodus oder den eingeschränkten Modus deaktivieren.
 
 
 NOTE: Wenn Sie BlueXP  im privaten Modus ausführen, müssen Sie den Connector immer selbst aktualisieren.
