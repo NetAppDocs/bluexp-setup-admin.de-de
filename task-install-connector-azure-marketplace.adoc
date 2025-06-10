@@ -18,14 +18,14 @@ Ein Connector kann direkt aus dem Azure Marketplace in Azure erstellt werden. Zu
 
 .Bevor Sie beginnen
 * Sie sollten eine habenlink:concept-connectors.html["Verständnis von Steckverbindern"].
-* Sie sollten es überprüfen link:reference-limitations.html["Einschränkungen an den Anschlüssen"].
+* Rezension link:reference-limitations.html["Einschränkungen an den Anschlüssen"] .
 
 
 
 
 == Schritt 1: Netzwerk einrichten
 
-Stellen Sie sicher, dass der Netzwerkspeicherort, an dem Sie den Connector installieren möchten, die folgenden Anforderungen erfüllt. Durch die Erfüllung dieser Anforderungen kann der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen.
+Stellen Sie sicher, dass der Netzwerkstandort, an dem Sie den Connector installieren möchten, die folgenden Anforderungen unterstützt. Diese Anforderungen ermöglichen dem Connector die Verwaltung von Ressourcen in Ihrer Hybrid Cloud.
 
 Azure Region:: Wenn Sie Cloud Volumes ONTAP verwenden, sollte der Connector in derselben Azure-Region wie die von ihm verwalteten Cloud Volumes ONTAP-Systeme oder in der bereitgestellt werden https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure Region Paar"^] Für die Cloud Volumes ONTAP Systeme. Diese Anforderung stellt sicher, dass eine Azure Private Link-Verbindung zwischen Cloud Volumes ONTAP und den zugehörigen Storage-Konten verwendet wird.
 +
@@ -143,7 +143,7 @@ Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden 
 Aktivieren Sie NTP:: Wenn Sie Vorhaben, die BlueXP Klassifizierung zum Scannen von Unternehmensdatenquellen zu nutzen, sollten Sie sowohl auf dem BlueXP Connector-System als auch dem BlueXP Klassifizierungssystem einen Network Time Protocol (NTP)-Service aktivieren, damit die Zeit zwischen den Systemen synchronisiert wird. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
 +
 --
-Sie müssen diese Netzwerkanforderung implementieren, nachdem Sie den Connector erstellt haben.
+Implementieren Sie die Netzwerkanforderungen, nachdem Sie den Connector erstellt haben.
 
 --
 
@@ -152,7 +152,7 @@ Sie müssen diese Netzwerkanforderung implementieren, nachdem Sie den Connector 
 
 == Schritt 2: Überprüfung der VM-Anforderungen
 
-Wenn Sie den Connector erstellen, müssen Sie einen virtuellen Maschinentyp auswählen, der die folgenden Anforderungen erfüllt.
+Wählen Sie beim Erstellen des Connectors einen virtuellen Maschinentyp aus, der die folgenden Anforderungen erfüllt.
 
 CPU:: 8 Kerne oder 8 vCPUs
 RAM:: 32GB
@@ -369,9 +369,6 @@ Jetzt haben Sie einen Client-Schlüssel, den BlueXP zur Authentifizierung mit Mi
 
 
 
-.Ergebnis
-Ihr Service-Principal ist jetzt eingerichtet und Sie sollten die Anwendungs- (Client-)ID, die Verzeichnis- (Mandanten-)ID und den Wert des Clientgeheimnisses kopiert haben. Sie müssen diese Informationen in BlueXP eingeben, wenn Sie ein Azure-Konto hinzufügen.
-
 --
 ====
 
@@ -381,7 +378,7 @@ Ihr Service-Principal ist jetzt eingerichtet und Sie sollten die Anwendungs- (Cl
 Starten Sie den Connector direkt über den Azure Marketplace.
 
 .Über diese Aufgabe
-Beim Erstellen des Connectors aus dem Azure Marketplace wird eine Virtual Machine in Azure mithilfe einer Standardkonfiguration bereitgestellt. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+Durch Erstellen des Connectors aus dem Azure Marketplace wird eine virtuelle Maschine mit einer Standardkonfiguration eingerichtet. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
 
 .Bevor Sie beginnen
 Sie sollten Folgendes haben:
@@ -430,7 +427,7 @@ Diese Einstellung ist wichtig, da eine verwaltete Identität es der virtuellen C
 
 . Überprüfen Sie auf der Seite *Überprüfen + Erstellen* Ihre Auswahl und wählen Sie *Erstellen*, um die Bereitstellung zu starten.
 +
-Azure stellt die virtuelle Maschine mit den angegebenen Einstellungen bereit. Die virtuelle Maschine und die Connector-Software sollten in etwa fünf Minuten ausgeführt werden.
+Azure stellt die virtuelle Maschine mit den angegebenen Einstellungen bereit. Sie sollten sehen, dass die virtuelle Maschine und die Connector-Software in etwa fünf Minuten ausgeführt werden.
 
 . Öffnen Sie einen Webbrowser von einem Host, der eine Verbindung mit der virtuellen Verbindungsmaschine hat, und geben Sie die folgende URL ein:
 +
@@ -442,7 +439,7 @@ https://_ipaddress_[]
 .. Geben Sie einen Namen für das System ein.
 .. Unter *laufen Sie in einer gesicherten Umgebung?* Sperrmodus deaktiviert halten.
 +
-Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschrieben wird, wie Sie BlueXP im Standardmodus verwenden. Der eingeschränkte Modus sollte nur aktiviert werden, wenn Sie über eine sichere Umgebung verfügen und dieses Konto von den BlueXP Backend-Services trennen möchten. Wenn das der Fall ist, link:task-quick-start-restricted-mode.html["Befolgen Sie die Schritte für den Einstieg in BlueXP im eingeschränkten Modus"].
+Lassen Sie den eingeschränkten Modus deaktiviert, um BlueXP im Standardmodus zu verwenden. Der eingeschränkte Modus sollte nur aktiviert werden, wenn Sie über eine sichere Umgebung verfügen und dieses Konto von den BlueXP Backend-Services trennen möchten. Wenn das der Fall ist, link:task-quick-start-restricted-mode.html["Befolgen Sie die Schritte für den Einstieg in BlueXP im eingeschränkten Modus"] .
 
 .. Wählen Sie *Start*.
 
@@ -450,7 +447,7 @@ Sie sollten den eingeschränkten Modus deaktiviert halten, da nachfolgend beschr
 
 
 .Ergebnis
-Der Connector ist jetzt installiert und wird mit Ihrer BlueXP -Organisation eingerichtet.
+Sie haben jetzt den Connector installiert und mit Ihrer BlueXP-Organisation eingerichtet.
 
 Wenn Azure Blob Storage in demselben Azure Abonnement genutzt wird, in dem der Connector erstellt wurde, wird automatisch eine Azure Blob Storage-Arbeitsumgebung auf dem BlueXP Bildschirm angezeigt. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Erfahren Sie, wie Sie Azure Blob Storage aus BlueXP managen"^]
 

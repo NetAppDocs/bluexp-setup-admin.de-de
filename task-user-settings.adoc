@@ -34,7 +34,7 @@ Sie können Ihren Anzeigenamen in der BlueXP-Konsole ändern. Der Anzeigename di
 
 == Konfigurieren der mehrstufigen Authentifizierung
 
-Sie können die Multi-Faktor-Authentifizierung (MFA) für Ihr BlueXP-Konto konfigurieren. MFA verbessert die Kontosicherheit, indem neben Ihrem Passwort eine zweite Methode zur Überprüfung Ihrer Identität erforderlich ist.
+Konfigurieren Sie die Multi-Faktor-Authentifizierung (MFA), um die Kontosicherheit zu verbessern, indem Sie eine zweite Überprüfungsmethode mit Ihrem Passwort verlangen.
 
 Benutzer, die Single Sign-On mit einem externen Identitätsanbieter oder der NetApp Support-Site verwenden, können MFA nicht aktivieren. Wenn einer dieser Punkte auf Sie zutrifft, wird die Option zur Aktivierung von MFA in Ihren Profileinstellungen nicht angezeigt.
 
@@ -52,7 +52,7 @@ NOTE: Wenn Sie keinen Zugriff auf Ihre Authentifizierungs-App haben oder Ihren W
 . Wählen Sie das Profilsymbol in der oberen rechten Ecke der BlueXP-Konsole, um das Bedienfeld „Benutzereinstellungen“ anzuzeigen.
 . Wählen Sie neben der Überschrift *Multi-Faktor-Authentifizierung* *Konfigurieren* aus.
 . Folgen Sie den Anweisungen, um MFA für Ihr Konto einzurichten.
-. Anschließend werden Sie aufgefordert, Ihren Wiederherstellungscode zu speichern. Sie können den Code entweder kopieren oder eine Textdatei mit dem Code herunterladen. Bewahren Sie diesen Code an einem sicheren Ort auf. Sie benötigen ihn, falls Sie den Zugriff auf Ihre Authentifizierungs-App verlieren.
+. Anschließend werden Sie aufgefordert, Ihren Wiederherstellungscode zu speichern. Sie können den Code entweder kopieren oder eine Textdatei mit dem Code herunterladen. Bewahren Sie diesen Code an einem sicheren Ort auf. Sie benötigen den Wiederherstellungscode, wenn Sie den Zugriff auf Ihre Authentifizierungs-App verlieren.
 +
 Nachdem Sie MFA eingerichtet haben, werden Sie bei jeder Anmeldung bei BlueXP aufgefordert, einen Einmalcode aus Ihrer Authentifizierungs-App einzugeben.
 
@@ -73,9 +73,24 @@ Sie können Wiederherstellungscodes nur einmal verwenden. Wenn Sie Ihren verwend
 
 
 
+== Löschen Sie Ihre MFA-Konfiguration
+
+Um die Multi-Faktor-Authentifizierung (MFA) für Ihr BlueXP-Konto nicht mehr zu verwenden, löschen Sie Ihre MFA-Konfiguration. Dadurch entfällt die Notwendigkeit, beim Anmelden einen Einmalcode aus Ihrer Authentifizierungs-App einzugeben.
+
+
+NOTE: Wenn Sie nicht auf Ihre Authentifizierungs-App oder Ihren Wiederherstellungscode zugreifen können, müssen Sie sich an Ihren BlueXP-Administrator wenden, um Ihre MFA-Konfiguration zurückzusetzen.
+
+.Schritte
+. Wählen Sie das Profilsymbol in der oberen rechten Ecke der BlueXP-Konsole, um das Bedienfeld „Benutzereinstellungen“ anzuzeigen.
+. Wählen image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] neben der Überschrift *Multi-Faktor-Authentifizierung*.
+. Wählen Sie *Löschen*.
+
+
+
+
 == Wenden Sie sich an den Administrator Ihrer Organisation
 
-Wenn Sie den Administrator Ihrer Organisation kontaktieren müssen, können Sie ihm direkt von BlueXP aus eine E-Mail senden. Der Administrator ist für die Verwaltung der Benutzerkonten und Berechtigungen innerhalb Ihrer Organisation verantwortlich.
+Wenn Sie den Administrator Ihrer Organisation kontaktieren müssen, können Sie ihm direkt von BlueXP aus eine E-Mail senden. Der Administrator verwaltet Benutzerkonten und Berechtigungen innerhalb Ihrer Organisation.
 
 
 NOTE: Um die Funktion *Administratoren kontaktieren* verwenden zu können, muss in Ihrem Browser eine Standard-E-Mail-Anwendung konfiguriert sein.

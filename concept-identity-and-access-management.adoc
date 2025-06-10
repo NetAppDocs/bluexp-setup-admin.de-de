@@ -16,8 +16,6 @@ summary: 'Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Acc
 [role="lead"]
 Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) können Sie den Zugriff auf Ihre NetApp-Ressourcen organisieren und kontrollieren. Sie können Ihre Ressourcen nach der Hierarchie Ihrer Organisation organisieren. Sie können beispielsweise Ressourcen nach geographischem Standort, Standort oder Geschäftseinheit organisieren. Anschließend können Sie den Mitgliedern in bestimmten Teilen der Hierarchie IAM-Rollen zuweisen, wodurch der Zugriff auf Ressourcen in anderen Teilen der Hierarchie verhindert wird.
 
-BlueXP  IAM ersetzt und erweitert die zuvor von BlueXP  Accounts bereitgestellten Funktionen. link:whats-new.html#iam["Erfahren Sie mehr über die Einführung von BlueXP  IAM"].
-
 BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus und im eingeschränkten Modus verwendet wird. Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein BlueXP  _Account_, um Benutzer und Ressourcen zu verwalten.
 
 * link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
@@ -67,7 +65,7 @@ BlueXP fordert Sie bei der Anmeldung auf, eine neue Organisation zu erstellen.
 
 Ein _Ordner_ ermöglicht Ihnen, verwandte Projekte zu gruppieren und von anderen Projekten in Ihrer Organisation zu trennen. Ein Ordner kann beispielsweise einen geografischen Standort (EU oder US-Osten), einen Standort (London oder Toronto) oder eine Geschäftseinheit (Engineering oder Marketing) repräsentieren.
 
-Ordner können Projekte, andere Ordner oder eine Kombination aus beiden enthalten.
+Ordner können Projekte, andere Ordner oder beides enthalten.
 
 Sie müssen keine Ordner erstellen. Sie sind optional.
 
@@ -108,7 +106,7 @@ Der _Organisation admin_ kann dem Ordner eine Ressource zuordnen:
 
 image:diagram-iam-resource-association-folder-2.png["Ein Diagramm mit einem Ordner, einer Ressource, die dem Ordner zugeordnet ist, und zwei Projekten, die sich im Ordner befinden: Projekt A und Projekt B."]
 
-Das Verknüpfen einer Ressource mit einem Ordner bedeutet nicht automatisch, dass sie für alle Projekte im Ordner zugänglich ist. Der Ordner- oder Projektadministrator entscheidet, welche Projekte auf die Ressource zugreifen können. Nach dieser Entscheidung kann der Administrator die Ressource dann mit den richtigen Projekten verknüpfen.
+Wenn Sie eine Ressource einem Ordner zuordnen, ist sie nicht automatisch für alle Projekte zugänglich. Nur der Ordner- oder Projektadministrator kann die Ressource sehen. Der Ordner- oder Projektadministrator entscheidet, welche Projekte darauf zugreifen können, und ordnet die Ressource den entsprechenden Projekten zu.
 
 In diesem Beispiel verknüpft der Administrator die Ressource mit Projekt A:
 
@@ -122,7 +120,7 @@ Mitglieder, die über Berechtigungen für Projekt A verfügen, können jetzt auf
 
 Mitglieder Ihrer Organisation sind Benutzerkonten oder Servicekonten. Ein Servicekonto wird normalerweise von einer Anwendung verwendet, um bestimmte Aufgaben ohne menschliches Eingreifen zu erledigen.
 
-Eine Organisation hat mindestens einen Benutzer mit der Rolle „_Organisation admin_“ (dem Benutzer, der die Organisation erstellt, wird diese Rolle automatisch zugewiesen). Sie können der Organisation weitere Mitglieder hinzufügen und verschiedene Berechtigungen auf verschiedenen Ebenen der Ressourcenhierarchie zuweisen.
+Jede Organisation umfasst mindestens einen Benutzer mit der Rolle „Organisationsadministrator“ (BlueXP weist diese Rolle automatisch dem Benutzer zu, der die Organisation erstellt). Sie können der Organisation weitere Mitglieder hinzufügen und verschiedene Berechtigungen auf verschiedenen Ebenen der Ressourcenhierarchie zuweisen.
 
 
 
@@ -144,7 +142,7 @@ Wenn Sie ein Mitglied einer Rolle zuordnen, müssen Sie die gesamte Organisation
 
 Wenn Sie eine Rolle zuweisen, wird die Rolle in der Organisationshierarchie übernommen:
 
-Organisation:: Wenn Sie einem Mitglied Zugriffsrollen auf Organisationsebene erteilen, erben alle Ordner, Projekte und Ressourcen in der Organisation diese Rollen. Das heißt, das Mitglied hat Berechtigungen für alles in der Organisation.
+Organisation:: Wenn Sie einem Mitglied eine Zugriffsrolle auf Organisationsebene erteilen, erhält es Berechtigungen für alle Ordner, Projekte und Ressourcen.
 Ordner:: Wenn Sie eine Zugriffsrolle auf Ordnerebene erben, erben alle Ordner, Projekte und Ressourcen im Ordner diese Rolle.
 +
 --
@@ -174,7 +172,7 @@ link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen
 
 Wenn ein _Organisationsadministrator_ einen Konnektor erstellt, ordnet BlueXP  diesen Connector automatisch der Organisation und dem aktuell ausgewählten Projekt zu. Der _Organisation admin_ hat automatisch von überall im Unternehmen Zugriff auf diesen Connector. Wenn Sie jedoch andere Mitglieder in Ihrer Organisation mit unterschiedlichen Rollen haben, können diese Mitglieder nur aus dem Projekt, in dem sie erstellt wurde, auf diesen Connector zugreifen, es sei denn, Sie verknüpfen diesen Connector mit anderen Projekten.
 
-In folgenden Fällen können Sie einen Connector für ein anderes Projekt verfügbar machen:
+In diesen Fällen stellen Sie einen Connector für ein anderes Projekt zur Verfügung:
 
 * Sie möchten Mitgliedern in Ihrer Organisation erlauben, einen vorhandenen Connector zu verwenden, um zusätzliche Arbeitsumgebungen in einem anderen Projekt zu erstellen oder zu erkennen
 * Sie haben eine vorhandene Ressource einem anderen Projekt zugeordnet und diese Ressource wird von einem Connector verwaltet
@@ -202,7 +200,7 @@ Ein „_Organisation admin_“ kann einen Connector mit einem Ordner verknüpfen
 
 == Beispiele für IAM
 
-Die folgenden Beispiele zeigen, wie Sie Ihr Unternehmen einrichten können.
+Diese Beispiele zeigen, wie Sie Ihre Organisation aufbauen könnten.
 
 
 

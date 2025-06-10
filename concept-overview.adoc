@@ -26,7 +26,7 @@ BlueXP  bietet einheitliche Storage-Kontrolle in Ihrer Hybrid-Multi-Cloud-Umgeb
 
 === Einheitliche Storage-Kontrolle über den BlueXP  Arbeitsbereich
 
-Mit dem _BlueXP  Canvas_ können Sie Cloud- und lokalen Storage erkennen, implementieren, optimieren und managen. Der Bildschirm bietet einen zentralen Speicherort für das gesamte Storage-Management.
+Mit dem _BlueXP Canvas_ können Sie Cloud- und lokalen Speicher entdecken, bereitstellen und verwalten. Der Bildschirm bietet einen zentralen Speicherort für das gesamte Storage-Management.
 
 
 
@@ -67,7 +67,7 @@ Cloud-Objekt-Storage::
 
 ==== Storage-Management von Arbeitsumgebungen
 
-Auf dem BlueXP -Bildschirm stellen _Working Environments_ den Cloud- und lokalen Storage dar, den Sie entdeckt oder implementiert haben. Sie können eine Arbeitsumgebung auswählen und in BlueXP -Datenservices integrieren oder in die Arbeitsumgebung eingeben, um Storage-Managementaufgaben durchzuführen, wie z. B. Volumes hinzuzufügen.
+Auf der BlueXP-Leinwand stellen Arbeitsumgebungen erkannten oder bereitgestellten Speicher dar. Sie können eine Arbeitsumgebung auswählen, um sie in BlueXP-Datendienste zu integrieren oder Speicher zu verwalten, z. B. durch Hinzufügen von Volumes.
 
 image:screenshot-canvas.png["Ein Screenshot aus dem BlueXP  Bildschirm zeigt mehrere Arbeitsumgebungen, von denen eine ausgewählt ist und die Möglichkeit zeigt, BlueXP -Datenservices zu aktivieren oder die Option Arbeitsumgebung eingeben auszuwählen, um Storage zu verwalten."]
 
@@ -75,7 +75,7 @@ image:screenshot-canvas.png["Ein Screenshot aus dem BlueXP  Bildschirm zeigt me
 
 === Integrierte Services zum Schutz, zur Sicherung und zur Optimierung von Daten
 
-BlueXP  umfasst eine umfassende Suite integrierter Datenservices, die Sie bei der Wahrung der Sicherheit, Integrität und Verfügbarkeit Ihrer Daten über Ihre On-Premises- und Cloud-Storage-Umgebungen hinweg unterstützen.
+BlueXP umfasst integrierte Datendienste, um die Sicherheit und Verfügbarkeit Ihrer Daten im gesamten lokalen und Cloud-Speicher aufrechtzuerhalten.
 
 BlueXP -Warnmeldungen:: Sie erhalten Probleme im Zusammenhang mit Kapazität, Verfügbarkeit, Performance, Sicherung und Sicherheit in Ihrer ONTAP-Umgebung.
 BlueXP Automatisierungskatalog:: Verwenden Sie skriptbasierte Lösungen, um die Implementierung und Integration von NetApp Produkten und Services zu automatisieren.
@@ -109,7 +109,7 @@ Mit BlueXP können Sie Cloud-Storage managen und Cloud-Services in Amazon Web Se
 
 == Kosten
 
-Die Preise für BlueXP hängen von den Leistungen ab, die Sie verwenden möchten. https://bluexp.netapp.com/pricing["Weitere Informationen zu den Preisen für BlueXP"^]
+Die Preise für BlueXP hängen von den von Ihnen genutzten Diensten ab. https://bluexp.netapp.com/pricing["Weitere Informationen zu den Preisen für BlueXP"^]
 
 
 
@@ -135,7 +135,7 @@ Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management
 * Mit der Zugriffsverwaltung können Sie Mitgliedern auf verschiedenen Ebenen der Unternehmenshierarchie eine Rolle zuweisen
 
 
-BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus verwendet wird. Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, verwenden Sie ein BlueXP  _Account_, um Arbeitsbereiche, Benutzer und Ressourcen zu verwalten.
+BlueXP IAM wird unterstützt, wenn Sie BlueXP im Standard- oder eingeschränkten Modus verwenden. Wenn Sie BlueXP im privaten Modus verwenden, verwalten Sie Arbeitsbereiche, Benutzer und Ressourcen über ein BlueXP-Konto.
 
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
 * link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
