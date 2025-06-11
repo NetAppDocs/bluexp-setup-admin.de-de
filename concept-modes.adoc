@@ -74,6 +74,9 @@ Die folgende Tabelle enthält einen Vergleich dieser Modi.
 | Authentifizierung | Über SaaS mit auth0, NSS-Anmeldung oder Identity Federation | Über SaaS mithilfe von auth0 oder Identity Federation | Lokale Benutzerauthentifizierung 
 
 
+| Multi-Faktor-Authentifizierung | Verfügbar für lokale Benutzer | Nicht verfügbar | Nicht verfügbar 
+
+
 | Storage- und Datenservices | Alle werden unterstützt | Viele werden unterstützt | Es werden mehrere unterstützt 
 
 

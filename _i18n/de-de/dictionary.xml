@@ -4939,15 +4939,10 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="12cae065030aa4e0842692035a8202bd" category="inline-link">NetApp Intelligent Services-Seite im Google Cloud Marketplace</block>
   <block id="6e7edd679a9a95191eb6b90ce6943fe5" category="list-text">Nachdem Sie weitergeleitet wurden auf die <block ref="e3f48af04aeab9b1f546df3c8b75ea2a" category="inline-link-rx"></block> , stellen Sie sicher, dass im oberen Navigationsmenü das richtige Projekt ausgewählt ist.</block>
   <block id="d46543c7114457c380d6e75a76c470af" category="paragraph">Abonnieren Sie NetApp Intelligent Services über den Marktplatz Ihres Cloud-Anbieters, um Datendienste stundenweise (PAYGO) oder über einen Jahresvertrag zu bezahlen. Wenn Sie eine Lizenz von NetApp (BYOL) erworben haben, müssen Sie auch das Marketplace-Angebot abonnieren. Ihre Lizenz wird immer zuerst berechnet, aber Sie werden mit dem Stundensatz belastet, wenn Sie Ihre lizenzierte Kapazität überschreiten oder wenn die Laufzeit der Lizenz abläuft.</block>
-  <block id="4f8b575844fe92cc4a57a5823b2c4c6f" category="paragraph">Kapazitätsbasierte Knoten von Cloud Volumes ONTAP werden nicht mehr heruntergefahren, wenn der Connector nicht konform ist oder länger als 14 Tage ausfällt. Cloud Volumes ONTAP sendet weiterhin Event Management-Nachrichten, wenn der Zugriff auf den Connector verloren geht. Diese Änderung soll sicherstellen, dass Cloud Volumes ONTAP auch bei längerem Ausfall des Connectors weiterbetrieben werden kann. Die Compliance-Anforderungen für den Connector bleiben hiervon unberührt.</block>
-  <block id="078afc7a02a9e486708bde9dd30391e7" category="paragraph">Die folgenden neuen Funktionen sind in BlueXP IAM verfügbar.</block>
-  <block id="6b83d0ae16acd42e6178ac5dde77e977" category="section-title">Multi-Faktor-Authentifizierung (MFA) für lokale Benutzer</block>
-  <block id="e79a1a29d1adbbfc3e2d52a916a22b07" category="paragraph">Lokale Benutzer (nicht föderiert und nicht mit einem NetApp Support Site-Konto verknüpft) können die Multi-Faktor-Authentifizierung aktivieren. Administratoren können die MFA-Einstellungen der Benutzer verwalten, z. B. vorübergehend deaktivieren oder bei Bedarf entfernen.</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">Konnektor 3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">Diese Version des BlueXP Connector enthält Sicherheitsverbesserungen und Fehlerbehebungen.</block>
   <block id="216b28cad63bed5c978cb116067bfc38" category="paragraph">Derzeit ist die Version 3.9.53 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Multi-Faktor-Authentifizierung (MFA)</block>
-  <block id="35234ac77de9ce6dd39c6d724c620019" category="paragraph">Nicht föderierte Benutzer können jetzt die Multi-Faktor-Authentifizierung (MFA) für ihre BlueXP-Konten aktivieren und so die Kontosicherheit erhöhen. BlueXP-Administratoren können die MFA-Einstellungen ihrer Benutzer verwalten und die MFA für einzelne Benutzer nach Bedarf zurücksetzen oder deaktivieren.</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Erfahren Sie, wie Sie die Multi-Faktor-Authentifizierung selbst einrichten.</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">Workloads</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">Sie können jetzt Anmeldeinformationen für Amazon FSx für NetApp ONTAP auf der Seite „Anmeldeinformationen“ in BlueXP anzeigen und löschen.</block>
@@ -5144,8 +5139,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">Abonnieren Sie NetApp Intelligent Services</block>
   <block id="60a6933aebf1c90a063b74167b72b65a" category="sidebar">Verwenden Sie BlueXP</block>
   <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">Mitglieder und Dienstkonten verwalten</block>
-  <block id="09788a09cd40182e19bc9a2e7bfaa2ac" category="inline-link-macro">Erfahren Sie mehr über die Verwaltung der Multi-Faktor-Authentifizierung für Benutzer.</block>
-  <block id="b06421b9a95d9ca2cc843abf3c5edbe4" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="6e0396b4058b8ab3f91c2a62781d9fbc" category="inline-link-macro-rx"></block></block>
   <block id="b41bf2522840309de504df12a13b70d2" category="paragraph">Das NetApp-Supportteam wird Ihre Anfrage prüfen und bearbeiten.</block>
   <block id="fcad29f3a62024a218de540d2a955cdf" category="paragraph">Durch die Einrichtung des Identity Federation wird eine Vertrauensverbindung zwischen dem BlueXP Authentifizierungsservice-Provider (Auth0) und Ihrem eigenen Identitätsmanagement-Anbieter hergestellt.</block>
   <block id="d1d43f38caca7dedb941839c492f984b" category="list-text">Active Directory-Verbunddienste (AD FS)</block>
@@ -5214,4 +5207,10 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="62fb2f4eacb3d56ea8cb96e9b068426c" category="admonition">Wenn Sie nicht auf Ihre Authentifizierungs-App oder Ihren Wiederherstellungscode zugreifen können, müssen Sie sich an Ihren BlueXP-Administrator wenden, um Ihre MFA-Konfiguration zurückzusetzen.</block>
   <block id="42f007f9f4877a6aa4543c5ae82e6e41" category="paragraph">Wenn Sie den Administrator Ihrer Organisation kontaktieren müssen, können Sie ihm direkt von BlueXP aus eine E-Mail senden. Der Administrator verwaltet Benutzerkonten und Berechtigungen innerhalb Ihrer Organisation.</block>
   <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">9 Juni 2025</block>
+  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">Nicht föderierte Benutzer können jetzt die Multi-Faktor-Authentifizierung (MFA) für ihre BlueXP-Konten aktivieren und so die Kontosicherheit erhöhen. BlueXP-Administratoren können die MFA-Einstellungen ihrer Benutzer verwalten und die MFA für einzelne Benutzer nach Bedarf zurücksetzen oder deaktivieren. Dies wird nur im Standardmodus unterstützt.</block>
+  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">Erfahren Sie mehr über die Verwaltung der Multi-Faktor-Authentifizierung für Benutzer.</block>
+  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
+  <block id="1a504cebc3822fd967eb6426a7ff0a31" category="cell">Multi-Faktor-Authentifizierung</block>
+  <block id="812dbc1b1f1c0d72bc2c50e8ea107ab8" category="cell">Verfügbar für lokale Benutzer</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">Nicht verfügbar</block>
 </blocks>
