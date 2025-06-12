@@ -41,6 +41,14 @@ link:reference-connector-default-config.html["Informieren Sie sich über die Sta
 
 
 
+== Überwachen des Speicherplatzes
+
+BlueXP benachrichtigt Sie, wenn der Speicherplatz der Connector-VM knapp wird. Überwachen Sie diese Benachrichtigungen im Benachrichtigungscenter oder konfigurieren Sie E-Mail-Benachrichtigungen. Die Behebung von Speicherplatzproblemen liegt in Ihrer Verantwortung. link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["Lesen Sie den NetApp Knowledge Base-Artikel"^].
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["Weitere Informationen ."^]
+
+
+
 == Anhalten und Starten der Konnektor-VM
 
 Wenn Sie die Connector VM anhalten und dann starten müssen, sollten Sie dies über die Konsole Ihres Cloud-Providers oder mithilfe der Standardverfahren für das On-Premises-Management tun.

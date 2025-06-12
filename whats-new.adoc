@@ -26,7 +26,13 @@ Informieren Sie sich über die Neuerungen bei den BlueXP -Verwaltungsfunktionen
 
 Diese Version des BlueXP Connector enthält Sicherheitsverbesserungen und Fehlerbehebungen.
 
-Derzeit ist die Version 3.9.53 für den Standardmodus und den eingeschränkten Modus verfügbar.
+Die Version 3.9.53 ist für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+=== Warnmeldungen zur Speicherplatznutzung
+
+Das Benachrichtigungscenter enthält jetzt Warnungen zur Speicherplatznutzung auf dem Connector. link:task-maintain-connectors.html#monitor-disk-space["Weitere Informationen ."^]
 
 
 
