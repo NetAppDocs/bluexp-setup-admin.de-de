@@ -16,7 +16,7 @@ summary: Sie können den Status der Operationen überwachen, die BlueXP durchfü
 [role="lead"]
 Sie können den Status der Operationen überwachen, die BlueXP durchführt, um zu sehen, ob Probleme auftreten, die Sie beheben müssen. Sie können den Status in der Zeitleiste oder im Benachrichtigungscenter anzeigen oder Benachrichtigungen an Ihre E-Mail senden lassen.
 
-Die folgende Tabelle enthält einen Vergleich der Zeitleiste und des Benachrichtigungscenters, damit Sie verstehen können, was jeder von ihnen zu bieten hat.
+Die Tabelle vergleicht die Timeline und das Benachrichtigungscenter, um ihre Funktionen hervorzuheben.
 
 [cols="47,47"]
 |===
@@ -26,7 +26,7 @@ Die folgende Tabelle enthält einen Vergleich der Zeitleiste und des Benachricht
 | Zeigt den allgemeinen Status von Ereignissen und Aktionen an | Enthält Details zu jedem Ereignis oder jeder Aktion zur weiteren Untersuchung 
 
 
-| Zeigt den Status der aktuellen Anmeldesitzung an (die Informationen werden nach dem Abmelden nicht im Benachrichtigungscenter angezeigt) | Behält den Status des letzten Monats bei 
+| Zeigt den Status der aktuellen Anmeldesitzung an (die Informationen werden nach der Abmeldung nicht im Benachrichtigungscenter angezeigt) | Behält den Status des letzten Monats bei 
 
 
 | Zeigt nur Aktionen an, die in der Benutzeroberfläche initiiert wurden | Zeigt alle Aktionen der UI oder der APIs an 
@@ -46,7 +46,7 @@ Die folgende Tabelle enthält einen Vergleich der Zeitleiste und des Benachricht
 
 Die Zeitleiste zeigt die Aktionen, die Benutzer zur Verwaltung Ihrer Organisation oder Ihres Kontos ausgeführt haben. Dazu gehören Verwaltungsaktionen wie das Zuordnen von Benutzern, das Erstellen von Arbeitsumgebungen, das Erstellen von Connectors und vieles mehr.
 
-Das Prüfen der Zeitleiste kann hilfreich sein, wenn Sie feststellen müssen, wer eine bestimmte Aktion durchgeführt hat oder ob Sie den Status einer Aktion identifizieren müssen.
+Mithilfe der Zeitleiste können Sie feststellen, wer eine Aktion ausgeführt hat und welchen Status sie hat.
 
 .Schritte
 . Wählen Sie oben rechts in der BlueXP -Konsole > *Zeitleiste* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
@@ -56,14 +56,21 @@ Sie können zum Beispiel den Filter *Dienst* verwenden, um Aktionen anzuzeigen, 
 
 
 
-.Ergebnis
-Die Zeitleiste wird aktualisiert, um Ihnen abgeschlossene Verwaltungsaktionen anzuzeigen.
+
+
+=== Laden Sie Überwachungsprotokolle aus der Zeitleiste herunter
+
+Sie können die Audit-Protokolle der Zeitleiste in eine CSV-Datei herunterladen. So können Sie die Aktionen Ihrer Benutzer in Ihrer Organisation protokollieren. Die heruntergeladene CSV-Datei enthält alle verfügbaren Spalten der Zeitleiste, unabhängig davon, welche Sie in der Zeitleiste filtern oder anzeigen.
+
+.Schritte
+. Wählen Sie in der Timeline das Download-Symbol in der oberen rechten Ecke der Tabelle aus.
+
 
 
 
 == Überwachen Sie Aktivitäten mit dem Benachrichtigungscenter
 
-Benachrichtigungen verfolgen den Fortschritt der Vorgänge, die Sie in BlueXP initiiert haben, damit Sie überprüfen können, ob der Vorgang erfolgreich war oder nicht. Mit diesen können Sie den Status vieler BlueXP-Aktionen anzeigen, die Sie während Ihrer aktuellen Anmeldesitzung initiiert haben. Derzeit werden nicht alle BlueXP Services dem Benachrichtigungs-Center gemeldet.
+Benachrichtigungen verfolgen den Fortschritt Ihrer BlueXP-Operationen, um den Erfolg zu überprüfen. Mit diesen können Sie den Status vieler BlueXP-Aktionen anzeigen, die Sie während Ihrer aktuellen Anmeldesitzung initiiert haben. Derzeit werden nicht alle BlueXP Services dem Benachrichtigungs-Center gemeldet.
 
 Sie können die Benachrichtigungen anzeigen, indem Sie die Benachrichtigungsanzeige (image:icon_bell.png["Benachrichtigungsglocke"]) In der Menüleiste. Die Farbe der kleinen Blase in der Glocke zeigt die Meldung mit dem höchsten Schweregrad an, die aktiv ist. Wenn Sie also eine rote Blase sehen, bedeutet dies, dass eine wichtige Benachrichtigung angezeigt wird, die Sie sich ansehen sollten.
 
@@ -83,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-alerts/index.html["Weitere Informationen zu
 
 === Benachrichtigungstypen
 
-Benachrichtigungen werden in die folgenden Kategorien eingeteilt:
+BlueXP klassifiziert Benachrichtigungen in die folgenden Kategorien:
 
 [cols="20,60"]
 |===
@@ -121,7 +128,7 @@ Wenn Sie beispielsweise nur „Fehler“ und „Warnung“ für BlueXP-Vorgänge
 
 === Benachrichtigungen schließen
 
-Sie können Benachrichtigungen von der Seite entfernen, wenn Sie sie nicht mehr sehen müssen. Sie können alle Benachrichtigungen auf einmal verwerfen oder einzelne Benachrichtigungen verwerfen.
+Sie können Benachrichtigungen von der Seite entfernen, wenn Sie sie nicht mehr sehen müssen. Sie können Benachrichtigungen einzeln oder alle auf einmal ablehnen.
 
 Um alle Benachrichtigungen zu schließen, wählen Sie im Benachrichtigungscenter aus image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] Und wählen Sie *Alle verwerfen*.
 image:screenshot_notification_menu.png["Ein Screenshot, in dem das Menü Benachrichtigungen angezeigt wird, um Einstellungen auszuwählen und alle Optionen auszublenden."]
@@ -137,7 +144,7 @@ Sie können bestimmte Arten von Benachrichtigungen per E-Mail versenden, damit S
 
 [NOTE]
 ====
-* Für die folgenden Funktionen und Dienste werden Benachrichtigungen per E-Mail gesendet: Connector, digitale Geldbörse, Kopieren und Synchronisieren sowie Sichern und Wiederherstellen.
+* BlueXP sendet E-Mail-Benachrichtigungen für den Connector, die digitale Geldbörse, das Kopieren und Synchronisieren sowie das Sichern und Wiederherstellen.
 * Das Senden von E-Mail-Benachrichtigungen wird nicht unterstützt, wenn der Connector auf einer Website ohne Internetzugang installiert ist.
 
 
