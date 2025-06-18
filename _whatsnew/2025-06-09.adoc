@@ -20,7 +20,7 @@ Das Benachrichtigungscenter enthält jetzt Warnungen zur Speicherplatznutzung au
 
 === Audit-Verbesserungen
 
-Die Timeline enthält nun Anmeldeereignisse für Benutzer. So können Sie sehen, wann sich Benutzer bei BlueXP angemeldet haben, was bei der Prüfung und Sicherheitsüberwachung hilfreich sein kann. API-Benutzer mit der Rolle „Organisationsadministrator“ können die E-Mail-Adresse des angemeldeten Benutzers anzeigen, indem sie Folgendes angeben:  `includeUserData=true`` Parameter wie folgt:  `/audit/<account_id>?includeUserData=true` .
+Die Zeitleiste enthält jetzt Anmelde- und Abmeldeereignisse für Benutzer. Sie können die Anmeldeaktivität sehen, was bei der Prüfung und Sicherheitsüberwachung hilfreich sein kann. API-Benutzer mit der Rolle „Organisationsadministrator“ können die E-Mail-Adresse des angemeldeten Benutzers anzeigen, indem sie Folgendes angeben:  `includeUserData=true`` Parameter wie folgt:  `/audit/<account_id>?includeUserData=true` .
 
 
 
