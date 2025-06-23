@@ -32,7 +32,7 @@ Die Version 3.9.53 ist für den Standardmodus und den eingeschränkten Modus ver
 
 === Warnmeldungen zur Speicherplatznutzung
 
-Das Benachrichtigungscenter enthält jetzt Warnungen zur Speicherplatznutzung auf dem Connector. link:task-maintain-connectors.html#monitor-disk-space["Weitere Informationen ."^]
+Das Benachrichtigungscenter enthält jetzt Warnungen zur Speicherplatznutzung auf dem Connector. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["Weitere Informationen ."^]
 
 
 
