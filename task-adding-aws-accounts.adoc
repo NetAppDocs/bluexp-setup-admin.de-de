@@ -362,7 +362,7 @@ image:screenshot-credentials-with-subscription.png["Ein Screenshot der Seite mit
 Bearbeiten Sie Ihre AWS-Anmeldeinformationen, indem Sie den Kontotyp ändern (AWS-Schlüssel oder Rolle übernehmen), den Namen bearbeiten oder die Anmeldeinformationen selbst aktualisieren (die Schlüssel oder die Rollen-ARN).
 
 
-NOTE: Sie können die Anmeldeinformationen für ein Instanzprofil nicht bearbeiten, das einer Connector-Instanz oder einer Amazon FSx for ONTAP-Instanz zugeordnet ist.
+NOTE: Sie können die Anmeldeinformationen für ein Instanzprofil nicht bearbeiten, das einer Connector-Instanz oder einer Amazon FSx for ONTAP-Instanz zugeordnet ist. Sie können die Anmeldeinformationen nur für eine FSx for ONTAP-Instanz umbenennen.
 
 .Schritte
 . Wählen Sie oben rechts in der Konsole das Symbol „Einstellungen“ und dann „Anmeldeinformationen“ aus.
