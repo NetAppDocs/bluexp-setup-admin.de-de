@@ -87,7 +87,7 @@ Sie können eine Verbundverbindung mit der Microsoft Entra ID einrichten, um Sin
 
 
 [discrete]
-====== Testen und aktivieren Sie die Verbindung
+====== Testen und Aktivieren der Verbindung
 
 . Wählen Sie *Weiter*.
 . Wählen Sie *Verbindung testen*, um Ihre Verbindung zu testen. Sie werden zur Anmeldeseite Ihres IdP-Servers weitergeleitet. Melden Sie sich mit Ihren IdP-Anmeldedaten an, um den Test abzuschließen, und kehren Sie zu BlueXP zurück, um die Verbindung zu aktivieren.
