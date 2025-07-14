@@ -279,12 +279,8 @@ Bei allen anderen Organisationen oder Konten müssen Sie das Abonnement manuell 
 
 Wenn Sie über den AWS Marketplace abonnieren, besteht der letzte Schritt darin, das Abonnement Ihrer Organisation zuzuordnen. Wenn Sie diesen Schritt nicht abgeschlossen haben, können Sie das Abonnement nicht mit Ihrer Organisation oder Ihrem Konto verwenden.
 
-
-TIP: Wenn Sie den Standard- oder eingeschränkten Modus verwenden, verfügen Sie über eine _BlueXP-Organisation_, die Sie mithilfe der BlueXP-Identitäts- und Zugriffsverwaltung (IAM) verwalten. Aber wenn Sie BlueXP  im privaten Modus verwenden, dann haben Sie ein _BlueXP -Konto_.
-
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP "]
-* link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
 
 
 Führen Sie die folgenden Schritte aus, wenn Sie intelligente NetApp-Datendienste vom AWS Marketplace abonniert haben, aber den Schritt zum Verknüpfen des Abonnements mit Ihrem Konto vergessen haben.

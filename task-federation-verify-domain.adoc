@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Verbinden Sie sich mit Ihren Active Directory Federation Services (AD FS), um Single Sign-On (SSO) für BlueXP zu aktivieren. Dadurch können sich Benutzer mit ihren Unternehmensanmeldeinformationen anmelden.' 
+---
+= Überprüfen Sie die E-Mail-Domäne für Ihre Verbundverbindung
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie eine Föderation mit einer anderen Domäne als Ihrer E-Mail-Domäne durchführen möchten, müssen Sie zunächst bestätigen, dass Sie der Domäneninhaber sind. Sie können für die Föderation nur verifizierte Domänen verwenden.
+
+.Erforderliche Rollen
+Organisationsadministrator oder Föderationsadministrator. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen."]
+
+Zur Verifizierung Ihrer Domäne fügen Sie den DNS-Einstellungen Ihrer Domäne einen TXT-Eintrag hinzu. Dieser Eintrag dient als Nachweis dafür, dass Sie die Domäne besitzen, und ermöglicht BlueXP , der Domäne für die Föderation zu vertrauen. Möglicherweise müssen Sie sich mit Ihrem IT- oder Netzwerkadministrator abstimmen, um diesen Schritt abzuschließen.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie die Registerkarte *Föderation*.
+. Wählen Sie *Neue Föderation konfigurieren*.
+. Wählen Sie *Domänenbesitz bestätigen*.
+. Geben Sie die Domäne ein, die Sie verifizieren möchten, und wählen Sie *Weiter*.
+. Kopieren Sie den bereitgestellten TXT-Eintrag.
+. Rufen Sie die DNS-Einstellungen Ihrer Domain auf und konfigurieren Sie den TXT-Wert, der als TXT-Eintrag für Ihre Domain bereitgestellt wurde. Wenden Sie sich bei Bedarf an Ihren IT- oder Netzwerkadministrator.
+. Nachdem der TXT-Eintrag hinzugefügt wurde, kehren Sie zu BlueXP zurück und wählen Sie *Überprüfen*.
+

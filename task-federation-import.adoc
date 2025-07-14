@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: task-federation-import.html 
+keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
+summary: Importieren Sie Ihre bestehende Verbundverbindung in BlueXP , um sie in der neuen Oberfläche zu verwalten. So profitieren Sie von den neuesten Verbesserungen, ohne Ihre Verbundverbindungen neu erstellen zu müssen. 
+---
+= Importieren Sie Ihre Föderation in BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Importieren Sie Ihre bestehende Verbundverbindung in BlueXP , um sie in der neuen Oberfläche zu verwalten. So profitieren Sie von den neuesten Verbesserungen, ohne Ihre Verbundverbindungen neu erstellen zu müssen.
+
+Bestehende Kunden, die bereits Verbundverbindungen zu BlueXP eingerichtet haben, können ihre bestehenden Verbundverbindungen in die neue Oberfläche importieren. So können Sie Ihre Verbundverbindungen auf der neuen Seite „Verbände“ verwalten, ohne sie neu erstellen zu müssen.
+
+
+NOTE: Nachdem Sie Ihre vorhandene Föderation importiert haben, können Sie die Föderation von der Seite „Föderationen“ aus verwalten. link:task-federation-manage.html["Erfahren Sie mehr über die Verwaltung von Föderationen."]
+
+.Erforderliche Rolle
+Organisationsadministrator oder Föderationsadministrator. link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen."]
+
+
+
+== Importieren einer Föderation
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie die Registerkarte *Föderation*.
+. Wählen Sie *Föderation importieren*.
+
+
+
+
+== Hinzufügen einer verifizierten Domäne zu einer vorhandenen Föderation
+
+Sie können einer bestehenden Föderation in BlueXP eine verifizierte Domäne hinzufügen. Sie können einer bestehenden Föderation in BlueXP eine verifizierte Domäne hinzufügen, um mehrere Domänen mit demselben Identitätsanbieter (IdP) zu verwenden.
+
+Sie müssen die Domäne bereits in BlueXP verifiziert haben, bevor Sie sie einer Föderation hinzufügen können. Wenn Sie die Domäne noch nicht verifiziert haben, können Sie dies tun, indem Sie die Schritte im link:task-federation-verify-domain.html["Verifizieren Sie Ihre Domain in BlueXP"] .
+
+<brauche hier einen Anwendungsfall, wann du das tun möchtest>--Tonia <wie lange dauert es, bis sich Benutzer dieser neuen Domäne anmelden können?--Tonia> .Schritte
+
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie die Registerkarte *Föderation*.
+. Wählen Sie das Aktionsmenü image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] neben dem Verbund, dem Sie eine verifizierte Domäne hinzufügen möchten, und wählen Sie *Domänen aktualisieren* aus. Im Dialogfeld *Domänen aktualisieren* werden die Domänen aufgelistet, die diesem Verbund bereits zugeordnet sind.
+. Wählen Sie eine verifizierte Domäne aus der Liste der verfügbaren Domänen aus.
+. Wählen Sie *Aktualisieren*.
+
+
+
+
+== Aktualisieren einer ablaufenden Verbundverbindung
+
+Sie können die Details einer Verbundverbindung in BlueXP aktualisieren. Beispielsweise müssen Sie die Verbundverbindung aktualisieren, wenn Anmeldeinformationen wie Zertifikat oder Client-Geheimnis ablaufen. Aktualisieren Sie bei Bedarf das Benachrichtigungsdatum, um Sie daran zu erinnern, die Verbindung vor Ablauf zu aktualisieren.
+
+
+IMPORTANT: Aktualisieren Sie zuerst den IdP, bevor Sie die Verbindung in BlueXP aktualisieren, um Anmeldeprobleme zu vermeiden. Bleiben Sie während des Vorgangs bei BlueXP angemeldet. – Wie ist hier die Reihenfolge? – Tonia
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie die Registerkarte *Föderation*.
+. Wählen Sie das Aktionsmenü (drei vertikale Punkte) neben dem Verbund aus, dem Sie eine verifizierte Domäne hinzufügen möchten, und wählen Sie *Verbund aktualisieren*. Im Dialogfeld *Domänen aktualisieren* werden die Domänen aufgelistet, die diesem Verbund bereits zugeordnet sind.
+. Aktualisieren Sie die Details der Föderation nach Bedarf.
+. Wählen Sie *Aktualisieren*.
+
+
+
+
+== Testen einer vorhandenen Föderation
+
+Wenn Sie Probleme mit einer bestehenden Föderation haben, können Sie die Verbindung testen, um zu prüfen, ob sie ordnungsgemäß funktioniert. Dies kann Ihnen helfen, etwaige Probleme mit der Föderation zu identifizieren und zu beheben.
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie die Registerkarte *Föderation*.
+. Wählen Sie das Aktionsmenü image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] neben dem Verbund, dem Sie eine verifizierte Domäne hinzufügen möchten, und wählen Sie *Verbindung testen* aus.
+. Wählen Sie *Test*. Sie werden aufgefordert, sich mit Ihren Unternehmensanmeldeinformationen anzumelden. Bei erfolgreicher Verbindung werden Sie zur BlueXP Konsole weitergeleitet. Schlägt die Verbindung fehl, wird eine Fehlermeldung angezeigt, die auf das Problem mit der Föderation hinweist.
+. Wählen Sie *Fertig*, um zur Registerkarte *Föderation* zurückzukehren.
+
+
+
+
+== Deaktivieren einer Föderation
+
+Wenn Sie die Föderation nicht mehr benötigen, können Sie sie deaktivieren. Dadurch wird verhindert, dass sich die der Föderation zugeordneten Benutzer mit ihren Unternehmensanmeldeinformationen bei BlueXP anmelden. Sie können die Föderation später bei Bedarf wieder aktivieren.
+
+Wann sollte ein Benutzer eine Föderation deaktivieren? Zum Beispiel, wenn der IdP aktualisiert wird oder wenn die Föderation nicht mehr benötigt wird. – Tonia?
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie die Registerkarte *Föderation*.
+. Wählen Sie das Aktionsmenü image:button_3_vert_dots.png["Ein Symbol mit drei vertikalen Punkten"] neben dem Verbund, dem Sie eine verifizierte Domäne hinzufügen möchten, und wählen Sie *Deaktivieren* aus.
+
+
+
+
+== Löschen einer Föderation
+
+Wenn Sie eine Föderation nicht mehr benötigen, können Sie sie löschen. Dadurch wird die Föderation aus BlueXP entfernt und alle zugehörigen Benutzer können sich nicht mehr mit ihren Unternehmensanmeldeinformationen bei BlueXP anmelden. Dies ist beispielsweise der Fall, wenn der IdP außer Betrieb genommen wird oder die Föderation nicht mehr benötigt wird. Eine gelöschte Föderation kann nicht wiederhergestellt werden. Sie müssen eine neue Föderation erstellen.

@@ -14,16 +14,12 @@ summary: Ordnen Sie ein NetApp Support Site Konto Ihrer Organisation oder Ihrem 
 
 
 [role="lead"]
-Ordnen Sie ein NetApp Support Site Konto Ihrer Organisation oder Ihrem BlueXP  Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu ermöglichen. Diese NSS-Anmeldeinformationen sind mit der gesamten-Organisation oder dem gesamten BlueXP -Konto verknüpft.
+Ordnen Sie Ihrer BlueXP -Organisation ein NetApp Support Site-Konto zu, um wichtige Workflows für Cloud Volumes ONTAP zu aktivieren. Diese NSS-Anmeldeinformationen sind der gesamten BlueXP Organisation zugeordnet.
 
 BlueXP  unterstützt zudem die Zuordnung eines NSS-Kontos pro BlueXP -Benutzerkonto. link:task-manage-user-credentials.html["Erfahren Sie, wie Sie Anmeldedaten auf Benutzerebene verwalten"].
 
-
-TIP: Wenn Sie BlueXP  im Standardmodus oder im eingeschränkten Modus verwenden, verfügen Sie über eine _BlueXP  Organisation_, die Sie mit BlueXP  Identitäts- und Zugriffsmanagement (IAM) verwalten. Aber wenn Sie BlueXP  im privaten Modus verwenden, dann haben Sie ein _BlueXP -Konto_.
-
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über das Identitäts- und Zugriffsmanagement von BlueXP "]
-* link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
 
 
 

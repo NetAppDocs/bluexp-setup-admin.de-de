@@ -14,7 +14,7 @@ summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vo
 
 
 [role="lead"]
-Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens über verschiedene Ebenen Ihrer Ressourcenhierarchie zuweisen können. Bevor Sie diese Rollen zuweisen, sollten Sie die Berechtigungen verstehen, die jede Rolle beinhaltet. Die Rollen lassen sich in folgende Kategorien einteilen: Plattform, Applikation und Datenservice.
+Das Identitäts- und Zugriffsmanagement (IAM) von BlueXP umfasst vordefinierte Rollen, die Sie den Mitgliedern Ihrer Organisation auf verschiedenen Ebenen Ihrer Ressourcenhierarchie zuweisen können. Bevor Sie diese Rollen zuweisen, sollten Sie die Berechtigungen verstehen, die jede Rolle beinhaltet. Die Rollen lassen sich in folgende Kategorien einteilen: Plattform, Applikation und Datenservice.
 
 
 
@@ -31,6 +31,12 @@ Plattformrollen gewähren alle Berechtigungen für die BlueXP-Administration, ei
 
 
 | link:reference-iam-platform-roles.html["Ordner- oder Projektadministrator"] | Ermöglicht einem Benutzer uneingeschränkten Zugriff auf bestimmte Projekte und Ordner, denen er zugewiesen ist. Sie können Mitglieder zu Ordnern oder Projekten hinzufügen, die sie verwalten, sowie beliebige BlueXP -Aufgaben ausführen und beliebige Datendienste oder Anwendungen auf Ressourcen innerhalb des Ordners oder Projekts verwenden, denen sie zugewiesen sind. Die Rolle „Ordner“ oder „Projektadministrator“ KANN KEINE Connectors erstellen. 
+
+
+| link:reference-iam-platform-roles.html["Föderationsadministrator"] | Ermöglicht einem Benutzer das Erstellen und Verwalten von Föderationen mit BlueXP, die Single-Sign-On (SSO) ermöglichen. 
+
+
+| link:reference-iam-platform-roles.html["Föderationsbetrachter"] | Ermöglicht einem Benutzer, vorhandene Föderationen mit BlueXP anzuzeigen. Föderationen können nicht erstellt oder verwaltet werden. 
 |===
 
 
@@ -66,6 +72,33 @@ Nachfolgend finden Sie eine Liste der Rollen in der Datenservicekategorie. Jede 
 [cols="10,24"]
 |===
 | Datenservice-Rolle | Zuständigkeiten 
+
+
+| link:reference-iam-backup-rec-roles.html["Superadministrator für Sicherung und Wiederherstellung"] | Führen Sie beliebige Aktionen im Sicherungs- und Wiederherstellungsdienst aus. 
+
+
+| link:reference-iam-backup-rec-roles.html["Backup- und Wiederherstellungsadministrator"] | Führen Sie Sicherungen auf lokalen Snapshots durch, replizieren Sie auf sekundären Speicher und sichern Sie auf Objektspeicher. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrator für die Wiederherstellung von Backup und Wiederherstellung"] | Stellen Sie Workloads im Sicherungs- und Wiederherstellungsdienst wieder her. 
+
+
+| link:reference-iam-backup-rec-roles.html["Backup- und Wiederherstellungsklon-Administrator"] | Klonen Sie Anwendungen und Daten im Sicherungs- und Wiederherstellungsdienst. 
+
+
+| link:reference-iam-backup-rec-roles.html["Backup- und Wiederherstellungs-Viewer"] | Informationen zur Sicherung und Wiederherstellung anzeigen. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Notfallwiederherstellungsadministrator"] | Führen Sie beliebige Aktionen im Disaster Recovery-Dienst durch. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrator für Notfallwiederherstellungs-Failover"] | Führen Sie Failover und Migrationen durch. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrator der Notfallwiederherstellungsanwendung"] | Erstellen Sie Replikationspläne, ändern Sie Replikationspläne und starten Sie Test-Failover. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Disaster Recovery-Viewer"] | Nur Informationen anzeigen. 
 
 
 | Klassifizierungs-Admin | Bietet die Möglichkeit, die Ergebnisse der BlueXP -Klassifikation anzuzeigen. Klassifizierung hat keine Viewer-Rolle. Benutzer mit dieser Rolle können Compliance-Informationen anzeigen und Berichte für Ressourcen erstellen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren. 

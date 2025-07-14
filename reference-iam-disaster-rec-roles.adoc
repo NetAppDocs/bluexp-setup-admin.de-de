@@ -1,0 +1,262 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-disaster-rec-roles.html 
+keywords: disaster recovery, role-based access control, failover admin, replication plans, job- monitoring, business continuity, compliance- management, operational governance, access delegation, rbac, IAM roles 
+summary: Das Identitäts- und Zugriffsmanagement von BlueXP bietet mehrere Rollen, die Sie den Mitgliedern Ihrer Organisation zuweisen können, die den Disaster Recovery-Dienst verwenden. 
+---
+= BlueXP disaster recovery
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Benutzern die folgenden Rollen zuweisen, um ihnen Zugriff auf den Backup- und Recovery-Dienst in BlueXP zu gewähren. Backup- und Recovery-Rollen bieten Ihnen die Flexibilität, Benutzern spezifische Rollen für die Aufgaben zuzuweisen, die sie in Ihrem Unternehmen erledigen müssen. Die Rollenzuweisung hängt von Ihren Geschäfts- und Speicherverwaltungspraktiken ab.
+
+Bei der Notfallwiederherstellung werden die folgenden Rollen verwendet:
+
+* *Notfallwiederherstellungsadministrator*: Führen Sie beliebige Aktionen aus.
+* *Disaster Recovery-Failover-Administrator*: Führen Sie Failover und Migrationen durch.
+* *Administrator der Notfallwiederherstellungsanwendung*: Replikationspläne erstellen. Replikationspläne ändern. Test-Failover starten.
+* *Disaster Recovery Viewer*: Nur Informationen anzeigen.
+
+
+In der folgenden Tabelle sind die Aktionen aufgeführt, die jede Rolle ausführen kann.
+
+[cols="30,20a,20a,20a,20a"]
+|===
+| Funktion und Aktion | Notfallwiederherstellungsadministrator | Administrator für Notfallwiederherstellungs-Failover | Administrator der Notfallwiederherstellungsanwendung | Disaster Recovery-Viewer 
+
+
+| Dashboard und alle Registerkarten anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Kostenlos testen  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| Beginnen Sie mit der Erkennung von Workloads  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| Lizenzinformationen anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Lizenz aktivieren  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+5+| *Auf der Registerkarte „Sites“*: 
+
+
+| Websites anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Websites hinzufügen, ändern oder löschen  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+5+| *Auf der Registerkarte Replikationspläne*: 
+
+
+| Anzeigen von Replikationsplänen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Anzeigen von Replikationsplandetails  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Erstellen oder Ändern von Replikationsplänen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Erstellen von Berichten  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| Snapshots anzeigen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Durchführen von Failover-Tests  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+| Durchführen von Failovern  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| Durchführen von Failbacks  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+| Migrationen durchführen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+5+| *Auf der Registerkarte „Ressourcengruppen“*: 
+
+
+| Anzeigen von Ressourcengruppen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Erstellen, Ändern oder Löschen von Ressourcengruppen  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+5+| *Auf der Registerkarte „Jobüberwachung“*: 
+
+
+| Jobs anzeigen  a| 
+Ja.
+ a| 
+Nein
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+| Aufträge abbrechen  a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+|===

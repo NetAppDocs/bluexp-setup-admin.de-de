@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+.Schritte
+. Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
+. Wählen Sie die Registerkarte *Föderation*.
+. Wählen Sie *Neue Föderation konfigurieren*.
+

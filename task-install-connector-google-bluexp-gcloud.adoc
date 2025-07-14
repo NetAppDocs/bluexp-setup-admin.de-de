@@ -25,7 +25,7 @@ Sie können einen Connector in Google Cloud von BlueXP  oder mithilfe von Googl
 
 == Schritt 1: Netzwerk einrichten
 
-Richten Sie Ihr Netzwerk ein, damit der Connector Ressourcen und Prozesse in Ihrer Hybrid-Cloud-Umgebung managen kann. Sie müssen beispielsweise sicherstellen, dass Verbindungen für Zielnetzwerke verfügbar sind und dass ein ausgehender Internetzugang verfügbar ist.
+Richten Sie das Netzwerk ein, um sicherzustellen, dass der Connector Ressourcen mit Verbindungen zu Zielnetzwerken und ausgehendem Internetzugriff verwalten kann.
 
 VPC und Subnetz:: Wenn Sie den Connector erstellen, müssen Sie die VPC und das Subnetz angeben, in dem sich der Connector befinden soll.
 
@@ -110,7 +110,7 @@ link:reference-networking-saas-console.html["Eine Liste der Endpunkte, die über
 --
 
 
-Proxy-Server:: Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für den gesamten ausgehenden Internet-Datenverkehr erfordert, erhalten Sie die folgenden Informationen zu Ihrem HTTP- oder HTTPS-Proxy. Diese Informationen müssen Sie bei der Installation angeben. Beachten Sie, dass BlueXP keine transparenten Proxy-Server unterstützt.
+Proxy-Server:: NetApp unterstützt sowohl explizite als auch transparente Proxy-Konfigurationen. Bei Verwendung eines transparenten Proxys müssen Sie lediglich das Zertifikat für den Proxyserver angeben. Bei Verwendung eines expliziten Proxys benötigen Sie zusätzlich die IP-Adresse und die Anmeldeinformationen.
 +
 --
 * IP-Adresse
@@ -138,7 +138,7 @@ Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden 
 Aktivieren Sie NTP:: Wenn Sie Vorhaben, die BlueXP Klassifizierung zum Scannen von Unternehmensdatenquellen zu nutzen, sollten Sie sowohl auf dem BlueXP Connector-System als auch dem BlueXP Klassifizierungssystem einen Network Time Protocol (NTP)-Service aktivieren, damit die Zeit zwischen den Systemen synchronisiert wird. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Weitere Informationen zur BlueXP Klassifizierung"^]
 +
 --
-Sie müssen diese Netzwerkanforderung implementieren, nachdem Sie den Connector erstellt haben.
+Implementieren Sie diese Netzwerkanforderung, nachdem Sie den Connector erstellt haben.
 
 --
 
@@ -236,9 +236,6 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud docs: Gewähren Sie eine einzige Rolle"^]
 
 
-
-.Ergebnis
-Der Google Cloud-Nutzer hat jetzt die erforderlichen Berechtigungen zum Erstellen des Connectors.
 
 
 
@@ -360,7 +357,7 @@ Hinweise:
 
 == Schritt 5: Google Cloud APIs aktivieren
 
-Bevor Sie den Connector und die Cloud Volumes ONTAP in Google Cloud bereitstellen können, müssen Sie mehrere Google Cloud APIs aktivieren.
+Sie müssen mehrere Google Cloud-APIs aktivieren, bevor Sie den Connector und Cloud Volumes ONTAP bereitstellen.
 
 .Schritt
 . Aktivieren Sie die folgenden Google Cloud APIs in Ihrem Projekt:
@@ -387,7 +384,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud-D
 Erstellen Sie einen Connector direkt über die webbasierte Konsole von BlueXP oder über gcloude.
 
 .Über diese Aufgabe
-Beim Erstellen des Connectors wird eine Virtual Machine-Instanz in Google Cloud mit einer Standardkonfiguration bereitgestellt. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einer kleineren VM-Instanz wechseln, die weniger CPU oder RAM hat. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
+Beim Erstellen des Connectors wird eine Virtual Machine-Instanz in Google Cloud mit einer Standardkonfiguration bereitgestellt. Ändern Sie den Connector nach der Erstellung nicht in eine kleinere VM-Instanz mit weniger CPU oder RAM. link:reference-connector-default-config.html["Informieren Sie sich über die Standardkonfiguration des Connectors"].
 
 [role="tabbed-block"]
 ====
@@ -422,6 +419,7 @@ Das Formular ist Eigentum und wird von Google gehostet. Ihre Zugangsdaten werden
 ** *Details*: Geben Sie einen Namen für die virtuelle Maschineninstanz ein, geben Sie Tags an, wählen Sie ein Projekt aus, und wählen Sie dann das Servicekonto aus, das über die erforderlichen Berechtigungen verfügt (Details finden Sie im Abschnitt oben).
 ** *Ort*: Geben Sie eine Region, Zone, VPC und Subnetz für die Instanz an.
 ** *Netzwerk*: Wählen Sie, ob eine öffentliche IP-Adresse aktiviert werden soll und geben Sie optional eine Proxy-Konfiguration an.
+** *Netzwerk-Tags*: Fügen Sie der Connector-Instanz ein Netzwerk-Tag hinzu, wenn Sie einen transparenten Proxy verwenden. Netzwerk-Tags müssen mit einem Kleinbuchstaben beginnen und können Kleinbuchstaben, Zahlen und Bindestriche enthalten. Tags müssen mit einem Kleinbuchstaben oder einer Zahl enden. Sie können beispielsweise das Tag „connector-proxy“ verwenden.
 ** *Firewallrichtlinie*: Wählen Sie aus, ob eine neue Firewallrichtlinie erstellt werden soll oder ob eine vorhandene Firewallrichtlinie ausgewählt werden soll, die die erforderlichen ein- und ausgehenden Regeln zulässt.
 +
 link:reference-ports-gcp.html["Firewall-Regeln in Google Cloud"]
@@ -431,12 +429,12 @@ link:reference-ports-gcp.html["Firewall-Regeln in Google Cloud"]
 
 . Wählen Sie *Hinzufügen*.
 +
-Die Instanz sollte in ca. 7 Minuten fertig sein. Sie sollten auf der Seite bleiben, bis der Vorgang abgeschlossen ist.
+Die Instanz ist in etwa 7 Minuten bereit. Bleiben Sie auf der Seite, bis der Vorgang abgeschlossen ist.
 
 
 
 .Ergebnis
-Nach Abschluss des Prozesses ist der Connector für die Nutzung über BlueXP verfügbar.
+Nachdem der Vorgang abgeschlossen ist, steht der Connector von BlueXP zur Verwendung bereit.
 
 Wenn sich in demselben Google Cloud-Konto, bei dem der Connector erstellt wurde, Google Cloud Storage-Buckets befinden, wird automatisch eine Arbeitsumgebung von Google Cloud Storage auf dem BlueXP-Bildschirm angezeigt. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Erfahren Sie, wie Sie Google Cloud Storage von BlueXP managen"^]
 
@@ -461,7 +459,7 @@ Der Connector wird in Google Cloud auf einer VM-Instanz mit einem Betriebssystem
 
 
 .Schritte
-. Melden Sie sich am gCloud SDK mit Ihrer bevorzugten Methode an.
+. Melden Sie sich mit Ihrer bevorzugten Methode beim gcloud SDK an.
 +
 In unseren Beispielen verwenden wir eine lokale Shell mit installiertem gCloud SDK, aber Sie könnten die native Google Cloud Shell in der Google Cloud-Konsole verwenden.
 

@@ -1,0 +1,8 @@
+= 
+:allow-uri-read: 
+
+
+.Bevor Sie beginnen
+* Sie benötigen ein IdP-Konto mit Administratorrechten. Sprechen Sie die Schritte mit Ihrem IdP-Administrator ab.
+* Identifizieren Sie die Domäne, die Sie für die Föderation verwenden möchten. Sie können Ihre E-Mail-Domäne oder eine andere Domäne verwenden, die Sie besitzen. Wenn Sie eine andere Domäne als Ihre E-Mail-Domäne verwenden möchten, müssen Sie diese zunächst in BlueXP verifizieren. Folgen Sie dazu den Schritten im link:task-federation-verify-domain.html["Verifizieren Sie Ihre Domain in BlueXP"] Thema.
+

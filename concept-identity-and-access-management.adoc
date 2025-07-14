@@ -16,9 +16,6 @@ summary: 'Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Acc
 [role="lead"]
 Mit dem Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management, IAM) können Sie den Zugriff auf Ihre NetApp-Ressourcen organisieren und kontrollieren. Sie können Ihre Ressourcen nach der Hierarchie Ihrer Organisation organisieren. Sie können beispielsweise Ressourcen nach geographischem Standort, Standort oder Geschäftseinheit organisieren. Anschließend können Sie den Mitgliedern in bestimmten Teilen der Hierarchie IAM-Rollen zuweisen, wodurch der Zugriff auf Ressourcen in anderen Teilen der Hierarchie verhindert wird.
 
-BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus und im eingeschränkten Modus verwendet wird. Wenn Sie BlueXP  im privaten Modus verwenden, verwenden Sie ein BlueXP  _Account_, um Benutzer und Ressourcen zu verwalten.
-
-* link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
 * link:concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"]
 
 
@@ -26,7 +23,7 @@ BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus und im eingeschr�
 
 == Wie BlueXP  IAM funktioniert
 
-Mit BlueXP  IAM können Sie Zugriff auf die Ressourcen Ihres Unternehmens gewähren, indem Sie festlegen, welche Mitglieder Berechtigungen für bestimmte Teile der Unternehmenshierarchie besitzen. Ein Mitglied kann beispielsweise über Projektadministratorberechtigungen für ein Projekt verfügen, das fünf Ressourcen zugeordnet hat.
+Mit BlueXP IAM können Sie Ressourcenzugriff gewähren, indem Sie Benutzern Zugriffsrollen für bestimmte Bereiche der Hierarchie zuweisen. Beispielsweise kann einem Mitglied die Rolle „Ordner- oder Projektadministrator“ für ein Projekt mit fünf Ressourcen zugewiesen werden.
 
 Bei der Verwendung von BlueXP  IAM verwalten Sie die folgenden Komponenten:
 
@@ -57,17 +54,13 @@ image:diagram-iam-resource-hierarchy.png["Ein konzeptionelles Diagramm, das die 
 
 Eine _Organisation_ ist die oberste Ebene des IAM-Systems von BlueXP  und repräsentiert in der Regel Ihr Unternehmen. Ihr Unternehmen besteht aus Ordnern, Projekten, Mitgliedern, Rollen und Ressourcen. Konnektoren sind bestimmten Projekten in der Organisation zugeordnet.
 
-BlueXP fordert Sie bei der Anmeldung auf, eine neue Organisation zu erstellen.
-
 
 
 === Ordner
 
 Ein _Ordner_ ermöglicht Ihnen, verwandte Projekte zu gruppieren und von anderen Projekten in Ihrer Organisation zu trennen. Ein Ordner kann beispielsweise einen geografischen Standort (EU oder US-Osten), einen Standort (London oder Toronto) oder eine Geschäftseinheit (Engineering oder Marketing) repräsentieren.
 
-Ordner können Projekte, andere Ordner oder beides enthalten.
-
-Sie müssen keine Ordner erstellen. Sie sind optional.
+Ordner können Projekte, andere Ordner oder beides enthalten. Das Erstellen von Ordnern ist optional.
 
 
 
@@ -96,7 +89,7 @@ TIP: Sie können einen Connector auch einem anderen Ordner oder Projekt in Ihrer
 
 Sie haben auch die Möglichkeit, eine Ressource einem Ordner zuzuordnen. Dies ist jedoch optional und erfüllt die Anforderungen eines bestimmten Anwendungsfalls.
 
-Ein „_Organisation admin_“ kann eine Ressource einem Ordner zuordnen, sodass ein „_Ordner“ oder „Projekt admin“ diese Ressource den entsprechenden Projekten zuordnen kann, die sich im Ordner befinden.
+Ein _Organisationsadministrator_ kann eine Ressource mit einem Ordner verknüpfen, um einem _Ordner- oder Projektadministrator_ zu ermöglichen, diese Ressource mit den entsprechenden Projekten im Ordner zu verknüpfen.
 
 Angenommen, Sie haben einen Ordner, der zwei Projekte enthält:
 
@@ -106,7 +99,7 @@ Der _Organisation admin_ kann dem Ordner eine Ressource zuordnen:
 
 image:diagram-iam-resource-association-folder-2.png["Ein Diagramm mit einem Ordner, einer Ressource, die dem Ordner zugeordnet ist, und zwei Projekten, die sich im Ordner befinden: Projekt A und Projekt B."]
 
-Wenn Sie eine Ressource einem Ordner zuordnen, ist sie nicht automatisch für alle Projekte zugänglich. Nur der Ordner- oder Projektadministrator kann die Ressource sehen. Der Ordner- oder Projektadministrator entscheidet, welche Projekte darauf zugreifen können, und ordnet die Ressource den entsprechenden Projekten zu.
+Durch die Verknüpfung einer Ressource mit einem Ordner wird diese nicht für alle Projekte zugänglich; nur der Ordner- oder Projektadministrator kann sie sehen. Der Ordner- oder Projektadministrator entscheidet, welche Projekte darauf zugreifen können, und ordnet die Ressource den entsprechenden Projekten zu.
 
 In diesem Beispiel verknüpft der Administrator die Ressource mit Projekt A:
 
@@ -128,7 +121,7 @@ Jede Organisation umfasst mindestens einen Benutzer mit der Rolle „Organisatio
 
 In BlueXP  IAM erteilen Sie den Mitgliedern der Organisation keine Berechtigungen direkt. Stattdessen gewähren Sie jedem Mitglied eine Rolle. Eine Rolle enthält einen Satz von Berechtigungen, mit denen ein Mitglied bestimmte Aktionen auf einer bestimmten Ebene der Ressourcenhierarchie ausführen kann.
 
-Durch die Bereitstellung von Berechtigungen für einen bestimmten Teil der Ressourcenhierarchie können Sie Zugriffsrechte auf die Ressourcen beschränken, die ein Mitglied für die Ausführung seiner Aufgaben benötigt.
+Durch die Erteilung von Berechtigungen auf einer bestimmten Hierarchieebene wird der Zugriff auf die Ressourcen eingeschränkt, die ein Mitglied benötigt, und auf die Dienste, die es mit diesen Ressourcen nutzen kann.
 
 
 

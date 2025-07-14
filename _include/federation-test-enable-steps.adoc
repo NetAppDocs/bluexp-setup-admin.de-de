@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+. Wählen Sie *Weiter*.
+. Wählen Sie *Verbindung testen*, um Ihre Verbindung zu testen. Sie werden zur Anmeldeseite Ihres IdP-Servers weitergeleitet. Melden Sie sich mit Ihren IdP-Anmeldedaten an, um den Test abzuschließen, und kehren Sie zu BlueXP zurück, um die Verbindung zu aktivieren.
+. Wählen Sie *Weiter*.
+. Überprüfen Sie auf der Seite *Föderation aktivieren* die Föderationsdetails und wählen Sie dann *Föderation aktivieren* aus.
+. Wählen Sie *Fertig*, um den Vorgang abzuschließen.
+
+
+Nachdem Sie die Föderation aktiviert haben, können sich Benutzer mit ihren Unternehmensanmeldeinformationen bei BlueXP anmelden.

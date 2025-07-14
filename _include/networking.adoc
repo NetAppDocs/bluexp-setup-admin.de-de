@@ -47,7 +47,7 @@ Wenn Cloud Volumes ONTAP-Systeme keine ausgehende Internetverbindung zum Senden 
 --
 
 
-Proxy-Server:: Wenn Ihr Unternehmen die Bereitstellung eines Proxy-Servers für den gesamten ausgehenden Internet-Datenverkehr erfordert, erhalten Sie die folgenden Informationen zu Ihrem HTTP- oder HTTPS-Proxy. Diese Informationen müssen Sie bei der Installation angeben. Beachten Sie, dass BlueXP keine transparenten Proxy-Server unterstützt.
+Proxy-Server:: NetApp unterstützt sowohl explizite als auch transparente Proxy-Konfigurationen. Bei Verwendung eines transparenten Proxys müssen Sie lediglich das Zertifikat für den Proxyserver angeben. Bei Verwendung eines expliziten Proxys benötigen Sie zusätzlich die IP-Adresse und die Anmeldeinformationen.
 +
 --
 * IP-Adresse

@@ -109,7 +109,7 @@ Connector-Upgrades:: BlueXP bietet automatisierte Upgrades der Connector-Softwar
 Zugriff auf die Benutzeroberfläche:: Der Zugriff auf die Benutzeroberfläche erfolgt über die webbasierte Konsole, die über die SaaS-Schicht bereitgestellt wird.
 API-Endpunkt:: API-Aufrufe werden an den folgenden Endpunkt vorgenommen:
 \https://cloudmanager.cloud.netapp.com
-Authentifizierung:: Die Authentifizierung erfolgt über den Cloud-Service von BlueXP mit auth0 oder über die NetApp Support Site (NSS) Anmeldedaten. Identitätsföderation ist verfügbar.
+Authentifizierung:: BlueXP bietet Authentifizierung mit Auth0- oder NetApp Support Site (NSS)-Anmeldungen. Identitätsföderation ist verfügbar.
 Unterstützte BlueXP Services:: Alle BlueXP Services sind für Anwender verfügbar.
 Unterstützte Lizenzierungsoptionen:: Marketplace-Abonnements und BYOL werden im Standard-Modus unterstützt. Die unterstützten Lizenzierungsoptionen hängen jedoch von dem ab, welchen BlueXP Service Sie verwenden. In der Dokumentation zu den einzelnen Services finden Sie weitere Informationen zu den verfügbaren Lizenzierungsoptionen.
 Erste Schritte mit dem Standardmodus:: Wechseln Sie zum https://console.bluexp.netapp.com["BlueXP webbasierte Konsole"^] Und melden Sie sich an.
@@ -197,7 +197,7 @@ Bei Cloud Volumes ONTAP werden sowohl kapazitätsbasierte Lizenzierung als auch 
 Erste Schritte mit eingeschränkter Modus:: Wenn Sie Ihr BlueXP Konto erstellen, müssen Sie den eingeschränkten Modus aktivieren.
 +
 --
-Wenn Sie noch keine Organisation haben, werden Sie aufgefordert, Ihr Unternehmen zu erstellen und den eingeschränkten Modus zu aktivieren, wenn Sie sich zum ersten Mal über einen Connector bei BlueXP  anmelden, den Sie manuell installiert haben oder den Sie auf dem Marktplatz Ihres Cloud-Providers erstellt haben.
+Wenn Sie noch keine Organisation haben, werden Sie aufgefordert, Ihre Organisation zu erstellen und den eingeschränkten Modus zu aktivieren, wenn Sie sich zum ersten Mal von einem Connector aus bei BlueXP anmelden, den Sie manuell installiert oder im Marktplatz Ihres Cloud-Anbieters erstellt haben.
 
 Beachten Sie, dass Sie die Einstellung für den eingeschränkten Modus nicht ändern können, nachdem BlueXP  die Organisation erstellt hat. Der eingeschränkte Modus kann später nicht aktiviert werden, und Sie können ihn später nicht mehr deaktivieren.
 
@@ -252,7 +252,7 @@ Unterstützte BlueXP Services in Cloud-Implementierungen:: BlueXP unterstützt b
 Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt. 
 |===
 --
-Unterstützte BlueXP-Dienste in lokalen Bereitstellungen:: BlueXP unterstützt bei der On-Premises-Installation des Connector folgende Storage- und Datenservices mit Private Mode:
+Unterstützte BlueXP -Dienste in lokalen Bereitstellungen:: BlueXP unterstützt bei der On-Premises-Installation des Connector folgende Storage- und Datenservices mit Private Mode:
 +
 --
 [cols="2*"]
@@ -292,7 +292,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-
 Unterstützte Lizenzierungsoptionen:: Nur BYOL wird im privaten Modus unterstützt.
 +
 --
-Bei Cloud Volumes ONTAP BYOL wird nur Node-basierte Lizenzierung unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Da keine ausgehende Internetverbindung verfügbar ist, müssen Sie Ihre Cloud Volumes ONTAP Lizenzdatei manuell in das Digital Wallet von BlueXP hochladen.
+Bei Cloud Volumes ONTAP BYOL wird nur Node-basierte Lizenzierung unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Da keine ausgehende Internetverbindung verfügbar ist, müssen Sie Ihre Cloud Volumes ONTAP -Lizenzdatei manuell in die BlueXP digital wallet hochladen.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Erweitern Sie Ihr Digital Wallet von BlueXP um Lizenzen"^]
 
@@ -408,10 +408,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Arbeitslast Fabrik | Nein | Nein 
 
 
-.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Ja. | Nein 
-
-
-| BlueXP Accounts | Ja. | Ja. 
+.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Ja. | Ja. 
 
 
 | Anmeldedaten | Ja. | Ja. 

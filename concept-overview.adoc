@@ -26,7 +26,7 @@ BlueXP  bietet einheitliche Storage-Kontrolle in Ihrer Hybrid-Multi-Cloud-Umgeb
 
 === Einheitliche Storage-Kontrolle über den BlueXP  Arbeitsbereich
 
-Mit dem _BlueXP Canvas_ können Sie Cloud- und lokalen Speicher entdecken, bereitstellen und verwalten. Der Bildschirm bietet einen zentralen Speicherort für das gesamte Storage-Management.
+Mit dem _BlueXP Canvas_ können Sie Cloud- und lokalen Speicher entdecken, bereitstellen und verwalten. Die Leinwand zentralisiert die Speicherverwaltung.
 
 
 
@@ -75,13 +75,12 @@ image:screenshot-canvas.png["Ein Screenshot aus dem BlueXP  Bildschirm zeigt me
 
 === Integrierte Services zum Schutz, zur Sicherung und zur Optimierung von Daten
 
-BlueXP umfasst integrierte Datendienste, um die Sicherheit und Verfügbarkeit Ihrer Daten im gesamten lokalen und Cloud-Speicher aufrechtzuerhalten.
+BlueXP umfasst Datendienste zum Sichern und Aufrechterhalten der Datenverfügbarkeit im gesamten Speicher.
 
 BlueXP -Warnmeldungen:: Sie erhalten Probleme im Zusammenhang mit Kapazität, Verfügbarkeit, Performance, Sicherung und Sicherheit in Ihrer ONTAP-Umgebung.
 BlueXP Automatisierungskatalog:: Verwenden Sie skriptbasierte Lösungen, um die Implementierung und Integration von NetApp Produkten und Services zu automatisieren.
 BlueXP Backup und Recovery:: Sichern und Wiederherstellen von Cloud- und lokalen Daten.
 BlueXP Klassifizierung:: Sorgen Sie für den Schutz Ihrer Applikationsdaten und Cloud-Umgebungen.
-BlueXP Cloud-OPS:: Erhalten Sie einen transparenten Überblick über Ihre Cloud-Computing-Ausgaben und lassen Sie potenzielle Einsparungen erkennen.
 BlueXP Kopier- und Synchronisierungsfunktion:: Synchronisieren Sie Daten zwischen lokalen und Cloud-Datenspeichern.
 BlueXP Digital Advisor:: Prädiktive Analysen und proaktiver Support optimieren die Dateninfrastruktur
 Das Digital Wallet von BlueXP:: Verwalten und überwachen Sie Ihre Lizenzen und Abonnements.
@@ -92,7 +91,7 @@ BlueXP vor Ransomware-Schutz:: Erkennen Sie Anomalien, die möglicherweise zu Ra
 BlueXP Replizierung:: Replizieren Sie Daten zwischen Storage-Systemen, um Backup und Disaster Recovery zu unterstützen.
 BlueXP  Software-Updates:: Automatisierung von Bewertung, Planung und Ausführung von ONTAP Upgrades
 BlueXP NachhaltigkeitssDashboard:: Analysieren Sie die Nachhaltigkeit Ihrer Storage-Systeme
-BlueXP Tiering:: Erweitern Sie Ihren lokalen ONTAP-Speicher auf die Cloud.
+BlueXP Tiering:: Erweitern Sie Ihren lokalen ONTAP -Speicher auf die Cloud.
 BlueXP Volume-Caching:: Erstellen Sie ein schreibbares Cache-Volume, um den Zugriff auf Daten zu beschleunigen oder den Datenverkehr von Volumes zu reduzieren, auf die sehr viel zugegriffen wird.
 BlueXP -Workload ist werkseitig eingestellt:: Entwerfen, Einrichten und Betreiben wichtiger Workloads mit Amazon FSX für NetApp ONTAP
 
@@ -138,14 +137,13 @@ Das Identitäts- und Zugriffsmanagement (BlueXP  Identity and Access Management
 BlueXP IAM wird unterstützt, wenn Sie BlueXP im Standard- oder eingeschränkten Modus verwenden. Wenn Sie BlueXP im privaten Modus verwenden, verwalten Sie Arbeitsbereiche, Benutzer und Ressourcen über ein BlueXP-Konto.
 
 * link:concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
-* link:concept-netapp-accounts.html["Mehr zu BlueXP Accounts"]
 
 
 
 
 === Anschlüsse
 
-Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. Ein Connector ermöglicht Ihnen das Management von Ressourcen und Prozessen in Ihren On-Premises- und Cloud-Umgebungen. Sie ist erforderlich, um Arbeitsumgebungen (z. B. Cloud Volumes ONTAP) zu managen und viele BlueXP -Services zu nutzen.
+Für den Einstieg in BlueXP benötigen Sie keinen Connector, aber Sie müssen einen Connector erstellen, mit dem Sie alle BlueXP Funktionen und Services nutzen können. Mit einem Connector können Sie Ressourcen und Prozesse in Ihren lokalen und Cloud-Umgebungen verwalten. Sie benötigen ihn für die Verwaltung von Arbeitsumgebungen (z. B. Cloud Volumes ONTAP) und für die Nutzung vieler BlueXP -Dienste.
 
 link:concept-connectors.html["Erfahren Sie mehr über Steckverbinder"].
 
@@ -161,6 +159,6 @@ link:concept-modes.html["Weitere Informationen zu den BlueXP Implementierungsmod
 
 == SOC 2 Typ 2-Zertifizierung
 
-Ein unabhängiger zertifizierter Wirtschaftsprüfer und Wirtschaftsprüfer prüfte BlueXP und bestätigte, dass es SOC 2 Typ 2-Berichte basierend auf den geltenden Trust Services-Kriterien erreichte.
+Eine unabhängige Wirtschaftsprüfungsgesellschaft und ein Wirtschaftsprüfer haben BlueXP geprüft und bestätigt, dass BlueXP SOC 2 Typ 2-Berichte auf Grundlage der geltenden Trust Services-Kriterien erhalten hat.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["SOC 2-Berichte von NetApp anzeigen"^]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-platform-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
-summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können. 
+summary: Weisen Sie Benutzern Plattformrollen zu, um ihnen Berechtigungen zum Verwalten von BlueXP, zum Zuweisen von Rollen, zum Hinzufügen von Benutzern, zum Erstellen von Konnektoren und zum Verwalten von Föderationen zu erteilen. 
 ---
 = Zugriffsrollen für die BlueXP -Plattform
 :hardbreaks:
@@ -14,16 +14,22 @@ summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vo
 
 
 [role="lead"]
-Plattformrollen sind die breitesten Rollen, die Sie Benutzern zuweisen können. Sie erlauben alle Berechtigungen für die BlueXP Administration, einschließlich dem Zuweisen von Rollen und dem Hinzufügen von Benutzern. Benutzer mit Plattformrollen haben Zugriff auf alle Datenservices und Applikationen innerhalb von BlueXP . BlueXP  enthält zwei Plattformrollen: *Organisationsadministrator* und *Ordner oder Projektadministrator*. Der Hauptunterschied zwischen den beiden BlueXP -Plattformrollen ist der Umfang, in dem die Rolle angewendet wird.
+Weisen Sie Benutzern Plattformrollen zu, um ihnen Berechtigungen zum Verwalten von BlueXP, zum Zuweisen von Rollen, zum Hinzufügen von Benutzern, zum Erstellen von Konnektoren und zum Verwalten von Föderationen zu erteilen.
 
 .Beispiel für Organisationsrollen in BlueXP  für eine große multinationale Organisation
-XYZ Corporation, ein multinationales Unternehmen, zielt darauf ab, den Zugriff auf Datenspeicherressourcen nach geografischen Regionen wie Nordamerika, Europa und Asien-Pazifik zu trennen. Sie möchten, dass jede Region exklusive Kontrolle über ihre Ressourcen hat und gleichzeitig eine zentrale Übersicht erhält.
+Die XYZ Corporation organisiert den Datenspeicherzugriff nach Regionen (Nordamerika, Europa und Asien-Pazifik) und gibt jeder Region die Kontrolle, während gleichzeitig eine zentrale Übersicht gewährleistet wird.
 
-Um dies zu erreichen, erstellt eine Person, die der Rolle *Organisationsadministrator* im BlueXP  der XYZ Corporation zugewiesen ist, eine anfängliche Arbeitsumgebung und erstellt dann für jede Region separate Ordner in BlueXP . Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der *Organisationsadministrator* weist einem BlueXP -Benutzer in jeder Region die Rolle *Ordner oder Projektadministrator* zu.
+Der *Organisationsadministrator* in BlueXP der XYZ Corporation erstellt eine anfängliche Organisation und separate Ordner für jede Region. Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der *Organisationsadministrator* weist einem BlueXP -Benutzer in jeder Region die Rolle *Ordner oder Projektadministrator* zu.
 
-Sobald die Ersteinrichtung abgeschlossen ist, können regionale Administratoren mit der Rolle *Ordner oder Projektadministrator* neue Arbeitsumgebungen erstellen und Benutzer innerhalb ihrer Regionen hinzufügen. Diese regionalen Administratoren können auch Ordner und Projekte hinzufügen, entfernen oder umbenennen, denen sie zugewiesen sind. Der *Organisationsadministrator* erbt Berechtigungen für alle neuen Arbeitsumgebungen oder Ressourcen und sorgt so für Transparenz der Speichernutzung im gesamten Unternehmen.
+Regionale Administratoren mit der Rolle „Ordner- oder Projektadministrator“ verwalten ihre Regionen (Ordner), indem sie neue Ressourcen und Benutzer hinzufügen. Sie können außerdem die von ihnen verwalteten Ordner und Projekte hinzufügen, entfernen oder umbenennen. Der Organisationsadministrator erhält die Berechtigungen für alle neuen Ressourcen und behält so den Überblick über die Speichernutzung in der gesamten Organisation.
 
-Die folgende Tabelle zeigt die Aktionen, die die einzelnen Rollen der BlueXP -Plattform durchführen können.
+Innerhalb derselben Organisation wird einem Benutzer die Rolle *Federationsadministrator* zugewiesen, um die Föderation der Organisation mit seinem Unternehmens-IdP zu verwalten. Dieser Benutzer kann föderierte Organisationen hinzufügen oder entfernen, jedoch keine Benutzer oder Ressourcen innerhalb der Organisation verwalten. Die Organisation weist einem Benutzer die Rolle *Federationsbetrachter* zu, um den Föderationsstatus zu überprüfen und föderierte Organisationen anzuzeigen, ohne Änderungen vorzunehmen.
+
+Die folgenden Tabellen zeigen die Aktionen, die jede BlueXP Plattformrolle ausführen kann.
+
+
+
+== Rollen in der Organisationsverwaltung
 
 [cols="2,1,1"]
 |===
@@ -60,11 +66,40 @@ Die folgende Tabelle zeigt die Aktionen, die die einzelnen Rollen der BlueXP -P
 | Verwalten Sie Anmeldeinformationen über Einstellungen > Anmeldeinformationen | Ja. | Ja. 
 
 
-| Sehen Sie sich den BlueXP -Zeitplan an | Ja. | Ja. 
+| Erstellen, Verwalten und Anzeigen von Föderationen | Ja. | Nein 
 
 
-| Nutzung von BlueXP  Services | Ja. | Ja. 
+| Für Support registrieren und Fälle einreichen | Ja. | Ja. 
 
 
-| Registrieren Sie BlueXP , um Support zu erhalten, und senden Sie Cases ein | Ja. | Ja. 
+| Datendienste nutzen | Ja. | Ja. 
+
+
+| Sehen Sie sich die BlueXP Zeitleiste und -Benachrichtigungen an | Ja. | Ja. 
+|===
+
+
+== Föderationsrollen
+
+[cols="2,1,1"]
+|===
+| Aufgabe | Föderationsadministrator | Föderationsbetrachter 
+
+
+| Erstellen einer Föderation | Ja. | Nein 
+
+
+| Verifizieren einer Domäne | Ja. | Nein 
+
+
+| Hinzufügen einer Domäne zu einem Verbund | Ja. | Nein 
+
+
+| Deaktivieren und Löschen von Föderationen | Ja. | Nein 
+
+
+| Testverbände | Ja. | Nein 
+
+
+| Verbände und ihre Details anzeigen | Ja. | Ja. 
 |===
