@@ -112,7 +112,7 @@ Um einen vorhandenen Connector für die Verwendung eines transparenten Proxyserv
 Wenn Sie einen Proxyserver konfigurieren, wird der Connector neu gestartet. Stellen Sie sicher, dass der Connector im Leerlauf ist, bevor Sie fortfahren.
 
 .Schritte
-+ Stellen Sie sicher, dass Sie über eine Zertifikatsdatei im PEM-Format für den Proxyserver verfügen. Sollten Sie kein Zertifikat besitzen, wenden Sie sich bitte an Ihren Netzwerkadministrator.
+Stellen Sie sicher, dass Sie über eine Zertifikatsdatei im PEM-Format für den Proxyserver verfügen. Sollten Sie kein Zertifikat besitzen, wenden Sie sich bitte an Ihren Netzwerkadministrator.
 
 . Öffnen Sie eine Befehlszeilenschnittstelle auf dem Connector-Host.
 . Navigieren Sie zum Verzeichnis des Connector-Wartungstools:  `/opt/application/netapp/service-manager-2/connector-maint-console`

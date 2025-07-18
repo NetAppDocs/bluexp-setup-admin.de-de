@@ -5255,7 +5255,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="0de6f673e972fb67cc36c32ad5fcb898" category="list-text">Sie verwenden den Connector für keine anderen NetApp -Datendienste als Cloud Volumes ONTAP.</block>
   <block id="ee8603a5f78124f751bd9a36bb2f1053" category="paragraph">Um einen vorhandenen Connector für die Verwendung eines transparenten Proxyservers zu konfigurieren, verwenden Sie das Connector-Wartungstool, das über die Befehlszeile auf dem Connector-Host verfügbar ist.</block>
   <block id="66f1817e95be4137166f119a89852722" category="paragraph">Wenn Sie einen Proxyserver konfigurieren, wird der Connector neu gestartet. Stellen Sie sicher, dass der Connector im Leerlauf ist, bevor Sie fortfahren.</block>
-  <block id="e1a3bbb95e9e5f5476f81f3831fe98de" category="paragraph">+ Stellen Sie sicher, dass Sie über eine Zertifikatsdatei im PEM-Format für den Proxyserver verfügen. Sollten Sie kein Zertifikat besitzen, wenden Sie sich bitte an Ihren Netzwerkadministrator.</block>
   <block id="040c90d5413009e841ba3cc3b521d699" category="list-text">Öffnen Sie eine Befehlszeilenschnittstelle auf dem Connector-Host.</block>
   <block id="2bc1351fc63f28a1cf5ed4c899d4fc35" category="list-text">Navigieren Sie zum Verzeichnis des Connector-Wartungstools: <block ref="ea59a49bc639b17bbbe69f3540f9f07c" prefix=" " category="inline-code"></block></block>
   <block id="05c44d09b879c8fb4432a79dc845c0f5" category="list-text">Führen Sie den folgenden Befehl aus, um den transparenten Proxy zu aktivieren. <block ref="d2d60207eee35ee99f434fbad44a604c" prefix=" " category="inline-code"></block> ist das Verzeichnis und der Name der Zertifikatsdatei, die Sie für den Proxyserver haben:</block>
@@ -5453,4 +5452,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp empfiehlt die Verwendung der Metadaten-URL, damit BlueXP automatisch die neueste AD FS-Konfiguration abruft. Wenn Sie die Federation-Metadatendatei herunterladen, müssen Sie sie bei Änderungen an Ihrer AD FS-Konfiguration manuell in BlueXP aktualisieren.</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">Testen und Aktivieren der Verbindung</block>
+  <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">Stellen Sie sicher, dass Sie über eine Zertifikatsdatei im PEM-Format für den Proxyserver verfügen. Sollten Sie kein Zertifikat besitzen, wenden Sie sich bitte an Ihren Netzwerkadministrator.</block>
 </blocks>
