@@ -108,7 +108,7 @@ Beachten Sie Folgendes:
 *** Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
 
 
-** *Wählen Sie eine Kategorie* und wählen Sie dann eine *Rolle* aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
+** *Wählen Sie eine Kategorie* und dann eine *Rolle* aus, die dem Mitglied Berechtigungen für die Ressourcen erteilt, die mit der von Ihnen ausgewählten Organisation, dem Ordner oder dem Projekt verknüpft sind.
 +
 *** Wenn Sie einen Ordner oder ein Projekt ausgewählt haben, können Sie aus jeder anderen Rolle als *Organisationsadministrator* wählen.
 +
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte 
 
 . Laden Sie die Client-ID und den Client-Schlüssel herunter, oder kopieren Sie ihn.
 +
-lueXP zeigt das Client-Geheimnis nur einmal an und speichert es nicht. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und den Client-Schlüssel später nach Bedarf neu erstellen können.
+BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nicht. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und den Client-Schlüssel später nach Bedarf neu erstellen können.
 
 . Wählen Sie *Schließen*.
 
@@ -157,7 +157,7 @@ Möglicherweise müssen Sie ein Mitglied aus Ihrer Organisation entfernen, beisp
 Durch das Entfernen eines Mitglieds werden dessen Berechtigungen aufgehoben, seine BlueXP- und NetApp-Support-Site-Konten bleiben jedoch erhalten.
 
 .Schritte
-. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Benutzer löschen* aus.
+. Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] Wählen Sie dann *Benutzer löschen*.
 . Bestätigen Sie, dass Sie das Mitglied aus Ihrer Organisation entfernen möchten.
 
 
