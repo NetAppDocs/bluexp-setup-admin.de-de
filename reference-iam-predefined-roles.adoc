@@ -55,7 +55,7 @@ Im Folgenden finden Sie eine Liste der Rollen in der Anwendungskategorie. Jede R
 | link:reference-iam-keystone-roles.html["Keystone Admin"] | Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
 
 
-| link:reference-iam-keystone-roles.html["Keystone Viewer"] | Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern, Verbrauch, Vermögenswerte und Verwaltungsinformationen innerhalb des Keystone Mandanten zu überwachen und anzuzeigen, auf den sie Zugriff haben. 
+| link:reference-iam-keystone-roles.html["Keystone Viewer"] | Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen. 
 
 
 | ONTAP Mediator-Setup-Rolle | Servicekonten mit der Setup-Rolle ONTAP Mediator können Serviceanfragen erstellen. Diese Rolle ist in einem Servicekonto erforderlich, um eine Instanz des link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAP Cloud Mediator"^] . 
