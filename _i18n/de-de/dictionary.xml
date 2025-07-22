@@ -5473,4 +5473,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Wählen Sie eine Kategorie* und dann eine *Rolle* aus, die dem Mitglied Berechtigungen für die Ressourcen erteilt, die mit der von Ihnen ausgewählten Organisation, dem Ordner oder dem Projekt verknüpft sind.</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nicht. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und den Client-Schlüssel später nach Bedarf neu erstellen können.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> Wählen Sie dann *Benutzer löschen*.</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
 </blocks>
