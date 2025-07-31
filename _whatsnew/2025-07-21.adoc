@@ -6,7 +6,7 @@
 
 === Unterstützung für Google Cloud NetApp Volumes
 
-Sie können jetzt Google Cloud NetApp Volumes in BlueXP anzeigen. link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["Erfahren Sie mehr über Google Cloud NetApp Volumes."]
+Sie können jetzt Google Cloud NetApp Volumes in BlueXP anzeigen.link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html["Erfahren Sie mehr über Google Cloud NetApp Volumes."]
 
 
 
