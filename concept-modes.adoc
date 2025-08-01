@@ -356,11 +356,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
 .17+| *Services* | Meldungen | Nein | Nein 
 
 
-| Backup und Recovery | Ja.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Zeigen Sie die Liste der unterstützten Backup-Ziele für ONTAP-Volume-Daten an"^] | Ja.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Zeigen Sie die Liste der unterstützten Backup-Ziele für ONTAP-Volume-Daten an"^] 
+| Backup und Recovery | Jahttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Zeigen Sie die Liste der unterstützten Backup-Ziele für ONTAP-Volume-Daten an"^] | Jahttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Zeigen Sie die Liste der unterstützten Backup-Ziele für ONTAP-Volume-Daten an"^] 
 
 
 | Klassifizierung | Ja. | Ja. 

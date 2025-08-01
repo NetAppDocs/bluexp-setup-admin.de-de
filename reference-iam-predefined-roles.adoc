@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac 
 summary: Das Identitäts- und Zugriffsmanagement von BlueXP  umfasst mehrere vordefinierte Rollen, die Sie den Mitgliedern Ihres Unternehmens zuweisen können. 
 ---
 = Informieren Sie sich über Zugriffsrollen von BlueXP 
@@ -36,7 +36,7 @@ Plattformrollen gewähren alle BlueXP Administrationsberechtigungen, einschließ
 | link:reference-iam-platform-roles.html["Föderationsadministrator"] | Ermöglicht einem Benutzer das Erstellen und Verwalten von Föderationen mit BlueXP, wodurch Single-Sign-On (SSO) ermöglicht wird. 
 
 
-| link:reference-iam-platform-roles.html["Föderationsbetrachter"] | Ermöglicht einem Benutzer, vorhandene Föderationen mit BlueXP anzuzeigen. Föderationen können nicht erstellt oder verwaltet werden. 
+| link:reference-iam-platform-roles.html["Föderationsbetrachter"] | Ermöglicht einem Benutzer, vorhandene Föderationen mit BlueXP anzuzeigen.  Föderationen können nicht erstellt oder verwaltet werden 
 |===
 
 
@@ -62,9 +62,6 @@ Im Folgenden finden Sie eine Liste der Rollen in der Anwendungskategorie. Jede R
 
 
 | link:reference-iam-storage-roles.html["Storage-Admin"] | Verwaltung von Storage-Zustands- und Governance-Funktionen, Erkennung von Storage-Ressourcen sowie Ändern und Löschen vorhandener Arbeitsumgebungen 
-
-
-| link:reference-iam-storage-roles.html["Storage-Admin"] | Verwalten Sie Speicherintegritäts- und Governance-Funktionen, ermitteln Sie Speicherressourcen und ändern und entfernen Sie vorhandene Arbeitsumgebungen. 
 
 
 | link:reference-iam-storage-roles.html["Storage-Prüfer"] | Zeigen Sie den Speicherzustand und die Governance-Funktionen an und zeigen Sie zuvor erkannte Speicherressourcen an. Vorhandene Speicherarbeitsumgebungen können nicht erkannt, geändert oder gelöscht werden. 
@@ -110,7 +107,7 @@ Nachfolgend finden Sie eine Liste der Rollen in der Datenservicekategorie. Jede 
 | link:reference-iam-disaster-rec-roles.html["Disaster Recovery-Viewer"] | Nur Informationen anzeigen. 
 
 
-| Klassifizierungs-Admin | Bietet die Möglichkeit, die Ergebnisse des BlueXP classification anzuzeigen. Benutzer mit dieser Rolle können Compliance-Informationen anzeigen und Berichte für Ressourcen erstellen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren. Klassifizierung hat keine Viewer-Rolle. 
+| Klassifizierungsanzeige | Bietet die Möglichkeit, die Ergebnisse des BlueXP classification anzuzeigen. Benutzer mit dieser Rolle können Compliance-Informationen anzeigen und Berichte für Ressourcen erstellen, auf die sie zugreifen dürfen. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemas nicht aktivieren oder deaktivieren. Klassifizierung hat keine Viewer-Rolle. 
 
 
 | link:reference-iam-ransomware-roles.html["Administrator für Ransomware-Schutz"] | Verwalten Sie Aktionen auf den Registerkarten Schützen, Warnungen, Wiederherstellen, Einstellungen und Berichte des Ransomware-Schutz-Service. 
