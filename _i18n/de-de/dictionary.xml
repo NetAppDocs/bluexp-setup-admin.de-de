@@ -4489,7 +4489,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="f14b021b1ac020c4bd6150459ddd2d19" category="doc">Zugriffsrollen für die BlueXP -Plattform</block>
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">Plattformrolle</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">Zuständigkeiten</block>
-  <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">Org.-Admin</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Anwendungsrolle</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Benutzer mit der Keystone Administratorrolle können Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen.</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Storage-Admin</block>
@@ -4575,7 +4574,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="7de6afef390d0c27101fd5599a80c841" category="doc">Erfahren Sie mehr über Azure-Anmeldeinformationen und Berechtigungen in BlueXP</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
-  <block id="3ef1691185c3215cee725eacc5ae60e1" category="cell"><block ref="3ef1691185c3215cee725eacc5ae60e1" category="inline-link-macro-rx"></block></block>
   <block id="92d4c119f475b9887b30ea36f68501b4" category="cell"><block ref="92d4c119f475b9887b30ea36f68501b4" category="inline-link-macro-rx"></block></block>
   <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
@@ -5480,4 +5478,5 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">28. Juli 2025</block>
   <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">Wenn Sie eine Verbindung mit der NetApp Support Site herstellen, können sich Benutzer mit denselben Anmeldeinformationen für den Zugriff auf BlueXP anmelden, die Sie für die NetApp Support Site, Active IQ Digital Advisor und andere mit Ihrem NetApp Support Site-Konto verknüpfte Apps verwenden.  Nachdem Sie die Föderation eingerichtet haben, können alle neuen Benutzer, die ein NetApp Support Site-Konto erstellen, auch auf BlueXP zugreifen.</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp unterstützt die folgenden Protokolle und Identitätsanbieter für die Föderation:</block>
+  <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
 </blocks>
