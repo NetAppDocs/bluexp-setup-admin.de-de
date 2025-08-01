@@ -23,7 +23,7 @@ Organisationsadministrator, Föderationsadministrator, Föderationsbetrachter. l
 
 == Identitätsföderation mit der NetApp Support Site
 
-Wenn Sie eine Föderation mit der NetApp Support Site einrichten, können Benutzer sich mit denselben Anmeldedaten für BlueXP anmelden, die Sie auch für die NetApp Support Site, Active IQ und andere mit Ihrem NetApp Support Site-Konto verknüpfte Apps verwenden. Nach der Einrichtung der Föderation können alle neuen Benutzer, die ein NetApp Support Site-Konto erstellen, ebenfalls auf BlueXP zugreifen.
+Wenn Sie eine Verbindung mit der NetApp Support Site herstellen, können sich Benutzer mit denselben Anmeldeinformationen für den Zugriff auf BlueXP anmelden, die Sie für die NetApp Support Site, Active IQ Digital Advisor und andere mit Ihrem NetApp Support Site-Konto verknüpfte Apps verwenden.  Nachdem Sie die Föderation eingerichtet haben, können alle neuen Benutzer, die ein NetApp Support Site-Konto erstellen, auch auf BlueXP zugreifen.
 
 
 NOTE: Wenn Sie eine Verbindung mit der NetApp Support-Site herstellen, ist dies nicht gleichzeitig mit Ihrem Corporate Identity Management-Anbieter möglich. Wählen Sie den Anbieter aus, der für Ihr Unternehmen am besten geeignet ist.
@@ -46,7 +46,7 @@ Sie können eine Verbundverbindung mit Ihrem Identitätsanbieter einrichten, um 
 
 === Unterstützte Identitätsanbieter
 
-NetApp unterstützt die folgenden Identitätsanbieter und Protokolle für die Föderation:
+NetApp unterstützt die folgenden Protokolle und Identitätsanbieter für die Föderation:
 
 .Protokolle
 * Security Assertion Markup Language (SAML)-Identitätsanbieter

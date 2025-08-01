@@ -5034,14 +5034,12 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="78dc241469129405c4f4b99066b0c5c3" category="inline-link-macro">Erfahren Sie mehr über Zugriffsrollen.</block>
   <block id="4610064cac3ad84114cc400649031071" category="paragraph">Organisationsadministrator, Föderationsadministrator, Föderationsbetrachter. <block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
   <block id="517210395e603e1c3d5f72b67c9d0d8b" category="section-title">Identitätsföderation mit der NetApp Support Site</block>
-  <block id="7f75689f905a0cb4e29c4a2843031d94" category="paragraph">Wenn Sie eine Föderation mit der NetApp Support Site einrichten, können Benutzer sich mit denselben Anmeldedaten für BlueXP anmelden, die Sie auch für die NetApp Support Site, Active IQ und andere mit Ihrem NetApp Support Site-Konto verknüpfte Apps verwenden. Nach der Einrichtung der Föderation können alle neuen Benutzer, die ein NetApp Support Site-Konto erstellen, ebenfalls auf BlueXP zugreifen.</block>
   <block id="465e770e13636214d49910bb014b1053" category="admonition">Wenn Sie eine Verbindung mit der NetApp Support-Site herstellen, ist dies nicht gleichzeitig mit Ihrem Corporate Identity Management-Anbieter möglich. Wählen Sie den Anbieter aus, der für Ihr Unternehmen am besten geeignet ist.</block>
   <block id="2364b4b1093b706141a365b97b678a4d" category="list-text">Laden Sie das <block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block> .</block>
   <block id="28ff396d9aacc41256de2a2d064386fd" category="list-text">Senden Sie das Formular an die im Formular angegebene E-Mail-Adresse.</block>
   <block id="d712dedaa07f66d96d580961a7fed8f3" category="paragraph">Das NetApp Supportteam prüft und bearbeitet Ihre Anfrage.</block>
   <block id="d6a05f20cad23a452bca7452f796d46c" category="section-title">Richten Sie eine Verbundverbindung mit Ihrem Identitätsanbieter ein</block>
   <block id="0909b89c9a263634fe87c7ab9bbebb6a" category="paragraph">Sie können eine Verbundverbindung mit Ihrem Identitätsanbieter einrichten, um Single Sign-On (SSO) für BlueXP zu aktivieren. Dazu konfigurieren Sie Ihren Identitätsanbieter so, dass er NetApp als Dienstanbieter vertraut, und erstellen anschließend die Verbindung in BlueXP.</block>
-  <block id="0c3f7255651040017d5aff94372442bb" category="paragraph">NetApp unterstützt die folgenden Identitätsanbieter und Protokolle für die Föderation:</block>
   <block id="9985b4390c40137573e6da05caf85874" category="list-title">Protokolle</block>
   <block id="e0485ece44807b13d7328ec34970e8d7" category="list-title">Identitätsanbieter</block>
   <block id="fe24ffaf16a8b56ee36712a6283173a6" category="section-title">Föderation mit BlueXP Workflow</block>
@@ -5474,9 +5472,12 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="9cc4b579fbb9d233102b44ff5119e060" category="cell">3.9.54, 3.9.53</block>
   <block id="4e7c2b7c3f7b00a4db742817336d985b" category="inline-link">Was gibt es Neues auf der BlueXP -Seite?</block>
   <block id="fb973b0a3719c8d26b960aed72e4fe3f" category="cell">Gehen Sie zum<block ref="f2bb5a2291ad18ff55b18a4b4553234a" category="inline-link-rx"></block> und beziehen Sie sich auf die Änderungen, die in den Versionen 3.9.54 und 3.9.53 enthalten sind.</block>
-  <block id="1caea5bc420fef9b14013d5029b5ada8" category="cell">22. Juli 2025</block>
   <block id="72d49cd6d8e65ef0285be68616ea0f51" category="cell">Gehen Sie zum<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> und beziehen Sie sich auf die Änderungen, die in der Version vom Juli 2025 enthalten sind.</block>
   <block id="9285fd96738351d44da30f801dea109b" category="cell">14. Juli 2025 (Version 1.45)</block>
   <block id="b3b08e322117d7e66cdd302866bc6d85" category="cell">Gehen Sie zum<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> .</block>
   <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">31. Juli 2025</block>
+  <block id="8ec07d17b9626eed73b7d8c3ecb0e32f" category="doc">Freigabe des Privatmodus (3.9.54)</block>
+  <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">28. Juli 2025</block>
+  <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">Wenn Sie eine Verbindung mit der NetApp Support Site herstellen, können sich Benutzer mit denselben Anmeldeinformationen für den Zugriff auf BlueXP anmelden, die Sie für die NetApp Support Site, Active IQ Digital Advisor und andere mit Ihrem NetApp Support Site-Konto verknüpfte Apps verwenden.  Nachdem Sie die Föderation eingerichtet haben, können alle neuen Benutzer, die ein NetApp Support Site-Konto erstellen, auch auf BlueXP zugreifen.</block>
+  <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp unterstützt die folgenden Protokolle und Identitätsanbieter für die Föderation:</block>
 </blocks>
