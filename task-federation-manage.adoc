@@ -16,6 +16,9 @@ summary: Nachdem Sie eine Verbundverbindung hinzugefügt haben, können Sie dies
 [role="lead"]
 Sie können Ihre Föderation in BlueXP verwalten. Sie können sie deaktivieren, abgelaufene Anmeldeinformationen aktualisieren und sie deaktivieren, wenn Sie sie nicht mehr benötigen.
 
+
+NOTE: Wenn Sie die Föderation zuvor mit NetApp Cloud Central (einer externen Anwendung für BlueXP) konfiguriert haben, müssen Sie Ihre Föderation mithilfe der BlueXP -Föderationsseite importieren, um sie innerhalb von BlueXP verwalten zu können.link:task-federation-import.html["Erfahren Sie, wie Sie Ihre Föderation importieren"]
+
 Sie können einer vorhandenen Föderation auch eine verifizierte Domäne hinzufügen, wodurch Sie mehrere Domänen für Ihre föderierte Verbindung verwenden können.
 
 

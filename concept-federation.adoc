@@ -23,7 +23,7 @@ Organisationsadministrator, Föderationsadministrator, Föderationsbetrachter. l
 
 == Identitätsföderation mit der NetApp Support Site
 
-Wenn Sie eine Verbindung mit der NetApp Support Site herstellen, können sich Benutzer mit denselben Anmeldeinformationen für den Zugriff auf BlueXP anmelden, die Sie für die NetApp Support Site, Active IQ Digital Advisor und andere mit Ihrem NetApp Support Site-Konto verknüpfte Apps verwenden.  Nachdem Sie die Föderation eingerichtet haben, können alle neuen Benutzer, die ein NetApp Support Site-Konto erstellen, auch auf BlueXP zugreifen.
+Wenn Sie eine Verbindung mit der NetApp Support Site herstellen, können sich Benutzer mit denselben Anmeldeinformationen für den Zugriff auf BlueXP anmelden, die Sie für die NetApp Support Site, Active IQ Digital Advisor und andere mit Ihrem NetApp Support Site-Konto verknüpfte Apps verwenden. Nachdem Sie die Föderation eingerichtet haben, können alle neuen Benutzer, die ein NetApp Support Site-Konto erstellen, auch auf BlueXP zugreifen.
 
 
 NOTE: Wenn Sie eine Verbindung mit der NetApp Support-Site herstellen, ist dies nicht gleichzeitig mit Ihrem Corporate Identity Management-Anbieter möglich. Wählen Sie den Anbieter aus, der für Ihr Unternehmen am besten geeignet ist.
@@ -41,6 +41,9 @@ Das NetApp Supportteam prüft und bearbeitet Ihre Anfrage.
 == Richten Sie eine Verbundverbindung mit Ihrem Identitätsanbieter ein
 
 Sie können eine Verbundverbindung mit Ihrem Identitätsanbieter einrichten, um Single Sign-On (SSO) für BlueXP zu aktivieren. Dazu konfigurieren Sie Ihren Identitätsanbieter so, dass er NetApp als Dienstanbieter vertraut, und erstellen anschließend die Verbindung in BlueXP.
+
+
+NOTE: Wenn Sie die Föderation zuvor mit NetApp Cloud Central (einer externen Anwendung für BlueXP) konfiguriert haben, müssen Sie Ihre Föderation mithilfe der BlueXP -Föderationsseite importieren, um sie innerhalb von BlueXP verwalten zu können.link:task-federation-import.html["Erfahren Sie, wie Sie Ihre Föderation importieren"]
 
 
 
@@ -68,19 +71,19 @@ Sie können eine Föderation mit Ihrer E-Mail-Domäne oder einer anderen Domäne
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Bestätigen Sie Ihre Domäne (falls Sie nicht Ihre E-Mail-Domäne verwenden)
 [role="quick-margin-para"]
-Wenn Sie eine Föderation mit einer anderen Domäne als Ihrer E-Mail-Domäne durchführen möchten, müssen Sie zunächst bestätigen, dass Sie der Domäneninhaber sind. Die Föderation Ihrer E-Mail-Domäne ist ohne weitere Schritte möglich.
+Um eine Föderation mit einer anderen Domäne als Ihrer E-Mail-Domäne herzustellen, bestätigen Sie, dass Sie deren Eigentümer sind.  Sie können Ihre E-Mail-Domäne ohne zusätzliche Schritte föderieren.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Konfigurieren Sie Ihren IdP so, dass er NetApp als Serviceprovider vertraut
 [role="quick-margin-para"]
-Sie konfigurieren Ihren Identitätsanbieter so, dass er NetApp als Serviceanbieter vertraut, indem Sie eine neue Anwendung erstellen und die erforderlichen Informationen wie ACS-URL, Entity-ID oder andere Anmeldeinformationen angeben. Die Serviceanbieterinformationen variieren je nach Identitätsanbieter. Weitere Informationen finden Sie in der Dokumentation Ihres jeweiligen Identitätsanbieters. Für diesen Schritt müssen Sie mit Ihrem IdP-Administrator zusammenarbeiten.
+Konfigurieren Sie Ihren Identitätsanbieter so, dass er NetApp vertraut, indem Sie eine neue Anwendung erstellen und die erforderlichen Informationen angeben, z. B. die ACS-URL, die Entitäts-ID oder andere Anmeldeinformationen.  Die Informationen zum Dienstanbieter variieren je nach Identitätsanbieter. Weitere Informationen finden Sie in der Dokumentation Ihres spezifischen Identitätsanbieters.  Sie müssen mit Ihrem IdP-Administrator zusammenarbeiten, um diesen Schritt abzuschließen.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Erstellen Sie die Verbundverbindung in BlueXP
 [role="quick-margin-para"]
-Um die Verbindung herzustellen, benötigen Sie die erforderlichen Informationen Ihres Identitätsanbieters, z. B. die SAML-Metadaten-URL oder -Datei. Diese Informationen dienen zum Aufbau der Vertrauensbeziehung zwischen BlueXP und Ihrem Identitätsanbieter. Die von Ihnen angegebenen Informationen hängen vom verwendeten Identitätsanbieter ab. Wenn Sie beispielsweise Microsoft Entra ID verwenden, müssen Sie die Client-ID, den geheimen Schlüssel und die Domäne angeben.
+Um die Verbindung herzustellen, müssen Sie die erforderlichen Informationen von Ihrem Identitätsanbieter bereitstellen, z. B. die SAML-Metadaten-URL oder -Datei.  Diese Informationen werden verwendet, um die Vertrauensbeziehung zwischen BlueXP und Ihrem Identitätsanbieter herzustellen.  Die von Ihnen bereitgestellten Informationen hängen von dem von Ihnen verwendeten IdP ab.  Wenn Sie beispielsweise die Microsoft Entra ID verwenden, müssen Sie die Client-ID, das Geheimnis und die Domäne angeben.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Drittens"] Testen Sie Ihre Föderation in BlueXP
 [role="quick-margin-para"]
-Testen Sie Ihre Verbundverbindung, bevor Sie sie aktivieren. Die Verbundseite in BlueXP bietet eine Testoption, mit der Sie die erfolgreiche Authentifizierung Ihres Testbenutzers überprüfen können. Wenn der Test erfolgreich ist, können Sie die Verbindung aktivieren.
+Testen Sie Ihre Verbundverbindung, bevor Sie sie aktivieren.  Die Federation-Seite in BlueXP bietet eine Testoption, mit der Sie überprüfen können, ob sich Ihr Testbenutzer erfolgreich authentifizieren kann.  Wenn der Test erfolgreich ist, können Sie die Verbindung aktivieren.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Drittens"] Aktivieren Sie Ihre Verbindung in BlueXP
 [role="quick-margin-para"]

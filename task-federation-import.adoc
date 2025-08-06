@@ -14,7 +14,7 @@ summary: Importieren Sie Ihre bestehende Verbundverbindung in BlueXP , um sie in
 
 
 [role="lead"]
-Importieren Sie Ihre bestehende Verbundverbindung in BlueXP , um sie in der neuen Oberfläche zu verwalten. So profitieren Sie von den neuesten Verbesserungen, ohne Ihre Verbundverbindungen neu erstellen zu müssen.
+Wenn Sie die Föderation zuvor über NetApp Cloud Central (eine externe Anwendung für BlueXP) eingerichtet haben, werden Sie auf der Föderationsseite aufgefordert, Ihre vorhandene föderierte Verbindung zu BlueXP zu importieren, um sie in der neuen Schnittstelle zu verwalten.  Auf diese Weise können Sie die neuesten Verbesserungen nutzen, ohne Ihre Verbundverbindungen neu erstellen zu müssen.
 
 Bestehende Kunden, die bereits Verbundverbindungen zu BlueXP eingerichtet haben, können ihre bestehenden Verbundverbindungen in die neue Oberfläche importieren. So können Sie Ihre Verbundverbindungen auf der neuen Seite „Verbände“ verwalten, ohne sie neu erstellen zu müssen.
 
