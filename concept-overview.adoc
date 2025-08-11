@@ -87,7 +87,6 @@ BlueXP Digital Advisor:: Prädiktive Analysen und proaktiver Support optimieren 
 Das Digital Wallet von BlueXP:: Verwalten und überwachen Sie Ihre Lizenzen und Abonnements.
 BlueXP Disaster Recovery:: Schützen Sie lokale VMware-Workloads mit VMware Cloud on Amazon FSX for ONTAP als Disaster-Recovery-Standort.
 Wirtschaftliche Effizienz von BlueXP:: Identifizieren Sie Cluster mit aktueller oder prognostizierter niedriger Kapazität und implementieren Sie Daten-Tiering oder zusätzliche Kapazitätsempfehlungen.
-Operative Ausfallsicherheit von BlueXP:: Implementieren Sie automatische Risikobehebungen für Firmware- und Software-Konfigurationen, um den Zustand der ONTAP-Cluster aufrechtzuerhalten.
 BlueXP vor Ransomware-Schutz:: Erkennen Sie Anomalien, die möglicherweise zu Ransomware-Angriffen führen. Schutz und Recovery von Workloads
 BlueXP Replizierung:: Replizieren Sie Daten zwischen Storage-Systemen, um Backup und Disaster Recovery zu unterstützen.
 BlueXP  Software-Updates:: Automatisierung von Bewertung, Planung und Ausführung von ONTAP Upgrades

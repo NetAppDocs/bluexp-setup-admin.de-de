@@ -73,7 +73,6 @@ Wenn Sie BlueXP im Standardmodus verwenden, ist für die folgenden Funktionen un
 * Wirtschaftliche Effizienz ^1^
 * Google Cloud Storage Buckets
 * On-Premises-ONTAP-Cluster-Integration in BlueXP-Datenservices
-* Ausfallsicherheit der Betriebsabläufe ^1^
 * Schutz durch Ransomware
 * StorageGRID Systeme
 * Tiering

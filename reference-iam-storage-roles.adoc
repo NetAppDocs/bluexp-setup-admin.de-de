@@ -32,7 +32,6 @@ BlueXP  Services und Funktionen:
 
 * Digitaler Berater
 * Software-Updates
-* Operative Ausfallsicherheit
 * Wirtschaftliche Effizienz
 * Nachhaltigkeit
 
@@ -163,36 +162,6 @@ Ja.
 
 
 | Installieren Sie Softwareupdates  a| 
-Ja.
- a| 
-Ja.
- a| 
-Nein
-
-
-
-4+| *Ausfallsicherheit im Betrieb* 
-
-
-| Überprüfen Sie Sicherheitsrisiken  a| 
-Ja.
- a| 
-Ja.
- a| 
-Ja.
-
-
-
-| Ansible Playbooks herunterladen  a| 
-Ja.
- a| 
-Ja.
- a| 
-Nein
-
-
-
-| Automatische Behebung von Fehlern  a| 
 Ja.
  a| 
 Ja.

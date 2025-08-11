@@ -380,9 +380,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
 | Wirtschaftliche Effizienz | Nein | Nein 
 
 
-| Operative Ausfallsicherheit | Nein | Nein 
-
-
 | Schutz durch Ransomware | Nein | Nein 
 
 
@@ -404,20 +401,20 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
 | Arbeitslast Fabrik | Nein | Nein 
 
 
-.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Ja. | Ja. 
+.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Ja. 
 
 
-| Anmeldedaten | Ja. | Ja. 
+| Ja. | Anmeldedaten | Ja. 
 
 
-| NSS-Konten | Ja. | Nein 
+| Ja. | NSS-Konten | Ja. 
 
 
-| Benachrichtigungen | Ja. | Nein 
+| Nein | Benachrichtigungen | Ja. 
 
 
-| Suche | Ja. | Nein 
+| Nein | Suche | Ja. 
 
 
-| Zeitachse | Ja. | Ja. 
+| Nein | Zeitachse | Ja. 
 |===

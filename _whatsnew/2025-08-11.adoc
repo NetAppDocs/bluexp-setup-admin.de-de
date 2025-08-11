@@ -18,6 +18,12 @@ Die BlueXP -Benutzeroberfläche ist jetzt in japanischer Sprache verfügbar.  We
 
 
 
+=== Funktion zur betrieblichen Ausfallsicherheit
+
+Die Funktion „Betriebsstabilität“ wurde aus BlueXP entfernt.  Wenden Sie sich bei Problemen an den NetApp -Support.
+
+
+
 === Identitäts- und Zugriffsmanagement (BlueXP , IAM)
 
 Das Identitäts- und Zugriffsmanagement in BlueXP bietet jetzt die folgende Funktion.
