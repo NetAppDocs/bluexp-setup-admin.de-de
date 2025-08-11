@@ -39,7 +39,7 @@ _Silent_ führt das Skript aus, ohne dass Sie zur Bestätigung aufgefordert werd
 
 == Deinstallieren Sie den Connector, wenn Sie den privaten Modus verwenden
 
-Wenn Sie den privaten Modus verwenden (mit anderen Worten, der Connector-Host hat _keine_ ausgehende Konnektivität), sollten Sie die folgenden Schritte ausführen, um die Connector-Software zu deinstallieren.
+Wenn Sie den privaten Modus verwenden (wo der Connector-Host _keine_ ausgehende Konnektivität hat), führen Sie die folgenden Schritte aus, um die Connector-Software zu deinstallieren.
 
 .Schritt
 . Stellen Sie eine Verbindung zur Linux-VM für den Connector her.
@@ -75,7 +75,7 @@ docker system prune -a
 
 == Entfernen Sie die Anschlüsse von BlueXP
 
-Wenn ein Connector inaktiv ist, können Sie ihn aus der Liste der Anschlüsse in BlueXP entfernen. Sie können dies tun, wenn Sie die virtuelle Connector-Maschine gelöscht oder die Connector-Software deinstalliert haben.
+Wenn ein Connector inaktiv ist, können Sie ihn aus der Liste der Connectors in BlueXP entfernen.  Dies ist möglicherweise der Fall, wenn Sie die virtuelle Connector-Maschine löschen oder die Connector-Software deinstallieren.
 
 Beachten Sie Folgendes zum Entfernen eines Konnektors:
 

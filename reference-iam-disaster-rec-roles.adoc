@@ -12,7 +12,7 @@ summary: Das Identitäts- und Zugriffsmanagement von BlueXP bietet mehrere Rolle
 
 
 [role="lead"]
-Sie können Benutzern die folgenden Rollen zuweisen, um ihnen Zugriff auf den Backup- und Recovery-Dienst in BlueXP zu gewähren. Backup- und Recovery-Rollen bieten Ihnen die Flexibilität, Benutzern spezifische Rollen für die Aufgaben zuzuweisen, die sie in Ihrem Unternehmen erledigen müssen. Die Rollenzuweisung hängt von Ihren Geschäfts- und Speicherverwaltungspraktiken ab.
+Sie können Benutzern die folgenden Rollen zuweisen, um ihnen Zugriff auf die Katastrophenwiederherstellung innerhalb von BlueXP zu gewähren.  Mithilfe von Disaster-Recovery-Rollen können Sie Benutzern flexibel Rollen zuweisen, die speziell auf die Aufgaben zugeschnitten sind, die sie in Ihrem Unternehmen erledigen müssen.  Wie Sie Rollen zuweisen, hängt von Ihren eigenen Geschäfts- und Speicherverwaltungspraktiken ab.
 
 Bei der Notfallwiederherstellung werden die folgenden Rollen verwendet:
 

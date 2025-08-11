@@ -43,7 +43,7 @@ Das NetApp Supportteam prüft und bearbeitet Ihre Anfrage.
 Sie können eine Verbundverbindung mit Ihrem Identitätsanbieter einrichten, um Single Sign-On (SSO) für BlueXP zu aktivieren. Dazu konfigurieren Sie Ihren Identitätsanbieter so, dass er NetApp als Dienstanbieter vertraut, und erstellen anschließend die Verbindung in BlueXP.
 
 
-NOTE: Wenn Sie die Föderation zuvor mit NetApp Cloud Central (einer externen Anwendung für BlueXP) konfiguriert haben, müssen Sie Ihre Föderation mithilfe der BlueXP -Föderationsseite importieren, um sie innerhalb von BlueXP verwalten zu können.link:task-federation-import.html["Erfahren Sie, wie Sie Ihre Föderation importieren"]
+NOTE: Wenn Sie die Föderation zuvor mit NetApp Cloud Central (einer externen Anwendung für BlueXP) konfiguriert haben, müssen Sie Ihre Föderation mithilfe der BlueXP -Föderationsseite importieren, um sie innerhalb von BlueXP verwalten zu können.link:task-federation-import.html["Erfahren Sie, wie Sie Ihre Föderation importieren."]
 
 
 

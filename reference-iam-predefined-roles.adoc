@@ -61,6 +61,9 @@ Im Folgenden finden Sie eine Liste der Rollen in der Anwendungskategorie. Jede R
 | ONTAP Mediator-Setup-Rolle | Servicekonten mit der Setup-Rolle ONTAP Mediator können Serviceanfragen erstellen. Diese Rolle ist in einem Servicekonto erforderlich, um eine Instanz des link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAP Cloud Mediator"^] . 
 
 
+| link:reference-iam-analyst-roles.html["Betriebsunterstützungsanalyst"] | Bietet Zugriff auf Warn- und Überwachungstools sowie die Möglichkeit, Supportfälle einzugeben und zu verwalten. 
+
+
 | link:reference-iam-storage-roles.html["Storage-Admin"] | Verwaltung von Storage-Zustands- und Governance-Funktionen, Erkennung von Storage-Ressourcen sowie Ändern und Löschen vorhandener Arbeitsumgebungen 
 
 

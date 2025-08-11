@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-user-settings.html 
 keywords: user profile, mfa, change password, role, login, mulit-factor, authentication 
-summary: 'Sie können Ihr BlueXP-Profil ändern, einschließlich der Änderung Ihres Passworts, der Aktivierung der Multi-Faktor-Authentifizierung (MFA) und der Anzeige Ihres BlueXP-Administrators.' 
+summary:  
 ---
 = Verwalten Sie Ihre BlueXP-Benutzereinstellungen
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 'Sie können Ihr BlueXP-Profil ändern, einschließlich der Änderung I
 
 
 [role="lead"]
-Sie können auf Ihr BlueXP-Profil zugreifen, wodurch Sie die Multi-Faktor-Authentifizierung (MFA) aktivieren und Ihren BlueXP-Administrator kontaktieren können.
+Sie können Ihr BlueXP-Profil ändern, einschließlich der Änderung Ihres Passworts, der Aktivierung der Multi-Faktor-Authentifizierung (MFA) und der Anzeige Ihres BlueXP-Administrators.
 
-Innerhalb von BlueXP verfügt jeder Benutzer über ein Profil mit Informationen zum Benutzer und seinen Einstellungen. Sie können Ihre Profileinstellungen über die BlueXP-Konsole anzeigen und bearbeiten.
+Innerhalb von BlueXP verfügt jeder Benutzer über ein Profil, das Informationen über den Benutzer und seine Einstellungen enthält.  Sie können Ihre Profileinstellungen anzeigen und bearbeiten.
 
 
 
 == Ändern Sie Ihren Anzeigenamen
 
-Sie können Ihren Anzeigenamen in der BlueXP-Konsole ändern. Der Anzeigename dient Ihrer Identifizierung in der BlueXP-Konsole und ist für andere Benutzer sichtbar. Ihr Anzeigename ist nicht identisch mit Ihrem Benutzernamen oder Ihrer E-Mail-Adresse. Diese können nicht geändert werden.
+Sie können Ihren Anzeigenamen ändern.  Der Anzeigename dient Ihrer Identifizierung in der BlueXP Konsole und ist für andere Benutzer sichtbar.  Ihr Anzeigename ist nicht identisch mit Ihrem Benutzernamen oder Ihrer E-Mail-Adresse und kann nicht geändert werden.
 
 .Schritte
 . Wählen Sie das Profilsymbol in der oberen rechten Ecke der BlueXP-Konsole, um das Bedienfeld „Benutzereinstellungen“ anzuzeigen.
@@ -100,4 +100,15 @@ NOTE: Um die Funktion *Administratoren kontaktieren* verwenden zu können, muss 
 . Wählen Sie *Administratoren kontaktieren* aus, um eine E-Mail an den Administrator Ihrer Organisation zu senden.
 . Wählen Sie die zu verwendende E-Mail-Anwendung aus.
 . Beenden Sie die E-Mail und wählen Sie *Senden*.
+
+
+
+
+== Dunkelmodus konfigurieren (dunkles Design)
+
+Sie können BlueXP so einstellen, dass es im Dunkelmodus angezeigt wird.
+
+.Schritte
+. Wählen Sie das Profilsymbol in der oberen rechten Ecke der BlueXP-Konsole, um das Bedienfeld „Benutzereinstellungen“ anzuzeigen.
+. Bewegen Sie den Schieberegler *Dunkles Design*, um es zu aktivieren.
 

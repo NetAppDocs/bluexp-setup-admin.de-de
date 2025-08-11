@@ -24,19 +24,11 @@ Diese Einschränkungen sind spezifisch für die Einrichtung und Administration v
 
 
 
-=== Transparente Proxyserver werden nicht unterstützt
-
-BlueXP unterstützt in Verbindung mit dem Connector keine transparenten Proxyserver.
-
-link:task-configuring-proxy.html["Erfahren Sie mehr über die Verwendung eines Proxy-Servers mit dem Connector"].
-
-
-
 === Möglicher Konflikt mit IP-Adressen im Bereich 172
 
 BlueXP implementiert den Connector mit zwei Schnittstellen, die IP-Adressen in den Bereichen 172.17.0.0/16 und 172.18.0.0/16 haben.
 
-Wenn Ihr Netzwerk über ein Subnetz verfügt, das mit einem dieser Bereiche konfiguriert ist, können Verbindungsfehler von BlueXP auftreten. Beispielsweise kann die Erkennung von lokalen ONTAP-Clustern in BlueXP fehlschlagen.
+Wenn in Ihrem Netzwerk ein Subnetz mit einem dieser Bereiche konfiguriert ist, kann es bei BlueXP zu Verbindungsfehlern kommen.  Beispielsweise kann die Erkennung lokaler ONTAP -Cluster in BlueXP fehlschlagen.
 
 Siehe Knowledge Base-Artikel link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["BlueXP Connector IP-Konflikt mit vorhandenem Netzwerk"] Anweisungen zum Ändern der IP-Adresse der Schnittstellen des Connectors.
 

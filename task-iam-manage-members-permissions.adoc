@@ -17,7 +17,7 @@ summary: Verwalten Sie die Mitglieder Ihres Unternehmens, um Berechtigungen für
 Mit BlueXP  Identity and Access Management (IAM) können Sie Ihrer Organisation Mitglieder hinzufügen und ihnen eine oder mehrere Rollen innerhalb Ihrer Ressourcenhierarchie zuweisen. Eine _Rolle_ enthält einen Satz von Berechtigungen, mit denen ein Mitglied bestimmte Aktionen auf einer bestimmten Ebene der Ressourcenhierarchie ausführen kann. Sie können neue Benutzerkonten und Dienstkonten zuordnen, Mitgliederrollen verwalten und vieles mehr.
 
 
-TIP: Stellen Sie sicher, dass zwei Mitglieder über die Rolle des Organisationsadministrators verfügen, um den Zugriff auf Ihre BlueXP-Organisation nicht zu verlieren.
+NOTE: Stellen Sie sicher, dass zwei Mitglieder über die Rolle des Organisationsadministrators verfügen, um den Zugriff auf Ihre BlueXP-Organisation nicht zu verlieren.
 
 Um Benutzer und deren Berechtigungen zu verwalten, müssen Sie eine der folgenden Rollen zuweisen:
 
@@ -37,9 +37,9 @@ Benutzer mit dieser Rolle können nur Mitglieder eines bestimmten Ordners oder P
 
 == Fügen Sie Mitglieder zu Ihrer Organisation hinzu
 
-Sie können Ihrem Unternehmen zwei Arten von Mitgliedern hinzufügen: Ein Benutzerkonto und ein Service-Konto. Ein Dienstkonto wird typischerweise von einer Anwendung verwendet, um bestimmte Aufgaben ohne menschliches Eingreifen über die BlueXP-API auszuführen. Ein Benutzerkonto wird typischerweise von einer Person verwendet, um sich bei BlueXP anzumelden und Ressourcen zu verwalten.
+Sie können Ihrer Organisation zwei Arten von Mitgliedern hinzufügen: ein Benutzerkonto und ein Dienstkonto.  Ein Dienstkonto wird von Anwendungen verwendet, um Aufgaben über die BlueXP API ohne menschliches Eingreifen auszuführen.  Ein Benutzerkonto wird normalerweise von einer Person verwendet, um sich bei BlueXP anzumelden und Ressourcen zu verwalten.
 
-Benutzer müssen sich zunächst für ein BlueXP-Konto registrieren, bevor Sie sie einer Organisation hinzufügen oder ihnen eine Rolle zuweisen können. Sie können jedoch auch direkt aus BlueXP heraus Dienstkonten erstellen.
+Benutzer müssen sich für BlueXP anmelden, bevor sie einer Organisation hinzugefügt oder ihnen eine Rolle zugewiesen werden.  Sie können jedoch Dienstkonten direkt von BlueXP aus erstellen.
 
 Um Benutzer und deren Berechtigungen zu verwalten, müssen Sie über die Rolle *Organisationsadministrator* oder die Rolle *Ordner oder Projektadministrator* verfügen. Denken Sie daran, dass Benutzer mit der Rolle *Ordner oder Projektadministrator* nur Mitglieder für den Ordner oder Projekte verwalten können, für die sie Administratorrechte besitzen.
 
@@ -48,9 +48,9 @@ Um Benutzer und deren Berechtigungen zu verwalten, müssen Sie über die Rolle *
 .Benutzerkonto
 --
 .Schritte
-. Wenn der Benutzer dies noch nicht getan hat, bitten Sie ihn, zum zu gehen https://bluexp.netapp.com/["NetApp BlueXP Website"^] und sich anzumelden.
+. Leiten Sie den Benutzer zum Besuch weiter https://bluexp.netapp.com/["NetApp BlueXP Website"^] um sich anzumelden.
 +
-Nach der Anmeldung füllen Benutzer die Seite *Anmelden* aus, überprüfen ihre E-Mails und melden sich an. Wenn sie aufgefordert werden, eine Organisation zu erstellen, sollten sie BlueXP schließen und Sie über die Kontoerstellung informieren. Sie können den Benutzer anschließend zu Ihrer bestehenden BlueXP -Organisation hinzufügen.
+Sobald sich Benutzer angemeldet haben, füllen sie die Seite *Anmelden* aus, überprüfen ihre E-Mails und melden sich an. Wenn BlueXP Benutzer auffordert, eine Organisation zu erstellen, schließen sie diese und benachrichtigen Sie über die Kontoerstellung.  Anschließend können Sie den Benutzer zu Ihrer bestehenden BlueXP -Organisation hinzufügen.
 
 +
 link:task-sign-up-saas.html["Erfahren Sie, wie Sie sich bei BlueXP  anmelden können"].
@@ -68,7 +68,7 @@ Beachten Sie Folgendes:
 
 +
 *** Sie können nur aus den Ordnern und Projekten auswählen, für die Sie Administratorrechte haben.
-*** Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
+*** Durch die Auswahl einer Organisation oder eines Ordners erhält das Mitglied Zugriff auf alle Inhalte.
 
 
 ** *Wählen Sie eine Kategorie* und wählen Sie dann eine *Rolle* aus, die dem Mitglied Berechtigungen für die Ressourcen bereitstellt, die mit der Organisation, dem Ordner oder dem Projekt verknüpft sind, das Sie ausgewählt haben.
@@ -84,7 +84,7 @@ link:reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen
 
 . Wählen Sie *Hinzufügen*.
 +
-Der Benutzer erhält eine E-Mail von NetApp BlueXP mit Informationen, die Mitglieder für den Zugriff auf BlueXP verwenden.
+NetApp BlueXP sendet dem Benutzer eine E-Mail mit Informationen zum Zugriff auf BlueXP.
 
 
 
@@ -105,7 +105,7 @@ Beachten Sie Folgendes:
 
 +
 *** Sie können nur aus den Ordnern und Projekten auswählen, für die Sie Administratorrechte haben.
-*** Wenn Sie die Organisation oder einen Ordner auswählen, hat das Mitglied Berechtigungen für alles, was sich in der Organisation oder im Ordner befindet.
+*** Durch die Auswahl einer Organisation oder eines Ordners erhält das Mitglied Zugriff auf alle Inhalte.
 
 
 ** *Wählen Sie eine Kategorie* und dann eine *Rolle* aus, die dem Mitglied Berechtigungen für die Ressourcen erteilt, die mit der von Ihnen ausgewählten Organisation, dem Ordner oder dem Projekt verknüpft sind.
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["Erfahren Sie mehr über vordefinierte 
 
 . Laden Sie die Client-ID und den Client-Schlüssel herunter, oder kopieren Sie ihn.
 +
-BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nicht. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und den Client-Schlüssel später nach Bedarf neu erstellen können.
+BlueXP zeigt das Client-Geheimnis nur einmal an.  Kopieren oder laden Sie es herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und das Client-Geheimnis später bei Bedarf neu erstellen können.
 
 . Wählen Sie *Schließen*.
 
@@ -143,7 +143,7 @@ NOTE: Sie können auch alle Mitglieder anzeigen, die einem bestimmten Ordner ode
 . Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
 . Wählen Sie *Mitglieder*.
 +
-In der Tabelle *Mitglieder* werden die Mitglieder Ihrer Organisation angezeigt.
+In der Tabelle *Mitglieder* sind die Mitglieder Ihrer Organisation aufgelistet.
 
 . Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] und wählen Sie dann *Details anzeigen* aus.
 
@@ -154,7 +154,7 @@ In der Tabelle *Mitglieder* werden die Mitglieder Ihrer Organisation angezeigt.
 
 Möglicherweise müssen Sie ein Mitglied aus Ihrer Organisation entfernen, beispielsweise wenn es Ihr Unternehmen verlässt.
 
-Durch das Entfernen eines Mitglieds werden dessen Berechtigungen aufgehoben, seine BlueXP- und NetApp-Support-Site-Konten bleiben jedoch erhalten.
+Durch das Entfernen eines Mitglieds werden dessen Berechtigungen entfernt, seine BlueXP und NetApp -Support-Site-Konten bleiben jedoch erhalten.
 
 .Schritte
 . Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie image:icon-action.png["Ein Symbol, das drei seitliche Punkte ist"] Wählen Sie dann *Benutzer löschen*.
@@ -165,10 +165,10 @@ Durch das Entfernen eines Mitglieds werden dessen Berechtigungen aufgehoben, sei
 
 == Erstellen Sie die Anmeldeinformationen für ein Dienstkonto neu
 
-Erstellen Sie neue Anmeldeinformationen, wenn diese verloren gegangen sind oder wenn eine Aktualisierung der Sicherheitsanmeldeinformationen erforderlich ist.
+Erstellen Sie neue Anmeldeinformationen, wenn diese verloren gehen oder eine Aktualisierung der Sicherheitsanmeldeinformationen erforderlich ist.
 
 .Über diese Aufgabe
-Durch das Neuerstellen der Anmeldeinformationen werden die vorhandenen Anmeldeinformationen für das Dienstkonto gelöscht und anschließend neue Anmeldeinformationen erstellt. Sie können die vorherigen Anmeldeinformationen nicht verwenden.
+Wenn Sie die Anmeldeinformationen neu erstellen, löschen Sie die vorhandenen Anmeldeinformationen für das Dienstkonto und erstellen neue.  Sie können die vorherigen Anmeldeinformationen nicht verwenden.
 
 .Schritte
 . Wählen Sie oben rechts in der BlueXP -Konsole > *Identitäts- und Zugriffsmanagement* ausimage:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."].
@@ -177,7 +177,7 @@ Durch das Neuerstellen der Anmeldeinformationen werden die vorhandenen Anmeldein
 . Wählen Sie *Recreate*.
 . Laden Sie die Client-ID und den Client-Schlüssel herunter, oder kopieren Sie ihn.
 +
-BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nirgendwo. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher.
+BlueXP zeigt das Client-Geheimnis nur einmal an.  Kopieren oder laden Sie es herunter und speichern Sie es sicher.
 
 
 
@@ -185,14 +185,14 @@ BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nirgendwo. Kopi
 
 == Verwalten der Multi-Faktor-Authentifizierung (MFA) eines Benutzers
 
-Wenn ein Benutzer den Zugriff auf sein MFA-Gerät verloren hat, können Sie seine MFA-Konfiguration entweder entfernen oder deaktivieren.
+Wenn ein Benutzer den Zugriff auf sein MFA-Gerät verliert, können Sie seine MFA-Konfiguration entweder entfernen oder deaktivieren.
 
 Wenn Sie die MFA-Konfiguration entfernen, muss der Benutzer MFA bei der Anmeldung bei BlueXP erneut einrichten. Wenn der Benutzer nur vorübergehend den Zugriff auf sein MFA-Gerät verloren hat, kann er den Wiederherstellungscode verwenden, den er bei der Einrichtung von MFA gespeichert hat, um sich bei BlueXP anzumelden.
 
-Wenn Benutzer keinen Zugriff auf ihren Wiederherstellungscode haben, können Sie die MFA des Benutzers vorübergehend deaktivieren, sodass er sich ohne MFA anmelden kann. Die Deaktivierung der MFA für einen Benutzer dauert nur acht Stunden und wird anschließend automatisch wieder aktiviert. Der Benutzer kann sich während dieser Zeit einmal ohne MFA anmelden. Nach Ablauf der acht Stunden muss er sich mit MFA bei BlueXP anmelden.
+Wenn sie ihren Wiederherstellungscode nicht haben, deaktivieren Sie MFA vorübergehend, um die Anmeldung zu ermöglichen.  Wenn Sie MFA für einen Benutzer deaktivieren, wird es nur für acht Stunden deaktiviert und dann automatisch wieder aktiviert.  Dem Benutzer ist während dieser Zeit eine Anmeldung ohne MFA gestattet.  Nach den acht Stunden muss der Benutzer MFA verwenden, um sich bei BlueXP anzumelden.
 
 
-NOTE: Sie müssen über eine E-Mail-Adresse in derselben Domäne wie der betroffene Benutzer verfügen, um die Multi-Faktor-Authentifizierung dieses Benutzers verwalten zu können.
+NOTE: Sie müssen über eine E-Mail-Adresse in derselben Domäne wie der betroffene Benutzer verfügen, um die Multi-Faktor-Authentifizierung dieses Benutzers zu verwalten.
 
 .Schritte
 . Wählen Sie oben rechts in der Konsole image:icon-settings-option.png["Das Einstellungssymbol, das oben rechts in der BlueXP -Webkonsole angezeigt wird."] > *Identitäts- und Zugriffsverwaltung*.

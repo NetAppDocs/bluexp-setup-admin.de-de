@@ -17,13 +17,13 @@ summary: Weisen Sie Benutzern Plattformrollen zu, um ihnen Berechtigungen zum Ve
 Weisen Sie Benutzern Plattformrollen zu, um ihnen Berechtigungen zum Verwalten von BlueXP, zum Zuweisen von Rollen, zum Hinzufügen von Benutzern, zum Erstellen von Konnektoren und zum Verwalten von Föderationen zu erteilen.
 
 .Beispiel für Organisationsrollen in BlueXP  für eine große multinationale Organisation
-Die XYZ Corporation organisiert den Datenspeicherzugriff nach Regionen (Nordamerika, Europa und Asien-Pazifik) und gibt jeder Region die Kontrolle, während gleichzeitig eine zentrale Übersicht gewährleistet wird.
+Die XYZ Corporation organisiert den Datenspeicherzugriff nach Regionen – Nordamerika, Europa und Asien-Pazifik – und bietet regionale Kontrolle mit zentraler Aufsicht.
 
-Der *Organisationsadministrator* in BlueXP der XYZ Corporation erstellt eine anfängliche Organisation und separate Ordner für jede Region. Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der *Organisationsadministrator* weist einem BlueXP -Benutzer in jeder Region die Rolle *Ordner oder Projektadministrator* zu.
+Der *Organisationsadministrator* in BlueXP der XYZ Corporation erstellt eine anfängliche Organisation und separate Ordner für jede Region.  Der *Ordner- oder Projektadministrator* für jede Region organisiert Projekte (mit zugehörigen Ressourcen) innerhalb des Ordners der Region.
 
-Regionale Administratoren mit der Rolle „Ordner- oder Projektadministrator“ verwalten ihre Regionen (Ordner), indem sie neue Ressourcen und Benutzer hinzufügen. Sie können außerdem die von ihnen verwalteten Ordner und Projekte hinzufügen, entfernen oder umbenennen. Der Organisationsadministrator erhält die Berechtigungen für alle neuen Ressourcen und behält so den Überblick über die Speichernutzung in der gesamten Organisation.
+Regionale Administratoren mit der Rolle *Ordner- oder Projektadministrator* verwalten ihre Ordner aktiv, indem sie Ressourcen und Benutzer hinzufügen.  Diese regionalen Administratoren können auch von ihnen verwaltete Ordner und Projekte hinzufügen, entfernen oder umbenennen.  Der *Organisationsadministrator* erbt Berechtigungen für alle neuen Ressourcen und behält so die Übersicht über die Speichernutzung in der gesamten Organisation.
 
-Innerhalb derselben Organisation wird einem Benutzer die Rolle *Federationsadministrator* zugewiesen, um die Föderation der Organisation mit seinem Unternehmens-IdP zu verwalten. Dieser Benutzer kann föderierte Organisationen hinzufügen oder entfernen, jedoch keine Benutzer oder Ressourcen innerhalb der Organisation verwalten. Die Organisation weist einem Benutzer die Rolle *Federationsbetrachter* zu, um den Föderationsstatus zu überprüfen und föderierte Organisationen anzuzeigen, ohne Änderungen vorzunehmen.
+Innerhalb derselben Organisation wird einem Benutzer die Rolle *Föderationsadministrator* zugewiesen, um die Föderation der Organisation mit ihrem Unternehmens-IdP zu verwalten.  Dieser Benutzer kann föderierte Organisationen hinzufügen oder entfernen, kann jedoch keine Benutzer oder Ressourcen innerhalb der Organisation verwalten.  Der *Organisationsadministrator* weist einem Benutzer die Rolle *Föderationsbetrachter* zu, um den Föderationsstatus zu überprüfen und föderierte Organisationen anzuzeigen.
 
 Die folgenden Tabellen zeigen die Aktionen, die jede BlueXP Plattformrolle ausführen kann.
 
@@ -69,7 +69,7 @@ Die folgenden Tabellen zeigen die Aktionen, die jede BlueXP Plattformrolle ausf�
 | Erstellen, Verwalten und Anzeigen von Föderationen | Ja. | Nein 
 
 
-| Für Support registrieren und Fälle einreichen | Ja. | Ja. 
+| Registrieren Sie sich für Support und reichen Sie Fälle über BlueXP ein | Ja. | Ja. 
 
 
 | Datendienste nutzen | Ja. | Ja. 

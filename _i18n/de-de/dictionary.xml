@@ -40,7 +40,6 @@
   <block id="aeb0fd93533d2abe16a0c3de7ac30243" category="list-text">Erstellen Sie den Connector mithilfe von gcloudem</block>
   <block id="7ec389ef03b4378689ec8afd5b977499" category="list-text">Laden Sie die Software herunter, und installieren Sie sie manuell auf Ihrem eigenen Linux-Host</block>
   <block id="aad2c066ffe748669f0919517c62b920" category="paragraph">Die von Ihnen gewählte Installationsoption wirkt sich auf die Vorbereitung auf die Installation aus. Dazu gehört auch, wie Sie BlueXP die erforderlichen Berechtigungen bereitstellen, die es zum Authentifizieren und Managen von Ressourcen in Google Cloud benötigt.</block>
-  <block id="09b97c28476d2fd5c125ffc638225bae" category="doc">Connector in Azure erstellen</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="open-title">BlueXP</block>
   <block id="cec61994be2c9633fc4acb202e4b9c41" category="list-text">Ein Azure Abonnement.</block>
   <block id="3c8e2502b00949bb2ead22830ddfa05d" category="list-text">Eine vnet und Subnetz in Ihrer bevorzugten Azure-Region.</block>
@@ -529,11 +528,8 @@
   <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">Verwalten Sie Ihre Benutzeranmeldeinformationen</block>
   <block id="fa6e9e9d0c238d856c9d80111986b0b1" category="paragraph">Verwalten Sie Ihre Benutzeranmeldeinformationen, indem Sie den Benutzernamen und das Kennwort aktualisieren oder die Anmeldeinformationen löschen.</block>
   <block id="9afc8b6b41174c0836030fc8ac89ce5a" category="list-text">Wenn Sie noch keine Anmeldedaten für den Benutzer haben, können Sie *Add NSS Credentials* auswählen, um Ihr NetApp Support Site Konto hinzuzufügen.</block>
-  <block id="f89f00feaba2fad2b55607ff15acc121" category="list-text">Verwalten Sie vorhandene Anmeldeinformationen, indem Sie folgende Optionen auswählen:</block>
   <block id="73877140c9191100114cf829d4df1aa5" category="list-text">*Zugangsdaten aktualisieren*: Aktualisieren Sie den Benutzernamen und das Passwort für das Konto.</block>
   <block id="fc15340823a1f5df29ca8938cb5aca15" category="list-text">*Zugangsdaten löschen*: Entfernen Sie das Konto, das Ihrem BlueXP Benutzerkonto zugeordnet ist.</block>
-  <block id="9d7731be7d930a1152dbf528e9a20972" category="inline-image-macro">Ein Screenshot mit NSS-Anmeldeinformationen und ONTAP-Anmeldeinformationen sowie der Möglichkeit, im Aktivitätsmenü Anmeldeinformationen aktualisieren und Anmeldeinformationen löschen auszuwählen</block>
-  <block id="a4ecb2be579cb0376c3938220c6db5bf" category="paragraph"><block ref="a4ecb2be579cb0376c3938220c6db5bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="893ba5865a015de9dc77765cdf7184e3" category="list-text">Azure VM-Größe</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="summary">Der Zugriff auf BlueXP erfolgt über eine webbasierte Konsole. Wenn Sie mit BlueXP starten, müssen Sie sich zunächst mit Ihren vorhandenen Zugangsdaten auf der NetApp Support Website anmelden oder ein NetApp Cloud-Login erstellen.</block>
   <block id="156c302d186fc36d9d944c5d74b971af" category="doc">Melden Sie sich bei BlueXP an</block>
@@ -707,7 +703,6 @@
   <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">Diese Genehmigung ist für Cloud Volumes ONTAP weiterhin erforderlich.</block>
   <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">Die folgenden Berechtigungen wurden der JSON-Richtlinie hinzugefügt:</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">Diese Berechtigung ist für die Cloud Volumes ONTAP-Bereitstellung erforderlich.</block>
-  <block id="0876dbe9a324b66ea7ac9a411751f1e7" category="doc">Erstellen Sie einen Connector in Google Cloud</block>
   <block id="d239ca21252855f4ecd1674b876a53d5" category="list-text">Die erforderlichen Google Cloud Berechtigungen, um den Connector und ein Servicekonto für die Connector VM zu erstellen.</block>
   <block id="482049a2c27830202c448327d329f378" category="list-text">Ein VPC und ein Subnetz, das die Netzwerkanforderungen erfüllt</block>
   <block id="b66539d8d1c1e3f97e751ce32b201932" category="inline-link-macro">Hier erhalten Sie Informationen zu den Netzwerkanforderungen</block>
@@ -1224,218 +1219,10 @@
   <block id="39c131bd8f90ef7749228972a6486162" category="section-title">Agenten und Erweiterungen von Drittanbietern</block>
   <block id="c305e694f602a4913fd20d15e3508fcc" category="paragraph">Agenten von Drittanbietern oder VM-Erweiterungen werden auf der Connector-VM nicht unterstützt.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">Was ist neu</block>
-  <block id="390bbe3d279d4d842ce6e1afdbef9cac" category="list-text">Wenn Sie einen NetApp Support-Fall über das Support Dashboard öffnen, eröffnet BlueXP nun den Fall über das Konto auf der NetApp Support Website, das mit Ihren BlueXP Anmeldedaten verknüpft ist. BlueXP hat zuvor das NetApp Support Site Konto genutzt, das dem gesamten BlueXP Konto zugeordnet ist.</block>
-  <block id="cf4de1590dec786ba89a784b76abf972" category="paragraph">Im Rahmen dieser Änderung erfolgt die Support-Registrierung für ein BlueXP Konto jetzt über das NetApp Support Site Konto, das mit den BlueXP Anmeldedaten eines Benutzers verknüpft ist. Zuvor wurde der Support über ein NSS-Konto registriert, das dem gesamten BlueXP Konto zugeordnet ist. Daher werden andere BlueXP Benutzer denselben Support-Registrierungsstatus nicht sehen, wenn sie kein NetApp Support Site Konto mit ihrer BlueXP Anmeldung verknüpft haben. Wenn Sie Ihr BlueXP Konto bereits für Support registriert haben, ist Ihr Registrierungsstatus weiterhin gültig. Sie müssen nur ein NSS-Konto auf Benutzerebene hinzufügen, um den Status anzuzeigen.</block>
-  <block id="d0b3c9ce9c494292be2aeea8cdac5477" category="inline-link">Erfahren Sie, wie Sie mit dem NetApp-Support einen Fall erstellen</block>
-  <block id="250213b0170f8e0eeb3d961c487c6b3a" category="list-text"><block ref="250213b0170f8e0eeb3d961c487c6b3a" category="inline-link-rx"></block></block>
-  <block id="6f8efc0a43a600cb013d99abebf16ab9" category="list-text"><block ref="6f8efc0a43a600cb013d99abebf16ab9" category="inline-link-rx"></block></block>
-  <block id="bb61baa9c30235edb535db843a463603" category="list-text"><block ref="bb61baa9c30235edb535db843a463603" category="inline-link-rx"></block></block>
-  <block id="1f6fb1fa08cb08df7303b38688c4c6b3" category="list-text">Sie können jetzt in BlueXP nach Dokumentation suchen. Suchergebnisse enthalten nun Links zu Inhalten auf docs.netapp.com und kb.netapp.com, die Ihnen bei der Beantwortung Ihrer Frage helfen könnten.</block>
-  <block id="73984711a5ba4c8d6f613d3ef2426680" category="inline-image-macro">Ein Screenshot der BlueXP Suche, die oben in der Konsole verfügbar ist</block>
-  <block id="ab5bec8a233948d36856ccc404fd3c23" category="paragraph"><block ref="ab5bec8a233948d36856ccc404fd3c23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">Mit Connector können Sie jetzt Azure Storage-Konten von BlueXP hinzufügen und managen.</block>
-  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Erfahren Sie, wie Sie neue Azure-Storage-Konten in Ihren Azure-Abonnements von BlueXP hinzufügen</block>
-  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
-  <block id="11df2099d9f6c939c0429c564ec675f4" category="list-text">Der Connector wird nun in den folgenden AWS Regionen unterstützt:</block>
-  <block id="8f234407e396ab34fbd89b8c5353cb7b" category="list-text">Hyderabad (AP-Süd-2)</block>
-  <block id="f8d001ab701ae408b7ff0bc7d7b4512e" category="list-text">Melbourne (AP-Südost-4)</block>
-  <block id="6f54a802584839b859866ceb5261cb0e" category="list-text">Spanien (eu-Süd-2)</block>
-  <block id="dd6d0b9c4a235603cc3dfd4485247c08" category="list-text">VAE (ME-Central-1)</block>
-  <block id="4a23b3b65c9e625c9c42d143e90f5ac1" category="list-text">Zürich (eu-Zentral-2)</block>
-  <block id="076b622c9d5055ea3d4f198f43cf14ae" category="list-text">Der Connector wird nun in den folgenden Azure-Regionen unterstützt:</block>
-  <block id="47b9af39407829080e9cfeee3607c39c" category="list-text">Brasilien Süd</block>
-  <block id="e43a7f2cdea7d32ec2a39ac3429f6b21" category="list-text">Frankreich Süd</block>
-  <block id="325f36b59bf936f690e2f1bb30dd035e" category="list-text">Jio India Central</block>
-  <block id="e1b23a90559a8f5be2ef065bba5568bc" category="list-text">Jio Indien Westen</block>
-  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">Polen, Mitte</block>
-  <block id="055ffb1451e38deb0c8ac651e32d77ec" category="list-text">Qatar Central</block>
-  <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">Der Connector wird nun in folgenden Google Cloud Regionen unterstützt:</block>
-  <block id="db760e7471192daa123eed31bfba312d" category="list-text">Columbus (USA-öst5)</block>
-  <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">Dallas (USA-Süd-1)</block>
-  <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22.04 ist das neue Betriebssystem für den Connector, wenn Sie einen Connector von BlueXP oder vom Marktplatz Ihres Cloud-Providers bereitstellen.</block>
-  <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">Sie haben auch die Möglichkeit, den Connector manuell auf Ihrem eigenen Linux-Host zu installieren, auf dem Ubuntu 22.04 ausgeführt wird.</block>
-  <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">Red hat Enterprise Linux 8.6 und 8.7 werden bei neuen Connector-Implementierungen nicht mehr unterstützt.</block>
-  <block id="2f5617aecec1df3805ada7f05da46bde" category="paragraph">Diese Versionen werden bei neuen Bereitstellungen nicht unterstützt, da Red hat Docker nicht mehr unterstützt, was für den Connector erforderlich ist. Wenn Sie bereits einen Connector mit RHEL 8.6 oder 8.7 verwenden, unterstützt NetApp Ihre Konfiguration weiterhin.</block>
-  <block id="470821fb08a53bb45ecda66d23c58d6f" category="paragraph">Red hat 7.6, 7.7, 7.8 und 7.9 werden weiterhin von neuen und vorhandenen Connectors unterstützt.</block>
-  <block id="a2619f6db1e9fa217b857129c75384ab" category="list-text">Der Connector wird jetzt in der Region Katar in Google Cloud unterstützt.</block>
-  <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">Der Connector wird auch in der Region Sweden Central in Microsoft Azure unterstützt.</block>
-  <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.</block>
-  <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP</block>
-  <block id="4d5f6e2e2b72482865cac1c14f3d2d3d" category="paragraph"><block ref="4d5f6e2e2b72482865cac1c14f3d2d3d" category="inline-link-rx"></block></block>
-  <block id="9e2110ccb138521e2ed734b9376c3f5b" category="paragraph">Mit BlueXP _Implementierungsmodi_ können Sie BlueXP entsprechend Ihren geschäftlichen und Sicherheitsanforderungen einsetzen. Sie können zwischen drei Modi wählen:</block>
   <block id="e429f30641aba9e1fc7f2090cc77ce40" category="list-text">Eingeschränkter Modus</block>
   <block id="44f51c4ac8fa1a6f53f07c0c2f751b69" category="list-text">Privater Modus</block>
-  <block id="14862370498786066b8605b6924a2605" category="inline-link">Erfahren Sie mehr über diese Bereitstellungsmodi</block>
-  <block id="0e243030d4d37c15e7b806556f21cdc3" category="paragraph"><block ref="07b6d38a8467f077daba3577bc2ba852" category="inline-link-rx"></block>.</block>
-  <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">Die Einführung des eingeschränkten Modus ersetzt die Option zum Aktivieren oder Deaktivieren der SaaS-Plattform. Sie können den eingeschränkten Modus zum Zeitpunkt der Kontoerstellung aktivieren. Sie kann später nicht aktiviert oder deaktiviert werden.</block>
-  <block id="d128bda2634e1051cc984231da065144" category="list-text">Das Digital Wallet von BlueXP unterstützt jetzt E-Mail-Benachrichtigungen.</block>
-  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).</block>
-  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten</block>
-  <block id="68dcffa7a1f20520450fc9a1fe7431e0" category="paragraph"><block ref="44a545209b596546dde53c0efadb310a" category="inline-link-rx"></block>.</block>
-  <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">Der Connector wird nun in der Region Google Cloud Turin unterstützt.</block>
-  <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">Sie können jetzt die Anmeldedaten für den Benutzer managen, die mit Ihrer BlueXP Anmeldung verknüpft sind: ONTAP Zugangsdaten und NSS Zugangsdaten (NetApp Support Site).</block>
-  <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">Wenn Sie zu *Einstellungen &gt; Anmeldeinformationen* wechseln, können Sie die Anmeldeinformationen anzeigen, die Anmeldeinformationen aktualisieren und löschen. Wenn Sie beispielsweise das Passwort für diese Anmeldedaten ändern, müssen Sie das Passwort in BlueXP aktualisieren.</block>
-  <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link">Erfahren Sie, wie Sie die Anmeldedaten von Benutzern verwalten</block>
-  <block id="9676038d34e063194a28e72d0b24ba2b" category="paragraph"><block ref="3f659f48f22c3b837f26de72ef4f6428" category="inline-link-rx"></block>.</block>
-  <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Anhänge können nun hochgeladen werden, wenn ein Support-Case erstellt oder die Fallhinweise für einen bestehenden Support-Case aktualisiert werden.</block>
-  <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">Erfahren Sie, wie Sie Support-Fälle erstellen und managen</block>
-  <block id="e076d1de7062df2857bf544f4a4aa82d" category="paragraph"><block ref="c7a2ab7c05c0b984c7e95e609cb46e34" category="inline-link-rx"></block>.</block>
-  <block id="55a6750574b4447541f67bb4e01cab9a" category="list-text"><block ref="55a6750574b4447541f67bb4e01cab9a" category="inline-link-rx"></block></block>
-  <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">Die Suche ist jetzt auch in der BlueXP Konsole verfügbar. Derzeit können Sie über die Suche nach BlueXP Services und Funktionen suchen.</block>
-  <block id="da1115c120e230094c1f271ddc8b2faa" category="paragraph"><block ref="da1115c120e230094c1f271ddc8b2faa" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">Erfahren Sie, wie Sie Ihre Support-Fälle managen</block>
-  <block id="84b67e035ee851e17fd4010870ec0a29" category="paragraph"><block ref="f0098b5aeef401e4baf694b939b219f4" category="inline-link-rx"></block>.</block>
-  <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">Der Connector wird jetzt in jeder Cloud-Umgebung unterstützt, die vollständig vom Internet isoliert ist. Anschließend können Sie die BlueXP Konsole, die auf dem Connector ausgeführt wird, verwenden, um Cloud Volumes ONTAP am selben Standort zu implementieren und lokale ONTAP-Cluster zu erkennen (wenn Sie eine Verbindung von Ihrer Cloud-Umgebung zu Ihrer On-Premises-Umgebung haben). Auch Backup und Recovery mit BlueXP können Sie Cloud Volumes ONTAP Volumes in AWS und Azure kommerziellen Regionen sichern. Andere BlueXP Services werden bei dieser Implementierung nicht unterstützt, außer beim BlueXP Digital Wallet.</block>
-  <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">Um zu beginnen, installieren Sie die Connector Software manuell, melden Sie sich bei der BlueXP Konsole an, die auf dem Connector ausgeführt wird, fügen Sie Ihre BYOL-Lizenz zur BlueXP Digital Wallet hinzu und implementieren Sie dann Cloud Volumes ONTAP.</block>
-  <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">Installieren Sie den Connector an einem Ort ohne Internetzugang</block>
-  <block id="148472786b9015b5f19ac843e8bc0f31" category="list-text"><block ref="148472786b9015b5f19ac843e8bc0f31" category="inline-link-rx"></block></block>
-  <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">Fügen Sie eine nicht zugewiesene Lizenz hinzu</block>
-  <block id="94fe554eb0f60c68e4d46024baeef975" category="list-text"><block ref="94fe554eb0f60c68e4d46024baeef975" category="inline-link-rx"></block></block>
-  <block id="a8ed015209d62d3ffd9042f8a01b9725" category="inline-link">Legen Sie los – mit Cloud Volumes ONTAP</block>
-  <block id="ca94b1aadc568190d875409d8370033f" category="list-text"><block ref="ca94b1aadc568190d875409d8370033f" category="inline-link-rx"></block></block>
-  <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">Mit dem Connector können Sie jetzt Amazon S3 Buckets aus BlueXP hinzufügen und managen.</block>
-  <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">So fügen Sie über BlueXP neue Amazon S3 Buckets in Ihrem AWS-Konto hinzu</block>
-  <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>.</block>
-  <block id="98a589e7baa6e35fa2a8b5710c9f3908" category="paragraph"><block ref="98a589e7baa6e35fa2a8b5710c9f3908" category="inline-link-rx"></block></block>
-  <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">Das Passwort für Ihre NetApp Cloud-Anmeldedaten</block>
-  <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">Ihre föderierten Identitätsinformationen</block>
-  <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">Ihre Zugangsdaten für die NetApp Support Site</block>
-  <block id="95161959ea62121420b9e6e6553c5afa" category="inline-image-macro">Ein Screenshot der BlueXP-Anmeldeseite, auf der Sie aufgefordert werden, Ihre E-Mail-Adresse einzugeben.</block>
-  <block id="15cec4d72b9a22aa49ad5d0b9e169bd4" category="paragraph"><block ref="15cec4d72b9a22aa49ad5d0b9e169bd4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9cb7486a7e7f24abb51cfcc8bb6085db" category="list-text">Wenn Sie neu bei BlueXP sind und über bereits vorhandene Zugangsdaten für die NetApp Support Site (NSS) verfügen, können Sie die Anmeldeseite überspringen und Ihre E-Mail-Adresse direkt auf der Anmeldeseite eingeben. BlueXP meldet Sie im Rahmen dieser ersten Anmeldung an.</block>
-  <block id="845c6364e1c82b67190dc691538533e1" category="list-text">Wenn Sie BlueXP über den Markt Ihres Cloud-Providers abonnieren, haben Sie nun die Möglichkeit, das vorhandene Abonnement für ein Konto durch das neue Abonnement zu ersetzen.</block>
-  <block id="79ee9d46f0018b3cb493ecfda60ffa4b" category="inline-image-macro">Ein Screenshot, der die Abonnementzuweisung für ein BlueXP-Konto anzeigt.</block>
-  <block id="801e1c7f75d3ff9451e9184c28498903" category="paragraph"><block ref="801e1c7f75d3ff9451e9184c28498903" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1b38e057f0b3e3f883f386f412fd0a9" category="inline-link">Verbinden Sie ein AWS Abonnement</block>
-  <block id="828834d826a027abf4dde8b1d7ec5cd0" category="list-text"><block ref="828834d826a027abf4dde8b1d7ec5cd0" category="inline-link-rx"></block></block>
   <block id="72bfd3f607087d94f12332f83b700ab8" category="inline-link">Lesen Sie, wie Sie ein Azure-Abonnement zuordnen</block>
-  <block id="2da7a025e0e428017db728d893b96b9a" category="list-text"><block ref="2da7a025e0e428017db728d893b96b9a" category="inline-link-rx"></block></block>
-  <block id="1c74f0a5753f74c783e970c346408b4a" category="inline-link">So verknüpfen Sie ein Google Cloud-Abonnement</block>
-  <block id="65f4ae26731a75eb7ddcdde2725e7606" category="list-text"><block ref="65f4ae26731a75eb7ddcdde2725e7606" category="inline-link-rx"></block></block>
-  <block id="f906d086ca70101dd1f218ea0786aee8" category="list-text">BlueXP benachrichtigt Sie nun, wenn Ihr Connector 14 Tage oder länger ausgeschaltet wurde.</block>
-  <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">Erfahren Sie mehr über BlueXP-Benachrichtigungen</block>
-  <block id="5dd9d7726b2aa753dd804802730ff831" category="list-text"><block ref="5dd9d7726b2aa753dd804802730ff831" category="inline-link-rx"></block></block>
-  <block id="752697882fd7ee73f8d5f60a6f8c02f5" category="inline-link">Erfahren Sie, warum die Anschlüsse weiterhin ausgeführt werden sollten</block>
-  <block id="2918c9a727e794fff7fce479626af4fb" category="list-text"><block ref="2918c9a727e794fff7fce479626af4fb" category="inline-link-rx"></block></block>
-  <block id="1c8a63199471322e5b0fe67deb835f4b" category="list-text">Wir haben die Connector-Richtlinie für Google Cloud aktualisiert, um eine erforderliche Erlaubnis zum Erstellen und Managen von Storage-VMs auf Cloud Volumes ONTAP HA-Paaren zu enthalten:</block>
-  <block id="67d29883f03468dc44eefc494f37473e" category="inline-link">Zeigen Sie Google Cloud-Berechtigungen für den Connector an</block>
-  <block id="bc8eecd65f39947b42bdec4a565aee14" category="paragraph"><block ref="3a8bfb7187fb3fb54b749c274662351f" category="inline-link-rx"></block>.</block>
-  <block id="9c5e093bf7de6f191f4ed6fb5788faf1" category="paragraph"><block ref="9c5e093bf7de6f191f4ed6fb5788faf1" category="inline-link-rx"></block></block>
-  <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen und Fehlerbehebungen.</block>
-  <block id="babe9b67734a993940360f5907bd1420" category="paragraph"><block ref="babe9b67734a993940360f5907bd1420" category="inline-link-rx"></block></block>
-  <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">Die URL für die BlueXP-Konsole wurde auf aktualisiert<block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
-  <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">Der Connector wird nun in der Google Cloud Israel Region unterstützt.</block>
-  <block id="b48a790ba42e24d7c2c6394ead9c61e4" category="list-text"><block ref="b48a790ba42e24d7c2c6394ead9c61e4" category="inline-link-rx"></block></block>
-  <block id="c35e844c4a277ceb06b238910d3b86e7" category="list-text">Ihre PAYGO-Abonnements und Jahresverträge für BlueXP können jetzt über das digitale Wallet angezeigt und gemanagt werden.</block>
-  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">Hier erfahren Sie, wie Sie Ihre Abonnements verwalten</block>
-  <block id="a36a7ffe5c1160531a9a2bc1012be15f" category="paragraph"><block ref="a36a7ffe5c1160531a9a2bc1012be15f" category="inline-link-rx"></block></block>
-  <block id="e8249b4253d6a921188373a80621c098" category="list-text">Diese Version des Connectors enthält auch Cloud Volumes ONTAP-Verbesserungen.</block>
-  <block id="6524b30e2d34e6852c60c79bb9d67c29" category="paragraph"><block ref="6524b30e2d34e6852c60c79bb9d67c29" category="inline-link-rx"></block></block>
-  <block id="23888423406e47190ca0cf40a113c61f" category="inline-link">Erfahren Sie, wie Sie NSS-Konten verwalten</block>
-  <block id="bc3b6ce11bc131cddf59507a7187bfbc" category="paragraph">Cloud Manager fordert Sie jetzt auf, die mit Ihren Accounts der NetApp Support Website verbundenen Anmeldeinformationen zu aktualisieren, wenn das mit Ihrem Konto verknüpfte Aktualisierungs-Token nach 3 Monaten abläuft.<block ref="b5aca352b3ac5d4c653cd51f399b48e6" category="inline-link-rx"></block></block>
-  <block id="e9da1b86eba52d6822a9d7c294a3641c" category="list-text">Wir haben den Connector Deployment Wizard erweitert, indem wir eine _in-Product Guide_ hinzufügen, die Schritte zur Erfüllung der Mindestanforderungen für die Installation von Konnektor enthält: Berechtigungen, Authentifizierung und Netzwerke.</block>
-  <block id="871cd14deee4188642f0f5e041d9e0bd" category="list-text">Sie können nun einen NetApp Support-Fall direkt über Cloud Manager im *Support Dashboard* erstellen.</block>
-  <block id="59c4ba689ab2a5e1f09df561f47e0d6c" category="inline-link">Erfahren Sie, wie Sie einen Fall erstellen</block>
-  <block id="f7bc2ed8f1653bdae4ed33e135b933fa" category="paragraph"><block ref="1c4e2cbcc125deda8a1f9448e89a249c" category="inline-link-rx"></block>.</block>
-  <block id="f7a745eee26de3b09a57038d4d6f94a7" category="paragraph"><block ref="f7a745eee26de3b09a57038d4d6f94a7" category="inline-link-rx"></block></block>
-  <block id="1beb197487d0f07564b924071751aa36" category="list-text">Wir haben eine neue Methode eingeführt, um die vorhandenen Cloud-Ressourcen zu ermitteln, die Sie noch nicht in Cloud Manager verwalten.</block>
-  <block id="155ccfd3578c4b827fbaaa1208c5c86a" category="paragraph">Auf dem Canvas bietet die Registerkarte * My Opportunities* einen zentralen Ort, um vorhandene Ressourcen zu entdecken, die Sie in Cloud Manager hinzufügen können, um konsistente Datenservices und Abläufe in Ihrer gesamten hybriden Multi-Cloud zu erhalten.</block>
-  <block id="586c381704849af8eb925f1bb3c1cc89" category="paragraph">In dieser ersten Version können Sie mit My Opportunities vorhandene FSX für ONTAP Dateisysteme in Ihrem AWS-Konto entdecken.</block>
-  <block id="0023c752677bd572df55463d76cf9b90" category="inline-link">Entdecken Sie FSX für ONTAP mithilfe von My Opportunities</block>
-  <block id="dbf8be04ee9b9497c4f7beac27323eeb" category="paragraph"><block ref="dbf8be04ee9b9497c4f7beac27323eeb" category="inline-link-rx"></block></block>
-  <block id="a76dc10e8aea3ac33b469f1f4d1b205e" category="paragraph"><block ref="a76dc10e8aea3ac33b469f1f4d1b205e" category="inline-link-rx"></block></block>
-  <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">Wir haben die Dokumentation aktualisiert und die Cloud Manager Richtlinien direkt in den Dokumenten hinzugefügt. Das bedeutet, dass Sie nun die erforderlichen Berechtigungen für den Konnektor und Cloud Volumes ONTAP direkt neben den Schritten anzeigen können, wie Sie diese einrichten. Auf diese Richtlinien konnte bisher über eine Seite der NetApp Support Site zugegriffen werden.</block>
-  <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link">Das Beispiel zeigt die AWS IAM-Rollenberechtigungen, die zum Erstellen eines Konnektors verwendet werden</block>
-  <block id="099c2f45c6328b262e8d5da1618fec9b" category="paragraph"><block ref="f70d5a4ad5c8fe20f2b360d971a18930" category="inline-link-rx"></block>.</block>
-  <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link">Zeigen Sie die Berechtigungsübersicht für Cloud Manager an</block>
-  <block id="f6ffbcd57505ff07c352c6a7e1d00866" category="paragraph">Außerdem haben wir eine Seite erstellt, die Links zu den einzelnen Richtlinien enthält.<block ref="8572a9016022bfa78d3a8c5f3218a764" category="inline-link-rx"></block>.</block>
-  <block id="d62eba143e9a6b4f6e0d6902d78ea096" category="list-text">Jetzt haben wir eine neue Methode eingeführt, um auf die wachsende Liste von Funktionen in der Cloud Manager Benutzeroberfläche zu navigieren. Alle vertrauten Funktionen von Cloud Manager sind jetzt leicht zu finden, indem Sie den Mauszeiger über das linke Feld halten.</block>
-  <block id="fb8e25a66c3a27139d3ea3e1474c7db3" category="inline-image-macro">Ein Screenshot, der das neue linke Navigationsmenü in Cloud Manager anzeigt.</block>
-  <block id="3b7c35b218804d1e919a0e6912230bad" category="paragraph"><block ref="3b7c35b218804d1e919a0e6912230bad" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e37234425776295f1624526d17572b8e" category="list-text">Sie können Cloud Manager jetzt so konfigurieren, dass Sie Benachrichtigungen per E-Mail versenden, damit Sie über wichtige Systemaktivitäten informiert werden können, auch wenn Sie nicht im System angemeldet sind.</block>
-  <block id="2f439d7fd2d68628b2c40e59bc7ec352" category="inline-link">Weitere Informationen zu Überwachungsvorgängen in Ihrem Konto</block>
-  <block id="8e2987aa8b0083ae3ca22fee45e2fa2a" category="paragraph"><block ref="97f848d2636075bfc874fdc9f7bf05b5" category="inline-link-rx"></block>.</block>
-  <block id="0f9a1f2b52f5c8456ca5d25ab69eea52" category="list-text">Cloud Manager unterstützt jetzt Azure Blob Storage und Google Cloud Storage als Arbeitsumgebungen, ähnlich der Unterstützung von Amazon S3.</block>
-  <block id="5134e5a3a5a026f57f4938b2eaa07031" category="paragraph">Nach der Installation eines Connectors in Azure oder Google Cloud erkennt Cloud Manager jetzt automatisch Informationen über Azure Blob Storage in Ihrem Azure Abonnement oder Google Cloud Storage in dem Projekt, in dem der Connector installiert wird. Cloud Manager zeigt den Objekt-Storage als Arbeitsumgebung an, in der detailliertere Informationen angezeigt werden können.</block>
-  <block id="a2f44a550843ebb8ee7fe06e85e5d378" category="paragraph">Hier ein Beispiel für eine Azure Blob-Arbeitsumgebung:</block>
-  <block id="c5a0af9953d83a32751880ddded4d5ec" category="inline-image-macro">Ein Screenshot, der eine Azure Blob Arbeitsumgebung zeigt, in der Sie einen allgemeinen Überblick und dann detaillierte Informationen zu den Storage-Konten erhalten.</block>
-  <block id="b525a4073c31891a9a1602d77b40655d" category="paragraph"><block ref="b525a4073c31891a9a1602d77b40655d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="402ca8386bc10e708c8fa4cd43e8856e" category="list-text">Wir haben die Seite „Ressourcen“ für eine Amazon S3-Arbeitsumgebung neu gestaltet und ausführlichere Informationen zu S3-Buckets wie Kapazität, Verschlüsselungsdetails usw. bereitgestellt.</block>
-  <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">Madrid (europa-Südwest1)</block>
-  <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">Paris (europawest9)</block>
-  <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">Warschau (europa-Zentralin2)</block>
-  <block id="05f08f9410eed79855c8ade92149a276" category="list-text">Der Connector wird nun in der Region Azure West US 3 unterstützt.</block>
-  <block id="d9815601b56ec3084872748d000734dd" category="paragraph"><block ref="d9815601b56ec3084872748d000734dd" category="inline-link-rx"></block></block>
-  <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">Wenn sich neue Benutzer bei Cloud Central anmelden, können sie jetzt die Option *mit NetApp* anmelden und sich mit ihren NetApp Support Site Anmeldedaten anmelden. Dies ist eine Alternative zur Eingabe einer E-Mail-Adresse und eines Kennworts.</block>
-  <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">Vorhandene Anmeldungen, die eine E-Mail-Adresse und ein Passwort verwenden, müssen diese Anmeldemethode beibehalten. Die Option „mit NetApp anmelden“ ist für neue Benutzer verfügbar, die sich anmelden.</block>
-  <block id="fb9fefdc512037af8c4c1f84c436bd8e" category="list-text">Der Connector wird nun in der Region AWS Jakarta unterstützt (AP-Südost-3).</block>
-  <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">Der Connector wird nun in der Region Azure Brazil Southeast unterstützt.</block>
-  <block id="046fc05000d85b784cc7466da1c65e32" category="list-text"><block ref="046fc05000d85b784cc7466da1c65e32" category="inline-link-rx"></block></block>
-  <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">Wir haben den Connector aktualisiert, um Bug Fixes einzuführen. Die bemerkenswerteste Lösung ist ein Problem, das die Cloud Volumes ONTAP-Implementierung in Google Cloud beeinflusst, wenn der Connector in einer gemeinsamen VPC ausgeführt wird.</block>
-  <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">Delhi (asien-Süd-2)</block>
-  <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">Melbourne (australien-Südheast2)</block>
-  <block id="4b14bbd178377e932c7e97664c276be7" category="list-text">Mailand (europa-West8)</block>
-  <block id="dcbe8ad0293bd53296a9d2ec0f030d10" category="list-text">Santiago (southamerica-west1)</block>
-  <block id="5750adecdd8602aee9e0d7052b8cd392" category="list-text">Wenn Sie das Google Cloud-Servicekonto auswählen, das mit dem Connector verwendet werden soll, zeigt Cloud Manager jetzt die E-Mail-Adresse an, die mit jedem Dienstkonto verknüpft ist. Durch das Anzeigen der E-Mail-Adresse kann es leichter sein, zwischen Servicekonten, die denselben Namen haben, zu unterscheiden.</block>
-  <block id="898d465c80c6b6783418f6fa71db0946" category="inline-image-macro">Einen Screenshot aus dem Feld für das Service-Konto</block>
-  <block id="a48728160435b936fb4605731410d8eb" category="paragraph"><block ref="a48728160435b936fb4605731410d8eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2e0bddfca809f95cf3d5d7adfccca0e2" category="list-text">Wir haben den Connector in Google Cloud auf einer VM-Instanz mit einem Betriebssystem zertifiziert, das unterstützt<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
-  <block id="561748ecfe4fd0bd9f15c851d5de4d29" category="inline-link">Erfahren Sie mehr über diese Verbesserungen</block>
-  <block id="8ff045b580dad588f94172a79314dc6d" category="list-text">Diese Version des Connectors enthält auch Cloud Volumes ONTAP-Verbesserungen.<block ref="fef8e60d1a5c861a0a5d6feeede741cf" category="inline-link-rx"></block></block>
-  <block id="5e9d36e4528c82da2b7294c252e52427" category="list-text">Für den Connector zur Implementierung von Cloud Volumes ONTAP sind neue AWS Berechtigungen erforderlich.</block>
-  <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">Bei der Implementierung eines HA-Paars in einer einzelnen Verfügbarkeitszone (AZ) sind nun die folgenden Berechtigungen erforderlich, um eine AWS Spread-Placement-Gruppe zu erstellen:</block>
-  <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">Diese Berechtigungen sind nun erforderlich, um die Erstellung der Platzierungsgruppe durch Cloud Manager zu optimieren.</block>
-  <block id="68d143cf782abb32ef2c0a2af3d73ed4" category="inline-link-macro">Sehen Sie sich die aktuelle IAM-Richtlinie für den Connector an</block>
-  <block id="09bd71829ddb9c7aa4915fa8ccecf682" category="paragraph">Stellen Sie unbedingt diese Berechtigungen für jeden Satz von AWS Zugangsdaten bereit, die Sie Cloud Manager hinzugefügt haben. <block ref="43fc0841595bdc0f90ae6430b0122798" category="inline-link-macro-rx"></block>.</block>
-  <block id="dc45cdfe41bbcfa7f2d8bf1ed54a89ed" category="list-text">Sie können jetzt einen Connector erstellen, indem Sie Cloud Manager eine IAM-Rolle übernehmen lassen, die Sie in Ihrer Umgebung eingerichtet haben. Diese Authentifizierungsmethode ist sicherer als die gemeinsame Nutzung eines AWS Zugriffsschlüssels und eines Geheimschlüssels.</block>
-  <block id="c1ef500163b033b0cacf87c830339c6e" category="inline-link">Erfahren Sie, wie Sie einen Konnektor mithilfe einer IAM-Rolle erstellen</block>
-  <block id="ed3ab201d61a32b83ced6fa1b246aa09" category="paragraph"><block ref="c3443234c58f728fd298c85cd8d82362" category="inline-link-rx"></block>.</block>
-  <block id="083fb54a2c12a01865494f9eb4787b79" category="list-text">Diese Version des Connectors enthält auch Cloud Volumes ONTAP-Verbesserungen.<block ref="59d6f0d19109fca55e6311099497ddc1" category="inline-link-rx"></block></block>
-  <block id="23ea931bf11f885e1a49e6970b0aa60a" category="list-text">Wenn Sie einen neuen Connector in Google Cloud erstellen, zeigt Cloud Manager jetzt alle bestehenden Firewall-Richtlinien an. Zuvor wurden in Cloud Manager keine Richtlinien angezeigt, für die kein Ziel-Tag vorhanden war.</block>
-  <block id="5c12e90820b2bd6edf6f35e22754cc6a" category="list-text">Diese Version des Connectors enthält auch Cloud Volumes ONTAP-Verbesserungen.<block ref="5929cea9f40a354c605f108001043659" category="inline-link-rx"></block></block>
-  <block id="1890045039c9b689a989ddeed52a35b2" category="paragraph">Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.<block ref="a470e47cfb4b58628c6adb8bf11e8d1b" category="inline-link-rx"></block></block>
-  <block id="3ea953e33860f2fb58e83ea9f9842e28" category="paragraph">Wir reduzieren die Anzahl der Endpunkte, die ein Connector kontaktieren muss, um Ressourcen und Prozesse in Ihrer Public-Cloud-Umgebung zu verwalten.</block>
-  <block id="deb7ce1a594b9c903900b5242dc0085e" category="inline-link">Zeigen Sie die Liste der erforderlichen Endpunkte an</block>
-  <block id="7b9d4f51a2aafa446c6306500b5e250f" category="paragraph"><block ref="7b9d4f51a2aafa446c6306500b5e250f" category="inline-link-rx"></block></block>
-  <block id="dcf92cfff3fdb05a27221d7e0f407165" category="paragraph">Wenn Sie einen neuen Connector in AWS über Cloud Manager implementieren, können Sie sich jetzt entscheiden, die EBS-Festplatten des Connectors über den Standard-Master-Schlüssel oder einen gemanagten Schlüssel zu verschlüsseln.</block>
-  <block id="e47c7d2e2b0dfe5aea5df23ca3dc5523" category="inline-image-macro">Ein Screenshot, der die Laufwerkverschlüsselungsoption beim Erstellen eines Connectors in AWS anzeigt.</block>
-  <block id="a91afa6fb41cab23d456769cc6adc832" category="paragraph"><block ref="a91afa6fb41cab23d456769cc6adc832" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="09a67f36e39e8933808ee04f43addc27" category="paragraph">Cloud Manager kann jetzt die E-Mail-Adresse anzeigen, die mit einem NetApp Support Site Konto verknüpft ist.</block>
-  <block id="0e6019dd7421286538155e3cea252d8a" category="paragraph"><block ref="0e6019dd7421286538155e3cea252d8a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cd9cf4a2a1c115f8da1d3cd4b0b783dd" category="paragraph">Ab Dezember 2021 verwendet NetApp jetzt Microsoft Azure Active Directory als Identitäts-Provider für speziell auf Support und Lizenzierung spezifische Authentifizierungs-Services. Aufgrund dieses Updates werden Sie von Cloud Manager aufgefordert, die Anmeldedaten für alle bereits hinzugefügten NetApp Support Site Konten zu aktualisieren.</block>
-  <block id="a47acc65b2885cddfc6096e5aa5324f7" category="paragraph">Wenn Sie Ihr NSS-Konto noch nicht zu IDaaS migriert haben, müssen Sie zunächst das Konto migrieren und dann Ihre Zugangsdaten in Cloud Manager aktualisieren.</block>
-  <block id="e99f30e825d98bd08033ec588636b5fc" category="paragraph">Wenn Ihr Unternehmen über mehrere NetApp Support Site Accounts verfügt, können Sie jetzt ändern, welches Konto einem Cloud Volumes ONTAP System zugeordnet ist.</block>
-  <block id="410c9dea5614a1c565dab22836dac506" category="inline-link-macro">Erfahren Sie, wie Sie eine Arbeitsumgebung an ein anderes NSS-Konto anschließen</block>
-  <block id="716da4ef7d1a5f241e18d6b446014f1c" category="paragraph"><block ref="ef9f07c493626712a09129088a5e9304" category="inline-link-macro-rx"></block>.</block>
-  <block id="ac0f5e08f6053e35cd41705edc1764e6" category="paragraph">Ein unabhängiger, zertifizierter Wirtschaftsprüfer hat Cloud Manager, Cloud Sync, Cloud Tiering, Cloud Data Sense und Cloud Backup (Cloud Manager Plattform) geprüft und bestätigt, dass sie SOC 2 Typ 2 Berichte basierend auf den entsprechenden Kriterien der Trust Services erstellt haben.</block>
-  <block id="f982fa3c6fb84f7cccc6a84a6ffc9a1d" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block>.</block>
-  <block id="5c8306d9be4948716015bb2f9e79b2c6" category="paragraph">Sie können den Cloud-Manageranschluss nicht mehr als Proxyserver verwenden, um AutoSupport-Nachrichten von Cloud Volumes ONTAP zu senden. Diese Funktion wurde entfernt und wird nicht mehr unterstützt. Sie müssen AutoSupport-Konnektivität über eine NAT-Instanz oder Proxy-Services Ihrer Umgebung bereitstellen.</block>
-  <block id="52fc1a06d2ae446b85445e7fc0cf985d" category="inline-link">Erfahren Sie mehr über die Überprüfung von AutoSupport mit Cloud Volumes ONTAP</block>
-  <block id="082ecd74d4bf71395df6986a8098fad0" category="paragraph"><block ref="082ecd74d4bf71395df6986a8098fad0" category="inline-link-rx"></block></block>
-  <block id="8c14c862f5a121ac56cd7c2e45b59e09" category="paragraph">Wenn Sie einen neuen Connector in Microsoft Azure erstellen, können Sie sich jetzt mit einem Azure-Dienstprincipal authentifizieren, anstatt mit den Azure-Konto-Anmeldedaten.</block>
-  <block id="2b5f7271b3a292c88ce5b4850153c1f4" category="inline-link-macro">Informieren Sie sich, wie Sie sich mit einem Azure-Service-Principal authentifizieren</block>
-  <block id="927ebf0b3ebac11b90b010cce510f149" category="paragraph">Die Credentials-Seite wurde neu gestaltet. Dies ist benutzerfreundlich und passt genau zu dem aktuellen Look and Feel der Cloud Manager-Oberfläche.</block>
-  <block id="3c1b23b324258ff4cbade594bf9bba9d" category="inline-link-macro">Erfahren Sie, wie Sie die Vorgänge in Ihrem Konto überwachen</block>
-  <block id="e2945895b2a6a405c218350491024401" category="paragraph">Der Benachrichtigungsservice wurde eingeführt, sodass Sie den Status der Cloud Manager Vorgänge anzeigen können, die Sie während Ihrer aktuellen Anmeldesitzung initiiert haben. Sie können überprüfen, ob der Vorgang erfolgreich war oder ob er fehlgeschlagen ist. <block ref="f47b918ef0cfcb851278e7a8f756b776" category="inline-link-macro-rx"></block>.</block>
-  <block id="49b04ecdbf78ac3e84e01d5ad6dcb05f" category="paragraph">Wir haben den Assistenten *Connector* neu gestaltet, um neue Optionen hinzuzufügen und die Bedienung zu vereinfachen. Sie können nun Tags hinzufügen, eine Rolle angeben (für AWS oder Azure), ein Root-Zertifikat für einen Proxy-Server hochladen, Code für die Terraform-Automatisierung anzeigen, Fortschrittsdetails anzeigen und mehr.</block>
-  <block id="9b740c2dda97a2c23cd8f8cf0fc5aac6" category="inline-link-macro">Connector in AWS erstellen</block>
-  <block id="12c969b885d7dd7b0a231afa774da316" category="list-text"><block ref="12c969b885d7dd7b0a231afa774da316" category="inline-link-macro-rx"></block></block>
-  <block id="24358245886d680d1757bf06273da574" category="list-text"><block ref="24358245886d680d1757bf06273da574" category="inline-link-macro-rx"></block></block>
-  <block id="b3aa89c8e307c0edbec167df38d4b12e" category="list-text"><block ref="b3aa89c8e307c0edbec167df38d4b12e" category="inline-link-macro-rx"></block></block>
-  <block id="0f0fe41ab5bd818721db20f8d7a2404a" category="paragraph">NSS-Konten (NetApp Support Site) werden jetzt über das Support-Dashboard gemanagt anstatt über das Menü „Einstellungen“. Durch diese Änderung finden und managen Sie alle Support-Informationen einfacher über eine zentrale Stelle.</block>
-  <block id="432f05a278abb2c3428b70a3a4f99dbd" category="paragraph"><block ref="c61e9c0c9cae1a8c2affa1de687f1e0d" category="inline-link-macro-rx"></block>.</block>
-  <block id="2a41aea826ac3cd59f94685c0507de72" category="inline-image-macro">Einen Screenshot der Registerkarte NSS Management im Support Dashboard, in dem Sie NSS-Konten hinzufügen können.</block>
-  <block id="9b67e1ec262493b1df3ec41cc4fbd4a0" category="paragraph">In der Zeitleiste in Cloud Manager werden jetzt Aktionen und Ereignisse im Zusammenhang mit der Kontoverwaltung angezeigt. Zu den Aktionen gehören u. a. die Verknüpfung von Benutzern, die Erstellung von Arbeitsbereichen und die Erstellung von Connectors. Das Prüfen der Zeitleiste kann hilfreich sein, wenn Sie feststellen müssen, wer eine bestimmte Aktion durchgeführt hat oder ob Sie den Status einer Aktion identifizieren müssen.</block>
-  <block id="2355c6490a09de53516a5be37a0fe654" category="inline-link-macro">Erfahren Sie, wie Sie den Zeitplan für den Service für die Mandantenfähigkeit filtern</block>
-  <block id="c22052aa83aad03ab1340970700a2c27" category="paragraph">Wenn Sie einen Proxy-Server konfiguriert haben, können Sie nun eine Option aktivieren, mit der Sie API-Aufrufe direkt an Cloud Manager senden können, ohne über den Proxy zu gehen. Diese Option wird mit Connectors unterstützt, die in AWS oder in Google Cloud ausgeführt werden.</block>
-  <block id="9dede71b8a52f35ab437be508256e623" category="inline-link-macro">Erfahren Sie mehr über diese Einstellung</block>
-  <block id="bf9a05fbf0a532f9d751fa547baf1a5d" category="paragraph"><block ref="79d5e82538c5093b89289f16504c3104" category="inline-link-macro-rx"></block>.</block>
-  <block id="e6a71362eab01fb017f9ece8e67215b8" category="paragraph">Sie können jetzt ein Dienstkonto-Benutzer erstellen.</block>
-  <block id="83510fd4a5d6f463975ffcf1a28079a3" category="paragraph">Ein Service-Konto fungiert als „Benutzer“, der autorisierte API-Aufrufe an Cloud Manager zur Automatisierung vornehmen kann. So ist das Management der Automatisierung einfacher, da keine Automatisierungsskripts auf Basis des Benutzerkontos eines echten Mitarbeiters erstellt werden müssen, der das Unternehmen jederzeit verlassen kann. Und bei Verwendung von Federation können Sie ein Token erstellen, ohne ein Update-Token aus der Cloud zu generieren.</block>
-  <block id="f172ba98380ffa94100632430ae9c805" category="inline-link-macro">Erfahren Sie mehr über die Verwendung von Servicekonten</block>
-  <block id="18da70587f043904939613fa4c43ba6d" category="paragraph">Private Vorschauen in Ihrem Konto können Sie jetzt auf neue NetApp Cloud-Services zugreifen, sobald diese in Cloud Manager als Vorschau verfügbar gemacht werden.</block>
-  <block id="4823145b3655f45dcb57edeef856c1a9" category="paragraph">Sie haben auch die Möglichkeit, dass Drittanbieterservices in Ihrem Konto Zugriff auf in Cloud Manager verfügbare Drittanbieter-Services erhalten.</block>
-  <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">Wir haben das Support Dashboard aktualisiert, damit Sie Ihre Zugangsdaten für die NetApp Support Website hinzufügen können. Damit registrieren Sie sich für den Support. Sie können auch einen NetApp Support-Fall direkt über das Dashboard initiieren. Klicken Sie einfach auf das Hilfesymbol und dann auf *Support*.</block>
   <block id="eb13228b7d3a81ef5fba30ba79924b80" category="list-text">Benutzerdefinierte Rolle in Google Cloud erstellen:</block>
   <block id="98b95b176d8b51112c2de8e58e9caf10" category="list-text">Erstellen Sie eine YAML-Datei mit den folgenden Berechtigungen:</block>
   <block id="49cfb78048f1f3515483265f3346abf2" category="list-text">Aktivieren Sie in Google Cloud die Cloud Shell.</block>
@@ -1605,7 +1392,6 @@ Oder</block>
   <block id="4ae719205766e20198cc595136cbf10c" category="inline-link">Erfahren Sie mehr über den Aufruf der /occm/config API</block>
   <block id="a003b98e4140542975c2369f893345c7" category="paragraph"><block ref="a003b98e4140542975c2369f893345c7" category="inline-link-rx"></block></block>
   <block id="c18f35b968a9596c1426357bd905370f" category="section-title">Entfernen Sie die Anschlüsse von BlueXP</block>
-  <block id="f70f27cb36a2c55ba397f836520ac028" category="paragraph">Wenn ein Connector inaktiv ist, können Sie ihn aus der Liste der Anschlüsse in BlueXP entfernen. Sie können dies tun, wenn Sie die virtuelle Connector-Maschine gelöscht oder die Connector-Software deinstalliert haben.</block>
   <block id="c5c64fb69c2266a9bd084b1cc03349b6" category="paragraph">Beachten Sie Folgendes zum Entfernen eines Konnektors:</block>
   <block id="41b9dde34c587a177c2f3827a8427dfd" category="list-text">Durch diese Aktion wird die virtuelle Maschine nicht gelöscht.</block>
   <block id="07923345a32e557b356f33061f3adb7a" category="list-text">Wählen Sie das Aktionsmenü für einen inaktiven Konnektor aus und wählen Sie *Connector entfernen*.</block>
@@ -2267,14 +2053,7 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Zusammenfassung der Berechtigungen</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Wissen und Support</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">Nachhaltigkeit</block>
-  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Sie können jetzt On-Premises-ONTAP-Cluster über die Registerkarte *My estate* (vorher *Meine Möglichkeiten*) entdecken.</block>
-  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Erfahren Sie auf der Seite My Estate, wie Sie Cluster erkennen</block>
-  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
-  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Wenn Sie den Connector in einer Azure Government-Region verwenden, sollten Sie sicherstellen, dass der Connector den folgenden Endpunkt erreichen kann:</block>
   <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
-  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Dieser Endpunkt ist erforderlich, um den Connector manuell zu installieren und den Connector und seine Docker-Komponenten zu aktualisieren.</block>
-  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Aufgrund dieser Änderung kontaktiert ein Connector in einer Azure-Regierungsregion nicht mehr den folgenden Endpunkt:</block>
-  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Beachten Sie, dass dieser Endpunkt weiterhin für alle anderen Konfigurationen mit eingeschränktem Modus und für den Standardmodus erforderlich ist.</block>
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">Wenn Sie Ressourcen in anderen Google Cloud-Projekten managen möchten, gewähren Sie Zugriff, indem Sie das Servicekonto mit der BlueXP Rolle zu diesem Projekt hinzufügen. Sie müssen diesen Schritt für jedes Projekt wiederholen.</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">Wenn Sie eine neue Arbeitsumgebung für Cloud Volumes ONTAP erstellen, wählt BlueXP standardmäßig diese AWS Zugangsdaten aus:</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">Beachten Sie, dass Sie die mit dieser Rolle verknüpften Azure Abonnements auswählen können. Jedes Abonnement, das Sie auswählen, stellt die Connector-Berechtigungen zum Verwalten von Ressourcen in diesem Abonnement bereit (z. B. Cloud Volumes ONTAP).</block>
@@ -2346,7 +2125,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="15160ee45cf43a64b4673fc1b3aa1643" category="cell">Tiering von lokalen ONTAP Clustern zu StorageGRID</block>
   <block id="723b7068534c515d953009f9999562b7" category="cell">Wenn Sie BlueXP Tiering auf StorageGRID einrichten, müssen Sie für BlueXP Tiering einen S3 Zugriffsschlüssel und einen geheimen Schlüssel bereitstellen. BlueXP Tiering verwendet die Schlüssel für den Zugriff auf Ihre Buckets.</block>
   <block id="7642cdcc7094ebeb3d2e2a2bb2bfa636" category="inline-link">Tiering in StorageGRID vorbereiten</block>
-  <block id="d3e3e33f096d4100a0477da8e5e0fa16" category="cell"><block ref="d3e3e33f096d4100a0477da8e5e0fa16" category="inline-link-rx"></block></block>
   <block id="b5b529e8dc821910caacb50b880d2487" category="cell">Backup von Cloud Volumes ONTAP in der Google Cloud</block>
   <block id="498541290e9165e5844d20ce7c56fdce" category="paragraph">Wenn Sie BlueXP Backup und Recovery für ein Backup von Cloud Volumes ONTAP verwenden, müssen Sie in den folgenden Szenarien Berechtigungen zum Connector hinzufügen:</block>
   <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">Sie möchten die Funktion „Suchen &amp; Wiederherstellen“ verwenden</block>
@@ -2389,12 +2167,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">Um die Anmeldeinformationen einem neuen Abonnement zuzuordnen, wählen Sie *Abonnement hinzufügen &gt; Weiter* und befolgen Sie die Schritte im AWS Marketplace:</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">Wählen Sie *Kaufoptionen anzeigen*.</block>
   <block id="0b45e429b84384fa541446c3364409c9" category="list-text">Wählen Sie *Konto einrichten*.</block>
-  <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">Sie können jetzt die BlueXP Audit-Service-API für den Export von Audit-Protokollen verwenden.</block>
-  <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Erfahren Sie mehr über die Verwendung der Audit-Service-API</block>
-  <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
-  <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">Beachten Sie, dass auf diesen Link auch über die BlueXP Benutzeroberfläche auf der Seite „Zeitleiste“ zugegriffen werden kann.</block>
-  <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
-  <block id="b5163cd43881e34d9478fc7e00e66e62" category="list-text">Auf der Seite *Anmelden* werden Sie jetzt aufgefordert, die mit Ihrem Login verknüpfte E-Mail-Adresse einzugeben. Nachdem Sie *Next* ausgewählt haben, fordert BlueXP Sie auf, sich mit der Authentifizierungsmethode zu authentifizieren, die mit Ihrer Anmeldung verknüpft ist:</block>
   <block id="3de985fb980dfcce5f5196709e3e62ce" category="list-text">Wählen Sie *Policies &gt; Create Policy* aus.</block>
   <block id="d36ec2dc8acd5ade1fda1b4397ccc99a" category="list-text">Wählen Sie *JSON*.</block>
   <block id="cedfddf2dfb74aa203be428f7657457c" category="list-text">Wählen Sie *Weiter* und fügen Sie ggf. Tags hinzu.</block>
@@ -2459,8 +2231,6 @@ Erkennung ohne Connector (direkte Erkennung) wird nicht unterstützt.</block>
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>.</block>
-  <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>.</block>
   <block id="ae74a3a0435bedb1f051b5b083969faa" category="paragraph">BlueXP erfordert AWS Berechtigungen für den Connector und für einzelne Services.</block>
   <block id="12c74214cb4c18cf36d885303d6aa2e1" category="cell">Ziel</block>
   <block id="4afbf095518e3a60998aad1ce6f249ce" category="cell">Implementieren Sie den Connector von BlueXP</block>
@@ -2511,7 +2281,6 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
   <block id="71921838fce69c9d045aeb2ad30c1eb5" category="inline-link">Zugriff auf Google Cloud wird ermöglicht</block>
   <block id="9b9b58eacf6390de371391672ac7e8ec" category="cell"><block ref="9b9b58eacf6390de371391672ac7e8ec" category="inline-link-rx"></block></block>
   <block id="8aa2111995c967fbe71b3943dcfa40e7" category="paragraph">BlueXP erfordert StorageGRID Berechtigungen für zwei Services.</block>
-  <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">Der Audit-Service zeichnet Informationen zu den durch BlueXP Services ausgeführten Vorgängen auf. Dazu gehören Arbeitsbereiche, verwendete Connectors und andere Telemetriedaten. Anhand dieser Daten können Sie bestimmen, welche Aktionen durchgeführt wurden, wer sie ausgeführt hat und wann sie aufgetreten sind.</block>
   <block id="60c6ee9a22a8a9d78e90e7b6417781b1" category="list-text">Der Benutzername für die EC2 Linux-Instanz ist ubuntu (für Connectors, die vor Mai 2023 erstellt wurden, war der Benutzername ec2-user).</block>
   <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">Als Sie die Connector-Instanz in AWS erstellt haben, haben Sie einen AWS-Zugriffsschlüssel und einen geheimen Schlüssel angegeben. Sie können dieses Schlüsselpaar für SSH zur Instanz verwenden. Der Benutzername für die EC2 Linux-Instanz ist ubuntu (für Connectors, die vor Mai 2023 erstellt wurden, war der Benutzername ec2-user).</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnieren Sie BlueXP über den Google Cloud Marketplace</block>
@@ -2660,11 +2429,7 @@ mitglied: BlueXP Dienstkonto als serviceAccount.user</block>
   <block id="9cc4c3a223d9b6def6feaec3c11d5585" category="paragraph">Erstellen Sie den Connector direkt über AWS Marketplace.</block>
   <block id="0d8dcd0440293645b17304e6ec7f0b44" category="paragraph">Beim Erstellen des Connectors aus dem AWS Marketplace wird eine EC2-Instanz in AWS mit einer Standardkonfiguration bereitgestellt. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="65ce4dce26160be29539699c6623e379" category="sidebar">Erste Schritte für den Workflow</block>
-  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Wenn Sie einen Connector in AWS von BlueXP erstellen, können Sie nun im Feld Schlüsselpaar suchen, um das Schlüsselpaar, das Sie mit der Connector-Instanz verwenden möchten, einfacher zu finden.</block>
-  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Ein Screenshot der Suchoption im Feld Schlüsselpaar, das beim Erstellen eines Connectors in AWS aus BlueXP auf der Seite Netzwerk angezeigt wird.</block>
-  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Dieses Update enthält auch Fehlerbehebungen.</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 Juli 2023</block>
-  <block id="e22252cf3c711c916163d727b6261500" category="paragraph">Die Cloud-Region kann eine Region für sichere US-Behörden wie AWS Top Secret Cloud, AWS Secret Cloud, Azure IL6 oder jede kommerzielle Region sein.</block>
   <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link">AWS Secret Cloud</block>
   <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link">Top Secret Cloud von AWS</block>
   <block id="958949b356b2f90081cbb745321e2bf3" category="inline-link">Erste Schritte mit Cloud Volumes ONTAP – in der AWS Secret Cloud oder Top Secret Cloud</block>
@@ -2682,7 +2447,6 @@ mitglied: BlueXP Dienstkonto als serviceAccount.user</block>
   <block id="1759129089da3c0c000cb4c2196a2fd0" category="list-text">*Admin-Benutzer erstellen*: Erstellen Sie den Admin-Benutzer für das System.</block>
   <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">Für den Support von BlueXP und seinen Storage-Lösungen und Services ist eine Support-Registrierung erforderlich. Um wichtige Workflows für Cloud Volumes ONTAP Systeme zu ermöglichen, ist außerdem eine Support-Registrierung erforderlich.</block>
   <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">Durch die Registrierung für den Support wird die NetApp-Unterstützung für einen Fileservice eines Cloud-Providers nicht aktiviert. Technischen Support zu Fileservices von Cloud-Providern, zu seiner Infrastruktur oder zu beliebigen Lösungen, die den Service verwenden, finden Sie im Abschnitt „Hilfe erhalten“ in der BlueXP Dokumentation zu diesem Produkt.</block>
-  <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.</block>
   <block id="25a9b1247ec1fd14b6ef367a6910af4a" category="inline-link-macro">Einstieg in BlueXP im Standardmodus</block>
   <block id="53307bf922b08c003dac0571547a263c" category="list-text"><block ref="53307bf922b08c003dac0571547a263c" category="inline-link-macro-rx"></block></block>
   <block id="91f55c66e69b3b40e117fc5d123e8cd6" category="inline-link-macro">Einstieg in BlueXP im eingeschränkten Modus</block>
@@ -2725,7 +2489,6 @@ mitglied: BlueXP Dienstkonto als serviceAccount.user</block>
   <block id="260bcd27c402b5ba9f5dcabbfc1e0ddd" category="sidebar">Anmeldedaten und Abonnements</block>
   <block id="cbaee96b9499da2c5c6d3b23090382c6" category="sidebar">Informationen zu Anmeldeinformationen und Berechtigungen</block>
   <block id="9d812302dfdd0fdbf4faa0fe53b9ed24" category="sidebar">Erfahren Sie mehr über Projekte und Berechtigungen</block>
-  <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Diese Version enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen.</block>
   <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">Der private Modus wird in der Regel mit On-Premises-Umgebungen ohne Internetverbindung und mit sicheren Cloud-Regionen verwendet, einschließlich<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, und<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">Informieren Sie sich, wie BlueXP für Sie Azure Zugangsdaten verwendet, um Aktionen durchzuführen und wie diese Zugangsdaten mit Marketplace-Abonnements verknüpft sind. Das Verständnis dieser Details kann hilfreich sein, wenn Sie die Anmeldedaten für ein oder mehrere Azure-Abonnements verwalten. Beispielsweise könnte es hilfreich sein, wenn Sie mehr über Azure Zugangsdaten zu BlueXP erfahren möchten.</block>
   <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">Anmeldedaten und Abonnements für den Marktplatz</block>
@@ -2774,19 +2537,12 @@ mitglied: BlueXP Dienstkonto als serviceAccount.user</block>
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
   <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
   <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">Das Betriebssystem für das Image ist Ubuntu 22.04 LTS.</block>
-  <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">Für BlueXP ist jetzt eine neue Version des privaten Modus verfügbar. Diese Version enthält Version 3.9.35 des Connectors sowie Versionen der BlueXP Services, die ab Oktober 2023 im Privatmodus unterstützt werden.</block>
-  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Diese neue Version kann von der NetApp Support-Website heruntergeladen werden.</block>
-  <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">Informieren Sie sich über die im Private-Mode enthaltenen BlueXP Services</block>
-  <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
   <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus</block>
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren</block>
   <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">Stellen Sie sicher, dass Sie das Offline-Installationsprogramm für private Netzwerke ohne Internetzugang herunterladen.</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Die folgenden Berechtigungen für das BlueXP Backup und Recovery beim Backup von Volume-Daten auf Azure Blob Storage sind nicht mehr erforderlich:</block>
   <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">Diese Berechtigungen sind für andere BlueXP Storage-Services erforderlich, sodass sie weiterhin für den Connector relevant sind, wenn Sie diese anderen Storage-Services nutzen.</block>
-  <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in den folgenden Cloud-Regionen:</block>
-  <block id="5c4c535d51f9fbfc21f1baf9f449004c" category="list-text">Der Region Israel (Tel Aviv) in AWS</block>
-  <block id="c53c95f8243560e843dabb8877e4d787" category="list-text">Die Region Saudi-Arabien in Google Cloud</block>
   <block id="3244421fb40bc38e67d918370813ac13" category="list-text">Wählen Sie *Support &gt; BlueXP Connector*.</block>
   <block id="f3678f7b6e79e91c386c1443915f058a" category="paragraph">Die System-ID wird oben auf der Seite angezeigt.</block>
   <block id="78b33f2334c7af84c813788a6be69874" category="paragraph"><block ref="78b33f2334c7af84c813788a6be69874" category="inline-image-macro-rx" type="image"></block></block>
@@ -2797,7 +2553,6 @@ mitglied: BlueXP Dienstkonto als serviceAccount.user</block>
   <block id="da65ca9f7cc579e3fad52951fe45cdb6" category="paragraph"><block ref="da65ca9f7cc579e3fad52951fe45cdb6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="34c6561859a3a97caa0248fbb4372124" category="inline-link">Zeigen Sie die Liste der unterstützten Backup-Ziele für ONTAP-Daten an</block>
   <block id="b17e900e063883a32cc6ff0df77599bf" category="inline-link">Zeigen Sie die Liste der unterstützten Backup-Ziele für ONTAP-Volume-Daten an</block>
-  <block id="652dc029a5083b41e38c79d0e4d16733" category="paragraph">Im privaten Modus unterstützt BlueXP Backup und Recovery ausschließlich Backup und Wiederherstellung von ONTAP Volume-Daten.<block ref="eebf709c38a40036acede282fbe8b80c" category="inline-link-rx"></block></block>
   <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">*Arbeitsumgebungen*
 
 Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeitsumgebung aus dem BlueXP Arbeitsbereich auf. Die unterstützten Backup-Ziele für BlueXP Backup und Recovery werden nicht angezeigt.</block>
@@ -2819,8 +2574,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="9056be4df2e385c15b0e73176bcf8af3" category="inline-image-macro">Ein Screenshot des Azure-Portals zeigt einen Client-Secret für den Microsoft Entra-Dienst-Principal.</block>
   <block id="bc061266b02f85e444a9b5ae50e1a3fd" category="paragraph"><block ref="bc061266b02f85e444a9b5ae50e1a3fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b750da0ca2dca4110c6636dcb1ebbe6f" category="paragraph">Jetzt haben Sie einen Client-Schlüssel, den BlueXP zur Authentifizierung mit Microsoft Entra ID verwenden kann.</block>
-  <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">Erfahren Sie mehr über die Verwendung von Microsoft Azure Active Directory für das Identitätsmanagement durch NetApp</block>
-  <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
   <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">Erstellen Sie eine benutzerdefinierte Azure Rolle, die Sie Ihrem Azure Konto oder einem Microsoft Entra-Dienstprinzipal zuweisen können. BlueXP authentifiziert sich mit Azure und verwendet diese Berechtigungen, um die Connector-Instanz in Ihrem Auftrag zu erstellen.</block>
   <block id="4dc29cf7d5ceac3415d2828b1afce709" category="list-text">Geben Sie Details zu einem Dienstprinzipal von Microsoft Entra an. Dieser Service-Principal erfordert auch spezielle Berechtigungen.</block>
   <block id="b4dba39cc2b8d5c6f4a03822fd76264e" category="list-text">Wählen Sie *Active Directory Service Principal* aus, um Informationen über den Microsoft Entra Service Principal einzugeben, der die erforderlichen Berechtigungen gewährt:</block>
@@ -2840,36 +2593,10 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">Erstellen und Einrichten eines Dienstprincipals in Microsoft Entra ID</block>
   <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">Wenn Sie unterschiedliche Azure-Anmeldedaten für BlueXP verwenden möchten, müssen Sie die erforderlichen Berechtigungen bis erteilen <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> Für jedes Azure Konto. Das folgende Bild zeigt zwei zusätzliche Konten, die jeweils mit einer Dienstprinzipal- und einer benutzerdefinierten Rolle eingerichtet sind, die Berechtigungen bereitstellt:</block>
   <block id="66106267dde1c941a1fde19110f5e949" category="paragraph">Wenn Sie den Marketplace verwenden, können Sie Berechtigungen bereitstellen, indem Sie der Connector-VM und einer vom System zugewiesenen verwalteten Identität eine benutzerdefinierte Rolle zuweisen oder ein Microsoft Entra-Dienstprincipal verwenden.</block>
-  <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">NetApp BlueXP erweitert und verbessert die über Cloud Manager bereitgestellten Funktionen. BlueXP ist eine einheitliche Managementplattform, die eine Hybrid-Multi-Cloud-Erfahrung für Storage und Datenservices über On-Premises- und Cloud-Umgebungen hinweg bietet.</block>
-  <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">Unified Management</block>
-  <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">Mit BlueXP können Sie Ihre gesamten Storage- und Daten-Assets über eine einzige Benutzeroberfläche managen.</block>
-  <block id="fc8ff23d0bf81d0f8427b5c75023f80e" category="inline-link">Weitere Informationen finden Sie auf der BlueXP-Website</block>
-  <block id="6680bbdbd7bdd3c542020121df4cb264" category="paragraph"><block ref="6680bbdbd7bdd3c542020121df4cb264" category="inline-link-rx"></block></block>
-  <block id="31f0834695d820dc381e57397e466d12" category="list-text">Neues Navigationsmenü</block>
-  <block id="e6481c5ec5346aeaf59c7bacad0a735a" category="list-text">Im Navigationsmenü von BlueXP sind die Services nun nach Kategorien sortiert und nach ihrer Funktionalität benannt. Sie können beispielsweise aus der Kategorie *Schutz* auf BlueXP Backup und Recovery zugreifen.</block>
-  <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">Ein Screenshot des Navigationsmenüs in BlueXP, in dem Kategorien wie Speicher und Gesundheit angezeigt werden.</block>
-  <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">Neue Produktintegrationen</block>
-  <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">Sie können jetzt die Amazon S3-Buckets in den AWS-Konten verwalten, in denen der Connector installiert ist.</block>
-  <block id="bcaa38b35b3f595027217ec10755368a" category="list-text">Datenservices, die zuvor nur als Standalone-Service über eine separate UI genutzt werden können, wie etwa der BlueXP Digital Advisor (Active IQ), können jetzt genutzt werden.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="list-text">Weitere Informationen .</block>
-  <block id="72098f7f145b12a125b92539edd37f4a" category="inline-link">Amazon S3 Buckets managen</block>
-  <block id="8a4a49cb4536baac7f58e0eb6e2dac29" category="list-text"><block ref="8a4a49cb4536baac7f58e0eb6e2dac29" category="inline-link-rx"></block></block>
-  <block id="23c19e9851a45bd1a62c97b5c51e16ab" category="inline-link">Management von E-Series Storage-Systemen</block>
-  <block id="120b07a98eececd322e53cecc2102f44" category="list-text"><block ref="120b07a98eececd322e53cecc2102f44" category="inline-link-rx"></block></block>
-  <block id="280f0ea2e556e240b5f15b51047b45b8" category="inline-link">Management von StorageGRID Storage-Systemen</block>
-  <block id="e85444ee57c2061143502fa15b083bcc" category="list-text"><block ref="e85444ee57c2061143502fa15b083bcc" category="inline-link-rx"></block></block>
-  <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">Erfahren Sie mehr über die Integration von Digital Advisor</block>
-  <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.</block>
-  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">Derzeit ist die Version 3.9.37 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
-  <block id="c42458c54134318669b685ee8730a478" category="paragraph">Wenn Sie sich mit den NetApp Cloud-Anmeldedaten bei BlueXP anmelden, können Sie jetzt Ihren Namen in *Benutzereinstellungen* bearbeiten.</block>
-  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Ein Screenshot, der die Möglichkeit zeigt, Ihren Namen unter Benutzereinstellungen zu bearbeiten.</block>
-  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">Die Bearbeitung Ihres Namens wird nicht unterstützt, wenn Sie sich mit einer Verbundverbindung oder mit Ihrem NetApp Support-Website-Konto anmelden.</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Führen Sie den folgenden Befehl aus, um die IP-Adresse für das Backup-Ziel zu aktualisieren:</block>
-  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">Schutz durch Ransomware</block>
-  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">8 März 2024</block>
   <block id="33e595f0fd43192e3f1d28a291860881" category="paragraph">ec2:DescribeAvailability Zones</block>
   <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">6 Juni 2023</block>
   <block id="5fc531b28735a6e141b39c2b5e2f1dcc" category="section-title">14 Februar 2023</block>
@@ -2900,24 +2627,11 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="0694adc8bc882f236f606e1c56eebe94" category="inline-link">Stoppen und starten Sie die Cloud Volumes ONTAP-Instanzen</block>
   <block id="96afcc62a59c68b277c1a37c2254e239" category="list-text"><block ref="96afcc62a59c68b277c1a37c2254e239" category="inline-link-rx"></block></block>
   <block id="1bf094b9d6f1b1c1ae5e745beefb3ff7" category="paragraph">Die Connector-Instanz und die Cloud Volumes ONTAP-Instanzen sind jetzt so konfiguriert, dass sie IMDSv2 verwenden.</block>
-  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">Derzeit ist die Version 3.9.38 für den Standardmodus und den eingeschränkten Modus verfügbar. Diese Version enthält Unterstützung für IMDSv2 in AWS und ein AWS-Berechtigungs-Update.</block>
-  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">BlueXP unterstützt jetzt den Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) mit der Connector-Instanz sowie mit Cloud Volumes ONTAP-Instanzen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.</block>
-  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
   <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">Der Instance Metadata Service (IMDS) wird in EC2-Instanzen wie folgt aktiviert:</block>
   <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraform-Skripte</block>
   <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">Wenn Sie eine neue EC2-Instanz in AWS starten und dann die Connector-Software manuell installieren, ist IMDSv2 standardmäßig ebenfalls aktiviert.</block>
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">Für bestehende Connectors wird IMDSv1 weiterhin unterstützt, Sie können IMDSv2 jedoch manuell auf der EC2-Instanz konfigurieren, wenn Sie dies wünschen.</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Für Cloud Volumes ONTAP ist IMDSv1 standardmäßig auf neuen und bestehenden Instanzen aktiviert. Sie können IMDSv2 auf den EC2-Instanzen manuell konfigurieren, wenn Sie möchten.</block>
-  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">Erfahren Sie, wie Sie IMDSv2 auf vorhandenen Instanzen konfigurieren</block>
-  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">Wir haben die Connector-Richtlinie für AWS mit der Berechtigung „ec2:DescribeAvailability Zones“ aktualisiert. Diese Berechtigung ist für eine kommende Version erforderlich. Wir werden die Versionshinweise mit weiteren Details aktualisieren, sobald diese Version verfügbar ist.</block>
-  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Anzeigen von AWS-Berechtigungen für den Connector</block>
-  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>.</block>
-  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">Die Proxy-Server-Einstellungen für den Connector sind jetzt auf der Seite *Connectors verwalten* (Standardmodus) oder auf der Seite *Connectors bearbeiten* (eingeschränkter Modus und privater Modus) verfügbar.</block>
-  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">Erfahren Sie, wie Sie den Connector für die Verwendung eines Proxy-Servers konfigurieren</block>
-  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>.</block>
-  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">Außerdem haben wir die Seite *Verbindungseinstellungen* in *Cloud Volumes ONTAP-Einstellungen* umbenannt.</block>
-  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">Ein Screenshot, der die Option Cloud Volumes ONTAP-Einstellungen zeigt, die im Menü Einstellungen verfügbar ist.</block>
-  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03c012ec036bd77d62ef64e67f7dbc5a" category="list-text">Navigieren Sie zur Seite *BlueXP Connector bearbeiten*.</block>
   <block id="75effefc9fa992948e167a31a7b2c21e" category="inline-image-macro">Ein Screenshot mit der Seite Connectors verwalten, die nach Auswahl des Connectors verfügbar ist.</block>
   <block id="e929efc0ae3c20b98faca1bce939c39f" category="paragraph"><block ref="e929efc0ae3c20b98faca1bce939c39f" category="inline-image-macro-rx" type="image"></block></block>
@@ -2932,74 +2646,22 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="7562ce5f768e11625bc10a4b9ebb71b0" category="list-text">Navigieren Sie zur Seite *BlueXP Connector bearbeiten*:</block>
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">Wählen Sie *Support Direct API Traffic*.</block>
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">Bei der Erstellung des Connectors aus BlueXP wird eine EC2-Instanz in AWS mit einer Standardkonfiguration implementiert. Nachdem Sie den Connector erstellt haben, sollten Sie nicht zu einem kleineren EC2-Instanztyp wechseln, der weniger CPU oder RAM hat. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
-  <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">Dieses Update enthält Verbesserungen an verschiedenen Funktionen und Services.</block>
-  <block id="e2c75aece78307cc6efce80e0fc6a89f" category="paragraph">Diese Version von Cloud Manager enthält Verbesserungen am Management von Cloud Volumes ONTAP.</block>
-  <block id="ab2fea55ae9697fcfeae223bb8d1a161" category="paragraph">Cloud Manager kann jetzt Cloud Volumes ONTAP 9.9 implementieren und managen.</block>
-  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP</block>
-  <block id="41671c8c2787c6b4ae4a7430aaed25a5" category="paragraph"><block ref="1d003678f7aeecaa48a9a55ee79dfa0c" category="inline-link-rx"></block>.</block>
-  <block id="360907953d19dad6cd45833cc14167e2" category="list-text">Die Implementierung von Cloud Volumes ONTAP 9.8 ist nun in der Umgebung der AWS Commercial Cloud Services (C2S) möglich.</block>
-  <block id="3e45f0a61d57f2e3257d5825fe5a7c94" category="inline-link">Erfahren Sie, wie Sie mit C2S beginnen</block>
-  <block id="b2d82b2661ffd005fd69b6dbe8cd323c" category="paragraph"><block ref="b2d82b2661ffd005fd69b6dbe8cd323c" category="inline-link-rx"></block></block>
-  <block id="acaa3f0ba647338374e9aa5717e4b179" category="list-text">Cloud Manager hat Ihnen immer die Möglichkeit gegeben, Cloud Volumes ONTAP-Daten mit dem AWS Key Management Service (KMS) zu verschlüsseln. Ab Cloud Volumes ONTAP 9.9 werden Daten auf EBS-Festplatten und auf S3 abgestufte Daten verschlüsselt, wenn Sie sich für einen vom Kunden gemanagten CMK entscheiden. Bisher wurden nur EBS-Daten verschlüsselt.</block>
-  <block id="dcbf930e1a349b31dc68e26e5227c6d0" category="paragraph">Beachten Sie, dass Sie für die Cloud Volumes ONTAP IAM-Rolle Zugriff zur Verwendung des CMK bereitstellen müssen.</block>
-  <block id="b2eca227b653383cc96f103eeeeaf77a" category="inline-link">Erfahren Sie mehr über die Einrichtung des AWS KMS mit Cloud Volumes ONTAP</block>
-  <block id="97e8e04f21dce84bbdc17d9128f42a47" category="paragraph"><block ref="97e8e04f21dce84bbdc17d9128f42a47" category="inline-link-rx"></block></block>
-  <block id="f4ddf81019b69d6e9ec665b8c011944c" category="paragraph">Sie können Cloud Volumes ONTAP 9.8 jetzt im Azure Department of Defense (DoD) Impact Level 6 (IL6) implementieren.</block>
-  <block id="235712a00d7d49281addbc1384cc33f2" category="list-text">In Google Cloud haben wir die Anzahl der für Cloud Volumes ONTAP 9.8 und höher erforderlichen IP-Adressen reduziert. Standardmäßig ist eine niedrigere IP-Adresse erforderlich (wir vereinheitlichen die Intercluster LIF mit der Node-Management-LIF). Darüber hinaus besteht die Möglichkeit, bei Verwendung der API die Erstellung der SVM-Management-LIF zu überspringen, was den Bedarf an einer zusätzlichen IP-Adresse verringert.</block>
-  <block id="4d75268045c1a28e17697720e7f27123" category="inline-link">Informieren Sie sich in Google Cloud über die IP-Adressanforderungen</block>
-  <block id="d28733663a4e51b540df89210de1322c" category="paragraph"><block ref="d28733663a4e51b540df89210de1322c" category="inline-link-rx"></block></block>
-  <block id="933d399c3cb0f03992675d49630ab818" category="list-text">Durch die Implementierung eines Cloud Volumes ONTAP HA-Paars in Google Cloud haben Sie nun die Möglichkeit, gemeinsame VPCs für VPC-1, VPC-2 und VPC-3 auszuwählen. Bisher könnte nur die VPC-0 eine gemeinsame VPC sein. Diese Änderung wird unterstützt durch Cloud Volumes ONTAP 9.8 und höher.</block>
-  <block id="fcc0572bd798a75498f99e20a8093f04" category="inline-link">Erfahren Sie mehr über die Netzwerkanforderungen von Google Cloud</block>
-  <block id="0007fc2f224950d7146482dd816d045a" category="paragraph"><block ref="0007fc2f224950d7146482dd816d045a" category="inline-link-rx"></block></block>
-  <block id="c620fdcd127f42421f0ebb82ca0160b3" category="list-text">Cloud Manager benachrichtigt jetzt Admin-Benutzer per E-Mail, wenn ein Connector nicht ausgeführt wird.</block>
-  <block id="f4923be5b51cdac20509609eb07ce1aa" category="paragraph">Wenn Ihre Connectors stets einsatzbereit sind, können Sie die optimale Verwaltung von Cloud Volumes ONTAP und anderen NetApp Cloud-Diensten sicherstellen.</block>
-  <block id="fbbb26e1a604e4bb843aa5158a56bf75" category="list-text">Cloud Manager zeigt jetzt eine Benachrichtigung an, wenn Sie den Instanztyp für den Connector ändern müssen.</block>
-  <block id="07a7156f8ae2953eb97fcedc0f846001" category="paragraph">Wenn Sie den Instanztyp ändern, können Sie die neuen Funktionen und Funktionen verwenden, die Ihnen derzeit fehlen.</block>
-  <block id="dd7348bf6510a0f506ab7acf9e645e94" category="list-text">Cloud Sync unterstützt jetzt Synchronisierungsbeziehungen zwischen ONTAP S3 Storage und SMB-Servern:</block>
-  <block id="eb6261f1bc2ebf45d278c1fde4d7cfc4" category="list-text">Von ONTAP S3 Storage zu einem SMB-Server</block>
-  <block id="cc619045f8d284993e15378035fbf631" category="list-text">Ein SMB-Server für ONTAP S3 Storage</block>
-  <block id="3d9c61bbb0656b8a470cbe7bd67859f7" category="inline-link">Anzeigen von unterstützten Synchronisierungsbeziehungen</block>
-  <block id="a75cec21dd4fd0bc8a57fdafde743e02" category="paragraph"><block ref="a75cec21dd4fd0bc8a57fdafde743e02" category="inline-link-rx"></block></block>
-  <block id="0957e4e6271f0a8785ac7980f9561e4e" category="list-text">Mit Cloud Sync können Sie die Konfiguration einer Datenbrokergruppe jetzt direkt über die Benutzeroberfläche vereinheitlichen.</block>
-  <block id="e0341128a5853714165581951816b70b" category="paragraph">Es wird nicht empfohlen, die Konfiguration selbst zu ändern. Sie sollten sich mit NetApp beraten lassen, um zu erfahren, wann die Konfiguration geändert werden kann und wie Sie sie ändern können.</block>
-  <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">Erfahren Sie mehr über die Definition einer einheitlichen Konfiguration</block>
-  <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
-  <block id="b4baef0a3a494382cb3865753733f031" category="list-text">Beim Tiering in Google Cloud Storage können Sie eine Lebenszyklusregel anwenden, damit die Tiering-Daten nach 30 Tagen von der Standard-Storage-Klasse in den kostengünstigeren Nearline-, Coldline- oder Archivspeicher überführt werden.</block>
-  <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">Erfahren Sie, wie Sie diese zusätzlichen Cluster erkennen</block>
-  <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
-  <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Sie sind nun in der Lage, das Service-Level für ein Volume dynamisch zu ändern, um die Workload-Anforderungen zu erfüllen und die Kosten zu optimieren. Das Volume wird in den anderen Kapazitäts-Pool verschoben, ohne dass sich dies auf das Volume auswirkt.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
-  <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">Für BlueXP ist jetzt eine neue Version des privaten Modus verfügbar. Diese Version umfasst die folgenden Versionen der BlueXP Services, die im Private-Mode unterstützt werden.</block>
   <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Version enthalten</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Stecker</block>
-  <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38</block>
-  <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">12 März 2024</block>
-  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">4 März 2024</block>
   <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP-Management</block>
   <block id="900dd8f50d2294930a102034524e26b7" category="cell">Lokales ONTAP-Cluster-Management</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="cell">18 Sept. 2022</block>
   <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">Weitere Informationen zum privaten Modus</block>
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
-  <block id="79911dec911bf03733bda7065e7e3964" category="section-title">Transparente Proxyserver werden nicht unterstützt</block>
-  <block id="d0da98586108cb1be969ff43380eee45" category="paragraph">BlueXP unterstützt in Verbindung mit dem Connector keine transparenten Proxyserver.</block>
-  <block id="eb38246be0b09c0a9d91cb2085b20b5d" category="inline-link-macro">Erfahren Sie mehr über die Verwendung eines Proxy-Servers mit dem Connector</block>
-  <block id="20cac3f0e9288e4238db227a684ecc49" category="paragraph"><block ref="cad892d1cc18ace00e67298d6d6448d0" category="inline-link-macro-rx"></block>.</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">Unterstützte Konfigurationen</block>
   <block id="116ea46795790eba5c14aa5d5c67dd04" category="list-text">Cloud Volumes ONTAP muss eine der folgenden Versionen ausführen:</block>
   <block id="9ddb47b49482c226b2e422f267668544" category="list-text">9.12.1 P2 (oder jedes weitere Patch)</block>
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 (oder jedes weitere Patch)</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1 oder eine beliebige Version nach dieser Version</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">Wird während des Cloud Volumes ONTAP-Upgrade-Prozesses verwendet</block>
-  <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Wir haben die Anforderungen für die Docker Engine aktualisiert, um die maximal unterstützte Version des Connectors anzugeben. Diese ist 25.0.5. Die unterstützte Mindestversion ist immer noch 19.3.1.</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">Host-Anforderungen des Connectors anzeigen</block>
   <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>.</block>
   <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">Für neue Connector-Implementierungen von BlueXP oder durch die Nutzung von<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>, IMDSv2 ist standardmäßig auf der EC2-Instanz aktiviert.</block>
-  <block id="103f00dbabbbaa84ff4ad44e1ae8f0e0" category="paragraph">Derzeit ist die Version 3.9.39 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
-  <block id="492d5f07c90a7db03029f9a6c5532ce3" category="paragraph">Zur Erstellung eines Connectors in AWS aus BlueXP sind jetzt zwei zusätzliche Berechtigungen erforderlich:</block>
-  <block id="d563c67cb5d34e4276aadadd838867f8" category="paragraph">Diese Berechtigungen sind erforderlich, um IMDSv2 auf der EC2-Instanz für den Connector zu aktivieren.</block>
-  <block id="99c957a89e85bd737f02914924c399b3" category="paragraph">Wir haben diese Berechtigungen in die Richtlinie aufgenommen, die beim Erstellen eines Connectors in der BlueXP Benutzeroberfläche angezeigt wird, und in derselben Richtlinie, die in der Dokumentation enthalten ist.</block>
-  <block id="679562c52996a8e2a4db9524251394f4" category="admonition">Diese Richtlinie enthält nur die Berechtigungen, die zum Starten der Connector-Instanz in AWS von BlueXP erforderlich sind. Es ist nicht dieselbe Richtlinie, die der Connector-Instanz zugewiesen wird.</block>
-  <block id="1c51e24c3b44b362001f3c1a6c51b065" category="inline-link">Erfahren Sie, wie Sie AWS-Berechtigungen zur Erstellung eines Connectors aus AWS einrichten</block>
-  <block id="16a785388c44f1116fdb34f01d8816bb" category="paragraph"><block ref="53bbefe6872cea40f97befa74964b71d" category="inline-link-rx"></block>.</block>
   <block id="946e79c4f58ab5a0a68d36b7ccc89998" category="list-text">Wenn Sie den Connector vom AWS Marketplace starten, ist IMDSv1 standardmäßig aktiviert. Sie können IMDSv2 auf der EC2-Instanz manuell konfigurieren.</block>
   <block id="3c27ef222c1ee58d80a2a938ecc7eab9" category="paragraph">IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen.<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
   <block id="8cdfbe4b35f3f9abb80295a7c104865a" category="paragraph">Es ist wichtig, die Rolle aus dem Dienst *Subscriptions* zuzuweisen, da hier der Umfang der Rollenzuweisung auf Abonnementebene festgelegt ist. Der _scope_ definiert die Ressourcen, für die der Zugriff gilt. Wenn Sie einen Umfang auf einer anderen Ebene angeben (z. B. auf Ebene der Virtual Machines), wirkt es sich darauf aus, dass Sie Aktionen aus BlueXP ausführen können.</block>
@@ -3020,8 +2682,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="f05a0e154340f7c017b3a9bfa5a8bf05" category="inline-link">Erfahren Sie mehr über den Kapazitätsmanagement-Modus</block>
   <block id="e9ec7fb1196fea38d01bfb38780ff401" category="paragraph"><block ref="e9ec7fb1196fea38d01bfb38780ff401" category="inline-link-rx"></block></block>
   <block id="c73bbd3786350b0a8d3577d82afdf489" category="list-text">Red Hat Enterprise Linux</block>
-  <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">8.6 bis 8.9</block>
-  <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1 bis 9.3</block>
   <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">Container-Orchestrierungstool</block>
   <block id="58ee14553c5227edc98c5edc7c7652e1" category="list-text">Je nach Betriebssystem ist entweder Podman oder Docker Engine erforderlich, bevor Sie den Connector installieren.</block>
   <block id="105ab5fc478f234922108aa9df08a4ee" category="section-title">Schritt 4: Installieren Sie Podman oder Docker Engine</block>
@@ -3058,7 +2718,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="0cfa4395111b233336d8ffefa6b1d800" category="inline-xref">Erfahren Sie mehr über vorhandene Connectors unter RHEL 7 oder CentOS 7</block>
   <block id="62ff3ea7851f2f84caf44f1e20fe3b5a" category="list-text">Wenn Sie einen bestehenden Connector auf einem RHEL 7-Host verwenden, unterstützen wir keine Aktualisierung des RHEL 7-Betriebssystems auf RHEL 8 oder 9. <block ref="1f01b626a2e1f14f910a4c0ca7c14719" category="inline-xref-macro-rx"></block>.</block>
   <block id="d9fb1337dfb6a869dd0a2630e14b4543" category="section-title">Einstellung der Unterstützung für RHEL 7 und CentOS 7</block>
-  <block id="16051bd228f38a4877773f8f795d59a9" category="paragraph">Am 30. Juni 2024 wird RHEL 7 das Ende der Wartung (End of Maintenance, EOM) erreichen, während CentOS 7 das Ende des Lebenszyklus (End of Life, EOL) erreichen wird. NetApp wird den Connector auf diesen Linux-Distributionen bis zum 30. Juni 2024 weiterhin unterstützen.</block>
   <block id="7eba69a7025f97bec42a74bd138b395e" category="inline-link">Red hat: Wissenswertes über Red hat Enterprise Linux 7 Ende der Wartung</block>
   <block id="ebc4aba90c33f7558582b9bbf738fdd9" category="paragraph"><block ref="ebc4aba90c33f7558582b9bbf738fdd9" category="inline-link-rx"></block></block>
   <block id="673678917598778ddca4521cd7c53d87" category="section-title">Vorhandene Connectors auf RHEL 7 oder CentOS 7</block>
@@ -3107,20 +2766,9 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="ae205f602e7bb700e8f3f1c9a194a3e4" category="section-title">Schritt 4: Cloud-Berechtigungen einrichten</block>
   <block id="b94d9194c0f0e59de690d8a088d1601b" category="section-title">Schritt 5: Installieren Sie den Stecker</block>
   <block id="166140f584d4544702260c25a6b8eab6" category="section-title">Mehrere Arbeitsumgebungen und Steckverbinder</block>
-  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 Mai 2024</block>
-  <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Diese Version von BlueXP Connector enthält Unterstützung für zusätzliche Betriebssysteme, kleinere Sicherheitsverbesserungen und Bug Fixes.</block>
-  <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">Derzeit ist die Version 3.9.40 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
-  <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">Podman ist als Container-Orchestrierungstool für diese Betriebssysteme erforderlich.</block>
-  <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">Sie sollten sich der Podman-Anforderungen, bekannten Einschränkungen, einer Zusammenfassung der Betriebssystemunterstützung, der Vorgehensweise bei einem RHEL 7-Host, der ersten Schritte und mehr bewusst sein.</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Erfahren Sie mehr über die Unterstützung von RHEL 8 und 9 mit dem Connector</block>
   <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>.</block>
-  <block id="cc33fea72b72b4631424774600dd1785" category="inline-link">Erfahren Sie, was Sie tun können, wenn ein vorhandener Connector auf RHEL 7 oder CentOS 7 ausgeführt wird</block>
-  <block id="ab95c14710d4a4d5d91375c4a1b3315b" category="paragraph"><block ref="079fd36262e0750841aa2ea8902cdc7a" category="inline-link-rx"></block>.</block>
-  <block id="2f4b86d46e79a7a3f22d1c784c12799e" category="paragraph">In Version 3.9.38 haben wir die Connector-Richtlinie für AWS aktualisiert und damit die Berechtigung „ec2:DescribeAvailability Zones“ aufgenommen. Diese Genehmigung ist jetzt erforderlich, um AWS Local Zones with Cloud Volumes ONTAP zu unterstützen.</block>
-  <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">Weitere Informationen zum Support für AWS Local Zones</block>
-  <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
-  <block id="bac0b5f0ce34c6e2b396323f31301d29" category="paragraph"><block ref="c76726faac091108ba3ec0f1466b791f" category="inline-link-rx"></block>.</block>
   <block id="688aea6136f160e02c8d5bbec6894343" category="list-text">Die Installation beinhaltet die Docker Engine, das erforderliche Tool zur Container-Orchestrierung.</block>
   <block id="c4dc961d5316a59ada13d5c96c1a11fa" category="paragraph">Die Protokolle in diesen Ordnern enthalten Details zum Connector.</block>
   <block id="686b3d5992961d588971df7de7cda8a9" category="section-title">Schritt 4: Berechtigungen einrichten</block>
@@ -3178,19 +2826,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="df6a3e698694ef43588c621a4f033d31" category="inline-link-macro">Erfahren Sie mehr über die IAM-Richtlinie für den Connector</block>
   <block id="1fb320e90a252e8c1b4c19e3cbd46329" category="list-text">Wenn BlueXP den Connector erstellt, werden eine IAM-Rolle und ein Instanzprofil für die Instanz erstellt. Diese Rolle umfasst Berechtigungen, mit denen der Connector AWS Ressourcen managen kann. Sie müssen sicherstellen, dass die Rolle immer auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Versionen hinzugefügt werden. <block ref="7c04064b609d1f2f70bc0b0dc253bdfa" category="inline-link-macro-rx"></block>.</block>
   <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">Außerdem müssen Sie sicherstellen, dass die Rolle auf dem neuesten Stand ist, wenn neue Berechtigungen in nachfolgenden Releases hinzugefügt werden. Wenn neue Berechtigungen erforderlich sind, werden diese in den Versionshinweisen aufgeführt.</block>
-  <block id="3a88f5b91fe23c6da00e330b440f9fd7" category="paragraph">Ein neues Private-Mode-Release steht jetzt zum Download auf der NetApp Support-Website zur Verfügung. Diese Version umfasst die folgenden Versionen der BlueXP Services, die im Private-Mode unterstützt werden.</block>
-  <block id="4f56b8c7a0f62edc59659cfaecc68958" category="paragraph">Beachten Sie, dass diese Version des privaten Modus die Unterstützung für den Connector mit Red hat Enterprise Linux 8 und 9 enthält.</block>
-  <block id="f691a3ef752f6e51a74183a6b7b1c432" category="cell">3.9.40</block>
   <block id="918de91f5332dad6620331712ef5c21d" category="cell">15. Mai 2024 (Version 1.31)</block>
-  <block id="64cc8195fcb01e582343c910736d1abd" category="paragraph">Weitere Informationen zu den verschiedenen Versionen dieser BlueXP Services finden Sie in den Versionshinweisen zu den einzelnen BlueXP Services.</block>
-  <block id="451cc12943297b25b1cf250cc5d0e60a" category="inline-link">Erfahren Sie mehr über die Neuerungen bei BlueXP Backup und Recovery</block>
-  <block id="d846859679a4eca86e97e1887623b347" category="list-text"><block ref="d846859679a4eca86e97e1887623b347" category="inline-link-rx"></block></block>
-  <block id="dd890c1f1f06a084e8274154f3f07ebe" category="inline-link">Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung</block>
-  <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
-  <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">Erfahren Sie mehr über Neuerungen beim Cloud Volumes ONTAP Management in BlueXP</block>
-  <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
-  <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">Der Connector wird jetzt auf Hosts unterstützt, auf denen die folgenden Versionen von Red hat Enterprise Linux mit _New_ Connector-Installationen ausgeführt werden, wenn BlueXP im Standardmodus oder eingeschränkter Modus verwendet wird:</block>
-  <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">Die Version 3.9.41 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP erfordert diesen Platz<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Da Docker oder Podman so konzipiert sind, dass die Container in diesem Verzeichnis erstellt werden. Insbesondere werden Container in der erstellt<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> Verzeichnis. Externe Mounts oder Symlinks funktionieren nicht für diesen Raum.</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">Ein Bare-Metal- oder gehosteter Hypervisor, der für die Ausführung eines unterstützten Betriebssystems zertifiziert ist, ist erforderlich.</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine ist für Ubuntu erforderlich.</block>
@@ -3208,15 +2844,8 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">In Ihrem Posteingang finden Sie eine E-Mail von NetApp, die Anweisungen zur Überprüfung Ihrer E-Mail-Adresse enthält.</block>
   <block id="6a453053d8be9574b7b5d32eb1d51842" category="paragraph">Dieser Schritt ist erforderlich, bevor Sie sich bei BlueXP anmelden können.</block>
   <block id="a0e12b903763894b05053f1758f87c86" category="list-text">Lesen Sie nach der Anmeldung die Endbenutzer-Lizenzvereinbarung durch, und akzeptieren Sie die Bedingungen.</block>
-  <block id="b1360a775c6891602e0321f2a2a1aa2b" category="paragraph">Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in der Region AWS Canada West (Calgary).</block>
-  <block id="a8b199c601f75b6af66327457070a9f8" category="paragraph">Wenn der Connector auf einem Ubuntu-Host installiert ist, ist die unterstützte Mindestversion der Docker Engine jetzt 23.0.6. Es war vorher 19.3.1.</block>
-  <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">Die maximal unterstützte Version ist immer noch 25.0.5.</block>
-  <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">Neue Benutzer, die sich bei BlueXP anmelden, müssen jetzt ihre E-Mail-Adresse überprüfen, bevor sie sich anmelden können.</block>
-  <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">Die Version 3.9.42 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
   <block id="597f1630cd21d22c527f63002e42f059" category="list-text">8.6 bis 8.10</block>
   <block id="3cf44b158a4bb7a8c4ca007889bedc1a" category="paragraph">Beachten Sie die folgenden Informationen zur Unterstützung von RHEL 8 und 9:</block>
-  <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP unterstützt jetzt die Installation des Connectors auf einem Red hat Enterprise Linux 8.10 Host bei Verwendung des Standardmodus oder des eingeschränkten Modus.</block>
-  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">Die Unterstützung für RHEL 8.10 beginnt mit der Version 3.9.40 des Connectors.</block>
   <block id="95dfe7c62c6772d34f6255b3027f736d" category="inline-link">BlueXP Connector listing on the AWS Marketplace</block>
   <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">Go to the<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
   <block id="6c3a57872e006099844f13049e7b1891" category="list-text"><block ref="6c3a57872e006099844f13049e7b1891" category="inline-link-macro-rx"></block></block>
@@ -3228,19 +2857,11 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="bce5cf056b28239df2bdb7b2083217ac" category="paragraph"><block ref="242e7f2f46e42a12308aa354a9159aef" category="inline-link-macro-rx"></block>.</block>
   <block id="b25308e5b7cefc33ec331b935d12e84d" category="paragraph">Sie müssen den Host für den Connector vorbereiten, indem Sie Podman oder die Docker Engine installieren.</block>
   <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">Ein neues Private-Mode-Release steht jetzt zum Download auf der NetApp Support-Website zur Verfügung.</block>
-  <block id="de4d4b8489d091cd028889fa8739a4a3" category="paragraph">Diese Version enthält Unterstützung für die Installation des Connectors auf einem Red hat Enterprise Linux 8- oder 9-Host, wenn BlueXP im privaten Modus verwendet wird. Die folgenden Versionen von RHEL werden unterstützt:</block>
-  <block id="ee91704d04c9c24001ba7aa413122767" category="paragraph">Diese Version umfasst die folgenden Versionen der BlueXP Services, die im Private-Mode unterstützt werden.</block>
-  <block id="58660abbd738b63f91f751c0fcd3787d" category="cell">3.9.42</block>
-  <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 Juli 2024</block>
-  <block id="4736cb006ef02fa673f618379e2106bd" category="cell">Juli 2024 (Version 1.33)</block>
-  <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 Juni 2024</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen t3.2xlarge.</block>
   <block id="021caa7094e7de94c50c2e35da292351" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen Standard_D8s_v3.</block>
   <block id="bff17a7a57b9d5cdc97a4f823a72230f" category="list-text">Einen Instanztyp, der die oben aufgeführten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen n2-Standard-8.</block>
   <block id="91a03852a4fcc00d6d0d7b56befab967" category="inline-xref">Zeigen Sie die Podman-Versionen an, die von BlueXP  unterstützt werden</block>
   <block id="37ec26cfa2b5ba215786c921633974f0" category="paragraph">Wobei &lt;version&gt; die unterstützte Version von Podman ist, die Sie installieren. <block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>.</block>
-  <block id="ebf399faefe8b72bdfba77e608b5c6b1" category="cell">Unterstützt in Regierungsregionen und Geschäftsregionen mit eingeschränkter Betriebsart. Nicht unterstützt in souveränen Regionen mit eingeschränktem Modus. Im eingeschränkten Modus unterstützt BlueXP  Backup und Recovery ausschließlich Backup und Wiederherstellung von ONTAP-Volume-Daten.<block ref="db0a18d2a99588054f71bf6c0bd14abb" category="inline-link-rx"></block> Backup und Restore von Applikationsdaten und Virtual Machine-Daten werden nicht unterstützt.</block>
-  <block id="207db32d1fe68c1dcdb493d5ea79d77f" category="cell">Unterstützt in kommerziellen Regionen AWS und Azure. BlueXP  Backup und Recovery wird nicht in Google Cloud oder in<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>oder<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block> im privaten Modus unterstützt und unterstützt nur Backup und Wiederherstellung von ONTAP-Volume-Daten.<block ref="178bedf5671592d86ab011b6af0333e7" category="inline-link-rx"></block> Backup und Restore von Applikationsdaten und Virtual Machine-Daten werden nicht unterstützt.</block>
   <block id="1b021f96102834ba370c95f2fe7f48a9" category="paragraph">Backup und Restore von Applikationsdaten und Virtual Machine-Daten werden nicht unterstützt.</block>
   <block id="33ff271280dc3e0c2c15bf39aeefdeb9" category="list-text">Der EC2-Instanztyp ist t3.2xlarge.</block>
   <block id="f637fe372218bb6ee39fd481301dc99f" category="list-text">Der VM-Typ ist Standard_D8S_v3.</block>
@@ -3260,15 +2881,8 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud: n2-Standard-8</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">Podman Version 4.9.4 wird jetzt bei der Installation des Connectors auf einem Red hat Enterprise Linux 8.10-Host unterstützt.</block>
   <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">Wenn Sie Identitätsföderation mit BlueXP  verwenden, muss jeder Benutzer, der sich zum ersten Mal bei BlueXP  anmeldet, ein schnelles Formular ausfüllen, um seine Identität zu validieren.</block>
-  <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="section-title">In dieser Version enthaltene Versionen</block>
-  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">Update zu den AWS-Berechtigungen</block>
   <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">Bis 22. April 2024</block>
-  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">Unterstützung für IMDSv2</block>
   <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">Bis 5. Dezember 2023</block>
-  <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">Erweiterung bei allen Cloud-Providern verfügbar</block>
-  <block id="7b73adc87602305d19eea3376846e09c" category="section-title">Verbesserungen in AWS verfügbar</block>
-  <block id="0ac19842b01b2e595d367d49d3a2f512" category="section-title">Erweiterung in Azure verfügbar</block>
-  <block id="b1f9439900369929f00410057598c853" category="section-title">Verbesserungen in Google Cloud verfügbar</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Software-Updates</block>
   <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">Unterstützte Connector-Versionen</block>
   <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 bei Verwendung von BlueXP  im Standardmodus oder eingeschränkter Modus</block>
@@ -3665,7 +3279,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">Mit BlueXP  Identity and Access Management (IAM) können Sie Ihrer Organisation Mitglieder hinzufügen und ihnen eine oder mehrere Rollen innerhalb Ihrer Ressourcenhierarchie zuweisen. Eine _Rolle_ enthält einen Satz von Berechtigungen, mit denen ein Mitglied bestimmte Aktionen auf einer bestimmten Ebene der Ressourcenhierarchie ausführen kann. Sie können neue Benutzerkonten und Dienstkonten zuordnen, Mitgliederrollen verwalten und vieles mehr.</block>
   <block id="e3a1bd8f43fc761424ef512d07c27a8b" category="section-title">Fügen Sie Mitglieder zu Ihrer Organisation hinzu</block>
   <block id="2fa104cdb397e386efece8c040a2e601" category="open-title">Benutzerkonto</block>
-  <block id="55116207f6aac3a1c7009f777207f1eb" category="list-text">Wenn der Benutzer dies noch nicht getan hat, bitten Sie ihn, zum zu gehen<block ref="2fbfa33fd647f6f78a572269d50d0708" category="inline-link-rx"></block> und sich anzumelden.</block>
   <block id="a03a7a8bd694ce33c9c0c2cfdb88ceeb" category="inline-link-macro">Erfahren Sie, wie Sie sich bei BlueXP  anmelden können</block>
   <block id="cf2da96b6ab9e2a236b955bf0f10d6cf" category="paragraph"><block ref="0ad6f11c6cde9791902ac82d37c3487c" category="inline-link-macro-rx"></block>.</block>
   <block id="ea06d0aa9a6946f5aa264a3c85890998" category="list-text">Wählen Sie *Mitglieder*.</block>
@@ -3710,7 +3323,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">Wenn Sie die Ressource mit Projekten verknüpft haben, können Mitglieder, die Berechtigungen für diese Projekte haben, jetzt in BlueXP  auf die Ressource zugreifen.</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">Erfahren Sie mehr über das Zuordnen einer Ressource zu einem Ordner</block>
   <block id="0764009847ea7e98389494f95f4d739e" category="list-text">Wenn Sie die Ressource einem Ordner zugeordnet haben, kann ein _Ordner oder Projektadministrator_ nun von BlueXP  IAM aus auf die Ressource zugreifen. <block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>.</block>
-  <block id="9b3a53db52bc1f1723b9689c9020a57f" category="paragraph">Wenn die zugeordnete Ressource mithilfe eines BlueXP -Connectors ermittelt wird und Sie andere Mitglieder in Ihrer Organisation haben, müssen Sie den Connector auch dem Projekt zuordnen, dem die Ressource jetzt zugeordnet ist. Andernfalls können BlueXP  Mitglieder, die nicht über die Rolle „_Organisation admin_“ verfügen, nicht auf den Connector und dessen zugehörige Ressource zugreifen.</block>
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">Zeigen Sie die mit einer Ressource verbundenen Ordner und Projekte an</block>
   <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">Um zu ermitteln, wo eine Ressource in der Hierarchie Ihrer Organisation verfügbar ist, können Sie die Ordner und Projekte anzeigen, die mit dieser Ressource verknüpft sind.</block>
   <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">Navigieren Sie auf der Seite *Ressourcen* zu einer Ressource in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *Details anzeigen* aus.</block>
@@ -3840,7 +3452,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="69613b7c17d10062f3fcc9393553d449" category="paragraph">BlueXP  unterstützt SELinux mit Ubuntu-Hosts nicht.</block>
   <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">Erfahren Sie mehr über SELinux</block>
   <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
-  <block id="46764118606f1e8527ee8d7c6a3005a3" category="paragraph"><block ref="5741665325bf1620748daff7a5523b04" category="inline-link-macro-rx"></block>.</block>
   <block id="2cc038b51982044440dd65fe627f5133" category="sidebar">Steigen Sie ein für NetApp BlueXP, um Daten zu erstellen, zu schützen und zu managen – in Ihren lokalen und Cloud-Umgebungen. Nach Abschluss der Einrichtung können Sie den Zugriff auf Ihre Ressourcen mithilfe von BlueXP  Identity and Access Management (IAM) steuern und Connectors, Cloud-Provider-Konten und vieles mehr verwalten.</block>
   <block id="d7818a3dcaa08963a99fa80d50e4d009" category="sidebar">BlueXP IAM</block>
   <block id="f9979c483e6c4c3e0bb110084e2529e7" category="sidebar">Organisieren Sie Ihre Ressourcen mit Ordnern und Projekten</block>
@@ -3933,8 +3544,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="624278dc2f533755332cf0c1ebe752d5" category="paragraph">Auf der Seite Connectors werden nur die derzeit verfügbaren Connectors aufgeführt. Es werden keine Anschlüsse mehr angezeigt, die Sie entfernt haben.</block>
   <block id="1feb614364d6d0a180fddcd6e40a0223" category="cell">Erstellen, Ändern oder Löschen von Arbeitsumgebungen (Hinzufügen oder Erkennen neuer Ressourcen über den BlueXP -Bildschirm)</block>
   <block id="15a95a870efdd28ed28ff5a317681ee4" category="cell">Rollen zuweisen und Benutzer hinzufügen</block>
-  <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c203240d7d7088c0a43d84641289267" category="summary">Mit NetApp BlueXP steht Ihrem Unternehmen eine einzelne Managementplattform zur Verfügung, mit der Sie Ihre Daten über Ihre On-Premises- und Cloud-Umgebungen hinweg erstellen, schützen und regeln können.</block>
   <block id="1abbc9b3f7ef6da2c82af17a4e17d91d" category="paragraph">BlueXP  bietet einheitliche Storage-Kontrolle in Ihrer Hybrid-Multi-Cloud-Umgebung und integrierte Datenservices zum Schutz, zur Sicherung und Optimierung Ihrer Daten.</block>
   <block id="3c916fa6dfbc9f3d399c969d9c767df5" category="section-title">Einheitliche Storage-Kontrolle über den BlueXP  Arbeitsbereich</block>
@@ -4094,116 +3703,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">CPU- und RAM-Anforderungen aktualisiert</block>
   <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">Unterstützung für Podman 4.9.4 mit RHEL 8.10</block>
   <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">Benutzervalidierung für Identity Federation</block>
-  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">31 Juli 2024</block>
-  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">Freigabe des privaten Modus (3.9.42)</block>
-  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 Juli 2024</block>
-  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Unterstützung für RHEL 8.10</block>
-  <block id="8d330209f05c51bacefbee76e24d82e9" category="section-title">8 Juli 2024</block>
-  <block id="cfcc30e7f5ca49191957ff6a4f02c34d" category="section-title">Anschluss 3.9.42</block>
-  <block id="2a63395e5cc23edb6ca284fd55193c26" category="section-title">Aktualisierte Anforderungen für die Docker Engine</block>
-  <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">E-Mail-Verifizierung jetzt erforderlich</block>
-  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">12 Juni 2024</block>
-  <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">Anschluss 3.9.41</block>
-  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">4 Juni 2024</block>
-  <block id="87174c130fb334601e88a5630bf24478" category="section-title">Freigabe des privaten Modus (3.9.40)</block>
-  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">Anschluss 3.9.40</block>
-  <block id="1389c5e279a667948337a56d97caf570" category="section-title">Anschluss 3.9.39</block>
-  <block id="dcaa3e92176845b160207f9f0d80aef3" category="section-title">AWS Berechtigungen zum Erstellen eines Connectors</block>
-  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">Bis 11. April 2024</block>
-  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Update für die Docker Engine</block>
-  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">26 März 2024</block>
-  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">Freigabe des privaten Modus (3.9.38)</block>
-  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">Anschluss 3.9.38</block>
-  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">Proxy-Einstellungen und Cloud Volumes ONTAP-Einstellungen</block>
-  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">15 Februar 2024</block>
-  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">Anschluss 3.9.37</block>
-  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Namen bearbeiten</block>
-  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 Januar 2024</block>
-  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">Anschluss 3.9.36</block>
-  <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">Freigabe des privaten Modus (3.9.35)</block>
-  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">Bis 8. November 2023</block>
-  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Anschluss 3.9.35</block>
-  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 Oktober 2023</block>
-  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">Anschluss 3.9.34</block>
-  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 September 2023</block>
-  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Anschluss 3.9.33</block>
-  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Anschluss 3.9.32</block>
-  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 Juli 2023</block>
-  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Anschluss 3.9.31</block>
-  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">4 Juni 2023</block>
-  <block id="5440676d566a261de836cdd1b9ea4e50" category="section-title">Anschluss 3.9.30</block>
-  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 Mai 2023</block>
-  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">Anschluss 3.9.29</block>
-  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">Bis 4. April 2023</block>
-  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">Bis 3. April 2023</block>
-  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">Anschluss 3.9.28</block>
-  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 März 2023</block>
-  <block id="ba5bb99eb6a04798c8ccd3f156db75a5" category="section-title">Anschluss 3.9.27</block>
-  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 Februar 2023</block>
-  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">Anschluss 3.9.26</block>
-  <block id="1f7138998459804601fc351f8d442e29" category="section-title">Januar 2023</block>
-  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">Anschluss 3.9.25</block>
-  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">Bis 4. Dezember 2022</block>
-  <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">Anschluss 3.9.24</block>
-  <block id="5a4346a01828d72104a6540080377b25" category="section-title">6. November 2022</block>
-  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">Anschluss 3.9.23</block>
-  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">November 2022</block>
-  <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">Einführung von BlueXP</block>
-  <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">Aufforderung zum Aktualisieren der NSS-Anmeldeinformationen</block>
-  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 September 2022</block>
-  <block id="567aae3125fb3d0d81322caa575a9843" category="section-title">Anschluss 3.9.22</block>
-  <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 Juli 2022</block>
-  <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">Anschluss 3.9.21</block>
-  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">15 Juli 2022</block>
-  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">Richtlinienänderungen</block>
-  <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">3 Juli 2022</block>
-  <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">Anschluss 3.9.20</block>
-  <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">28 Juni 2022</block>
-  <block id="47d69a1f17128c359904338c3502fe31" category="section-title">Loggen Sie sich mit NetApp Anmeldedaten ein</block>
-  <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">7 Juni 2022</block>
-  <block id="40beea3ec23a7affa39b1a1cbd52f21d" category="section-title">Anschluss 3.9.19</block>
-  <block id="390e66de0b25a9d9b226d4ede6fa20b5" category="section-title">12 Mai 2022</block>
-  <block id="e2632c3a4c1aff50543e98b03420fd3c" category="section-title">Patch-Anschluss 3.9.18</block>
-  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2 Mai 2022</block>
-  <block id="def752908b0fa662bfb5de654a533140" category="section-title">Anschluss 3.9.18</block>
-  <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">3. April 2022</block>
-  <block id="5dc3495f29e6f1332d6d809ba30cbf83" category="section-title">Anschluss 3.9.17</block>
-  <block id="ba26e4556a0f160834687982b0479336" category="section-title">27 Februar 2022</block>
-  <block id="8c4a1103eeca70528bc946c2246ec6f1" category="section-title">Anschluss 3.9.16</block>
-  <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">30 Januar 2022</block>
-  <block id="1bb66afbb0f9c20ad9ce021a7051d622" category="section-title">Anschluss 3.9.15</block>
-  <block id="586301717819197e24001cac47efdaaa" category="section-title">2 Januar 2022</block>
-  <block id="3eb3c5317b96f11c0338c5ff2b831a15" category="section-title">Verringerte Endpunkte für den Konnektor</block>
-  <block id="cdacfba529ee299ab36d1cdf539f519d" category="section-title">EBS-Festplattenverschlüsselung für den Connector</block>
-  <block id="c9ace35ceff752453d1b0f7978e94417" category="section-title">E-Mail-Adresse für NSS-Konten</block>
-  <block id="f61163b681442ac500a8018c87241770" category="section-title">28. November 2021</block>
-  <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">Update für NetApp Support Site Accounts erforderlich</block>
-  <block id="3d0f9c18d87223bbfa0a981f08fc2ba8" category="section-title">NSS-Konten für Cloud Volumes ONTAP ändern</block>
-  <block id="0c8656a54bb3c58b8facb7ba72092bdc" category="section-title">4. November 2021</block>
-  <block id="28d0f6acaa631c64f65938cc5be01ffc" category="section-title">Connector wird nicht mehr als Proxy unterstützt</block>
-  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">31 Oktober 2021</block>
-  <block id="67b68df6bafe01dd2b7c0f5e85ec62ff" category="section-title">Authentifizierung mit Service-Principal</block>
-  <block id="c4f5f37a3eac48a6747104e3821bdfc7" category="section-title">Verbesserung der Anmeldeinformationen</block>
-  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2 September 2021</block>
-  <block id="b965147e511dac4e3aebd73ea41829e3" category="section-title">Ein neuer Benachrichtigungsdienst wurde hinzugefügt</block>
-  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">7 Juli 2021</block>
-  <block id="087ea838180b315ad53e36db764cd8d2" category="section-title">Erweiterungen des Assistenten zum Hinzufügen von Konnektor</block>
-  <block id="290ecf7cca4e38fcf54e2b2afd77bb68" category="section-title">NSS Account-Management über das Support Dashboard</block>
-  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">5 Mai 2021</block>
-  <block id="d818c001b3cfbc2033e278823ec2a52a" category="section-title">Konten in der Zeitleiste</block>
-  <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11. April 2021</block>
-  <block id="a751a999298090bf2562492d1817e583" category="section-title">API-Aufrufe direkt an Cloud Manager</block>
-  <block id="d2ed2d8d9f18d3b3c06c154cfe6e0970" category="section-title">Benutzer des Servicekontos</block>
-  <block id="a214c30250196bf3a7430f258daa1c0a" category="section-title">Private Vorschauen</block>
-  <block id="e4be032a3be0dcfffde1cc853ce81a9f" category="section-title">Drittanbieter-Services</block>
-  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">8 März 2021</block>
-  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">Verbesserungen von Cloud Volumes ONTAP</block>
-  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">Connector-Verbesserungen</block>
-  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">Verbesserungen von Cloud Sync</block>
-  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">Cloud Tiering-Verbesserungen</block>
-  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Verbesserungen von Azure NetApp Files</block>
-  <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 Februar 2021</block>
-  <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Verbesserungen am Support Dashboard</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 Kerne oder 8 vCPUs</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
@@ -4660,7 +4159,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="303dd9be0eeb1860776aa43ceeb3e470" category="cell">Erkennung mit einem Connector und Ermittlung ohne einen Connector (direkte Erkennung) werden unterstützt. Wenn Sie einen lokalen Cluster mit einem Connector entdecken, wird die erweiterte Ansicht (System Manager) nicht unterstützt.</block>
   <block id="caf4a30b20a11e01cd72ece077ed9e50" category="cell">On-Premises-ONTAP-Cluster</block>
   <block id="ce77730dd6dbc743a3b153b41918d0fc" category="list-text">Synchronisieren Sie Daten zwischen lokalen und Cloud-Datenspeichern.</block>
-  <block id="a849a8a45d50681fc0b30ac28b4d11e1" category="paragraph">Wenn Ihr Netzwerk über ein Subnetz verfügt, das mit einem dieser Bereiche konfiguriert ist, können Verbindungsfehler von BlueXP auftreten. Beispielsweise kann die Erkennung von lokalen ONTAP-Clustern in BlueXP fehlschlagen.</block>
   <block id="f35e114f48c5f22c2fe8ecda03690d52" category="inline-link-macro">Einrichten des lokalen Netzwerks</block>
   <block id="0de6919a4162aaaea1163fcece2a0a16" category="list-text"><block ref="0de6919a4162aaaea1163fcece2a0a16" category="inline-link-macro-rx"></block></block>
   <block id="508ef8cc04a12b92629c3959ece8d473" category="cell">Wenn Sie BlueXP Backup und Recovery zum Sichern von ONTAP-Clustern vor Ort verwenden, müssen Sie dem Connector Berechtigungen hinzufügen, um die Funktion „Suchen und Wiederherstellen“ verwenden zu können.</block>
@@ -4668,23 +4166,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="e6929928a5493903d213002ab8ecbfe4" category="inline-link">Scannen Sie lokale ONTAP-Volumedaten mithilfe der BlueXP-Klassifizierung</block>
   <block id="4599c08645d7102b295f6f73ef9fe891" category="list-text"><block ref="4599c08645d7102b295f6f73ef9fe891" category="inline-link-rx"></block></block>
   <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">Benutzer mit dieser Rolle können nur Mitglieder eines bestimmten Ordners oder Projekts verwalten.</block>
-  <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">Nach der Anmeldung füllen Benutzer die Seite *Anmelden* aus, überprüfen ihre E-Mails und melden sich an. Wenn sie aufgefordert werden, eine Organisation zu erstellen, sollten sie BlueXP schließen und Sie über die Kontoerstellung informieren. Sie können den Benutzer anschließend zu Ihrer bestehenden BlueXP -Organisation hinzufügen.</block>
-  <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">Der Benutzer erhält eine E-Mail von NetApp BlueXP mit Informationen, die Mitglieder für den Zugriff auf BlueXP verwenden.</block>
-  <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">In der Tabelle *Mitglieder* werden die Mitglieder Ihrer Organisation angezeigt.</block>
   <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">Möglicherweise müssen Sie ein Mitglied aus Ihrer Organisation entfernen, beispielsweise wenn es Ihr Unternehmen verlässt.</block>
-  <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">Durch das Entfernen eines Mitglieds werden dessen Berechtigungen aufgehoben, seine BlueXP- und NetApp-Support-Site-Konten bleiben jedoch erhalten.</block>
-  <block id="9db713593f37da13d4833a36d120ccfd" category="paragraph">Erstellen Sie neue Anmeldeinformationen, wenn diese verloren gegangen sind oder wenn eine Aktualisierung der Sicherheitsanmeldeinformationen erforderlich ist.</block>
-  <block id="52f5be4f784cf685f0ad8a80aedf6b64" category="paragraph">Durch das Neuerstellen der Anmeldeinformationen werden die vorhandenen Anmeldeinformationen für das Dienstkonto gelöscht und anschließend neue Anmeldeinformationen erstellt. Sie können die vorherigen Anmeldeinformationen nicht verwenden.</block>
-  <block id="81bce7de713bcaf7549f55a3a0969660" category="paragraph">BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nirgendwo. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher.</block>
-  <block id="78ce04965d900b7ef35dfc2218778225" category="list-text">Diese Version des Connectors enthält auch Verbesserungen für Cloud Volumes ONTAP und On-Premises ONTAP-Cluster.</block>
-  <block id="797ea56826da2367a2d9d995e3baa7ce" category="inline-link">Erfahren Sie mehr über die Verbesserungen des ONTAP On-Premises-Clusters</block>
-  <block id="6b5f698f33fda7e21ffb6353943e1348" category="list-text"><block ref="6b5f698f33fda7e21ffb6353943e1348" category="inline-link-rx"></block></block>
-  <block id="ffdf38e49e65f18329f7f8e5beb3abaf" category="list-text"><block ref="ffdf38e49e65f18329f7f8e5beb3abaf" category="inline-link-rx"></block></block>
-  <block id="09798dd0fb4ac612714839b6f2723d58" category="list-text"><block ref="09798dd0fb4ac612714839b6f2723d58" category="inline-link-rx"></block></block>
-  <block id="2b514d363c7b672f94e04264ce6b6266" category="paragraph">Mit BlueXP können Sie Cloud-Speicher erstellen und verwalten (z. B. Cloud Volumes ONTAP und Azure NetApp Files), Daten verschieben, schützen und analysieren und viele lokale und Edge-Speichergeräte steuern.</block>
-  <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">Sie können jetzt mehr lokale Speichersysteme wie E-Series und StorageGRID verwalten.</block>
-  <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
-  <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering zeigt jetzt an, ob Sie über unentdeckte On-Premises-ONTAP-Cluster verfügen, sodass Sie diese zu Cloud Manager hinzufügen können, um Tiering oder andere Dienste auf diesen Clustern zu aktivieren.</block>
   <block id="5aac456da49390227897f1fa93e12f80" category="doc">Freigabe des Privatmodus (3.9.52)</block>
   <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">Die Version 3.9.52 enthält Updates für die folgenden BlueXP-Komponenten und -Dienste.</block>
   <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52, 3.9.51</block>
@@ -4780,24 +4262,15 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="06809dd88f1460193b20e2dd96a134c7" category="paragraph">Wenn Sie eine Ressource in BlueXP  erstellen oder ermitteln, wird diese Ressource automatisch mit dem Projekt verknüpft, das beim Erstellen oder Erkennen der Arbeitsumgebung ausgewählt wurde. Wenn Sie diese Ressource einem anderen Projekt in Ihrer Organisation zur Verfügung stellen möchten, müssen Sie eine Verknüpfung zwischen ihnen erstellen. Wenn ein Connector die Ressource verwaltet, verknüpfen Sie den Connector mit dem entsprechenden Projekt.</block>
   <block id="554ad209b1570fd2fa612b99e45705a9" category="doc">BlueXP-Mitglieder und Dienstkonten hinzufügen</block>
   <block id="8f5f6028ed8a4b6775a65a3ab04b54e6" category="admonition">Stellen Sie sicher, dass zwei Mitglieder über die Rolle des Organisationsadministrators verfügen, um den Zugriff auf Ihre BlueXP-Organisation nicht zu verlieren.</block>
-  <block id="ae25ff1d2bf303ae117b9141c6a8db46" category="paragraph">Sie können Ihrem Unternehmen zwei Arten von Mitgliedern hinzufügen: Ein Benutzerkonto und ein Service-Konto. Ein Dienstkonto wird typischerweise von einer Anwendung verwendet, um bestimmte Aufgaben ohne menschliches Eingreifen über die BlueXP-API auszuführen. Ein Benutzerkonto wird typischerweise von einer Person verwendet, um sich bei BlueXP anzumelden und Ressourcen zu verwalten.</block>
-  <block id="82e677ad2f30a70a7ea186c9e2c2d1b7" category="paragraph">Benutzer müssen sich zunächst für ein BlueXP-Konto registrieren, bevor Sie sie einer Organisation hinzufügen oder ihnen eine Rolle zuweisen können. Sie können jedoch auch direkt aus BlueXP heraus Dienstkonten erstellen.</block>
   <block id="bfec8ea1e6ffe7b45777eaa357499fd3" category="paragraph">Sie können sowohl Benutzerkonten als auch Dienstkonten auf der Seite *Mitglieder* anzeigen.</block>
   <block id="d7a7789c661ae542fd74704356987fed" category="admonition">Sie können auch alle Mitglieder anzeigen, die einem bestimmten Ordner oder Projekt zugeordnet sind. <block ref="b14f5e106a01ebd026991543e5a0ffc8" category="inline-link-macro-rx"></block>.</block>
   <block id="25240dbf964ce37736226ead112d31f2" category="section-title">Verwalten der Multi-Faktor-Authentifizierung (MFA) eines Benutzers</block>
-  <block id="1dc89e23fe86f7a199e70641c454c836" category="paragraph">Wenn ein Benutzer den Zugriff auf sein MFA-Gerät verloren hat, können Sie seine MFA-Konfiguration entweder entfernen oder deaktivieren.</block>
   <block id="53b20ebcf7673ac1fcb38c75f56b8c1c" category="paragraph">Wenn Sie die MFA-Konfiguration entfernen, muss der Benutzer MFA bei der Anmeldung bei BlueXP erneut einrichten. Wenn der Benutzer nur vorübergehend den Zugriff auf sein MFA-Gerät verloren hat, kann er den Wiederherstellungscode verwenden, den er bei der Einrichtung von MFA gespeichert hat, um sich bei BlueXP anzumelden.</block>
-  <block id="18a33734a49f78941c9c135c95c946e7" category="paragraph">Wenn Benutzer keinen Zugriff auf ihren Wiederherstellungscode haben, können Sie die MFA des Benutzers vorübergehend deaktivieren, sodass er sich ohne MFA anmelden kann. Die Deaktivierung der MFA für einen Benutzer dauert nur acht Stunden und wird anschließend automatisch wieder aktiviert. Der Benutzer kann sich während dieser Zeit einmal ohne MFA anmelden. Nach Ablauf der acht Stunden muss er sich mit MFA bei BlueXP anmelden.</block>
-  <block id="b26bc9ae42a1102f828a14e1e17092f4" category="admonition">Sie müssen über eine E-Mail-Adresse in derselben Domäne wie der betroffene Benutzer verfügen, um die Multi-Faktor-Authentifizierung dieses Benutzers verwalten zu können.</block>
   <block id="e05b37e020cb0d4a42448972b7a614b1" category="list-text">Wählen Sie oben rechts in der Konsole <block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block> &gt; *Identitäts- und Zugriffsverwaltung*.</block>
   <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">Die Mitglieder Ihrer Organisation erscheinen in der Tabelle *Mitglieder*.</block>
   <block id="4c03cc49e70b34418f2385277d266d90" category="list-text">Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> und wählen Sie dann *Multi-Faktor-Authentifizierung verwalten*.</block>
   <block id="d999f1f9870b33a6f990ea80c528cd45" category="list-text">Wählen Sie, ob die MFA-Konfiguration des Benutzers entfernt oder deaktiviert werden soll.</block>
   <block id="777c631ee0e5f768c51661f55472a2b1" category="paragraph">Wenn Sie ein Mitglied Ihrer Organisation zuordnen, erteilen Sie Berechtigungen auf Organisations-, Ordner- oder Projektebene. Um sicherzustellen, dass diese Mitglieder über Berechtigungen für den Zugriff auf die richtigen Ressourcen verfügen, müssen Sie die Ressourcenhierarchie Ihres Unternehmens verwalten, indem Sie Ressourcen bestimmten Projekten und Ordnern zuordnen. Eine _Resource_ ist eine Speicherressource, die BlueXP  bereits managt oder bereits kennt.</block>
-  <block id="958f099ecd5f53cc0f8616aec471d23d" category="paragraph">Sie können ermittelte und nicht ermittelte Ressourcen anzeigen, die Ihrer Organisation zugeordnet sind. Unentdeckte Ressourcen sind Speicherressourcen, die vom Digital Advisor identifiziert, aber nicht als Arbeitsumgebungen hinzugefügt wurden.</block>
-  <block id="a44ed61b158170f7ab5f17370d771c44" category="admonition">Auf der IAM-Ressourcenseite werden keine Amazon FSx für NetApp ONTAP-Ressourcen angezeigt, da Sie sie keiner IAM-Rolle zuordnen können. Sie können diese Ressourcen in ihrem jeweiligen Arbeitsbereich oder in Arbeitslasten anzeigen.</block>
-  <block id="b58a891a867f4ff05f874b2bc8fe67d5" category="paragraph">Um eine Ressource für einen Ordner oder ein Projekt verfügbar zu machen, ordnen Sie die Ressource dem Ordner oder Projekt zu.</block>
-  <block id="7818884d05535c1b527c35169c7ac66d" category="paragraph">Um eine Ressource aus einem Ordner oder Projekt zu entfernen, müssen Sie die Zuordnung zwischen dem Ordner oder Projekt und der Ressource entfernen. Durch das Entfernen der Zuordnung wird verhindert, dass Mitglieder der Organisation die Ressource im Ordner oder Projekt verwalten.</block>
   <block id="e5bb4954536b904550d932928f88306d" category="paragraph">Benutzer mit der Rolle *Organisationsadministrator* oder *Ordner- oder Projektadministrator* sind dafür verantwortlich, anderen Benutzern Rollen zuzuweisen. Sie können Zugriffsrollen auf Projekt- oder Ordnerbasis zuweisen. Sie können einem Benutzer beispielsweise die Administratorrolle für Ransomware-Schutz für ein Projekt und die SnapCenter-Administratorrolle für ein anderes Projekt zuweisen. Wenn ein Benutzer alternativ die Klassifizierungsadministratorrolle für alle Projekte in einem bestimmten Ordner benötigt, können Sie ihm diese Rolle auf Ordnerebene zuweisen.</block>
   <block id="982e57f560511ceb443082e656219246" category="paragraph">Verwenden Sie Zugriffsrollen, um den Zugriff auf Speicherressourcen basierend auf den spezifischen Aufgaben zuzuweisen, die Benutzer ausführen müssen. Wenn ein Benutzer beispielsweise mit Ransomware-Schutzdiensten interagieren muss, benötigt er eine Zugriffsrolle, die entweder Anzeige- oder Administratorberechtigungen für den Ransomware-Schutzdienst für das Projekt umfasst, für das die Zugriffsrolle gewährt wurde.</block>
   <block id="61258c54d2a7f09077a72a4eeb56874d" category="paragraph">Weisen Sie Benutzern Rollen basierend auf Ihrer IAM-Strategie zu, um die Sicherheit zu erhöhen. IAM-Rollen stellen sicher, dass Benutzer nur den Zugriff haben, den sie benötigen.</block>
@@ -4859,16 +4332,12 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="6798440f7d10635b331b1fa042f09399" category="paragraph">Das Abonnieren von Datendiensten umfasst die Verknüpfung eines Marktplatzabonnements mit den Cloud-Anmeldeinformationen, die einem Connector zugeordnet sind. Wenn Sie den Workflow „erste Schritte mit Standardmodus“ befolgt haben, sollten Sie bereits über einen Connector verfügen. Weitere Informationen finden Sie im <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
   <block id="52b1cbafe8470971a5437119c1873484" category="admonition">Aufgrund des Lastenausgleichs kann das Senden von AutoSupport-Nachrichten durch BlueXP bis zu fünf Stunden dauern. Bei dringenden Mitteilungen laden Sie die Datei herunter und senden Sie sie manuell.</block>
   <block id="187a65456983abb189d49d701f3e3e58" category="paragraph">Wenn Sie den Standardmodus oder den eingeschränkten Modus verwenden (mit anderen Worten, der Connector-Host verfügt über eine ausgehende Konnektivität), sollten Sie die folgenden Schritte ausführen, um die Connector-Software zu deinstallieren.</block>
-  <block id="8b2050244fdeb14dea60f3f13f9383f7" category="paragraph">Wenn Sie den privaten Modus verwenden (mit anderen Worten, der Connector-Host hat _keine_ ausgehende Konnektivität), sollten Sie die folgenden Schritte ausführen, um die Connector-Software zu deinstallieren.</block>
   <block id="1b2b35b59eb889c82041c85d020846da" category="list-text">Löschen Sie vom Linux-Host alte, nicht verwendete Container-Imagedateien, um im Verzeichnis /var Speicherplatz für die Neuinstallation freizugeben.</block>
   <block id="0b117fbfd32ec37177e5e622b8b00f28" category="list-text">Diese Aktion kann nicht rückgängig gemacht werden. Wenn Sie einen Connector einmal entfernt haben, können Sie ihn nicht wieder hinzufügen.</block>
   <block id="ad048645d75c1fd27870cc3ad10fdce8" category="paragraph">Wenn Sie den Standardmodus oder den eingeschränkten Modus verwenden, aktualisiert BlueXP Ihren Connector automatisch auf die neueste Version, sofern der Connector über ausgehenden Internetzugang verfügt, um das Softwareupdate abzurufen. Wenn Sie die Verwaltung bei Aktualisierung des Connectors manuell vornehmen müssen, können Sie automatische Upgrades für den Standardmodus oder den eingeschränkten Modus deaktivieren.</block>
   <block id="e2fd861f2c994515a433f444ca59dfb2" category="summary">Sie können Ihr BlueXP-Profil ändern, einschließlich der Änderung Ihres Passworts, der Aktivierung der Multi-Faktor-Authentifizierung (MFA) und der Anzeige Ihres BlueXP-Administrators.</block>
   <block id="ea43035154515f5aba7b1f02eea55f22" category="doc">Verwalten Sie Ihre BlueXP-Benutzereinstellungen</block>
-  <block id="38fcb31838c3c11147e8448c282173fa" category="paragraph">Sie können auf Ihr BlueXP-Profil zugreifen, wodurch Sie die Multi-Faktor-Authentifizierung (MFA) aktivieren und Ihren BlueXP-Administrator kontaktieren können.</block>
-  <block id="a53adfde64d4671bd50ed427607ea1d7" category="paragraph">Innerhalb von BlueXP verfügt jeder Benutzer über ein Profil mit Informationen zum Benutzer und seinen Einstellungen. Sie können Ihre Profileinstellungen über die BlueXP-Konsole anzeigen und bearbeiten.</block>
   <block id="3cb1f3e723c9b0e598cf1cb6a69a55e2" category="section-title">Ändern Sie Ihren Anzeigenamen</block>
-  <block id="57c52ef1ab266345d5d4b0d75c0c733c" category="paragraph">Sie können Ihren Anzeigenamen in der BlueXP-Konsole ändern. Der Anzeigename dient Ihrer Identifizierung in der BlueXP-Konsole und ist für andere Benutzer sichtbar. Ihr Anzeigename ist nicht identisch mit Ihrem Benutzernamen oder Ihrer E-Mail-Adresse. Diese können nicht geändert werden.</block>
   <block id="bdf173b2869731c1ac6b0d2f8bd0ecdd" category="list-text">Wählen Sie das Profilsymbol in der oberen rechten Ecke der BlueXP-Konsole, um das Bedienfeld „Benutzereinstellungen“ anzuzeigen.</block>
   <block id="befac70fd40711c428906b0a641dd516" category="list-text">Wählen Sie das Symbol *Bearbeiten* neben Ihrem Namen.</block>
   <block id="a4f6cc91409a8e534a14d0b5e0cfef8f" category="list-text">Geben Sie Ihren neuen Anzeigenamen in das Feld *Name* ein.</block>
@@ -5151,14 +4620,9 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="295cc024728a10becfec47e1d454c4f9" category="cell">Aufträge abbrechen</block>
   <block id="19624807a266987c5ebc85871209b179" category="summary">Das Identitäts- und Zugriffsmanagement von BlueXP bietet zwei Keystone -Rollen, die Sie den Mitgliedern Ihrer Organisation zuweisen können.</block>
   <block id="1e903debc38b532ef2e80f7138839ce6" category="summary">Weisen Sie Benutzern Plattformrollen zu, um ihnen Berechtigungen zum Verwalten von BlueXP, zum Zuweisen von Rollen, zum Hinzufügen von Benutzern, zum Erstellen von Konnektoren und zum Verwalten von Föderationen zu erteilen.</block>
-  <block id="73384936958371f6b04efaaaaed5e904" category="paragraph">Die XYZ Corporation organisiert den Datenspeicherzugriff nach Regionen (Nordamerika, Europa und Asien-Pazifik) und gibt jeder Region die Kontrolle, während gleichzeitig eine zentrale Übersicht gewährleistet wird.</block>
-  <block id="d998269ec78e1dcd832c654f28c1938f" category="paragraph">Der *Organisationsadministrator* in BlueXP der XYZ Corporation erstellt eine anfängliche Organisation und separate Ordner für jede Region. Der Ordner jeder Region enthält Projekte (mit zugehörigen Ressourcen), die mit dieser Region zusammenhängen. Der *Organisationsadministrator* weist einem BlueXP -Benutzer in jeder Region die Rolle *Ordner oder Projektadministrator* zu.</block>
-  <block id="9b0fa9581a345f867e9690821e6a392e" category="paragraph">Regionale Administratoren mit der Rolle „Ordner- oder Projektadministrator“ verwalten ihre Regionen (Ordner), indem sie neue Ressourcen und Benutzer hinzufügen. Sie können außerdem die von ihnen verwalteten Ordner und Projekte hinzufügen, entfernen oder umbenennen. Der Organisationsadministrator erhält die Berechtigungen für alle neuen Ressourcen und behält so den Überblick über die Speichernutzung in der gesamten Organisation.</block>
-  <block id="90e0ebe27bf49046443bfeb016df10ae" category="paragraph">Innerhalb derselben Organisation wird einem Benutzer die Rolle *Federationsadministrator* zugewiesen, um die Föderation der Organisation mit seinem Unternehmens-IdP zu verwalten. Dieser Benutzer kann föderierte Organisationen hinzufügen oder entfernen, jedoch keine Benutzer oder Ressourcen innerhalb der Organisation verwalten. Die Organisation weist einem Benutzer die Rolle *Federationsbetrachter* zu, um den Föderationsstatus zu überprüfen und föderierte Organisationen anzuzeigen, ohne Änderungen vorzunehmen.</block>
   <block id="405968a9734d63c6f8b2d95182972328" category="paragraph">Die folgenden Tabellen zeigen die Aktionen, die jede BlueXP Plattformrolle ausführen kann.</block>
   <block id="fa8ca558421297ffc0846340271c7c6e" category="section-title">Rollen in der Organisationsverwaltung</block>
   <block id="85d14999212ce25d0b655728819c9d41" category="cell">Erstellen, Verwalten und Anzeigen von Föderationen</block>
-  <block id="e1c9113f6b23f10d6149c65294e44b8d" category="cell">Für Support registrieren und Fälle einreichen</block>
   <block id="8aa6a9b844204cce92720f98f175354e" category="cell">Datendienste nutzen</block>
   <block id="1a3b10962c81dd6948f8a4d55ea60ded" category="cell">Sehen Sie sich die BlueXP Zeitleiste und -Benachrichtigungen an</block>
   <block id="6012fd8a753e916d0116d0d63ef3e5f6" category="section-title">Föderationsrollen</block>
@@ -5404,7 +4868,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">Unterstützung für transparente Proxys für Connectors, die speziell für die Unterstützung von Cloud Volumes ONTAP Diensten vorgesehen sind. <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
   <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">Sie werden aufgefordert, alle vorhandenen Verbundverbindungen in die neue Benutzeroberfläche zu importieren, um Zugriff auf die neuen Verwaltungsfunktionen zu erhalten. So können Sie die neuesten Verbesserungen nutzen, ohne Ihre Verbundverbindungen neu erstellen zu müssen. <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
   <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
-  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp empfiehlt die Verwendung der Metadaten-URL, damit BlueXP automatisch die neueste AD FS-Konfiguration abruft. Wenn Sie die Federation-Metadatendatei herunterladen, müssen Sie sie bei Änderungen an Ihrer AD FS-Konfiguration manuell in BlueXP aktualisieren.</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">Testen und Aktivieren der Verbindung</block>
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">Stellen Sie sicher, dass Sie über eine Zertifikatsdatei im PEM-Format für den Proxyserver verfügen. Sollten Sie kein Zertifikat besitzen, wenden Sie sich bitte an Ihren Netzwerkadministrator.</block>
@@ -5433,7 +4896,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Verwaltung von Storage-Zustands- und Governance-Funktionen, Erkennung von Storage-Ressourcen sowie Ändern und Löschen vorhandener Arbeitsumgebungen</block>
   <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Wählen Sie eine Kategorie* und dann eine *Rolle* aus, die dem Mitglied Berechtigungen für die Ressourcen erteilt, die mit der von Ihnen ausgewählten Organisation, dem Ordner oder dem Projekt verknüpft sind.</block>
-  <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP zeigt das Client-Geheimnis nur einmal an und speichert es nicht. Kopieren oder laden Sie das Geheimnis herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und den Client-Schlüssel später nach Bedarf neu erstellen können.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Navigieren Sie auf der Seite *Mitglieder* zu einem Mitglied in der Tabelle, wählen Sie <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> Wählen Sie dann *Benutzer löschen*.</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Benutzer mit der Keystone-Viewer-Rolle KÖNNEN KEINE Serviceanfragen erstellen. Ermöglicht Benutzern das Monitoring und Anzeigen von Nutzungsinformationen, Ressourcen und Administratorinformationen innerhalb des Keystone Mandanten, auf den sie zugreifen.</block>
@@ -5458,7 +4920,6 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp unterstützt die folgenden Protokolle und Identitätsanbieter für die Föderation:</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">Ja<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
-  <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">Ja<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
   <block id="e3e606b368c3f3a65f5cb75fbe9c3115" category="cell">Ermöglicht einem Benutzer, vorhandene Föderationen mit BlueXP anzuzeigen.  Föderationen können nicht erstellt oder verwaltet werden</block>
   <block id="1393a4279651a3334e20f39925a139f5" category="cell">Klassifizierungsanzeige</block>
   <block id="725b2ecc37229f77405f9188278a6a1f" category="cell">Sichern Sie lokale ONTAP -Cluster auf Amazon S3 mit BlueXP backup and recovery</block>
@@ -5482,4 +4943,68 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
   <block id="c4b307083b5d0cdb2a3121de7077c81a" category="paragraph">Um die Verbindung herzustellen, müssen Sie die erforderlichen Informationen von Ihrem Identitätsanbieter bereitstellen, z. B. die SAML-Metadaten-URL oder -Datei.  Diese Informationen werden verwendet, um die Vertrauensbeziehung zwischen BlueXP und Ihrem Identitätsanbieter herzustellen.  Die von Ihnen bereitgestellten Informationen hängen von dem von Ihnen verwendeten IdP ab.  Wenn Sie beispielsweise die Microsoft Entra ID verwenden, müssen Sie die Client-ID, das Geheimnis und die Domäne angeben.</block>
   <block id="c86db883022c01769d1a691d6239d6b6" category="paragraph">Testen Sie Ihre Verbundverbindung, bevor Sie sie aktivieren.  Die Federation-Seite in BlueXP bietet eine Testoption, mit der Sie überprüfen können, ob sich Ihr Testbenutzer erfolgreich authentifizieren kann.  Wenn der Test erfolgreich ist, können Sie die Verbindung aktivieren.</block>
   <block id="891726cdad713442b056e44ee0faab3d" category="paragraph">Wenn Sie die Föderation zuvor über NetApp Cloud Central (eine externe Anwendung für BlueXP) eingerichtet haben, werden Sie auf der Föderationsseite aufgefordert, Ihre vorhandene föderierte Verbindung zu BlueXP zu importieren, um sie in der neuen Schnittstelle zu verwalten.  Auf diese Weise können Sie die neuesten Verbesserungen nutzen, ohne Ihre Verbundverbindungen neu erstellen zu müssen.</block>
+  <block id="b21ef378da4454971a6488eacb2b5c87" category="doc">Connector 3.9.55</block>
+  <block id="7c5236578de836eb6dde25bc3e995d02" category="paragraph">Diese Version des BlueXP Connector enthält Sicherheitsverbesserungen und Fehlerbehebungen.</block>
+  <block id="95d98fc23d5487afb84beeeea8decb64" category="paragraph">Die Version 3.9.55 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
+  <block id="6c88af8a9c03b6578eb8087b3113c649" category="section-title">Unterstützung der japanischen Sprache</block>
+  <block id="a73649d115bb7a94bbfab3b7d4f15ddf" category="paragraph">Die BlueXP -Benutzeroberfläche ist jetzt in japanischer Sprache verfügbar.  Wenn Ihre Browsersprache Japanisch ist, wird BlueXP auf Japanisch angezeigt.  Um auf die Dokumentation auf Japanisch zuzugreifen, verwenden Sie das Sprachmenü auf der Dokumentationswebsite.</block>
+  <block id="65bb19480004be81c6ef8d7f7ef40e2f" category="paragraph">Das Identitäts- und Zugriffsmanagement in BlueXP bietet jetzt die folgende Funktion.</block>
+  <block id="db971a19c27a52f19f1811c52c55dc2d" category="section-title">Neue Zugriffsrolle für den operativen Support</block>
+  <block id="9a69bf13bbd4a86f23945e6b153f3913" category="paragraph">BlueXP unterstützt jetzt die Rolle eines Betriebssupportanalysten.  Diese Rolle erteilt einem Benutzer die Berechtigung, Speicherwarnungen zu überwachen, die BlueXP Audit-Zeitleiste anzuzeigen und NetApp Supportfälle einzugeben und zu verfolgen.</block>
+  <block id="21199c6ee115447074a02f720b934dab" category="inline-link-macro">Erfahren Sie, wie Sie Ihre Föderation importieren.</block>
+  <block id="8e6882f602fd5ecebb3dc685c943a7ce" category="admonition">Wenn Sie die Föderation zuvor mit NetApp Cloud Central (einer externen Anwendung für BlueXP) konfiguriert haben, müssen Sie Ihre Föderation mithilfe der BlueXP -Föderationsseite importieren, um sie innerhalb von BlueXP verwalten zu können.<block ref="f94fc06031e07cb597f1d58d86de05fb" category="inline-link-macro-rx"></block></block>
+  <block id="fbe04f74a8debcc655aecf9e3678c2f1" category="cell">Wird in Regierungsregionen und kommerziellen Regionen mit eingeschränktem Modus unterstützt.  Wird in souveränen Regionen mit eingeschränktem Modus nicht unterstützt.  Im eingeschränkten Modus unterstützt BlueXP backup and recovery nur die Sicherung und Wiederherstellung von ONTAP Volume-Daten.<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>  Das Sichern und Wiederherstellen von Anwendungsdaten und Daten virtueller Maschinen wird nicht unterstützt.</block>
+  <block id="5276c2566a84a3042431220ea0b747b3" category="cell">Wird in kommerziellen AWS- und Azure-Regionen unterstützt.  Wird nicht unterstützt in Google Cloud oder in<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> ,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block> , oder<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block> Im privaten Modus unterstützt BlueXP backup and recovery nur die Sicherung und Wiederherstellung von ONTAP Volume-Daten.<block ref="9a868aa7b1ac276f990ea6d049f53427" category="inline-link-rx"></block>  Das Sichern und Wiederherstellen von Anwendungsdaten und Daten virtueller Maschinen wird nicht unterstützt.</block>
+  <block id="73a5ff4735cfc57b857a1b43760e3ec0" category="paragraph">Im privaten Modus unterstützt BlueXP backup and recovery nur die Sicherung und Wiederherstellung von ONTAP Volume-Daten.<block ref="d39fc9c0f82d5c4bb16800a042d6f6e7" category="inline-link-rx"></block></block>
+  <block id="4f77989b947b64c4712e48bb29004e08" category="cell">Ja<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block> <block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="952ed66e1f35fd535945868e5723338d" category="summary">Das Identitäts- und Zugriffsmanagement von BlueXP bietet die Rolle eines Supportanalysten zur Unterstützung bei Überwachungs- und Supportfällen.</block>
+  <block id="5a08d24aa69b6e45f6d4bbbceac0ec8e" category="doc">Zugriffsrolle „Operational Support Analyst“ für BlueXP</block>
+  <block id="7e901891254682b3e1fddc06e4e1938a" category="paragraph">Sie können Benutzern die folgende Rolle zuweisen, um ihnen Zugriff auf Warnungen und Überwachung zu gewähren.  Benutzer mit dieser Rolle können auch Supportfälle eröffnen.</block>
+  <block id="a9c987c5ba386ab7cea1039db6dab527" category="section-title">Analyst für operative Unterstützung</block>
+  <block id="6b67f7084bd7c23cc1a6915c07f7db8a" category="cell">Kann durchführen</block>
+  <block id="c94c23722a9f43afdda9c27316865b10" category="cell">Verwalten Sie Ihre eigenen Benutzeranmeldeinformationen unter „Einstellungen &gt; Anmeldeinformationen“.</block>
+  <block id="b9509c5dcc543d4c9fa693e9c88d2f44" category="cell">Registrieren Sie sich für Support und reichen Sie Fälle über BlueXP ein</block>
+  <block id="450e38c4634dc91a873ffc3d80e6a3ec" category="cell">Anzeigen, Herunterladen und Konfigurieren von Warnungen</block>
+  <block id="55daaf88c98a29229098e00c10350e03" category="paragraph">Sie können Benutzern die folgenden Rollen zuweisen, um ihnen Zugriff auf die Katastrophenwiederherstellung innerhalb von BlueXP zu gewähren.  Mithilfe von Disaster-Recovery-Rollen können Sie Benutzern flexibel Rollen zuweisen, die speziell auf die Aufgaben zugeschnitten sind, die sie in Ihrem Unternehmen erledigen müssen.  Wie Sie Rollen zuweisen, hängt von Ihren eigenen Geschäfts- und Speicherverwaltungspraktiken ab.</block>
+  <block id="fb3b7b69025ade729f0e36eeec4704e5" category="paragraph">Die XYZ Corporation organisiert den Datenspeicherzugriff nach Regionen – Nordamerika, Europa und Asien-Pazifik – und bietet regionale Kontrolle mit zentraler Aufsicht.</block>
+  <block id="87a4914be48f91210f8847be2c373801" category="paragraph">Der *Organisationsadministrator* in BlueXP der XYZ Corporation erstellt eine anfängliche Organisation und separate Ordner für jede Region.  Der *Ordner- oder Projektadministrator* für jede Region organisiert Projekte (mit zugehörigen Ressourcen) innerhalb des Ordners der Region.</block>
+  <block id="f1b00fac0318dfd507777f0ae488e9dc" category="paragraph">Regionale Administratoren mit der Rolle *Ordner- oder Projektadministrator* verwalten ihre Ordner aktiv, indem sie Ressourcen und Benutzer hinzufügen.  Diese regionalen Administratoren können auch von ihnen verwaltete Ordner und Projekte hinzufügen, entfernen oder umbenennen.  Der *Organisationsadministrator* erbt Berechtigungen für alle neuen Ressourcen und behält so die Übersicht über die Speichernutzung in der gesamten Organisation.</block>
+  <block id="93a19701828527cc9f3516fc8546735d" category="paragraph">Innerhalb derselben Organisation wird einem Benutzer die Rolle *Föderationsadministrator* zugewiesen, um die Föderation der Organisation mit ihrem Unternehmens-IdP zu verwalten.  Dieser Benutzer kann föderierte Organisationen hinzufügen oder entfernen, kann jedoch keine Benutzer oder Ressourcen innerhalb der Organisation verwalten.  Der *Organisationsadministrator* weist einem Benutzer die Rolle *Föderationsbetrachter* zu, um den Föderationsstatus zu überprüfen und föderierte Organisationen anzuzeigen.</block>
+  <block id="0321c70517c9c78cf799c7075b2ab9de" category="inline-link-macro">Betriebsunterstützungsanalyst</block>
+  <block id="406a1f2f1940a9f2563b8c2e2ba639da" category="cell"><block ref="406a1f2f1940a9f2563b8c2e2ba639da" category="inline-link-macro-rx"></block></block>
+  <block id="391ffe0876dbc762be359ec45e02edd6" category="cell">Bietet Zugriff auf Warn- und Überwachungstools sowie die Möglichkeit, Supportfälle einzugeben und zu verwalten.</block>
+  <block id="49703ca45e5fb18e7eac2325b90cd8fa" category="paragraph">Wenn in Ihrem Netzwerk ein Subnetz mit einem dieser Bereiche konfiguriert ist, kann es bei BlueXP zu Verbindungsfehlern kommen.  Beispielsweise kann die Erkennung lokaler ONTAP -Cluster in BlueXP fehlschlagen.</block>
+  <block id="ce811221f0cf50868c1d57fc933d7fc1" category="inline-link-macro">Einrichten von Berechtigungen für lokale Bereitstellungen</block>
+  <block id="72d9333c1a9f2dd56b1f958e2c8ae05f" category="list-text"><block ref="72d9333c1a9f2dd56b1f958e2c8ae05f" category="inline-link-macro-rx"></block></block>
+  <block id="3ef741c544ca847d3024be8a651b7fe2" category="cell"><block ref="3ef741c544ca847d3024be8a651b7fe2" category="inline-link-rx"></block></block>
+  <block id="ca9041525c7cbfabca2e299615403e94" category="paragraph">Sie können Ihrer Organisation zwei Arten von Mitgliedern hinzufügen: ein Benutzerkonto und ein Dienstkonto.  Ein Dienstkonto wird von Anwendungen verwendet, um Aufgaben über die BlueXP API ohne menschliches Eingreifen auszuführen.  Ein Benutzerkonto wird normalerweise von einer Person verwendet, um sich bei BlueXP anzumelden und Ressourcen zu verwalten.</block>
+  <block id="ba1a986388055b03aff803391d5b5677" category="paragraph">Benutzer müssen sich für BlueXP anmelden, bevor sie einer Organisation hinzugefügt oder ihnen eine Rolle zugewiesen werden.  Sie können jedoch Dienstkonten direkt von BlueXP aus erstellen.</block>
+  <block id="f1c00eec94f7e27a400aa055afe4d287" category="list-text">Leiten Sie den Benutzer zum Besuch weiter<block ref="2fbfa33fd647f6f78a572269d50d0708" category="inline-link-rx"></block> um sich anzumelden.</block>
+  <block id="8534cf79eded6db18e493faf92d68b5f" category="paragraph">Sobald sich Benutzer angemeldet haben, füllen sie die Seite *Anmelden* aus, überprüfen ihre E-Mails und melden sich an. Wenn BlueXP Benutzer auffordert, eine Organisation zu erstellen, schließen sie diese und benachrichtigen Sie über die Kontoerstellung.  Anschließend können Sie den Benutzer zu Ihrer bestehenden BlueXP -Organisation hinzufügen.</block>
+  <block id="3ce6287f1ae7f02bd3111aa0ca0f28cb" category="list-text">Durch die Auswahl einer Organisation oder eines Ordners erhält das Mitglied Zugriff auf alle Inhalte.</block>
+  <block id="4408da6082f2abe59abfa28f34e8128d" category="paragraph">NetApp BlueXP sendet dem Benutzer eine E-Mail mit Informationen zum Zugriff auf BlueXP.</block>
+  <block id="2dc572fc01a6b3e41a95d0cdc3d29ec8" category="paragraph">BlueXP zeigt das Client-Geheimnis nur einmal an.  Kopieren oder laden Sie es herunter und speichern Sie es sicher. Beachten Sie, dass Sie die Client-ID und das Client-Geheimnis später bei Bedarf neu erstellen können.</block>
+  <block id="d5e4a18be128c90b65012755ecabfe00" category="paragraph">In der Tabelle *Mitglieder* sind die Mitglieder Ihrer Organisation aufgelistet.</block>
+  <block id="72af289a295009f1e7d1cfcdc1412032" category="paragraph">Durch das Entfernen eines Mitglieds werden dessen Berechtigungen entfernt, seine BlueXP und NetApp -Support-Site-Konten bleiben jedoch erhalten.</block>
+  <block id="97ae5a75d32bf1310286b0f44733943a" category="paragraph">Erstellen Sie neue Anmeldeinformationen, wenn diese verloren gehen oder eine Aktualisierung der Sicherheitsanmeldeinformationen erforderlich ist.</block>
+  <block id="587ee44a2d8c31788fd2c2219c69f11c" category="paragraph">Wenn Sie die Anmeldeinformationen neu erstellen, löschen Sie die vorhandenen Anmeldeinformationen für das Dienstkonto und erstellen neue.  Sie können die vorherigen Anmeldeinformationen nicht verwenden.</block>
+  <block id="f524a6ae90a601004d151ba23fc6027a" category="paragraph">BlueXP zeigt das Client-Geheimnis nur einmal an.  Kopieren oder laden Sie es herunter und speichern Sie es sicher.</block>
+  <block id="900b033e9132dc9efa6e3b0e1dbea592" category="paragraph">Wenn ein Benutzer den Zugriff auf sein MFA-Gerät verliert, können Sie seine MFA-Konfiguration entweder entfernen oder deaktivieren.</block>
+  <block id="d83c2fabea2fa21a5ada4fb39ad94cfe" category="paragraph">Wenn sie ihren Wiederherstellungscode nicht haben, deaktivieren Sie MFA vorübergehend, um die Anmeldung zu ermöglichen.  Wenn Sie MFA für einen Benutzer deaktivieren, wird es nur für acht Stunden deaktiviert und dann automatisch wieder aktiviert.  Dem Benutzer ist während dieser Zeit eine Anmeldung ohne MFA gestattet.  Nach den acht Stunden muss der Benutzer MFA verwenden, um sich bei BlueXP anzumelden.</block>
+  <block id="8bbcde6f99537c8540bcbd60e6de7599" category="admonition">Sie müssen über eine E-Mail-Adresse in derselben Domäne wie der betroffene Benutzer verfügen, um die Multi-Faktor-Authentifizierung dieses Benutzers zu verwalten.</block>
+  <block id="9738d5048977a1e6cc9ff79969a69e55" category="paragraph">Sie können sowohl entdeckte als auch unentdeckte Ressourcen anzeigen, die mit Ihrer Organisation verknüpft sind.  Unentdeckte Ressourcen sind Speicherressourcen, die vom Digital Advisor identifiziert, aber nicht als Arbeitsumgebungen hinzugefügt wurden.</block>
+  <block id="bec182089a02a4e0c416d601b5759d21" category="admonition">Auf der IAM-Ressourcenseite sind Amazon FSx for NetApp ONTAP -Ressourcen nicht enthalten, da Sie sie keiner IAM-Rolle zuordnen können.  Zeigen Sie diese Ressourcen auf ihrer jeweiligen Leinwand oder aus Workloads an.</block>
+  <block id="78165857205234d373bb942f86a37fe3" category="paragraph">Ordnen Sie eine Ressource einem Ordner oder Projekt zu, um sie verfügbar zu machen.</block>
+  <block id="2d4d2320b98107e779699d7c42ec5bdd" category="paragraph">Wenn Sie mithilfe eines BlueXP Connectors eine Ressource entdecken, verknüpfen Sie den Connector mit dem Projekt, um ihm Zugriff zu gewähren.  Andernfalls sind der Connector und die zugehörige Ressource für Mitglieder ohne die Rolle „Organisationsadministrator“ über die BlueXP Leinwand nicht zugänglich.</block>
+  <block id="3ff3bf037fa974340408da899590a20f" category="paragraph">Um eine Ressource aus einem Ordner oder Projekt zu entfernen, müssen Sie die Verknüpfung zwischen dem Ordner oder Projekt und der Ressource entfernen.  Durch das Entfernen der Zuordnung wird verhindert, dass Mitglieder die Ressource im Ordner oder Projekt verwalten.</block>
+  <block id="6f1f5507cc45c39e900cf18ef536acc6" category="list-text">Verwalten Sie vorhandene Anmeldeinformationen, indem Sie im Menü „Aktionen“ die folgenden Optionen auswählen:</block>
+  <block id="e379b5b2913623d09cd238cc781d563d" category="paragraph">Wenn Sie den privaten Modus verwenden (wo der Connector-Host _keine_ ausgehende Konnektivität hat), führen Sie die folgenden Schritte aus, um die Connector-Software zu deinstallieren.</block>
+  <block id="2c53af857f2ecf6531ae75c4561e44b8" category="paragraph">Wenn ein Connector inaktiv ist, können Sie ihn aus der Liste der Connectors in BlueXP entfernen.  Dies ist möglicherweise der Fall, wenn Sie die virtuelle Connector-Maschine löschen oder die Connector-Software deinstallieren.</block>
+  <block id="72293856366712b11e72d267ff361124" category="paragraph">Innerhalb von BlueXP verfügt jeder Benutzer über ein Profil, das Informationen über den Benutzer und seine Einstellungen enthält.  Sie können Ihre Profileinstellungen anzeigen und bearbeiten.</block>
+  <block id="75f1b2b10d1002ab731b8891c74f71e3" category="paragraph">Sie können Ihren Anzeigenamen ändern.  Der Anzeigename dient Ihrer Identifizierung in der BlueXP Konsole und ist für andere Benutzer sichtbar.  Ihr Anzeigename ist nicht identisch mit Ihrem Benutzernamen oder Ihrer E-Mail-Adresse und kann nicht geändert werden.</block>
+  <block id="16068479a2701e2f4cc03e6c5d4a2304" category="section-title">Dunkelmodus konfigurieren (dunkles Design)</block>
+  <block id="96b14a9f712f3425aa1b17824c749425" category="paragraph">Sie können BlueXP so einstellen, dass es im Dunkelmodus angezeigt wird.</block>
+  <block id="a99608db4d85374403174f1119cac088" category="list-text">Bewegen Sie den Schieberegler *Dunkles Design*, um es zu aktivieren.</block>
+  <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">11. August 2025</block>
+  <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">Betriebsunterstützungsanalyst</block>
 </blocks>
