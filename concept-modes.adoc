@@ -14,7 +14,7 @@ summary: BlueXP bietet mehrere Implementierungsmodi, die es Ihnen ermöglichen, 
 
 
 [role="lead"]
-BlueXP bietet mehrere Bereitstellungsmodi, mit denen Sie Ihre Geschäfts- und Sicherheitsanforderungen erfüllen können. Der Standardmodus nutzt eine Software-as-a-Service-Schicht (SaaS) für volle Funktionalität. Der eingeschränkte und der private Modus stehen Unternehmen mit eingeschränkter Konnektivität zur Verfügung.
+BlueXP bietet _Bereitstellungsmodi_, mit denen Sie Ihre Geschäfts- und Sicherheitsanforderungen erfüllen können.  Der _Standardmodus_ nutzt eine Software-as-a-Service-Schicht (SaaS), um die volle Funktionalität bereitzustellen, während der _eingeschränkte Modus_ und der _private Modus_ für Organisationen mit Konnektivitätsbeschränkungen verfügbar sind.
 
 Während BlueXP den Verkehrs-, Kommunikations- und Datenfluss bei Verwendung des eingeschränkten oder privaten Modus hemmt, liegt es in Ihrer Verantwortung sicherzustellen, dass Ihre Umgebung (vor Ort und in der Cloud) den erforderlichen Vorschriften für Ihr Unternehmen entspricht.
 
