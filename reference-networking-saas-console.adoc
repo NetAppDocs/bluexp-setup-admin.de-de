@@ -18,7 +18,7 @@ Wenn Sie sich anmelden und die webbasierte Konsole verwenden, kontaktiert BlueXP
 
 Diese Endpunkte werden in zwei Szenarien kontaktiert:
 
-* Vom Computer eines Benutzers beim Ausführen von Aktionen aus dem  https://console.bluexp.netapp.com["BlueXP webbasierte Konsole"^] die als Software as a Service (SaaS) verfügbar ist.
+* Vom Computer eines Benutzers beim Ausfüllen von Abschnitten aus dem https://console.bluexp.netapp.com["BlueXP webbasierte Konsole"^] die als Software as a Service (SaaS) verfügbar ist.
 * Vom Computer eines Benutzers beim Öffnen eines Webbrowsers, Eingabe der IP-Adresse des Connectors und anschließende Anmeldung und Einrichtung des Connectors. Diese Schritte sind erforderlich, wenn Sie den Connector manuell installieren.
 
 

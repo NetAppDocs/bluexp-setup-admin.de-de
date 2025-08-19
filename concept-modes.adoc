@@ -401,7 +401,7 @@ Dieser Teil der Tabelle listet die Unterstützung für das Management der Arbeit
 | Arbeitslast Fabrik | Nein | Nein 
 
 
-.7+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Ja. 
+.6+| *Eigenschaften* | Identitäts- und Zugriffsmanagement für BlueXP  | Ja. 
 
 
 | Ja. | Anmeldedaten | Ja. 
