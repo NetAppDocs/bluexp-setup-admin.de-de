@@ -1026,3 +1026,202 @@ Podman Version 4.9.4 wird jetzt bei der Installation des Connectors auf einem Re
 === Benutzervalidierung für Identity Federation
 
 Wenn Sie Identitätsföderation mit BlueXP  verwenden, muss jeder Benutzer, der sich zum ersten Mal bei BlueXP  anmeldet, ein schnelles Formular ausfüllen, um seine Identität zu validieren.
+
+
+
+== 31. Juli 2024
+
+
+
+=== Freigabe des Privatmodus (3.9.42)
+
+Ein neues Private-Mode-Release steht jetzt zum Download auf der NetApp Support-Website zur Verfügung.
+
+.Unterstützung für RHEL 8 und 9
+Diese Version umfasst Unterstützung für die Installation des Connectors auf einem Red Hat Enterprise Linux 8- oder 9-Host, wenn BlueXP im privaten Modus verwendet wird.  Die folgenden Versionen von RHEL werden unterstützt:
+
+* 8.6 bis 8.10
+* 9,1 bis 9,3
+
+
+Für diese Betriebssysteme wird Podman als Container-Orchestrierungstool benötigt.
+
+Sie sollten sich über die Podman-Anforderungen und bekannten Einschränkungen im Klaren sein, eine Zusammenfassung der Betriebssystemunterstützung erhalten, wissen, was zu tun ist, wenn Sie einen RHEL 7-Host haben, wie Sie beginnen und mehr.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Erfahren Sie mehr über die Unterstützung von RHEL 8 und 9 mit dem Connector"].
+
+.In dieser Version enthaltene Versionen
+Diese Version enthält die folgenden Versionen der BlueXP -Dienste, die im privaten Modus unterstützt werden.
+
+[cols="2*"]
+|===
+| Service | Version enthalten 
+
+
+| Stecker | 3.9.42 
+
+
+| Backup und Recovery | 18. Juli 2024 
+
+
+| Klassifizierung | 1. Juli 2024 (Version 1.33) 
+
+
+| Cloud Volumes ONTAP-Management | 10. Juni 2024 
+
+
+| Digitale Brieftasche | 30 Juli 2023 
+
+
+| Lokales ONTAP-Cluster-Management | 30 Juli 2023 
+
+
+| Replizierung | 18 Sept. 2022 
+|===
+Weitere Informationen zum Inhalt der Versionen dieser BlueXP -Dienste finden Sie in den Versionshinweisen zu den einzelnen BlueXP Diensten.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zum privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Erfahren Sie, was es Neues bei BlueXP backup and recovery gibt"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Erfahren Sie, was es Neues bei der BlueXP classification gibt"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Erfahren Sie, was es Neues beim Cloud Volumes ONTAP Management in BlueXP gibt"^]
+
+
+
+
+== 15. Juli 2024
+
+
+
+=== Unterstützung für RHEL 8.10
+
+BlueXP unterstützt jetzt die Installation des Connectors auf einem Red Hat Enterprise Linux 8.10-Host im Standardmodus oder eingeschränkten Modus.
+
+Die Unterstützung für RHEL 8.10 beginnt mit der Version 3.9.40 des Connectors.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Erfahren Sie mehr über die Unterstützung von RHEL 8 und 9 mit dem Connector"].
+
+
+
+== 8. Juli 2024
+
+
+
+=== Konnektor 3.9.42
+
+Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in der AWS-Region Kanada West (Calgary).
+
+Die Version 3.9.42 ist für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+=== Aktualisierte Docker Engine-Anforderungen
+
+Wenn der Connector auf einem Ubuntu-Host installiert ist, ist die minimal unterstützte Version der Docker Engine jetzt 23.0.6.  Zuvor war es 19.3.1.
+
+Die maximal unterstützte Version ist weiterhin 25.0.5.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Host-Anforderungen des Connectors anzeigen"].
+
+
+
+=== E-Mail-Verifizierung jetzt erforderlich
+
+Neue Benutzer, die sich bei BlueXP anmelden, müssen jetzt ihre E-Mail-Adresse bestätigen, bevor sie sich anmelden können.
+
+
+
+== 12. Juni 2024
+
+
+
+=== Konnektor 3.9.41
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Die Version 3.9.41 ist für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+== 4. Juni 2024
+
+
+
+=== Freigabe des Privatmodus (3.9.40)
+
+Eine neue Version des privaten Modus steht jetzt zum Download von der NetApp Support-Site bereit.  Diese Version enthält die folgenden Versionen der BlueXP -Dienste, die im privaten Modus unterstützt werden.
+
+Beachten Sie, dass diese Version im privaten Modus _keine_ Unterstützung für den Connector mit Red Hat Enterprise Linux 8 und 9 enthält.
+
+[cols="2*"]
+|===
+| Service | Version enthalten 
+
+
+| Stecker | 3.9.40 
+
+
+| Backup und Recovery | 17. Mai 2024 
+
+
+| Klassifizierung | 15. Mai 2024 (Version 1.31) 
+
+
+| Cloud Volumes ONTAP-Management | 17. Mai 2024 
+
+
+| Digitale Brieftasche | 30 Juli 2023 
+
+
+| Lokales ONTAP-Cluster-Management | 30 Juli 2023 
+
+
+| Replizierung | 18 Sept. 2022 
+|===
+Weitere Informationen zum Inhalt der Versionen dieser BlueXP -Dienste finden Sie in den Versionshinweisen zu den einzelnen BlueXP Diensten.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zum privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Erfahren Sie, was es Neues bei BlueXP backup and recovery gibt"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Erfahren Sie, was es Neues bei der BlueXP classification gibt"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Erfahren Sie, was es Neues beim Cloud Volumes ONTAP Management in BlueXP gibt"^]
+
+
+
+
+== 17. Mai 2024
+
+
+
+=== Konnektor 3.9.40
+
+Diese Version des BlueXP Connector umfasst Unterstützung für zusätzliche Betriebssysteme, kleinere Sicherheitsverbesserungen und Fehlerbehebungen.
+
+Derzeit ist die Version 3.9.40 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+.Unterstützung für RHEL 8 und 9
+Der Connector wird jetzt auf Hosts unterstützt, auf denen die folgenden Versionen von Red Hat Enterprise Linux mit _neuen_ Connector-Installationen ausgeführt werden, wenn BlueXP im Standardmodus oder eingeschränkten Modus verwendet wird:
+
+* 8,6 bis 8,9
+* 9,1 bis 9,3
+
+
+Für diese Betriebssysteme wird Podman als Container-Orchestrierungstool benötigt.
+
+Sie sollten sich über die Podman-Anforderungen und bekannten Einschränkungen im Klaren sein, eine Zusammenfassung der Betriebssystemunterstützung erhalten, wissen, was zu tun ist, wenn Sie einen RHEL 7-Host haben, wie Sie beginnen und mehr.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Erfahren Sie mehr über die Unterstützung von RHEL 8 und 9 mit dem Connector"].
+
+.Einstellung der Unterstützung für RHEL 7 und CentOS 7
+Am 30. Juni 2024 erreicht RHEL 7 das Ende der Wartung (EOM), während CentOS 7 das Ende seiner Lebensdauer (EOL) erreicht.  NetApp wird den Connector auf diesen Linux-Distributionen bis zum 30. Juni 2024 weiterhin unterstützen.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Erfahren Sie, was zu tun ist, wenn Sie einen vorhandenen Connector auf RHEL 7 oder CentOS 7 ausführen."] .
+
+.AWS-Berechtigungsaktualisierung
+In der Version 3.9.38 haben wir die Connector-Richtlinie für AWS aktualisiert, um die Berechtigung „ec2:DescribeAvailabilityZones“ einzuschließen.  Diese Berechtigung ist jetzt erforderlich, um AWS Local Zones mit Cloud Volumes ONTAP zu unterstützen.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["AWS-Berechtigungen für den Connector anzeigen"] .
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Erfahren Sie mehr über die Unterstützung für AWS Local Zones"^]
+

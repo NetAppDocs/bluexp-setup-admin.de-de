@@ -20,7 +20,7 @@ Sie können Benutzern die folgende Rolle zuweisen, um ihnen Zugriff auf Warnunge
 
 == Analyst für operative Unterstützung
 
-[cols="1,1"]
+[cols="1,2"]
 |===
 | Aufgabe | Kann durchführen 
 
@@ -34,8 +34,8 @@ Sie können Benutzern die folgende Rolle zuweisen, um ihnen Zugriff auf Warnunge
 | Registrieren Sie sich für Support und reichen Sie Fälle über BlueXP ein | Ja. 
 
 
-| Ja. | Sehen Sie sich die BlueXP Zeitleiste und -Benachrichtigungen an 
+| Sehen Sie sich die BlueXP Zeitleiste und -Benachrichtigungen an | Ja. 
 
 
-| Ja. | Anzeigen, Herunterladen und Konfigurieren von Warnungen 
+| Anzeigen, Herunterladen und Konfigurieren von Warnungen | Ja. 
 |===

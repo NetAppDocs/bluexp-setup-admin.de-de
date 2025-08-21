@@ -49,7 +49,7 @@ Außerdem müssen Sie sicherstellen, dass die Richtlinie aktuell ist, wenn neue 
 | Ziel | Beschreibung | Verlinken 
 
 
-| Sichern Sie lokale ONTAP -Cluster auf Amazon S3 mit BlueXP backup and recovery | Bei der Aktivierung von Backups auf Ihren ONTAP Volumes werden Sie von BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html["Richten Sie S3-Berechtigungen für Backups ein"^] 
+| Sichern Sie lokale ONTAP -Cluster auf Amazon S3 mit BlueXP backup and recovery | Bei der Aktivierung von Backups auf Ihren ONTAP Volumes werden Sie von BlueXP Backup und Recovery aufgefordert, einen Zugriffsschlüssel und einen Schlüssel für einen IAM-Benutzer mit spezifischen Berechtigungen einzugeben. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html#set-up-s3-permissions["Richten Sie S3-Berechtigungen für Backups ein"^] 
 |===
 
 
@@ -202,11 +202,12 @@ Wenn Sie BlueXP Backup und Recovery für ein Backup von Cloud Volumes ONTAP verw
 
  a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["Sichern Sie Cloud Volumes ONTAP Daten mit Backup und Recovery in Google Cloud Storage"^]
+* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Berechtigungen für CMEKs^]
 
 
 
 
-| Backup von lokalen ONTAP Clustern in Google Cloud | Wenn Sie BlueXP Backup und Recovery zum Sichern von ONTAP-Clustern vor Ort verwenden, müssen Sie dem Connector Berechtigungen hinzufügen, um die Funktion „Suchen und Wiederherstellen“ verwenden zu können. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["Sichern Sie lokale ONTAP -Daten mit Backup und Recovery in Google Cloud Storage"^] 
+| Backup von lokalen ONTAP Clustern in Google Cloud | Wenn Sie BlueXP Backup und Recovery zum Sichern von ONTAP-Clustern vor Ort verwenden, müssen Sie dem Connector Berechtigungen hinzufügen, um die Funktion „Suchen und Wiederherstellen“ verwenden zu können. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["Berechtigungen für die Such- und Wiederherstellungsfunktion"^] 
 |===
 
 
