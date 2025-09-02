@@ -60,7 +60,7 @@ Eine _Organisation_ ist die oberste Ebene des IAM-Systems von BlueXP  und repr�
 
 Ein _Ordner_ ermöglicht Ihnen, verwandte Projekte zu gruppieren und von anderen Projekten in Ihrer Organisation zu trennen. Ein Ordner kann beispielsweise einen geografischen Standort (EU oder US-Osten), einen Standort (London oder Toronto) oder eine Geschäftseinheit (Engineering oder Marketing) repräsentieren.
 
-Ordner können Projekte, andere Ordner oder beides enthalten. Das Erstellen von Ordnern ist optional.
+Ordner können Projekte, andere Ordner oder beides enthalten.  Das Erstellen von Ordnern ist optional.
 
 
 

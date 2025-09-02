@@ -4,7 +4,7 @@ permalink: task-federation-manage.html
 keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
 summary: Nachdem Sie eine Verbundverbindung hinzugefügt haben, können Sie diese in BlueXP verwalten. Sie können den Status der Verbindung einsehen und sie bei Bedarf aktivieren oder deaktivieren. 
 ---
-= Föderationen in BLueXP verwalten
+= Föderationen in BlueXP verwalten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
