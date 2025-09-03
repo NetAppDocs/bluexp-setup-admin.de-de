@@ -70,11 +70,7 @@ AWS-Services (amazonaws.com):
 | \https://signin.b2c.netapp.com | Erforderlich, um die Zugangsdaten für die NetApp Support Site (NSS) zu aktualisieren oder neue NSS-Zugangsdaten für BlueXP hinzuzufügen 
 
 
-| \https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com | Ihr Webbrowser stellt eine Verbindung zu diesen Endpunkten her, um eine zentralisierte Benutzerauthentifizierung über BlueXP zu ermöglicht. 
+| \https://netapp-cloud-account.auth0.com \https://netapp-cloud-account.us.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | Ihr Webbrowser stellt eine Verbindung zu diesen Endpunkten her, um eine zentralisierte Benutzerauthentifizierung über BlueXP zu ermöglicht. 
 
 
 | \https://widget.intercom.io | Für den In-Product-Chat, der es Ihnen ermöglicht, mit dem NetApp-Support zu sprechen. 
